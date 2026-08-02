@@ -1,0 +1,825 @@
+{
+  "case_dir": "D:\\data\\202607031503",
+  "tag_counts": {
+    "LOCALIZATION_POSE": 3310,
+    "FUSION_OBS_FRAME": 3132,
+    "FUSION_OBS": 3190,
+    "PLANNING_EGO_STATE": 1087
+  },
+  "tag_fields": {
+    "LOCALIZATION_POSE": [
+      "ego_vx",
+      "ego_vy",
+      "ego_vz",
+      "ego_x",
+      "ego_y",
+      "ego_z",
+      "header_time",
+      "heading",
+      "line_no",
+      "measurement_time",
+      "raw_line",
+      "source_file",
+      "tag"
+    ],
+    "FUSION_OBS_FRAME": [
+      "header_time",
+      "lidar_timestamp",
+      "line_no",
+      "obstacle_count",
+      "raw_line",
+      "seq",
+      "source_file",
+      "tag",
+      "trace_id"
+    ],
+    "FUSION_OBS": [
+      "anchor_x",
+      "anchor_y",
+      "anchor_z",
+      "confidence",
+      "has_anchor",
+      "header_time",
+      "height",
+      "id",
+      "length",
+      "line_no",
+      "measurement_count",
+      "obs_time",
+      "poly_max_x",
+      "poly_max_y",
+      "poly_min_x",
+      "poly_min_y",
+      "polygon_size",
+      "pos_x",
+      "pos_y",
+      "pos_z",
+      "raw_line",
+      "seq",
+      "source_file",
+      "speed",
+      "sub_type",
+      "tag",
+      "theta",
+      "trace_id",
+      "tracking_time",
+      "type",
+      "vel_x",
+      "vel_y",
+      "vel_z",
+      "width"
+    ],
+    "PLANNING_EGO_STATE": [
+      "ego_heading",
+      "ego_speed",
+      "ego_x",
+      "ego_y",
+      "line_no",
+      "loc_heading",
+      "loc_vx",
+      "loc_vy",
+      "loc_vz",
+      "loc_x",
+      "loc_y",
+      "loc_z",
+      "localization_header_time",
+      "localization_measurement_time",
+      "planning_start_time",
+      "raw_line",
+      "source_file",
+      "tag",
+      "vehicle_state_time"
+    ]
+  },
+  "parsed_counts": {
+    "fusion_frames": 3132,
+    "fusion_obs": 3190,
+    "ego_states": 4397,
+    "planning_evidence": 81,
+    "prediction_rows": 16,
+    "internal_planning_events": 1296
+  },
+  "files": [
+    {
+      "path": "collect_time.txt",
+      "size_bytes": 40,
+      "columns": [],
+      "module_guess": "unknown",
+      "usable_for": []
+    },
+    {
+      "path": "log\\carla_collision_events_20260703150401.csv",
+      "size_bytes": 313271,
+      "columns": [
+        "event_type",
+        "collision_seq",
+        "wall_time_unix_ns",
+        "wall_time_iso",
+        "carla_frame",
+        "carla_timestamp_sec",
+        "map_name",
+        "ego_actor_id",
+        "ego_type_id",
+        "ego_role_name",
+        "other_actor_id",
+        "other_type_id",
+        "other_role_name",
+        "other_semantic_tags",
+        "normal_impulse_x",
+        "normal_impulse_y",
+        "normal_impulse_z",
+        "normal_impulse_norm",
+        "ego_location_x",
+        "ego_location_y",
+        "ego_location_z",
+        "ego_rotation_roll",
+        "ego_rotation_pitch",
+        "ego_rotation_yaw",
+        "ego_velocity_x",
+        "ego_velocity_y",
+        "ego_velocity_z",
+        "ego_speed_mps",
+        "other_location_x",
+        "other_location_y",
+        "other_location_z"
+      ],
+      "module_guess": "collision",
+      "usable_for": [
+        "collision_time"
+      ]
+    },
+    {
+      "path": "log\\carla_collision_events_20260703150401.jsonl",
+      "size_bytes": 637567,
+      "columns": [
+        "event_type",
+        "collision_seq",
+        "wall_time_unix_ns",
+        "wall_time_iso",
+        "carla_frame",
+        "carla_timestamp_sec",
+        "map_name",
+        "ego_actor_id",
+        "ego_type_id",
+        "ego_role_name",
+        "other_actor_id",
+        "other_type_id",
+        "other_role_name",
+        "other_semantic_tags",
+        "normal_impulse_x",
+        "normal_impulse_y",
+        "normal_impulse_z",
+        "normal_impulse_norm",
+        "ego_location_x",
+        "ego_location_y",
+        "ego_location_z",
+        "ego_rotation_roll",
+        "ego_rotation_pitch",
+        "ego_rotation_yaw",
+        "ego_velocity_x",
+        "ego_velocity_y",
+        "ego_velocity_z",
+        "ego_speed_mps",
+        "other_location_x",
+        "other_location_y",
+        "other_location_z"
+      ],
+      "module_guess": "collision",
+      "usable_for": [
+        "collision_time"
+      ]
+    },
+    {
+      "path": "log\\control.log.INFO.20260703-145944.1564106",
+      "size_bytes": 3696508,
+      "columns": [],
+      "module_guess": "unknown",
+      "usable_for": []
+    },
+    {
+      "path": "log\\guardian.log.INFO.20260703-145944.1564102",
+      "size_bytes": 17043328,
+      "columns": [],
+      "module_guess": "unknown",
+      "usable_for": []
+    },
+    {
+      "path": "log\\localization.log.INFO.20260703-145944.1564096",
+      "size_bytes": 963626,
+      "columns": [],
+      "module_guess": "localization",
+      "usable_for": []
+    },
+    {
+      "path": "log\\map.log.INFO.20260703-145945.1564104",
+      "size_bytes": 681,
+      "columns": [],
+      "module_guess": "unknown",
+      "usable_for": []
+    },
+    {
+      "path": "log\\perception.log.INFO.20260703-145953.1564121",
+      "size_bytes": 21482912,
+      "columns": [],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "log\\planning.log.INFO.20260703-145945.1564104",
+      "size_bytes": 271645587,
+      "columns": [],
+      "module_guess": "planning",
+      "usable_for": [
+        "planning_target_evidence"
+      ]
+    },
+    {
+      "path": "log\\prediction.log.INFO.20260703-145945.1564100",
+      "size_bytes": 694233,
+      "columns": [],
+      "module_guess": "prediction",
+      "usable_for": [
+        "prediction_target_evidence"
+      ]
+    },
+    {
+      "path": "log\\routing.log.INFO.20260703-145947.1564104",
+      "size_bytes": 2113,
+      "columns": [],
+      "module_guess": "unknown",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\events\\control.1564106.csv",
+      "size_bytes": 12903052,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "unknown",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\events\\guardian.1564102.csv",
+      "size_bytes": 2147987,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "unknown",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\events\\perception.lidar_detection.1564121.csv",
+      "size_bytes": 236307,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\events\\perception.lidar_detection_filter.1564121.csv",
+      "size_bytes": 249810,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\events\\perception.lidar_tracking.1564121.csv",
+      "size_bytes": 234243,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\events\\perception.multi_sensor_fusion.1564121.csv",
+      "size_bytes": 369934,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\events\\perception.pointcloud_ground_detection.1564121.csv",
+      "size_bytes": 259797,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\events\\perception.pointcloud_map_based_roi.1564121.csv",
+      "size_bytes": 253953,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\events\\perception.pointcloud_preprocess.1564121.csv",
+      "size_bytes": 248107,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\events\\perception.radar_detection.1564121.csv",
+      "size_bytes": 238247,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\events\\planning.1564104.csv",
+      "size_bytes": 1917876,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "planning",
+      "usable_for": [
+        "planning_target_evidence"
+      ]
+    },
+    {
+      "path": "trace\\events\\prediction.1564100.csv",
+      "size_bytes": 1302893,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "phase",
+        "mono_ns",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "prediction",
+      "usable_for": [
+        "prediction_target_evidence"
+      ]
+    },
+    {
+      "path": "trace\\fusion_inputs\\perception.multi_sensor_fusion.1564121.csv",
+      "size_bytes": 247270,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "fusion_trace_id",
+        "parent_trace_id",
+        "sensor",
+        "sensor_kind",
+        "frame_time_ns",
+        "sensor_ts_ns",
+        "object_count",
+        "is_main_sensor"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\message_context\\control.1564106.csv",
+      "size_bytes": 3184000,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "unknown",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\message_context\\guardian.1564102.csv",
+      "size_bytes": 3178852,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "unknown",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\message_context\\perception.lidar_detection.1564121.csv",
+      "size_bytes": 356163,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\message_context\\perception.lidar_detection_filter.1564121.csv",
+      "size_bytes": 358893,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\message_context\\perception.lidar_tracking.1564121.csv",
+      "size_bytes": 349164,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\message_context\\perception.multi_sensor_fusion.1564121.csv",
+      "size_bytes": 541332,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\message_context\\perception.pointcloud_ground_detection.1564121.csv",
+      "size_bytes": 394316,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\message_context\\perception.pointcloud_map_based_roi.1564121.csv",
+      "size_bytes": 382628,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\message_context\\perception.pointcloud_preprocess.1564121.csv",
+      "size_bytes": 383600,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\message_context\\perception.radar_detection.1564121.csv",
+      "size_bytes": 348365,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    },
+    {
+      "path": "trace\\message_context\\planning.1564104.csv",
+      "size_bytes": 328101,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "planning",
+      "usable_for": [
+        "planning_target_evidence"
+      ]
+    },
+    {
+      "path": "trace\\message_context\\prediction.1564100.csv",
+      "size_bytes": 342154,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "event_id",
+        "trace_id",
+        "proc_id",
+        "module",
+        "edge",
+        "mono_ns",
+        "trace_valid",
+        "channel",
+        "input_seq",
+        "output_seq",
+        "data_ts_ns",
+        "object_count",
+        "primary_parent_trace_id",
+        "parent_trace_count",
+        "pid",
+        "tid"
+      ],
+      "module_guess": "prediction",
+      "usable_for": [
+        "prediction_target_evidence"
+      ]
+    },
+    {
+      "path": "trace\\trace_anchor\\perception.1564121.csv",
+      "size_bytes": 229626,
+      "columns": [
+        "run_id",
+        "schema_version",
+        "trace_id",
+        "sensor_kind",
+        "sensor_id",
+        "data_ts_ns",
+        "sensor_time_sec",
+        "preproc_enter_ns",
+        "ingress_ms"
+      ],
+      "module_guess": "perception",
+      "usable_for": []
+    }
+  ],
+  "warnings": []
+}

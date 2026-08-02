@@ -1,0 +1,5 @@
+group,requested_delay_ms,total_runs,attributable_runs,observed_collisions,attributable_collisions,t1_speed_mean_mps,d1_clear_mean_m,t1_to_fusion_mean_ms,t1_to_control_mean_ms,control_to_sustained_decel_mean_ms,t1_to_sustained_decel_mean_ms,response_travel_mean_m,equiv_decel_mean_mps2,final_clearance_mean_m,impact_speed_mean_mps,notes
+baseline,0,6,6,0,0,15.689,39.975,236.519,266.629,77.028,343.657,4.619,4.957,10.480,,"6组均值"
+100ms,100,6,6,0,0,15.676,40.354,260.164,293.177,170.416,463.594,6.287,5.804,12.905,,"100ms组制动更强，最终净距不可单独解释为时延效应"
+300ms,300,6,5,0,0,15.948,40.241,256.509,290.246,368.671,658.917,9.479,5.029,5.364,,"剔除2012；2007仅余37.712ms碰撞预算"
+400ms,400,3,2,2,2,16.500,39.148,548.679,573.017,498.018,1071.035,16.476,4.327,,8.432,"剔除1734；两组可归因样本均碰撞；1739叠加感知排队"

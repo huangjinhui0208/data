@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="560" viewBox="0 0 1050 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#202124}.title{font-size:22px;font-weight:700}.axis{font-size:13px;fill:#5f6368}.label{font-size:14px}.value{font-size:13px;font-weight:600}.note{font-size:12px;fill:#5f6368}.grid{stroke:#dfe3e8;stroke-width:1}.axisline{stroke:#70757a;stroke-width:1.2}</style>
+<text x="40" y="35" class="title">图 3  400 ms-1739 全生命周期 Fusion 帧时延持续堆积</text>
+<line x1="90" y1="445.0" x2="1015" y2="445.0" class="grid"/>
+<text x="78" y="450.0" text-anchor="end" class="axis">0</text>
+<line x1="90" y1="377.7" x2="1015" y2="377.7" class="grid"/>
+<text x="78" y="382.7" text-anchor="end" class="axis">400</text>
+<line x1="90" y1="310.5" x2="1015" y2="310.5" class="grid"/>
+<text x="78" y="315.5" text-anchor="end" class="axis">800</text>
+<line x1="90" y1="243.2" x2="1015" y2="243.2" class="grid"/>
+<text x="78" y="248.2" text-anchor="end" class="axis">1200</text>
+<line x1="90" y1="175.9" x2="1015" y2="175.9" class="grid"/>
+<text x="78" y="180.9" text-anchor="end" class="axis">1600</text>
+<line x1="90" y1="108.6" x2="1015" y2="108.6" class="grid"/>
+<text x="78" y="113.6" text-anchor="end" class="axis">2000</text>
+<line x1="90" y1="75" x2="90" y2="445" class="axisline"/>
+<line x1="90" y1="445" x2="1015" y2="445" class="axisline"/>
+<text x="24" y="260.0" transform="rotate(-90 24 260.0)" text-anchor="middle" class="axis">Fusion header_time − 点云时间戳 (ms)</text>
+<circle cx="90.0" cy="401.6" r="5" fill="#e15759"/>
+<text x="90.0" y="391.6" text-anchor="middle" class="value">258</text>
+<text x="90.0" y="471" transform="rotate(35 90.0 471)" text-anchor="start" class="axis">441–460</text>
+<circle cx="182.5" cy="396.4" r="5" fill="#e15759"/>
+<text x="182.5" y="386.4" text-anchor="middle" class="value">289</text>
+<text x="182.5" y="471" transform="rotate(35 182.5 471)" text-anchor="start" class="axis">461–480</text>
+<circle cx="275.0" cy="402.3" r="5" fill="#e15759"/>
+<text x="275.0" y="392.3" text-anchor="middle" class="value">254</text>
+<text x="275.0" y="471" transform="rotate(35 275.0 471)" text-anchor="start" class="axis">481–500</text>
+<circle cx="367.5" cy="393.2" r="5" fill="#e15759"/>
+<text x="367.5" y="383.2" text-anchor="middle" class="value">308</text>
+<text x="367.5" y="471" transform="rotate(35 367.5 471)" text-anchor="start" class="axis">501–520</text>
+<circle cx="460.0" cy="334.8" r="5" fill="#e15759"/>
+<text x="460.0" y="324.8" text-anchor="middle" class="value">655</text>
+<text x="460.0" y="471" transform="rotate(35 460.0 471)" text-anchor="start" class="axis">521–540</text>
+<circle cx="552.5" cy="276.6" r="5" fill="#e15759"/>
+<text x="552.5" y="266.6" text-anchor="middle" class="value">1001</text>
+<text x="552.5" y="471" transform="rotate(35 552.5 471)" text-anchor="start" class="axis">541–560</text>
+<circle cx="645.0" cy="310.0" r="5" fill="#e15759"/>
+<text x="645.0" y="300.0" text-anchor="middle" class="value">803</text>
+<text x="645.0" y="471" transform="rotate(35 645.0 471)" text-anchor="start" class="axis">561–580</text>
+<circle cx="737.5" cy="128.8" r="5" fill="#e15759"/>
+<text x="737.5" y="118.8" text-anchor="middle" class="value">1880</text>
+<text x="737.5" y="471" transform="rotate(35 737.5 471)" text-anchor="start" class="axis">581–600</text>
+<circle cx="830.0" cy="122.8" r="5" fill="#e15759"/>
+<text x="830.0" y="112.8" text-anchor="middle" class="value">1916</text>
+<text x="830.0" y="471" transform="rotate(35 830.0 471)" text-anchor="start" class="axis">601–620</text>
+<circle cx="922.5" cy="110.7" r="5" fill="#e15759"/>
+<text x="922.5" y="100.7" text-anchor="middle" class="value">1988</text>
+<text x="922.5" y="471" transform="rotate(35 922.5 471)" text-anchor="start" class="axis">621–641</text>
+<circle cx="1015.0" cy="107.6" r="5" fill="#e15759"/>
+<text x="1015.0" y="97.6" text-anchor="middle" class="value">2006</text>
+<text x="1015.0" y="471" transform="rotate(35 1015.0 471)" text-anchor="start" class="axis">642–649</text>
+<polyline points="90.0,401.6 182.5,396.4 275.0,402.3 367.5,393.2 460.0,334.8 552.5,276.6 645.0,310.0 737.5,128.8 830.0,122.8 922.5,110.7 1015.0,107.6" fill="none" stroke="#e15759" stroke-width="3"/>
+<line x1="90" y1="360.9" x2="1015" y2="360.9" stroke="#f28e2b" stroke-width="2" stroke-dasharray="7,6"/>
+<text x="1011" y="353.9" text-anchor="end" class="value" fill="#f28e2b">500 ms</text>
+<text x="90" y="535" class="note">横轴为连续 Fusion 序列号分箱；后半段稳定升至约 1.9–2.0 s，属于持续排队而非单帧离群值。</text>
+</svg>

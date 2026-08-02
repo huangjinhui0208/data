@@ -1,0 +1,347 @@
+﻿[
+  {
+    "run_id": "202607271131",
+    "collision": true,
+    "impact_speed_mps": 7.988017222183252,
+    "t1_s": 1785123121.945625,
+    "t2_s": 1785123122.745261,
+    "endpoint_s": 1785123124.852247,
+    "t1_to_t2_ms": 799.6358871459961,
+    "v1_mps": 16.080189309222355,
+    "v2_mps": 17.50269243214682,
+    "D1_clear_m": 38.258205668761775,
+    "D_delay_m": 13.432027958524642,
+    "D2_clear_m": 24.809866303977937,
+    "stable_target": {
+      "id": "11",
+      "x": -319.3704600099467,
+      "y": -26.58312200018239,
+      "z": 0.7388677002919848,
+      "speed_mps": 0.0,
+      "obs_time_s": 1785123121.945625,
+      "header_time_s": 1785123122.23851
+    },
+    "target_observation_count": 20,
+    "target_position_min": [
+      -319.9215659153319,
+      -26.60345096123241,
+      0.3563851586645055
+    ],
+    "target_position_max": [
+      -319.3704600099467,
+      -26.45287657510892,
+      0.8038542903386809
+    ],
+    "last_target_before_endpoint": {
+      "x": -319.3865077523738,
+      "y": -26.52809145622446,
+      "z": 0.4370572635780063,
+      "speed_mps": 0.0,
+      "header_time_s": 1785123124.551247
+    },
+    "t1_ego": {
+      "time_s": 1785123121.945625,
+      "speed_mps": 16.080189309222355,
+      "x_m": -362.9367370605469,
+      "y_m": -26.7221508026123,
+      "z_m": 0.03500066697597504,
+      "heading_rad": 0.00959469426488102
+    },
+    "t2_ego": {
+      "time_s": 1785123122.745261,
+      "speed_mps": 17.50269243214682,
+      "x_m": -349.4882202148438,
+      "y_m": -26.59853172302246,
+      "z_m": 0.07881646603345871,
+      "heading_rad": 0.006261419083362973
+    },
+    "endpoint_ego": {
+      "time_s": 1785123124.852247,
+      "speed_mps": 0.21692534382808226,
+      "x_m": -322.9433392846102,
+      "y_m": -26.53945205261506,
+      "z_m": 0.325304929877554,
+      "heading_rad": -0.003701007040469218
+    },
+    "endpoint_geometry_using_stable_target": {
+      "center_longitudinal_m": 3.57301642743267,
+      "clear_longitudinal_m": -1.7343835725673302,
+      "lateral_m": -0.03044642732131978,
+      "euclidean_center_m": 3.5969997971522343,
+      "euclidean_surface_m": -1.710400202847766
+    },
+    "endpoint_geometry_using_last_target": {
+      "center_longitudinal_m": 3.5567651269463947,
+      "clear_longitudinal_m": -1.7506348730536057,
+      "lateral_m": 0.024524347075774326,
+      "euclidean_center_m": 3.558604810308247,
+      "euclidean_surface_m": -1.7487951896917533
+    },
+    "braking": {
+      "status": "AVAILABLE",
+      "endpoint": "COLLISION",
+      "start_speed_mps": 17.50269243214682,
+      "duration_s": 2.1069860458374023,
+      "distance_m": 27.148355416248187,
+      "path_length_m": 27.148355416248187,
+      "displacement_m": 26.546091060089115,
+      "mean_deceleration_mps2": 4.71577836429258,
+      "peak_deceleration_mps2": 11.136627086527866,
+      "deceleration_p10_mps2": 3.0023225843039048,
+      "deceleration_p50_mps2": 4.180721592745976,
+      "deceleration_p90_mps2": 6.48694010545515,
+      "preimpact_effective_deceleration_mps2": 4.466860321993511
+    },
+    "speed_threshold_crossings": {
+      "15.0": {
+        "elapsed_s": 0.6995589733123779,
+        "time_s": 1785123123.44482,
+        "speed_mps": 14.875705220760516
+      },
+      "12.0": {
+        "elapsed_s": 1.39969801902771,
+        "time_s": 1785123124.144959,
+        "speed_mps": 11.59558259292637
+      },
+      "10.0": {
+        "elapsed_s": 1.6997621059417725,
+        "time_s": 1785123124.445023,
+        "speed_mps": 9.965419956038396
+      },
+      "8.0": {
+        "elapsed_s": 2.018779993057251,
+        "time_s": 1785123124.764041,
+        "speed_mps": 7.988017222183252
+      },
+      "5.0": null,
+      "1.0": null,
+      "0.1": null
+    },
+    "post_t2_samples": [
+      {
+        "elapsed_s": 0.5,
+        "speed_mps": 15.645498749485919,
+        "distance_m": 8.305012941145124
+      },
+      {
+        "elapsed_s": 1.0,
+        "speed_mps": 13.479424617879808,
+        "distance_m": 15.651002695520125
+      },
+      {
+        "elapsed_s": 1.5,
+        "speed_mps": 11.232785194225029,
+        "distance_m": 21.795732409841293
+      },
+      {
+        "elapsed_s": 2.0,
+        "speed_mps": 8.075251407294672,
+        "distance_m": 26.635658581061158
+      }
+    ],
+    "planning_fallback": {
+      "primal_infeasible": 30,
+      "speed_fallback": 20,
+      "constant_deceleration_fallback": 20
+    },
+    "scb": {
+      "requested_delay_ms": 300.0,
+      "actual_first_applied_delay_ms": 300.046735
+    },
+    "actor_history": {
+      "ego": {
+        "count": 156,
+        "actor_id": "147",
+        "type": "vehicle.lincoln.mkz_2017",
+        "last_time_s": 1785123124.852247,
+        "last_x": -322.9162902832031,
+        "last_y": 26.538175582885742,
+        "last_z": 0.31848981976509094,
+        "last_speed_mps": 7.988017222183252
+      },
+      "other": {
+        "count": 26,
+        "actor_id": "155",
+        "type": "vehicle.lincoln.mkz_2020",
+        "last_time_s": 1785123124.852247,
+        "last_x": -318.0080871582031,
+        "last_y": 26.52062225341797,
+        "last_z": 0.3525403141975403,
+        "last_speed_mps": 0.0
+      }
+    }
+  },
+  {
+    "run_id": "202607271206",
+    "collision": false,
+    "impact_speed_mps": NaN,
+    "t1_s": 1785125227.718962,
+    "t2_s": 1785125228.519715,
+    "endpoint_s": 1785125232.318876,
+    "t1_to_t2_ms": 800.753116607666,
+    "v1_mps": 16.80667764748048,
+    "v2_mps": 17.151630856185957,
+    "D1_clear_m": 39.789858291702615,
+    "D_delay_m": 13.74109871705313,
+    "D2_clear_m": 26.056730855709556,
+    "stable_target": {
+      "id": "10",
+      "x": -318.9721432832116,
+      "y": -26.5542078191909,
+      "z": 1.00975368668568,
+      "speed_mps": 0.0,
+      "obs_time_s": 1785125227.718962,
+      "header_time_s": 1785125228.027334
+    },
+    "target_observation_count": 23,
+    "target_position_min": [
+      -318.9721432832116,
+      -26.5625216934006,
+      0.3708630242557542
+    ],
+    "target_position_max": [
+      -318.5922094346705,
+      -26.44960917964017,
+      1.00975368668568
+    ],
+    "last_target_before_endpoint": {
+      "x": -318.5922094346705,
+      "y": -26.52637845164963,
+      "z": 0.4963922624881101,
+      "speed_mps": 0.0,
+      "header_time_s": 1785125230.223596
+    },
+    "t1_ego": {
+      "time_s": 1785125227.718962,
+      "speed_mps": 16.80667764748048,
+      "x_m": -364.0710144042969,
+      "y_m": -26.69047737121582,
+      "z_m": 0.03446393832564354,
+      "heading_rad": 0.01200233354238422
+    },
+    "t2_ego": {
+      "time_s": 1785125228.519715,
+      "speed_mps": 17.151630856185957,
+      "x_m": -350.3362426757812,
+      "y_m": -26.60229682922363,
+      "z_m": 0.0754842534661293,
+      "heading_rad": 0.0009462747547512862
+    },
+    "endpoint_ego": {
+      "time_s": 1785125232.318876,
+      "speed_mps": 4.49671484559083e-05,
+      "x_m": -322.6528625488281,
+      "y_m": -26.52805519104004,
+      "z_m": 0.3214066922664642,
+      "heading_rad": -0.01863480113089366
+    },
+    "endpoint_geometry_using_stable_target": {
+      "center_longitudinal_m": 3.6805675293483473,
+      "clear_longitudinal_m": -1.626832470651653,
+      "lateral_m": 0.04243741446403413,
+      "euclidean_center_m": 3.744622792347149,
+      "euclidean_surface_m": -1.5627772076528514
+    },
+    "endpoint_geometry_using_last_target": {
+      "center_longitudinal_m": 4.059916847963535,
+      "clear_longitudinal_m": -1.247483152036465,
+      "lateral_m": 0.07734153214649381,
+      "euclidean_center_m": 4.0644220345282465,
+      "euclidean_surface_m": -1.2429779654717539
+    },
+    "braking": {
+      "status": "AVAILABLE",
+      "endpoint": "MINIMUM_SPEED_PROXY",
+      "start_speed_mps": 17.151630856185957,
+      "duration_s": 3.799160957336426,
+      "distance_m": 27.684571965629626,
+      "path_length_m": 27.796326770262475,
+      "displacement_m": 27.684571965629626,
+      "mean_deceleration_mps2": 5.087816803424406,
+      "peak_deceleration_mps2": 24.583588814823738,
+      "deceleration_p10_mps2": 0.0001449264091034833,
+      "deceleration_p50_mps2": 3.877286820151752,
+      "deceleration_p90_mps2": 11.39077721993873,
+      "effective_deceleration_mps2": 5.313039359829953
+    },
+    "speed_threshold_crossings": {
+      "15.0": {
+        "elapsed_s": 0.6002249717712402,
+        "time_s": 1785125229.11994,
+        "speed_mps": 14.866781620931055
+      },
+      "12.0": {
+        "elapsed_s": 1.2996609210968018,
+        "time_s": 1785125229.819376,
+        "speed_mps": 11.575210486766762
+      },
+      "10.0": {
+        "elapsed_s": 1.6000168323516846,
+        "time_s": 1785125230.119732,
+        "speed_mps": 9.949184100383663
+      },
+      "8.0": {
+        "elapsed_s": 1.8997118473052979,
+        "time_s": 1785125230.419427,
+        "speed_mps": 7.964950087385056
+      },
+      "5.0": {
+        "elapsed_s": 2.2991409301757812,
+        "time_s": 1785125230.818856,
+        "speed_mps": 3.4423516179931344
+      },
+      "1.0": {
+        "elapsed_s": 2.5005970001220703,
+        "time_s": 1785125231.020312,
+        "speed_mps": 0.002032843562734275
+      },
+      "0.1": {
+        "elapsed_s": 2.5005970001220703,
+        "time_s": 1785125231.020312,
+        "speed_mps": 0.002032843562734275
+      }
+    },
+    "post_t2_samples": [
+      {
+        "elapsed_s": 0.5,
+        "speed_mps": 15.243036134416151,
+        "distance_m": 8.105710705915188
+      },
+      {
+        "elapsed_s": 1.0,
+        "speed_mps": 12.940880269899255,
+        "distance_m": 15.218353411757715
+      },
+      {
+        "elapsed_s": 1.5,
+        "speed_mps": 11.040880750302657,
+        "distance_m": 21.144832431647657
+      },
+      {
+        "elapsed_s": 2.0,
+        "speed_mps": 7.440131176305017,
+        "distance_m": 25.62713209584502
+      },
+      {
+        "elapsed_s": 2.5,
+        "speed_mps": 0.008954836915067821,
+        "distance_m": 27.770927985988507
+      },
+      {
+        "elapsed_s": 3.0,
+        "speed_mps": 0.15458840247566222,
+        "distance_m": 27.788615307044306
+      }
+    ],
+    "planning_fallback": {
+      "primal_infeasible": 61,
+      "speed_fallback": 24,
+      "constant_deceleration_fallback": 24
+    },
+    "scb": {
+      "requested_delay_ms": 300.0,
+      "actual_first_applied_delay_ms": 300.072552
+    },
+    "actor_history": {}
+  }
+]

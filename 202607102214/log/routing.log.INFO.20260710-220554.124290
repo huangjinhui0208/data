@@ -1,0 +1,40 @@
+I0710 22:14:23.101678 124619 routing.cc:137] Get new routing request:waypoint {
+  id: "road_313_lane_0_-1"
+  s: 20.450378895665217
+  pose {
+    x: 100
+    y: -132.91999816894531
+  }
+}
+waypoint {
+  id: "road_17_lane_0_1"
+  s: 21.892258862048219
+  pose {
+    x: 337.73389810343429
+    y: -98.688262851955244
+  }
+}
+waypoint {
+  id: "road_8_lane_0_1"
+  s: 95.002284620275361
+  pose {
+    x: 391.59182393849375
+    y: -104.84997596068595
+  }
+}
+I0710 22:14:23.101840 124619 navigator.cc:39] Way point:	lane id: road_313_lane_0_-1 s: 20.4504 x: 100 y: -132.92 length: 21.8693
+I0710 22:14:23.101866 124619 navigator.cc:39] Way point:	lane id: road_17_lane_0_1 s: 21.8923 x: 337.734 y: -98.6883 length: 51.55
+I0710 22:14:23.101887 124619 navigator.cc:39] Way point:	lane id: road_8_lane_0_1 s: 95.0023 x: 391.592 y: -104.85 length: 308.693
+I0710 22:14:23.102103 124619 a_star_strategy.cc:229] Start A* search algorithm.
+I0710 22:14:23.102308 124619 a_star_strategy.cc:229] Start A* search algorithm.
+I0710 22:14:23.102461 124619 navigator.cc:87] Route lane id	is virtual	start s	end s
+I0710 22:14:23.102475 124619 navigator.cc:89] road_313_lane_0_-1	0	20.4504	21.8693
+I0710 22:14:23.102490 124619 navigator.cc:89] road_4_lane_0_-1	0	0	224.22
+I0710 22:14:23.102502 124619 navigator.cc:89] road_284_lane_0_-1	0	0	21.5681
+I0710 22:14:23.102512 124619 navigator.cc:89] road_17_lane_0_1	0	0	51.55
+I0710 22:14:23.102520 124619 navigator.cc:89] road_244_lane_0_1	0	0	22.61
+I0710 22:14:23.102528 124619 navigator.cc:89] road_16_lane_0_1	0	0	35.63
+I0710 22:14:23.102536 124619 navigator.cc:89] road_52_lane_0_1	0	0	15.7147
+I0710 22:14:23.102545 124619 navigator.cc:89] road_0_lane_0_1	0	0	36.36
+I0710 22:14:23.102553 124619 navigator.cc:89] road_11_lane_0_-1	0	0	12.6741
+I0710 22:14:23.102562 124619 navigator.cc:89] road_8_lane_0_1	0	0	95.0023

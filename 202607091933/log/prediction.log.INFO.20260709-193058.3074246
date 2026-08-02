@@ -1,0 +1,713 @@
+I0709 19:33:02.070709 3074358 obstacles_container.cc:245] Refresh obstacle [32]
+I0709 19:33:02.071035 3074358 obstacles_container.cc:257] Insert obstacle [33]
+I0709 19:33:02.073359 3074358 evaluator_manager.cc:83] Ignore still obstacle [33]
+I0709 19:33:02.073577 3074358 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=32 type=5 pos_x=131.026 pos_y=-133.186 theta=2.22045e-16 vel_x=-0 vel_y=0
+I0709 19:33:02.073642 3074358 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=33 type=5 pos_x=82.5037 pos_y=-128.594 theta=1.41327 vel_x=0 vel_y=0
+I0709 19:33:02.073678 3074358 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=32 type=5 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.073704 3074358 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=33 type=5 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.073724 3074358 prediction_component.cc:331] Prediction end to end time: 3.54126 ms.
+I0709 19:33:02.171211 3074366 obstacles_container.cc:245] Refresh obstacle [33]
+I0709 19:33:02.171288 3074366 obstacles_container.cc:257] Insert obstacle [34]
+I0709 19:33:02.173638 3074366 evaluator_manager.cc:83] Ignore still obstacle [34]
+I0709 19:33:02.173969 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=33 type=5 pos_x=83.2365 pos_y=-126.808 theta=1.47166 vel_x=-0 vel_y=-0
+I0709 19:33:02.174010 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.345 pos_y=-127.429 theta=0.988103 vel_x=-0 vel_y=-0
+I0709 19:33:02.174022 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=33 type=5 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.174036 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.174050 3074366 prediction_component.cc:331] Prediction end to end time: 3.38315 ms.
+I0709 19:33:02.271982 3074367 obstacles_container.cc:245] Refresh obstacle [33]
+I0709 19:33:02.272034 3074367 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:02.274040 3074367 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=33 type=5 pos_x=83.5604 pos_y=-127.639 theta=1.44957 vel_x=-0 vel_y=0
+I0709 19:33:02.274070 3074367 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.324 pos_y=-127.438 theta=0.386744 vel_x=0 vel_y=0
+I0709 19:33:02.274080 3074367 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=33 type=5 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.274088 3074367 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.274096 3074367 prediction_component.cc:331] Prediction end to end time: 2.58247 ms.
+I0709 19:33:02.369867 3074358 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:02.373152 3074358 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.37 pos_y=-127.416 theta=1.11247 vel_x=-0 vel_y=-0
+I0709 19:33:02.373203 3074358 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.373222 3074358 prediction_component.cc:331] Prediction end to end time: 3.74434 ms.
+I0709 19:33:02.468173 3074366 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:02.470116 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.331 pos_y=-127.436 theta=0.981646 vel_x=0 vel_y=0
+I0709 19:33:02.470176 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.470189 3074366 prediction_component.cc:331] Prediction end to end time: 2.31849 ms.
+I0709 19:33:02.565641 3074365 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:02.569312 3074365 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.35 pos_y=-127.425 theta=0.384338 vel_x=-0 vel_y=-0
+I0709 19:33:02.569351 3074365 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.569373 3074365 prediction_component.cc:331] Prediction end to end time: 4.58844 ms.
+I0709 19:33:02.670632 3074372 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:02.672405 3074372 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.35 pos_y=-127.425 theta=0.153275 vel_x=0 vel_y=0
+I0709 19:33:02.672454 3074372 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.672467 3074372 prediction_component.cc:331] Prediction end to end time: 2.41603 ms.
+I0709 19:33:02.779817 3074370 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:02.784795 3074370 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.351 pos_y=-127.426 theta=0.666425 vel_x=0 vel_y=0
+I0709 19:33:02.784853 3074370 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.784878 3074370 prediction_component.cc:331] Prediction end to end time: 5.80318 ms.
+I0709 19:33:02.868158 3074357 obstacles_container.cc:257] Insert obstacle [35]
+I0709 19:33:02.873301 3074357 evaluator_manager.cc:83] Ignore still obstacle [35]
+I0709 19:33:02.873481 3074357 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=35 type=0 pos_x=130.927 pos_y=-133.185 theta=-2.8461 vel_x=-0.222188 vel_y=-0.0688015
+I0709 19:33:02.873536 3074357 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=35 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:02.873562 3074357 prediction_component.cc:331] Prediction end to end time: 6.41445 ms.
+I0709 19:33:02.999529 3074371 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:02.999655 3074371 obstacles_container.cc:245] Refresh obstacle [35]
+I0709 19:33:03.002404 3074371 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.357 pos_y=-127.422 theta=0.576717 vel_x=-0 vel_y=-0
+I0709 19:33:03.002453 3074371 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=35 type=0 pos_x=130.927 pos_y=-133.185 theta=-2.87384 vel_x=-0.11924 vel_y=-0.0327059
+I0709 19:33:03.002476 3074371 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:03.002501 3074371 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=35 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:03.002521 3074371 prediction_component.cc:331] Prediction end to end time: 3.84127 ms.
+I0709 19:33:03.102552 3074363 obstacles_container.cc:245] Refresh obstacle [35]
+I0709 19:33:03.105443 3074363 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=35 type=0 pos_x=130.948 pos_y=-133.185 theta=2.22045e-16 vel_x=-0 vel_y=-0
+I0709 19:33:03.105504 3074363 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=35 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:03.105530 3074363 prediction_component.cc:331] Prediction end to end time: 3.83733 ms.
+I0709 19:33:03.169457 3074365 obstacles_container.cc:245] Refresh obstacle [35]
+I0709 19:33:03.172086 3074365 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=35 type=0 pos_x=131.1 pos_y=-133.186 theta=1.27667 vel_x=0.0865484 vel_y=0.282686
+I0709 19:33:03.172135 3074365 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=35 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:03.172152 3074365 prediction_component.cc:331] Prediction end to end time: 3.61477 ms.
+I0709 19:33:03.265067 3074358 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:03.273206 3074358 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.351 pos_y=-127.426 theta=0.819425 vel_x=0 vel_y=0
+I0709 19:33:03.273259 3074358 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:03.273284 3074358 prediction_component.cc:331] Prediction end to end time: 9.06981 ms.
+I0709 19:33:03.366515 3074359 prediction_component.cc:331] Prediction end to end time: 3.47355 ms.
+I0709 19:33:03.465837 3074363 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:03.467856 3074363 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.357 pos_y=-127.422 theta=0.323072 vel_x=-0 vel_y=-0
+I0709 19:33:03.467890 3074363 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:03.467903 3074363 prediction_component.cc:331] Prediction end to end time: 2.94279 ms.
+I0709 19:33:03.563180 3074372 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:03.565277 3074372 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.351 pos_y=-127.426 theta=0.844106 vel_x=0 vel_y=0
+I0709 19:33:03.565315 3074372 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:03.565328 3074372 prediction_component.cc:331] Prediction end to end time: 2.89453 ms.
+I0709 19:33:03.682337 3074359 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:03.687455 3074359 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.355 pos_y=-127.433 theta=0.386562 vel_x=-0 vel_y=0
+I0709 19:33:03.687505 3074359 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:03.687527 3074359 prediction_component.cc:331] Prediction end to end time: 6.17307 ms.
+I0709 19:33:03.776531 3074360 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:03.779211 3074360 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.426 pos_y=-127.437 theta=0.188479 vel_x=-0 vel_y=-0
+I0709 19:33:03.779260 3074360 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:03.779284 3074360 prediction_component.cc:331] Prediction end to end time: 3.59637 ms.
+I0709 19:33:03.884006 3074358 obstacles_container.cc:245] Refresh obstacle [34]
+I0709 19:33:03.886790 3074358 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=34 type=0 pos_x=118.56 pos_y=-127.422 theta=0.075355 vel_x=-0 vel_y=-0
+I0709 19:33:03.886842 3074358 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=34 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:03.886865 3074358 prediction_component.cc:331] Prediction end to end time: 3.70674 ms.
+I0709 19:33:04.072324 3074370 prediction_component.cc:331] Prediction end to end time: 3.44104 ms.
+I0709 19:33:04.235532 3074369 prediction_component.cc:331] Prediction end to end time: 3.069 ms.
+I0709 19:33:04.311589 3074372 prediction_component.cc:331] Prediction end to end time: 2.28336 ms.
+I0709 19:33:04.388099 3074364 prediction_component.cc:331] Prediction end to end time: 2.29293 ms.
+I0709 19:33:04.469509 3074365 prediction_component.cc:331] Prediction end to end time: 5.64721 ms.
+I0709 19:33:04.643090 3074369 prediction_component.cc:331] Prediction end to end time: 2.25942 ms.
+I0709 19:33:04.835104 3074367 prediction_component.cc:331] Prediction end to end time: 3.85647 ms.
+I0709 19:33:05.026640 3074360 prediction_component.cc:331] Prediction end to end time: 2.53434 ms.
+I0709 19:33:05.193154 3074363 prediction_component.cc:331] Prediction end to end time: 2.58167 ms.
+I0709 19:33:05.356976 3074360 obstacles_container.cc:257] Insert obstacle [39]
+I0709 19:33:05.358925 3074360 evaluator_manager.cc:83] Ignore still obstacle [39]
+I0709 19:33:05.359104 3074360 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=39 type=0 pos_x=131.58 pos_y=-133.88 theta=0.712464 vel_x=0.328143 vel_y=0.286841
+I0709 19:33:05.359146 3074360 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=39 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:05.359164 3074360 prediction_component.cc:331] Prediction end to end time: 2.89985 ms.
+I0709 19:33:05.526650 3074368 prediction_component.cc:331] Prediction end to end time: 2.40371 ms.
+I0709 19:33:05.701117 3074372 prediction_component.cc:331] Prediction end to end time: 3.89605 ms.
+I0709 19:33:05.872901 3074366 prediction_component.cc:331] Prediction end to end time: 2.33939 ms.
+I0709 19:33:06.047533 3074365 prediction_component.cc:331] Prediction end to end time: 2.47104 ms.
+I0709 19:33:06.218916 3074363 prediction_component.cc:331] Prediction end to end time: 2.33977 ms.
+I0709 19:33:06.388891 3074365 prediction_component.cc:331] Prediction end to end time: 2.52256 ms.
+I0709 19:33:06.564538 3074358 prediction_component.cc:331] Prediction end to end time: 4.01276 ms.
+I0709 19:33:06.642807 3074357 prediction_component.cc:331] Prediction end to end time: 2.35638 ms.
+I0709 19:33:06.723542 3074365 prediction_component.cc:331] Prediction end to end time: 2.27993 ms.
+I0709 19:33:06.898029 3074364 obstacles_container.cc:257] Insert obstacle [46]
+I0709 19:33:06.901204 3074364 evaluator_manager.cc:83] Ignore still obstacle [46]
+I0709 19:33:06.901373 3074364 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=46 type=3 pos_x=98.7945 pos_y=-123.004 theta=2.6531 vel_x=0 vel_y=0
+I0709 19:33:06.901404 3074364 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=46 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:06.901415 3074364 prediction_component.cc:331] Prediction end to end time: 4.06149 ms.
+I0709 19:33:06.980216 3074359 prediction_component.cc:331] Prediction end to end time: 4.10745 ms.
+I0709 19:33:07.056401 3074372 obstacles_container.cc:245] Refresh obstacle [46]
+I0709 19:33:07.058467 3074372 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=46 type=3 pos_x=99.032 pos_y=-122.753 theta=2.67777 vel_x=-0 vel_y=-0
+I0709 19:33:07.058513 3074372 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=46 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:07.058528 3074372 prediction_component.cc:331] Prediction end to end time: 2.87431 ms.
+I0709 19:33:07.136143 3074367 obstacles_container.cc:245] Refresh obstacle [46]
+I0709 19:33:07.140777 3074367 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=46 type=3 pos_x=98.7104 pos_y=-122.894 theta=2.24069 vel_x=0 vel_y=0
+I0709 19:33:07.140826 3074367 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=46 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:07.140844 3074367 prediction_component.cc:331] Prediction end to end time: 5.49742 ms.
+I0709 19:33:07.216324 3074360 obstacles_container.cc:257] Insert obstacle [48]
+I0709 19:33:07.218613 3074360 evaluator_manager.cc:83] Ignore still obstacle [48]
+I0709 19:33:07.218853 3074360 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=48 type=3 pos_x=101.072 pos_y=-135.777 theta=3.01324 vel_x=0 vel_y=-0
+I0709 19:33:07.218890 3074360 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=48 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:07.218910 3074360 prediction_component.cc:331] Prediction end to end time: 3.38785 ms.
+I0709 19:33:07.296476 3074366 obstacles_container.cc:257] Insert obstacle [47]
+I0709 19:33:07.296519 3074366 obstacles_container.cc:245] Refresh obstacle [48]
+I0709 19:33:07.298756 3074366 evaluator_manager.cc:83] Ignore still obstacle [47]
+I0709 19:33:07.299011 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=47 type=5 pos_x=141.067 pos_y=-132.754 theta=1.02269 vel_x=-0 vel_y=-0
+I0709 19:33:07.299047 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=48 type=3 pos_x=101.278 pos_y=-135.805 theta=3.09065 vel_x=-0 vel_y=0
+I0709 19:33:07.299063 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=47 type=5 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:07.299079 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=48 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:07.299096 3074366 prediction_component.cc:331] Prediction end to end time: 3.43934 ms.
+I0709 19:33:07.381305 3074367 prediction_component.cc:331] Prediction end to end time: 6.76006 ms.
+I0709 19:33:07.453390 3074360 obstacles_container.cc:245] Refresh obstacle [48]
+I0709 19:33:07.455523 3074360 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=48 type=3 pos_x=101.262 pos_y=-135.983 theta=-3.10922 vel_x=0 vel_y=0
+I0709 19:33:07.455557 3074360 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=48 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:07.455572 3074360 prediction_component.cc:331] Prediction end to end time: 2.8578 ms.
+I0709 19:33:07.536074 3074369 prediction_component.cc:331] Prediction end to end time: 2.58746 ms.
+I0709 19:33:07.614379 3074371 obstacles_container.cc:245] Refresh obstacle [48]
+I0709 19:33:07.616281 3074371 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=48 type=3 pos_x=101.147 pos_y=-135.797 theta=-3.12822 vel_x=0 vel_y=-0
+I0709 19:33:07.616338 3074371 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=48 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:07.616350 3074371 prediction_component.cc:331] Prediction end to end time: 2.65059 ms.
+I0709 19:33:07.693972 3074366 prediction_component.cc:331] Prediction end to end time: 2.44445 ms.
+I0709 19:33:07.770576 3074361 obstacles_container.cc:245] Refresh obstacle [48]
+I0709 19:33:07.772590 3074361 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=48 type=3 pos_x=101.211 pos_y=-135.955 theta=-2.87807 vel_x=-0 vel_y=0
+I0709 19:33:07.772629 3074361 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=48 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:07.772640 3074361 prediction_component.cc:331] Prediction end to end time: 2.63363 ms.
+I0709 19:33:07.850533 3074367 prediction_component.cc:331] Prediction end to end time: 2.42826 ms.
+I0709 19:33:07.934798 3074357 prediction_component.cc:331] Prediction end to end time: 2.45165 ms.
+I0709 19:33:08.017117 3074365 prediction_component.cc:331] Prediction end to end time: 5.10464 ms.
+I0709 19:33:08.094133 3074362 prediction_component.cc:331] Prediction end to end time: 3.1355 ms.
+I0709 19:33:08.172654 3074357 prediction_component.cc:331] Prediction end to end time: 3.7549 ms.
+I0709 19:33:08.248981 3074362 obstacles_container.cc:257] Insert obstacle [50]
+I0709 19:33:08.252118 3074362 evaluator_manager.cc:83] Ignore still obstacle [50]
+I0709 19:33:08.252262 3074362 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=50 type=0 pos_x=98.976 pos_y=-122.905 theta=1.79999 vel_x=0 vel_y=0
+I0709 19:33:08.252286 3074362 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=50 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:08.252296 3074362 prediction_component.cc:331] Prediction end to end time: 4.08508 ms.
+I0709 19:33:08.337321 3074367 prediction_component.cc:331] Prediction end to end time: 2.35674 ms.
+I0709 19:33:08.417178 3074369 prediction_component.cc:331] Prediction end to end time: 3.40894 ms.
+I0709 19:33:08.497185 3074372 prediction_component.cc:331] Prediction end to end time: 3.37416 ms.
+I0709 19:33:08.585422 3074367 prediction_component.cc:331] Prediction end to end time: 2.38326 ms.
+I0709 19:33:08.665141 3074362 prediction_component.cc:331] Prediction end to end time: 3.78434 ms.
+I0709 19:33:08.742413 3074363 prediction_component.cc:331] Prediction end to end time: 2.30672 ms.
+I0709 19:33:08.820964 3074368 prediction_component.cc:331] Prediction end to end time: 2.42294 ms.
+I0709 19:33:08.898311 3074359 obstacles_container.cc:257] Insert obstacle [53]
+I0709 19:33:08.900102 3074359 evaluator_manager.cc:83] Ignore still obstacle [53]
+I0709 19:33:08.900336 3074359 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=53 type=5 pos_x=163.528 pos_y=-133.324 theta=-0.00889118 vel_x=-0 vel_y=0
+I0709 19:33:08.900363 3074359 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=53 type=5 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:08.900375 3074359 prediction_component.cc:331] Prediction end to end time: 2.72439 ms.
+I0709 19:33:08.975696 3074370 obstacles_container.cc:257] Insert obstacle [52]
+I0709 19:33:08.977885 3074370 evaluator_manager.cc:83] Ignore still obstacle [52]
+I0709 19:33:08.978137 3074370 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=52 type=3 pos_x=98.9165 pos_y=-122.919 theta=1.9641 vel_x=0 vel_y=0
+I0709 19:33:08.978180 3074370 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=52 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:08.978199 3074370 prediction_component.cc:331] Prediction end to end time: 3.28936 ms.
+I0709 19:33:09.053705 3074369 obstacles_container.cc:245] Refresh obstacle [52]
+I0709 19:33:09.059022 3074369 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=52 type=3 pos_x=98.9701 pos_y=-122.703 theta=1.84937 vel_x=-0 vel_y=-0
+I0709 19:33:09.059087 3074369 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=52 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:09.059109 3074369 prediction_component.cc:331] Prediction end to end time: 6.39615 ms.
+I0709 19:33:09.134235 3074362 prediction_component.cc:331] Prediction end to end time: 3.39141 ms.
+I0709 19:33:09.208899 3074367 obstacles_container.cc:245] Refresh obstacle [52]
+I0709 19:33:09.211798 3074367 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=52 type=3 pos_x=98.6514 pos_y=-122.974 theta=2.27279 vel_x=0 vel_y=0
+I0709 19:33:09.211851 3074367 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=52 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:09.211879 3074367 prediction_component.cc:331] Prediction end to end time: 3.83656 ms.
+I0709 19:33:09.286794 3074364 obstacles_container.cc:245] Refresh obstacle [52]
+I0709 19:33:09.289446 3074364 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=52 type=3 pos_x=99.0241 pos_y=-122.914 theta=2.79935 vel_x=-0 vel_y=-0
+I0709 19:33:09.289508 3074364 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=52 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:09.289528 3074364 prediction_component.cc:331] Prediction end to end time: 3.67125 ms.
+I0709 19:33:09.366676 3074369 prediction_component.cc:331] Prediction end to end time: 2.43974 ms.
+I0709 19:33:09.445255 3074362 prediction_component.cc:331] Prediction end to end time: 2.38829 ms.
+I0709 19:33:09.523324 3074365 prediction_component.cc:331] Prediction end to end time: 2.6818 ms.
+I0709 19:33:09.600396 3074370 prediction_component.cc:331] Prediction end to end time: 2.30051 ms.
+I0709 19:33:09.676832 3074364 prediction_component.cc:331] Prediction end to end time: 2.33926 ms.
+I0709 19:33:09.751277 3074366 obstacles_container.cc:257] Insert obstacle [56]
+I0709 19:33:09.751330 3074366 obstacles_prioritizer.cc:164] Ignore obstacle [56] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:09.753319 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=56 type=3 pos_x=118.581 pos_y=-127.317 theta=1.68185 vel_x=-0 vel_y=-0
+I0709 19:33:09.753343 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=56 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:09.753355 3074366 prediction_component.cc:331] Prediction end to end time: 2.70877 ms.
+I0709 19:33:09.829365 3074358 prediction_component.cc:331] Prediction end to end time: 2.32729 ms.
+I0709 19:33:09.904006 3074368 obstacles_container.cc:245] Refresh obstacle [56]
+I0709 19:33:09.904057 3074368 obstacles_prioritizer.cc:164] Ignore obstacle [56] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:09.906033 3074368 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=56 type=3 pos_x=118.708 pos_y=-127.322 theta=1.59864 vel_x=-0 vel_y=0
+I0709 19:33:09.906071 3074368 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=56 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:09.906083 3074368 prediction_component.cc:331] Prediction end to end time: 2.68036 ms.
+I0709 19:33:09.983801 3074364 prediction_component.cc:331] Prediction end to end time: 2.55242 ms.
+I0709 19:33:10.060381 3074369 prediction_component.cc:331] Prediction end to end time: 2.35581 ms.
+I0709 19:33:10.136518 3074365 obstacles_container.cc:245] Refresh obstacle [56]
+I0709 19:33:10.136569 3074365 obstacles_prioritizer.cc:164] Ignore obstacle [56] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:10.138738 3074365 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=56 type=3 pos_x=118.396 pos_y=-127.46 theta=1.16337 vel_x=0 vel_y=0
+I0709 19:33:10.138796 3074365 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=56 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:10.138814 3074365 prediction_component.cc:331] Prediction end to end time: 2.91421 ms.
+I0709 19:33:10.215868 3074370 prediction_component.cc:331] Prediction end to end time: 2.30867 ms.
+I0709 19:33:10.293080 3074357 prediction_component.cc:331] Prediction end to end time: 2.33322 ms.
+I0709 19:33:10.372905 3074366 prediction_component.cc:331] Prediction end to end time: 3.74213 ms.
+I0709 19:33:10.448809 3074367 prediction_component.cc:331] Prediction end to end time: 2.30675 ms.
+I0709 19:33:10.529279 3074369 prediction_component.cc:331] Prediction end to end time: 5.8138 ms.
+I0709 19:33:10.605275 3074368 prediction_component.cc:331] Prediction end to end time: 4.00386 ms.
+I0709 19:33:10.677920 3074367 obstacles_container.cc:257] Insert obstacle [60]
+I0709 19:33:10.679646 3074367 evaluator_manager.cc:83] Ignore still obstacle [60]
+I0709 19:33:10.679826 3074367 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=60 type=0 pos_x=86.15 pos_y=-134.62 theta=-0.00554466 vel_x=-0 vel_y=0
+I0709 19:33:10.679855 3074367 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=60 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:10.679867 3074367 prediction_component.cc:331] Prediction end to end time: 2.72477 ms.
+I0709 19:33:10.777729 3074360 prediction_component.cc:331] Prediction end to end time: 3.72888 ms.
+I0709 19:33:10.875737 3074366 obstacles_container.cc:257] Insert obstacle [62]
+I0709 19:33:10.875782 3074366 obstacles_prioritizer.cc:164] Ignore obstacle [62] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:10.877635 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=62 type=0 pos_x=118.41 pos_y=-127.461 theta=0.0505616 vel_x=0 vel_y=0
+I0709 19:33:10.877672 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=62 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:10.877686 3074366 prediction_component.cc:331] Prediction end to end time: 2.62544 ms.
+I0709 19:33:10.990921 3074369 prediction_component.cc:331] Prediction end to end time: 4.68064 ms.
+I0709 19:33:11.081074 3074367 prediction_component.cc:331] Prediction end to end time: 4.36566 ms.
+I0709 19:33:11.181422 3074372 prediction_component.cc:331] Prediction end to end time: 2.5873 ms.
+I0709 19:33:11.280905 3074361 prediction_component.cc:331] Prediction end to end time: 2.89773 ms.
+I0709 19:33:11.381637 3074366 prediction_component.cc:331] Prediction end to end time: 2.28102 ms.
+I0709 19:33:11.484937 3074371 prediction_component.cc:331] Prediction end to end time: 3.78127 ms.
+I0709 19:33:11.587343 3074366 prediction_component.cc:331] Prediction end to end time: 2.5464 ms.
+I0709 19:33:11.687320 3074372 prediction_component.cc:331] Prediction end to end time: 3.67736 ms.
+I0709 19:33:11.775601 3074371 prediction_component.cc:331] Prediction end to end time: 2.2286 ms.
+I0709 19:33:11.876525 3074368 prediction_component.cc:331] Prediction end to end time: 2.42669 ms.
+I0709 19:33:11.977715 3074366 prediction_component.cc:331] Prediction end to end time: 2.73616 ms.
+I0709 19:33:12.088408 3074369 prediction_component.cc:331] Prediction end to end time: 3.2011 ms.
+I0709 19:33:12.181111 3074367 prediction_component.cc:331] Prediction end to end time: 2.63431 ms.
+I0709 19:33:12.306733 3074360 prediction_component.cc:331] Prediction end to end time: 2.34794 ms.
+I0709 19:33:12.384956 3074370 prediction_component.cc:331] Prediction end to end time: 2.21308 ms.
+I0709 19:33:12.485242 3074371 prediction_component.cc:331] Prediction end to end time: 3.86264 ms.
+I0709 19:33:12.581053 3074361 prediction_component.cc:331] Prediction end to end time: 3.99141 ms.
+I0709 19:33:12.681174 3074358 prediction_component.cc:331] Prediction end to end time: 2.21181 ms.
+I0709 19:33:12.776700 3074363 prediction_component.cc:331] Prediction end to end time: 2.26806 ms.
+I0709 19:33:12.877941 3074365 prediction_component.cc:331] Prediction end to end time: 2.40685 ms.
+I0709 19:33:12.978165 3074364 prediction_component.cc:331] Prediction end to end time: 3.29771 ms.
+I0709 19:33:13.081301 3074362 prediction_component.cc:331] Prediction end to end time: 4.20146 ms.
+I0709 19:33:13.178007 3074358 prediction_component.cc:331] Prediction end to end time: 2.73879 ms.
+I0709 19:33:13.278574 3074363 prediction_component.cc:331] Prediction end to end time: 2.72212 ms.
+I0709 19:33:13.379570 3074358 prediction_component.cc:331] Prediction end to end time: 2.64061 ms.
+I0709 19:33:13.491168 3074368 prediction_component.cc:331] Prediction end to end time: 4.12031 ms.
+I0709 19:33:13.581064 3074366 prediction_component.cc:331] Prediction end to end time: 2.21555 ms.
+I0709 19:33:13.684448 3074360 prediction_component.cc:331] Prediction end to end time: 2.43568 ms.
+I0709 19:33:13.776921 3074364 prediction_component.cc:331] Prediction end to end time: 2.29331 ms.
+I0709 19:33:13.878904 3074360 prediction_component.cc:331] Prediction end to end time: 2.24256 ms.
+I0709 19:33:13.981949 3074357 prediction_component.cc:331] Prediction end to end time: 2.56765 ms.
+I0709 19:33:14.085216 3074360 prediction_component.cc:331] Prediction end to end time: 4.94502 ms.
+I0709 19:33:14.184741 3074366 prediction_component.cc:331] Prediction end to end time: 2.4071 ms.
+I0709 19:33:14.281104 3074360 prediction_component.cc:331] Prediction end to end time: 2.4032 ms.
+I0709 19:33:14.387641 3074367 prediction_component.cc:331] Prediction end to end time: 2.43354 ms.
+I0709 19:33:14.481427 3074364 prediction_component.cc:331] Prediction end to end time: 2.33107 ms.
+I0709 19:33:14.580432 3074360 prediction_component.cc:331] Prediction end to end time: 2.44762 ms.
+I0709 19:33:14.686568 3074371 prediction_component.cc:331] Prediction end to end time: 2.50448 ms.
+I0709 19:33:14.881762 3074367 prediction_component.cc:331] Prediction end to end time: 4.00623 ms.
+I0709 19:33:15.056516 3074372 prediction_component.cc:331] Prediction end to end time: 4.2839 ms.
+I0709 19:33:15.226619 3074363 prediction_component.cc:331] Prediction end to end time: 2.49258 ms.
+I0709 19:33:15.305878 3074361 prediction_component.cc:331] Prediction end to end time: 2.74724 ms.
+I0709 19:33:15.478672 3074367 prediction_component.cc:331] Prediction end to end time: 2.47629 ms.
+I0709 19:33:15.661341 3074357 prediction_component.cc:331] Prediction end to end time: 6.67724 ms.
+I0709 19:33:15.831187 3074368 prediction_component.cc:331] Prediction end to end time: 4.06038 ms.
+I0709 19:33:16.002849 3074371 prediction_component.cc:331] Prediction end to end time: 2.3153 ms.
+I0709 19:33:16.079416 3074359 obstacles_container.cc:257] Insert obstacle [68]
+I0709 19:33:16.079465 3074359 obstacles_prioritizer.cc:164] Ignore obstacle [68] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:16.081264 3074359 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=68 type=3 pos_x=178.089 pos_y=-135.781 theta=2.41317 vel_x=-0 vel_y=0
+I0709 19:33:16.081300 3074359 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=68 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:16.081311 3074359 prediction_component.cc:331] Prediction end to end time: 2.50765 ms.
+I0709 19:33:16.159548 3074367 prediction_component.cc:331] Prediction end to end time: 2.64084 ms.
+I0709 19:33:16.238286 3074370 prediction_component.cc:331] Prediction end to end time: 2.43507 ms.
+I0709 19:33:16.321951 3074372 prediction_component.cc:331] Prediction end to end time: 3.36513 ms.
+I0709 19:33:16.400321 3074366 prediction_component.cc:331] Prediction end to end time: 3.97561 ms.
+I0709 19:33:16.481809 3074361 prediction_component.cc:331] Prediction end to end time: 4.64838 ms.
+I0709 19:33:16.657505 3074358 prediction_component.cc:331] Prediction end to end time: 2.35248 ms.
+I0709 19:33:16.736824 3074363 prediction_component.cc:331] Prediction end to end time: 2.41328 ms.
+I0709 19:33:16.913455 3074366 prediction_component.cc:331] Prediction end to end time: 4.732 ms.
+I0709 19:33:17.088660 3074358 prediction_component.cc:331] Prediction end to end time: 6.46246 ms.
+I0709 19:33:17.261456 3074364 prediction_component.cc:331] Prediction end to end time: 7.16154 ms.
+I0709 19:33:17.446463 3074367 prediction_component.cc:331] Prediction end to end time: 3.61141 ms.
+I0709 19:33:17.522068 3074369 obstacles_container.cc:257] Insert obstacle [72]
+I0709 19:33:17.522115 3074369 obstacles_prioritizer.cc:164] Ignore obstacle [72] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:17.525286 3074369 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=72 type=3 pos_x=178.203 pos_y=-135.765 theta=1.76669 vel_x=0 vel_y=0
+I0709 19:33:17.525333 3074369 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=72 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:17.525344 3074369 prediction_component.cc:331] Prediction end to end time: 3.87289 ms.
+I0709 19:33:17.605456 3074362 obstacles_container.cc:245] Refresh obstacle [72]
+I0709 19:33:17.605504 3074362 obstacles_prioritizer.cc:164] Ignore obstacle [72] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:17.607926 3074362 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=72 type=3 pos_x=178.238 pos_y=-135.83 theta=1.66698 vel_x=-0 vel_y=0
+I0709 19:33:17.607966 3074362 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=72 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:17.607978 3074362 prediction_component.cc:331] Prediction end to end time: 3.27352 ms.
+I0709 19:33:17.685953 3074366 obstacles_container.cc:245] Refresh obstacle [72]
+I0709 19:33:17.686045 3074366 obstacles_container.cc:257] Insert obstacle [73]
+I0709 19:33:17.686102 3074366 obstacles_prioritizer.cc:164] Ignore obstacle [72] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:17.686131 3074366 obstacles_prioritizer.cc:164] Ignore obstacle [73] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:17.688755 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=72 type=3 pos_x=178.298 pos_y=-135.674 theta=2.45585 vel_x=-0 vel_y=-0
+I0709 19:33:17.688795 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=73 type=5 pos_x=153.329 pos_y=-137.619 theta=1.55412 vel_x=-0 vel_y=0
+I0709 19:33:17.688803 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=72 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:17.688812 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=73 type=5 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:17.688818 3074366 prediction_component.cc:331] Prediction end to end time: 3.68792 ms.
+I0709 19:33:17.763806 3074361 obstacles_container.cc:245] Refresh obstacle [72]
+I0709 19:33:17.763868 3074361 obstacles_prioritizer.cc:164] Ignore obstacle [72] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:17.768723 3074361 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=72 type=3 pos_x=178.278 pos_y=-135.681 theta=3.08039 vel_x=0 vel_y=0
+I0709 19:33:17.768757 3074361 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=72 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:17.768767 3074361 prediction_component.cc:331] Prediction end to end time: 5.73979 ms.
+I0709 19:33:17.843487 3074367 obstacles_container.cc:245] Refresh obstacle [73]
+I0709 19:33:17.843549 3074367 obstacles_prioritizer.cc:164] Ignore obstacle [73] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:17.853586 3074367 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=73 type=5 pos_x=153.283 pos_y=-137.26 theta=0.581229 vel_x=0 vel_y=-0
+I0709 19:33:17.853646 3074367 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=73 type=5 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:17.853667 3074367 prediction_component.cc:331] Prediction end to end time: 11.0391 ms.
+I0709 19:33:17.925348 3074368 prediction_component.cc:331] Prediction end to end time: 4.92365 ms.
+I0709 19:33:18.002589 3074369 prediction_component.cc:331] Prediction end to end time: 2.97338 ms.
+I0709 19:33:18.083906 3074358 prediction_component.cc:331] Prediction end to end time: 5.76549 ms.
+I0709 19:33:18.165119 3074370 prediction_component.cc:331] Prediction end to end time: 2.58749 ms.
+I0709 19:33:18.247800 3074366 prediction_component.cc:331] Prediction end to end time: 2.43149 ms.
+I0709 19:33:18.327139 3074369 prediction_component.cc:331] Prediction end to end time: 2.4121 ms.
+I0709 19:33:18.409185 3074372 prediction_component.cc:331] Prediction end to end time: 3.11726 ms.
+I0709 19:33:18.489038 3074359 prediction_component.cc:331] Prediction end to end time: 3.27265 ms.
+I0709 19:33:18.575585 3074363 prediction_component.cc:331] Prediction end to end time: 3.05214 ms.
+I0709 19:33:18.657325 3074362 prediction_component.cc:331] Prediction end to end time: 5.42644 ms.
+I0709 19:33:18.732973 3074369 prediction_component.cc:331] Prediction end to end time: 2.63293 ms.
+I0709 19:33:18.811595 3074360 prediction_component.cc:331] Prediction end to end time: 2.71095 ms.
+I0709 19:33:18.888687 3074358 prediction_component.cc:331] Prediction end to end time: 2.41098 ms.
+I0709 19:33:18.966337 3074369 prediction_component.cc:331] Prediction end to end time: 3.22792 ms.
+I0709 19:33:19.042949 3074367 prediction_component.cc:331] Prediction end to end time: 2.72474 ms.
+I0709 19:33:19.116822 3074362 obstacles_container.cc:257] Insert obstacle [74]
+I0709 19:33:19.119067 3074362 evaluator_manager.cc:83] Ignore still obstacle [74]
+I0709 19:33:19.119304 3074362 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=74 type=3 pos_x=210.245 pos_y=-135.724 theta=2.46542 vel_x=0 vel_y=-0
+I0709 19:33:19.119341 3074362 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=74 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:19.119352 3074362 prediction_component.cc:331] Prediction end to end time: 3.31019 ms.
+I0709 19:33:19.194187 3074363 prediction_component.cc:331] Prediction end to end time: 2.84698 ms.
+I0709 19:33:19.272068 3074362 prediction_component.cc:331] Prediction end to end time: 2.37927 ms.
+I0709 19:33:19.348519 3074361 prediction_component.cc:331] Prediction end to end time: 2.95524 ms.
+I0709 19:33:19.425007 3074363 prediction_component.cc:331] Prediction end to end time: 4.23071 ms.
+I0709 19:33:19.501988 3074362 prediction_component.cc:331] Prediction end to end time: 2.27126 ms.
+I0709 19:33:19.580850 3074365 prediction_component.cc:331] Prediction end to end time: 4.13657 ms.
+I0709 19:33:19.656028 3074361 prediction_component.cc:331] Prediction end to end time: 4.24214 ms.
+I0709 19:33:19.729275 3074359 prediction_component.cc:331] Prediction end to end time: 3.52706 ms.
+I0709 19:33:19.803958 3074368 prediction_component.cc:331] Prediction end to end time: 3.76828 ms.
+I0709 19:33:19.875252 3074363 obstacles_container.cc:257] Insert obstacle [75]
+I0709 19:33:19.877241 3074363 evaluator_manager.cc:83] Ignore still obstacle [75]
+I0709 19:33:19.877405 3074363 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=75 type=0 pos_x=236.09 pos_y=-126.733 theta=0.583633 vel_x=-0 vel_y=0
+I0709 19:33:19.877434 3074363 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=75 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:19.877444 3074363 prediction_component.cc:331] Prediction end to end time: 2.85217 ms.
+I0709 19:33:19.952491 3074360 prediction_component.cc:331] Prediction end to end time: 4.41097 ms.
+I0709 19:33:20.029237 3074370 obstacles_container.cc:245] Refresh obstacle [75]
+I0709 19:33:20.031987 3074370 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=75 type=0 pos_x=236.129 pos_y=-126.955 theta=0.810773 vel_x=0 vel_y=0
+I0709 19:33:20.032037 3074370 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=75 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:20.032049 3074370 prediction_component.cc:331] Prediction end to end time: 3.55557 ms.
+I0709 19:33:20.105471 3074372 obstacles_container.cc:245] Refresh obstacle [75]
+I0709 19:33:20.107786 3074372 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=75 type=0 pos_x=236.011 pos_y=-126.908 theta=0.319692 vel_x=0 vel_y=-0
+I0709 19:33:20.107822 3074372 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=75 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:20.107833 3074372 prediction_component.cc:331] Prediction end to end time: 3.17921 ms.
+I0709 19:33:20.182927 3074367 prediction_component.cc:331] Prediction end to end time: 2.74292 ms.
+I0709 19:33:20.285362 3074361 prediction_component.cc:331] Prediction end to end time: 9.99041 ms.
+I0709 19:33:20.400012 3074371 prediction_component.cc:331] Prediction end to end time: 3.5893 ms.
+I0709 19:33:20.488528 3074363 prediction_component.cc:331] Prediction end to end time: 5.79861 ms.
+I0709 19:33:20.579094 3074365 prediction_component.cc:331] Prediction end to end time: 3.50347 ms.
+I0709 19:33:20.681334 3074369 prediction_component.cc:331] Prediction end to end time: 6.46895 ms.
+I0709 19:33:20.775969 3074362 prediction_component.cc:331] Prediction end to end time: 2.7186 ms.
+I0709 19:33:20.879272 3074357 prediction_component.cc:331] Prediction end to end time: 4.02924 ms.
+I0709 19:33:20.975509 3074359 prediction_component.cc:331] Prediction end to end time: 4.18707 ms.
+I0709 19:33:21.077539 3074362 prediction_component.cc:331] Prediction end to end time: 2.78663 ms.
+I0709 19:33:21.182924 3074360 prediction_component.cc:331] Prediction end to end time: 6.41513 ms.
+I0709 19:33:21.280866 3074363 prediction_component.cc:331] Prediction end to end time: 3.17016 ms.
+I0709 19:33:21.380357 3074372 prediction_component.cc:331] Prediction end to end time: 6.23193 ms.
+I0709 19:33:21.480840 3074359 prediction_component.cc:331] Prediction end to end time: 3.21896 ms.
+I0709 19:33:21.581553 3074358 prediction_component.cc:331] Prediction end to end time: 6.34034 ms.
+I0709 19:33:21.679800 3074372 prediction_component.cc:331] Prediction end to end time: 3.43294 ms.
+I0709 19:33:21.780222 3074357 prediction_component.cc:331] Prediction end to end time: 3.3893 ms.
+I0709 19:33:21.877743 3074371 prediction_component.cc:331] Prediction end to end time: 2.58903 ms.
+I0709 19:33:21.974699 3074370 prediction_component.cc:331] Prediction end to end time: 2.45277 ms.
+I0709 19:33:22.075342 3074362 prediction_component.cc:331] Prediction end to end time: 3.0955 ms.
+I0709 19:33:22.176720 3074372 prediction_component.cc:331] Prediction end to end time: 6.81453 ms.
+I0709 19:33:22.295825 3074357 prediction_component.cc:331] Prediction end to end time: 4.0941 ms.
+I0709 19:33:22.379354 3074361 prediction_component.cc:331] Prediction end to end time: 4.99226 ms.
+I0709 19:33:22.478858 3074372 prediction_component.cc:331] Prediction end to end time: 4.26835 ms.
+I0709 19:33:22.576357 3074364 prediction_component.cc:331] Prediction end to end time: 4.00473 ms.
+I0709 19:33:22.673748 3074360 prediction_component.cc:331] Prediction end to end time: 2.4145 ms.
+I0709 19:33:22.777500 3074365 prediction_component.cc:331] Prediction end to end time: 2.52659 ms.
+I0709 19:33:22.880209 3074367 prediction_component.cc:331] Prediction end to end time: 4.50201 ms.
+I0709 19:33:22.983618 3074368 prediction_component.cc:331] Prediction end to end time: 2.35194 ms.
+I0709 19:33:23.076738 3074360 prediction_component.cc:331] Prediction end to end time: 4.45235 ms.
+I0709 19:33:23.177011 3074368 prediction_component.cc:331] Prediction end to end time: 2.36883 ms.
+I0709 19:33:23.276825 3074365 prediction_component.cc:331] Prediction end to end time: 4.16844 ms.
+I0709 19:33:23.385910 3074361 prediction_component.cc:331] Prediction end to end time: 5.20545 ms.
+I0709 19:33:23.478109 3074366 prediction_component.cc:331] Prediction end to end time: 3.20027 ms.
+I0709 19:33:23.578506 3074369 prediction_component.cc:331] Prediction end to end time: 3.42731 ms.
+I0709 19:33:23.684087 3074360 prediction_component.cc:331] Prediction end to end time: 3.48754 ms.
+I0709 19:33:23.782711 3074369 prediction_component.cc:331] Prediction end to end time: 3.34754 ms.
+I0709 19:33:24.079306 3074362 prediction_component.cc:331] Prediction end to end time: 4.08969 ms.
+I0709 19:33:24.357419 3074359 prediction_component.cc:331] Prediction end to end time: 4.23353 ms.
+I0709 19:33:24.637058 3074358 prediction_component.cc:331] Prediction end to end time: 2.43869 ms.
+I0709 19:33:24.914841 3074363 obstacles_container.cc:257] Insert obstacle [79]
+I0709 19:33:24.914880 3074363 obstacles_prioritizer.cc:164] Ignore obstacle [79] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:24.917333 3074363 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=79 type=0 pos_x=236.502 pos_y=-126.745 theta=-1.89496 vel_x=-0 vel_y=-0
+I0709 19:33:24.917358 3074363 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=79 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:24.917368 3074363 prediction_component.cc:331] Prediction end to end time: 3.21505 ms.
+I0709 19:33:25.198194 3074369 prediction_component.cc:331] Prediction end to end time: 2.6898 ms.
+I0709 19:33:25.482831 3074363 prediction_component.cc:331] Prediction end to end time: 6.367 ms.
+I0709 19:33:25.761313 3074370 prediction_component.cc:331] Prediction end to end time: 3.35457 ms.
+I0709 19:33:26.043704 3074366 prediction_component.cc:331] Prediction end to end time: 4.20716 ms.
+I0709 19:33:26.319962 3074368 prediction_component.cc:331] Prediction end to end time: 4.25228 ms.
+I0709 19:33:26.599295 3074364 prediction_component.cc:331] Prediction end to end time: 2.6865 ms.
+I0709 19:33:26.881232 3074367 prediction_component.cc:331] Prediction end to end time: 4.88339 ms.
+I0709 19:33:27.154006 3074366 prediction_component.cc:331] Prediction end to end time: 2.32374 ms.
+I0709 19:33:27.433318 3074359 obstacles_container.cc:257] Insert obstacle [82]
+I0709 19:33:27.435523 3074359 evaluator_manager.cc:83] Ignore still obstacle [82]
+I0709 19:33:27.436712 3074359 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.038 pos_y=-133.726 theta=0.00118708 vel_x=0 vel_y=-0
+I0709 19:33:27.436748 3074359 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:27.436767 3074359 prediction_component.cc:331] Prediction end to end time: 4.32377 ms.
+I0709 19:33:27.712456 3074371 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:27.714628 3074371 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.337 pos_y=-133.728 theta=0.000979768 vel_x=-0 vel_y=0
+I0709 19:33:27.714677 3074371 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:27.714699 3074371 prediction_component.cc:331] Prediction end to end time: 2.9019 ms.
+I0709 19:33:27.998492 3074365 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:28.000979 3074365 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.04 pos_y=-133.726 theta=0.000783711 vel_x=0 vel_y=0
+I0709 19:33:28.001048 3074365 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:28.001063 3074365 prediction_component.cc:331] Prediction end to end time: 3.28004 ms.
+I0709 19:33:28.279420 3074362 prediction_component.cc:331] Prediction end to end time: 2.57773 ms.
+I0709 19:33:28.559494 3074372 prediction_component.cc:331] Prediction end to end time: 2.57943 ms.
+I0709 19:33:28.834616 3074364 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:28.838348 3074364 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.1 pos_y=-133.733 theta=0.000291116 vel_x=-0 vel_y=0
+I0709 19:33:28.838382 3074364 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:28.838392 3074364 prediction_component.cc:331] Prediction end to end time: 4.55427 ms.
+I0709 19:33:28.912557 3074366 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:28.915681 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.032 pos_y=-133.736 theta=-6.26875e-05 vel_x=0 vel_y=-0
+I0709 19:33:28.915714 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:28.915726 3074366 prediction_component.cc:331] Prediction end to end time: 3.89673 ms.
+I0709 19:33:28.990424 3074372 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:28.992913 3074372 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.315 pos_y=-132.738 theta=-0.000370329 vel_x=-0 vel_y=-0
+I0709 19:33:28.992945 3074372 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:28.992957 3074372 prediction_component.cc:331] Prediction end to end time: 3.18692 ms.
+I0709 19:33:29.074470 3074360 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:29.078986 3074360 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.158 pos_y=-132.768 theta=-0.000666064 vel_x=0 vel_y=0
+I0709 19:33:29.079025 3074360 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:29.079036 3074360 prediction_component.cc:331] Prediction end to end time: 5.28135 ms.
+I0709 19:33:29.154587 3074362 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:29.157053 3074362 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.247 pos_y=-132.792 theta=0.613402 vel_x=-0 vel_y=0
+I0709 19:33:29.157092 3074362 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:29.157102 3074362 prediction_component.cc:331] Prediction end to end time: 3.19691 ms.
+I0709 19:33:29.232856 3074364 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:29.234946 3074364 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.235 pos_y=-132.816 theta=0.242626 vel_x=0 vel_y=0
+I0709 19:33:29.235005 3074364 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:29.235023 3074364 prediction_component.cc:331] Prediction end to end time: 2.87066 ms.
+I0709 19:33:29.308602 3074358 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:29.313464 3074358 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.299 pos_y=-132.839 theta=0.0959683 vel_x=-0 vel_y=0
+I0709 19:33:29.313548 3074358 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:29.313563 3074358 prediction_component.cc:331] Prediction end to end time: 5.72549 ms.
+I0709 19:33:29.385241 3074371 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:29.387573 3074371 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.263 pos_y=-132.864 theta=0.0372495 vel_x=0 vel_y=0
+I0709 19:33:29.387606 3074371 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:29.387622 3074371 prediction_component.cc:331] Prediction end to end time: 3.1372 ms.
+I0709 19:33:29.462986 3074363 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:29.465112 3074363 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.326 pos_y=-132.887 theta=0.0135994 vel_x=-0 vel_y=-0
+I0709 19:33:29.465145 3074363 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:29.465157 3074363 prediction_component.cc:331] Prediction end to end time: 2.87351 ms.
+I0709 19:33:29.540194 3074370 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:29.544255 3074370 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.328 pos_y=-132.909 theta=0.00396868 vel_x=0 vel_y=-0
+I0709 19:33:29.544299 3074370 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:29.544313 3074370 prediction_component.cc:331] Prediction end to end time: 4.82183 ms.
+I0709 19:33:29.618489 3074365 prediction_component.cc:331] Prediction end to end time: 2.6201 ms.
+I0709 19:33:29.693316 3074361 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:29.695905 3074361 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.03 pos_y=-133.774 theta=-0.000391043 vel_x=0 vel_y=0
+I0709 19:33:29.695950 3074361 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:29.695968 3074361 prediction_component.cc:331] Prediction end to end time: 3.53291 ms.
+I0709 19:33:29.772500 3074368 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:29.775161 3074368 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.323 pos_y=-132.975 theta=-0.00230893 vel_x=-0 vel_y=-0
+I0709 19:33:29.775226 3074368 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:29.775249 3074368 prediction_component.cc:331] Prediction end to end time: 3.47829 ms.
+I0709 19:33:29.849385 3074372 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:29.853533 3074372 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.341 pos_y=-132.993 theta=0.642682 vel_x=0 vel_y=0
+I0709 19:33:29.853592 3074372 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:29.853613 3074372 prediction_component.cc:331] Prediction end to end time: 5.09009 ms.
+I0709 19:33:29.925269 3074360 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:29.928406 3074360 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.221 pos_y=-133.013 theta=0.252362 vel_x=0 vel_y=0
+I0709 19:33:29.928457 3074360 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:29.928488 3074360 prediction_component.cc:331] Prediction end to end time: 4.24899 ms.
+I0709 19:33:30.001829 3074362 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:30.004828 3074362 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.302 pos_y=-133.031 theta=0.989359 vel_x=-0 vel_y=0
+I0709 19:33:30.004884 3074362 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:30.004911 3074362 prediction_component.cc:331] Prediction end to end time: 3.96374 ms.
+I0709 19:33:30.080701 3074363 prediction_component.cc:331] Prediction end to end time: 2.83134 ms.
+I0709 19:33:30.156388 3074367 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:30.158551 3074367 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.337 pos_y=-133.066 theta=1.19041 vel_x=-0 vel_y=0
+I0709 19:33:30.158603 3074367 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:30.158617 3074367 prediction_component.cc:331] Prediction end to end time: 2.84305 ms.
+I0709 19:33:30.234910 3074358 prediction_component.cc:331] Prediction end to end time: 2.70061 ms.
+I0709 19:33:30.309906 3074371 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:30.312378 3074371 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.249 pos_y=-133.107 theta=1.28032 vel_x=0 vel_y=0
+I0709 19:33:30.312425 3074371 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:30.312448 3074371 prediction_component.cc:331] Prediction end to end time: 3.28997 ms.
+I0709 19:33:30.389186 3074372 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:30.393646 3074372 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.348 pos_y=-133.124 theta=1.12151 vel_x=0 vel_y=0
+I0709 19:33:30.393697 3074372 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:30.393725 3074372 prediction_component.cc:331] Prediction end to end time: 5.35899 ms.
+I0709 19:33:30.465240 3074365 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:30.469748 3074365 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.421 pos_y=-133.142 theta=1.38412 vel_x=0 vel_y=0
+I0709 19:33:30.469796 3074365 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:30.469823 3074365 prediction_component.cc:331] Prediction end to end time: 5.39252 ms.
+I0709 19:33:30.542546 3074358 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:30.544584 3074358 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.292 pos_y=-133.163 theta=1.32148 vel_x=0 vel_y=0
+I0709 19:33:30.544646 3074358 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:30.544660 3074358 prediction_component.cc:331] Prediction end to end time: 2.76897 ms.
+I0709 19:33:30.620767 3074365 prediction_component.cc:331] Prediction end to end time: 2.65757 ms.
+I0709 19:33:30.697387 3074358 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:30.702445 3074358 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.302 pos_y=-133.189 theta=0.502142 vel_x=0 vel_y=0
+I0709 19:33:30.702497 3074358 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:30.702512 3074358 prediction_component.cc:331] Prediction end to end time: 5.8796 ms.
+I0709 19:33:30.780706 3074367 prediction_component.cc:331] Prediction end to end time: 6.20498 ms.
+I0709 19:33:30.857404 3074369 prediction_component.cc:331] Prediction end to end time: 6.07074 ms.
+I0709 19:33:31.002571 3074372 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:31.005579 3074372 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.501 pos_y=-133.776 theta=0.19692 vel_x=0 vel_y=0
+I0709 19:33:31.005640 3074372 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:31.005668 3074372 prediction_component.cc:331] Prediction end to end time: 3.92252 ms.
+I0709 19:33:31.077705 3074370 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:31.080384 3074370 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.557 pos_y=-133.423 theta=1.1085 vel_x=0 vel_y=0
+I0709 19:33:31.080427 3074370 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:31.080446 3074370 prediction_component.cc:331] Prediction end to end time: 3.64799 ms.
+I0709 19:33:31.152187 3074362 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:31.154327 3074362 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.588 pos_y=-133.491 theta=1.37973 vel_x=0 vel_y=0
+I0709 19:33:31.154377 3074362 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:31.154390 3074362 prediction_component.cc:331] Prediction end to end time: 2.81591 ms.
+I0709 19:33:31.227447 3074360 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:31.230087 3074360 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.404 pos_y=-133.164 theta=1.54598 vel_x=0 vel_y=0
+I0709 19:33:31.230127 3074360 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:31.230137 3074360 prediction_component.cc:331] Prediction end to end time: 3.28571 ms.
+I0709 19:33:31.303629 3074357 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:31.308138 3074357 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.314 pos_y=-133.463 theta=1.50299 vel_x=0 vel_y=0
+I0709 19:33:31.308172 3074357 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:31.308184 3074357 prediction_component.cc:331] Prediction end to end time: 5.23476 ms.
+I0709 19:33:31.385373 3074359 prediction_component.cc:331] Prediction end to end time: 5.34267 ms.
+I0709 19:33:31.457568 3074360 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:31.459714 3074360 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.349 pos_y=-133.189 theta=1.37414 vel_x=0 vel_y=0
+I0709 19:33:31.459759 3074360 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:31.459774 3074360 prediction_component.cc:331] Prediction end to end time: 2.84682 ms.
+I0709 19:33:31.535303 3074363 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:31.539660 3074363 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.248 pos_y=-133.787 theta=1.48011 vel_x=0 vel_y=0
+I0709 19:33:31.539691 3074363 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:31.539702 3074363 prediction_component.cc:331] Prediction end to end time: 5.01348 ms.
+I0709 19:33:31.612782 3074364 prediction_component.cc:331] Prediction end to end time: 2.43258 ms.
+I0709 19:33:31.687044 3074360 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:31.692202 3074360 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.348 pos_y=-133.215 theta=1.50787 vel_x=0 vel_y=0
+I0709 19:33:31.692256 3074360 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:31.692276 3074360 prediction_component.cc:331] Prediction end to end time: 5.87893 ms.
+I0709 19:33:31.765434 3074359 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:31.768697 3074359 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.349 pos_y=-133.225 theta=1.36944 vel_x=0 vel_y=0
+I0709 19:33:31.768769 3074359 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:31.768802 3074359 prediction_component.cc:331] Prediction end to end time: 4.25715 ms.
+I0709 19:33:31.842438 3074365 obstacles_container.cc:245] Refresh obstacle [82]
+I0709 19:33:31.845396 3074365 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=82 type=0 pos_x=310.025 pos_y=-133.804 theta=0.518127 vel_x=0 vel_y=0
+I0709 19:33:31.845453 3074365 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=82 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:31.845467 3074365 prediction_component.cc:331] Prediction end to end time: 3.92332 ms.
+I0709 19:33:31.921064 3074364 prediction_component.cc:331] Prediction end to end time: 3.37963 ms.
+I0709 19:33:31.998186 3074365 prediction_component.cc:331] Prediction end to end time: 2.59079 ms.
+I0709 19:33:32.079977 3074372 prediction_component.cc:331] Prediction end to end time: 4.92592 ms.
+I0709 19:33:32.158512 3074363 prediction_component.cc:331] Prediction end to end time: 2.60682 ms.
+I0709 19:33:32.234872 3074369 prediction_component.cc:331] Prediction end to end time: 2.42496 ms.
+I0709 19:33:32.311955 3074366 prediction_component.cc:331] Prediction end to end time: 2.33885 ms.
+I0709 19:33:32.389212 3074371 prediction_component.cc:331] Prediction end to end time: 2.53443 ms.
+I0709 19:33:32.464870 3074372 obstacles_container.cc:257] Insert obstacle [94]
+I0709 19:33:32.464919 3074372 obstacles_container.cc:257] Insert obstacle [95]
+I0709 19:33:32.464931 3074372 obstacles_container.cc:257] Insert obstacle [96]
+I0709 19:33:32.467298 3074372 evaluator_manager.cc:83] Ignore still obstacle [94]
+I0709 19:33:32.467314 3074372 evaluator_manager.cc:83] Ignore still obstacle [95]
+I0709 19:33:32.467319 3074372 evaluator_manager.cc:83] Ignore still obstacle [96]
+I0709 19:33:32.467480 3074372 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=94 type=0 pos_x=326.867 pos_y=-139.489 theta=0.452908 vel_x=0 vel_y=-0
+I0709 19:33:32.467507 3074372 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=95 type=0 pos_x=313.459 pos_y=-135.844 theta=-1.37418 vel_x=-0 vel_y=0
+I0709 19:33:32.467515 3074372 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=96 type=3 pos_x=310.261 pos_y=-133.366 theta=1.34987 vel_x=-0 vel_y=0
+I0709 19:33:32.467522 3074372 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=94 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:32.467531 3074372 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=95 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:32.467538 3074372 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=96 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:32.467546 3074372 prediction_component.cc:331] Prediction end to end time: 3.47822 ms.
+I0709 19:33:32.541821 3074361 obstacles_container.cc:245] Refresh obstacle [94]
+I0709 19:33:32.544000 3074361 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=94 type=0 pos_x=326.881 pos_y=-139.486 theta=0.172612 vel_x=-0 vel_y=0
+I0709 19:33:32.544047 3074361 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=94 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:32.544059 3074361 prediction_component.cc:331] Prediction end to end time: 3.17428 ms.
+I0709 19:33:32.618397 3074365 obstacles_container.cc:245] Refresh obstacle [94]
+I0709 19:33:32.621435 3074365 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=94 type=0 pos_x=326.888 pos_y=-139.486 theta=0.061073 vel_x=-0 vel_y=0
+I0709 19:33:32.621488 3074365 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=94 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:32.621505 3074365 prediction_component.cc:331] Prediction end to end time: 3.97612 ms.
+I0709 19:33:32.693713 3074362 obstacles_container.cc:245] Refresh obstacle [96]
+I0709 19:33:32.696707 3074362 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=96 type=3 pos_x=310.325 pos_y=-133.395 theta=0.787164 vel_x=0 vel_y=0
+I0709 19:33:32.696753 3074362 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=96 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:32.696779 3074362 prediction_component.cc:331] Prediction end to end time: 3.93324 ms.
+I0709 19:33:32.767591 3074357 obstacles_container.cc:245] Refresh obstacle [94]
+I0709 19:33:32.773499 3074357 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=94 type=0 pos_x=326.753 pos_y=-139.481 theta=-3.12103 vel_x=-0.294942 vel_y=-0.00606597
+I0709 19:33:32.773555 3074357 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=94 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:32.773577 3074357 prediction_component.cc:331] Prediction end to end time: 6.96989 ms.
+I0709 19:33:32.842239 3074366 obstacles_container.cc:245] Refresh obstacle [94]
+I0709 19:33:32.842283 3074366 obstacles_container.cc:245] Refresh obstacle [96]
+I0709 19:33:32.845389 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=94 type=0 pos_x=326.927 pos_y=-139.488 theta=3.088 vel_x=-0.459848 vel_y=0.0241966
+I0709 19:33:32.845440 3074366 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=96 type=3 pos_x=310.278 pos_y=-133.407 theta=0.967126 vel_x=0 vel_y=0
+I0709 19:33:32.845461 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=94 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:32.845484 3074366 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=96 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:32.845510 3074366 prediction_component.cc:331] Prediction end to end time: 4.3448 ms.
+I0709 19:33:32.917786 3074369 obstacles_container.cc:245] Refresh obstacle [94]
+I0709 19:33:32.920272 3074369 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=94 type=0 pos_x=326.927 pos_y=-139.483 theta=3.03717 vel_x=-0.527044 vel_y=0.0546929
+I0709 19:33:32.920317 3074369 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=94 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:32.920351 3074369 prediction_component.cc:331] Prediction end to end time: 3.54437 ms.
+I0709 19:33:32.995311 3074372 prediction_component.cc:331] Prediction end to end time: 3.36242 ms.
+I0709 19:33:33.069229 3074367 obstacles_container.cc:245] Refresh obstacle [94]
+I0709 19:33:33.072180 3074367 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=94 type=0 pos_x=326.941 pos_y=-139.471 theta=2.97323 vel_x=-0.575629 vel_y=0.0970301
+I0709 19:33:33.072247 3074367 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=94 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:33.072273 3074367 prediction_component.cc:331] Prediction end to end time: 4.17881 ms.
+I0709 19:33:33.144493 3074370 obstacles_container.cc:245] Refresh obstacle [94]
+I0709 19:33:33.148788 3074370 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=94 type=0 pos_x=326.98 pos_y=-139.467 theta=2.94449 vel_x=-0.565894 vel_y=0.112781
+I0709 19:33:33.148844 3074370 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=94 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:33.148870 3074370 prediction_component.cc:331] Prediction end to end time: 5.5213 ms.
+I0709 19:33:33.221755 3074371 obstacles_container.cc:245] Refresh obstacle [94]
+I0709 19:33:33.221777 3074371 obstacles_container.cc:257] Insert obstacle [99]
+I0709 19:33:33.225975 3074371 evaluator_manager.cc:83] Ignore still obstacle [99]
+I0709 19:33:33.226142 3074371 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=94 type=0 pos_x=326.982 pos_y=-139.453 theta=2.77213 vel_x=-0.330896 vel_y=0.126305
+I0709 19:33:33.226162 3074371 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=99 type=3 pos_x=310.432 pos_y=-133.441 theta=0.451757 vel_x=-0 vel_y=-0
+I0709 19:33:33.226171 3074371 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=94 type=0 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:33.226178 3074371 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=99 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:33.226186 3074371 prediction_component.cc:331] Prediction end to end time: 5.23992 ms.
+I0709 19:33:33.299966 3074358 prediction_component.cc:331] Prediction end to end time: 2.41172 ms.
+I0709 19:33:33.375442 3074362 obstacles_container.cc:257] Insert obstacle [100]
+I0709 19:33:33.377344 3074362 evaluator_manager.cc:83] Ignore still obstacle [100]
+I0709 19:33:33.377550 3074362 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=100 type=3 pos_x=295.764 pos_y=-127.31 theta=1.22628 vel_x=0 vel_y=0
+I0709 19:33:33.377575 3074362 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=100 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:33.377586 3074362 prediction_component.cc:331] Prediction end to end time: 2.76442 ms.
+I0709 19:33:33.451167 3074369 obstacles_container.cc:245] Refresh obstacle [100]
+I0709 19:33:33.455684 3074369 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=100 type=3 pos_x=295.787 pos_y=-127.321 theta=1.0809 vel_x=-0 vel_y=-0
+I0709 19:33:33.455725 3074369 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=100 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:33.455739 3074369 prediction_component.cc:331] Prediction end to end time: 5.2419 ms.
+I0709 19:33:33.528707 3074366 prediction_component.cc:331] Prediction end to end time: 2.97358 ms.
+I0709 19:33:33.605331 3074365 prediction_component.cc:331] Prediction end to end time: 3.92658 ms.
+I0709 19:33:33.678989 3074363 obstacles_container.cc:245] Refresh obstacle [100]
+I0709 19:33:33.679064 3074363 obstacles_prioritizer.cc:164] Ignore obstacle [100] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:33.681713 3074363 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=100 type=3 pos_x=295.817 pos_y=-127.317 theta=0.795651 vel_x=-0 vel_y=-0
+I0709 19:33:33.681759 3074363 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=100 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:33.681780 3074363 prediction_component.cc:331] Prediction end to end time: 3.57887 ms.
+I0709 19:33:33.757870 3074362 prediction_component.cc:331] Prediction end to end time: 3.22981 ms.
+I0709 19:33:33.837661 3074362 prediction_component.cc:331] Prediction end to end time: 6.85207 ms.
+I0709 19:33:33.911693 3074358 prediction_component.cc:331] Prediction end to end time: 3.29637 ms.
+I0709 19:33:33.988453 3074361 prediction_component.cc:331] Prediction end to end time: 2.61447 ms.
+I0709 19:33:34.069412 3074371 prediction_component.cc:331] Prediction end to end time: 6.71431 ms.
+I0709 19:33:34.143942 3074365 prediction_component.cc:331] Prediction end to end time: 2.72845 ms.
+I0709 19:33:34.223610 3074362 prediction_component.cc:331] Prediction end to end time: 4.49219 ms.
+I0709 19:33:34.301249 3074369 prediction_component.cc:331] Prediction end to end time: 3.55323 ms.
+I0709 19:33:34.377740 3074364 prediction_component.cc:331] Prediction end to end time: 3.29249 ms.
+I0709 19:33:34.452243 3074371 obstacles_container.cc:257] Insert obstacle [103]
+I0709 19:33:34.452315 3074371 obstacles_prioritizer.cc:164] Ignore obstacle [103] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:34.454880 3074371 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=103 type=3 pos_x=295.814 pos_y=-127.383 theta=0.940307 vel_x=0 vel_y=0
+I0709 19:33:34.454936 3074371 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=103 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:34.454957 3074371 prediction_component.cc:331] Prediction end to end time: 3.46952 ms.
+I0709 19:33:34.531723 3074367 prediction_component.cc:331] Prediction end to end time: 4.44371 ms.
+I0709 19:33:34.607841 3074358 prediction_component.cc:331] Prediction end to end time: 2.42564 ms.
+I0709 19:33:34.685654 3074362 prediction_component.cc:331] Prediction end to end time: 2.59901 ms.
+I0709 19:33:34.765082 3074364 prediction_component.cc:331] Prediction end to end time: 2.64727 ms.
+I0709 19:33:34.847113 3074361 prediction_component.cc:331] Prediction end to end time: 4.93642 ms.
+I0709 19:33:34.923815 3074365 prediction_component.cc:331] Prediction end to end time: 2.90852 ms.
+I0709 19:33:35.004247 3074364 prediction_component.cc:331] Prediction end to end time: 2.44048 ms.
+I0709 19:33:35.082602 3074362 prediction_component.cc:331] Prediction end to end time: 2.54001 ms.
+I0709 19:33:35.164530 3074365 prediction_component.cc:331] Prediction end to end time: 4.71674 ms.
+I0709 19:33:35.242985 3074369 prediction_component.cc:331] Prediction end to end time: 2.2857 ms.
+I0709 19:33:35.321245 3074372 prediction_component.cc:331] Prediction end to end time: 2.55172 ms.
+I0709 19:33:35.400858 3074368 prediction_component.cc:331] Prediction end to end time: 2.59092 ms.
+I0709 19:33:35.479238 3074363 prediction_component.cc:331] Prediction end to end time: 3.0018 ms.
+I0709 19:33:35.557255 3074358 prediction_component.cc:331] Prediction end to end time: 2.55501 ms.
+I0709 19:33:35.635991 3074364 prediction_component.cc:331] Prediction end to end time: 2.44912 ms.
+I0709 19:33:35.714694 3074359 prediction_component.cc:331] Prediction end to end time: 2.44893 ms.
+I0709 19:33:35.792227 3074370 obstacles_container.cc:257] Insert obstacle [105]
+I0709 19:33:35.794449 3074370 evaluator_manager.cc:83] Ignore still obstacle [105]
+I0709 19:33:35.794618 3074370 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=105 type=5 pos_x=310.355 pos_y=-133.255 theta=-0.0130673 vel_x=-0 vel_y=-0
+I0709 19:33:35.794656 3074370 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=105 type=5 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:35.794673 3074370 prediction_component.cc:331] Prediction end to end time: 3.22017 ms.
+I0709 19:33:35.868603 3074358 obstacles_container.cc:245] Refresh obstacle [105]
+I0709 19:33:35.871093 3074358 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=105 type=5 pos_x=311.631 pos_y=-133.487 theta=-0.0480066 vel_x=-0 vel_y=0
+I0709 19:33:35.871197 3074358 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=105 type=5 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:35.871225 3074358 prediction_component.cc:331] Prediction end to end time: 3.30027 ms.
+I0709 19:33:35.946765 3074364 obstacles_container.cc:257] Insert obstacle [106]
+I0709 19:33:35.946844 3074364 obstacles_prioritizer.cc:164] Ignore obstacle [106] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:35.949373 3074364 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=106 type=3 pos_x=295.993 pos_y=-127.312 theta=1.50446 vel_x=-0 vel_y=-0
+I0709 19:33:35.949434 3074364 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=106 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:35.949457 3074364 prediction_component.cc:331] Prediction end to end time: 3.49858 ms.
+I0709 19:33:36.024874 3074367 obstacles_container.cc:245] Refresh obstacle [106]
+I0709 19:33:36.024951 3074367 obstacles_prioritizer.cc:164] Ignore obstacle [106] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:36.027397 3074367 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=106 type=3 pos_x=295.933 pos_y=-127.353 theta=1.63892 vel_x=0 vel_y=0
+I0709 19:33:36.027454 3074367 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=106 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:36.027480 3074367 prediction_component.cc:331] Prediction end to end time: 3.43694 ms.
+I0709 19:33:36.109375 3074366 prediction_component.cc:331] Prediction end to end time: 5.16609 ms.
+I0709 19:33:36.201296 3074366 prediction_component.cc:331] Prediction end to end time: 3.58895 ms.
+I0709 19:33:36.277298 3074370 prediction_component.cc:331] Prediction end to end time: 3.16302 ms.
+I0709 19:33:36.354437 3074367 prediction_component.cc:331] Prediction end to end time: 2.49236 ms.
+I0709 19:33:36.432410 3074372 prediction_component.cc:331] Prediction end to end time: 2.3633 ms.
+I0709 19:33:36.511395 3074366 prediction_component.cc:331] Prediction end to end time: 2.40509 ms.
+I0709 19:33:36.590408 3074361 prediction_component.cc:331] Prediction end to end time: 2.44624 ms.
+I0709 19:33:36.671775 3074369 prediction_component.cc:331] Prediction end to end time: 2.53194 ms.
+I0709 19:33:36.751224 3074359 prediction_component.cc:331] Prediction end to end time: 2.41018 ms.
+I0709 19:33:36.830045 3074363 prediction_component.cc:331] Prediction end to end time: 2.72391 ms.
+I0709 19:33:36.913389 3074357 prediction_component.cc:331] Prediction end to end time: 3.05748 ms.
+I0709 19:33:36.993511 3074371 obstacles_container.cc:257] Insert obstacle [109]
+I0709 19:33:36.993579 3074371 obstacles_prioritizer.cc:164] Ignore obstacle [109] scan=0 on_lane=0 near_junction=0 ped_front_near=0
+I0709 19:33:36.995556 3074371 prediction_component.cc:267] [PREDICTION_INPUT_OBS] time=1.7836e+09 perception_header_time=1.7836e+09 id=109 type=3 pos_x=296.002 pos_y=-127.34 theta=1.452 vel_x=-0 vel_y=0
+I0709 19:33:36.995618 3074371 prediction_component.cc:293] [PREDICTION_OUTPUT_OBS] time=1.7836e+09 prediction_header_time=0 start_timestamp=1.7836e+09 end_timestamp=1.7836e+09 id=109 type=3 traj_count=0 pred_is_static=1 pred_has_is_static=1 traj0_probability=0 traj0_point_count=0 traj0_first_t=0 traj0_last_t=0 traj0_first_x=0 traj0_first_y=0 traj0_last_x=0 traj0_last_y=0
+I0709 19:33:36.995635 3074371 prediction_component.cc:331] Prediction end to end time: 2.85051 ms.

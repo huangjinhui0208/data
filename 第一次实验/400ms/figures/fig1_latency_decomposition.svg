@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#202124}.title{font-size:22px;font-weight:700}.axis{font-size:13px;fill:#5f6368}.label{font-size:14px}.value{font-size:13px;font-weight:600}.note{font-size:12px;fill:#5f6368}.grid{stroke:#dfe3e8;stroke-width:1}.axisline{stroke:#70757a;stroke-width:1.2}</style>
+<text x="40" y="35" class="title">图 1  t₁ 到持续减速的时延分解</text>
+<line x1="95" y1="445.0" x2="965" y2="445.0" class="grid"/>
+<text x="83" y="450.0" text-anchor="end" class="axis">0</text>
+<line x1="95" y1="392.1" x2="965" y2="392.1" class="grid"/>
+<text x="83" y="397.1" text-anchor="end" class="axis">200</text>
+<line x1="95" y1="339.3" x2="965" y2="339.3" class="grid"/>
+<text x="83" y="344.3" text-anchor="end" class="axis">400</text>
+<line x1="95" y1="286.4" x2="965" y2="286.4" class="grid"/>
+<text x="83" y="291.4" text-anchor="end" class="axis">600</text>
+<line x1="95" y1="233.6" x2="965" y2="233.6" class="grid"/>
+<text x="83" y="238.6" text-anchor="end" class="axis">800</text>
+<line x1="95" y1="180.7" x2="965" y2="180.7" class="grid"/>
+<text x="83" y="185.7" text-anchor="end" class="axis">1000</text>
+<line x1="95" y1="127.9" x2="965" y2="127.9" class="grid"/>
+<text x="83" y="132.9" text-anchor="end" class="axis">1200</text>
+<line x1="95" y1="75.0" x2="965" y2="75.0" class="grid"/>
+<text x="83" y="80.0" text-anchor="end" class="axis">1400</text>
+<line x1="95" y1="75" x2="95" y2="445" class="axisline"/>
+<line x1="95" y1="445" x2="965" y2="445" class="axisline"/>
+<text x="24" y="260.0" transform="rotate(-90 24 260.0)" text-anchor="middle" class="axis">时延 (ms)</text>
+<rect x="136.0" y="374.5" width="92" height="70.5" fill="#4e79a7"/>
+<rect x="136.0" y="354.2" width="92" height="20.4" fill="#f28e2b"/>
+<text x="182.0" y="346.2" text-anchor="middle" class="value">343.7</text>
+<text x="182.0" y="471" text-anchor="middle" class="label">baseline</text>
+<rect x="310.0" y="367.5" width="92" height="77.5" fill="#4e79a7"/>
+<rect x="310.0" y="322.5" width="92" height="45.0" fill="#f28e2b"/>
+<text x="356.0" y="314.5" text-anchor="middle" class="value">463.6</text>
+<text x="356.0" y="471" text-anchor="middle" class="label">100 ms</text>
+<rect x="484.0" y="368.3" width="92" height="76.7" fill="#4e79a7"/>
+<rect x="484.0" y="270.9" width="92" height="97.4" fill="#f28e2b"/>
+<text x="530.0" y="262.9" text-anchor="middle" class="value">658.9</text>
+<text x="530.0" y="471" text-anchor="middle" class="label">300 ms</text>
+<rect x="658.0" y="363.1" width="92" height="81.9" fill="#4e79a7"/>
+<rect x="658.0" y="231.1" width="92" height="132.0" fill="#f28e2b"/>
+<text x="704.0" y="223.1" text-anchor="middle" class="value">809.3</text>
+<text x="704.0" y="471" text-anchor="middle" class="label">400 ms-1727</text>
+<rect x="832.0" y="224.0" width="92" height="221.0" fill="#4e79a7"/>
+<rect x="832.0" y="92.8" width="92" height="131.2" fill="#f28e2b"/>
+<text x="878.0" y="84.8" text-anchor="middle" class="value">1332.8</text>
+<text x="878.0" y="471" text-anchor="middle" class="label">400 ms-1739</text>
+<rect x="650" y="50" width="15" height="15" fill="#4e79a7"/><text x="672" y="63" class="label">t₁→Control</text>
+<rect x="780" y="50" width="15" height="15" fill="#f28e2b"/><text x="802" y="63" class="label">Control→持续减速</text>
+<text x="95" y="515" class="note">注：400 ms-1739 的上游段显著增大，说明该次碰撞并非只由 400 ms 注入造成。</text>
+</svg>

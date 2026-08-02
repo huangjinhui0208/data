@@ -1,0 +1,102 @@
+{
+  "selected_target_id": "154",
+  "target_source": "cli",
+  "confidence": 1.0,
+  "t2": 1783598829.3876941,
+  "pre_window": [
+    1783598824.3876941,
+    1783598829.3876941
+  ],
+  "planning_target_window": [
+    1783598826.3876941,
+    1783598830.3876941
+  ],
+  "target_post_window": [
+    1783598829.3876941,
+    1783598830.3876941
+  ],
+  "post_window": [
+    1783598829.3876941,
+    1783598830.3876941
+  ],
+  "selected_reason": "CLI --target-id was provided.",
+  "candidates": [
+    {
+      "id": "154",
+      "target_source": "cli+fusion_obs+ego_relative_kinematics",
+      "score": 1.0,
+      "score_detail": {
+        "post_collision_score": 0.0,
+        "collision_geometry_or_risk_score": 0.2,
+        "perception_continuity_score": 1.0,
+        "planning_score": 1.0,
+        "type_score": 0.4,
+        "weights": {
+          "post_collision_score": 0.35,
+          "collision_geometry_or_risk_score": 0.25,
+          "perception_continuity_score": 0.2,
+          "planning_score": 0.1,
+          "type_score": 0.1
+        },
+        "risk_score": 0.2,
+        "perception_score": 1.0
+      },
+      "planning_evidence": {
+        "from_cli": true,
+        "from_stop_id": false,
+        "from_blocking_obstacle_id": false,
+        "from_print_stop": false,
+        "first_planning_time": null,
+        "last_planning_time_before_collision": null,
+        "source_files": []
+      },
+      "perception_evidence": {
+        "exists_before_collision": true,
+        "first_seen_time": 1783598828.187754,
+        "last_seen_time_before_collision": 1783598828.987732,
+        "stable_from_first_seen_to_t2": true,
+        "position_continuity_ok": true,
+        "selected_segment_frame_count": 6,
+        "selected_segment_max_gap_sec": 0.19995594024658203,
+        "source_files": [
+          "log\\perception.log.INFO.20260709-200539.3307937"
+        ]
+      },
+      "risk_evidence": {
+        "rel_forward": -10.927266271498345,
+        "rel_left": 6.233721331770699,
+        "rel_distance": 12.580319145808598,
+        "closing_speed": -1.1263423350520816,
+        "ttc": null,
+        "source_files": [
+          "log\\perception.log.INFO.20260709-200539.3307937"
+        ]
+      },
+      "type_evidence": {
+        "vehicle_type_ratio": 0.0,
+        "unknown_movable_ratio": 0.0,
+        "unknown_ratio": 0.0,
+        "bicycle_pedestrian_ratio": 1.0,
+        "dominant_type": "PEDESTRIAN",
+        "source_files": [
+          "log\\perception.log.INFO.20260709-200539.3307937"
+        ]
+      },
+      "post_collision_evidence": {
+        "stable_same_id": false,
+        "post_collision_stable_id": null,
+        "same_physical_target_score": 0.0,
+        "post_collision_frame_count": 0,
+        "post_collision_window": [
+          1783598829.3876941,
+          1783598830.3876941
+        ],
+        "source_files": []
+      },
+      "source_files": [
+        "log\\perception.log.INFO.20260709-200539.3307937"
+      ]
+    }
+  ],
+  "warnings": []
+}

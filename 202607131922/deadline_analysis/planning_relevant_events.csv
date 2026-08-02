@@ -1,0 +1,666 @@
+﻿scenario,time,kind,object_id,tag_or_source,stop_x,stop_y,distance_s,reason_code,main_stop_reason,source_log
+E1,2026-07-13T19:23:02.364670,stop_st_boundary,2352,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:02.369349,stop_trajectory_output,,,,,,,stop by 2352,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:02.692288,stop_st_boundary,2352,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:02.697192,stop_trajectory_output,,,,,,,stop by 2352,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.411705,stop_decision,2359,PathDecider/blocking_obstacle,-6.02591,118.31,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.411819,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.414119,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.420133,stop_trajectory_output,,,,,,,stop by 2359,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.508467,stop_decision,2359,PathDecider/blocking_obstacle,-6.02591,118.31,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.508687,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.512355,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.518204,stop_trajectory_output,,,,,,,stop by 2359,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.797031,stop_decision,2359,PathDecider/blocking_obstacle,-6.02637,118.426,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.797480,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.803158,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:03.810735,stop_trajectory_output,,,,,,,stop by 2359,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.050583,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.055792,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.264313,stop_decision,2359,PathDecider/blocking_obstacle,-6.02591,118.309,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.264559,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.267460,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.271275,stop_trajectory_output,,,,,,,stop by 2359,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.558600,stop_decision,2359,PathDecider/blocking_obstacle,-6.02591,118.311,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.558800,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.564046,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.572783,stop_trajectory_output,,,,,,,stop by 2359,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.842202,stop_decision,2359,PathDecider/blocking_obstacle,-6.02591,118.311,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.842343,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.845988,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.852253,stop_trajectory_output,,,,,,,stop by 2359,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.959545,stop_decision,2359,PathDecider/blocking_obstacle,-6.02635,118.421,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.959847,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.964426,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:04.971814,stop_trajectory_output,,,,,,,stop by 2359,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.178243,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.182715,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.283010,stop_decision,2359,PathDecider/blocking_obstacle,-6.02635,118.421,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.283159,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.286648,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.294118,stop_trajectory_output,,,,,,,stop by 2359,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.572623,stop_decision,2359,PathDecider/blocking_obstacle,-6.02599,118.329,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.572899,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.576335,stop_st_boundary,2359,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.583134,stop_trajectory_output,,,,,,,stop by 2359,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.888778,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:05.895156,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:06.155578,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:06.160982,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:06.458259,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:06.463037,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:06.750839,stop_decision,2363,PathDecider/blocking_obstacle,-6.02581,118.284,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:06.750931,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:06.753544,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:06.760300,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:07.078744,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:07.086333,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:07.340832,stop_decision,2363,PathDecider/blocking_obstacle,-6.02594,118.318,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:07.340955,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:07.342725,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:07.348251,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:07.677338,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:07.683224,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:07.960220,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:07.965695,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.072389,stop_decision,2397,PathDecider/blocking_obstacle,-6.0258,118.283,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.072458,stop_st_boundary,2397,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.073989,stop_st_boundary,2397,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.079970,stop_trajectory_output,,,,,,,stop by 2397,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.182307,stop_decision,2397,PathDecider/blocking_obstacle,-6.0258,118.28,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.182471,stop_st_boundary,2397,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.184458,stop_st_boundary,2397,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.190685,stop_trajectory_output,,,,,,,stop by 2397,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.302409,stop_decision,2363,PathDecider/blocking_obstacle,-6.02626,118.4,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.302479,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.304023,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.308967,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.435381,stop_decision,2363,PathDecider/blocking_obstacle,-6.02615,118.37,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.436206,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.439499,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.450469,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.556043,stop_decision,2363,PathDecider/blocking_obstacle,-6.02632,118.415,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.556109,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.557705,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.563889,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.672012,stop_decision,2363,PathDecider/blocking_obstacle,-6.02623,118.391,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.672097,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.674100,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.680603,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.801249,stop_decision,2363,PathDecider/blocking_obstacle,-6.02622,118.388,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.801824,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.803718,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.810086,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.918900,stop_decision,2363,PathDecider/blocking_obstacle,-6.02633,118.416,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.919003,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.921123,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:08.926587,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.041898,stop_decision,2363,PathDecider/blocking_obstacle,-6.02619,118.382,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.041968,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.043596,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.049325,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.165695,stop_decision,2363,PathDecider/blocking_obstacle,-6.02575,118.27,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.165786,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.167469,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.173780,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.468161,stop_decision,2363,PathDecider/blocking_obstacle,-6.02635,118.421,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.468240,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.469806,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.475395,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.588523,stop_decision,2363,PathDecider/blocking_obstacle,-6.02634,118.42,-6,4,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.588604,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.590255,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.595883,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.741926,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.747606,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.898149,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:09.903192,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:10.011608,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:10.016692,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:10.301241,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:10.307107,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:10.628419,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:10.632169,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:10.950233,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:10.954782,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:11.244854,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:11.250221,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:11.546196,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:11.550180,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:11.674965,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:11.680253,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:11.926222,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:11.931970,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.030596,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.035940,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.170251,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.176810,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.278676,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.284041,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.381709,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.386976,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.521364,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.525346,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.657691,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.662985,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.778522,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.782429,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.904227,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:12.909929,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.004066,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.008373,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.153775,stop_st_boundary,2363,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.157739,stop_trajectory_output,,,,,,,stop by 2363,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.285475,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.290308,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.372839,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.378304,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.494114,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.498198,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.748610,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.754086,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.893898,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:13.900066,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.010411,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.015772,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.114077,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.118500,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.242949,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.247918,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.361723,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.367470,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.486264,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.492311,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.619835,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.625705,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.735777,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.742071,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.844532,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.850277,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.967478,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:14.972816,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:15.107668,stop_st_boundary,2419,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:15.113533,stop_trajectory_output,,,,,,,stop by 2419,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:15.718272,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:15.724067,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:15.861589,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:15.868012,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:15.949224,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:15.953974,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.065670,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.072875,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.179539,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.186796,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.309764,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.315364,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.405560,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.412194,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.507730,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.524555,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.641964,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.647256,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.736819,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.747123,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.861620,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.873631,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.961705,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:16.970788,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.072358,stop_st_boundary,2452,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.077560,stop_trajectory_output,,,,,,,stop by 2452,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.193288,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.198882,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.311596,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.317680,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.400264,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.421430,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.511647,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.538566,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.613165,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.619757,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.736135,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.755184,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.838348,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.867861,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.959897,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:17.969338,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.047981,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.054018,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.162103,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.170843,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.278326,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.286828,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.384047,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.418958,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.490988,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.529325,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.596350,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.600922,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.705104,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.712613,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.813037,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.851493,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.932751,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:18.971189,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.026686,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.066972,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.133495,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.173511,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.236289,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.267897,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.351020,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.356230,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.447570,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.453365,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.550594,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.557327,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.647567,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.663846,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.781380,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.805485,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.881760,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.916128,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:19.975687,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.005246,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.110618,stop_st_boundary,2470,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.115701,stop_trajectory_output,,,,,,,stop by 2470,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.193174,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.222337,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.297477,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.304657,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.408746,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.434755,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.512741,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.531858,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.605558,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.623188,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.709506,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.725685,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.819306,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.834192,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.918208,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:20.935030,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.022112,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.031214,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.118721,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.131619,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.220427,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.233183,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.326625,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.339959,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.413483,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.424743,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.526852,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.537950,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.605250,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.617489,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.706633,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.717406,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.828552,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.837741,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.904043,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:21.913129,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.004105,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.013753,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.107523,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.116771,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.201872,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.211140,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.305594,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.315810,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.419394,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.428409,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.508082,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.516496,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.597922,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.605548,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.688702,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.696273,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.798792,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.805792,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.901438,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:22.909803,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.019919,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.028179,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.102352,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.109797,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.198338,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.210522,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.318040,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.325917,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.417649,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.425097,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.511878,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.520262,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.604887,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.612639,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.685606,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.699265,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.795506,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.807746,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.906565,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.911948,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.993119,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E1,2026-07-13T19:23:23.998322,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:24.096225,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:24.101559,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:24.195771,stop_st_boundary,2508,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:24.233352,stop_trajectory_output,,,,,,,stop by 2508,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:31.414455,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:31.424870,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:31.561758,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:31.573657,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:31.667451,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:31.674496,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:31.783946,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:31.819607,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:31.902518,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:31.906519,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:32.024286,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:32.029485,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:32.155501,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:32.160491,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:32.285748,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:32.290652,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:32.594975,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:32.602886,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:32.897595,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:32.903146,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:33.022604,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:33.027009,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:33.350768,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:33.356498,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:33.656402,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:33.660876,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:33.792186,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:33.798544,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:34.095994,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:34.102988,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:34.412602,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:34.418862,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:34.553414,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:34.560369,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:34.659523,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:34.666137,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:34.807770,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:34.813570,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.041697,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.046666,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.161691,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.167443,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.298183,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.303758,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.395340,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.400187,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.509747,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.515179,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.773232,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.778839,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.872607,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.878633,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.973484,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:35.979620,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.096717,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.103261,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.208490,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.215380,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.326526,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.331473,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.430495,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.436105,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.538340,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.544831,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.656265,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.662115,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.740558,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.745932,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.847153,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.852609,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.957511,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:36.963518,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.052884,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.058066,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.161592,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.167963,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.275889,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.281373,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.390586,stop_st_boundary,2698,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.396754,stop_trajectory_output,,,,,,,stop by 2698,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.707002,stop_st_boundary,2777,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.711743,stop_trajectory_output,,,,,,,stop by 2777,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.815758,stop_st_boundary,2777,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.822575,stop_trajectory_output,,,,,,,stop by 2777,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.932109,stop_st_boundary,2777,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:37.938516,stop_trajectory_output,,,,,,,stop by 2777,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.031039,stop_st_boundary,2777,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.035125,stop_trajectory_output,,,,,,,stop by 2777,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.151294,stop_st_boundary,2777,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.156379,stop_trajectory_output,,,,,,,stop by 2777,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.264067,stop_st_boundary,2777,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.268396,stop_trajectory_output,,,,,,,stop by 2777,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.489940,stop_st_boundary,2777,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.497605,stop_trajectory_output,,,,,,,stop by 2777,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.602461,stop_st_boundary,2777,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.610169,stop_trajectory_output,,,,,,,stop by 2777,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.719671,stop_st_boundary,2777,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.726248,stop_trajectory_output,,,,,,,stop by 2777,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.820437,stop_st_boundary,2777,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:38.826792,stop_trajectory_output,,,,,,,stop by 2777,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:39.157706,stop_st_boundary,2777,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:39.163177,stop_trajectory_output,,,,,,,stop by 2777,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.047315,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.055652,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.172184,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.178610,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.273551,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.280067,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.386286,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.391736,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.514099,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.524430,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.619345,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.625131,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.743500,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.754874,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.842726,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.850255,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.974882,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:40.981719,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.076292,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.082144,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.180627,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.185163,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.297544,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.307420,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.412781,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.431036,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.534255,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.553346,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.636024,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.657666,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.762867,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.769968,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.853183,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.858587,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.983899,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:41.993541,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.088097,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.108476,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.191572,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.221318,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.301915,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.312619,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.417718,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.456077,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.525409,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.533766,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.644311,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.651916,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.756175,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.762612,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.875134,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.879387,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.978888,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:42.993744,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.100634,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.115855,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.181368,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.220031,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.314953,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.330173,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.410178,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.415562,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.535480,stop_st_boundary,2823,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.574083,stop_trajectory_output,,,,,,,stop by 2823,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.762305,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.800459,stop_trajectory_output,,,,,,,stop by 2884,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.879066,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.917292,stop_trajectory_output,,,,,,,stop by 2884,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:43.994964,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.072389,stop_trajectory_output,,,,,,,stop by 2884,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.118462,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.127784,stop_trajectory_output,,,,,,,stop by 2884,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.206139,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.212893,stop_trajectory_output,,,,,,,stop by 2884,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.320071,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.327806,stop_trajectory_output,,,,,,,stop by 2884,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.438503,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.444025,stop_trajectory_output,,,,,,,stop by 2884,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.531163,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.537436,stop_trajectory_output,,,,,,,stop by 2884,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.632090,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.637276,stop_trajectory_output,,,,,,,stop by 2884,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.756682,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.763214,stop_trajectory_output,,,,,,,stop by 2884,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.871366,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.950083,stop_trajectory_output,,,,,,,stop by 2884,planning.log.INFO.20260713-192000.389383
+E2,2026-07-13T19:23:44.994628,stop_st_boundary,2884,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.278594,stop_decision,3869,PathDecider/blocking_obstacle,-5.37508,-41.585,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.278672,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.282419,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.392460,stop_decision,3869,PathDecider/blocking_obstacle,-5.37354,-41.8903,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.392535,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.395401,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.497745,stop_decision,3869,PathDecider/blocking_obstacle,-5.3751,-41.5805,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.497815,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.500584,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.716861,stop_decision,3869,PathDecider/blocking_obstacle,-5.37508,-41.5838,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.716975,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.719760,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.828526,stop_decision,3869,PathDecider/blocking_obstacle,-5.37509,-41.583,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.828657,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.833715,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.931483,stop_decision,3869,PathDecider/blocking_obstacle,-5.3751,-41.5812,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.931562,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:39.934525,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.044786,stop_decision,3869,PathDecider/blocking_obstacle,-5.3749,-41.6203,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.044857,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.047672,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.157414,stop_decision,3869,PathDecider/blocking_obstacle,-5.37511,-41.5782,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.157509,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.160718,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.268606,stop_decision,3869,PathDecider/blocking_obstacle,-5.37502,-41.596,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.268735,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.274616,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.384902,stop_decision,3869,PathDecider/blocking_obstacle,-5.37505,-41.5908,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.384999,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.388038,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.487367,stop_decision,3869,PathDecider/blocking_obstacle,-5.37502,-41.5972,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.487438,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.490111,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.601436,stop_decision,3869,PathDecider/blocking_obstacle,-5.37513,-41.5753,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.601538,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.605198,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.704298,stop_decision,3869,PathDecider/blocking_obstacle,-5.37512,-41.5757,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.704376,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.706926,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.814719,stop_decision,3869,PathDecider/blocking_obstacle,-5.37511,-41.5794,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.814924,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.818756,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.924799,stop_decision,3869,PathDecider/blocking_obstacle,-5.37513,-41.5748,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.924906,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:40.929073,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.035190,stop_decision,3869,PathDecider/blocking_obstacle,-5.37485,-41.6294,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.035291,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.039541,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.152231,stop_decision,3869,PathDecider/blocking_obstacle,-5.37482,-41.6355,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.152560,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.158679,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.259320,stop_decision,3869,PathDecider/blocking_obstacle,-5.37344,-41.9093,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.259580,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.265991,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.371935,stop_decision,3869,PathDecider/blocking_obstacle,-5.37513,-41.5744,-6,4,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.372203,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.378139,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.512359,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.533259,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.606518,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.614797,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.706332,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.712706,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.815133,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.821026,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.925136,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:41.931980,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.034076,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.040591,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.144606,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.149837,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.250594,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.255085,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.348512,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.353542,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.463733,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.468429,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.571794,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.576828,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.688993,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.694386,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.769299,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.774240,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.870445,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.875181,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.957010,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:42.961722,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.047694,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.052520,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.138898,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.143110,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.247407,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.252024,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.327540,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.332055,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.428766,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.433460,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.518994,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.523870,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.614101,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.618839,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.696168,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.700745,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.791292,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.795655,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.879470,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.883867,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.966497,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:43.971215,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.072490,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.076143,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.171975,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.177186,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.258966,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.263706,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.358747,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.363075,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.445870,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.450529,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.544549,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.548858,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.637897,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.642357,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.728498,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.734429,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.830395,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.835366,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.899994,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.904573,stop_trajectory_output,,,,,,,stop by 3869,planning.log.INFO.20260713-192000.389383
+E3,2026-07-13T19:24:44.996407,stop_st_boundary,3869,MapStopDecision,,,,,,planning.log.INFO.20260713-192000.389383

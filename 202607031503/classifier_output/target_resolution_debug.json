@@ -1,0 +1,118 @@
+{
+  "selected_target_id": "378",
+  "target_source": "planning_blocking_obstacle",
+  "confidence": 0.7644230769230769,
+  "t2": 1783062241.5326195,
+  "pre_window": [
+    1783062236.5326195,
+    1783062241.5326195
+  ],
+  "post_window": [
+    1783062241.6326194,
+    1783062243.5326195
+  ],
+  "selected_reason": "Selected best planning/fusion candidate.",
+  "candidates": [
+    {
+      "id": "378",
+      "target_source": "planning_blocking_obstacle",
+      "score": 0.7644230769230769,
+      "score_detail": {
+        "planning_score": 0.95,
+        "risk_score": 0.9,
+        "perception_score": 0.7461538461538462,
+        "post_collision_score": 0.0
+      },
+      "planning_evidence": {
+        "from_cli": false,
+        "from_stop_id": false,
+        "from_blocking_obstacle_id": true,
+        "from_print_stop": false,
+        "first_planning_time": 1783062239.063717,
+        "last_planning_time_before_collision": 1783062240.774791,
+        "source_files": [
+          "log\\planning.log.INFO.20260703-145945.1564104"
+        ]
+      },
+      "perception_evidence": {
+        "exists_before_collision": true,
+        "first_seen_time": 1783062238.839845,
+        "last_seen_time_before_collision": 1783062240.3397,
+        "vehicle_type_ratio": 0.46153846153846156,
+        "source_files": [
+          "log\\perception.log.INFO.20260703-145953.1564121"
+        ]
+      },
+      "risk_evidence": {
+        "rel_forward": 14.716191786053079,
+        "rel_left": 0.022341581721073256,
+        "rel_distance": 14.716208745127595,
+        "closing_speed": 2.3943568454565836,
+        "ttc": 6.146205304799226,
+        "source_files": [
+          "log\\perception.log.INFO.20260703-145953.1564121"
+        ]
+      },
+      "post_collision_evidence": {
+        "stable_same_id": false,
+        "post_collision_stable_id": null,
+        "same_physical_target_score": 0.0,
+        "source_files": []
+      },
+      "source_files": [
+        "log\\perception.log.INFO.20260703-145953.1564121",
+        "log\\planning.log.INFO.20260703-145945.1564104"
+      ]
+    },
+    {
+      "id": "377",
+      "target_source": "planning_blocking_obstacle",
+      "score": 0.4875,
+      "score_detail": {
+        "planning_score": 0.95,
+        "risk_score": 0.0,
+        "perception_score": 0.4,
+        "post_collision_score": 0.0
+      },
+      "planning_evidence": {
+        "from_cli": false,
+        "from_stop_id": false,
+        "from_blocking_obstacle_id": true,
+        "from_print_stop": false,
+        "first_planning_time": 1783062238.273662,
+        "last_planning_time_before_collision": 1783062238.273662,
+        "source_files": [
+          "log\\planning.log.INFO.20260703-145945.1564104"
+        ]
+      },
+      "perception_evidence": {
+        "exists_before_collision": true,
+        "first_seen_time": 1783062238.04019,
+        "last_seen_time_before_collision": 1783062238.04019,
+        "vehicle_type_ratio": 0.0,
+        "source_files": [
+          "log\\perception.log.INFO.20260703-145953.1564121"
+        ]
+      },
+      "risk_evidence": {
+        "rel_forward": null,
+        "rel_left": null,
+        "rel_distance": null,
+        "closing_speed": null,
+        "ttc": null,
+        "source_files": []
+      },
+      "post_collision_evidence": {
+        "stable_same_id": false,
+        "post_collision_stable_id": null,
+        "same_physical_target_score": 0.0,
+        "source_files": []
+      },
+      "source_files": [
+        "log\\perception.log.INFO.20260703-145953.1564121",
+        "log\\planning.log.INFO.20260703-145945.1564104"
+      ]
+    }
+  ],
+  "warnings": []
+}

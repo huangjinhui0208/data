@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<rect width="100%" height="100%" fill="white"/>
+<text x="600.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="20">202607102138 t1-t2 E2E latency scatter</text>
+<line x1="90" y1="55" x2="90" y2="545" stroke="#333" stroke-width="1"/>
+<line x1="90" y1="545" x2="1165" y2="545" stroke="#333" stroke-width="1"/>
+<line x1="90" y1="545.00" x2="1165" y2="545.00" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80" y="549.00" text-anchor="end" font-family="sans-serif" font-size="12">0.0</text>
+<line x1="90" y1="447.00" x2="1165" y2="447.00" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80" y="451.00" text-anchor="end" font-family="sans-serif" font-size="12">35.0</text>
+<line x1="90" y1="349.00" x2="1165" y2="349.00" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80" y="353.00" text-anchor="end" font-family="sans-serif" font-size="12">69.9</text>
+<line x1="90" y1="251.00" x2="1165" y2="251.00" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80" y="255.00" text-anchor="end" font-family="sans-serif" font-size="12">104.9</text>
+<line x1="90" y1="153.00" x2="1165" y2="153.00" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80" y="157.00" text-anchor="end" font-family="sans-serif" font-size="12">139.9</text>
+<line x1="90" y1="55.00" x2="1165" y2="55.00" stroke="#e6e6e6" stroke-width="1"/>
+<text x="80" y="59.00" text-anchor="end" font-family="sans-serif" font-size="12">174.8</text>
+<line x1="90.00" y1="545" x2="90.00" y2="550" stroke="#333"/>
+<text x="90.00" y="567" text-anchor="middle" font-family="sans-serif" font-size="12">1</text>
+<line x1="305.00" y1="545" x2="305.00" y2="550" stroke="#333"/>
+<text x="305.00" y="567" text-anchor="middle" font-family="sans-serif" font-size="12">23</text>
+<line x1="520.00" y1="545" x2="520.00" y2="550" stroke="#333"/>
+<text x="520.00" y="567" text-anchor="middle" font-family="sans-serif" font-size="12">45</text>
+<line x1="735.00" y1="545" x2="735.00" y2="550" stroke="#333"/>
+<text x="735.00" y="567" text-anchor="middle" font-family="sans-serif" font-size="12">67</text>
+<line x1="950.00" y1="545" x2="950.00" y2="550" stroke="#333"/>
+<text x="950.00" y="567" text-anchor="middle" font-family="sans-serif" font-size="12">89</text>
+<line x1="1165.00" y1="545" x2="1165.00" y2="550" stroke="#333"/>
+<text x="1165.00" y="567" text-anchor="middle" font-family="sans-serif" font-size="12">111</text>
+<line x1="90" y1="152.63" x2="1165" y2="152.63" stroke="#d62728" stroke-width="1.5" stroke-dasharray="8,5"/>
+<text x="1161" y="145.63" text-anchor="end" font-family="sans-serif" font-size="12" fill="#d62728">threshold 140.000 ms</text>
+<circle cx="90.00" cy="120.45" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=1, trace=17294084154085868691, E2E=151.482 ms</title></circle>
+<circle cx="90.00" cy="120.45" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +11.482 ms, cause=prediction;planning</title></circle>
+<circle cx="99.77" cy="141.28" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=2, trace=17294084154085868692, E2E=144.050 ms</title></circle>
+<circle cx="99.77" cy="141.28" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +4.050 ms, cause=planning</title></circle>
+<circle cx="109.55" cy="167.49" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=3, trace=17294084154085868693, E2E=134.698 ms</title></circle>
+<circle cx="119.32" cy="108.81" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=4, trace=17294084154085868694, E2E=155.636 ms</title></circle>
+<circle cx="119.32" cy="108.81" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +15.636 ms, cause=planning</title></circle>
+<circle cx="129.09" cy="162.32" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=5, trace=17294084154085868695, E2E=136.541 ms</title></circle>
+<circle cx="138.86" cy="208.90" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=6, trace=17294084154085868696, E2E=119.923 ms</title></circle>
+<circle cx="148.64" cy="213.18" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=7, trace=17294084154085868697, E2E=118.394 ms</title></circle>
+<circle cx="158.41" cy="152.69" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=8, trace=17294084154085868698, E2E=139.978 ms</title></circle>
+<circle cx="168.18" cy="142.68" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=9, trace=17294084154085868699, E2E=143.550 ms</title></circle>
+<circle cx="168.18" cy="142.68" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +3.550 ms, cause=prediction;planning</title></circle>
+<circle cx="177.95" cy="179.14" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=10, trace=17294084154085868700, E2E=130.541 ms</title></circle>
+<circle cx="187.73" cy="157.29" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=11, trace=17294084154085868701, E2E=138.335 ms</title></circle>
+<circle cx="197.50" cy="189.97" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=12, trace=17294084154085868702, E2E=126.676 ms</title></circle>
+<circle cx="207.27" cy="173.39" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=13, trace=17294084154085868703, E2E=132.593 ms</title></circle>
+<circle cx="217.05" cy="175.59" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=14, trace=17294084154085868704, E2E=131.805 ms</title></circle>
+<circle cx="226.82" cy="186.00" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=15, trace=17294084154085868705, E2E=128.091 ms</title></circle>
+<circle cx="236.59" cy="221.21" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=16, trace=17294084154085868706, E2E=115.528 ms</title></circle>
+<circle cx="246.36" cy="211.57" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=17, trace=17294084154085868707, E2E=118.969 ms</title></circle>
+<circle cx="256.14" cy="239.95" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=18, trace=17294084154085868708, E2E=108.842 ms</title></circle>
+<circle cx="265.91" cy="134.12" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=19, trace=17294084154085868709, E2E=146.602 ms</title></circle>
+<circle cx="265.91" cy="134.12" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +6.602 ms, cause=planning</title></circle>
+<circle cx="275.68" cy="175.21" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=20, trace=17294084154085868710, E2E=131.942 ms</title></circle>
+<circle cx="285.45" cy="215.50" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=21, trace=17294084154085868711, E2E=117.566 ms</title></circle>
+<circle cx="295.23" cy="199.50" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=22, trace=17294084154085868712, E2E=123.277 ms</title></circle>
+<circle cx="305.00" cy="142.14" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=23, trace=17294084154085868713, E2E=143.743 ms</title></circle>
+<circle cx="305.00" cy="142.14" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +3.743 ms, cause=planning</title></circle>
+<circle cx="314.77" cy="233.55" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=24, trace=17294084154085868714, E2E=111.128 ms</title></circle>
+<circle cx="324.55" cy="132.87" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=25, trace=17294084154085868715, E2E=147.049 ms</title></circle>
+<circle cx="324.55" cy="132.87" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +7.049 ms, cause=planning</title></circle>
+<circle cx="334.32" cy="231.37" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=26, trace=17294084154085868716, E2E=111.904 ms</title></circle>
+<circle cx="344.09" cy="274.76" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=27, trace=17294084154085868717, E2E=96.423 ms</title></circle>
+<circle cx="353.86" cy="256.46" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=28, trace=17294084154085868718, E2E=102.951 ms</title></circle>
+<circle cx="363.64" cy="189.17" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=29, trace=17294084154085868719, E2E=126.961 ms</title></circle>
+<circle cx="373.41" cy="204.25" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=30, trace=17294084154085868720, E2E=121.580 ms</title></circle>
+<circle cx="383.18" cy="192.85" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=31, trace=17294084154085868721, E2E=125.648 ms</title></circle>
+<circle cx="392.95" cy="206.52" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=32, trace=17294084154085868722, E2E=120.769 ms</title></circle>
+<circle cx="402.73" cy="180.01" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=33, trace=17294084154085868723, E2E=130.229 ms</title></circle>
+<circle cx="412.50" cy="252.40" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=34, trace=17294084154085868724, E2E=104.400 ms</title></circle>
+<circle cx="422.27" cy="161.58" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=35, trace=17294084154085868725, E2E=136.806 ms</title></circle>
+<circle cx="432.05" cy="206.38" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=36, trace=17294084154085868726, E2E=120.822 ms</title></circle>
+<circle cx="441.82" cy="183.53" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=37, trace=17294084154085868727, E2E=128.973 ms</title></circle>
+<circle cx="451.59" cy="181.17" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=38, trace=17294084154085868728, E2E=129.816 ms</title></circle>
+<circle cx="461.36" cy="206.53" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=39, trace=17294084154085868729, E2E=120.768 ms</title></circle>
+<circle cx="471.14" cy="198.08" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=40, trace=17294084154085868730, E2E=123.783 ms</title></circle>
+<circle cx="480.91" cy="170.04" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=41, trace=17294084154085868731, E2E=133.789 ms</title></circle>
+<circle cx="490.68" cy="227.03" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=42, trace=17294084154085868732, E2E=113.452 ms</title></circle>
+<circle cx="500.45" cy="242.17" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=43, trace=17294084154085868733, E2E=108.051 ms</title></circle>
+<circle cx="510.23" cy="218.43" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=44, trace=17294084154085868734, E2E=116.523 ms</title></circle>
+<circle cx="520.00" cy="232.89" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=45, trace=17294084154085868735, E2E=111.362 ms</title></circle>
+<circle cx="529.77" cy="218.54" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=46, trace=17294084154085868736, E2E=116.482 ms</title></circle>
+<circle cx="539.55" cy="213.14" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=47, trace=17294084154085868737, E2E=118.410 ms</title></circle>
+<circle cx="549.32" cy="260.22" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=48, trace=17294084154085868738, E2E=101.612 ms</title></circle>
+<circle cx="559.09" cy="245.45" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=49, trace=17294084154085868739, E2E=106.881 ms</title></circle>
+<circle cx="568.86" cy="230.61" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=50, trace=17294084154085868740, E2E=112.177 ms</title></circle>
+<circle cx="578.64" cy="194.77" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=51, trace=17294084154085868741, E2E=124.963 ms</title></circle>
+<circle cx="588.41" cy="225.97" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=52, trace=17294084154085868742, E2E=113.833 ms</title></circle>
+<circle cx="598.18" cy="179.77" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=53, trace=17294084154085868743, E2E=130.315 ms</title></circle>
+<circle cx="607.95" cy="181.60" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=54, trace=17294084154085868744, E2E=129.664 ms</title></circle>
+<circle cx="617.73" cy="206.20" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=55, trace=17294084154085868745, E2E=120.885 ms</title></circle>
+<circle cx="627.50" cy="189.86" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=56, trace=17294084154085868746, E2E=126.716 ms</title></circle>
+<circle cx="637.27" cy="253.20" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=57, trace=17294084154085868747, E2E=104.116 ms</title></circle>
+<circle cx="647.05" cy="234.35" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=58, trace=17294084154085868748, E2E=110.842 ms</title></circle>
+<circle cx="656.82" cy="199.65" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=59, trace=17294084154085868749, E2E=123.222 ms</title></circle>
+<circle cx="666.59" cy="171.76" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=60, trace=17294084154085868750, E2E=133.173 ms</title></circle>
+<circle cx="676.36" cy="170.05" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=61, trace=17294084154085868751, E2E=133.782 ms</title></circle>
+<circle cx="686.14" cy="202.32" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=62, trace=17294084154085868752, E2E=122.268 ms</title></circle>
+<circle cx="695.91" cy="179.08" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=63, trace=17294084154085868753, E2E=130.560 ms</title></circle>
+<circle cx="705.68" cy="166.76" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=64, trace=17294084154085868754, E2E=134.957 ms</title></circle>
+<circle cx="715.45" cy="193.07" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=65, trace=17294084154085868755, E2E=125.570 ms</title></circle>
+<circle cx="725.23" cy="162.67" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=66, trace=17294084154085868756, E2E=136.415 ms</title></circle>
+<circle cx="735.00" cy="222.47" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=67, trace=17294084154085868757, E2E=115.080 ms</title></circle>
+<circle cx="744.77" cy="177.50" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=68, trace=17294084154085868758, E2E=131.124 ms</title></circle>
+<circle cx="754.55" cy="156.30" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=69, trace=17294084154085868759, E2E=138.689 ms</title></circle>
+<circle cx="764.32" cy="132.16" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=70, trace=17294084154085868760, E2E=147.301 ms</title></circle>
+<circle cx="764.32" cy="132.16" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +7.301 ms, cause=planning</title></circle>
+<circle cx="774.09" cy="175.84" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=71, trace=17294084154085868761, E2E=131.718 ms</title></circle>
+<circle cx="783.86" cy="116.00" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=72, trace=17294084154085868762, E2E=153.069 ms</title></circle>
+<circle cx="783.86" cy="116.00" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +13.069 ms, cause=prediction;planning</title></circle>
+<circle cx="793.64" cy="211.07" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=73, trace=17294084154085868763, E2E=119.146 ms</title></circle>
+<circle cx="803.41" cy="150.20" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=74, trace=17294084154085868764, E2E=140.866 ms</title></circle>
+<circle cx="803.41" cy="150.20" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +0.866 ms, cause=planning</title></circle>
+<circle cx="813.18" cy="193.55" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=75, trace=17294084154085868765, E2E=125.399 ms</title></circle>
+<circle cx="822.95" cy="158.14" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=76, trace=17294084154085868766, E2E=138.033 ms</title></circle>
+<circle cx="832.73" cy="212.06" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=77, trace=17294084154085868767, E2E=118.795 ms</title></circle>
+<circle cx="842.50" cy="204.25" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=78, trace=17294084154085868768, E2E=121.582 ms</title></circle>
+<circle cx="852.27" cy="189.53" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=79, trace=17294084154085868769, E2E=126.832 ms</title></circle>
+<circle cx="862.05" cy="141.66" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=80, trace=17294084154085868770, E2E=143.912 ms</title></circle>
+<circle cx="862.05" cy="141.66" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +3.912 ms, cause=planning</title></circle>
+<circle cx="871.82" cy="171.35" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=81, trace=17294084154085868771, E2E=133.319 ms</title></circle>
+<circle cx="881.59" cy="160.28" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=82, trace=17294084154085868772, E2E=137.268 ms</title></circle>
+<circle cx="891.36" cy="161.34" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=83, trace=17294084154085868773, E2E=136.892 ms</title></circle>
+<circle cx="901.14" cy="102.74" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=84, trace=17294084154085868774, E2E=157.800 ms</title></circle>
+<circle cx="901.14" cy="102.74" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +17.800 ms, cause=planning</title></circle>
+<circle cx="910.91" cy="129.22" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=85, trace=17294084154085868775, E2E=148.352 ms</title></circle>
+<circle cx="910.91" cy="129.22" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +8.352 ms, cause=planning</title></circle>
+<circle cx="920.68" cy="119.03" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=86, trace=17294084154085868776, E2E=151.986 ms</title></circle>
+<circle cx="920.68" cy="119.03" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +11.986 ms, cause=planning</title></circle>
+<circle cx="930.45" cy="118.67" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=87, trace=17294084154085868777, E2E=152.117 ms</title></circle>
+<circle cx="930.45" cy="118.67" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +12.117 ms, cause=prediction;planning</title></circle>
+<circle cx="940.23" cy="133.43" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=88, trace=17294084154085868778, E2E=146.849 ms</title></circle>
+<circle cx="940.23" cy="133.43" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +6.849 ms, cause=planning</title></circle>
+<circle cx="950.00" cy="129.78" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=89, trace=17294084154085868779, E2E=148.154 ms</title></circle>
+<circle cx="950.00" cy="129.78" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +8.154 ms, cause=planning</title></circle>
+<circle cx="959.77" cy="172.40" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=90, trace=17294084154085868780, E2E=132.946 ms</title></circle>
+<circle cx="969.55" cy="155.95" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=91, trace=17294084154085868781, E2E=138.815 ms</title></circle>
+<circle cx="979.32" cy="170.44" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=92, trace=17294084154085868782, E2E=133.644 ms</title></circle>
+<circle cx="989.09" cy="149.91" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=93, trace=17294084154085868783, E2E=140.971 ms</title></circle>
+<circle cx="989.09" cy="149.91" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +0.971 ms, cause=planning</title></circle>
+<circle cx="998.86" cy="105.55" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=94, trace=17294084154085868784, E2E=156.796 ms</title></circle>
+<circle cx="998.86" cy="105.55" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +16.796 ms, cause=planning</title></circle>
+<circle cx="1008.64" cy="135.30" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=95, trace=17294084154085868785, E2E=146.181 ms</title></circle>
+<circle cx="1008.64" cy="135.30" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +6.181 ms, cause=planning</title></circle>
+<circle cx="1018.41" cy="164.03" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=96, trace=17294084154085868786, E2E=135.931 ms</title></circle>
+<circle cx="1028.18" cy="157.99" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=97, trace=17294084154085868787, E2E=138.087 ms</title></circle>
+<circle cx="1037.95" cy="128.46" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=98, trace=17294084154085868788, E2E=148.623 ms</title></circle>
+<circle cx="1037.95" cy="128.46" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +8.623 ms, cause=planning</title></circle>
+<circle cx="1047.73" cy="160.43" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=99, trace=17294084154085868789, E2E=137.216 ms</title></circle>
+<circle cx="1057.50" cy="149.55" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=100, trace=17294084154085868790, E2E=141.099 ms</title></circle>
+<circle cx="1057.50" cy="149.55" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +1.099 ms, cause=planning</title></circle>
+<circle cx="1067.27" cy="173.32" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=101, trace=17294084154085868791, E2E=132.616 ms</title></circle>
+<circle cx="1077.05" cy="176.55" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=102, trace=17294084154085868792, E2E=131.465 ms</title></circle>
+<circle cx="1086.82" cy="147.17" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=103, trace=17294084154085868793, E2E=141.948 ms</title></circle>
+<circle cx="1086.82" cy="147.17" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +1.948 ms, cause=planning</title></circle>
+<circle cx="1096.59" cy="99.55" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=104, trace=17294084154085868794, E2E=158.940 ms</title></circle>
+<circle cx="1096.59" cy="99.55" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +18.940 ms, cause=planning</title></circle>
+<circle cx="1106.36" cy="153.45" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=105, trace=17294084154085868795, E2E=139.705 ms</title></circle>
+<circle cx="1116.14" cy="125.18" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=106, trace=17294084154085868796, E2E=149.794 ms</title></circle>
+<circle cx="1116.14" cy="125.18" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +9.794 ms, cause=planning</title></circle>
+<circle cx="1125.91" cy="188.09" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=107, trace=17294084154085868797, E2E=127.348 ms</title></circle>
+<circle cx="1135.68" cy="195.84" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=108, trace=17294084154085868798, E2E=124.583 ms</title></circle>
+<circle cx="1145.45" cy="153.64" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=109, trace=17294084154085868799, E2E=139.640 ms</title></circle>
+<circle cx="1155.23" cy="126.96" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=110, trace=17294084154085868800, E2E=149.158 ms</title></circle>
+<circle cx="1155.23" cy="126.96" r="6.0" fill="none" stroke="#d62728" stroke-width="2.2"><title>deadline miss: +9.158 ms, cause=prediction;planning</title></circle>
+<circle cx="1165.00" cy="162.11" r="2.7" fill="#1f77b4" opacity="0.72"><title>frame=111, trace=17294084154085868801, E2E=136.615 ms</title></circle>
+<text x="627.50" y="600" text-anchor="middle" font-family="sans-serif" font-size="14">Frame index inside t1-t2</text>
+<text x="22" y="300.00" text-anchor="middle" font-family="sans-serif" font-size="14" transform="rotate(-90 22 300.00)">E2E latency (ms)</text>
+<circle cx="105" cy="73" r="3" fill="#1f77b4"/><text x="115" y="77" font-family="sans-serif" font-size="12">frame</text>
+<circle cx="175" cy="73" r="6" fill="none" stroke="#d62728" stroke-width="2"/><text x="187" y="77" font-family="sans-serif" font-size="12">E2E deadline miss</text>
+</svg>

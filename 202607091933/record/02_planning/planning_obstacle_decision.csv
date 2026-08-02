@@ -1,0 +1,3984 @@
+record_file,record_time_ns,record_time_sec,channel,data_type,header_timestamp_sec,header_sequence_num,planning_seq,header_module_name,header_lidar_timestamp,header_camera_timestamp,header_radar_timestamp,obstacle_id,decision_json
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596785377483972,1783596785.377484,/apollo/planning,apollo.planning.ADCTrajectory,1783596785.376567,232,232,planning,1783596784762397524,0,0,39,"{
+  ""id"": ""39"",
+  ""perception_id"": 39,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 125.3951553850264,
+          ""y"": -133.56724542438553
+        },
+        ""stop_heading"": 0.012720409009433524
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596787321441473,1783596787.3214417,/apollo/planning,apollo.planning.ADCTrajectory,1783596787.3207626,247,247,planning,1783596786262548010,0,0,47,"{
+  ""id"": ""47"",
+  ""perception_id"": 47,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 135.06478345715598,
+          ""y"": -133.46393708128608
+        },
+        ""stop_heading"": 0.008162716010708462
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596788920245555,1783596788.9202454,/apollo/planning,apollo.planning.ADCTrajectory,1783596788.9194355,267,267,planning,1783596788262356641,0,0,53,"{
+  ""id"": ""53"",
+  ""perception_id"": 53,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 157.36172386438614,
+          ""y"": -133.41342425628858
+        },
+        ""stop_heading"": -0.0017235451532069215
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596799452062209,1783596799.4520621,/apollo/planning,apollo.planning.ADCTrajectory,1783596799.451039,375,375,planning,1783596799062492347,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367467535287,
+          ""y"": -133.85575015622192,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019733644093016853
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596799527038094,1783596799.527038,/apollo/planning,apollo.planning.ADCTrajectory,1783596799.526017,376,376,planning,1783596799162402159,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367493248265,
+          ""y"": -133.85592592537353,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016628952352944086
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596799604947780,1783596799.6049478,/apollo/planning,apollo.planning.ADCTrajectory,1783596799.6042268,377,377,planning,1783596799262410120,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367385335549,
+          ""y"": -133.8570213139101,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017214067826457867
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596799679292808,1783596799.679293,/apollo/planning,apollo.planning.ADCTrajectory,1783596799.678682,378,378,planning,1783596799362460610,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367400271673,
+          ""y"": -133.85687845469386,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017161439363732867
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596799760291721,1783596799.7602918,/apollo/planning,apollo.planning.ADCTrajectory,1783596799.759555,379,379,planning,1783596799462477582,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63672010272023,
+          ""y"": -133.8584509166082,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017957768526764898
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596799842175478,1783596799.8421755,/apollo/planning,apollo.planning.ADCTrajectory,1783596799.8402827,380,380,planning,1783596799562440553,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673209794416,
+          ""y"": -133.85621944917145,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.0189750412985953
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596799904127567,1783596799.9041276,/apollo/planning,apollo.planning.ADCTrajectory,1783596799.9018004,381,381,planning,1783596799662422308,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367460355559,
+          ""y"": -133.85575249143645,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019631544257921133
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596799975981297,1783596799.9759812,/apollo/planning,apollo.planning.ADCTrajectory,1783596799.9751925,382,382,planning,1783596799762352443,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673862070516,
+          ""y"": -133.8558291763141,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01925126267121872
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596800056260839,1783596800.0562608,/apollo/planning,apollo.planning.ADCTrajectory,1783596800.0552585,383,383,planning,1783596799862341280,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674939167106,
+          ""y"": -133.85594787701842,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016648076374902558
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596800130689645,1783596800.1306896,/apollo/planning,apollo.planning.ADCTrajectory,1783596800.1300654,384,384,planning,1783596799962455592,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367332624352,
+          ""y"": -133.8574661815379,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01738337732616255
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596800216497072,1783596800.2164972,/apollo/planning,apollo.planning.ADCTrajectory,1783596800.2157352,385,385,planning,1783596800062358851,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63629421102564,
+          ""y"": -133.85794548633433,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017620330746873063
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596800321738752,1783596800.3217387,/apollo/planning,apollo.planning.ADCTrajectory,1783596800.3209748,386,386,planning,1783596800162572746,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63595622051304,
+          ""y"": -133.85653868443669,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017824063650665117
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596800441093875,1783596800.441094,/apollo/planning,apollo.planning.ADCTrajectory,1783596800.4402618,387,387,planning,1783596800262553594,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63594876137813,
+          ""y"": -133.85694002318044,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.015029669737951805
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596800525130366,1783596800.5251303,/apollo/planning,apollo.planning.ADCTrajectory,1783596800.5228286,388,388,planning,1783596800362300491,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6362234051738,
+          ""y"": -133.85682515873071,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016602401574147493
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596800602227912,1783596800.602228,/apollo/planning,apollo.planning.ADCTrajectory,1783596800.601449,389,389,planning,1783596800462197623,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6362161532901,
+          ""y"": -133.85733722248048,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017233921526665766
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596800715983566,1783596800.7159836,/apollo/planning,apollo.planning.ADCTrajectory,1783596800.7152069,390,390,planning,1783596800562335935,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6361157470261,
+          ""y"": -133.85599322632623,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017174362460039887
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596800804162290,1783596800.8041623,/apollo/planning,apollo.planning.ADCTrajectory,1783596800.8032634,391,391,planning,1783596800662361783,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6360680633567,
+          ""y"": -133.8565598619491,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018427757242038285
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596800902588291,1783596800.9025884,/apollo/planning,apollo.planning.ADCTrajectory,1783596800.9018483,392,392,planning,1783596800762316356,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63602551204576,
+          ""y"": -133.85681261414686,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01500399388135959
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596801005015788,1783596801.0050159,/apollo/planning,apollo.planning.ADCTrajectory,1783596801.0042331,393,393,planning,1783596800862635620,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6360560379506,
+          ""y"": -133.85700320666808,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016247471687897818
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596801105510298,1783596801.1055105,/apollo/planning,apollo.planning.ADCTrajectory,1783596801.104708,394,394,planning,1783596800962471269,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63601992418353,
+          ""y"": -133.85582933119449,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017064076079759485
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596801205401536,1783596801.2054017,/apollo/planning,apollo.planning.ADCTrajectory,1783596801.2047122,395,395,planning,1783596801062864162,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6360066030048,
+          ""y"": -133.8568666346005,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01820566974790183
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596801318357179,1783596801.3183572,/apollo/planning,apollo.planning.ADCTrajectory,1783596801.3176243,396,396,planning,1783596801162573806,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6361243613881,
+          ""y"": -133.85609416924376,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01707738010372453
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596801419785654,1783596801.4197857,/apollo/planning,apollo.planning.ADCTrajectory,1783596801.4189968,397,397,planning,1783596801262484259,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6360269314716,
+          ""y"": -133.85635779422472,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01751096821156788
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596801515686533,1783596801.5156868,/apollo/planning,apollo.planning.ADCTrajectory,1783596801.5144515,398,398,planning,1783596801362448911,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63614541467706,
+          ""y"": -133.85697975823646,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.015174502776421267
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596801612819621,1783596801.6128197,/apollo/planning,apollo.planning.ADCTrajectory,1783596801.611817,399,399,planning,1783596801462689997,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63612225963607,
+          ""y"": -133.8570509266646,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016327564249194845
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596801708300557,1783596801.7083006,/apollo/planning,apollo.planning.ADCTrajectory,1783596801.707329,400,400,planning,1783596801562538953,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6360529835203,
+          ""y"": -133.85621850425682,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01749992109817572
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596801821917809,1783596801.8219178,/apollo/planning,apollo.planning.ADCTrajectory,1783596801.821098,401,401,planning,1783596801662431447,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63652132448175,
+          ""y"": -133.85716615393568,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01962887559190461
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596801906591141,1783596801.9065912,/apollo/planning,apollo.planning.ADCTrajectory,1783596801.9050736,402,402,planning,1783596801762553696,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63644346413344,
+          ""y"": -133.85621034140007,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016896819098890986
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596801998831873,1783596801.998832,/apollo/planning,apollo.planning.ADCTrajectory,1783596801.9979656,403,403,planning,1783596801862468594,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63671824944544,
+          ""y"": -133.8583715375631,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018167504982737993
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596802100595008,1783596802.100595,/apollo/planning,apollo.planning.ADCTrajectory,1783596802.099786,404,404,planning,1783596801962521354,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367332028697,
+          ""y"": -133.85588484764796,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019148564931734766
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596802212023430,1783596802.2120235,/apollo/planning,apollo.planning.ADCTrajectory,1783596802.2113123,405,405,planning,1783596802062531572,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674686947843,
+          ""y"": -133.85611197062468,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01688495704712564
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596802320945289,1783596802.3209455,/apollo/planning,apollo.planning.ADCTrajectory,1783596802.3199995,406,406,planning,1783596802162717053,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63671952410033,
+          ""y"": -133.85829995714752,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01795169925940469
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596802408161727,1783596802.4081619,/apollo/planning,apollo.planning.ADCTrajectory,1783596802.4073849,407,407,planning,1783596802262469148,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367478504525,
+          ""y"": -133.8559361327793,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016756212667507705
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596802501573772,1783596802.5015738,/apollo/planning,apollo.planning.ADCTrajectory,1783596802.5001786,408,408,planning,1783596802362455045,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367467572253,
+          ""y"": -133.85611045533966,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016886483135697933
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596802601287695,1783596802.6012876,/apollo/planning,apollo.planning.ADCTrajectory,1783596802.6005244,409,409,planning,1783596802462647218,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367216002291,
+          ""y"": -133.8581017534483,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017768283475522804
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596802701933087,1783596802.7019331,/apollo/planning,apollo.planning.ADCTrajectory,1783596802.701187,410,410,planning,1783596802562428981,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367178917376,
+          ""y"": -133.85821479438152,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018391554932226453
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596802806175041,1783596802.806175,/apollo/planning,apollo.planning.ADCTrajectory,1783596802.805388,411,411,planning,1783596802662617696,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367275058118,
+          ""y"": -133.8566352725944,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018872691410064493
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596802910446180,1783596802.9104462,/apollo/planning,apollo.planning.ADCTrajectory,1783596802.9096875,412,412,planning,1783596802762482878,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367468604172,
+          ""y"": -133.85563204735567,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019886320077307326
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596803005980813,1783596803.005981,/apollo/planning,apollo.planning.ADCTrajectory,1783596803.0052886,413,413,planning,1783596802862477468,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.636748159418,
+          ""y"": -133.85573738382206,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016410249723818136
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596803101844956,1783596803.101845,/apollo/planning,apollo.planning.ADCTrajectory,1783596803.1012022,414,414,planning,1783596802962587566,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367407737748,
+          ""y"": -133.85661093564184,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017154699466559727
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596803200796277,1783596803.2007961,/apollo/planning,apollo.planning.ADCTrajectory,1783596803.200059,415,415,planning,1783596803062511499,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674774141225,
+          ""y"": -133.85565094188493,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016300641515674435
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596803298800000,1783596803.2988002,/apollo/planning,apollo.planning.ADCTrajectory,1783596803.2980468,416,416,planning,1783596803162587653,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367398160903,
+          ""y"": -133.85571125439245,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019418142568218836
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596803417428041,1783596803.417428,/apollo/planning,apollo.planning.ADCTrajectory,1783596803.416748,417,417,planning,1783596803262446664,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367393434201,
+          ""y"": -133.85572727844388,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019392723003143295
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596803498962193,1783596803.4989622,/apollo/planning,apollo.planning.ADCTrajectory,1783596803.4981399,418,418,planning,1783596803362331172,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367440558488,
+          ""y"": -133.85636262103557,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017022186751932428
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596803608683967,1783596803.608684,/apollo/planning,apollo.planning.ADCTrajectory,1783596803.6078312,419,419,planning,1783596803462470082,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674451778746,
+          ""y"": -133.85565246093563,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019668579109398433
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596803708972715,1783596803.7089727,/apollo/planning,apollo.planning.ADCTrajectory,1783596803.7082608,420,420,planning,1783596803562671571,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367443917126,
+          ""y"": -133.8556523022693,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01966799014417292
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596803825418646,1783596803.8254187,/apollo/planning,apollo.planning.ADCTrajectory,1783596803.8245983,421,421,planning,1783596803662406479,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367473891877,
+          ""y"": -133.85599068271137,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016794062668963047
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596804101711012,1783596804.101711,/apollo/planning,apollo.planning.ADCTrajectory,1783596804.1010249,422,422,planning,1783596803762456129,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367477590964,
+          ""y"": -133.85565129428863,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016304222520408557
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596804388007420,1783596804.3880074,/apollo/planning,apollo.planning.ADCTrajectory,1783596804.3868585,423,423,planning,1783596803862515112,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674754671365,
+          ""y"": -133.85562919685964,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019897707333601102
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596804663359966,1783596804.66336,/apollo/planning,apollo.planning.ADCTrajectory,1783596804.6627326,424,424,planning,1783596803962551592,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674256703496,
+          ""y"": -133.85566835788484,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01954162994884846
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596804937150761,1783596804.9371507,/apollo/planning,apollo.planning.ADCTrajectory,1783596804.9362953,425,425,planning,1783596804062472946,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367353018874,
+          ""y"": -133.85582847080525,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019246869343633993
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596805227887359,1783596805.2278874,/apollo/planning,apollo.planning.ADCTrajectory,1783596805.227047,426,426,planning,1783596804162435949,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.636744584529,
+          ""y"": -133.8556543811514,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019663049959962157
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596805519001754,1783596805.519002,/apollo/planning,apollo.planning.ADCTrajectory,1783596805.518298,427,427,planning,1783596804262371359,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674755261945,
+          ""y"": -133.85568697314636,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01635216863098434
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596805796392184,1783596805.7963922,/apollo/planning,apollo.planning.ADCTrajectory,1783596805.7954123,428,428,planning,1783596804362559637,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673881738436,
+          ""y"": -133.85571955033905,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019404394697681016
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596806065063773,1783596806.0650637,/apollo/planning,apollo.planning.ADCTrajectory,1783596806.0638757,429,429,planning,1783596804462666902,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367445315709,
+          ""y"": -133.8556577552924,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019725811249819307
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596806339632307,1783596806.3396323,/apollo/planning,apollo.planning.ADCTrajectory,1783596806.3390334,430,430,planning,1783596804562873032,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367376707093,
+          ""y"": -133.8557444572054,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019368673320987097
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596806625054912,1783596806.625055,/apollo/planning,apollo.planning.ADCTrajectory,1783596806.624502,431,431,planning,1783596804662378777,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367405825549,
+          ""y"": -133.85567930499,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019495055502986157
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596806901108266,1783596806.9011083,/apollo/planning,apollo.planning.ADCTrajectory,1783596806.9004471,432,432,planning,1783596804762406991,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367267551169,
+          ""y"": -133.85762427778744,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017559061211950798
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596807172392627,1783596807.1723926,/apollo/planning,apollo.planning.ADCTrajectory,1783596807.1717267,433,433,planning,1783596804862447485,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367450308652,
+          ""y"": -133.85565994489522,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01974374105349614
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596807450158518,1783596807.4501586,/apollo/planning,apollo.planning.ADCTrajectory,1783596807.4496896,434,434,planning,1783596804962785328,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.02555836517155,
+          ""y"": -133.67125233642318
+        },
+        ""stop_heading"": -0.013988950699176215
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596807450158518,1783596807.4501586,/apollo/planning,apollo.planning.ADCTrajectory,1783596807.4496896,434,434,planning,1783596804962785328,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63672286674273,
+          ""y"": -133.8575500426113,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01860710286371615
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596807739084627,1783596807.7390845,/apollo/planning,apollo.planning.ADCTrajectory,1783596807.738462,435,435,planning,1783596805062634122,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.15089586924586,
+          ""y"": -133.6728103512412
+        },
+        ""stop_heading"": -0.01398621529955154
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596807739084627,1783596807.7390845,/apollo/planning,apollo.planning.ADCTrajectory,1783596807.738462,435,435,planning,1783596805062634122,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674937897343,
+          ""y"": -133.8556262839486,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019916573240674876
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596808025888435,1783596808.0258884,/apollo/planning,apollo.planning.ADCTrajectory,1783596808.0254037,436,436,planning,1783596805162472905,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.0290010114809,
+          ""y"": -133.6709324563728
+        },
+        ""stop_heading"": -0.013956724799247049
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596808025888435,1783596808.0258884,/apollo/planning,apollo.planning.ADCTrajectory,1783596808.0254037,436,436,planning,1783596805162472905,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674978645633,
+          ""y"": -133.8561048892954,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016880249625051316
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596808309066688,1783596808.3090668,/apollo/planning,apollo.planning.ADCTrajectory,1783596808.3084052,437,437,planning,1783596805262576693,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367512366262,
+          ""y"": -133.85563218938563,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01988443717662406
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596808577979848,1783596808.5779798,/apollo/planning,apollo.planning.ADCTrajectory,1783596808.5773447,438,438,planning,1783596805362254565,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675199269727,
+          ""y"": -133.85589325985427,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01672555890985181
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596808853404650,1783596808.8534048,/apollo/planning,apollo.planning.ADCTrajectory,1783596808.8526928,439,439,planning,1783596805463148630,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.0419658284924,
+          ""y"": -133.67146542289873
+        },
+        ""stop_heading"": -0.013991121074888752
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596808853404650,1783596808.8534048,/apollo/planning,apollo.planning.ADCTrajectory,1783596808.8526928,439,439,planning,1783596805463148630,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367359063049,
+          ""y"": -133.8559744985914,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019105931682479135
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596808929882028,1783596808.929882,/apollo/planning,apollo.planning.ADCTrajectory,1783596808.9293592,440,440,planning,1783596805562162564,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.02217518284397,
+          ""y"": -133.67087524426086
+        },
+        ""stop_heading"": -0.01394168685064536
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596808929882028,1783596808.929882,/apollo/planning,apollo.planning.ADCTrajectory,1783596808.9293592,440,440,planning,1783596805562162564,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675292592524,
+          ""y"": -133.85577545883743,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016565555170619625
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809022692688,1783596809.0226927,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.0217915,441,441,planning,1783596805662389852,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""nudge"": {
+        ""type"": ""RIGHT_NUDGE"",
+        ""distance_l"": -0.3
+      }
+    },
+    {
+      ""stop"": {
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.7642879029328,
+          ""y"": -133.68158867335688,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.014105083146392505
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809022692688,1783596809.0226927,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.0217915,441,441,planning,1783596805662389852,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63672631067016,
+          ""y"": -133.85768470370311,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018571231111902623
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809107662152,1783596809.107662,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.1064465,442,442,planning,1783596805762300798,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""nudge"": {
+        ""type"": ""RIGHT_NUDGE"",
+        ""distance_l"": -0.3
+      }
+    },
+    {
+      ""stop"": {
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.912172028941,
+          ""y"": -133.68328794648667,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.014057235084697554
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809107662152,1783596809.107662,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.1064465,442,442,planning,1783596805762300798,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367518775985,
+          ""y"": -133.85606001468938,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016844958480166067
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809190238910,1783596809.190239,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.188947,443,443,planning,1783596805862457217,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""nudge"": {
+        ""type"": ""RIGHT_NUDGE"",
+        ""distance_l"": -0.3
+      }
+    },
+    {
+      ""stop"": {
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 308.061038272798,
+          ""y"": -133.7281411788416,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.014084565277702034
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809190238910,1783596809.190239,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.188947,443,443,planning,1783596805862457217,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674765937293,
+          ""y"": -133.8556677783385,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01954747710307927
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809261647642,1783596809.2616477,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.2609763,444,444,planning,1783596805962594604,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""nudge"": {
+        ""type"": ""RIGHT_NUDGE"",
+        ""distance_l"": -0.3
+      }
+    },
+    {
+      ""stop"": {
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 306.20608526298145,
+          ""y"": -133.70201081082226,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.014205582171072758
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809261647642,1783596809.2616477,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.2609763,444,444,planning,1783596805962594604,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674038191823,
+          ""y"": -133.85582852002014,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01924601509156755
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809344200816,1783596809.3442006,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.3436263,445,445,planning,1783596806062333475,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""nudge"": {
+        ""type"": ""RIGHT_NUDGE"",
+        ""distance_l"": -0.3
+      }
+    },
+    {
+      ""stop"": {
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 307.3516075363716,
+          ""y"": -133.71810190258222,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.014189663639868575
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809344200816,1783596809.3442006,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.3436263,445,445,planning,1783596806062333475,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367338682772,
+          ""y"": -133.8575606713893,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017528380566565988
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809418502388,1783596809.4185023,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.4177918,446,446,planning,1783596806162293430,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""nudge"": {
+        ""type"": ""RIGHT_NUDGE"",
+        ""distance_l"": -0.3
+      }
+    },
+    {
+      ""stop"": {
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 305.4957950745047,
+          ""y"": -133.6916512612037,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.014115280201377724
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809418502388,1783596809.4185023,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.4177918,446,446,planning,1783596806162293430,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675343048317,
+          ""y"": -133.85566649643928,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016322720118138585
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809494683026,1783596809.494683,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.4939835,447,447,planning,1783596806262251329,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""nudge"": {
+        ""type"": ""RIGHT_NUDGE"",
+        ""distance_l"": -0.3
+      }
+    },
+    {
+      ""stop"": {
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 306.6407652638279,
+          ""y"": -133.7082393766463,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.014228095569278825
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809494683026,1783596809.494683,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.4939835,447,447,planning,1783596806262251329,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673018855116,
+          ""y"": -133.85722321830852,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01868963389445842
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809571789341,1783596809.5717893,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.5711486,448,448,planning,1783596806362245801,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""nudge"": {
+        ""type"": ""RIGHT_NUDGE"",
+        ""distance_l"": -0.3
+      }
+    },
+    {
+      ""stop"": {
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 307.7845960043422,
+          ""y"": -133.7241607544168,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.014155198523152354
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809571789341,1783596809.5717893,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.5711486,448,448,planning,1783596806362245801,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673873713407,
+          ""y"": -133.8571851967368,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017370656326520618
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809639392388,1783596809.6393926,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.638702,449,449,planning,1783596806462234106,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674213698243,
+          ""y"": -133.85696232659038,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017282660833855476
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809715509313,1783596809.7155092,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.714796,450,450,planning,1783596806562404983,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.0267302399346,
+          ""y"": -133.6710346237039
+        },
+        ""stop_heading"": -0.013945052655658034
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809715509313,1783596809.7155092,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.714796,450,450,planning,1783596806562404983,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675386822393,
+          ""y"": -133.85564087455043,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016283830543719322
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809807140724,1783596809.8071406,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.8064523,451,451,planning,1783596806662355972,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""nudge"": {
+        ""type"": ""RIGHT_NUDGE"",
+        ""distance_l"": -0.3
+      }
+    },
+    {
+      ""stop"": {
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 308.17247175703903,
+          ""y"": -133.72998132781888,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.014121825305085224
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809807140724,1783596809.8071406,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.8064523,451,451,planning,1783596806662355972,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673383965045,
+          ""y"": -133.85665381949605,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01886458099710098
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809876032333,1783596809.8760324,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.8753765,452,452,planning,1783596806762340694,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.14965494321814,
+          ""y"": -133.6728213703697
+        },
+        ""stop_heading"": -0.01402083182161163
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809876032333,1783596809.8760324,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.8753765,452,452,planning,1783596806762340694,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367264476957,
+          ""y"": -133.85824321252448,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017889043032479002
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809941814075,1783596809.941814,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.9412491,453,453,planning,1783596806862820062,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.1426350352723,
+          ""y"": -133.6726571876352
+        },
+        ""stop_heading"": -0.014002782449745803
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596809941814075,1783596809.941814,/apollo/planning,apollo.planning.ADCTrajectory,1783596809.9412491,453,453,planning,1783596806862820062,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367352631742,
+          ""y"": -133.8575438879364,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017520939360393572
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810035240072,1783596810.0352402,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.03441,454,454,planning,1783596806962423860,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.14464400517056,
+          ""y"": -133.67257930308557
+        },
+        ""stop_heading"": -0.013939202452507906
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810035240072,1783596810.0352402,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.03441,454,454,planning,1783596806962423860,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367546785042,
+          ""y"": -133.85577296950717,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016540424748972816
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810111526119,1783596810.1115263,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.1108725,455,455,planning,1783596807062344370,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367428597075,
+          ""y"": -133.85580747192975,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01927669379233483
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810172349073,1783596810.1723492,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.1718118,456,456,planning,1783596807162219927,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.1498466656515,
+          ""y"": -133.67291624761197
+        },
+        ""stop_heading"": -0.014027280711129934
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810172349073,1783596810.1723492,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.1718118,456,456,planning,1783596807162219927,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367265206495,
+          ""y"": -133.85794774556157,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018501438521805927
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810261948296,1783596810.2619483,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.2613645,457,457,planning,1783596807262323408,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367263836001,
+          ""y"": -133.858287884709,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017937418242134153
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810329486030,1783596810.3294861,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.328852,458,458,planning,1783596807362384408,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.1541768098265,
+          ""y"": -133.67264943698436
+        },
+        ""stop_heading"": -0.013949706960438915
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810329486030,1783596810.3294861,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.328852,458,458,planning,1783596807362384408,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675425150615,
+          ""y"": -133.85604319256828,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01683082214808313
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810411012342,1783596810.4110124,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.4103312,459,459,planning,1783596807462431683,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.27993589153334,
+          ""y"": -133.67469763770285
+        },
+        ""stop_heading"": -0.01400409582784657
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810411012342,1783596810.4110124,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.4103312,459,459,planning,1783596807462431683,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367501300407,
+          ""y"": -133.85566837837382,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019549677760165248
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810488739658,1783596810.4887395,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.4880404,460,460,planning,1783596807562316478,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.2840393032519,
+          ""y"": -133.67449523949927
+        },
+        ""stop_heading"": -0.013999164194032049
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810488739658,1783596810.4887395,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.4880404,460,460,planning,1783596807562316478,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367529298547,
+          ""y"": -133.85625648971399,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016959709771813696
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810557666691,1783596810.5576668,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.5570664,461,461,planning,1783596807662320468,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.1510875945166,
+          ""y"": -133.67276570065152
+        },
+        ""stop_heading"": -0.013997295406260707
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810557666691,1783596810.5576668,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.5570664,461,461,planning,1783596807662320468,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367379024464,
+          ""y"": -133.85741151069618,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01746499026471065
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810649136212,1783596810.649136,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.6485734,462,462,planning,1783596807762395432,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673988961506,
+          ""y"": -133.85726686158608,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017404418456103566
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810724137538,1783596810.7241375,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.7233887,463,463,planning,1783596807862389109,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.27340826972846,
+          ""y"": -133.67463186291292
+        },
+        ""stop_heading"": -0.01402468266868771
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810724137538,1783596810.7241375,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.7233887,463,463,planning,1783596807862389109,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63672535527655,
+          ""y"": -133.85820352530442,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018414404546893633
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810812221125,1783596810.8122213,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.8115568,464,464,planning,1783596807962372598,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63672535527655,
+          ""y"": -133.85820352530442,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018414404546893633
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596810892084565,1783596810.8920846,/apollo/planning,apollo.planning.ADCTrajectory,1783596810.8914049,465,465,planning,1783596808062395721,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674298013586,
+          ""y"": -133.8570337959702,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017308764371657025
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811036129278,1783596811.0361292,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.0353522,466,466,planning,1783596808262530040,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.50110904556766,
+          ""y"": -133.6775709291908
+        },
+        ""stop_heading"": -0.014040543595697334
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811036129278,1783596811.0361292,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.0353522,466,466,planning,1783596808262530040,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675087931404,
+          ""y"": -133.85642814552014,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01705445333316235
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811102739960,1783596811.10274,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.1019442,467,467,planning,1783596808362462443,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.1552625354833,
+          ""y"": -133.67268762877217
+        },
+        ""stop_heading"": -0.01393866576876886
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811102739960,1783596811.10274,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.1019442,467,467,planning,1783596808362462443,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367557147543,
+          ""y"": -133.85582887978978,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016657989391929178
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811102739960,1783596811.10274,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.1019442,467,467,planning,1783596808362462443,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.21501025799535,
+          ""y"": -133.82043728504044,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.011127131032334935
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811168527590,1783596811.1685276,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.167883,468,468,planning,1783596808462721790,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.4491774952205,
+          ""y"": -133.6771739897174
+        },
+        ""stop_heading"": -0.014067006655823812
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811168527590,1783596811.1685276,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.167883,468,468,planning,1783596808462721790,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673693455297,
+          ""y"": -133.85629459829565,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018981654516761627
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811243647509,1783596811.2436476,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.2431319,469,469,planning,1783596808562353875,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.2795289173944,
+          ""y"": -133.67473452543902
+        },
+        ""stop_heading"": -0.014024932996290214
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811243647509,1783596811.2436476,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.2431319,469,469,planning,1783596808562353875,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63672726370663,
+          ""y"": -133.85797791388558,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018493375897485734
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811322536024,1783596811.322536,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.3219087,470,470,planning,1783596808662291574,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.1507645004087,
+          ""y"": -133.67262464153293
+        },
+        ""stop_heading"": -0.013938120790778871
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811322536024,1783596811.322536,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.3219087,470,470,planning,1783596808662291574,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367562903613,
+          ""y"": -133.85583153619189,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016661852411190236
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811322536024,1783596811.322536,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.3219087,470,470,planning,1783596808662291574,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.565312429685,
+          ""y"": -133.82429189500402,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.010938134094609298
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811411758859,1783596811.411759,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.4109728,471,471,planning,1783596808762361816,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367562958376,
+          ""y"": -133.85583153610062,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016661852411190236
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811473481536,1783596811.4734814,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.4729712,472,472,planning,1783596808862409879,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.1522007741998,
+          ""y"": -133.6726252198343
+        },
+        ""stop_heading"": -0.013943207878600202
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811473481536,1783596811.4734814,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.4729712,472,472,planning,1783596808862409879,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367556418654,
+          ""y"": -133.85597114990622,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01677711410418151
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811555401838,1783596811.5554018,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.554841,473,473,planning,1783596808962606300,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.0234467652213,
+          ""y"": -133.67082985957325
+        },
+        ""stop_heading"": -0.013943207878600202
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811555401838,1783596811.5554018,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.554841,473,473,planning,1783596808962606300,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367556418654,
+          ""y"": -133.85597114990622,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01677711410418151
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811555401838,1783596811.5554018,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.554841,473,473,planning,1783596808962606300,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.87080757004026,
+          ""y"": -133.82758921675324,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.010532717203902073
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811639163380,1783596811.6391635,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.6385193,474,474,planning,1783596809062387975,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367367550455,
+          ""y"": -133.856482106161,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018920352936412373
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811714123809,1783596811.7141237,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.7135022,475,475,planning,1783596809162412849,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.1465357007455,
+          ""y"": -133.6725815263856
+        },
+        ""stop_heading"": -0.013957880191344833
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811714123809,1783596811.7141237,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.7135022,475,475,planning,1783596809162412849,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675371978815,
+          ""y"": -133.85626833488286,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016966497375379107
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811714123809,1783596811.7141237,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.7135022,475,475,planning,1783596809162412849,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.0844053322694,
+          ""y"": -133.81912295728114,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.011289131958802837
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811784106602,1783596811.7841065,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.78345,476,476,planning,1783596809262355482,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.1473527236449,
+          ""y"": -133.67290664509687
+        },
+        ""stop_heading"": -0.014018295827935937
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811784106602,1783596811.7841065,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.78345,476,476,planning,1783596809262355482,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367438413978,
+          ""y"": -133.85581768549218,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019263948577811975
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811784106602,1783596811.7841065,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.78345,476,476,planning,1783596809262355482,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.18890939177675,
+          ""y"": -133.82103393980373,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.011193730220392462
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811876675562,1783596811.8766756,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.8758745,477,477,planning,1783596809362231162,0,0,82,"{
+  ""id"": ""82"",
+  ""perception_id"": 82,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.024799514098,
+          ""y"": -133.67101526439455
+        },
+        ""stop_heading"": -0.01399759983794405
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811876675562,1783596811.8766756,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.8758745,477,477,planning,1783596809362231162,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367369368798,
+          ""y"": -133.85756502760375,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017529132238528932
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811876675562,1783596811.8766756,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.8758745,477,477,planning,1783596809362231162,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.29148760166015,
+          ""y"": -133.8224044506564,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.011178430581853282
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596811943112545,1783596811.9431124,/apollo/planning,apollo.planning.ADCTrajectory,1783596811.9423957,478,478,planning,1783596809462172062,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674210462375,
+          ""y"": -133.85719932558,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017375701594270865
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812039882364,1783596812.0398822,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.0391662,479,479,planning,1783596809562281046,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675301948615,
+          ""y"": -133.8556567091241,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019659284893940275
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812102952965,1783596812.102953,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.1017354,480,480,planning,1783596809662289910,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675303495233,
+          ""y"": -133.85565670882002,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019659284893940275
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812179537864,1783596812.179538,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.178848,481,481,planning,1783596809762329584,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367565073182,
+          ""y"": -133.85596354213396,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016771711312437806
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812255370657,1783596812.2553709,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.254642,482,482,planning,1783596809862498692,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367569608146,
+          ""y"": -133.85576819715857,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016484552264157747
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812332045030,1783596812.332045,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.3313696,483,483,planning,1783596809962401184,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367330239334,
+          ""y"": -133.85731978572485,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018665404472681436
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812412700130,1783596812.4127002,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.4121408,484,484,planning,1783596810063409995,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675314321387,
+          ""y"": -133.85634623120288,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017009881992419273
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812501878579,1783596812.5018785,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.5012786,485,485,planning,1783596810162443212,0,0,95,"{
+  ""id"": ""95"",
+  ""perception_id"": 95,
+  ""object_decision"": [
+    {
+      ""nudge"": {
+        ""type"": ""LEFT_NUDGE"",
+        ""distance_l"": 0.3
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812501878579,1783596812.5018785,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.5012786,485,485,planning,1783596810162443212,0,0,96,"{
+  ""id"": ""96"",
+  ""perception_id"": 96,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.14959666626254,
+          ""y"": -133.67291562807642
+        },
+        ""stop_heading"": -0.014002397694088986
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812501878579,1783596812.5018785,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.5012786,485,485,planning,1783596810162443212,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675005922505,
+          ""y"": -133.85568949508627,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019459647109678766
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812501878579,1783596812.5018785,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.5012786,485,485,planning,1783596810162443212,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.0812512613847,
+          ""y"": -133.81950337265255,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.011158283815584466
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812569148630,1783596812.5691488,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.5685105,486,486,planning,1783596810262345112,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675005922505,
+          ""y"": -133.85568949508627,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019459647109678766
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812647863134,1783596812.6478631,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.6471405,487,487,planning,1783596810362425637,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63672874616583,
+          ""y"": -133.85823438306053,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017876646314551537
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812723537562,1783596812.7235377,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.7229075,488,488,planning,1783596810463170037,0,0,96,"{
+  ""id"": ""96"",
+  ""perception_id"": 96,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.1490115377235,
+          ""y"": -133.67263617654862
+        },
+        ""stop_heading"": -0.013931153284780054
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812723537562,1783596812.7235377,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.7229075,488,488,planning,1783596810463170037,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675691108295,
+          ""y"": -133.85581041709736,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016627633028608434
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812723537562,1783596812.7235377,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.7229075,488,488,planning,1783596810463170037,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.4052806129604,
+          ""y"": -133.82254274205715,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.01094064711037161
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812796165772,1783596812.796166,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.79527,489,489,planning,1783596810563202238,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674373537646,
+          ""y"": -133.85584388635624,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01922836354600554
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812892244333,1783596812.8922443,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.8916519,490,490,planning,1783596810662603173,0,0,96,"{
+  ""id"": ""96"",
+  ""perception_id"": 96,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.03821717411773,
+          ""y"": -133.6713211789695
+        },
+        ""stop_heading"": -0.014014812834611383
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812892244333,1783596812.8922443,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.8916519,490,490,planning,1783596810662603173,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63672692019776,
+          ""y"": -133.85840607184508,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01807762797799237
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812892244333,1783596812.8922443,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.8916519,490,490,planning,1783596810662603173,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.65861223983956,
+          ""y"": -133.82705095297754,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.011024792564575519
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596812956100545,1783596812.9561007,/apollo/planning,apollo.planning.ADCTrajectory,1783596812.9553516,491,491,planning,1783596810762355048,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367304476798,
+          ""y"": -133.85812696209692,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017777232772306948
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813028747378,1783596813.0287473,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.0280178,492,492,planning,1783596810862312174,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367568054388,
+          ""y"": -133.85585548133156,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01669209577229195
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813103455585,1783596813.1034555,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.1027038,493,493,planning,1783596810962413286,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367568670013,
+          ""y"": -133.85585548030386,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01669209577229195
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813173841555,1783596813.1738417,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.1725886,494,494,planning,1783596811063101569,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367490275438,
+          ""y"": -133.85571244315244,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019420451661352
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813249071657,1783596813.2490716,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.2485886,495,495,planning,1783596811162307612,0,0,99,"{
+  ""id"": ""99"",
+  ""perception_id"": 99,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.33192093731253,
+          ""y"": -133.67546563510294
+        },
+        ""stop_heading"": -0.01405370784603849
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813249071657,1783596813.2490716,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.2485886,495,495,planning,1783596811162307612,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367266153451,
+          ""y"": -133.85837044466854,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018171827275427346
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813249071657,1783596813.2490716,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.2485886,495,495,planning,1783596811162307612,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.3107458622139,
+          ""y"": -133.82319342559228,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.01121291140847967
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813320536522,1783596813.3205366,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.3199565,496,496,planning,1783596811262359176,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675121013,
+          ""y"": -133.85650945698558,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017098553392323263
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813401564276,1783596813.4015641,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.4008532,497,497,planning,1783596811362364382,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367567653855,
+          ""y"": -133.85565929174038,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01630775995415916
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813477507572,1783596813.4775076,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.4765012,498,498,planning,1783596811462319868,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675116664245,
+          ""y"": -133.85567494145909,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019522777247629023
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813549556829,1783596813.5495567,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.5489178,499,499,planning,1783596811562269251,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675116664245,
+          ""y"": -133.85567494145909,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019522777247629023
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813632584868,1783596813.632585,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.6319935,500,500,planning,1783596811662349424,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63672691027136,
+          ""y"": -133.85838397699914,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01804543461372431
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813707693913,1783596813.7076938,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.706995,501,501,planning,1783596811762346302,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367476268446,
+          ""y"": -133.85676245552793,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017207720511789714
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813790060342,1783596813.7900603,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.7890995,502,502,planning,1783596811863074061,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367565010882,
+          ""y"": -133.85578160508277,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016580872878395395
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813874133643,1783596813.8741338,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.8732514,503,503,planning,1783596811962314597,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367565010882,
+          ""y"": -133.85578160508277,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016580872878395395
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596813934366379,1783596813.9343665,/apollo/planning,apollo.planning.ADCTrajectory,1783596813.933008,504,504,planning,1783596812063390984,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675253753127,
+          ""y"": -133.85565761418766,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019652556396658236
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814022205558,1783596814.0222054,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.021391,505,505,planning,1783596812162364509,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674069556896,
+          ""y"": -133.85588271801223,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019152940795089626
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814109784862,1783596814.1097848,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.1090412,506,506,planning,1783596812262625160,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367253444949,
+          ""y"": -133.85821229949028,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018405416315807548
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814167106099,1783596814.1671062,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.1663544,507,507,planning,1783596812363169318,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367253444949,
+          ""y"": -133.85821229949028,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.018405416315807548
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814243643709,1783596814.2436438,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.2431357,508,508,planning,1783596812462367299,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367277177247,
+          ""y"": -133.85819887991215,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01783801734773618
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814326216925,1783596814.326217,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.3251638,509,509,planning,1783596812562814754,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367401958939,
+          ""y"": -133.85722112358135,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017386183818873014
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814404560672,1783596814.4045606,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.4039636,510,510,planning,1783596812662351792,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675045477936,
+          ""y"": -133.85637706744745,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017028265627205965
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814476350117,1783596814.4763503,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.475532,511,511,planning,1783596812762349527,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367429536512,
+          ""y"": -133.85692454950708,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017269394592168193
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814552636235,1783596814.5526361,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.5519335,512,512,planning,1783596812862328092,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367536632937,
+          ""y"": -133.85597174869716,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016779106157782563
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814628866832,1783596814.628867,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.6282184,513,513,planning,1783596812962854966,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675375105043,
+          ""y"": -133.85578779522066,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01659529206869633
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814713910675,1783596814.7139108,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.7133079,514,514,planning,1783596813063276584,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675315611516,
+          ""y"": -133.85575579446905,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01643617098960054
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814798005961,1783596814.798006,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.7971013,515,515,planning,1783596813162468543,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675264274286,
+          ""y"": -133.85567281020863,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016331986269707926
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814883747542,1783596814.8837476,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.8831463,516,516,planning,1783596813262378741,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367515623669,
+          ""y"": -133.85568686058375,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01635232804653123
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596814945859729,1783596814.94586,/apollo/planning,apollo.planning.ADCTrajectory,1783596814.9451542,517,517,planning,1783596813362362419,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63675113777117,
+          ""y"": -133.8556299785993,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019905947938064324
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815045266498,1783596815.0452664,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.044562,518,518,planning,1783596813462684182,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367504157178,
+          ""y"": -133.8556367080497,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019865515540374006
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815105497633,1783596815.1054976,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.1046689,519,519,planning,1783596813563028807,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367496276116,
+          ""y"": -133.85563667753965,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019863738225867473
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815187640923,1783596815.187641,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.186378,520,520,planning,1783596813662323494,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367489754764,
+          ""y"": -133.85563080935339,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01989574753302155
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815263678493,1783596815.2636786,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.2629237,521,521,planning,1783596813763326004,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674927984937,
+          ""y"": -133.85563080329686,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01989574753302155
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815343005167,1783596815.3430052,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.3423986,522,522,planning,1783596813862574135,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674872633226,
+          ""y"": -133.85565331091325,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016306963263538542
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815422548611,1783596815.4225488,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.4217262,523,523,planning,1783596813962389523,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674797366883,
+          ""y"": -133.85570883011042,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016380932418206838
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815513226295,1783596815.5132263,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.5123746,524,524,planning,1783596814062188562,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674742802976,
+          ""y"": -133.85576113498269,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016475053848509304
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815577812789,1783596815.5778127,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.5770302,525,525,planning,1783596814162412885,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367388079813,
+          ""y"": -133.85657112607842,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017138606668879574
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815656921091,1783596815.6569211,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.656216,526,526,planning,1783596814262314751,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367388079813,
+          ""y"": -133.85657112607842,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017138606668879574
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815742822739,1783596815.7428226,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.742174,527,527,planning,1783596814362289166,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63674517276644,
+          ""y"": -133.85584878192387,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016695200350195907
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815810335803,1783596815.8103356,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.809852,528,528,planning,1783596814462412549,0,0,105,"{
+  ""id"": ""105"",
+  ""perception_id"": 105,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.0229314628523,
+          ""y"": -133.67119527035828
+        },
+        ""stop_heading"": -0.01391802838042927
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815810335803,1783596815.8103356,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.809852,528,528,planning,1783596814462412549,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367432961036,
+          ""y"": -133.8559875171016,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016796310145602348
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815810335803,1783596815.8103356,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.809852,528,528,planning,1783596814462412549,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.0520293885556,
+          ""y"": -133.81872316308412,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.01128160621723393
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815898516331,1783596815.8985162,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.8978815,529,529,planning,1783596814562393384,0,0,105,"{
+  ""id"": ""105"",
+  ""perception_id"": 105,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_OBSTACLE"",
+        ""distance_s"": -6.0,
+        ""stop_point"": {
+          ""x"": 304.2659324223171,
+          ""y"": -133.67460500459572
+        },
+        ""stop_heading"": -0.01396351000339158
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815898516331,1783596815.8985162,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.8978815,529,529,planning,1783596814562393384,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367413355665,
+          ""y"": -133.8561197416205,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01689855368399424
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815898516331,1783596815.8985162,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.8978815,529,529,planning,1783596814562393384,0,0,PATH_END_regular/self,"{
+  ""id"": ""PATH_END_regular/self"",
+  ""perception_id"": -1996556752,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_REFERENCE_END"",
+        ""distance_s"": -0.0,
+        ""stop_point"": {
+          ""x"": 315.32397121525906,
+          ""y"": -133.82180029146173,
+          ""z"": 0.0
+        },
+        ""stop_heading"": -0.011089652635566601
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596815977651642,1783596815.9776516,/apollo/planning,apollo.planning.ADCTrajectory,1783596815.9768002,530,530,planning,1783596814662432754,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673147790456,
+          ""y"": -133.85680598567694,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017231024365981024
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596816051086519,1783596816.0510867,/apollo/planning,apollo.planning.ADCTrajectory,1783596816.0496705,531,531,planning,1783596814762403942,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673901332237,
+          ""y"": -133.85619258417404,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016931515141750602
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596816132521222,1783596816.1325212,/apollo/planning,apollo.planning.ADCTrajectory,1783596816.1318948,532,532,planning,1783596814862748170,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367397376582,
+          ""y"": -133.85588232223455,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01672643796194571
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596816225497691,1783596816.2254975,/apollo/planning,apollo.planning.ADCTrajectory,1783596816.2245448,533,533,planning,1783596814962719829,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673764483275,
+          ""y"": -133.8556327690785,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019853597775053904
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596816298362512,1783596816.2983627,/apollo/planning,apollo.planning.ADCTrajectory,1783596816.2976537,534,534,planning,1783596815062386299,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63671942750864,
+          ""y"": -133.85617691292242,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019024026258289885
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596816376611090,1783596816.376611,/apollo/planning,apollo.planning.ADCTrajectory,1783596816.3758848,535,535,planning,1783596815162372901,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63670790961515,
+          ""y"": -133.85830953352368,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.01797424548948465
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596816453493440,1783596816.4534936,/apollo/planning,apollo.planning.ADCTrajectory,1783596816.4528537,536,536,planning,1783596815262271894,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367162140774,
+          ""y"": -133.85764781813631,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017577661493886697
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596816532069063,1783596816.5320692,/apollo/planning,apollo.planning.ADCTrajectory,1783596816.530388,537,537,planning,1783596815362370163,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63673630536914,
+          ""y"": -133.85575614793024,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.016480664971525158
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596816609514685,1783596816.6095147,/apollo/planning,apollo.planning.ADCTrajectory,1783596816.6089206,538,538,planning,1783596815462370300,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.6367190943553,
+          ""y"": -133.855953508256,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.019118526865700942
+      }
+    }
+  ]
+}"
+/apollo_workspace/records/202607091933_MkzExample_CarlaTown01.00000.20260709193304.record,1783596816700101424,1783596816.7001014,/apollo/planning,apollo.planning.ADCTrajectory,1783596816.6988955,539,539,planning,1783596815562402999,0,0,TL_signal_4_387,"{
+  ""id"": ""TL_signal_4_387"",
+  ""perception_id"": -791060043,
+  ""object_decision"": [
+    {
+      ""stop"": {
+        ""reason_code"": ""STOP_REASON_SIGNAL"",
+        ""distance_s"": -1.0,
+        ""stop_point"": {
+          ""x"": 323.63671104407456,
+          ""y"": -133.85782500782142,
+          ""z"": 0.0
+        },
+        ""stop_heading"": 0.017658510506645214
+      }
+    }
+  ]
+}"

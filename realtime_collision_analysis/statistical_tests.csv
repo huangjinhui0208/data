@@ -1,0 +1,13 @@
+﻿metric,comparison,test,statistic,p_value,p_holm,interpretation
+actual_e2e_latency_ms,four_group_overall,Kruskal-Wallis,18.70129870129871,0.00031516301840982285,,exploratory_small_sample
+actual_e2e_latency_ms,delay_100ms_vs_baseline,Mann-Whitney U,0.0,0.0021645021645021645,0.006493506493506494,exploratory_small_sample
+actual_e2e_latency_ms,delay_300ms_vs_baseline,Mann-Whitney U,0.0,0.004329004329004329,0.008658008658008658,exploratory_small_sample
+actual_e2e_latency_ms,delay_400ms_vs_baseline,Mann-Whitney U,0.0,0.009523809523809525,0.009523809523809525,exploratory_small_sample
+D_delay_m,four_group_overall,Kruskal-Wallis,18.70129870129871,0.00031516301840982285,,exploratory_small_sample
+D_delay_m,delay_100ms_vs_baseline,Mann-Whitney U,0.0,0.0021645021645021645,0.006493506493506494,exploratory_small_sample
+D_delay_m,delay_300ms_vs_baseline,Mann-Whitney U,0.0,0.004329004329004329,0.008658008658008658,exploratory_small_sample
+D_delay_m,delay_400ms_vs_baseline,Mann-Whitney U,0.0,0.009523809523809525,0.009523809523809525,exploratory_small_sample
+M_space_m,four_group_overall,Kruskal-Wallis,15.353679653679663,0.0015380428376611703,,exploratory_small_sample
+M_space_m,delay_100ms_vs_baseline,Mann-Whitney U,25.0,0.30952380952380953,0.30952380952380953,exploratory_small_sample
+M_space_m,delay_300ms_vs_baseline,Mann-Whitney U,30.0,0.004329004329004329,0.012987012987012988,exploratory_small_sample
+M_space_m,delay_400ms_vs_baseline,Mann-Whitney U,24.0,0.009523809523809525,0.01904761904761905,exploratory_small_sample

@@ -1,0 +1,1057 @@
+{
+  "selected_target_id": "269",
+  "target_source": "carla_history_multi_frame_interpolation",
+  "confidence": 0.9074981766011476,
+  "t2": 1783690732.886102,
+  "pre_window": [
+    1783690717.886102,
+    1783690732.886102
+  ],
+  "planning_target_window": [
+    1783690729.886102,
+    1783690733.886102
+  ],
+  "target_post_window": [
+    1783690732.886102,
+    1783690733.886102
+  ],
+  "post_window": [
+    1783690732.886102,
+    1783690733.886102
+  ],
+  "selected_reason": "CARLA collision actor trajectory matched Apollo FUSION_OBS after time interpolation and coordinate conversion.",
+  "candidates": [
+    {
+      "id": "269",
+      "target_source": "carla_history_multi_frame_interpolation",
+      "score": 0.9074981766011476,
+      "score_detail": {
+        "post_collision_score": 0.0,
+        "collision_geometry_or_risk_score": 0.0,
+        "perception_continuity_score": 0.15,
+        "planning_score": 0.2,
+        "type_score": 1.0,
+        "weights": {
+          "post_collision_score": 0.35,
+          "collision_geometry_or_risk_score": 0.25,
+          "perception_continuity_score": 0.2,
+          "planning_score": 0.1,
+          "type_score": 0.1
+        },
+        "risk_score": 0.0,
+        "perception_score": 0.15
+      },
+      "planning_evidence": {
+        "from_cli": false,
+        "from_stop_id": false,
+        "from_blocking_obstacle_id": false,
+        "from_print_stop": false,
+        "from_planning_decision": false,
+        "from_st_boundary": false,
+        "first_planning_time": null,
+        "last_planning_time_before_collision": null,
+        "last_planning_time_in_target_window": null,
+        "planning_target_window": [
+          1783690729.886102,
+          1783690733.886102
+        ],
+        "source_files": []
+      },
+      "perception_evidence": {
+        "exists_before_collision": true,
+        "first_seen_time": 1783690721.792439,
+        "last_seen_time_before_collision": 1783690723.092608,
+        "stable_from_first_seen_to_t2": false,
+        "position_continuity_ok": false,
+        "selected_segment_frame_count": 14,
+        "selected_segment_max_gap_sec": 0.1058340072631836,
+        "source_files": [
+          "log\\perception.log.INFO.20260710-213635.60905"
+        ]
+      },
+      "risk_evidence": {
+        "rel_forward": null,
+        "rel_left": null,
+        "rel_distance": null,
+        "closing_speed": null,
+        "ttc": null,
+        "source_files": []
+      },
+      "type_evidence": {
+        "vehicle_type_ratio": 1.0,
+        "unknown_movable_ratio": 0.0,
+        "unknown_ratio": 0.0,
+        "bicycle_pedestrian_ratio": 0.0,
+        "dominant_type": "VEHICLE",
+        "source_files": [
+          "log\\perception.log.INFO.20260710-213635.60905"
+        ]
+      },
+      "post_collision_evidence": {
+        "stable_same_id": false,
+        "post_collision_stable_id": null,
+        "same_physical_target_score": 0.0,
+        "post_collision_frame_count": 0,
+        "post_collision_window": [
+          1783690732.886102,
+          1783690733.886102
+        ],
+        "source_files": []
+      },
+      "source_files": [
+        "log\\perception.log.INFO.20260710-213635.60905"
+      ],
+      "carla_identity_evidence": {
+        "available": true,
+        "resolved": true,
+        "selected_target_id": "269",
+        "physical_target_id_chain": [
+          "269",
+          "278"
+        ],
+        "confidence": 0.9074981766011476,
+        "method": "carla_history_multi_frame_interpolation",
+        "candidates": [
+          {
+            "id": "269",
+            "score": 0.9074981766011476,
+            "identity_score": 0.9026296595801554,
+            "planning_aux_score": 1.0,
+            "primary_qualified": true,
+            "matched_frame_count": 3,
+            "first_matched_time": 1783690722.892892,
+            "last_matched_time": 1783690723.092608,
+            "position_error_m": {
+              "min": 1.299108774417447,
+              "median": 1.6850205143284986,
+              "max": 1.792702188396724
+            },
+            "velocity_error_mps_median": 0.5481909954791977,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 1.0,
+            "component_scores": {
+              "position": 0.8540730390903537,
+              "type": 1.0,
+              "velocity": 0.9631326106122265
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "278",
+            "score": 0.9067153139311261,
+            "identity_score": 0.9018055936117118,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 1,
+            "first_matched_time": 1783690723.992978,
+            "last_matched_time": 1783690723.992978,
+            "position_error_m": {
+              "min": 1.7452500968227083,
+              "median": 1.7452500968227083,
+              "max": 1.7452500968227083
+            },
+            "velocity_error_mps_median": 0.3330724602752212,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 1.0,
+            "component_scores": {
+              "position": 0.8443260447611741,
+              "type": 1.0,
+              "velocity": 0.9862285481594738
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "299",
+            "score": 0.41944455222464966,
+            "identity_score": 0.3888890023417365,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 2,
+            "first_matched_time": 1783690732.690886,
+            "last_matched_time": 1783690732.790947,
+            "position_error_m": {
+              "min": 16.54450528150337,
+              "median": 16.70297089520949,
+              "max": 16.86143650891561
+            },
+            "velocity_error_mps_median": 2.260344736903712e-08,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 1.0,
+            "component_scores": {
+              "position": 1.8565011435635628e-07,
+              "type": 1.0,
+              "velocity": 0.9999999999999999
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "292",
+            "score": 0.41944453033728807,
+            "identity_score": 0.3888889793024085,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 7,
+            "first_matched_time": 1783690728.29143,
+            "last_matched_time": 1783690729.0926,
+            "position_error_m": {
+              "min": 16.539433407594903,
+              "median": 16.819986359084343,
+              "max": 16.996569655693815
+            },
+            "velocity_error_mps_median": 0.00017216638535610303,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 1.0,
+            "component_scores": {
+              "position": 1.4929672591542794e-07,
+              "type": 1.0,
+              "velocity": 0.9999999962948419
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "277",
+            "score": 0.37015536056143894,
+            "identity_score": 0.33700564269625155,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 11,
+            "first_matched_time": 1783690723.491954,
+            "last_matched_time": 1783690725.092994,
+            "position_error_m": {
+              "min": 8.400934140352955,
+              "median": 8.745745444253311,
+              "max": 9.03572084109011
+            },
+            "velocity_error_mps_median": 6.810336562985488e-08,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 0.6363636363636364,
+            "component_scores": {
+              "position": 0.014273696312874685,
+              "type": 0.6363636363636364,
+              "velocity": 0.9999999999999994
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "285",
+            "score": 0.3676702234349191,
+            "identity_score": 0.33438970887886227,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 68,
+            "first_matched_time": 1783690725.892247,
+            "last_matched_time": 1783690732.790947,
+            "position_error_m": {
+              "min": 7.35746806966727,
+              "median": 7.763105158345798,
+              "max": 8.826939009419231
+            },
+            "velocity_error_mps_median": 4.813294376172093e-07,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 0.5441176470588235,
+            "component_scores": {
+              "position": 0.035151074422106056,
+              "type": 0.5441176470588235,
+              "velocity": 0.999999999999971
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "293",
+            "score": 0.3666667289956541,
+            "identity_score": 0.33333339894279385,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 3,
+            "first_matched_time": 1783690729.792365,
+            "last_matched_time": 1783690730.391613,
+            "position_error_m": {
+              "min": 16.87805064879921,
+              "median": 16.995506197017676,
+              "max": 17.299216255895406
+            },
+            "velocity_error_mps_median": 1.58820422198192e-06,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 0.6666666666666666,
+            "component_scores": {
+              "position": 1.0736105007032304e-07,
+              "type": 0.6666666666666666,
+              "velocity": 0.9999999999996847
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "294",
+            "score": 0.308611111111099,
+            "identity_score": 0.2722222222222095,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 4,
+            "first_matched_time": 1783690729.891198,
+            "last_matched_time": 1783690730.391613,
+            "position_error_m": {
+              "min": 30.643683687590244,
+              "median": 30.650859345886836,
+              "max": 30.686735461476708
+            },
+            "velocity_error_mps_median": 6.783017834671373e-07,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 0.0,
+            "component_scores": {
+              "position": 2.151987123523196e-23,
+              "type": 0.3,
+              "velocity": 0.9999999999999425
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "290",
+            "score": 0.30861091677153035,
+            "identity_score": 0.2722220176542425,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 2,
+            "first_matched_time": 1783690727.892781,
+            "last_matched_time": 1783690728.091876,
+            "position_error_m": {
+              "min": 30.635209783898382,
+              "median": 30.646639603398906,
+              "max": 30.65806942289943
+            },
+            "velocity_error_mps_median": 0.002713752137278488,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 0.0,
+            "component_scores": {
+              "position": 2.1831343947948736e-23,
+              "type": 0.3,
+              "velocity": 0.9999990794440909
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "295",
+            "score": 0.2611112354064219,
+            "identity_score": 0.2222223530593915,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 1,
+            "first_matched_time": 1783690731.091001,
+            "last_matched_time": 1783690731.091001,
+            "position_error_m": {
+              "min": 16.62597498074385,
+              "median": 16.62597498074385,
+              "max": 16.62597498074385
+            },
+            "velocity_error_mps_median": 1.2109348623498875e-07,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 0.0,
+            "component_scores": {
+              "position": 2.1409718679198144e-07,
+              "type": 0.0,
+              "velocity": 0.9999999999999981
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "283",
+            "score": 0.2611111114321285,
+            "identity_score": 0.22222222256013527,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 10,
+            "first_matched_time": 1783690725.491101,
+            "last_matched_time": 1783690726.892874,
+            "position_error_m": {
+              "min": 19.48775172897779,
+              "median": 19.587843397507054,
+              "max": 19.649032085963125
+            },
+            "velocity_error_mps_median": 1.3903362829282062e-08,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 0.0,
+            "component_scores": {
+              "position": 5.529486069999317e-10,
+              "type": 0.0,
+              "velocity": 1.0
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "280",
+            "score": 0.2611111111111111,
+            "identity_score": 0.22222222222222224,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 7,
+            "first_matched_time": 1783690724.592216,
+            "last_matched_time": 1783690725.391677,
+            "position_error_m": {
+              "min": 29.75539339379808,
+              "median": 29.805039463333106,
+              "max": 30.058562457539132
+            },
+            "velocity_error_mps_median": 1.2794388830729899e-08,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 0.0,
+            "component_scores": {
+              "position": 3.6863206853705346e-22,
+              "type": 0.0,
+              "velocity": 1.0
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "286",
+            "score": 0.2611111111111111,
+            "identity_score": 0.22222222222222224,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 1,
+            "first_matched_time": 1783690726.192573,
+            "last_matched_time": 1783690726.192573,
+            "position_error_m": {
+              "min": 29.89417675272579,
+              "median": 29.89417675272579,
+              "max": 29.89417675272579
+            },
+            "velocity_error_mps_median": 2.0085188611775516e-08,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 0.0,
+            "component_scores": {
+              "position": 2.742840497242018e-22,
+              "type": 0.0,
+              "velocity": 1.0
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "273",
+            "score": 0.2611111111109407,
+            "identity_score": 0.22222222222204285,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 4,
+            "first_matched_time": 1783690722.892892,
+            "last_matched_time": 1783690723.192526,
+            "position_error_m": {
+              "min": 29.812698317057222,
+              "median": 29.8706907516538,
+              "max": 30.019395339947977
+            },
+            "velocity_error_mps_median": 2.541125363997782e-06,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 0.0,
+            "component_scores": {
+              "position": 2.965287332405602e-22,
+              "type": 0.0,
+              "velocity": 0.9999999999991929
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          },
+          {
+            "id": "289",
+            "score": 0.2609505116542311,
+            "identity_score": 0.22205317016234857,
+            "planning_aux_score": 1.0,
+            "primary_qualified": false,
+            "matched_frame_count": 2,
+            "first_matched_time": 1783690726.892874,
+            "last_matched_time": 1783690726.991939,
+            "position_error_m": {
+              "min": 29.76328615805463,
+              "median": 29.789863670846763,
+              "max": 29.816441183638897
+            },
+            "velocity_error_mps_median": 0.07802685561161125,
+            "heading_error_rad_median": null,
+            "heading_ignored_for_stationary_target": true,
+            "vehicle_type_ratio": 0.0,
+            "component_scores": {
+              "position": 3.876269780171094e-22,
+              "type": 0.0,
+              "velocity": 0.9992392657305685
+            },
+            "component_weights_used": {
+              "position": 0.55,
+              "type": 0.15,
+              "velocity": 0.2
+            }
+          }
+        ],
+        "warnings": [],
+        "collision_event": {
+          "time": 1783690732.886102,
+          "other_actor_id": "214",
+          "other_actor_type": "vehicle.lincoln.mkz_2020",
+          "ego_actor_id": "197",
+          "history_path": "/apollo/data/log/carla_collision_actor_history_20260710213852.csv",
+          "source_file": "log\\carla_collision_events_20260710213852.csv"
+        },
+        "history_source": "log\\carla_collision_actor_history_20260710213852.csv",
+        "history_time_range": [
+          1783690722.8928916,
+          1783690732.886102
+        ],
+        "history_frame_count": 101,
+        "coordinate_transform": {
+          "x_apollo": "x_carla",
+          "y_apollo": "-y_carla",
+          "z_apollo": "z_carla",
+          "vx_apollo": "vx_carla",
+          "vy_apollo": "-vy_carla",
+          "heading_apollo": "-yaw_carla*pi/180"
+        },
+        "score_margin": 0.9074981766011476,
+        "selected_reason": "CARLA collision actor trajectory matched Apollo FUSION_OBS after time interpolation and coordinate conversion."
+      }
+    }
+  ],
+  "warnings": [],
+  "carla_history_match": {
+    "available": true,
+    "resolved": true,
+    "selected_target_id": "269",
+    "physical_target_id_chain": [
+      "269",
+      "278"
+    ],
+    "confidence": 0.9074981766011476,
+    "method": "carla_history_multi_frame_interpolation",
+    "candidates": [
+      {
+        "id": "269",
+        "score": 0.9074981766011476,
+        "identity_score": 0.9026296595801554,
+        "planning_aux_score": 1.0,
+        "primary_qualified": true,
+        "matched_frame_count": 3,
+        "first_matched_time": 1783690722.892892,
+        "last_matched_time": 1783690723.092608,
+        "position_error_m": {
+          "min": 1.299108774417447,
+          "median": 1.6850205143284986,
+          "max": 1.792702188396724
+        },
+        "velocity_error_mps_median": 0.5481909954791977,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 1.0,
+        "component_scores": {
+          "position": 0.8540730390903537,
+          "type": 1.0,
+          "velocity": 0.9631326106122265
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "278",
+        "score": 0.9067153139311261,
+        "identity_score": 0.9018055936117118,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 1,
+        "first_matched_time": 1783690723.992978,
+        "last_matched_time": 1783690723.992978,
+        "position_error_m": {
+          "min": 1.7452500968227083,
+          "median": 1.7452500968227083,
+          "max": 1.7452500968227083
+        },
+        "velocity_error_mps_median": 0.3330724602752212,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 1.0,
+        "component_scores": {
+          "position": 0.8443260447611741,
+          "type": 1.0,
+          "velocity": 0.9862285481594738
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "299",
+        "score": 0.41944455222464966,
+        "identity_score": 0.3888890023417365,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 2,
+        "first_matched_time": 1783690732.690886,
+        "last_matched_time": 1783690732.790947,
+        "position_error_m": {
+          "min": 16.54450528150337,
+          "median": 16.70297089520949,
+          "max": 16.86143650891561
+        },
+        "velocity_error_mps_median": 2.260344736903712e-08,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 1.0,
+        "component_scores": {
+          "position": 1.8565011435635628e-07,
+          "type": 1.0,
+          "velocity": 0.9999999999999999
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "292",
+        "score": 0.41944453033728807,
+        "identity_score": 0.3888889793024085,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 7,
+        "first_matched_time": 1783690728.29143,
+        "last_matched_time": 1783690729.0926,
+        "position_error_m": {
+          "min": 16.539433407594903,
+          "median": 16.819986359084343,
+          "max": 16.996569655693815
+        },
+        "velocity_error_mps_median": 0.00017216638535610303,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 1.0,
+        "component_scores": {
+          "position": 1.4929672591542794e-07,
+          "type": 1.0,
+          "velocity": 0.9999999962948419
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "277",
+        "score": 0.37015536056143894,
+        "identity_score": 0.33700564269625155,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 11,
+        "first_matched_time": 1783690723.491954,
+        "last_matched_time": 1783690725.092994,
+        "position_error_m": {
+          "min": 8.400934140352955,
+          "median": 8.745745444253311,
+          "max": 9.03572084109011
+        },
+        "velocity_error_mps_median": 6.810336562985488e-08,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 0.6363636363636364,
+        "component_scores": {
+          "position": 0.014273696312874685,
+          "type": 0.6363636363636364,
+          "velocity": 0.9999999999999994
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "285",
+        "score": 0.3676702234349191,
+        "identity_score": 0.33438970887886227,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 68,
+        "first_matched_time": 1783690725.892247,
+        "last_matched_time": 1783690732.790947,
+        "position_error_m": {
+          "min": 7.35746806966727,
+          "median": 7.763105158345798,
+          "max": 8.826939009419231
+        },
+        "velocity_error_mps_median": 4.813294376172093e-07,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 0.5441176470588235,
+        "component_scores": {
+          "position": 0.035151074422106056,
+          "type": 0.5441176470588235,
+          "velocity": 0.999999999999971
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "293",
+        "score": 0.3666667289956541,
+        "identity_score": 0.33333339894279385,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 3,
+        "first_matched_time": 1783690729.792365,
+        "last_matched_time": 1783690730.391613,
+        "position_error_m": {
+          "min": 16.87805064879921,
+          "median": 16.995506197017676,
+          "max": 17.299216255895406
+        },
+        "velocity_error_mps_median": 1.58820422198192e-06,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 0.6666666666666666,
+        "component_scores": {
+          "position": 1.0736105007032304e-07,
+          "type": 0.6666666666666666,
+          "velocity": 0.9999999999996847
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "294",
+        "score": 0.308611111111099,
+        "identity_score": 0.2722222222222095,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 4,
+        "first_matched_time": 1783690729.891198,
+        "last_matched_time": 1783690730.391613,
+        "position_error_m": {
+          "min": 30.643683687590244,
+          "median": 30.650859345886836,
+          "max": 30.686735461476708
+        },
+        "velocity_error_mps_median": 6.783017834671373e-07,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 0.0,
+        "component_scores": {
+          "position": 2.151987123523196e-23,
+          "type": 0.3,
+          "velocity": 0.9999999999999425
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "290",
+        "score": 0.30861091677153035,
+        "identity_score": 0.2722220176542425,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 2,
+        "first_matched_time": 1783690727.892781,
+        "last_matched_time": 1783690728.091876,
+        "position_error_m": {
+          "min": 30.635209783898382,
+          "median": 30.646639603398906,
+          "max": 30.65806942289943
+        },
+        "velocity_error_mps_median": 0.002713752137278488,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 0.0,
+        "component_scores": {
+          "position": 2.1831343947948736e-23,
+          "type": 0.3,
+          "velocity": 0.9999990794440909
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "295",
+        "score": 0.2611112354064219,
+        "identity_score": 0.2222223530593915,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 1,
+        "first_matched_time": 1783690731.091001,
+        "last_matched_time": 1783690731.091001,
+        "position_error_m": {
+          "min": 16.62597498074385,
+          "median": 16.62597498074385,
+          "max": 16.62597498074385
+        },
+        "velocity_error_mps_median": 1.2109348623498875e-07,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 0.0,
+        "component_scores": {
+          "position": 2.1409718679198144e-07,
+          "type": 0.0,
+          "velocity": 0.9999999999999981
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "283",
+        "score": 0.2611111114321285,
+        "identity_score": 0.22222222256013527,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 10,
+        "first_matched_time": 1783690725.491101,
+        "last_matched_time": 1783690726.892874,
+        "position_error_m": {
+          "min": 19.48775172897779,
+          "median": 19.587843397507054,
+          "max": 19.649032085963125
+        },
+        "velocity_error_mps_median": 1.3903362829282062e-08,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 0.0,
+        "component_scores": {
+          "position": 5.529486069999317e-10,
+          "type": 0.0,
+          "velocity": 1.0
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "280",
+        "score": 0.2611111111111111,
+        "identity_score": 0.22222222222222224,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 7,
+        "first_matched_time": 1783690724.592216,
+        "last_matched_time": 1783690725.391677,
+        "position_error_m": {
+          "min": 29.75539339379808,
+          "median": 29.805039463333106,
+          "max": 30.058562457539132
+        },
+        "velocity_error_mps_median": 1.2794388830729899e-08,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 0.0,
+        "component_scores": {
+          "position": 3.6863206853705346e-22,
+          "type": 0.0,
+          "velocity": 1.0
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "286",
+        "score": 0.2611111111111111,
+        "identity_score": 0.22222222222222224,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 1,
+        "first_matched_time": 1783690726.192573,
+        "last_matched_time": 1783690726.192573,
+        "position_error_m": {
+          "min": 29.89417675272579,
+          "median": 29.89417675272579,
+          "max": 29.89417675272579
+        },
+        "velocity_error_mps_median": 2.0085188611775516e-08,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 0.0,
+        "component_scores": {
+          "position": 2.742840497242018e-22,
+          "type": 0.0,
+          "velocity": 1.0
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "273",
+        "score": 0.2611111111109407,
+        "identity_score": 0.22222222222204285,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 4,
+        "first_matched_time": 1783690722.892892,
+        "last_matched_time": 1783690723.192526,
+        "position_error_m": {
+          "min": 29.812698317057222,
+          "median": 29.8706907516538,
+          "max": 30.019395339947977
+        },
+        "velocity_error_mps_median": 2.541125363997782e-06,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 0.0,
+        "component_scores": {
+          "position": 2.965287332405602e-22,
+          "type": 0.0,
+          "velocity": 0.9999999999991929
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      },
+      {
+        "id": "289",
+        "score": 0.2609505116542311,
+        "identity_score": 0.22205317016234857,
+        "planning_aux_score": 1.0,
+        "primary_qualified": false,
+        "matched_frame_count": 2,
+        "first_matched_time": 1783690726.892874,
+        "last_matched_time": 1783690726.991939,
+        "position_error_m": {
+          "min": 29.76328615805463,
+          "median": 29.789863670846763,
+          "max": 29.816441183638897
+        },
+        "velocity_error_mps_median": 0.07802685561161125,
+        "heading_error_rad_median": null,
+        "heading_ignored_for_stationary_target": true,
+        "vehicle_type_ratio": 0.0,
+        "component_scores": {
+          "position": 3.876269780171094e-22,
+          "type": 0.0,
+          "velocity": 0.9992392657305685
+        },
+        "component_weights_used": {
+          "position": 0.55,
+          "type": 0.15,
+          "velocity": 0.2
+        }
+      }
+    ],
+    "warnings": [],
+    "collision_event": {
+      "time": 1783690732.886102,
+      "other_actor_id": "214",
+      "other_actor_type": "vehicle.lincoln.mkz_2020",
+      "ego_actor_id": "197",
+      "history_path": "/apollo/data/log/carla_collision_actor_history_20260710213852.csv",
+      "source_file": "log\\carla_collision_events_20260710213852.csv"
+    },
+    "history_source": "log\\carla_collision_actor_history_20260710213852.csv",
+    "history_time_range": [
+      1783690722.8928916,
+      1783690732.886102
+    ],
+    "history_frame_count": 101,
+    "coordinate_transform": {
+      "x_apollo": "x_carla",
+      "y_apollo": "-y_carla",
+      "z_apollo": "z_carla",
+      "vx_apollo": "vx_carla",
+      "vy_apollo": "-vy_carla",
+      "heading_apollo": "-yaw_carla*pi/180"
+    },
+    "score_margin": 0.9074981766011476,
+    "selected_reason": "CARLA collision actor trajectory matched Apollo FUSION_OBS after time interpolation and coordinate conversion."
+  },
+  "physical_target_id_chain": [
+    "269",
+    "278"
+  ]
+}

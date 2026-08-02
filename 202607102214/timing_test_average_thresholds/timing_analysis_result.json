@@ -1,0 +1,101 @@
+{
+  "case_id": "202607102214",
+  "status": "PASS",
+  "implicit_deadline_miss": false,
+  "window": {
+    "t1": 1783692901.622478,
+    "t2": 1783692910.718303,
+    "duration_sec": 9.095824956893921,
+    "source": "D:\\data\\202607102214\\classifier_output_history_match\\classification_result.json"
+  },
+  "functional_context": {
+    "verdict": "PERCEPTION_ABNORMAL",
+    "reason_code": "TARGET_MISSING_WHEN_RELEVANT",
+    "target_id": "1016",
+    "target_id_chain": [
+      "1016"
+    ]
+  },
+  "thresholds_ms": {
+    "perception": 1551.201261,
+    "prediction": 6.403471,
+    "planning": 41.557888,
+    "e2e": 1591.367742
+  },
+  "threshold_source": {
+    "method": "mean_of_scene_p90",
+    "scope": "complete_trace",
+    "scenes": [
+      202607031503.0,
+      202607091933.0,
+      202607091959.0,
+      202607092002.0,
+      202607092006.0,
+      202607102138.0,
+      202607102214.0
+    ]
+  },
+  "trace_quality": {
+    "frame_count": 91,
+    "complete_frame_count": 91,
+    "complete_frame_ratio": 1.0,
+    "target_frame_count": 2,
+    "required_complete_frame_ratio": 0.95,
+    "sufficient": true
+  },
+  "modules": {
+    "perception": {
+      "sample_count": 91,
+      "median_ms": 81.368352,
+      "p90_ms": 86.080192,
+      "p95_ms": 88.64870400000001,
+      "max_ms": 92.148128,
+      "threshold_ms": 1551.201261,
+      "miss_count": 0,
+      "miss_ratio": 0.0,
+      "max_overrun_ms": 0.0
+    },
+    "prediction": {
+      "sample_count": 91,
+      "median_ms": 4.659456,
+      "p90_ms": 7.280416,
+      "p95_ms": 7.79368,
+      "max_ms": 8.240864,
+      "threshold_ms": 6.403471,
+      "miss_count": 15,
+      "miss_ratio": 0.16483516483516483,
+      "max_overrun_ms": 1.8373930000000005
+    },
+    "planning": {
+      "sample_count": 91,
+      "median_ms": 33.593984,
+      "p90_ms": 56.580576,
+      "p95_ms": 59.602688,
+      "max_ms": 67.446304,
+      "threshold_ms": 41.557888,
+      "miss_count": 25,
+      "miss_ratio": 0.27472527472527475,
+      "max_overrun_ms": 25.888416
+    },
+    "e2e": {
+      "sample_count": 91,
+      "median_ms": 120.605056,
+      "p90_ms": 141.137728,
+      "p95_ms": 144.93728,
+      "max_ms": 155.878144,
+      "threshold_ms": 1591.367742,
+      "miss_count": 0,
+      "miss_ratio": 0.0,
+      "max_overrun_ms": 0.0
+    }
+  },
+  "e2e_anomaly_frame_count": 0,
+  "e2e_anomaly_target_frame_count": 0,
+  "cause_module_frame_counts": {},
+  "worst_e2e_frames": [],
+  "output_files": {
+    "all_frames": "timing_frame_latencies.csv",
+    "anomaly_frames": "timing_anomaly_frames.csv",
+    "summary": "timing_analysis_result.json"
+  }
+}

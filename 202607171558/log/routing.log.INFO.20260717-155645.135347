@@ -1,0 +1,47 @@
+I0717 15:58:34.103552 136530 routing.cc:137] Get new routing request:waypoint {
+  id: "road_48_lane_0_3"
+  s: 1.1443644709034775
+  pose {
+    x: -6.3999996185302734
+    y: 160
+  }
+}
+waypoint {
+  id: "road_49_lane_0_3"
+  s: 37.931616648360936
+  pose {
+    x: -6.32561492851942
+    y: 184.54694770359504
+  }
+}
+I0717 15:58:34.103680 136530 navigator.cc:39] Way point:	lane id: road_48_lane_0_3 s: 1.14436 x: -6.4 y: 160 length: 62.53
+I0717 15:58:34.103703 136530 navigator.cc:39] Way point:	lane id: road_49_lane_0_3 s: 37.9316 x: -6.32561 y: 184.547 length: 39.3337
+I0717 15:58:34.104352 136530 a_star_strategy.cc:229] Start A* search algorithm.
+I0717 15:58:34.104921 136530 navigator.cc:87] Route lane id	is virtual	start s	end s
+I0717 15:58:34.104935 136530 navigator.cc:89] road_48_lane_0_3	0	1.14436	62.53
+I0717 15:58:34.104949 136530 navigator.cc:89] road_775_lane_0_3	0	0	51.46
+I0717 15:58:34.104959 136530 navigator.cc:89] road_47_lane_0_3	0	0	113.276
+I0717 15:58:34.104967 136530 navigator.cc:89] road_1073_lane_0_3	0	0	75.27
+I0717 15:58:34.104976 136530 navigator.cc:89] road_46_lane_0_3	0	0	137.035
+I0717 15:58:34.104985 136530 navigator.cc:89] road_144_lane_0_3	0	0	69.6514
+I0717 15:58:34.104993 136530 navigator.cc:89] road_45_lane_0_3	0	0	572.365
+I0717 15:58:34.105001 136530 navigator.cc:89] road_6_lane_0_3	0	0	63.2632
+I0717 15:58:34.105010 136530 navigator.cc:89] road_41_lane_0_3	0	0	201.282
+I0717 15:58:34.105017 136530 navigator.cc:89] road_1400_lane_0_3	0	0	54.89
+I0717 15:58:34.105026 136530 navigator.cc:89] road_40_lane_0_3	0	0	254.14
+I0717 15:58:34.105033 136530 navigator.cc:89] road_1185_lane_0_3	0	0	53.2
+I0717 15:58:34.105041 136530 navigator.cc:89] road_39_lane_0_3	0	0	133.906
+I0717 15:58:34.105050 136530 navigator.cc:89] road_1092_lane_0_3	0	0	82.2635
+I0717 15:58:34.105057 136530 navigator.cc:89] road_38_lane_0_3	0	0	249.258
+I0717 15:58:34.105065 136530 navigator.cc:89] road_1601_lane_0_3	0	0	45.0611
+I0717 15:58:34.105073 136530 navigator.cc:89] road_37_lane_0_3	0	0	41.3619
+I0717 15:58:34.105082 136530 navigator.cc:89] road_761_lane_0_3	0	0	22
+I0717 15:58:34.105089 136530 navigator.cc:89] road_36_lane_0_3	0	0	81.3354
+I0717 15:58:34.105098 136530 navigator.cc:89] road_862_lane_0_3	0	0	22
+I0717 15:58:34.105105 136530 navigator.cc:89] road_35_lane_0_3	0	0	293.908
+I0717 15:58:34.105113 136530 navigator.cc:89] road_43_lane_0_3	0	0	32.7758
+I0717 15:58:34.105121 136530 navigator.cc:89] road_266_lane_0_3	0	0	22
+I0717 15:58:34.105129 136530 navigator.cc:89] road_42_lane_0_3	0	0	33.3134
+I0717 15:58:34.105136 136530 navigator.cc:89] road_50_lane_0_3	0	0	183.188
+I0717 15:58:34.105145 136530 navigator.cc:89] road_1174_lane_0_3	0	0	75.8773
+I0717 15:58:34.105154 136530 navigator.cc:89] road_49_lane_0_3	0	0	37.9316

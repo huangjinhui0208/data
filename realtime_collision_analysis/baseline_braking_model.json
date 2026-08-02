@@ -1,0 +1,30 @@
+{
+  "model": "D_brake_required(v) = k_median * v^2",
+  "scope": "current Town04 static-obstacle experiment near 15-17 m/s",
+  "sample_count": 6,
+  "sample_run_ids": [
+    "202607171703",
+    "202607171706",
+    "202607171721",
+    "202607171726",
+    "202607171735",
+    "202607171738"
+  ],
+  "distance_method": "3-D Localization displacement from effective brake onset to the post-t2 minimum-speed sample, conditioned on reaching v<0.1 m/s",
+  "strict_stop_definition": "v<0.1 m/s held for at least 0.5 s",
+  "near_stop_proxy_definition": "first v<0.1 m/s sample after effective brake onset",
+  "brake_completion_proxy_definition": "minimum-speed sample after effective brake onset, accepted only when the run reaches v<0.1 m/s",
+  "empirical_braking_distance_mean_m": 24.875519409180246,
+  "k_median": 0.10196847617955919,
+  "k_bootstrap_95ci": [
+    0.09265056782894879,
+    0.10964053087282072
+  ],
+  "effective_deceleration_median_mps2": 4.904460720125777,
+  "effective_deceleration_bootstrap_95ci_mps2": [
+    4.567280935789174,
+    5.398422650251192
+  ],
+  "bootstrap_iterations": 5000,
+  "random_seed": 20260720
+}

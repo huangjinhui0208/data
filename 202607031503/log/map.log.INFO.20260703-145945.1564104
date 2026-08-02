@@ -1,0 +1,9 @@
+Log file created at: 2026/07/03 14:59:45
+Running on machine: in-dev-docker
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0703 14:59:45.988767 1564104 hdmap.cc:24] Loading HDMap: modules/map/data/carla_town01/base_map.bin ...
+I0703 14:59:46.015328 1564104 hdmap_util.cc:77] Load HDMap success: modules/map/data/carla_town01/base_map.bin
+W0703 15:03:41.950794 1564217 hdmap_common.cc:200] s:-0.0961049 should be >= 0
+W0703 15:03:41.950829 1564217 hdmap_common.cc:200] s:-0.0961049 should be >= 0
+W0703 15:03:46.021237 1564218 hdmap_common.cc:204] s:42.5641 should be <= 42.2691
+W0703 15:03:46.021272 1564218 hdmap_common.cc:204] s:42.5641 should be <= 42.2691

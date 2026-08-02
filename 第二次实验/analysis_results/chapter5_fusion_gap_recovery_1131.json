@@ -1,0 +1,102 @@
+{
+  "scope": {
+    "collision_run": "202607271131",
+    "display_name": "碰撞_1131",
+    "reference_run": "202607271211",
+    "reference_display_name": "未碰撞_1211",
+    "distance_basis": "Wall-clock trapezoidal speed integral to the recorded CARLA collision event."
+  },
+  "observed": {
+    "t2_s": 1785123122.745261,
+    "collision_s": 1785123124.852247,
+    "contact_path_from_t2_m": 27.148355416248187,
+    "impact_speed_mps": 7.988017222183252,
+    "fusion_gap_start_s": 1785123123.937633,
+    "fusion_gap_end_s": 1785123124.445072,
+    "fusion_output_gap_ms": 507.43889808654785,
+    "adjacent_sensor_period_ms": 99.78365898132324,
+    "excess_gap_over_source_period_ms": 407.6552391052246,
+    "before_gap_fusion_lifecycle_ms": 291.54324531555176,
+    "after_gap_fusion_lifecycle_ms": 699.1984844207764,
+    "gap_start_elapsed_from_t2_s": 1.1923720836639404,
+    "gap_end_elapsed_from_t2_s": 1.6998109817504883,
+    "time_from_gap_end_to_collision_s": 0.40717506408691406,
+    "gap_start_speed_mps": 12.529929131289977,
+    "gap_end_speed_mps": 9.965031687660034,
+    "gap_speed_reduction_mps": 2.5648974436299437,
+    "gap_distance_m": 5.810094362114857,
+    "gap_mean_speed_mps": 11.44984033353292,
+    "gap_mean_deceleration_mps2": 5.0545936728572975,
+    "preimpact_deceleration_p90_mps2": 6.48694010545515,
+    "preimpact_peak_deceleration_mps2": 11.136627086527866
+  },
+  "counterfactual_inputs": {
+    "expected_next_fusion_s": 1785123124.0374167,
+    "software_after_fusion_ms": 20.714517339843724,
+    "scb_actual_wall_delay_ms": 300.046735
+  },
+  "counterfactual_recovery_states": {
+    "optimistic_gap_start": {
+      "action_time_s": 1785123123.937633,
+      "action_elapsed_from_t2_s": 1.1923720836639404,
+      "time_to_recorded_collision_s": 0.9146139621734619,
+      "speed_mps": 12.529929131289977,
+      "observed_path_used_from_t2_m": 18.15085696664098,
+      "observed_path_remaining_to_collision_m": 8.997498449607207,
+      "required_constant_deceleration_to_stop_at_contact_mps2": 8.724598560058832,
+      "required_stop_time_s": 1.436161107589744
+    },
+    "expected_next_fusion_immediate_effect": {
+      "action_time_s": 1785123124.0374167,
+      "action_elapsed_from_t2_s": 1.2921557426452637,
+      "time_to_recorded_collision_s": 0.8148303031921387,
+      "speed_mps": 12.072578631103758,
+      "observed_path_used_from_t2_m": 19.378263503676543,
+      "observed_path_remaining_to_collision_m": 7.770091912571644,
+      "required_constant_deceleration_to_stop_at_contact_mps2": 9.37872784801754,
+      "required_stop_time_s": 1.287229870270267
+    },
+    "expected_control_after_software_only": {
+      "action_time_s": 1785123124.0581312,
+      "action_elapsed_from_t2_s": 1.3128702640533447,
+      "time_to_recorded_collision_s": 0.7941157817840576,
+      "speed_mps": 11.979719593412089,
+      "observed_path_used_from_t2_m": 19.627371873292635,
+      "observed_path_remaining_to_collision_m": 7.520983542955552,
+      "required_constant_deceleration_to_stop_at_contact_mps2": 9.54088522578952,
+      "required_stop_time_s": 1.2556192963133306
+    },
+    "expected_bridge_apply_after_software_and_scb": {
+      "action_time_s": 1785123124.358178,
+      "action_elapsed_from_t2_s": 1.6129169464111328,
+      "time_to_recorded_collision_s": 0.49406909942626953,
+      "speed_mps": 10.932582112001151,
+      "observed_path_used_from_t2_m": 23.053019108549496,
+      "observed_path_remaining_to_collision_m": 4.095336307698691,
+      "required_constant_deceleration_to_stop_at_contact_mps2": 14.59237320888192,
+      "required_stop_time_s": 0.749198362425848
+    },
+    "actual_next_fusion_immediate_effect": {
+      "action_time_s": 1785123124.445072,
+      "action_elapsed_from_t2_s": 1.6998109817504883,
+      "time_to_recorded_collision_s": 0.40717506408691406,
+      "speed_mps": 9.965031687660034,
+      "observed_path_used_from_t2_m": 23.96095132875584,
+      "observed_path_remaining_to_collision_m": 3.1874040874923466,
+      "required_constant_deceleration_to_stop_at_contact_mps2": 15.577230531537838,
+      "required_stop_time_s": 0.639717802691866
+    }
+  },
+  "counterfactual_reference_replay": {
+    "method": "Observed collision-run trajectory before the splice; afterward, the observed non-collision reference speed curve at the same elapsed time after t2, normalized to the splice speed.",
+    "action_elapsed_from_t2_s": 1.2921557426452637,
+    "speed_scale": 1.050620516452435,
+    "reaches_recorded_collision_point": true,
+    "contact_elapsed_from_t2_s": 2.096656996300097,
+    "contact_speed_mps": 7.458100100045154
+  },
+  "interpretation": {
+    "message_only_recovery_with_unchanged_control": "Collision remains unchanged because the observed vehicle trajectory is unchanged.",
+    "avoidance_condition": "A restored message avoids collision only if it changes the applied braking enough to meet the required sustained deceleration before the recorded contact path is exhausted."
+  }
+}

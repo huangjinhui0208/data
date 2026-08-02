@@ -1,0 +1,3271 @@
+record_file,record_time_ns,record_time_sec,channel,data_type,header_timestamp_sec,header_sequence_num,header_module_name,header_lidar_timestamp,header_camera_timestamp,header_radar_timestamp,latitude,longitude,height_msl,raw_json
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598540621232489,1783598540.6212323,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598540.6185155,0,gnss,0,0,0,-0.0011947413713500055,0.0009910442411929295,2.0339772701263428,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598540.6185155,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947413713500055,
+  ""longitude"": 0.0009910442411929295,
+  ""height_msl"": 2.0339772701263428
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598540721305741,1783598540.7213058,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598540.7185135,0,gnss,0,0,0,-0.0011947394523588173,0.00099285078206925,2.0339818000793457,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598540.7185135,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947394523588173,
+  ""longitude"": 0.00099285078206925,
+  ""height_msl"": 2.0339818000793457
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598540820974866,1783598540.8209748,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598540.8184028,0,gnss,0,0,0,-0.0011947375333392074,0.0009947491612085648,2.033992052078247,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598540.8184028,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947375333392074,
+  ""longitude"": 0.0009947491612085648,
+  ""height_msl"": 2.033992052078247
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598540922136017,1783598540.922136,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598540.9187262,0,gnss,0,0,0,-0.0011947354772559038,0.0009967490421892934,2.034008502960205,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598540.9187262,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947354772559038,
+  ""longitude"": 0.0009967490421892934,
+  ""height_msl"": 2.034008502960205
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541020938873,1783598541.0209386,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598541.0186172,0,gnss,0,0,0,-0.0011947328728894036,0.0009988584437254438,2.034027338027954,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598541.0186172,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947328728894036,
+  ""longitude"": 0.0009988584437254438,
+  ""height_msl"": 2.034027338027954
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541121204828,1783598541.1212049,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598541.1187027,0,gnss,0,0,0,-0.0011947301314592096,0.0010010815465140628,2.0340428352355957,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598541.1187027,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947301314592096,
+  ""longitude"": 0.0010010815465140628,
+  ""height_msl"": 2.0340428352355957
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541221047584,1783598541.2210476,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598541.2184472,0,gnss,0,0,0,-0.0011947272529369002,0.0010034236963644885,2.0340576171875,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598541.2184472,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947272529369002,
+  ""longitude"": 0.0010034236963644885,
+  ""height_msl"": 2.0340576171875
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541322054496,1783598541.3220544,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598541.3191264,0,gnss,0,0,0,-0.0011947243744288016,0.0010058905132301283,2.034072160720825,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598541.3191264,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947243744288016,
+  ""longitude"": 0.0010058905132301283,
+  ""height_msl"": 2.034072160720825
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541421428185,1783598541.4214282,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598541.4186049,0,gnss,0,0,0,-0.0011947216329843968,0.0010084861092720116,2.0340847969055176,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598541.4186049,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947216329843968,
+  ""longitude"": 0.0010084861092720116,
+  ""height_msl"": 2.0340847969055176
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541520874387,1783598541.5208745,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598541.5183773,0,gnss,0,0,0,-0.0011947184803347,0.0010112128832507393,2.0340945720672607,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598541.5183773,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947184803347,
+  ""longitude"": 0.0010112128832507393,
+  ""height_msl"": 2.0340945720672607
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541621338522,1783598541.6213386,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598541.6185322,0,gnss,0,0,0,-0.0011947147793875956,0.0010140683678696936,2.034095525741577,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598541.6185322,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947147793875956,
+  ""longitude"": 0.0010140683678696936,
+  ""height_msl"": 2.034095525741577
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541721284955,1783598541.7212849,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598541.7184472,0,gnss,0,0,0,-0.0011947110784404913,0.001017040021037734,2.0340821743011475,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598541.7184472,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947110784404913,
+  ""longitude"": 0.001017040021037734,
+  ""height_msl"": 2.0340821743011475
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541821272732,1783598541.8212729,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598541.818326,0,gnss,0,0,0,-0.0011947076516349853,0.0010201120109348965,2.034053087234497,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598541.818326,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947076516349853,
+  ""longitude"": 0.0010201120109348965,
+  ""height_msl"": 2.034053087234497
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541923058260,1783598541.9230583,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598541.918539,0,gnss,0,0,0,-0.0011947040877657855,0.0010232633655399303,2.0340187549591064,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598541.918539,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947040877657855,
+  ""longitude"": 0.0010232633655399303,
+  ""height_msl"": 2.0340187549591064
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542022094953,1783598542.022095,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598542.0186584,0,gnss,0,0,0,-0.0011947006609744903,0.001026508066200336,2.034013271331787,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598542.0186584,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947006609744903,
+  ""longitude"": 0.001026508066200336,
+  ""height_msl"": 2.034013271331787
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542121525026,1783598542.121525,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598542.1192424,0,gnss,0,0,0,-0.0011946970970910797,0.0010298550911343617,2.034019947052002,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598542.1192424,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946970970910797,
+  ""longitude"": 0.0010298550911343617,
+  ""height_msl"": 2.034019947052002
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542221758855,1783598542.221759,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598542.218345,0,gnss,0,0,0,-0.00119469353322188,0.0010333080727509168,2.0340282917022705,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598542.218345,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.00119469353322188,
+  ""longitude"": 0.0010333080727509168,
+  ""height_msl"": 2.0340282917022705
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542321515109,1783598542.321515,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598542.318808,0,gnss,0,0,0,-0.001194690106416374,0.0010368668739779668,2.0340323448181152,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598542.318808,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001194690106416374,
+  ""longitude"": 0.0010368668739779668,
+  ""height_msl"": 2.0340323448181152
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542421247106,1783598542.4212472,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598542.418509,0,gnss,0,0,0,-0.0011946868166887725,0.0010405299870231343,2.034034490585327,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598542.418509,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946868166887725,
+  ""longitude"": 0.0010405299870231343,
+  ""height_msl"": 2.034034490585327
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542521342341,1783598542.5213425,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598542.518449,0,gnss,0,0,0,-0.0011946832528195728,0.0010443003589351572,2.0340380668640137,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598542.518449,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946832528195728,
+  ""longitude"": 0.0010443003589351572,
+  ""height_msl"": 2.0340380668640137
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542621052866,1783598542.621053,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598542.6183357,0,gnss,0,0,0,-0.0011946796889361622,0.0010481794975064132,2.0340418815612793,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598542.6183357,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946796889361622,
+  ""longitude"": 0.0010481794975064132,
+  ""height_msl"": 2.0340418815612793
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542721306599,1783598542.7213066,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598542.718217,0,gnss,0,0,0,-0.001194676262144867,0.001052167471272919,2.0340442657470703,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598542.718217,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001194676262144867,
+  ""longitude"": 0.001052167471272919,
+  ""height_msl"": 2.0340442657470703
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542821312008,1783598542.821312,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598542.8182967,0,gnss,0,0,0,-0.001194672835339361,0.0010562627724422975,2.034043312072754,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598542.8182967,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001194672835339361,
+  ""longitude"": 0.0010562627724422975,
+  ""height_msl"": 2.034043312072754
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542921331081,1783598542.9213312,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598542.9184582,0,gnss,0,0,0,-0.0011946696826896641,0.0010604610832454675,2.0340378284454346,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598542.9184582,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946696826896641,
+  ""longitude"": 0.0010604610832454675,
+  ""height_msl"": 2.0340378284454346
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543021218985,1783598543.021219,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598543.0183778,0,gnss,0,0,0,-0.001194666255884158,0.001064761581250223,2.0340354442596436,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598543.0183778,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001194666255884158,
+  ""longitude"": 0.001064761581250223,
+  ""height_msl"": 2.0340354442596436
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543121322124,1783598543.1213222,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598543.1186907,0,gnss,0,0,0,-0.0011946637885955624,0.0010691694751938684,2.034038543701172,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598543.1186907,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946637885955624,
+  ""longitude"": 0.0010691694751938684,
+  ""height_msl"": 2.034038543701172
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543221286028,1783598543.221286,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598543.2183132,0,gnss,0,0,0,-0.0011946614583564497,0.001073683805572163,2.034308671951294,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598543.2183132,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946614583564497,
+  ""longitude"": 0.001073683805572163,
+  ""height_msl"": 2.034308671951294
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543321414063,1783598543.3214142,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598543.3184505,0,gnss,0,0,0,-0.0011946591281457586,0.0010782263042535105,2.034214973449707,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598543.3184505,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946591281457586,
+  ""longitude"": 0.0010782263042535105,
+  ""height_msl"": 2.034214973449707
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543421359984,1783598543.4213598,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598543.4185436,0,gnss,0,0,0,-0.0011946576203314407,0.001082769625367064,2.0340657234191895,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598543.4185436,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946576203314407,
+  ""longitude"": 0.001082769625367064,
+  ""height_msl"": 2.0340657234191895
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543520710889,1783598543.520711,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598543.518495,0,gnss,0,0,0,-0.0011946580315651545,0.0010873265851480322,2.0339677333831787,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598543.518495,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946580315651545,
+  ""longitude"": 0.0010873265851480322,
+  ""height_msl"": 2.0339677333831787
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543621108239,1783598543.6211083,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598543.6184475,0,gnss,0,0,0,-0.001194658305692542,0.0010919876511390665,2.0341122150421143,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598543.6184475,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001194658305692542,
+  ""longitude"": 0.0010919876511390665,
+  ""height_msl"": 2.0341122150421143
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543721991291,1783598543.721991,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598543.7191901,0,gnss,0,0,0,-0.001194658991067854,0.0010965705175345212,2.0339243412017822,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598543.7191901,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001194658991067854,
+  ""longitude"": 0.0010965705175345212,
+  ""height_msl"": 2.0339243412017822
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543821183698,1783598543.8211837,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598543.8184688,0,gnss,0,0,0,-0.0011946603617758456,0.0011012512533624804,2.0340487957000732,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598543.8184688,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946603617758456,
+  ""longitude"": 0.0011012512533624804,
+  ""height_msl"": 2.0340487957000732
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543921418294,1783598543.9214182,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598543.9185793,0,gnss,0,0,0,-0.0011946625549370538,0.0011058624251330223,2.0338950157165527,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598543.9185793,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946625549370538,
+  ""longitude"": 0.0011058624251330223,
+  ""height_msl"": 2.0338950157165527
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544021333622,1783598544.0213335,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598544.0184104,0,gnss,0,0,0,-0.0011946652963814586,0.0011104885377553049,2.0340089797973633,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598544.0184104,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946652963814586,
+  ""longitude"": 0.0011104885377553049,
+  ""height_msl"": 2.0340089797973633
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544121199862,1783598544.1211998,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598544.1184175,0,gnss,0,0,0,-0.001194668997328563,0.001115215878074933,2.0340077877044678,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598544.1184175,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001194668997328563,
+  ""longitude"": 0.001115215878074933,
+  ""height_msl"": 2.0340077877044678
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544221521755,1783598544.2215216,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598544.218444,0,gnss,0,0,0,-0.0011946733836367684,0.001119867897311702,2.033905267715454,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598544.218444,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946733836367684,
+  ""longitude"": 0.001119867897311702,
+  ""height_msl"": 2.033905267715454
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544321731487,1783598544.3217316,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598544.3184896,0,gnss,0,0,0,-0.0011946784552918643,0.0011244957233344137,2.033891439437866,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598544.3184896,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946784552918643,
+  ""longitude"": 0.0011244957233344137,
+  ""height_msl"": 2.033891439437866
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544421514750,1783598544.4215147,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598544.4187143,0,gnss,0,0,0,-0.0011946848976691626,0.0011291487020754231,2.033939838409424,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598544.4187143,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946848976691626,
+  ""longitude"": 0.0011291487020754231,
+  ""height_msl"": 2.033939838409424
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544520858134,1783598544.520858,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598544.518407,0,gnss,0,0,0,-0.0011946922995633713,0.0011338704909776612,2.0340187549591064,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598544.518407,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011946922995633713,
+  ""longitude"": 0.0011338704909776612,
+  ""height_msl"": 2.0340187549591064
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544620762134,1783598544.620762,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598544.6183429,0,gnss,0,0,0,-0.0011947009351018778,0.0011387015262912523,2.034108877182007,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598544.6183429,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947009351018778,
+  ""longitude"": 0.0011387015262912523,
+  ""height_msl"": 2.034108877182007
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544721574786,1783598544.721575,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598544.7183988,0,gnss,0,0,0,-0.0011947106672209884,0.001143669016815009,2.0341901779174805,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598544.7183988,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947106672209884,
+  ""longitude"": 0.001143669016815009,
+  ""height_msl"": 2.0341901779174805
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544821373504,1783598544.8213735,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598544.8184445,0,gnss,0,0,0,-0.0011947234149118913,0.0011488134673350726,2.0343074798583984,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598544.8184445,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947234149118913,
+  ""longitude"": 0.0011488134673350726,
+  ""height_msl"": 2.0343074798583984
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544922191852,1783598544.9221919,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598544.9193687,0,gnss,0,0,0,-0.0011947378074808057,0.0011541742175252933,2.0343587398529053,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598544.9193687,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947378074808057,
+  ""longitude"": 0.0011541742175252933,
+  ""height_msl"": 2.0343587398529053
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545021622886,1783598545.021623,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598545.018448,0,gnss,0,0,0,-0.0011947537078356163,0.0011596613481311571,2.03432297706604,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598545.018448,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947537078356163,
+  ""longitude"": 0.0011596613481311571,
+  ""height_msl"": 2.03432297706604
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545121688616,1783598545.1216886,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598545.11856,0,gnss,0,0,0,-0.0011947705677073372,0.0011652741737924923,2.0342955589294434,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598545.11856,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011947705677073372,
+  ""longitude"": 0.0011652741737924923,
+  ""height_msl"": 2.0342955589294434
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545221468198,1783598545.2214682,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598545.2186494,0,gnss,0,0,0,-0.001194790306072946,0.0011710106384287841,2.034276008605957,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598545.2186494,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001194790306072946,
+  ""longitude"": 0.0011710106384287841,
+  ""height_msl"": 2.034276008605957
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545321521864,1783598545.321522,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598545.3184683,0,gnss,0,0,0,-0.0011948115522386615,0.0011768630660061105,2.034255266189575,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598545.3184683,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011948115522386615,
+  ""longitude"": 0.0011768630660061105,
+  ""height_msl"": 2.034255266189575
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545421300199,1783598545.4213002,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598545.4184644,0,gnss,0,0,0,-0.0011948354027708774,0.001182821313193932,2.0342323780059814,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598545.4184644,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011948354027708774,
+  ""longitude"": 0.001182821313193932,
+  ""height_msl"": 2.0342323780059814
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545521359785,1783598545.52136,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598545.5185268,0,gnss,0,0,0,-0.001194861583542206,0.0011888742771574688,2.034205675125122,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598545.5185268,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001194861583542206,
+  ""longitude"": 0.0011888742771574688,
+  ""height_msl"": 2.034205675125122
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545621503180,1783598545.621503,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598545.6188679,0,gnss,0,0,0,-0.0011948906427932116,0.0011950078394771856,2.0341737270355225,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598545.6188679,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011948906427932116,
+  ""longitude"": 0.0011950078394771856,
+  ""height_msl"": 2.0341737270355225
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545721574798,1783598545.721575,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598545.718609,0,gnss,0,0,0,-0.0011949227176586419,0.0012012085670937193,2.0341408252716064,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598545.718609,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011949227176586419,
+  ""longitude"": 0.0012012085670937193,
+  ""height_msl"": 2.0341408252716064
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545821106057,1783598545.8211062,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598545.818686,0,gnss,0,0,0,-0.001194958767598564,0.0012074672761807701,2.0341131687164307,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598545.818686,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001194958767598564,
+  ""longitude"": 0.0012074672761807701,
+  ""height_msl"": 2.0341131687164307
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545921281260,1783598545.9212813,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598545.9185808,0,gnss,0,0,0,-0.0011949993409245963,0.001213782047729858,2.03409481048584,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598545.9185808,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011949993409245963,
+  ""longitude"": 0.001213782047729858,
+  ""height_msl"": 2.03409481048584
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546021151180,1783598546.0211513,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598546.01853,0,gnss,0,0,0,-0.0011950449859057244,0.0012201490437240218,2.0340802669525146,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598546.01853,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011950449859057244,
+  ""longitude"": 0.0012201490437240218,
+  ""height_msl"": 2.0340802669525146
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546121622547,1783598546.1216226,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598546.1183748,0,gnss,0,0,0,-0.0011950951542729626,0.001226564974434438,2.0340681076049805,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598546.1183748,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011950951542729626,
+  ""longitude"": 0.001226564974434438,
+  ""height_msl"": 2.0340681076049805
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546221753718,1783598546.2217536,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598546.2186513,0,gnss,0,0,0,-0.0011951497089484064,0.0012330266872043168,2.0340585708618164,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598546.2186513,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011951497089484064,
+  ""longitude"": 0.0012330266872043168,
+  ""height_msl"": 2.0340585708618164
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546320611720,1783598546.320612,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598546.3184743,0,gnss,0,0,0,-0.001195208649917845,0.001239532674241281,2.034050941467285,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598546.3184743,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001195208649917845,
+  ""longitude"": 0.001239532674241281,
+  ""height_msl"": 2.034050941467285
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546421280242,1783598546.4212801,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598546.4185603,0,gnss,0,0,0,-0.0011952717030538906,0.0012460818389690561,2.034045457839966,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598546.4185603,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011952717030538906,
+  ""longitude"": 0.0012460818389690561,
+  ""height_msl"": 2.034045457839966
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546521539127,1783598546.521539,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598546.518466,0,gnss,0,0,0,-0.001195338320073347,0.001252673358955436,2.0340421199798584,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598546.518466,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001195338320073347,
+  ""longitude"": 0.001252673358955436,
+  ""height_msl"": 2.0340421199798584
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546620967249,1783598546.6209671,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598546.6185308,0,gnss,0,0,0,-0.0011954085009477922,0.0012593103868572101,2.034043788909912,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598546.6185308,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011954085009477922,
+  ""longitude"": 0.0012593103868572101,
+  ""height_msl"": 2.034043788909912
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546720991314,1783598546.7209911,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598546.7184527,0,gnss,0,0,0,-0.0011954819715640497,0.0012659947046108249,2.0340466499328613,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598546.7184527,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011954819715640497,
+  ""longitude"": 0.0012659947046108249,
+  ""height_msl"": 2.0340466499328613
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546821267767,1783598546.8212676,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598546.8185596,0,gnss,0,0,0,-0.0011955581836105011,0.001272715757669637,2.0340263843536377,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598546.8185596,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011955581836105011,
+  ""longitude"": 0.001272715757669637,
+  ""height_msl"": 2.0340263843536377
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546921159863,1783598546.92116,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598546.918401,0,gnss,0,0,0,-0.0011956374112429557,0.0012795123374193598,2.0341691970825195,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598546.918401,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011956374112429557,
+  ""longitude"": 0.0012795123374193598,
+  ""height_msl"": 2.0341691970825195
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547020931221,1783598547.0209312,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598547.0184305,0,gnss,0,0,0,-0.0011957263710087318,0.0012869523332981806,2.034778594970703,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598547.0184305,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011957263710087318,
+  ""longitude"": 0.0012869523332981806,
+  ""height_msl"": 2.034778594970703
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547121199001,1783598547.1211991,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598547.1186008,0,gnss,0,0,0,-0.0011958201282737946,0.0012946744234236317,2.0346641540527344,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598547.1186008,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011958201282737946,
+  ""longitude"": 0.0012946744234236317,
+  ""height_msl"": 2.0346641540527344
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547221196795,1783598547.221197,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598547.2185166,0,gnss,0,0,0,-0.0011959144338362648,0.0013023234541547904,2.034229040145874,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598547.2185166,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011959144338362648,
+  ""longitude"": 0.0013023234541547904,
+  ""height_msl"": 2.034229040145874
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547321641217,1783598547.3216412,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598547.318582,0,gnss,0,0,0,-0.0011960073686623218,0.0013097512506225566,2.0338385105133057,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598547.318582,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011960073686623218,
+  ""longitude"": 0.0013097512506225566,
+  ""height_msl"": 2.0338385105133057
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547420772695,1783598547.4207726,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598547.4184692,0,gnss,0,0,0,-0.0011960992069361964,0.0013169964671406087,2.0336759090423584,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598547.4184692,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011960992069361964,
+  ""longitude"": 0.0013169964671406087,
+  ""height_msl"": 2.0336759090423584
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547521587619,1783598547.5215876,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598547.5185108,0,gnss,0,0,0,-0.0011961909081179556,0.0013241431288659846,2.0336790084838867,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598547.5185108,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011961909081179556,
+  ""longitude"": 0.0013241431288659846,
+  ""height_msl"": 2.0336790084838867
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547620959516,1783598547.6209595,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598547.618503,0,gnss,0,0,0,-0.0011962826093139256,0.001331257852807364,2.033756732940674,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598547.618503,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011962826093139256,
+  ""longitude"": 0.001331257852807364,
+  ""height_msl"": 2.033756732940674
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547720681402,1783598547.7206814,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598547.718469,0,gnss,0,0,0,-0.0011963738992903927,0.0013383894366089646,2.0338563919067383,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598547.718469,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011963738992903927,
+  ""longitude"": 0.0013383894366089646,
+  ""height_msl"": 2.0338563919067383
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547820985535,1783598547.8209856,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598547.8185754,0,gnss,0,0,0,-0.0011964642297641603,0.0013455721482793668,2.0339505672454834,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598547.8185754,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011964642297641603,
+  ""longitude"": 0.0013455721482793668,
+  ""height_msl"": 2.0339505672454834
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547920589819,1783598547.92059,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598547.9184206,0,gnss,0,0,0,-0.0011965540119405205,0.0013528266856957525,2.0340259075164795,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598547.9184206,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011965540119405205,
+  ""longitude"": 0.0013528266856957525,
+  ""height_msl"": 2.0340259075164795
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548021476168,1783598548.021476,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598548.018539,0,gnss,0,0,0,-0.0011966429716920857,0.0013601630551166274,2.0340781211853027,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598548.018539,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011966429716920857,
+  ""longitude"": 0.0013601630551166274,
+  ""height_msl"": 2.0340781211853027
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548121293606,1783598548.1212935,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598548.11846,0,gnss,0,0,0,-0.001196730834848836,0.0013675835867665745,2.0341098308563232,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598548.11846,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001196730834848836,
+  ""longitude"": 0.0013675835867665745,
+  ""height_msl"": 2.0341098308563232
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548221189638,1783598548.2211897,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598548.2186003,0,gnss,0,0,0,-0.0011968176014534038,0.001375087732357457,2.034126043319702,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598548.2186003,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011968176014534038,
+  ""longitude"": 0.001375087732357457,
+  ""height_msl"": 2.034126043319702
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548321203592,1783598548.3212037,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598548.318459,0,gnss,0,0,0,-0.0011969032714773675,0.0013826711055841764,2.034130096435547,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598548.318459,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011969032714773675,
+  ""longitude"": 0.0013826711055841764,
+  ""height_msl"": 2.034130096435547
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548421138376,1783598548.4211385,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598548.418883,0,gnss,0,0,0,-0.001196987844934938,0.0013903275382051883,2.0341241359710693,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598548.418883,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001196987844934938,
+  ""longitude"": 0.0013903275382051883,
+  ""height_msl"": 2.0341241359710693
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548521768721,1783598548.5217688,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598548.5185194,0,gnss,0,0,0,-0.001197071184719789,0.0013980482576102964,2.0341103076934814,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598548.5185194,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001197071184719789,
+  ""longitude"": 0.0013980482576102964,
+  ""height_msl"": 2.0341103076934814
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548621447086,1783598548.621447,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598548.6185224,0,gnss,0,0,0,-0.0011971530167187439,0.0014058236687570981,2.0340914726257324,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598548.6185224,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011971530167187439,
+  ""longitude"": 0.0014058236687570981,
+  ""height_msl"": 2.0340914726257324
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548721581457,1783598548.7215815,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598548.7190125,0,gnss,0,0,0,-0.0011972336150876117,0.001413644039531157,2.0340700149536133,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598548.7190125,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011972336150876117,
+  ""longitude"": 0.001413644039531157,
+  ""height_msl"": 2.0340700149536133
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548821425104,1783598548.8214252,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598548.8188305,0,gnss,0,0,0,-0.0011973125685926789,0.001421501008538379,2.034048080444336,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598548.8188305,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011973125685926789,
+  ""longitude"": 0.001421501008538379,
+  ""height_msl"": 2.034048080444336
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548921517715,1783598548.9215178,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598548.918426,0,gnss,0,0,0,-0.001197389740127619,0.001429387859249083,2.0340282917022705,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598548.918426,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001197389740127619,
+  ""longitude"": 0.001429387859249083,
+  ""height_msl"": 2.0340282917022705
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549020911244,1783598549.0209115,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598549.0184946,0,gnss,0,0,0,-0.0011974647185439835,0.001437300479502239,2.034013509750366,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598549.0184946,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011974647185439835,
+  ""longitude"": 0.001437300479502239,
+  ""height_msl"": 2.034013509750366
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549121210353,1783598549.1212103,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598549.1187906,0,gnss,0,0,0,-0.001197538189160241,0.0014452395546580188,2.034005880355835,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598549.1187906,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001197538189160241,
+  ""longitude"": 0.0014452395546580188,
+  ""height_msl"": 2.034005880355835
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549221640024,1783598549.2216399,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598549.2185886,0,gnss,0,0,0,-0.0011976097407426778,0.001453205358860491,2.0340025424957275,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598549.2185886,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011976097407426778,
+  ""longitude"": 0.001453205358860491,
+  ""height_msl"": 2.0340025424957275
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549321456759,1783598549.3214567,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598549.3186803,0,gnss,0,0,0,-0.0011976796474897355,0.0014611988516138959,2.034001111984253,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598549.3186803,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011976796474897355,
+  ""longitude"": 0.0014611988516138959,
+  ""height_msl"": 2.034001111984253
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549422083104,1783598549.4220831,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598549.4193313,0,gnss,0,0,0,-0.0011977476352171834,0.0014692201699902676,2.0340003967285156,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598549.4193313,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011977476352171834,
+  ""longitude"": 0.0014692201699902676,
+  ""height_msl"": 2.0340003967285156
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549520959987,1783598549.52096,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598549.5184693,0,gnss,0,0,0,-0.0011978138410171368,0.0014772693139896065,2.0340003967285156,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598549.5184693,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011978138410171368,
+  ""longitude"": 0.0014772693139896065,
+  ""height_msl"": 2.0340003967285156
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549621451290,1783598549.6214514,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598549.6183488,0,gnss,0,0,0,-0.001197878264861174,0.0014853464206839465,2.0340003967285156,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598549.6183488,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001197878264861174,
+  ""longitude"": 0.0014853464206839465,
+  ""height_msl"": 2.0340003967285156
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549721049206,1783598549.721049,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598549.7183611,0,gnss,0,0,0,-0.0011979410438556215,0.001493451627145322,2.034000873565674,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598549.7183611,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011979410438556215,
+  ""longitude"": 0.001493451627145322,
+  ""height_msl"": 2.034000873565674
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549820962038,1783598549.820962,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598549.818429,0,gnss,0,0,0,-0.0011980020409225745,0.0015015846592296646,2.034000873565674,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598549.818429,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011980020409225745,
+  ""longitude"": 0.0015015846592296646,
+  ""height_msl"": 2.034000873565674
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549921511263,1783598549.9215112,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598549.9189286,0,gnss,0,0,0,-0.0011980612560336112,0.0015097460652251115,2.034001350402832,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598549.9189286,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011980612560336112,
+  ""longitude"": 0.0015097460652251115,
+  ""height_msl"": 2.034001350402832
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550021071162,1783598550.0210712,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598550.0184796,0,gnss,0,0,0,-0.0011981188262808473,0.0015179359822036968,2.0340020656585693,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598550.0184796,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011981188262808473,
+  ""longitude"": 0.0015179359822036968,
+  ""height_msl"": 2.0340020656585693
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550120660022,1783598550.12066,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598550.1186135,0,gnss,0,0,0,-0.0011981748887421872,0.0015261556438137297,2.034003496170044,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598550.1186135,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011981748887421872,
+  ""longitude"": 0.0015261556438137297,
+  ""height_msl"": 2.034003496170044
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550221329184,1783598550.2213292,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598550.2184994,0,gnss,0,0,0,-0.001198229032212339,0.001534405461271313,2.0340049266815186,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598550.2184994,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001198229032212339,
+  ""longitude"": 0.001534405461271313,
+  ""height_msl"": 2.0340049266815186
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550320874011,1783598550.320874,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598550.3184252,0,gnss,0,0,0,-0.0011982815307760575,0.001542685982864584,2.034006118774414,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598550.3184252,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011982815307760575,
+  ""longitude"": 0.001542685982864584,
+  ""height_msl"": 2.034006118774414
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550421453860,1783598550.4214537,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598550.418474,0,gnss,0,0,0,-0.0011983325215965124,0.001550996934449474,2.0340070724487305,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598550.418474,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011983325215965124,
+  ""longitude"": 0.001550996934449474,
+  ""height_msl"": 2.0340070724487305
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550520797917,1783598550.520798,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598550.5185006,0,gnss,0,0,0,-0.0011983815933831465,0.0015593376306658113,2.034006357192993,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598550.5185006,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011983815933831465,
+  ""longitude"": 0.0015593376306658113,
+  ""height_msl"": 2.034006357192993
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550621205891,1783598550.621206,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598550.618614,0,gnss,0,0,0,-0.0011984292944475783,0.001567706700793253,2.0340042114257812,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598550.618614,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011984292944475783,
+  ""longitude"": 0.001567706700793253,
+  ""height_msl"": 2.0340042114257812
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550721222340,1783598550.7212224,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598550.7182434,0,gnss,0,0,0,-0.001198475076506611,0.0015761015404631468,2.0340003967285156,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598550.7182434,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001198475076506611,
+  ""longitude"": 0.0015761015404631468,
+  ""height_msl"": 2.0340003967285156
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550821129316,1783598550.8211293,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598550.8184419,0,gnss,0,0,0,-0.0011985193507655367,0.0015845210530992181,2.033996343612671,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598550.8184419,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011985193507655367,
+  ""longitude"": 0.0015845210530992181,
+  ""height_msl"": 2.033996343612671
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550920633631,1783598550.9206336,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598550.91854,0,gnss,0,0,0,-0.0011985619801606617,0.0015929631826209522,2.033992290496826,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598550.91854,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011985619801606617,
+  ""longitude"": 0.0015929631826209522,
+  ""height_msl"": 2.033992290496826
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551021577900,1783598551.021578,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598551.0184402,0,gnss,0,0,0,-0.0011986029647061969,0.0016014271065961435,2.0339889526367188,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598551.0184402,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011986029647061969,
+  ""longitude"": 0.0016014271065961435,
+  ""height_msl"": 2.0339889526367188
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551121651727,1783598551.1216516,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598551.1184514,0,gnss,0,0,0,-0.0011986421673100267,0.0016099121396646197,2.0339865684509277,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598551.1184514,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011986421673100267,
+  ""longitude"": 0.0016099121396646197,
+  ""height_msl"": 2.0339865684509277
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551221352524,1783598551.2213523,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598551.2184196,0,gnss,0,0,0,-0.0011986802733332524,0.0016184178706102783,2.0339839458465576,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598551.2184196,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011986802733332524,
+  ""longitude"": 0.0016184178706102783,
+  ""height_msl"": 2.0339839458465576
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551322128087,1783598551.322128,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598551.3190346,0,gnss,0,0,0,-0.0011987164603510791,0.0016269421062805702,2.0339813232421875,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598551.3190346,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011987164603510791,
+  ""longitude"": 0.0016269421062805702,
+  ""height_msl"": 2.0339813232421875
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551421788084,1783598551.4217882,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598551.4184854,0,gnss,0,0,0,-0.0011987511395830097,0.0016354878622602503,2.033982992172241,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598551.4184854,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011987511395830097,
+  ""longitude"": 0.0016354878622602503,
+  ""height_msl"": 2.033982992172241
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551521246382,1783598551.5212464,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598551.5184166,0,gnss,0,0,0,-0.0011987845851564316,0.0016440585653501767,2.0339879989624023,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598551.5184166,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011987845851564316,
+  ""longitude"": 0.0016440585653501767,
+  ""height_msl"": 2.0339879989624023
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551620887115,1783598551.620887,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598551.6183321,0,gnss,0,0,0,-0.001198816660007651,0.0016526564087028985,2.033993721008301,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598551.6183321,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001198816660007651,
+  ""longitude"": 0.0016526564087028985,
+  ""height_msl"": 2.033993721008301
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551720781962,1783598551.720782,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598551.7184615,0,gnss,0,0,0,-0.0011988472270729744,0.0016612835854709646,2.033998966217041,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598551.7184615,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011988472270729744,
+  ""longitude"": 0.0016612835854709646,
+  ""height_msl"": 2.033998966217041
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551820608777,1783598551.8206089,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598551.8185012,0,gnss,0,0,0,-0.0011988766975719045,0.0016699410551586156,2.034003257751465,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598551.8185012,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011988766975719045,
+  ""longitude"": 0.0016699410551586156,
+  ""height_msl"": 2.034003257751465
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551920623051,1783598551.920623,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598551.9185011,0,gnss,0,0,0,-0.0011989046602707276,0.0016786290919099198,2.0340054035186768,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598551.9185011,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011989046602707276,
+  ""longitude"": 0.0016786290919099198,
+  ""height_msl"": 2.0340054035186768
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552021605497,1783598552.0216055,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598552.0184293,0,gnss,0,0,0,-0.0011989315263747358,0.001687347010364706,2.034005880355835,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598552.0184293,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011989315263747358,
+  ""longitude"": 0.001687347010364706,
+  ""height_msl"": 2.034005880355835
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552120742250,1783598552.120742,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598552.118441,0,gnss,0,0,0,-0.0011989568847070586,0.0016960927544424588,2.0340042114257812,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598552.118441,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011989568847070586,
+  ""longitude"": 0.0016960927544424588,
+  ""height_msl"": 2.0340042114257812
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552220839967,1783598552.22084,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598552.218349,0,gnss,0,0,0,-0.0011989810093950837,0.0017048652275669042,2.0340018272399902,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598552.218349,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011989810093950837,
+  ""longitude"": 0.0017048652275669042,
+  ""height_msl"": 2.0340018272399902
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552321179449,1783598552.3211794,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598552.3184953,0,gnss,0,0,0,-0.0011990039004103892,0.0017136629219456645,2.0339980125427246,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598552.3184953,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011990039004103892,
+  ""longitude"": 0.0017136629219456645,
+  ""height_msl"": 2.0339980125427246
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552420792418,1783598552.4207923,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598552.4183273,0,gnss,0,0,0,-0.0011990255577956077,0.0017224840556422933,2.033994674682617,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598552.4183273,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011990255577956077,
+  ""longitude"": 0.0017224840556422933,
+  ""height_msl"": 2.033994674682617
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552521431779,1783598552.521432,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598552.518381,0,gnss,0,0,0,-0.0011990461186002221,0.0017313282174406881,2.0339913368225098,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598552.518381,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011990461186002221,
+  ""longitude"": 0.0017313282174406881,
+  ""height_msl"": 2.0339913368225098
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552620510336,1783598552.62051,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598552.6183515,0,gnss,0,0,0,-0.0011990653086684233,0.0017401944478366083,2.0339889526367188,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598552.6183515,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011990653086684233,
+  ""longitude"": 0.0017401944478366083,
+  ""height_msl"": 2.0339889526367188
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552721148961,1783598552.721149,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598552.7185042,0,gnss,0,0,0,-0.001199083402184442,0.0017490831580461571,2.033989906311035,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598552.7185042,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199083402184442,
+  ""longitude"": 0.0017490831580461571,
+  ""height_msl"": 2.033989906311035
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552821349144,1783598552.8213491,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598552.8183465,0,gnss,0,0,0,-0.0011991005361835505,0.0017579996938786727,2.0339956283569336,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598552.8183465,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011991005361835505,
+  ""longitude"": 0.0017579996938786727,
+  ""height_msl"": 2.0339956283569336
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552921520558,1783598552.9215207,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598552.9190857,0,gnss,0,0,0,-0.001199116436552572,0.001766947345062979,2.0340025424957275,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598552.9190857,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199116436552572,
+  ""longitude"": 0.001766947345062979,
+  ""height_msl"": 2.0340025424957275
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553021707588,1783598553.0217075,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598553.0188866,0,gnss,0,0,0,-0.0011991312403409893,0.0017759274823194193,2.034008026123047,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598553.0188866,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011991312403409893,
+  ""longitude"": 0.0017759274823194193,
+  ""height_msl"": 2.034008026123047
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553121245068,1783598553.1212451,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598553.118591,0,gnss,0,0,0,-0.0011991452216904008,0.0017849395573598561,2.034010171890259,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598553.118591,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011991452216904008,
+  ""longitude"": 0.0017849395573598561,
+  ""height_msl"": 2.034010171890259
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553221479235,1783598553.2214792,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598553.2187388,0,gnss,0,0,0,-0.001199158243522902,0.001793982610680049,2.0340094566345215,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598553.2187388,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199158243522902,
+  ""longitude"": 0.001793982610680049,
+  ""height_msl"": 2.0340094566345215
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553321492534,1783598553.3214924,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598553.3190145,0,gnss,0,0,0,-0.0011991703058527037,0.0018030536266952434,2.0340065956115723,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598553.3190145,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011991703058527037,
+  ""longitude"": 0.0018030536266952434,
+  ""height_msl"": 2.0340065956115723
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553421380997,1783598553.4213812,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598553.4184096,0,gnss,0,0,0,-0.001199181271616112,0.0018121506863969586,2.0340018272399902,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598553.4184096,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199181271616112,
+  ""longitude"": 0.0018121506863969586,
+  ""height_msl"": 2.0340018272399902
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553521760416,1783598553.5217605,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598553.5185952,0,gnss,0,0,0,-0.0011991915520184193,0.0018212711854165425,2.033996343612671,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598553.5185952,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011991915520184193,
+  ""longitude"": 0.0018212711854165425,
+  ""height_msl"": 2.033996343612671
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553621333769,1783598553.6213338,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598553.6184373,0,gnss,0,0,0,-0.0011992010099959316,0.0018304133418175488,2.0339913368225098,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598553.6184373,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992010099959316,
+  ""longitude"": 0.0018304133418175488,
+  ""height_msl"": 2.0339913368225098
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553721559168,1783598553.721559,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598553.71852,0,gnss,0,0,0,-0.0011992097825981318,0.001839575099519463,2.033986806869507,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598553.71852,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992097825981318,
+  ""longitude"": 0.001839575099519463,
+  ""height_msl"": 2.033986806869507
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553821034630,1783598553.8210347,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598553.8184366,0,gnss,0,0,0,-0.001199217732789748,0.001848756458522285,2.0339837074279785,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598553.8184366,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199217732789748,
+  ""longitude"": 0.001848756458522285,
+  ""height_msl"": 2.0339837074279785
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553921451106,1783598553.921451,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598553.9188008,0,gnss,0,0,0,-0.0011992251346697458,0.0018579564593217744,2.0339810848236084,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598553.9188008,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992251346697458,
+  ""longitude"": 0.0018579564593217744,
+  ""height_msl"": 2.0339810848236084
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554021387154,1783598554.0213873,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598554.0184207,0,gnss,0,0,0,-0.0011992318512028532,0.0018671748277738628,2.033979654312134,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598554.0184207,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992318512028532,
+  ""longitude"": 0.0018671748277738628,
+  ""height_msl"": 2.033979654312134
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554121454694,1783598554.1214545,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598554.1185465,0,gnss,0,0,0,-0.001199237745296955,0.00187641252338279,2.0339789390563965,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598554.1185465,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199237745296955,
+  ""longitude"": 0.00187641252338279,
+  ""height_msl"": 2.0339789390563965
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554220978797,1783598554.2209787,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598554.218522,0,gnss,0,0,0,-0.0011992433652636691,0.0018856684495722822,2.0339789390563965,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598554.218522,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992433652636691,
+  ""longitude"": 0.0018856684495722822,
+  ""height_msl"": 2.0339789390563965
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554320860925,1783598554.3208609,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598554.3184717,0,gnss,0,0,0,-0.0011992482998408605,0.0018949432917025103,2.0339787006378174,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598554.3184717,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992482998408605,
+  ""longitude"": 0.0018949432917025103,
+  ""height_msl"": 2.0339787006378174
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554421257304,1783598554.4212573,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598554.4185169,0,gnss,0,0,0,-0.0011992526861632768,0.0019042369127014404,2.0339789390563965,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598554.4185169,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992526861632768,
+  ""longitude"": 0.0019042369127014404,
+  ""height_msl"": 2.0339789390563965
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554521838584,1783598554.5218387,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598554.518357,0,gnss,0,0,0,-0.0011992567983156732,0.0019135495867131408,2.0339789390563965,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598554.518357,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992567983156732,
+  ""longitude"": 0.0019135495867131408,
+  ""height_msl"": 2.0339789390563965
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554621278621,1783598554.6212788,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598554.6182754,0,gnss,0,0,0,-0.0011992600880574855,0.001922881039593543,2.0339789390563965,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598554.6182754,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992600880574855,
+  ""longitude"": 0.001922881039593543,
+  ""height_msl"": 2.0339789390563965
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554720976936,1783598554.7209768,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598554.7182808,0,gnss,0,0,0,-0.001199263377770876,0.0019322312713426473,2.0339787006378174,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598554.7182808,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199263377770876,
+  ""longitude"": 0.0019322312713426473,
+  ""height_msl"": 2.0339787006378174
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554821757708,1783598554.8217578,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598554.8183382,0,gnss,0,0,0,-0.001199266119215281,0.0019415998707443503,2.0339784622192383,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598554.8183382,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199266119215281,
+  ""longitude"": 0.0019415998707443503,
+  ""height_msl"": 2.0339784622192383
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554921392438,1783598554.9213924,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598554.9184349,0,gnss,0,0,0,-0.0011992685865038766,0.0019509871119427209,2.03397798538208,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598554.9184349,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992685865038766,
+  ""longitude"": 0.0019509871119427209,
+  ""height_msl"": 2.03397798538208
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555021551788,1783598555.0215518,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598555.018772,0,gnss,0,0,0,-0.0011992710537924722,0.001960392172505553,2.033977746963501,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598555.018772,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992710537924722,
+  ""longitude"": 0.001960392172505553,
+  ""height_msl"": 2.033977746963501
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555121352921,1783598555.121353,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598555.118606,0,gnss,0,0,0,-0.0011992728357341775,0.0019698147782887783,2.0339772701263428,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598555.118606,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992728357341775,
+  ""longitude"": 0.0019698147782887783,
+  ""height_msl"": 2.0339772701263428
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555221236105,1783598555.2212362,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598555.218432,0,gnss,0,0,0,-0.0011992743435200737,0.001979255340508499,2.0339765548706055,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598555.218432,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992743435200737,
+  ""longitude"": 0.001979255340508499,
+  ""height_msl"": 2.0339765548706055
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555321524386,1783598555.3215244,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598555.318534,0,gnss,0,0,0,-0.0011992761254759898,0.0019887131738045446,2.033975839614868,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598555.318534,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992761254759898,
+  ""longitude"": 0.0019887131738045446,
+  ""height_msl"": 2.033975839614868
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555421656503,1783598555.4216566,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598555.4187052,0,gnss,0,0,0,-0.0011992777703397905,0.0019981884152489486,2.03397536277771,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598555.4187052,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992777703397905,
+  ""longitude"": 0.0019981884152489486,
+  ""height_msl"": 2.03397536277771
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555521710954,1783598555.5217109,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598555.5185285,0,gnss,0,0,0,-0.0011992794151893804,0.0020076810648417113,2.0339746475219727,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598555.5185285,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992794151893804,
+  ""longitude"": 0.0020076810648417113,
+  ""height_msl"": 2.0339746475219727
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555621061838,1783598555.6210618,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598555.6185298,0,gnss,0,0,0,-0.0011992805117841954,0.0020171897518624893,2.0339741706848145,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598555.6185298,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992805117841954,
+  ""longitude"": 0.0020171897518624893,
+  ""height_msl"": 2.0339741706848145
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555721369191,1783598555.721369,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598555.7184484,0,gnss,0,0,0,-0.0011992814712868949,0.0020267148875273856,2.033973217010498,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598555.7184484,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992814712868949,
+  ""longitude"": 0.0020267148875273856,
+  ""height_msl"": 2.033973217010498
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555821135284,1783598555.8211353,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598555.8184116,0,gnss,0,0,0,-0.0011992821566337852,0.0020362560606202976,2.0339725017547607,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598555.8184116,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992821566337852,
+  ""longitude"": 0.0020362560606202976,
+  ""height_msl"": 2.0339725017547607
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555921553039,1783598555.9215531,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598555.918443,0,gnss,0,0,0,-0.001199282979072791,0.002045812859925122,2.0339717864990234,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598555.918443,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199282979072791,
+  ""longitude"": 0.002045812859925122,
+  ""height_msl"": 2.0339717864990234
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556021170841,1783598556.0211709,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598556.0185585,0,gnss,0,0,0,-0.0011992828419948864,0.0020553850112977902,2.033971071243286,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598556.0185585,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992828419948864,
+  ""longitude"": 0.0020553850112977902,
+  ""height_msl"": 2.033971071243286
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556121643958,1783598556.121644,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598556.1184201,0,gnss,0,0,0,-0.0011992828419948864,0.0020649721035221995,2.033970355987549,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598556.1184201,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992828419948864,
+  ""longitude"": 0.0020649721035221995,
+  ""height_msl"": 2.033970355987549
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556221660392,1783598556.2216604,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598556.218424,0,gnss,0,0,0,-0.0011992825678532881,0.0020745745478144523,2.0339696407318115,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598556.218424,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992825678532881,
+  ""longitude"": 0.0020745745478144523,
+  ""height_msl"": 2.0339696407318115
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556321214512,1783598556.3212144,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598556.3184638,0,gnss,0,0,0,-0.0011992821566337852,0.0020841912475982748,2.0339691638946533,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598556.3184638,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992821566337852,
+  ""longitude"": 0.0020841912475982748,
+  ""height_msl"": 2.0339691638946533
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556421407847,1783598556.4214077,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598556.4184728,0,gnss,0,0,0,-0.001199281060067392,0.0020938227511618033,2.033968687057495,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598556.4184728,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199281060067392,
+  ""longitude"": 0.0020938227511618033,
+  ""height_msl"": 2.033968687057495
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556522257069,1783598556.522257,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598556.518592,0,gnss,0,0,0,-0.0011992802376283862,0.0021034683731448673,2.0339677333831787,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598556.518592,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992802376283862,
+  ""longitude"": 0.0021034683731448673,
+  ""height_msl"": 2.0339677333831787
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556621199174,1783598556.6211991,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598556.6182861,0,gnss,0,0,0,-0.0011992792781256867,0.002113127702331363,2.0339670181274414,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598556.6182861,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992792781256867,
+  ""longitude"": 0.002113127702331363,
+  ""height_msl"": 2.0339670181274414
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556721726085,1783598556.7217262,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598556.7185335,0,gnss,0,0,0,-0.0011992781815450826,0.0021228003275051877,2.033966064453125,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598556.7185335,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992781815450826,
+  ""longitude"": 0.0021228003275051877,
+  ""height_msl"": 2.033966064453125
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556820805922,1783598556.8208058,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598556.8184474,0,gnss,0,0,0,-0.0011992765366812819,0.0021324862486663417,2.0339653491973877,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598556.8184474,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992765366812819,
+  ""longitude"": 0.0021324862486663417,
+  ""height_msl"": 2.0339653491973877
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556920573902,1783598556.920574,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598556.918321,0,gnss,0,0,0,-0.0011992747547395766,0.0021421846433826186,2.0339643955230713,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598556.918321,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992747547395766,
+  ""longitude"": 0.0021421846433826186,
+  ""height_msl"": 2.0339643955230713
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557020794534,1783598557.0207946,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598557.0184174,0,gnss,0,0,0,-0.0011992729728120821,0.0021518953745819844,2.033963441848755,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598557.0184174,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992729728120821,
+  ""longitude"": 0.0021518953745819844,
+  ""height_msl"": 2.033963441848755
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557121458311,1783598557.1214585,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598557.1183429,0,gnss,0,0,0,-0.0011992716020898797,0.0021616176198322326,2.0339620113372803,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598557.1183429,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992716020898797,
+  ""longitude"": 0.0021616176198322326,
+  ""height_msl"": 2.0339620113372803
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557221143346,1783598557.2211432,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598557.2183294,0,gnss,0,0,0,-0.0011992709167429894,0.002171349597196918,2.0339572429656982,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598557.2183294,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992709167429894,
+  ""longitude"": 0.002171349597196918,
+  ""height_msl"": 2.0339572429656982
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557321550734,1783598557.3215508,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598557.3185198,0,gnss,0,0,0,-0.0011992700943039836,0.002181083082353981,2.0339467525482178,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598557.3185198,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992700943039836,
+  ""longitude"": 0.002181083082353981,
+  ""height_msl"": 2.0339467525482178
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557422394003,1783598557.422394,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598557.4193904,0,gnss,0,0,0,-0.0011992692718649778,0.0021908168416551127,2.033939838409424,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598557.4193904,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992692718649778,
+  ""longitude"": 0.0021908168416551127,
+  ""height_msl"": 2.033939838409424
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557521337773,1783598557.5213377,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598557.5186965,0,gnss,0,0,0,-0.001199268449425972,0.0022005512863164157,2.033935546875,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598557.5186965,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199268449425972,
+  ""longitude"": 0.0022005512863164157,
+  ""height_msl"": 2.033935546875
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557621506723,1783598557.621507,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598557.6184733,0,gnss,0,0,0,-0.001199267352845368,0.002210278877376003,2.033921241760254,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598557.6184733,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199267352845368,
+  ""longitude"": 0.002210278877376003,
+  ""height_msl"": 2.033921241760254
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557721356082,1783598557.721356,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598557.718276,0,gnss,0,0,0,-0.0011992648855567722,0.0022199842627660302,2.033900022506714,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598557.718276,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992648855567722,
+  ""longitude"": 0.0022199842627660302,
+  ""height_msl"": 2.033900022506714
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557821417061,1783598557.8214169,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598557.8184144,0,gnss,0,0,0,-0.0011992617329070754,0.0022296678537026006,2.0338857173919678,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598557.8184144,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992617329070754,
+  ""longitude"": 0.0022296678537026006,
+  ""height_msl"": 2.0338857173919678
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557921342313,1783598557.9213421,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598557.9183137,0,gnss,0,0,0,-0.0011992573466130807,0.0022393148464060074,2.033860445022583,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598557.9183137,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992573466130807,
+  ""longitude"": 0.0022393148464060074,
+  ""height_msl"": 2.033860445022583
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558021023495,1783598558.0210235,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598558.0183418,0,gnss,0,0,0,-0.0011992521378658694,0.0022489152346177456,2.0338358879089355,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598558.0183418,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992521378658694,
+  ""longitude"": 0.0022489152346177456,
+  ""height_msl"": 2.0338358879089355
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558120702693,1783598558.1207027,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598558.1182652,0,gnss,0,0,0,-0.0011992458325522648,0.002258467373473403,2.0338218212127686,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598558.1182652,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992458325522648,
+  ""longitude"": 0.002258467373473403,
+  ""height_msl"": 2.0338218212127686
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558221165390,1783598558.2211654,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598558.2184615,0,gnss,0,0,0,-0.0011992387048138653,0.002267933568163542,2.033740997314453,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598558.2184615,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992387048138653,
+  ""longitude"": 0.002267933568163542,
+  ""height_msl"": 2.033740997314453
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558321731353,1783598558.3217313,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598558.3186424,0,gnss,0,0,0,-0.0011992306175443446,0.0022771694818360232,2.0335540771484375,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598558.3186424,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992306175443446,
+  ""longitude"": 0.0022771694818360232,
+  ""height_msl"": 2.0335540771484375
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558422401765,1783598558.422402,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598558.4185114,0,gnss,0,0,0,-0.0011992217078784506,0.002286218292181658,2.033524990081787,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598558.4185114,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992217078784506,
+  ""longitude"": 0.002286218292181658,
+  ""height_msl"": 2.033524990081787
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558521251320,1783598558.5212514,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598558.5188007,0,gnss,0,0,0,-0.0011992119757451292,0.002295199663086407,2.0336368083953857,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598558.5188007,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992119757451292,
+  ""longitude"": 0.002295199663086407,
+  ""height_msl"": 2.0336368083953857
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558621169433,1783598558.6211693,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598558.61821,0,gnss,0,0,0,-0.001199201284123319,0.002304194329978485,2.0337882041931152,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598558.61821,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199201284123319,
+  ""longitude"": 0.002304194329978485,
+  ""height_msl"": 2.0337882041931152
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558721464512,1783598558.7214646,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598558.718257,0,gnss,0,0,0,-0.0011991894959493266,0.00231324601883684,2.033921241760254,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598558.718257,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011991894959493266,
+  ""longitude"": 0.00231324601883684,
+  ""height_msl"": 2.033921241760254
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558821207807,1783598558.8212078,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598558.8184888,0,gnss,0,0,0,-0.001199177022400022,0.002322371726593728,2.0340116024017334,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598558.8184888,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199177022400022,
+  ""longitude"": 0.002322371726593728,
+  ""height_msl"": 2.0340116024017334
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558920953375,1783598558.9209533,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598558.9184358,0,gnss,0,0,0,-0.0011991637263975008,0.002331561584062678,2.0340466499328613,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598558.9184358,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011991637263975008,
+  ""longitude"": 0.002331561584062678,
+  ""height_msl"": 2.0340466499328613
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559021769517,1783598559.0217695,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598559.01869,0,gnss,0,0,0,-0.0011991496079701847,0.002340792288997855,2.0340394973754883,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598559.01869,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011991496079701847,
+  ""longitude"": 0.002340792288997855,
+  ""height_msl"": 2.0340394973754883
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559120957988,1783598559.1209579,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598559.1184523,0,gnss,0,0,0,-0.001199134941259672,0.002350040813297494,2.034008026123047,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598559.1184523,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199134941259672,
+  ""longitude"": 0.002350040813297494,
+  ""height_msl"": 2.034008026123047
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559221392045,1783598559.2213922,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598559.2184315,0,gnss,0,0,0,-0.0011991198633438671,0.0023592838547157598,2.033963203430176,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598559.2184315,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011991198633438671,
+  ""longitude"": 0.0023592838547157598,
+  ""height_msl"": 2.033963203430176
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559320850408,1783598559.3208504,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598559.3185174,0,gnss,0,0,0,-0.0011991047854280623,0.002368502223167848,2.033916473388672,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598559.3185174,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011991047854280623,
+  ""longitude"": 0.002368502223167848,
+  ""height_msl"": 2.033916473388672
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559421372914,1783598559.421373,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598559.4186509,0,gnss,0,0,0,-0.001199089570434353,0.00237764328299258,2.033803701400757,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598559.4186509,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199089570434353,
+  ""longitude"": 0.00237764328299258,
+  ""height_msl"": 2.033803701400757
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559522521477,1783598559.5225215,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598559.5191982,0,gnss,0,0,0,-0.0011990746295822419,0.002386563382697988,2.0335984230041504,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598559.5191982,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011990746295822419,
+  ""longitude"": 0.002386563382697988,
+  ""height_msl"": 2.0335984230041504
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559621455609,1783598559.6214557,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598559.6185288,0,gnss,0,0,0,-0.001199060374091232,0.0023952954195723087,2.0335447788238525,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598559.6185288,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199060374091232,
+  ""longitude"": 0.0023952954195723087,
+  ""height_msl"": 2.0335447788238525
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559721292345,1783598559.7212923,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598559.7183995,0,gnss,0,0,0,-0.0011990463927418205,0.0024039413752090766,2.033623218536377,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598559.7183995,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011990463927418205,
+  ""longitude"": 0.0024039413752090766,
+  ""height_msl"": 2.033623218536377
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559821615200,1783598559.8216152,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598559.8184621,0,gnss,0,0,0,-0.00119903309675351,0.0024125722529220696,2.0337469577789307,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598559.8184621,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.00119903309675351,
+  ""longitude"": 0.0024125722529220696,
+  ""height_msl"": 2.0337469577789307
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559921384544,1783598559.9213843,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598559.918365,0,gnss,0,0,0,-0.0011990204861405118,0.0024212297226097208,2.033862829208374,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598559.918365,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011990204861405118,
+  ""longitude"": 0.0024212297226097208,
+  ""height_msl"": 2.033862829208374
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560021321986,1783598560.021322,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598560.0184586,0,gnss,0,0,0,-0.0011990088350017913,0.00242993379678904,2.033946990966797,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598560.0184586,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011990088350017913,
+  ""longitude"": 0.00242993379678904,
+  ""height_msl"": 2.033946990966797
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560121094017,1783598560.1210942,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598560.1182804,0,gnss,0,0,0,-0.0011989982804578858,0.0024386822823074797,2.033989667892456,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598560.1182804,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011989982804578858,
+  ""longitude"": 0.0024386822823074797,
+  ""height_msl"": 2.033989667892456
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560220963810,1783598560.220964,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598560.2183423,0,gnss,0,0,0,-0.0011989892336998764,0.002447461197817538,2.0339951515197754,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598560.2183423,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011989892336998764,
+  ""longitude"": 0.002447461197817538,
+  ""height_msl"": 2.0339951515197754
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560320925604,1783598560.3209257,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598560.318487,0,gnss,0,0,0,-0.001198982105947266,0.002456251079090342,2.033975601196289,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598560.318487,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001198982105947266,
+  ""longitude"": 0.002456251079090342,
+  ""height_msl"": 2.033975601196289
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560421609009,1783598560.421609,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598560.4192004,0,gnss,0,0,0,-0.0011989767601505719,0.0024650324618970183,2.0339417457580566,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598560.4192004,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011989767601505719,
+  ""longitude"": 0.0024650324618970183,
+  ""height_msl"": 2.0339417457580566
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560521155181,1783598560.521155,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598560.518713,0,gnss,0,0,0,-0.001198974018706167,0.0024737518881441816,2.0338361263275146,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598560.518713,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001198974018706167,
+  ""longitude"": 0.0024737518881441816,
+  ""height_msl"": 2.0338361263275146
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560620597448,1783598560.6205976,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598560.6183493,0,gnss,0,0,0,-0.0011989737445645687,0.0024822692702127576,2.033637762069702,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598560.6183493,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011989737445645687,
+  ""longitude"": 0.0024822692702127576,
+  ""height_msl"": 2.033637762069702
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560721226483,1783598560.7212265,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598560.7183285,0,gnss,0,0,0,-0.001198976348931069,0.002490606813772306,2.0335705280303955,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598560.7183285,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001198976348931069,
+  ""longitude"": 0.002490606813772306,
+  ""height_msl"": 2.0335705280303955
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560821136693,1783598560.8211367,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598560.8184035,0,gnss,0,0,0,-0.0011989816947561849,0.0024988442947468,2.0336201190948486,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598560.8184035,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011989816947561849,
+  ""longitude"": 0.0024988442947468,
+  ""height_msl"": 2.0336201190948486
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560921627038,1783598560.921627,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598560.9186957,0,gnss,0,0,0,-0.001198989781983073,0.0025070033705176637,2.0336434841156006,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598560.9186957,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001198989781983073,
+  ""longitude"": 0.0025070033705176637,
+  ""height_msl"": 2.0336434841156006
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561020731413,1783598561.0207314,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598561.0182905,0,gnss,0,0,0,-0.0011990010219022906,0.0025149412120251346,2.0334863662719727,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598561.0182905,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011990010219022906,
+  ""longitude"": 0.0025149412120251346,
+  ""height_msl"": 2.0334863662719727
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561121653444,1783598561.1216536,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598561.118343,0,gnss,0,0,0,-0.001199016236896,0.0025225371958790114,2.033273935317993,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598561.118343,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199016236896,
+  ""longitude"": 0.0025225371958790114,
+  ""height_msl"": 2.033273935317993
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561221380355,1783598561.2213802,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598561.2190983,0,gnss,0,0,0,-0.0011990372089201173,0.002529740605426596,2.0331006050109863,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598561.2190983,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011990372089201173,
+  ""longitude"": 0.002529740605426596,
+  ""height_msl"": 2.0331006050109863
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561321525096,1783598561.321525,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598561.3187351,0,gnss,0,0,0,-0.0011990675018296315,0.0025365377334644556,2.0329904556274414,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598561.3187351,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011990675018296315,
+  ""longitude"": 0.0025365377334644556,
+  ""height_msl"": 2.0329904556274414
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561420893058,1783598561.4208932,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598561.4184084,0,gnss,0,0,0,-0.001199109857097369,0.00254309005084902,2.0331645011901855,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598561.4184084,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199109857097369,
+  ""longitude"": 0.00254309005084902,
+  ""height_msl"": 2.0331645011901855
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561521424108,1783598561.521424,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598561.5184753,0,gnss,0,0,0,-0.0011991602996062056,0.002549077905596255,2.032684087753296,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598561.5184753,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011991602996062056,
+  ""longitude"": 0.002549077905596255,
+  ""height_msl"": 2.032684087753296
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561621154923,1783598561.6211548,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598561.618447,0,gnss,0,0,0,-0.001199193882257532,0.002553873507788974,2.0315964221954346,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598561.618447,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199193882257532,
+  ""longitude"": 0.002553873507788974,
+  ""height_msl"": 2.0315964221954346
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561721239727,1783598561.7212398,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598561.7183733,0,gnss,0,0,0,-0.0011992178698534417,0.0025568323447218056,2.030219793319702,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598561.7183733,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992178698534417,
+  ""longitude"": 0.0025568323447218056,
+  ""height_msl"": 2.030219793319702
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561821872314,1783598561.8218725,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598561.8185272,0,gnss,0,0,0,-0.0011992391160191573,0.002558727502668314,2.0306622982025146,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598561.8185272,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992391160191573,
+  ""longitude"": 0.002558727502668314,
+  ""height_msl"": 2.0306622982025146
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561921069458,1783598561.9210696,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598561.918341,0,gnss,0,0,0,-0.0011992624182681766,0.0025607569912084556,2.0320398807525635,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598561.918341,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992624182681766,
+  ""longitude"": 0.0025607569912084556,
+  ""height_msl"": 2.0320398807525635
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562021153302,1783598562.0211532,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598562.0183253,0,gnss,0,0,0,-0.0011992816083647995,0.0025628868164777195,2.032926082611084,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598562.0183253,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992816083647995,
+  ""longitude"": 0.0025628868164777195,
+  ""height_msl"": 2.032926082611084
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562121167417,1783598562.1211674,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598562.1184347,0,gnss,0,0,0,-0.0011992977828469975,0.002565071470560712,2.033384084701538,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598562.1184347,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011992977828469975,
+  ""longitude"": 0.002565071470560712,
+  ""height_msl"": 2.033384084701538
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562220928728,1783598562.2209287,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598562.2181804,0,gnss,0,0,0,-0.0011993132719823052,0.002567301632559098,2.033618927001953,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598562.2181804,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011993132719823052,
+  ""longitude"": 0.002567301632559098,
+  ""height_msl"": 2.033618927001953
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562321350689,1783598562.3213506,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598562.31865,0,gnss,0,0,0,-0.0011993288982097283,0.0025695720937355744,2.0337343215942383,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598562.31865,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011993288982097283,
+  ""longitude"": 0.0025695720937355744,
+  ""height_msl"": 2.0337343215942383
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562421448357,1783598562.4214485,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598562.4183562,0,gnss,0,0,0,-0.0011993445244087297,0.0025718688727426405,2.033780813217163,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598562.4183562,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011993445244087297,
+  ""longitude"": 0.0025718688727426405,
+  ""height_msl"": 2.033780813217163
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562521185316,1783598562.5211854,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598562.518449,0,gnss,0,0,0,-0.0011993598764803437,0.002574188953995541,2.0337979793548584,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598562.518449,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011993598764803437,
+  ""longitude"": 0.002574188953995541,
+  ""height_msl"": 2.0337979793548584
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562629314071,1783598562.629314,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598562.6192074,0,gnss,0,0,0,-0.0011993753656298622,0.002576514792273882,2.0337867736816406,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598562.6192074,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011993753656298622,
+  ""longitude"": 0.002576514792273882,
+  ""height_msl"": 2.0337867736816406
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562720881253,1783598562.7208812,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598562.7184112,0,gnss,0,0,0,-0.0011993907176872654,0.0025788356959589886,2.0337703227996826,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598562.7184112,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011993907176872654,
+  ""longitude"": 0.0025788356959589886,
+  ""height_msl"": 2.0337703227996826
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562820934473,1783598562.8209343,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598562.8182578,0,gnss,0,0,0,-0.0011994066180562868,0.0025811607118051243,2.033771276473999,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598562.8182578,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011994066180562868,
+  ""longitude"": 0.0025811607118051243,
+  ""height_msl"": 2.033771276473999
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562920589287,1783598562.9205892,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598562.9183812,0,gnss,0,0,0,-0.0011994229296163894,0.002583493129541113,2.0337703227996826,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598562.9183812,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011994229296163894,
+  ""longitude"": 0.002583493129541113,
+  ""height_msl"": 2.0337703227996826
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563021710617,1783598563.0217106,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598563.0190706,0,gnss,0,0,0,-0.0011994392411907029,0.002585807453768572,2.033742904663086,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598563.0190706,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011994392411907029,
+  ""longitude"": 0.002585807453768572,
+  ""height_msl"": 2.033742904663086
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563121372823,1783598563.121373,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598563.1186066,0,gnss,0,0,0,-0.0011994554157013226,0.0025880924445806862,2.0337188243865967,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598563.1186066,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011994554157013226,
+  ""longitude"": 0.0025880924445806862,
+  ""height_msl"": 2.0337188243865967
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563222522249,1783598563.2225223,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598563.2195086,0,gnss,0,0,0,-0.0011994717272614253,0.0025903667437741236,2.0337252616882324,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598563.2195086,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011994717272614253,
+  ""longitude"": 0.0025903667437741236,
+  ""height_msl"": 2.0337252616882324
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563321194970,1783598563.3211951,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598563.318304,0,gnss,0,0,0,-0.0011994880388357387,0.0025926407688234925,2.033735752105713,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598563.318304,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011994880388357387,
+  ""longitude"": 0.0025926407688234925,
+  ""height_msl"": 2.033735752105713
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563420727958,1783598563.420728,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598563.4183946,0,gnss,0,0,0,-0.0011995047616153443,0.002594894233067713,2.0337207317352295,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598563.4183946,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011995047616153443,
+  ""longitude"": 0.002594894233067713,
+  ""height_msl"": 2.0337207317352295
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563521877193,1783598563.5218773,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598563.519125,0,gnss,0,0,0,-0.0011995217585649698,0.0025971172673203147,2.033704996109009,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598563.519125,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011995217585649698,
+  ""longitude"": 0.0025971172673203147,
+  ""height_msl"": 2.033704996109009
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563621501126,1783598563.6215012,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598563.6184058,0,gnss,0,0,0,-0.0011995388925640782,0.002599318644191494,2.0337016582489014,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598563.6184058,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011995388925640782,
+  ""longitude"": 0.002599318644191494,
+  ""height_msl"": 2.0337016582489014
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563721111204,1783598563.7211113,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598563.718222,0,gnss,0,0,0,-0.0011995560265631866,0.00260149041350326,2.033691644668579,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598563.718222,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011995560265631866,
+  ""longitude"": 0.00260149041350326,
+  ""height_msl"": 2.033691644668579
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563821366026,1783598563.821366,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598563.8183453,0,gnss,0,0,0,-0.0011995731605765059,0.0026036292855267894,2.0336835384368896,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598563.8183453,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011995731605765059,
+  ""longitude"": 0.0026036292855267894,
+  ""height_msl"": 2.0336835384368896
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563921291916,1783598563.921292,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598563.918349,0,gnss,0,0,0,-0.0011995898833561114,0.0026057382758468365,2.033681631088257,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598563.918349,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011995898833561114,
+  ""longitude"": 0.0026057382758468365,
+  ""height_msl"": 2.033681631088257
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564021298382,1783598564.0212984,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598564.018427,0,gnss,0,0,0,-0.0011996067432136215,0.002607822319056638,2.0336878299713135,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598564.018427,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011996067432136215,
+  ""longitude"": 0.002607822319056638,
+  ""height_msl"": 2.0336878299713135
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564121099790,1783598564.1210997,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598564.1182806,0,gnss,0,0,0,-0.00119962387721273,0.0026098951223596247,2.0337073802948,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598564.1182806,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.00119962387721273,
+  ""longitude"": 0.0026098951223596247,
+  ""height_msl"": 2.0337073802948
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564221132114,1783598564.221132,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598564.2183256,0,gnss,0,0,0,-0.0011996410112260492,0.0026119640876456508,2.0337233543395996,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598564.2183256,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011996410112260492,
+  ""longitude"": 0.0026119640876456508,
+  ""height_msl"": 2.0337233543395996
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564320858449,1783598564.3208585,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598564.318361,0,gnss,0,0,0,-0.0011996581452251576,0.002614011669694323,2.0337131023406982,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598564.318361,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011996581452251576,
+  ""longitude"": 0.002614011669694323,
+  ""height_msl"": 2.0337131023406982
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564421098231,1783598564.4210982,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598564.4184964,0,gnss,0,0,0,-0.001199675279224266,0.0026160285476073074,2.0336992740631104,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598564.4184964,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199675279224266,
+  ""longitude"": 0.0026160285476073074,
+  ""height_msl"": 2.0336992740631104
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564520831606,1783598564.5208316,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598564.5182993,0,gnss,0,0,0,-0.0011996924132233744,0.0026180204784100455,2.033695697784424,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598564.5182993,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011996924132233744,
+  ""longitude"": 0.0026180204784100455,
+  ""height_msl"": 2.033695697784424
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564621095164,1783598564.6210952,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598564.6184645,0,gnss,0,0,0,-0.0011997095472509045,0.0026199800602126843,2.033684015274048,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598564.6184645,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011997095472509045,
+  ""longitude"": 0.0026199800602126843,
+  ""height_msl"": 2.033684015274048
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564721185856,1783598564.7211857,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598564.7183685,0,gnss,0,0,0,-0.001199726681250013,0.002621901535989782,2.0336735248565674,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598564.7183685,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199726681250013,
+  ""longitude"": 0.002621901535989782,
+  ""height_msl"": 2.0336735248565674
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564821179395,1783598564.8211794,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598564.8182688,0,gnss,0,0,0,-0.0011997436781854276,0.002623788469614231,2.0336713790893555,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598564.8182688,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011997436781854276,
+  ""longitude"": 0.002623788469614231,
+  ""height_msl"": 2.0336713790893555
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564920984259,1783598564.9209843,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598564.9183273,0,gnss,0,0,0,-0.0011997605380287268,0.002625646343967404,2.0336756706237793,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598564.9183273,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011997605380287268,
+  ""longitude"": 0.002625646343967404,
+  ""height_msl"": 2.0336756706237793
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565021199432,1783598565.0211995,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598565.0183053,0,gnss,0,0,0,-0.0011997771237446386,0.0026274784487781253,2.033682346343994,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598565.0183053,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011997771237446386,
+  ""longitude"": 0.0026274784487781253,
+  ""height_msl"": 2.033682346343994
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565121097098,1783598565.1210973,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598565.1184008,0,gnss,0,0,0,-0.0011997935723826458,0.002629285880622669,2.0336873531341553,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598565.1184008,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011997935723826458,
+  ""longitude"": 0.002629285880622669,
+  ""height_msl"": 2.0336873531341553
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565220735335,1783598565.2207353,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598565.2182395,0,gnss,0,0,0,-0.0011998098839711702,0.0026310686395010345,2.0336897373199463,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598565.2182395,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011998098839711702,
+  ""longitude"": 0.0026310686395010345,
+  ""height_msl"": 2.0336897373199463
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565321146288,1783598565.3211462,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598565.3182566,0,gnss,0,0,0,-0.0011998270179702786,0.0026328256288369483,2.0336899757385254,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598565.3182566,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011998270179702786,
+  ""longitude"": 0.0026328256288369483,
+  ""height_msl"": 2.0336899757385254
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565420886575,1783598565.4208865,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598565.4183953,0,gnss,0,0,0,-0.0011998440149056933,0.0026345532847575175,2.033686399459839,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598565.4183953,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011998440149056933,
+  ""longitude"": 0.0026345532847575175,
+  ""height_msl"": 2.033686399459839
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565521211318,1783598565.5212114,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598565.5184095,0,gnss,0,0,0,-0.001199860600621605,0.0026362491399661244,2.0336813926696777,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598565.5184095,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199860600621605,
+  ""longitude"": 0.0026362491399661244,
+  ""height_msl"": 2.0336813926696777
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565621625951,1783598565.621626,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598565.6184177,0,gnss,0,0,0,-0.0011998767751322248,0.002637913194462769,2.0336785316467285,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598565.6184177,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011998767751322248,
+  ""longitude"": 0.002637913194462769,
+  ""height_msl"": 2.0336785316467285
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565720960824,1783598565.7209609,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598565.7184887,0,gnss,0,0,0,-0.0011998929496286337,0.002639546818967795,2.0336787700653076,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598565.7184887,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011998929496286337,
+  ""longitude"": 0.002639546818967795,
+  ""height_msl"": 2.0336787700653076
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565821441857,1783598565.821442,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598565.8182821,0,gnss,0,0,0,-0.0011999092611887363,0.0026411513842015447,2.033679962158203,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598565.8182821,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011999092611887363,
+  ""longitude"": 0.0026411513842015447,
+  ""height_msl"": 2.033679962158203
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565921027710,1783598565.9210277,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598565.9182863,0,gnss,0,0,0,-0.001199925435699356,0.0026427310023250483,2.0336878299713135,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598565.9182863,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199925435699356,
+  ""longitude"": 0.0026427310023250483,
+  ""height_msl"": 2.0336878299713135
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566021771339,1783598566.0217712,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598566.0183735,0,gnss,0,0,0,-0.001199941610195765,0.00264430102540615,2.0337088108062744,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598566.0183735,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001199941610195765,
+  ""longitude"": 0.00264430102540615,
+  ""height_msl"": 2.0337088108062744
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566121396233,1783598566.1213963,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598566.1183786,0,gnss,0,0,0,-0.0011999576476142693,0.0026458737899279373,2.0337350368499756,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598566.1183786,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011999576476142693,
+  ""longitude"": 0.0026458737899279373,
+  ""height_msl"": 2.0337350368499756
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566220652322,1783598566.2206523,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598566.2183783,0,gnss,0,0,0,-0.0011999739592027936,0.002647459439220951,2.033761739730835,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598566.2183783,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011999739592027936,
+  ""longitude"": 0.002647459439220951,
+  ""height_msl"": 2.033761739730835
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566320567235,1783598566.3205674,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598566.3184009,0,gnss,0,0,0,-0.0011999909561239974,0.002649067568327593,2.0337886810302734,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598566.3184009,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0011999909561239974,
+  ""longitude"": 0.002649067568327593,
+  ""height_msl"": 2.0337886810302734
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566421427794,1783598566.4214277,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598566.4186926,0,gnss,0,0,0,-0.0012000082272010104,0.0026507083205784036,2.0338144302368164,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598566.4186926,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012000082272010104,
+  ""longitude"": 0.0026507083205784036,
+  ""height_msl"": 2.0338144302368164
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566521200913,1783598566.521201,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598566.5184364,0,gnss,0,0,0,-0.0012000261836391246,0.0026523833408377937,2.0338289737701416,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598566.5184364,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012000261836391246,
+  ""longitude"": 0.0026523833408377937,
+  ""height_msl"": 2.0338289737701416
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566621550201,1783598566.62155,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598566.6183786,0,gnss,0,0,0,-0.0012000445512825308,0.0026540855013599796,2.0338315963745117,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598566.6183786,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012000445512825308,
+  ""longitude"": 0.0026540855013599796,
+  ""height_msl"": 2.0338315963745117
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566720998740,1783598566.7209988,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598566.7183087,0,gnss,0,0,0,-0.0012000633301596508,0.002655821107458539,2.033839464187622,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598566.7183087,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012000633301596508,
+  ""longitude"": 0.002655821107458539,
+  ""height_msl"": 2.033839464187622
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566821609567,1783598566.8216095,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598566.8183153,0,gnss,0,0,0,-0.001200082931447355,0.002657596464447052,2.033850908279419,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598566.8183153,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001200082931447355,
+  ""longitude"": 0.002657596464447052,
+  ""height_msl"": 2.033850908279419
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566921048570,1783598566.9210486,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598566.9182122,0,gnss,0,0,0,-0.0012001028069192898,0.0026594154103424784,2.0338616371154785,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598566.9182122,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012001028069192898,
+  ""longitude"": 0.0026594154103424784,
+  ""height_msl"": 2.0338616371154785
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567021352193,1783598567.0213523,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598567.0182624,0,gnss,0,0,0,-0.0012001232306459997,0.002661280686585505,2.0338709354400635,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598567.0182624,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012001232306459997,
+  ""longitude"": 0.002661280686585505,
+  ""height_msl"": 2.0338709354400635
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567121318083,1783598567.121318,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598567.1182895,0,gnss,0,0,0,-0.0012001444768117153,0.0026631942121846117,2.033878803253174,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598567.1182895,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012001444768117153,
+  ""longitude"": 0.0026631942121846117,
+  ""height_msl"": 2.033878803253174
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567221211812,1783598567.221212,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598567.2183447,0,gnss,0,0,0,-0.0012001665454164367,0.00266515790614828,2.0338847637176514,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598567.2183447,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012001665454164367,
+  ""longitude"": 0.00266515790614828,
+  ""height_msl"": 2.0338847637176514
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567321019013,1783598567.3210192,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598567.318392,0,gnss,0,0,0,-0.0012001894364317423,0.002667172865052784,2.0338895320892334,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598567.318392,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012001894364317423,
+  ""longitude"": 0.002667172865052784,
+  ""height_msl"": 2.0338895320892334
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567420716003,1783598567.420716,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598567.418304,0,gnss,0,0,0,-0.0012002130128223598,0.002669239637186261,2.0338921546936035,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598567.418304,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012002130128223598,
+  ""longitude"": 0.002669239637186261,
+  ""height_msl"": 2.0338921546936035
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567521217389,1783598567.5212173,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598567.518314,0,gnss,0,0,0,-0.001200237548715677,0.0026713579484046422,2.0338940620422363,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598567.518314,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001200237548715677,
+  ""longitude"": 0.0026713579484046422,
+  ""height_msl"": 2.0338940620422363
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567621077422,1783598567.6210775,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598567.6182704,0,gnss,0,0,0,-0.0012002627699700952,0.0026735277987079277,2.0338945388793945,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598567.6182704,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012002627699700952,
+  ""longitude"": 0.0026735277987079277,
+  ""height_msl"": 2.0338945388793945
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567721120497,1783598567.7211206,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598567.7182827,0,gnss,0,0,0,-0.0012002888136493084,0.002675748091519843,2.033893585205078,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598567.7182827,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012002888136493084,
+  ""longitude"": 0.002675748091519843,
+  ""height_msl"": 2.033893585205078
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567821390487,1783598567.8213906,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598567.8183396,0,gnss,0,0,0,-0.0012003156797817383,0.0026780177302641135,2.0338919162750244,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598567.8183396,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012003156797817383,
+  ""longitude"": 0.0026780177302641135,
+  ""height_msl"": 2.0338919162750244
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567920981108,1783598567.920981,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598567.9182174,0,gnss,0,0,0,-0.001200343368338963,0.0026803347959322584,2.033888578414917,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598567.9182174,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001200343368338963,
+  ""longitude"": 0.0026803347959322584,
+  ""height_msl"": 2.033888578414917
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568021411645,1783598568.0214117,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598568.018306,0,gnss,0,0,0,-0.001200371879292561,0.0026826979178039352,2.033884286880493,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598568.018306,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001200371879292561,
+  ""longitude"": 0.0026826979178039352,
+  ""height_msl"": 2.033884286880493
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568121870502,1783598568.1218705,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598568.1192486,0,gnss,0,0,0,-0.0012004010756498928,0.0026851040802943885,2.033879280090332,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598568.1192486,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012004010756498928,
+  ""longitude"": 0.0026851040802943885,
+  ""height_msl"": 2.033879280090332
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568221121594,1783598568.2211215,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598568.2183337,0,gnss,0,0,0,-0.0012004312315099241,0.0026875508161070005,2.0338730812072754,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598568.2183337,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012004312315099241,
+  ""longitude"": 0.0026875508161070005,
+  ""height_msl"": 2.0338730812072754
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568321596404,1783598568.3215964,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598568.3183541,0,gnss,0,0,0,-0.0012004619356389412,0.0026900348355129475,2.0338659286499023,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598568.3183541,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012004619356389412,
+  ""longitude"": 0.0026900348355129475,
+  ""height_msl"": 2.0338659286499023
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568420582870,1783598568.420583,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598568.4184496,0,gnss,0,0,0,-0.0012004931880653658,0.0026925528487834055,2.033857583999634,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598568.4184496,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012004931880653658,
+  ""longitude"": 0.0026925528487834055,
+  ""height_msl"": 2.033857583999634
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568521288148,1783598568.5212882,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598568.518445,0,gnss,0,0,0,-0.0012005253999944898,0.0026951001954692087,2.033848285675049,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598568.518445,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012005253999944898,
+  ""longitude"": 0.0026951001954692087,
+  ""height_msl"": 2.033848285675049
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568621084099,1783598568.6210842,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598568.61843,0,gnss,0,0,0,-0.001200558023128906,0.002697673859985601,2.0338385105133057,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598568.61843,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001200558023128906,
+  ""longitude"": 0.002697673859985601,
+  ""height_msl"": 2.0338385105133057
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568721598719,1783598568.7215986,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598568.7184486,0,gnss,0,0,0,-0.0012005906462775329,0.0027002206583832664,2.0337491035461426,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598568.7184486,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012005906462775329,
+  ""longitude"": 0.0027002206583832664,
+  ""height_msl"": 2.0337491035461426
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568820553984,1783598568.820554,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598568.818353,0,gnss,0,0,0,-0.0012006214874844545,0.002702621886280484,2.033597230911255,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598568.818353,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012006214874844545,
+  ""longitude"": 0.002702621886280484,
+  ""height_msl"": 2.033597230911255
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568921617124,1783598568.9216173,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598568.9187875,0,gnss,0,0,0,-0.001200651232110772,0.002704926341321472,2.033557891845703,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598568.9187875,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001200651232110772,
+  ""longitude"": 0.002704926341321472,
+  ""height_msl"": 2.033557891845703
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569021137327,1783598569.0211375,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598569.018473,0,gnss,0,0,0,-0.0012006805655317976,0.002707180902141967,2.03358793258667,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598569.018473,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012006805655317976,
+  ""longitude"": 0.002707180902141967,
+  ""height_msl"": 2.03358793258667
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569121924878,1783598569.1219249,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598569.1183994,0,gnss,0,0,0,-0.001200709898952823,0.00270941572458952,2.0336415767669678,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598569.1183994,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001200709898952823,
+  ""longitude"": 0.00270941572458952,
+  ""height_msl"": 2.0336415767669678
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569221552443,1783598569.2215524,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598569.2183604,0,gnss,0,0,0,-0.0012007393694375423,0.0027116491763167303,2.0336928367614746,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598569.2183604,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012007393694375423,
+  ""longitude"": 0.0027116491763167303,
+  ""height_msl"": 2.0336928367614746
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569321853235,1783598569.3218532,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598569.318259,0,gnss,0,0,0,-0.0012007687028585678,0.0027138914006541366,2.0337328910827637,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598569.318259,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012007687028585678,
+  ""longitude"": 0.0027138914006541366,
+  ""height_msl"": 2.0337328910827637
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569421505535,1783598569.4215055,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598569.4183488,0,gnss,0,0,0,-0.0012007985845485791,0.0027161465097627693,2.0337610244750977,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598569.4183488,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012007985845485791,
+  ""longitude"": 0.0027161465097627693,
+  ""height_msl"": 2.0337610244750977
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569520774182,1783598569.5207741,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598569.5183883,0,gnss,0,0,0,-0.0012008287404086104,0.0027184164226511085,2.0337774753570557,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598569.5183883,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012008287404086104,
+  ""longitude"": 0.0027184164226511085,
+  ""height_msl"": 2.0337774753570557
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569621539077,1783598569.621539,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598569.6183968,0,gnss,0,0,0,-0.0012008593074739338,0.0027207000427428795,2.0337860584259033,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598569.6183968,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012008593074739338,
+  ""longitude"": 0.0027207000427428795,
+  ""height_msl"": 2.0337860584259033
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569721505175,1783598569.7215052,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598569.7186267,0,gnss,0,0,0,-0.00120089028575876,0.0027229959993177394,2.0337882041931152,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598569.7186267,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.00120089028575876,
+  ""longitude"": 0.0027229959993177394,
+  ""height_msl"": 2.0337882041931152
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569821415112,1783598569.8214152,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598569.81869,0,gnss,0,0,0,-0.0012009212640293754,0.0027253010026468644,2.033785581588745,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598569.81869,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012009212640293754,
+  ""longitude"": 0.0027253010026468644,
+  ""height_msl"": 2.033785581588745
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569921939236,1783598569.9219391,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598569.9183257,0,gnss,0,0,0,-0.0012009523793778953,0.0027276112147132936,2.033780097961426,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598569.9183257,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012009523793778953,
+  ""longitude"": 0.0027276112147132936,
+  ""height_msl"": 2.033780097961426
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570021278475,1783598570.0212784,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598570.0183928,0,gnss,0,0,0,-0.0012009833576485107,0.002729923345788203,2.0337719917297363,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598570.0183928,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012009833576485107,
+  ""longitude"": 0.002729923345788203,
+  ""height_msl"": 2.0337719917297363
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570121064506,1783598570.1210644,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598570.118324,0,gnss,0,0,0,-0.0012010144730112415,0.0027322330095664953,2.0337631702423096,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598570.118324,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012010144730112415,
+  ""longitude"": 0.0027322330095664953,
+  ""height_msl"": 2.0337631702423096
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570221527541,1783598570.2215276,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598570.2182815,0,gnss,0,0,0,-0.0012010458625013598,0.002734537464607483,2.033754825592041,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598570.2182815,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012010458625013598,
+  ""longitude"": 0.002734537464607483,
+  ""height_msl"": 2.033754825592041
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570321049663,1783598570.3210497,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598570.318422,0,gnss,0,0,0,-0.0012010768407719752,0.0027368336953264116,2.0337462425231934,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598570.318422,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012010768407719752,
+  ""longitude"": 0.0027368336953264116,
+  ""height_msl"": 2.0337462425231934
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570420720941,1783598570.4207208,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598570.4184325,0,gnss,0,0,0,-0.0012011078190568014,0.0027391184119944572,2.0337393283843994,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598570.4184325,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012011078190568014,
+  ""longitude"": 0.0027391184119944572,
+  ""height_msl"": 2.0337393283843994
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570521327529,1783598570.5213277,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598570.5183291,0,gnss,0,0,0,-0.0012011387973274168,0.0027413913404675514,2.0337326526641846,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598570.5183291,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012011387973274168,
+  ""longitude"": 0.0027413913404675514,
+  ""height_msl"": 2.0337326526641846
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570620974774,1783598570.6209748,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598570.6183205,0,gnss,0,0,0,-0.0012011697756264539,0.0027436497393050078,2.0337278842926025,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598570.6183205,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012011697756264539,
+  ""longitude"": 0.0027436497393050078,
+  ""height_msl"": 2.0337278842926025
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570721223629,1783598570.7212236,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598570.7183309,0,gnss,0,0,0,-0.0012012006168333755,0.0027458933343627572,2.033723831176758,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598570.7183309,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012012006168333755,
+  ""longitude"": 0.0027458933343627572,
+  ""height_msl"": 2.033723831176758
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570821127774,1783598570.8211277,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598570.8184037,0,gnss,0,0,0,-0.0012012311838986989,0.0027481207549204575,2.0337202548980713,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598570.8184037,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012012311838986989,
+  ""longitude"": 0.0027481207549204575,
+  ""height_msl"": 2.0337202548980713
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570921086160,1783598570.9210863,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598570.9182732,0,gnss,0,0,0,-0.0012012610655887102,0.0027503311785459015,2.033717632293701,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598570.9182732,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012012610655887102,
+  ""longitude"": 0.0027503311785459015,
+  ""height_msl"": 2.033717632293701
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571021164868,1783598571.021165,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598571.018359,0,gnss,0,0,0,-0.0012012910843708369,0.0027525251535272274,2.0337157249450684,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598571.018359,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012012910843708369,
+  ""longitude"": 0.0027525251535272274,
+  ""height_msl"": 2.0337157249450684
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571121178167,1783598571.1211782,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598571.118434,0,gnss,0,0,0,-0.0012013211031387527,0.0027547004867118858,2.0337138175964355,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598571.118434,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012013211031387527,
+  ""longitude"": 0.0027547004867118858,
+  ""height_msl"": 2.0337138175964355
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571221665073,1783598571.221665,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598571.2188723,0,gnss,0,0,0,-0.0012013504365597782,0.0027568577263880137,2.033712148666382,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598571.2188723,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012013504365597782,
+  ""longitude"": 0.0027568577263880137,
+  ""height_msl"": 2.033712148666382
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571321107355,1783598571.3211074,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598571.318305,0,gnss,0,0,0,-0.0012013793587755117,0.0027589960501234055,2.0337109565734863,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598571.318305,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012013793587755117,
+  ""longitude"": 0.0027589960501234055,
+  ""height_msl"": 2.0337109565734863
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571421347633,1783598571.4213476,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598571.4183502,0,gnss,0,0,0,-0.0012014084180265172,0.0027611151837739927,2.0337095260620117,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598571.4183502,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012014084180265172,
+  ""longitude"": 0.0027611151837739927,
+  ""height_msl"": 2.0337095260620117
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571520991646,1783598571.5209918,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598571.5183153,0,gnss,0,0,0,-0.0012014369290227478,0.0027632148531957063,2.033708333969116,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598571.5183153,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012014369290227478,
+  ""longitude"": 0.0027632148531957063,
+  ""height_msl"": 2.033708333969116
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571621346934,1783598571.6213467,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598571.618441,0,gnss,0,0,0,-0.00120146489170736,0.002765294784244478,2.0337073802948,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598571.618441,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.00120146489170736,
+  ""longitude"": 0.002765294784244478,
+  ""height_msl"": 2.0337073802948
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571721172582,1783598571.7211726,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598571.718387,0,gnss,0,0,0,-0.0012014929914840877,0.00276735442863217,2.0337069034576416,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598571.718387,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012014929914840877,
+  ""longitude"": 0.00276735442863217,
+  ""height_msl"": 2.0337069034576416
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571821230170,1783598571.8212302,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598571.8182914,0,gnss,0,0,0,-0.0012015204058855034,0.002769394608790989,2.0337073802948,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598571.8182914,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012015204058855034,
+  ""longitude"": 0.002769394608790989,
+  ""height_msl"": 2.0337073802948
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571921138187,1783598571.9211383,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598571.9182906,0,gnss,0,0,0,-0.0012015476832232252,0.00277141422814466,2.0337064266204834,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598571.9182906,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012015476832232252,
+  ""longitude"": 0.00277141422814466,
+  ""height_msl"": 2.0337064266204834
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572020534579,1783598572.0205345,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598572.0182788,0,gnss,0,0,0,-0.001201574549355655,0.00277341383498132,2.033705711364746,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598572.0182788,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001201574549355655,
+  ""longitude"": 0.00277341383498132,
+  ""height_msl"": 2.033705711364746
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572121437109,1783598572.121437,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598572.118395,0,gnss,0,0,0,-0.0012016507613736849,0.002773543505125787,2.0342183113098145,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598572.118395,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012016507613736849,
+  ""longitude"": 0.002773543505125787,
+  ""height_msl"": 2.0342183113098145
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572221192036,1783598572.221192,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598572.2183564,0,gnss,0,0,0,-0.0012016731041342155,0.0027735407636851005,2.035134792327881,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598572.2183564,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012016731041342155,
+  ""longitude"": 0.0027735407636851005,
+  ""height_msl"": 2.035134792327881
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572321249431,1783598572.3212495,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598572.3184834,0,gnss,0,0,0,-0.0012016805060284241,0.002773539667108826,2.035252571105957,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598572.3184834,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012016805060284241,
+  ""longitude"": 0.002773539667108826,
+  ""height_msl"": 2.035252571105957
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572421422957,1783598572.421423,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598572.4184825,0,gnss,0,0,0,-0.0012016829733170198,0.0027735424085495123,2.0351152420043945,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598572.4184825,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012016829733170198,
+  ""longitude"": 0.0027735424085495123,
+  ""height_msl"": 2.0351152420043945
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572521367166,1783598572.521367,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598572.518485,0,gnss,0,0,0,-0.0012016885932695232,0.002773547617286816,2.034928798675537,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598572.518485,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012016885932695232,
+  ""longitude"": 0.002773547617286816,
+  ""height_msl"": 2.034928798675537
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572621538772,1783598572.6215389,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598572.6190367,0,gnss,0,0,0,-0.0012016946244415294,0.0027735514553037773,2.0347700119018555,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598572.6190367,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012016946244415294,
+  ""longitude"": 0.0027735514553037773,
+  ""height_msl"": 2.0347700119018555
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572721222817,1783598572.7212229,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598572.7183785,0,gnss,0,0,0,-0.001201700518535631,0.00277355501917667,2.0346591472625732,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598572.7183785,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001201700518535631,
+  ""longitude"": 0.00277355501917667,
+  ""height_msl"": 2.0346591472625732
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572822773677,1783598572.8227737,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598572.8185203,0,gnss,0,0,0,-0.0012017075092103369,0.0027735588571936305,2.0345709323883057,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598572.8185203,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012017075092103369,
+  ""longitude"": 0.0027735588571936305,
+  ""height_msl"": 2.0345709323883057
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572921480171,1783598572.9214802,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598572.918423,0,gnss,0,0,0,-0.0012017127179433373,0.0027735632434987287,2.0344655513763428,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598572.918423,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012017127179433373,
+  ""longitude"": 0.0027735632434987287,
+  ""height_msl"": 2.0344655513763428
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598573022170377,1783598573.0221703,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598573.018562,0,gnss,0,0,0,-0.001201708194571438,0.0027735711936767195,2.034191608428955,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598573.018562,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.001201708194571438,
+  ""longitude"": 0.0027735711936767195,
+  ""height_msl"": 2.034191608428955
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598573122425504,1783598573.1224256,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598573.1195738,0,gnss,0,0,0,-0.0012017144998850426,0.002773572016108925,2.034191131591797,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598573.1195738,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012017144998850426,
+  ""longitude"": 0.002773572016108925,
+  ""height_msl"": 2.034191131591797
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598573220896761,1783598573.2208967,/apollo/sensor/gnss/best_pose,apollo.drivers.gnss.GnssBestPose,1783598573.2186632,0,gnss,0,0,0,-0.0012017232725014537,0.002773572290252994,2.0342750549316406,"{
+  ""header"": {
+    ""timestamp_sec"": 1783598573.2186632,
+    ""module_name"": ""gnss"",
+    ""frame_id"": ""ego_vehicle/gnss""
+  },
+  ""latitude"": -0.0012017232725014537,
+  ""longitude"": 0.002773572290252994,
+  ""height_msl"": 2.0342750549316406
+}"

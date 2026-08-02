@@ -1,0 +1,382 @@
+{
+  "case_id": "202607102138",
+  "status": "FAIL",
+  "implicit_deadline_miss": true,
+  "window": {
+    "t1": 1783690721.792439,
+    "t2": 1783690732.886102,
+    "duration_sec": 11.093662977218628,
+    "source": "D:\\data\\202607102138\\classifier_output_history_match\\classification_result.json"
+  },
+  "functional_context": {
+    "verdict": "PERCEPTION_ABNORMAL",
+    "reason_code": "TARGET_MISSING_WHEN_RELEVANT",
+    "target_id": "269",
+    "target_id_chain": [
+      "269",
+      "278"
+    ]
+  },
+  "thresholds_ms": {
+    "perception": 90.0,
+    "prediction": 6.403471,
+    "planning": 41.557888,
+    "e2e": 140.0
+  },
+  "trace_quality": {
+    "frame_count": 111,
+    "complete_frame_count": 111,
+    "complete_frame_ratio": 1.0,
+    "target_frame_count": 15,
+    "required_complete_frame_ratio": 0.95,
+    "sufficient": true
+  },
+  "modules": {
+    "perception": {
+      "sample_count": 111,
+      "median_ms": 83.042688,
+      "p90_ms": 86.85152,
+      "p95_ms": 87.58923200000001,
+      "max_ms": 91.279328,
+      "threshold_ms": 90.0,
+      "miss_count": 1,
+      "miss_ratio": 0.009009009009009009,
+      "max_overrun_ms": 1.2793280000000067
+    },
+    "prediction": {
+      "sample_count": 111,
+      "median_ms": 4.45376,
+      "p90_ms": 7.037664,
+      "p95_ms": 7.516719999999999,
+      "max_ms": 18.027264,
+      "threshold_ms": 6.403471,
+      "miss_count": 17,
+      "miss_ratio": 0.15315315315315314,
+      "max_overrun_ms": 11.623793
+    },
+    "planning": {
+      "sample_count": 111,
+      "median_ms": 42.698208,
+      "p90_ms": 60.742016,
+      "p95_ms": 63.597728000000004,
+      "max_ms": 73.502016,
+      "threshold_ms": 41.557888,
+      "miss_count": 58,
+      "miss_ratio": 0.5225225225225225,
+      "max_overrun_ms": 31.944128
+    },
+    "e2e": {
+      "sample_count": 111,
+      "median_ms": 131.46512,
+      "p90_ms": 148.352416,
+      "p95_ms": 152.051568,
+      "max_ms": 158.939776,
+      "threshold_ms": 140.0,
+      "miss_count": 26,
+      "miss_ratio": 0.23423423423423423,
+      "max_overrun_ms": 18.939775999999995
+    }
+  },
+  "e2e_anomaly_frame_count": 26,
+  "e2e_anomaly_target_frame_count": 5,
+  "cause_module_frame_counts": {
+    "prediction": 5,
+    "planning": 26
+  },
+  "worst_e2e_frames": [
+    {
+      "trace_id": "17294084154085868794",
+      "data_ts_ns": 1783690732089820175,
+      "e2e_ms": 158.939776,
+      "e2e_over_threshold_ms": 18.939775999999995,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 70.705056
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 29.147168
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868774",
+      "data_ts_ns": 1783690730091672647,
+      "e2e_ms": 157.79984,
+      "e2e_over_threshold_ms": 17.79983999999999,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 73.502016
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 31.944128
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868784",
+      "data_ts_ns": 1783690731091001414,
+      "e2e_ms": 156.79632,
+      "e2e_over_threshold_ms": 16.79632000000001,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 61.451328
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 19.89344
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868694",
+      "data_ts_ns": 1783690722093004164,
+      "e2e_ms": 155.635808,
+      "e2e_over_threshold_ms": 15.635807999999997,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 66.302208
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 24.744319999999995
+      },
+      "target_present": true
+    },
+    {
+      "trace_id": "17294084154085868762",
+      "data_ts_ns": 1783690728892211145,
+      "e2e_ms": 153.069408,
+      "e2e_over_threshold_ms": 13.06940800000001,
+      "cause_modules": "prediction;planning",
+      "cause_modules_ms": {
+        "prediction": 8.120256,
+        "planning": 60.742016
+      },
+      "cause_modules_overrun_ms": {
+        "prediction": 1.7167849999999998,
+        "planning": 19.184128
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868777",
+      "data_ts_ns": 1783690730391612737,
+      "e2e_ms": 152.11712,
+      "e2e_over_threshold_ms": 12.11712,
+      "cause_modules": "prediction;planning",
+      "cause_modules_ms": {
+        "prediction": 8.345344,
+        "planning": 60.524384
+      },
+      "cause_modules_overrun_ms": {
+        "prediction": 1.941873000000001,
+        "planning": 18.966496
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868776",
+      "data_ts_ns": 1783690730294199133,
+      "e2e_ms": 151.986016,
+      "e2e_over_threshold_ms": 11.986016000000006,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 57.677088
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 16.1192
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868691",
+      "data_ts_ns": 1783690721792439552,
+      "e2e_ms": 151.481728,
+      "e2e_over_threshold_ms": 11.481728000000004,
+      "cause_modules": "prediction;planning",
+      "cause_modules_ms": {
+        "prediction": 18.027264,
+        "planning": 49.900352
+      },
+      "cause_modules_overrun_ms": {
+        "prediction": 11.623793,
+        "planning": 8.342464
+      },
+      "target_present": true
+    },
+    {
+      "trace_id": "17294084154085868796",
+      "data_ts_ns": 1783690732290024316,
+      "e2e_ms": 149.79424,
+      "e2e_over_threshold_ms": 9.794240000000002,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 67.17648
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 25.618592
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868800",
+      "data_ts_ns": 1783690732690886251,
+      "e2e_ms": 149.158368,
+      "e2e_over_threshold_ms": 9.158367999999996,
+      "cause_modules": "prediction;planning",
+      "cause_modules_ms": {
+        "prediction": 6.974912,
+        "planning": 63.989184
+      },
+      "cause_modules_overrun_ms": {
+        "prediction": 0.5714410000000001,
+        "planning": 22.431296000000003
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868788",
+      "data_ts_ns": 1783690731490068190,
+      "e2e_ms": 148.623264,
+      "e2e_over_threshold_ms": 8.623264000000006,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 62.260832
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 20.702944000000002
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868775",
+      "data_ts_ns": 1783690730195784718,
+      "e2e_ms": 148.352416,
+      "e2e_over_threshold_ms": 8.352416000000005,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 52.376352
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 10.818463999999999
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868779",
+      "data_ts_ns": 1783690730592033527,
+      "e2e_ms": 148.1536,
+      "e2e_over_threshold_ms": 8.153600000000012,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 61.813984
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 20.256096
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868760",
+      "data_ts_ns": 1783690728693080182,
+      "e2e_ms": 147.301248,
+      "e2e_over_threshold_ms": 7.301247999999987,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 60.590592
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 19.032704000000003
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868715",
+      "data_ts_ns": 1783690724191434517,
+      "e2e_ms": 147.049472,
+      "e2e_over_threshold_ms": 7.049472000000009,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 60.719872
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 19.161984000000004
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868778",
+      "data_ts_ns": 1783690730490972213,
+      "e2e_ms": 146.848608,
+      "e2e_over_threshold_ms": 6.848608000000013,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 61.638848
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 20.080960000000005
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868709",
+      "data_ts_ns": 1783690723591890461,
+      "e2e_ms": 146.6024,
+      "e2e_over_threshold_ms": 6.602399999999989,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 63.236128
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 21.678240000000002
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868785",
+      "data_ts_ns": 1783690731190387613,
+      "e2e_ms": 146.180928,
+      "e2e_over_threshold_ms": 6.180927999999994,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 55.195424
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 13.637536000000004
+      },
+      "target_present": false
+    },
+    {
+      "trace_id": "17294084154085868692",
+      "data_ts_ns": 1783690721898170338,
+      "e2e_ms": 144.050144,
+      "e2e_over_threshold_ms": 4.050143999999989,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 55.937824
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 14.379936
+      },
+      "target_present": true
+    },
+    {
+      "trace_id": "17294084154085868770",
+      "data_ts_ns": 1783690729692102553,
+      "e2e_ms": 143.911552,
+      "e2e_over_threshold_ms": 3.9115520000000004,
+      "cause_modules": "planning",
+      "cause_modules_ms": {
+        "planning": 54.466912
+      },
+      "cause_modules_overrun_ms": {
+        "planning": 12.909024000000002
+      },
+      "target_present": false
+    }
+  ],
+  "output_files": {
+    "all_frames": "timing_frame_latencies.csv",
+    "anomaly_frames": "timing_anomaly_frames.csv",
+    "summary": "timing_analysis_result.json",
+    "e2e_scatter": "timing_e2e_scatter.svg"
+  }
+}

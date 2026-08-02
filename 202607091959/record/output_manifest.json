@@ -1,0 +1,84 @@
+{
+  "00_meta": [
+    "record_summary.json",
+    "record_channels.csv",
+    "record_message_index.csv",
+    "record_topic_rate.csv"
+  ],
+  "01_localization_chassis": [
+    "localization_pose.csv",
+    "localization_velocity_acc.csv",
+    "localization_status.csv",
+    "chassis.csv",
+    "chassis_signal.csv",
+    "tf.csv",
+    "tf_static.csv",
+    "gnss_best_pose.csv",
+    "gnss_odometry.csv",
+    "imu.csv",
+    "ins_status.csv"
+  ],
+  "02_planning": [
+    "planning_header.csv",
+    "planning_trajectory_summary.csv",
+    "planning_trajectory_points.csv",
+    "planning_trajectory_first_points.csv",
+    "planning_status.csv",
+    "planning_latency_stats.csv",
+    "planning_decision.csv",
+    "planning_obstacle_decision.csv",
+    "planning_routing_header.csv",
+    "planning_debug_raw.jsonl",
+    "planning_debug_stage_points.csv",
+    "planning_stitching_trajectory.csv",
+    "planning_reference_line.csv",
+    "planning_path_boundary.csv",
+    "planning_optimizer_costs.csv"
+  ],
+  "03_control": [
+    "control_command.csv",
+    "control_header.csv",
+    "control_latency.csv",
+    "control_debug_raw.jsonl",
+    "control_lat_debug.csv",
+    "control_lon_debug.csv",
+    "control_current_target_point.csv",
+    "control_target_point_compare.csv",
+    "control_planning_reuse.csv",
+    "control_vehicle_state.csv",
+    "control_steering_breakdown.csv",
+    "control_chassis_feedback.csv"
+  ],
+  "04_prediction_perception": [
+    "prediction_obstacles.csv",
+    "prediction_trajectories.csv",
+    "prediction_raw.jsonl",
+    "perception_obstacles.csv",
+    "perception_obstacle_points.csv",
+    "perception_raw.jsonl",
+    "traffic_light.csv"
+  ],
+  "05_routing_map": [
+    "routing_request.csv",
+    "routing_response.csv",
+    "routing_lane_segments.csv",
+    "vehicle_lane_relation.csv",
+    "planning_trajectory_lane_projection.csv"
+  ],
+  "06_sensor_raw": [
+    "camera_image_index.csv",
+    "lidar_timestamps.csv",
+    "lidar_pointcloud_summary.csv",
+    "radar_objects.csv",
+    "radar_timestamps.csv",
+    "sensor_timeline.csv"
+  ],
+  "07_diagnostics": [
+    "module_timeline.csv",
+    "planning_control_alignment.csv",
+    "control_reuse_summary.csv",
+    "sensor_to_control_reaction_age.csv",
+    "abnormal_frames_summary.csv",
+    "system_events.csv"
+  ]
+}

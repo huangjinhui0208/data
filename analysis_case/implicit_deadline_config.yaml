@@ -1,0 +1,40 @@
+implicit_deadline:
+  speed_kmh: 80.0
+  target_safety_deadline_ms: 200.0
+  decel_mps2: 10.0
+  safety_margin_m: 5.0
+  actuator_delay_s: 0.0
+
+  # D1 and rel_forward must use the same distance reference as the scenario.
+  # Keep 0 for actor-center to actor-center; set a measured correction if the
+  # scenario uses bumper clearance.
+  d1_distance_reference: actor_center_to_actor_center
+  d1_reference_verified_for_physical_model: false
+  longitudinal_distance_offset_m: 0.0
+  # null derives D1 from speed/deceleration/margin/deadline, so CLI speed
+  # overrides cannot silently retain the 80 km/h distance.
+  expected_stable_distance_m: null
+  stable_distance_tolerance_m: 2.0
+  speed_tolerance_kmh: 2.0
+
+  stable_perception_frames: 3
+  stable_max_frame_gap_sec: 0.25
+  target_lateral_tolerance_m: 3.0
+  static_target_max_speed_mps: 2.0
+  target_search_max_distance_m: 55.0
+  # null derives the gate from speed_kmh. At ratio 0.70 this is 15.56 m/s
+  # for 80 km/h and 7.78 m/s for 40 km/h.
+  target_search_min_ego_speed_mps: null
+  target_search_min_ego_speed_ratio: 0.70
+  target_distance_score_scale_m: 30.0
+  target_candidate_min_score: 0.65
+  target_candidate_min_margin: 0.10
+
+  brake_threshold_percentage: 1.0
+  effective_brake_min_decel_mps2: 0.5
+  effective_brake_consecutive_intervals: 2
+  effective_brake_max_lag_sec: 1.5
+  effective_brake_precheck_sec: 0.3
+  trace_window_after_stable_sec: 5.0
+  min_trace_complete_ratio: 0.80
+  clock_alignment_tolerance_ms: 100.0

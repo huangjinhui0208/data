@@ -1,0 +1,11 @@
+# Copy to <case_dir>/scb_experiment.yaml. Your scenario launcher should fill in
+# the spawn wall time at the moment it creates/enables the obstacle.
+group: calibration              # calibration | baseline | e2e200 | e2e300
+repeat_index: 1
+configured_bridge_delay_ms: 0.0
+target_total_response_ms: null
+obstacle_spawn_wall_time_unix_ns: null
+analysis_end_wall_time_unix_ns: null
+obstacle_spawn_distance_m: 50.0
+apollo_target_id: null          # optional manual override for safe baseline runs
+notes: ""

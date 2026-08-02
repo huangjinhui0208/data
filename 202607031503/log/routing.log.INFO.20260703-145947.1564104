@@ -1,0 +1,38 @@
+Log file created at: 2026/07/03 14:59:47
+Running on machine: in-dev-docker
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0703 14:59:47.750103 1564104 routing.cc:39] Use routing topology graph path: modules/map/data/carla_town01/routing_map.bin
+I0703 14:59:47.758275 1564104 topo_graph.cc:83] Load Topo data successful.
+I0703 14:59:47.758306 1564104 navigator.cc:113] The navigator is ready.
+I0703 14:59:47.948385 1564104 routing.cc:39] Use routing topology graph path: modules/map/data/carla_town01/routing_map.bin
+I0703 14:59:47.949785 1564104 topo_graph.cc:83] Load Topo data successful.
+I0703 14:59:47.949805 1564104 navigator.cc:113] The navigator is ready.
+I0703 15:03:28.024974 1564568 routing.cc:137] Get new routing request:waypoint {
+  id: "road_3_lane_0_1"
+  s: 36.909332069480058
+  pose {
+    x: 47.939998626708984
+    y: -2.0200145244598389
+  }
+}
+waypoint {
+  id: "road_8_lane_0_1"
+  s: 48.889386366292634
+  pose {
+    x: 391.56689905159556
+    y: -58.736045379441755
+  }
+}
+I0703 15:03:28.025034 1564568 navigator.cc:39] Way point:	lane id: road_3_lane_0_1 s: 36.9093 x: 47.94 y: -2.02001 length: 68.35
+I0703 15:03:28.025048 1564568 navigator.cc:39] Way point:	lane id: road_8_lane_0_1 s: 48.8894 x: 391.567 y: -58.736 length: 308.693
+I0703 15:03:28.025195 1564568 a_star_strategy.cc:229] Start A* search algorithm.
+I0703 15:03:28.025341 1564568 navigator.cc:87] Route lane id	is virtual	start s	end s
+I0703 15:03:28.025348 1564568 navigator.cc:89] road_3_lane_0_1	0	36.9093	68.35
+I0703 15:03:28.025357 1564568 navigator.cc:89] road_117_lane_0_1	0	0	23.31
+I0703 15:03:28.025360 1564568 navigator.cc:89] road_2_lane_0_1	0	0	42.2691
+I0703 15:03:28.025364 1564568 navigator.cc:89] road_61_lane_0_1	0	0	23.12
+I0703 15:03:28.025368 1564568 navigator.cc:89] road_1_lane_0_1	0	0	157.549
+I0703 15:03:28.025372 1564568 navigator.cc:89] road_41_lane_0_1	0	0	22.6
+I0703 15:03:28.025377 1564568 navigator.cc:89] road_0_lane_0_1	0	0	36.36
+I0703 15:03:28.025380 1564568 navigator.cc:89] road_11_lane_0_-1	0	0	12.6741
+I0703 15:03:28.025384 1564568 navigator.cc:89] road_8_lane_0_1	0	0	48.8894

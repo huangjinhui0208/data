@@ -1,0 +1,2781 @@
+record_file,record_time_ns,record_time_sec,channel,data_type,header_timestamp_sec,header_sequence_num,planning_seq,header_module_name,header_lidar_timestamp,header_camera_timestamp,header_radar_timestamp,decision_scope,decision_json
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598540778755826,1783598540.778756,/apollo/planning,apollo.planning.ADCTrajectory,1783598540.7780674,244,244,planning,1783598540618515479,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598540964300369,1783598540.9643004,/apollo/planning,apollo.planning.ADCTrajectory,1783598540.9635441,245,245,planning,1783598540718513376,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541144794082,1783598541.1447942,/apollo/planning,apollo.planning.ADCTrajectory,1783598541.1437542,246,246,planning,1783598540818402802,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541314640193,1783598541.31464,/apollo/planning,apollo.planning.ADCTrajectory,1783598541.313759,247,247,planning,1783598540918726059,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541396213750,1783598541.3962138,/apollo/planning,apollo.planning.ADCTrajectory,1783598541.3954558,248,248,planning,1783598541018617000,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541475106793,1783598541.4751067,/apollo/planning,apollo.planning.ADCTrajectory,1783598541.4741302,249,249,planning,1783598541118702503,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541558293842,1783598541.5582938,/apollo/planning,apollo.planning.ADCTrajectory,1783598541.5573366,250,250,planning,1783598541218447132,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541658330612,1783598541.6583307,/apollo/planning,apollo.planning.ADCTrajectory,1783598541.6564958,251,251,planning,1783598541319126382,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541713769978,1783598541.71377,/apollo/planning,apollo.planning.ADCTrajectory,1783598541.7127213,252,252,planning,1783598541418604901,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 93"",
+    ""stop_point"": {
+      ""x"": 135.5910617652993,
+      ""y"": -133.45956227193807
+    },
+    ""stop_heading"": 0.007873561349223726,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541816641664,1783598541.8166416,/apollo/planning,apollo.planning.ADCTrajectory,1783598541.81485,253,253,planning,1783598541518377217,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541872430187,1783598541.87243,/apollo/planning,apollo.planning.ADCTrajectory,1783598541.871664,254,254,planning,1783598541618532002,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598541947553006,1783598541.947553,/apollo/planning,apollo.planning.ADCTrajectory,1783598541.9468846,255,255,planning,1783598541718447022,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542026476225,1783598542.0264764,/apollo/planning,apollo.planning.ADCTrajectory,1783598542.0258708,256,256,planning,1783598541818325986,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542111134077,1783598542.111134,/apollo/planning,apollo.planning.ADCTrajectory,1783598542.1103811,257,257,planning,1783598541918539053,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542196303872,1783598542.1963038,/apollo/planning,apollo.planning.ADCTrajectory,1783598542.195484,258,258,planning,1783598542018658358,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542267610546,1783598542.2676105,/apollo/planning,apollo.planning.ADCTrajectory,1783598542.2660737,259,259,planning,1783598542119242510,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542357304303,1783598542.3573043,/apollo/planning,apollo.planning.ADCTrajectory,1783598542.3565054,260,260,planning,1783598542218344993,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542465443257,1783598542.4654434,/apollo/planning,apollo.planning.ADCTrajectory,1783598542.464553,261,261,planning,1783598542318808189,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542564410253,1783598542.5644104,/apollo/planning,apollo.planning.ADCTrajectory,1783598542.5633194,262,262,planning,1783598542418509056,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542671039811,1783598542.6710398,/apollo/planning,apollo.planning.ADCTrajectory,1783598542.6702766,263,263,planning,1783598542518449238,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542774091371,1783598542.7740912,/apollo/planning,apollo.planning.ADCTrajectory,1783598542.7728393,264,264,planning,1783598542618335724,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542868432100,1783598542.868432,/apollo/planning,apollo.planning.ADCTrajectory,1783598542.8676236,265,265,planning,1783598542718216881,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598542963845226,1783598542.963845,/apollo/planning,apollo.planning.ADCTrajectory,1783598542.9630308,266,266,planning,1783598542818296495,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543071844594,1783598543.0718446,/apollo/planning,apollo.planning.ADCTrajectory,1783598543.070873,267,267,planning,1783598542918458182,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543163974958,1783598543.163975,/apollo/planning,apollo.planning.ADCTrajectory,1783598543.1631882,268,268,planning,1783598543018377768,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543266765331,1783598543.2667654,/apollo/planning,apollo.planning.ADCTrajectory,1783598543.2659218,269,269,planning,1783598543118690915,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543390449380,1783598543.3904495,/apollo/planning,apollo.planning.ADCTrajectory,1783598543.3896272,270,270,planning,1783598543218313329,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543482586528,1783598543.4825866,/apollo/planning,apollo.planning.ADCTrajectory,1783598543.481764,271,271,planning,1783598543318450418,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543571139791,1783598543.5711398,/apollo/planning,apollo.planning.ADCTrajectory,1783598543.5703762,272,272,planning,1783598543418543711,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543654608988,1783598543.654609,/apollo/planning,apollo.planning.ADCTrajectory,1783598543.6538303,273,273,planning,1783598543518494957,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 97"",
+    ""stop_point"": {
+      ""x"": 156.34665147013243,
+      ""y"": -133.41185462214375
+    },
+    ""stop_heading"": -0.0015611489566736937,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543759964578,1783598543.7599647,/apollo/planning,apollo.planning.ADCTrajectory,1783598543.759266,274,274,planning,1783598543618447514,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 97"",
+    ""stop_point"": {
+      ""x"": 157.3617584422975,
+      ""y"": -133.41351704269738
+    },
+    ""stop_heading"": -0.0017327796711026932,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543894992612,1783598543.8949926,/apollo/planning,apollo.planning.ADCTrajectory,1783598543.8941574,275,275,planning,1783598543719190025,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598543969214811,1783598543.9692147,/apollo/planning,apollo.planning.ADCTrajectory,1783598543.9683397,276,276,planning,1783598543818468788,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544075361003,1783598544.075361,/apollo/planning,apollo.planning.ADCTrajectory,1783598544.074197,277,277,planning,1783598543918579434,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544170695728,1783598544.1706958,/apollo/planning,apollo.planning.ADCTrajectory,1783598544.1696322,278,278,planning,1783598544018410474,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544265099818,1783598544.2650998,/apollo/planning,apollo.planning.ADCTrajectory,1783598544.264192,279,279,planning,1783598544118417413,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544363683929,1783598544.363684,/apollo/planning,apollo.planning.ADCTrajectory,1783598544.3628325,280,280,planning,1783598544218444041,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544483116755,1783598544.4831169,/apollo/planning,apollo.planning.ADCTrajectory,1783598544.4823656,281,281,planning,1783598544318489532,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544561773474,1783598544.5617735,/apollo/planning,apollo.planning.ADCTrajectory,1783598544.560965,282,282,planning,1783598544418714477,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544663350904,1783598544.6633508,/apollo/planning,apollo.planning.ADCTrajectory,1783598544.6625226,283,283,planning,1783598544518407146,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544767743473,1783598544.7677436,/apollo/planning,apollo.planning.ADCTrajectory,1783598544.76659,284,284,planning,1783598544618343028,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544863657886,1783598544.863658,/apollo/planning,apollo.planning.ADCTrajectory,1783598544.8627179,285,285,planning,1783598544718398620,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598544960140658,1783598544.9601405,/apollo/planning,apollo.planning.ADCTrajectory,1783598544.9593475,286,286,planning,1783598544818444642,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545058997925,1783598545.058998,/apollo/planning,apollo.planning.ADCTrajectory,1783598545.0582502,287,287,planning,1783598544919368585,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545174522317,1783598545.1745224,/apollo/planning,apollo.planning.ADCTrajectory,1783598545.1732244,288,288,planning,1783598545018448140,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545272649846,1783598545.2726498,/apollo/planning,apollo.planning.ADCTrajectory,1783598545.271913,289,289,planning,1783598545118560022,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545371313862,1783598545.3713138,/apollo/planning,apollo.planning.ADCTrajectory,1783598545.370563,290,290,planning,1783598545218649251,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545458180479,1783598545.4581804,/apollo/planning,apollo.planning.ADCTrajectory,1783598545.457307,291,291,planning,1783598545318468450,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545561373545,1783598545.5613735,/apollo/planning,apollo.planning.ADCTrajectory,1783598545.5606277,292,292,planning,1783598545418464556,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545664816982,1783598545.6648169,/apollo/planning,apollo.planning.ADCTrajectory,1783598545.66394,293,293,planning,1783598545518526796,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545763212035,1783598545.763212,/apollo/planning,apollo.planning.ADCTrajectory,1783598545.762347,294,294,planning,1783598545618867956,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545863555401,1783598545.8635554,/apollo/planning,apollo.planning.ADCTrajectory,1783598545.862593,295,295,planning,1783598545718609113,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598545959134481,1783598545.9591346,/apollo/planning,apollo.planning.ADCTrajectory,1783598545.9581306,296,296,planning,1783598545818685998,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546055752711,1783598546.0557528,/apollo/planning,apollo.planning.ADCTrajectory,1783598546.0551286,297,297,planning,1783598545918580709,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546166062284,1783598546.1660624,/apollo/planning,apollo.planning.ADCTrajectory,1783598546.1652744,298,298,planning,1783598546018529842,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546263410796,1783598546.2634108,/apollo/planning,apollo.planning.ADCTrajectory,1783598546.262597,299,299,planning,1783598546118374834,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546400227236,1783598546.4002273,/apollo/planning,apollo.planning.ADCTrajectory,1783598546.3995302,300,300,planning,1783598546218651382,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546454761119,1783598546.4547613,/apollo/planning,apollo.planning.ADCTrajectory,1783598546.454011,301,301,planning,1783598546318474248,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546559432636,1783598546.5594327,/apollo/planning,apollo.planning.ADCTrajectory,1783598546.558489,302,302,planning,1783598546418560325,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546672949195,1783598546.6729493,/apollo/planning,apollo.planning.ADCTrajectory,1783598546.6720824,303,303,planning,1783598546518465951,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546777520902,1783598546.777521,/apollo/planning,apollo.planning.ADCTrajectory,1783598546.776163,304,304,planning,1783598546618530796,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546884116764,1783598546.8841166,/apollo/planning,apollo.planning.ADCTrajectory,1783598546.8833148,305,305,planning,1783598546718452671,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598546964977160,1783598546.9649773,/apollo/planning,apollo.planning.ADCTrajectory,1783598546.964198,306,306,planning,1783598546818559850,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547058512438,1783598547.0585124,/apollo/planning,apollo.planning.ADCTrajectory,1783598547.0578697,307,307,planning,1783598546918401088,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547165076556,1783598547.1650765,/apollo/planning,apollo.planning.ADCTrajectory,1783598547.164395,308,308,planning,1783598547018430386,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547258663451,1783598547.2586634,/apollo/planning,apollo.planning.ADCTrajectory,1783598547.2580388,309,309,planning,1783598547118601046,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547389528391,1783598547.3895283,/apollo/planning,apollo.planning.ADCTrajectory,1783598547.3887498,310,310,planning,1783598547218516486,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547463996705,1783598547.4639966,/apollo/planning,apollo.planning.ADCTrajectory,1783598547.4633536,311,311,planning,1783598547318581892,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547583871809,1783598547.5838718,/apollo/planning,apollo.planning.ADCTrajectory,1783598547.5830312,312,312,planning,1783598547418469080,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.7086454605263,
+      ""y"": -133.5142223591522
+    },
+    ""stop_heading"": -0.0004467936074993195,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547671961802,1783598547.6719618,/apollo/planning,apollo.planning.ADCTrajectory,1783598547.671259,313,313,planning,1783598547518510816,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6785899004947,
+      ""y"": -133.51420893021782
+    },
+    ""stop_heading"": -0.0004467937269751123,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547772232206,1783598547.7722323,/apollo/planning,apollo.planning.ADCTrajectory,1783598547.7713616,314,314,planning,1783598547618503206,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6477009190211,
+      ""y"": -133.51419512945424
+    },
+    ""stop_heading"": -0.00044679365762014965,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547871396357,1783598547.8713963,/apollo/planning,apollo.planning.ADCTrajectory,1783598547.8704286,315,315,planning,1783598547718468864,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6419315135565,
+      ""y"": -133.51419255165408
+    },
+    ""stop_heading"": -0.0004467936646145766,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598547977263249,1783598547.9772635,/apollo/planning,apollo.planning.ADCTrajectory,1783598547.9762704,316,316,planning,1783598547818575370,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63871220713054,
+      ""y"": -133.49624136244688
+    },
+    ""stop_heading"": 0.0009951205431376331,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548058703781,1783598548.058704,/apollo/planning,apollo.planning.ADCTrajectory,1783598548.058051,317,317,planning,1783598547918420525,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6386056489055,
+      ""y"": -133.45312655019876
+    },
+    ""stop_heading"": 0.005345847032332764,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548156172197,1783598548.1561723,/apollo/planning,apollo.planning.ADCTrajectory,1783598548.155517,318,318,planning,1783598548018539078,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.77209812500257,
+      ""y"": -133.38024655941473
+    },
+    ""stop_heading"": 0.014765576707227238,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548257612665,1783598548.2576125,/apollo/planning,apollo.planning.ADCTrajectory,1783598548.256211,319,319,planning,1783598548118459940,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6366257990719,
+      ""y"": -133.29467284084888
+    },
+    ""stop_heading"": 0.027197000359232348,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548364922808,1783598548.3649228,/apollo/planning,apollo.planning.ADCTrajectory,1783598548.3643076,320,320,planning,1783598548218600135,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6348153291035,
+      ""y"": -133.49458117819037
+    },
+    ""stop_heading"": 0.04781309241735022,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548464201872,1783598548.464202,/apollo/planning,apollo.planning.ADCTrajectory,1783598548.463428,321,321,planning,1783598548318459013,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6325280060647,
+      ""y"": -133.68429323447032
+    },
+    ""stop_heading"": 0.05995925084729594,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548571529103,1783598548.5715292,/apollo/planning,apollo.planning.ADCTrajectory,1783598548.570436,322,322,planning,1783598548418883143,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63438352533603,
+      ""y"": -133.76625708999336
+    },
+    ""stop_heading"": 0.052100636099089125,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548662029974,1783598548.66203,/apollo/planning,apollo.planning.ADCTrajectory,1783598548.6613462,323,323,planning,1783598548518519304,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63540999933196,
+      ""y"": -133.80410763855966
+    },
+    ""stop_heading"": 0.040702036370370925,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548776216973,1783598548.776217,/apollo/planning,apollo.planning.ADCTrajectory,1783598548.7756248,324,324,planning,1783598548618522493,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63561835427146,
+      ""y"": -133.8233600438404
+    },
+    ""stop_heading"": 0.0372208831942007,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548860652231,1783598548.8606522,/apollo/planning,apollo.planning.ADCTrajectory,1783598548.8600204,325,325,planning,1783598548719012553,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6359503559964,
+      ""y"": -133.8419686758361
+    },
+    ""stop_heading"": 0.02877943327450952,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598548976161071,1783598548.976161,/apollo/planning,apollo.planning.ADCTrajectory,1783598548.975127,326,326,planning,1783598548818830534,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63601653130115,
+      ""y"": -133.8501551547092
+    },
+    ""stop_heading"": 0.023683986794759727,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549062816293,1783598549.0628161,/apollo/planning,apollo.planning.ADCTrajectory,1783598549.0621588,327,327,planning,1783598548918426061,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63631689369936,
+      ""y"": -133.85851167094032
+    },
+    ""stop_heading"": 0.015516687472961272,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549164793408,1783598549.1647933,/apollo/planning,apollo.planning.ADCTrajectory,1783598549.1641006,328,328,planning,1783598549018494804,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63624122248206,
+      ""y"": -133.8592110478945
+    },
+    ""stop_heading"": 0.01569409413539581,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549261483446,1783598549.2614834,/apollo/planning,apollo.planning.ADCTrajectory,1783598549.2606876,329,329,planning,1783598549118790575,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6361357674714,
+      ""y"": -133.86029871861712
+    },
+    ""stop_heading"": 0.012541906649529701,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549367967499,1783598549.3679676,/apollo/planning,apollo.planning.ADCTrajectory,1783598549.3671334,330,330,planning,1783598549218588593,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6360869523471,
+      ""y"": -133.86078395304966
+    },
+    ""stop_heading"": 0.013968044012773132,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549461770268,1783598549.4617703,/apollo/planning,apollo.planning.ADCTrajectory,1783598549.4610908,331,331,planning,1783598549318680366,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63628405561,
+      ""y"": -133.86225029541146
+    },
+    ""stop_heading"": 0.012315877968073615,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549574241021,1783598549.574241,/apollo/planning,apollo.planning.ADCTrajectory,1783598549.5725875,332,332,planning,1783598549419331429,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63615016622947,
+      ""y"": -133.86066416218986
+    },
+    ""stop_heading"": 0.014603887744003972,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549679302335,1783598549.6793025,/apollo/planning,apollo.planning.ADCTrajectory,1783598549.6784027,333,333,planning,1783598549518469396,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63607609688125,
+      ""y"": -133.85941471572855
+    },
+    ""stop_heading"": 0.014401038350658885,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549761954274,1783598549.7619543,/apollo/planning,apollo.planning.ADCTrajectory,1783598549.7611918,334,334,planning,1783598549618348732,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6362568769915,
+      ""y"": -133.86041919762465
+    },
+    ""stop_heading"": 0.012976377694466534,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549869080895,1783598549.8690808,/apollo/planning,apollo.planning.ADCTrajectory,1783598549.8682084,335,335,planning,1783598549718361103,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6362114052249,
+      ""y"": -133.86031585450806
+    },
+    ""stop_heading"": 0.015108735862769168,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598549970312624,1783598549.9703126,/apollo/planning,apollo.planning.ADCTrajectory,1783598549.9680202,336,336,planning,1783598549818429018,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63653103578594,
+      ""y"": -133.86370089100092
+    },
+    ""stop_heading"": 0.014529135998507737,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550058321015,1783598550.058321,/apollo/planning,apollo.planning.ADCTrajectory,1783598550.0576227,337,337,planning,1783598549918928720,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6364361674893,
+      ""y"": -133.8611374671069
+    },
+    ""stop_heading"": 0.013384193659477362,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550169630345,1783598550.1696305,/apollo/planning,apollo.planning.ADCTrajectory,1783598550.1683385,338,338,planning,1783598550018479554,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367198752007,
+      ""y"": -133.85945039952932
+    },
+    ""stop_heading"": 0.016145207287844156,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550259450408,1783598550.2594504,/apollo/planning,apollo.planning.ADCTrajectory,1783598550.2587168,339,339,planning,1783598550118613460,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63672134281535,
+      ""y"": -133.85865037420265
+    },
+    ""stop_heading"": 0.016619141210163814,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550358469117,1783598550.358469,/apollo/planning,apollo.planning.ADCTrajectory,1783598550.3577495,340,340,planning,1783598550218499447,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6366941970826,
+      ""y"": -133.86073258334477
+    },
+    ""stop_heading"": 0.018362897109157506,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550560715932,1783598550.560716,/apollo/planning,apollo.planning.ADCTrajectory,1783598550.5595071,341,341,planning,1783598550318424975,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63670787968044,
+      ""y"": -133.858392411025
+    },
+    ""stop_heading"": 0.01770270597487305,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550747939707,1783598550.7479396,/apollo/planning,apollo.planning.ADCTrajectory,1783598550.7469547,342,342,planning,1783598550418474003,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63669401811416,
+      ""y"": -133.85608371034323
+    },
+    ""stop_heading"": 0.020007329869558412,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550824506000,1783598550.824506,/apollo/planning,apollo.planning.ADCTrajectory,1783598550.8229475,343,343,planning,1783598550518500547,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367153084927,
+      ""y"": -133.8562005926147
+    },
+    ""stop_heading"": 0.020106266886758095,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550913279873,1783598550.91328,/apollo/planning,apollo.planning.ADCTrajectory,1783598550.9125414,344,344,planning,1783598550618614117,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63672898898943,
+      ""y"": -133.85633188970814
+    },
+    ""stop_heading"": 0.018684642493864666,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598550979010667,1783598550.9790106,/apollo/planning,apollo.planning.ADCTrajectory,1783598550.9783156,345,345,planning,1783598550718243406,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367294478847,
+      ""y"": -133.85714990429037
+    },
+    ""stop_heading"": 0.01751949952727163,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551067415640,1783598551.0674155,/apollo/planning,apollo.planning.ADCTrajectory,1783598551.0666234,346,346,planning,1783598550818441993,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63674455013864,
+      ""y"": -133.85536476764565
+    },
+    ""stop_heading"": 0.016777768552428685,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551139062926,1783598551.1390631,/apollo/planning,apollo.planning.ADCTrajectory,1783598551.1382885,347,347,planning,1783598550918540113,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367409871523,
+      ""y"": -133.8552715505118
+    },
+    ""stop_heading"": 0.019571928008982744,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551220031899,1783598551.220032,/apollo/planning,apollo.planning.ADCTrajectory,1783598551.2190151,348,348,planning,1783598551018440218,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63674096674015,
+      ""y"": -133.85527155091134
+    },
+    ""stop_heading"": 0.019571928008982744,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551296795154,1783598551.2967951,/apollo/planning,apollo.planning.ADCTrajectory,1783598551.296152,349,349,planning,1783598551118451502,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367259663111,
+      ""y"": -133.85687784684583
+    },
+    ""stop_heading"": 0.01858285134230136,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551375043741,1783598551.3750439,/apollo/planning,apollo.planning.ADCTrajectory,1783598551.3736346,350,350,planning,1783598551218419422,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551460205184,1783598551.460205,/apollo/planning,apollo.planning.ADCTrajectory,1783598551.459578,351,351,planning,1783598551319034699,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551596137198,1783598551.5961373,/apollo/planning,apollo.planning.ADCTrajectory,1783598551.594844,352,352,planning,1783598551418485620,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551684246294,1783598551.6842463,/apollo/planning,apollo.planning.ADCTrajectory,1783598551.68239,353,353,planning,1783598551518416627,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551786271602,1783598551.7862716,/apollo/planning,apollo.planning.ADCTrajectory,1783598551.7853086,354,354,planning,1783598551618332259,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598551875705035,1783598551.875705,/apollo/planning,apollo.planning.ADCTrajectory,1783598551.8750103,355,355,planning,1783598551718461431,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552065235137,1783598552.0652351,/apollo/planning,apollo.planning.ADCTrajectory,1783598552.064517,356,356,planning,1783598551818501166,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552147251666,1783598552.1472516,/apollo/planning,apollo.planning.ADCTrajectory,1783598552.1464007,357,357,planning,1783598551918501018,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552333598073,1783598552.333598,/apollo/planning,apollo.planning.ADCTrajectory,1783598552.3327851,358,358,planning,1783598552018429079,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552431253013,1783598552.431253,/apollo/planning,apollo.planning.ADCTrajectory,1783598552.4304473,359,359,planning,1783598552118441126,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552488847886,1783598552.488848,/apollo/planning,apollo.planning.ADCTrajectory,1783598552.4880948,360,360,planning,1783598552218349152,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552577459992,1783598552.57746,/apollo/planning,apollo.planning.ADCTrajectory,1783598552.5767283,361,361,planning,1783598552318495272,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552651534256,1783598552.6515343,/apollo/planning,apollo.planning.ADCTrajectory,1783598552.6507113,362,362,planning,1783598552418327251,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552735590512,1783598552.7355905,/apollo/planning,apollo.planning.ADCTrajectory,1783598552.7348444,363,363,planning,1783598552518381113,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552812163490,1783598552.8121636,/apollo/planning,apollo.planning.ADCTrajectory,1783598552.8115003,364,364,planning,1783598552618351475,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552911633448,1783598552.9116335,/apollo/planning,apollo.planning.ADCTrajectory,1783598552.9109058,365,365,planning,1783598552718504137,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598552988353182,1783598552.9883533,/apollo/planning,apollo.planning.ADCTrajectory,1783598552.987705,366,366,planning,1783598552818346486,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553067854548,1783598553.0678546,/apollo/planning,apollo.planning.ADCTrajectory,1783598553.0671742,367,367,planning,1783598552919085872,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553168121484,1783598553.1681216,/apollo/planning,apollo.planning.ADCTrajectory,1783598553.167493,368,368,planning,1783598553018886760,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553266729022,1783598553.2667289,/apollo/planning,apollo.planning.ADCTrajectory,1783598553.2661083,369,369,planning,1783598553118590999,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553370893585,1783598553.3708935,/apollo/planning,apollo.planning.ADCTrajectory,1783598553.370242,370,370,planning,1783598553218738621,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553467916734,1783598553.4679167,/apollo/planning,apollo.planning.ADCTrajectory,1783598553.4671416,371,371,planning,1783598553319014642,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553568976137,1783598553.5689762,/apollo/planning,apollo.planning.ADCTrajectory,1783598553.5674808,372,372,planning,1783598553418409436,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553688928810,1783598553.6889288,/apollo/planning,apollo.planning.ADCTrajectory,1783598553.6882749,373,373,planning,1783598553518595281,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553771835247,1783598553.771835,/apollo/planning,apollo.planning.ADCTrajectory,1783598553.7710547,374,374,planning,1783598553618437346,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553910600710,1783598553.9106007,/apollo/planning,apollo.planning.ADCTrajectory,1783598553.909909,375,375,planning,1783598553718519912,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598553983675367,1783598553.9836755,/apollo/planning,apollo.planning.ADCTrajectory,1783598553.982923,376,376,planning,1783598553818436498,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554066839506,1783598554.0668395,/apollo/planning,apollo.planning.ADCTrajectory,1783598554.0660331,377,377,planning,1783598553918800792,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554165529574,1783598554.1655295,/apollo/planning,apollo.planning.ADCTrajectory,1783598554.1648057,378,378,planning,1783598554018420863,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554259162116,1783598554.2591622,/apollo/planning,apollo.planning.ADCTrajectory,1783598554.2583148,379,379,planning,1783598554118546400,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554360379954,1783598554.36038,/apollo/planning,apollo.planning.ADCTrajectory,1783598554.359408,380,380,planning,1783598554218522068,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554466005031,1783598554.466005,/apollo/planning,apollo.planning.ADCTrajectory,1783598554.46524,381,381,planning,1783598554318471652,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554561015430,1783598554.5610156,/apollo/planning,apollo.planning.ADCTrajectory,1783598554.5602229,382,382,planning,1783598554418516931,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554662116625,1783598554.6621165,/apollo/planning,apollo.planning.ADCTrajectory,1783598554.6611059,383,383,planning,1783598554518357041,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554761262704,1783598554.7612627,/apollo/planning,apollo.planning.ADCTrajectory,1783598554.7599862,384,384,planning,1783598554618275300,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554869500321,1783598554.8695004,/apollo/planning,apollo.planning.ADCTrajectory,1783598554.868425,385,385,planning,1783598554718280661,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598554966299081,1783598554.966299,/apollo/planning,apollo.planning.ADCTrajectory,1783598554.9656398,386,386,planning,1783598554818338080,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555067095822,1783598555.0670958,/apollo/planning,apollo.planning.ADCTrajectory,1783598555.0663025,387,387,planning,1783598554918434768,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555167734767,1783598555.1677349,/apollo/planning,apollo.planning.ADCTrajectory,1783598555.1669006,388,388,planning,1783598555018772001,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555264075212,1783598555.2640753,/apollo/planning,apollo.planning.ADCTrajectory,1783598555.2632508,389,389,planning,1783598555118606054,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555366071564,1783598555.3660715,/apollo/planning,apollo.planning.ADCTrajectory,1783598555.3653388,390,390,planning,1783598555218432092,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555458400236,1783598555.4584002,/apollo/planning,apollo.planning.ADCTrajectory,1783598555.4576561,391,391,planning,1783598555318533908,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555562403931,1783598555.562404,/apollo/planning,apollo.planning.ADCTrajectory,1783598555.5616646,392,392,planning,1783598555418705148,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555678809899,1783598555.67881,/apollo/planning,apollo.planning.ADCTrajectory,1783598555.6780243,393,393,planning,1783598555518528611,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555775726101,1783598555.775726,/apollo/planning,apollo.planning.ADCTrajectory,1783598555.774904,394,394,planning,1783598555618529916,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555881948728,1783598555.8819487,/apollo/planning,apollo.planning.ADCTrajectory,1783598555.8811488,395,395,planning,1783598555718448347,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598555972952217,1783598555.9729524,/apollo/planning,apollo.planning.ADCTrajectory,1783598555.9720993,396,396,planning,1783598555818411490,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556075227904,1783598556.075228,/apollo/planning,apollo.planning.ADCTrajectory,1783598556.0736392,397,397,planning,1783598555918442910,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556180729842,1783598556.1807299,/apollo/planning,apollo.planning.ADCTrajectory,1783598556.1799703,398,398,planning,1783598556018558441,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556259335091,1783598556.2593353,/apollo/planning,apollo.planning.ADCTrajectory,1783598556.2587564,399,399,planning,1783598556118420101,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556367497507,1783598556.3674974,/apollo/planning,apollo.planning.ADCTrajectory,1783598556.366858,400,400,planning,1783598556218424149,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556454758893,1783598556.454759,/apollo/planning,apollo.planning.ADCTrajectory,1783598556.4541276,401,401,planning,1783598556318463641,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556562401041,1783598556.562401,/apollo/planning,apollo.planning.ADCTrajectory,1783598556.56152,402,402,planning,1783598556418472706,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556677303549,1783598556.6773036,/apollo/planning,apollo.planning.ADCTrajectory,1783598556.6763737,403,403,planning,1783598556518592016,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556782568266,1783598556.7825682,/apollo/planning,apollo.planning.ADCTrajectory,1783598556.781673,404,404,planning,1783598556618285990,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556865343724,1783598556.8653438,/apollo/planning,apollo.planning.ADCTrajectory,1783598556.8640335,405,405,planning,1783598556718533691,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598556975298213,1783598556.9752984,/apollo/planning,apollo.planning.ADCTrajectory,1783598556.9743836,406,406,planning,1783598556818447273,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557070425478,1783598557.0704255,/apollo/planning,apollo.planning.ADCTrajectory,1783598557.0696337,407,407,planning,1783598556918321018,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557156072075,1783598557.1560721,/apollo/planning,apollo.planning.ADCTrajectory,1783598557.1552186,408,408,planning,1783598557018417488,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557258608216,1783598557.258608,/apollo/planning,apollo.planning.ADCTrajectory,1783598557.2577467,409,409,planning,1783598557118343022,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557356160945,1783598557.356161,/apollo/planning,apollo.planning.ADCTrajectory,1783598557.355419,410,410,planning,1783598557218329271,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557453644489,1783598557.4536445,/apollo/planning,apollo.planning.ADCTrajectory,1783598557.452854,411,411,planning,1783598557318519892,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557571196051,1783598557.571196,/apollo/planning,apollo.planning.ADCTrajectory,1783598557.5700288,412,412,planning,1783598557419390372,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557669825893,1783598557.6698258,/apollo/planning,apollo.planning.ADCTrajectory,1783598557.6688743,413,413,planning,1783598557518696490,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557767968908,1783598557.7679691,/apollo/planning,apollo.planning.ADCTrajectory,1783598557.7673144,414,414,planning,1783598557618473101,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557858474210,1783598557.8584743,/apollo/planning,apollo.planning.ADCTrajectory,1783598557.8577487,415,415,planning,1783598557718276067,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598557976161660,1783598557.9761615,/apollo/planning,apollo.planning.ADCTrajectory,1783598557.9754107,416,416,planning,1783598557818414390,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558077634068,1783598558.077634,/apollo/planning,apollo.planning.ADCTrajectory,1783598558.0769243,417,417,planning,1783598557918313833,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558171705732,1783598558.171706,/apollo/planning,apollo.planning.ADCTrajectory,1783598558.1707628,418,418,planning,1783598558018341881,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558259925157,1783598558.2599254,/apollo/planning,apollo.planning.ADCTrajectory,1783598558.259169,419,419,planning,1783598558118265198,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558368675168,1783598558.368675,/apollo/planning,apollo.planning.ADCTrajectory,1783598558.3680663,420,420,planning,1783598558218461342,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558459033694,1783598558.4590335,/apollo/planning,apollo.planning.ADCTrajectory,1783598558.458331,421,421,planning,1783598558318642559,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558563819747,1783598558.56382,/apollo/planning,apollo.planning.ADCTrajectory,1783598558.5631335,422,422,planning,1783598558418511398,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558681977248,1783598558.6819773,/apollo/planning,apollo.planning.ADCTrajectory,1783598558.6811023,423,423,planning,1783598558518800752,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558778706133,1783598558.778706,/apollo/planning,apollo.planning.ADCTrajectory,1783598558.777156,424,424,planning,1783598558618209997,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558879629349,1783598558.8796294,/apollo/planning,apollo.planning.ADCTrajectory,1783598558.878949,425,425,planning,1783598558718256840,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598558968105769,1783598558.9681058,/apollo/planning,apollo.planning.ADCTrajectory,1783598558.967395,426,426,planning,1783598558818488885,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559068698388,1783598559.0686984,/apollo/planning,apollo.planning.ADCTrajectory,1783598559.0679784,427,427,planning,1783598558918435783,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559181602056,1783598559.181602,/apollo/planning,apollo.planning.ADCTrajectory,1783598559.1808648,428,428,planning,1783598559018689951,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559278968391,1783598559.2789683,/apollo/planning,apollo.planning.ADCTrajectory,1783598559.278277,429,429,planning,1783598559118452352,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559373352764,1783598559.3733528,/apollo/planning,apollo.planning.ADCTrajectory,1783598559.3727057,430,430,planning,1783598559218431545,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559453323851,1783598559.4533238,/apollo/planning,apollo.planning.ADCTrajectory,1783598559.4526334,431,431,planning,1783598559318517430,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559553085866,1783598559.553086,/apollo/planning,apollo.planning.ADCTrajectory,1783598559.55248,432,432,planning,1783598559418650949,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559653889944,1783598559.6538901,/apollo/planning,apollo.planning.ADCTrajectory,1783598559.6532607,433,433,planning,1783598559519198269,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559760127600,1783598559.7601275,/apollo/planning,apollo.planning.ADCTrajectory,1783598559.7595735,434,434,planning,1783598559618528697,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559870139997,1783598559.8701398,/apollo/planning,apollo.planning.ADCTrajectory,1783598559.8692646,435,435,planning,1783598559718399481,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598559954552105,1783598559.9545522,/apollo/planning,apollo.planning.ADCTrajectory,1783598559.9539685,436,436,planning,1783598559818462255,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560067814435,1783598560.0678144,/apollo/planning,apollo.planning.ADCTrajectory,1783598560.067061,437,437,planning,1783598559918364934,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560165752489,1783598560.1657526,/apollo/planning,apollo.planning.ADCTrajectory,1783598560.164753,438,438,planning,1783598560018458525,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560281105311,1783598560.2811055,/apollo/planning,apollo.planning.ADCTrajectory,1783598560.2797067,439,439,planning,1783598560118280446,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560353328451,1783598560.3533285,/apollo/planning,apollo.planning.ADCTrajectory,1783598560.3525195,440,440,planning,1783598560218342429,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560465747729,1783598560.4657476,/apollo/planning,apollo.planning.ADCTrajectory,1783598560.465075,441,441,planning,1783598560318487087,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560570083728,1783598560.5700839,/apollo/planning,apollo.planning.ADCTrajectory,1783598560.5692086,442,442,planning,1783598560419200552,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560667990261,1783598560.6679902,/apollo/planning,apollo.planning.ADCTrajectory,1783598560.6671941,443,443,planning,1783598560518712993,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560782713891,1783598560.782714,/apollo/planning,apollo.planning.ADCTrajectory,1783598560.782048,444,444,planning,1783598560618349298,0,0,main,"{
+  ""cruise"": {
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560855271276,1783598560.855271,/apollo/planning,apollo.planning.ADCTrajectory,1783598560.8540301,445,445,planning,1783598560718328507,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.04224158511965,
+      ""y"": -133.6712580885276
+    },
+    ""stop_heading"": -0.01397594190911452,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598560972009749,1783598560.9720097,/apollo/planning,apollo.planning.ADCTrajectory,1783598560.971177,446,446,planning,1783598560818403592,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_HEAD_VEHICLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 306.8535170693404,
+      ""y"": -133.7113305888394
+    },
+    ""stop_heading"": -0.014220796710158549,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561079796707,1783598561.0797968,/apollo/planning,apollo.planning.ADCTrajectory,1783598561.079101,447,447,planning,1783598560918695730,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.3046159176098,
+      ""y"": -133.67492078849307
+    },
+    ""stop_heading"": -0.014011436293764076,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561177610504,1783598561.1776104,/apollo/planning,apollo.planning.ADCTrajectory,1783598561.176579,448,448,planning,1783598561018290324,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_HEAD_VEHICLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 307.6983806908696,
+      ""y"": -133.72270072900488
+    },
+    ""stop_heading"": -0.014092439849174875,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561274900037,1783598561.2749,/apollo/planning,apollo.planning.ADCTrajectory,1783598561.2742178,449,449,planning,1783598561118343291,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_HEAD_VEHICLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.5977354902252,
+      ""y"": -133.67896155295685
+    },
+    ""stop_heading"": -0.014012028293016864,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561388484611,1783598561.3884847,/apollo/planning,apollo.planning.ADCTrajectory,1783598561.3878794,450,450,planning,1783598561219098342,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_HEAD_VEHICLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 306.4769962265614,
+      ""y"": -133.70553274685662
+    },
+    ""stop_heading"": -0.014161195482229008,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561460595845,1783598561.460596,/apollo/planning,apollo.planning.ADCTrajectory,1783598561.459866,451,451,planning,1783598561318735003,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367287298292,
+      ""y"": -133.85608267519254
+    },
+    ""stop_heading"": 0.019053700804023563,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561626624438,1783598561.6266246,/apollo/planning,apollo.planning.ADCTrajectory,1783598561.6260083,452,452,planning,1783598561418408562,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_HEAD_VEHICLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 307.3167673108763,
+      ""y"": -133.71789591640825
+    },
+    ""stop_heading"": -0.01421450223680014,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561673128312,1783598561.6731281,/apollo/planning,apollo.planning.ADCTrajectory,1783598561.6723258,453,453,planning,1783598561518475324,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 132"",
+    ""stop_point"": {
+      ""x"": 304.02368087978624,
+      ""y"": -133.67099516319539
+    },
+    ""stop_heading"": -0.013975835932212782,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561768908448,1783598561.7689085,/apollo/planning,apollo.planning.ADCTrajectory,1783598561.7683158,454,454,planning,1783598561618447031,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367250652072,
+      ""y"": -133.8577448302482
+    },
+    ""stop_heading"": 0.01761463972949709,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561891804895,1783598561.891805,/apollo/planning,apollo.planning.ADCTrajectory,1783598561.8909204,455,455,planning,1783598561718373336,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367281528255,
+      ""y"": -133.8562928027945
+    },
+    ""stop_heading"": 0.018982852119957427,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598561979530904,1783598561.979531,/apollo/planning,apollo.planning.ADCTrajectory,1783598561.9789524,456,456,planning,1783598561818527288,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 132"",
+    ""stop_point"": {
+      ""x"": 304.01946615734585,
+      ""y"": -133.67111208164354
+    },
+    ""stop_heading"": -0.013982376165375163,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562056982468,1783598562.0569825,/apollo/planning,apollo.planning.ADCTrajectory,1783598562.056416,457,457,planning,1783598561918340805,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63671922275125,
+      ""y"": -133.85823932304348
+    },
+    ""stop_heading"": 0.017887696329275594,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562214957926,1783598562.2149577,/apollo/planning,apollo.planning.ADCTrajectory,1783598562.2142808,458,458,planning,1783598562018325259,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63671793681505,
+      ""y"": -133.858063904547
+    },
+    ""stop_heading"": 0.018470865646414435,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562275582890,1783598562.275583,/apollo/planning,apollo.planning.ADCTrajectory,1783598562.2750242,459,459,planning,1783598562118434448,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.29984561488993,
+      ""y"": -133.67495368289116
+    },
+    ""stop_heading"": -0.01405055367283549,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562359210699,1783598562.3592107,/apollo/planning,apollo.planning.ADCTrajectory,1783598562.3584092,460,460,planning,1783598562218180454,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63672482953797,
+      ""y"": -133.85779494550567
+    },
+    ""stop_heading"": 0.017636987898310637,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562459751797,1783598562.4597516,/apollo/planning,apollo.planning.ADCTrajectory,1783598562.4590702,461,461,planning,1783598562318650097,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.33405873672734,
+      ""y"": -133.67556418447123
+    },
+    ""stop_heading"": -0.01406746430543206,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562554487567,1783598562.5544875,/apollo/planning,apollo.planning.ADCTrajectory,1783598562.5537724,462,462,planning,1783598562418356198,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.14326259439645,
+      ""y"": -133.6727752872439
+    },
+    ""stop_heading"": -0.014018055623424073,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562667345411,1783598562.6673455,/apollo/planning,apollo.planning.ADCTrajectory,1783598562.666641,463,463,planning,1783598562518449256,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367242997497,
+      ""y"": -133.85724843928216
+    },
+    ""stop_heading"": 0.018683912536771978,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562764026680,1783598562.7640266,/apollo/planning,apollo.planning.ADCTrajectory,1783598562.763243,464,464,planning,1783598562619207367,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367292471467,
+      ""y"": -133.85625101607374
+    },
+    ""stop_heading"": 0.01899656144704387,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562859450236,1783598562.85945,/apollo/planning,apollo.planning.ADCTrajectory,1783598562.8588572,465,465,planning,1783598562718411322,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.15649624970735,
+      ""y"": -133.673109214699
+    },
+    ""stop_heading"": -0.0140314866959969,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598562952023224,1783598562.9520233,/apollo/planning,apollo.planning.ADCTrajectory,1783598562.9514291,466,466,planning,1783598562818257943,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.1476737991316,
+      ""y"": -133.67291195950838
+    },
+    ""stop_heading"": -0.014027706983263106,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563063339031,1783598563.063339,/apollo/planning,apollo.planning.ADCTrajectory,1783598563.062441,467,467,planning,1783598562918381305,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.636720380155,
+      ""y"": -133.8579543187742
+    },
+    ""stop_heading"": 0.018500226256145207,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563164946480,1783598563.1649463,/apollo/planning,apollo.planning.ADCTrajectory,1783598563.1641927,468,468,planning,1783598563019070693,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367382288719,
+      ""y"": -133.85577357485028
+    },
+    ""stop_heading"": 0.019324446851635094,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563256634592,1783598563.2566347,/apollo/planning,apollo.planning.ADCTrajectory,1783598563.255951,469,469,planning,1783598563118606630,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.26707298353733,
+      ""y"": -133.67459039175822
+    },
+    ""stop_heading"": -0.01401223741276091,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563360207668,1783598563.3602076,/apollo/planning,apollo.planning.ADCTrajectory,1783598563.3594027,470,470,planning,1783598563219508756,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.26953864144264,
+      ""y"": -133.6746274161439
+    },
+    ""stop_heading"": -0.014013598269287091,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563456168063,1783598563.456168,/apollo/planning,apollo.planning.ADCTrajectory,1783598563.4555743,471,471,planning,1783598563318303949,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367289224865,
+      ""y"": -133.85668550903398
+    },
+    ""stop_heading"": 0.01885469687222281,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563551090556,1783598563.5510905,/apollo/planning,apollo.planning.ADCTrajectory,1783598563.5498319,472,472,planning,1783598563418394615,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.14485346923067,
+      ""y"": -133.67286323932112
+    },
+    ""stop_heading"": -0.014010887278024894,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563655491291,1783598563.6554914,/apollo/planning,apollo.planning.ADCTrajectory,1783598563.6549509,473,473,planning,1783598563519125113,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.15502506180627,
+      ""y"": -133.67301200344127
+    },
+    ""stop_heading"": -0.0140129311683953,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563764581371,1783598563.7645814,/apollo/planning,apollo.planning.ADCTrajectory,1783598563.7636907,474,474,planning,1783598563618405833,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.32567490439897,
+      ""y"": -133.6754052988423
+    },
+    ""stop_heading"": -0.014014221232243038,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563868618005,1783598563.868618,/apollo/planning,apollo.planning.ADCTrajectory,1783598563.867855,475,475,planning,1783598563718221719,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.30398719953115,
+      ""y"": -133.67511824446314
+    },
+    ""stop_heading"": -0.014030898775302317,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598563973201591,1783598563.9732018,/apollo/planning,apollo.planning.ADCTrajectory,1783598563.97204,476,476,planning,1783598563818345211,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367360078741,
+      ""y"": -133.8558627590634
+    },
+    ""stop_heading"": 0.019182601100508578,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564060830447,1783598564.0608304,/apollo/planning,apollo.planning.ADCTrajectory,1783598564.060106,477,477,planning,1783598563918349078,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367213103636,
+      ""y"": -133.85834799224452
+    },
+    ""stop_heading"": 0.01800815940570781,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564150047614,1783598564.1500475,/apollo/planning,apollo.planning.ADCTrajectory,1783598564.1493933,478,478,planning,1783598564018426928,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.15140557411075,
+      ""y"": -133.67296308762184
+    },
+    ""stop_heading"": -0.014030197492169213,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564248192903,1783598564.248193,/apollo/planning,apollo.planning.ADCTrajectory,1783598564.2477396,479,479,planning,1783598564118280664,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.14397812513346,
+      ""y"": -133.672791851802
+    },
+    ""stop_heading"": -0.014027667945938821,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564374690519,1783598564.3746905,/apollo/planning,apollo.planning.ADCTrajectory,1783598564.373666,480,480,planning,1783598564218325587,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367252084866,
+      ""y"": -133.85808516278698
+    },
+    ""stop_heading"": 0.017759040417685053,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564446023726,1783598564.4460237,/apollo/planning,apollo.planning.ADCTrajectory,1783598564.44552,481,481,planning,1783598564318360976,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.1464727798069,
+      ""y"": -133.67256421680165
+    },
+    ""stop_heading"": -0.01395369186882603,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564588216599,1783598564.5882165,/apollo/planning,apollo.planning.ADCTrajectory,1783598564.5875673,482,482,planning,1783598564418496212,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.1475518742949,
+      ""y"": -133.6725824521697
+    },
+    ""stop_heading"": -0.013959268839592795,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564657330896,1783598564.657331,/apollo/planning,apollo.planning.ADCTrajectory,1783598564.6568182,483,483,planning,1783598564518299477,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.14860769847246,
+      ""y"": -133.67259719166066
+    },
+    ""stop_heading"": -0.013959268839592795,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564759210220,1783598564.7592103,/apollo/planning,apollo.planning.ADCTrajectory,1783598564.7583952,484,484,planning,1783598564618464530,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.1577645436448,
+      ""y"": -133.67303003040502
+    },
+    ""stop_heading"": -0.014014222254570687,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564854154985,1783598564.854155,/apollo/planning,apollo.planning.ADCTrajectory,1783598564.8534815,485,485,planning,1783598564718368582,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.0344530540627,
+      ""y"": -133.67136313239206
+    },
+    ""stop_heading"": -0.013991442805772244,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598564949115846,1783598564.949116,/apollo/planning,apollo.planning.ADCTrajectory,1783598564.9485273,486,486,planning,1783598564818268556,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.15959071021024,
+      ""y"": -133.6730055884386
+    },
+    ""stop_heading"": -0.014027731005577297,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565068712023,1783598565.068712,/apollo/planning,apollo.planning.ADCTrajectory,1783598565.0677576,487,487,planning,1783598564918327393,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.02973084107373,
+      ""y"": -133.6711683274676
+    },
+    ""stop_heading"": -0.014026107579452298,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565168480503,1783598565.1684804,/apollo/planning,apollo.planning.ADCTrajectory,1783598565.167867,488,488,planning,1783598565018305249,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.1462635316555,
+      ""y"": -133.67254570852535
+    },
+    ""stop_heading"": -0.01395065495662693,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565271091742,1783598565.2710917,/apollo/planning,apollo.planning.ADCTrajectory,1783598565.27022,489,489,planning,1783598565118400862,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.155010567326,
+      ""y"": -133.67284216376123
+    },
+    ""stop_heading"": -0.013987221289087933,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565374670386,1783598565.3746703,/apollo/planning,apollo.planning.ADCTrajectory,1783598565.374036,490,490,planning,1783598565218239548,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.27064125316065,
+      ""y"": -133.67463903292065
+    },
+    ""stop_heading"": -0.014025903582318056,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565456886207,1783598565.4568863,/apollo/planning,apollo.planning.ADCTrajectory,1783598565.4563584,491,491,planning,1783598565318256552,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.1495104944165,
+      ""y"": -133.67287589763302
+    },
+    ""stop_heading"": -0.01402606279996663,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565551422871,1783598565.551423,/apollo/planning,apollo.planning.ADCTrajectory,1783598565.5508695,492,492,planning,1783598565418395336,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.1505710184016,
+      ""y"": -133.6727276617609
+    },
+    ""stop_heading"": -0.01398738627843911,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565655921335,1783598565.6559215,/apollo/planning,apollo.planning.ADCTrajectory,1783598565.6552293,493,493,planning,1783598565518409495,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.1515461353218,
+      ""y"": -133.67261878561482
+    },
+    ""stop_heading"": -0.013955124364630745,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565763706053,1783598565.7637062,/apollo/planning,apollo.planning.ADCTrajectory,1783598565.76294,494,494,planning,1783598565618417682,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 129"",
+    ""stop_point"": {
+      ""x"": 304.14538961409994,
+      ""y"": -133.67273022546576
+    },
+    ""stop_heading"": -0.013991265254343818,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565868132069,1783598565.868132,/apollo/planning,apollo.planning.ADCTrajectory,1783598565.8666089,495,495,planning,1783598565718488454,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63672487432194,
+      ""y"": -133.85837136578886
+    },
+    ""stop_heading"": 0.01816655379686612,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598565979766728,1783598565.9797668,/apollo/planning,apollo.planning.ADCTrajectory,1783598565.979085,496,496,planning,1783598565818282207,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367499878521,
+      ""y"": -133.85644670475094
+    },
+    ""stop_heading"": 0.017064824322156894,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566055413595,1783598566.0554135,/apollo/planning,apollo.planning.ADCTrajectory,1783598566.0548775,497,497,planning,1783598565918286249,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367536568849,
+      ""y"": -133.8556457129893
+    },
+    ""stop_heading"": 0.019816706795062106,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566156304074,1783598566.1563041,/apollo/planning,apollo.planning.ADCTrajectory,1783598566.1556141,498,498,planning,1783598566018373269,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367432026592,
+      ""y"": -133.8558061186173
+    },
+    ""stop_heading"": 0.01927900981324545,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566254662902,1783598566.254663,/apollo/planning,apollo.planning.ADCTrajectory,1783598566.2539265,499,499,planning,1783598566118378728,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367268155959,
+      ""y"": -133.85828588546386
+    },
+    ""stop_heading"": 0.01793480758376207,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566353978000,1783598566.3539782,/apollo/planning,apollo.planning.ADCTrajectory,1783598566.353281,500,500,planning,1783598566218378161,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63675481940004,
+      ""y"": -133.85605361195275
+    },
+    ""stop_heading"": 0.016838610666774615,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566452940612,1783598566.4529405,/apollo/planning,apollo.planning.ADCTrajectory,1783598566.4521434,501,501,planning,1783598566318400735,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 143"",
+    ""stop_point"": {
+      ""x"": 304.153015805976,
+      ""y"": -133.6728872359128
+    },
+    ""stop_heading"": -0.013997502843890888,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566559106300,1783598566.5591063,/apollo/planning,apollo.planning.ADCTrajectory,1783598566.5583057,502,502,planning,1783598566418692544,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367302510793,
+      ""y"": -133.85752268038192
+    },
+    ""stop_heading"": 0.018613547073852037,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566656593372,1783598566.6565933,/apollo/planning,apollo.planning.ADCTrajectory,1783598566.6559913,503,503,planning,1783598566518436395,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367382279096,
+      ""y"": -133.85745530134886
+    },
+    ""stop_heading"": 0.017483080587658368,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566760685911,1783598566.760686,/apollo/planning,apollo.planning.ADCTrajectory,1783598566.7600894,504,504,planning,1783598566618378656,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63675605356775,
+      ""y"": -133.85567799897134
+    },
+    ""stop_heading"": 0.016337001822592404,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566869517268,1783598566.8695173,/apollo/planning,apollo.planning.ADCTrajectory,1783598566.8685932,505,505,planning,1783598566718308566,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367533506894,
+      ""y"": -133.85565721605988
+    },
+    ""stop_heading"": 0.019696984179834193,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598566965277148,1783598566.9652772,/apollo/planning,apollo.planning.ADCTrajectory,1783598566.9644237,506,506,planning,1783598566818315143,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63672644074063,
+      ""y"": -133.85827003417756
+    },
+    ""stop_heading"": 0.01831736592607358,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567067479325,1783598567.0674794,/apollo/planning,apollo.planning.ADCTrajectory,1783598567.0668147,507,507,planning,1783598566918211980,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.636736989512,
+      ""y"": -133.8575835108748
+    },
+    ""stop_heading"": 0.017536982392415076,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567164981149,1783598567.1649814,/apollo/planning,apollo.planning.ADCTrajectory,1783598567.1642725,508,508,planning,1783598567018262281,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63675482922815,
+      ""y"": -133.8561768884893
+    },
+    ""stop_heading"": 0.01691464981648779,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567265203843,1783598567.265204,/apollo/planning,apollo.planning.ADCTrajectory,1783598567.2644699,509,509,planning,1783598567118289434,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367569952256,
+      ""y"": -133.85576868920464
+    },
+    ""stop_heading"": 0.016488743498676732,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567378040247,1783598567.3780403,/apollo/planning,apollo.planning.ADCTrajectory,1783598567.3773446,510,510,planning,1783598567218344603,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.636754462622,
+      ""y"": -133.85566238362205
+    },
+    ""stop_heading"": 0.019746241825797012,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567467517192,1783598567.4675171,/apollo/planning,apollo.planning.ADCTrajectory,1783598567.4668047,511,511,planning,1783598567318392051,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367492072261,
+      ""y"": -133.8557120344212
+    },
+    ""stop_heading"": 0.01942010433367132,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567554058034,1783598567.554058,/apollo/planning,apollo.planning.ADCTrajectory,1783598567.5531192,512,512,planning,1783598567418304128,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367426684291,
+      ""y"": -133.85586490473122
+    },
+    ""stop_heading"": 0.01918892219777753,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567656152881,1783598567.6561527,/apollo/planning,apollo.planning.ADCTrajectory,1783598567.6555815,513,513,planning,1783598567518313929,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63675029313254,
+      ""y"": -133.85568885507706
+    },
+    ""stop_heading"": 0.019463590365603,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567790612495,1783598567.7906125,/apollo/planning,apollo.planning.ADCTrajectory,1783598567.7898781,514,514,planning,1783598567618270369,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63674803017113,
+      ""y"": -133.8557358881174
+    },
+    ""stop_heading"": 0.01938469967455971,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567868269054,1783598567.868269,/apollo/planning,apollo.planning.ADCTrajectory,1783598567.8676019,515,515,planning,1783598567718282730,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63673325823817,
+      ""y"": -133.857308063168
+    },
+    ""stop_heading"": 0.01866873901072221,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598567972130582,1783598567.9721305,/apollo/planning,apollo.planning.ADCTrajectory,1783598567.9714904,516,516,planning,1783598567818339600,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63673418029646,
+      ""y"": -133.85712984806324
+    },
+    ""stop_heading"": 0.018714106045264023,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568068477894,1783598568.0684779,/apollo/planning,apollo.planning.ADCTrajectory,1783598568.067529,517,517,planning,1783598567918217474,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63673717634106,
+      ""y"": -133.85652267020768
+    },
+    ""stop_heading"": 0.018908161053748946,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568173583567,1783598568.1735835,/apollo/planning,apollo.planning.ADCTrajectory,1783598568.172797,518,518,planning,1783598568018305964,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367538452536,
+      ""y"": -133.8556594530034
+    },
+    ""stop_heading"": 0.019717333346152152,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568268806413,1783598568.2688065,/apollo/planning,apollo.planning.ADCTrajectory,1783598568.2680426,519,519,planning,1783598568119248621,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63674667777855,
+      ""y"": -133.85576082275898
+    },
+    ""stop_heading"": 0.019350180390614594,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568365780877,1783598568.365781,/apollo/planning,apollo.planning.ADCTrajectory,1783598568.3649197,520,520,planning,1783598568218333776,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63675637131587,
+      ""y"": -133.8558133345416
+    },
+    ""stop_heading"": 0.01663279727687713,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568466490124,1783598568.46649,/apollo/planning,apollo.planning.ADCTrajectory,1783598568.4656253,521,521,planning,1783598568318354237,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367558653286,
+      ""y"": -133.85566064027725
+    },
+    ""stop_heading"": 0.01631033890382296,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568561693007,1783598568.561693,/apollo/planning,apollo.planning.ADCTrajectory,1783598568.5609362,522,522,planning,1783598568418449604,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.636741794437,
+      ""y"": -133.8571373729844
+    },
+    ""stop_heading"": 0.017360184400897028,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568647416182,1783598568.647416,/apollo/planning,apollo.planning.ADCTrajectory,1783598568.646984,523,523,planning,1783598568518444944,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_OBSTACLE"",
+    ""reason"": ""stop by 149"",
+    ""stop_point"": {
+      ""x"": 304.4751588100546,
+      ""y"": -133.6773258951602
+    },
+    ""stop_heading"": -0.014023287231617797,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568759613650,1783598568.7596138,/apollo/planning,apollo.planning.ADCTrajectory,1783598568.7587945,524,524,planning,1783598568618429937,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.636727612191,
+      ""y"": -133.85782854954385
+    },
+    ""stop_heading"": 0.018535045675797116,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568856109419,1783598568.8561094,/apollo/planning,apollo.planning.ADCTrajectory,1783598568.8554492,525,525,planning,1783598568718448525,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63673872567983,
+      ""y"": -133.85593041906304
+    },
+    ""stop_heading"": 0.019130140291618077,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598568953971130,1783598568.9539711,/apollo/planning,apollo.planning.ADCTrajectory,1783598568.9533477,526,526,planning,1783598568818352977,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367418567135,
+      ""y"": -133.8558139254059
+    },
+    ""stop_heading"": 0.01927208316941044,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569058539576,1783598569.0585396,/apollo/planning,apollo.planning.ADCTrajectory,1783598569.0579147,527,527,planning,1783598568918787708,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63674126647544,
+      ""y"": -133.85579870631688
+    },
+    ""stop_heading"": 0.019293627237728758,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569164484781,1783598569.164485,/apollo/planning,apollo.planning.ADCTrajectory,1783598569.1638005,528,528,planning,1783598569018472879,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63672567716134,
+      ""y"": -133.8577350022919
+    },
+    ""stop_heading"": 0.01856020686712,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569260462653,1783598569.2604625,/apollo/planning,apollo.planning.ADCTrajectory,1783598569.2598376,529,529,planning,1783598569118399494,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63672459780423,
+      ""y"": -133.8578222525511
+    },
+    ""stop_heading"": 0.018537341107680072,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569401595159,1783598569.401595,/apollo/planning,apollo.planning.ADCTrajectory,1783598569.3996801,530,530,planning,1783598569218360359,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367413592483,
+      ""y"": -133.8557572995662
+    },
+    ""stop_heading"": 0.019354963522645485,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569482031846,1783598569.4820318,/apollo/planning,apollo.planning.ADCTrajectory,1783598569.4813485,531,531,planning,1783598569318258990,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367224859005,
+      ""y"": -133.85795786593317
+    },
+    ""stop_heading"": 0.01850138891732627,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569573425387,1783598569.5734253,/apollo/planning,apollo.planning.ADCTrajectory,1783598569.5727873,532,532,planning,1783598569418348778,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367220837043,
+      ""y"": -133.85789708853744
+    },
+    ""stop_heading"": 0.018517901782947523,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569662274566,1783598569.6622746,/apollo/planning,apollo.planning.ADCTrajectory,1783598569.6608486,533,533,planning,1783598569518388148,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367224134322,
+      ""y"": -133.8577235769794
+    },
+    ""stop_heading"": 0.018563831667387988,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569756522745,1783598569.7565227,/apollo/planning,apollo.planning.ADCTrajectory,1783598569.755878,534,534,planning,1783598569618396784,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367233627112,
+      ""y"": -133.85744017954565
+    },
+    ""stop_heading"": 0.018637496976298063,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569856882258,1783598569.856882,/apollo/planning,apollo.planning.ADCTrajectory,1783598569.8562365,535,535,planning,1783598569718626938,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367397073403,
+      ""y"": -133.85570090935298
+    },
+    ""stop_heading"": 0.01943763760991754,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598569962777542,1783598569.9627776,/apollo/planning,apollo.planning.ADCTrajectory,1783598569.962157,536,536,planning,1783598569818690091,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367401946936,
+      ""y"": -133.8556751437905
+    },
+    ""stop_heading"": 0.019506760129408093,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570068138865,1783598570.0681388,/apollo/planning,apollo.planning.ADCTrajectory,1783598570.067409,537,537,planning,1783598569918325820,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367419740545,
+      ""y"": -133.85565197946238
+    },
+    ""stop_heading"": 0.019687327083756596,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570181565889,1783598570.181566,/apollo/planning,apollo.planning.ADCTrajectory,1783598570.1806107,538,538,planning,1783598570018392809,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63674121618175,
+      ""y"": -133.85565429692156
+    },
+    ""stop_heading"": 0.01976268326635333,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570269381067,1783598570.269381,/apollo/planning,apollo.planning.ADCTrajectory,1783598570.2687385,539,539,planning,1783598570118323941,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63673010883355,
+      ""y"": -133.85583181832664
+    },
+    ""stop_heading"": 0.019242076392311402,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570397769618,1783598570.3977697,/apollo/planning,apollo.planning.ADCTrajectory,1783598570.3969002,540,540,planning,1783598570218281458,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367309224709,
+      ""y"": -133.85578094273527
+    },
+    ""stop_heading"": 0.01931360270739064,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570478920813,1783598570.4789207,/apollo/planning,apollo.planning.ADCTrajectory,1783598570.478251,541,541,planning,1783598570318422100,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367317087728,
+      ""y"": -133.85573944421844
+    },
+    ""stop_heading"": 0.01937493201479403,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570568769368,1783598570.5687692,/apollo/planning,apollo.planning.ADCTrajectory,1783598570.568108,542,542,planning,1783598570418432521,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367315706492,
+      ""y"": -133.85570695528403
+    },
+    ""stop_heading"": 0.019421988745706498,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570688527953,1783598570.6885278,/apollo/planning,apollo.planning.ADCTrajectory,1783598570.6879523,543,543,planning,1783598570518328964,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63673107429906,
+      ""y"": -133.85568752586605
+    },
+    ""stop_heading"": 0.019453189561184376,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570769766286,1783598570.7697663,/apollo/planning,apollo.planning.ADCTrajectory,1783598570.7691345,544,544,planning,1783598570618320438,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367301168016,
+      ""y"": -133.85567934956867
+    },
+    ""stop_heading"": 0.019466561726394854,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570893354886,1783598570.893355,/apollo/planning,apollo.planning.ADCTrajectory,1783598570.8925667,545,545,planning,1783598570718330897,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.636727966653,
+      ""y"": -133.85568180814764
+    },
+    ""stop_heading"": 0.01946045430119828,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598570971907319,1783598570.9719074,/apollo/planning,apollo.planning.ADCTrajectory,1783598570.9712667,546,546,planning,1783598570818403872,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367256210015,
+      ""y"": -133.85569700380898
+    },
+    ""stop_heading"": 0.019434036126972903,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571072155437,1783598571.0721555,/apollo/planning,apollo.planning.ADCTrajectory,1783598571.0714135,547,547,planning,1783598570918273184,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63672298909603,
+      ""y"": -133.8557282171552
+    },
+    ""stop_heading"": 0.01938547485440427,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571178151779,1783598571.1781516,/apollo/planning,apollo.planning.ADCTrajectory,1783598571.1774487,548,548,planning,1783598571018359127,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367194119364,
+      ""y"": -133.8557740921395
+    },
+    ""stop_heading"": 0.019315922452248058,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571266826683,1783598571.2668269,/apollo/planning,apollo.planning.ADCTrajectory,1783598571.2661452,549,549,planning,1783598571118434008,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63671549295407,
+      ""y"": -133.8558386465382
+    },
+    ""stop_heading"": 0.019223353881686868,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571358791913,1783598571.3587918,/apollo/planning,apollo.planning.ADCTrajectory,1783598571.3581157,550,550,planning,1783598571218872316,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367117325292,
+      ""y"": -133.855993311024
+    },
+    ""stop_heading"": 0.019097812042456214,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571462304565,1783598571.4623046,/apollo/planning,apollo.planning.ADCTrajectory,1783598571.4611335,551,551,planning,1783598571318305036,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367198447636,
+      ""y"": -133.8556670287516
+    },
+    ""stop_heading"": 0.019501207757919206,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571582587927,1783598571.582588,/apollo/planning,apollo.planning.ADCTrajectory,1783598571.5819244,552,552,planning,1783598571418350250,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63669695407617,
+      ""y"": -133.85786060344634
+    },
+    ""stop_heading"": 0.01852802392628503,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571658955043,1783598571.658955,/apollo/planning,apollo.planning.ADCTrajectory,1783598571.6582825,553,553,planning,1783598571518315165,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6366934481269,
+      ""y"": -133.85833158251003
+    },
+    ""stop_heading"": 0.01821063350298141,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571767484259,1783598571.7674842,/apollo/planning,apollo.planning.ADCTrajectory,1783598571.7667098,554,554,planning,1783598571618441303,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6366940288937,
+      ""y"": -133.8582344699669
+    },
+    ""stop_heading"": 0.017904501073299755,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571870104128,1783598571.870104,/apollo/planning,apollo.planning.ADCTrajectory,1783598571.8693023,555,555,planning,1783598571718386847,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6366997216728,
+      ""y"": -133.85764422357798
+    },
+    ""stop_heading"": 0.017580924813090374,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598571956736278,1783598571.9567363,/apollo/planning,apollo.planning.ADCTrajectory,1783598571.9560592,556,556,planning,1783598571818291434,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63671058039756,
+      ""y"": -133.85678252459255
+    },
+    ""stop_heading"": 0.017228792909629944,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572058373444,1783598572.0583735,/apollo/planning,apollo.planning.ADCTrajectory,1783598572.0577388,557,557,planning,1783598571918290715,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63669976032065,
+      ""y"": -133.85739144962957
+    },
+    ""stop_heading"": 0.017470968281808334,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572162990083,1783598572.16299,/apollo/planning,apollo.planning.ADCTrajectory,1783598572.162349,558,558,planning,1783598572018278882,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367113951307,
+      ""y"": -133.85638763845057
+    },
+    ""stop_heading"": 0.01704890483267664,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572259510300,1783598572.2595103,/apollo/planning,apollo.planning.ADCTrajectory,1783598572.258976,559,559,planning,1783598572118395152,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367159303552,
+      ""y"": -133.85593028769796
+    },
+    ""stop_heading"": 0.016770298038777914,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572388719985,1783598572.3887198,/apollo/planning,apollo.planning.ADCTrajectory,1783598572.3881047,560,560,planning,1783598572218356465,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.636715464868,
+      ""y"": -133.85597481787246
+    },
+    ""stop_heading"": 0.016800112326188582,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572483360843,1783598572.4833608,/apollo/planning,apollo.planning.ADCTrajectory,1783598572.4826603,561,561,planning,1783598572318483358,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63671541363703,
+      ""y"": -133.85597961431435
+    },
+    ""stop_heading"": 0.016803420387648486,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572556223422,1783598572.5562234,/apollo/planning,apollo.planning.ADCTrajectory,1783598572.555612,562,562,planning,1783598572418482366,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63671532826953,
+      ""y"": -133.85598097696112
+    },
+    ""stop_heading"": 0.01680448593610939,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572654688727,1783598572.6546888,/apollo/planning,apollo.planning.ADCTrajectory,1783598572.6540613,563,563,planning,1783598572518484947,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63671541562957,
+      ""y"": -133.8559875331341
+    },
+    ""stop_heading"": 0.016809606165381356,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572749151630,1783598572.7491517,/apollo/planning,apollo.planning.ADCTrajectory,1783598572.7463658,564,564,planning,1783598572619036738,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.636715666498,
+      ""y"": -133.8559828144392
+    },
+    ""stop_heading"": 0.016805928253570798,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572844312433,1783598572.8443124,/apollo/planning,apollo.planning.ADCTrajectory,1783598572.8435237,565,565,planning,1783598572718378550,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63671548828535,
+      ""y"": -133.85598548965908
+    },
+    ""stop_heading"": 0.016808018813691424,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598572953676158,1783598572.953676,/apollo/planning,apollo.planning.ADCTrajectory,1783598572.9521785,566,566,planning,1783598572818520298,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63671552685247,
+      ""y"": -133.85598920092193
+    },
+    ""stop_heading"": 0.01681089151875334,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598573067832858,1783598573.067833,/apollo/planning,apollo.planning.ADCTrajectory,1783598573.06715,567,567,planning,1783598572918422999,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.63671542924754,
+      ""y"": -133.8559890333878
+    },
+    ""stop_heading"": 0.016810761304570578,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"
+/apollo_workspace/records/202607092002_MkzExample_CarlaTown01.00000.20260709200220.record,1783598573169149507,1783598573.1691494,/apollo/planning,apollo.planning.ADCTrajectory,1783598573.1666155,568,568,planning,1783598573018562111,0,0,main,"{
+  ""stop"": {
+    ""reason_code"": ""STOP_REASON_SIGNAL"",
+    ""reason"": ""stop by TL_signal_4_387"",
+    ""stop_point"": {
+      ""x"": 323.6367153831526,
+      ""y"": -133.85598804966014
+    },
+    ""stop_heading"": 0.016810003406238467,
+    ""change_lane_type"": ""FORWARD""
+  }
+}"

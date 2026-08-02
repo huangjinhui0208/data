@@ -1,0 +1,20 @@
+{
+  "case_id": "202607102214",
+  "functional_analysis": {
+    "verdict": "PERCEPTION_ABNORMAL",
+    "reason_code": "TARGET_MISSING_WHEN_RELEVANT",
+    "target_id": "1016",
+    "functionally_normal": false,
+    "result_file": "classification_result.json"
+  },
+  "timing_analysis": {
+    "enabled": true,
+    "invoked": false,
+    "status": "SKIPPED_FUNCTION_NOT_NORMAL",
+    "implicit_deadline_miss": null,
+    "e2e_anomaly_frame_count": null,
+    "result_file": "timing_analysis_result.json",
+    "all_frames_file": null,
+    "anomaly_frames_file": null
+  }
+}

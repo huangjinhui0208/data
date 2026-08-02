@@ -1,0 +1,267 @@
+{
+  "case_id": "202607102214",
+  "status": "FAIL",
+  "implicit_deadline_miss": true,
+  "window": {
+    "t1": 1783692901.622478,
+    "t2": 1783692910.718303,
+    "duration_sec": 9.095824956893921,
+    "source": "D:\\data\\202607102214\\classifier_output_history_match\\classification_result.json"
+  },
+  "functional_context": {
+    "verdict": "PERCEPTION_ABNORMAL",
+    "reason_code": "TARGET_MISSING_WHEN_RELEVANT",
+    "target_id": "1016",
+    "target_id_chain": [
+      "1016"
+    ]
+  },
+  "thresholds_ms": {
+    "perception": 85.0,
+    "prediction": 6.0,
+    "planning": 40.0,
+    "e2e": 110.0
+  },
+  "threshold_source": {
+    "method": "mean_of_scene_p90",
+    "scope": "complete_trace",
+    "scenes": [
+      202607031503.0,
+      202607091933.0,
+      202607091959.0,
+      202607092002.0,
+      202607092006.0,
+      202607102138.0,
+      202607102214.0
+    ]
+  },
+  "trace_quality": {
+    "frame_count": 91,
+    "complete_frame_count": 91,
+    "complete_frame_ratio": 1.0,
+    "target_frame_count": 2,
+    "required_complete_frame_ratio": 0.95,
+    "sufficient": true
+  },
+  "modules": {
+    "perception": {
+      "sample_count": 91,
+      "median_ms": 81.368352,
+      "p90_ms": 86.080192,
+      "p95_ms": 88.64870400000001,
+      "max_ms": 92.148128,
+      "threshold_ms": 85.0,
+      "miss_count": 14,
+      "miss_ratio": 0.15384615384615385,
+      "max_overrun_ms": 7.148128
+    },
+    "prediction": {
+      "sample_count": 91,
+      "median_ms": 4.659456,
+      "p90_ms": 7.280416,
+      "p95_ms": 7.79368,
+      "max_ms": 8.240864,
+      "threshold_ms": 6.0,
+      "miss_count": 19,
+      "miss_ratio": 0.2087912087912088,
+      "max_overrun_ms": 2.240864
+    },
+    "planning": {
+      "sample_count": 91,
+      "median_ms": 33.593984,
+      "p90_ms": 56.580576,
+      "p95_ms": 59.602688,
+      "max_ms": 67.446304,
+      "threshold_ms": 40.0,
+      "miss_count": 28,
+      "miss_ratio": 0.3076923076923077,
+      "max_overrun_ms": 27.446303999999998
+    },
+    "e2e": {
+      "sample_count": 91,
+      "median_ms": 120.605056,
+      "p90_ms": 141.137728,
+      "p95_ms": 144.93728,
+      "max_ms": 155.878144,
+      "threshold_ms": 110.0,
+      "miss_count": 71,
+      "miss_ratio": 0.7802197802197802,
+      "max_overrun_ms": 45.87814399999999
+    }
+  },
+  "e2e_anomaly_frame_count": 71,
+  "e2e_anomaly_target_frame_count": 2,
+  "cause_module_frame_counts": {
+    "perception": 13,
+    "PIPELINE_ACCUMULATION_OR_HANDOFF": 29,
+    "prediction": 17,
+    "planning": 28
+  },
+  "worst_e2e_frames": [
+    {
+      "trace_id": "17294075078819976485",
+      "data_ts_ns": 1783692910025954131,
+      "e2e_ms": 155.878144,
+      "e2e_overrun_ms": 45.87814399999999,
+      "cause_modules": "planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976483",
+      "data_ts_ns": 1783692909824875953,
+      "e2e_ms": 149.789888,
+      "e2e_overrun_ms": 39.78988799999999,
+      "cause_modules": "planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976480",
+      "data_ts_ns": 1783692909525632313,
+      "e2e_ms": 148.581568,
+      "e2e_overrun_ms": 38.581568000000004,
+      "cause_modules": "planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976478",
+      "data_ts_ns": 1783692909324608410,
+      "e2e_ms": 146.207328,
+      "e2e_overrun_ms": 36.20732799999999,
+      "cause_modules": "planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976476",
+      "data_ts_ns": 1783692909124663514,
+      "e2e_ms": 145.51632,
+      "e2e_overrun_ms": 35.51632000000001,
+      "cause_modules": "planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976481",
+      "data_ts_ns": 1783692909625194372,
+      "e2e_ms": 144.35824,
+      "e2e_overrun_ms": 34.358239999999995,
+      "cause_modules": "planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976486",
+      "data_ts_ns": 1783692910125854586,
+      "e2e_ms": 143.541472,
+      "e2e_overrun_ms": 33.541472,
+      "cause_modules": "prediction;planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976475",
+      "data_ts_ns": 1783692909030061173,
+      "e2e_ms": 143.321408,
+      "e2e_overrun_ms": 33.32140799999999,
+      "cause_modules": "prediction;planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976437",
+      "data_ts_ns": 1783692905225089472,
+      "e2e_ms": 141.84784,
+      "e2e_overrun_ms": 31.84783999999999,
+      "cause_modules": "perception;planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976473",
+      "data_ts_ns": 1783692908824566487,
+      "e2e_ms": 141.137728,
+      "e2e_overrun_ms": 31.13772800000001,
+      "cause_modules": "planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976445",
+      "data_ts_ns": 1783692906025041302,
+      "e2e_ms": 139.880992,
+      "e2e_overrun_ms": 29.880991999999992,
+      "cause_modules": "prediction;planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976491",
+      "data_ts_ns": 1783692910625574648,
+      "e2e_ms": 139.365856,
+      "e2e_overrun_ms": 29.365856000000008,
+      "cause_modules": "planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976442",
+      "data_ts_ns": 1783692905725651917,
+      "e2e_ms": 138.350304,
+      "e2e_overrun_ms": 28.350303999999994,
+      "cause_modules": "perception;planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976414",
+      "data_ts_ns": 1783692902925032644,
+      "e2e_ms": 138.071392,
+      "e2e_overrun_ms": 28.071392000000003,
+      "cause_modules": "prediction;planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976440",
+      "data_ts_ns": 1783692905525247035,
+      "e2e_ms": 137.929376,
+      "e2e_overrun_ms": 27.92937599999999,
+      "cause_modules": "perception;planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976488",
+      "data_ts_ns": 1783692910326639376,
+      "e2e_ms": 137.271808,
+      "e2e_overrun_ms": 27.271807999999993,
+      "cause_modules": "planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976487",
+      "data_ts_ns": 1783692910227147286,
+      "e2e_ms": 136.654304,
+      "e2e_overrun_ms": 26.654303999999996,
+      "cause_modules": "planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976490",
+      "data_ts_ns": 1783692910526333245,
+      "e2e_ms": 136.49728,
+      "e2e_overrun_ms": 26.49727999999999,
+      "cause_modules": "prediction;planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976477",
+      "data_ts_ns": 1783692909225154206,
+      "e2e_ms": 136.0944,
+      "e2e_overrun_ms": 26.094400000000007,
+      "cause_modules": "prediction;planning",
+      "target_present": false
+    },
+    {
+      "trace_id": "17294075078819976439",
+      "data_ts_ns": 1783692905424503695,
+      "e2e_ms": 136.024256,
+      "e2e_overrun_ms": 26.02425600000001,
+      "cause_modules": "perception;prediction;planning",
+      "target_present": false
+    }
+  ],
+  "output_files": {
+    "all_frames": "timing_frame_latencies.csv",
+    "anomaly_frames": "timing_anomaly_frames.csv",
+    "summary": "timing_analysis_result.json"
+  }
+}

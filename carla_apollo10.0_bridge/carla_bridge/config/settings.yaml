@@ -1,0 +1,45 @@
+carla:
+  host: '127.0.0.1'
+  port: 2000
+  timeout: 30
+  passive: False
+  synchronous_mode: True
+  synchronous_mode_wait_for_vehicle_control_command: False
+  fixed_delta_seconds: 0.1
+  register_all_sensors: True
+  enable_frame_lock: True
+  town: 'Town01'
+  ego_vehicle:
+    role_name: ["hero", "ego_vehicle"]
+  collision_log_dir: "/apollo/data/collision_log"
+  collision_log_jsonl: "carla_collision_events_{wall_time_iso}.jsonl"
+  collision_log_csv: "carla_collision_events_{wall_time_iso}.csv"
+  # The classifier consumes the local files.  Keep trajectory history off the
+  # Apollo network and publish at most one collision only when explicitly enabled.
+  collision_publish_cyber: False
+  collision_topic: "/apollo/carla/collision"
+  collision_min_impulse: 0.0
+  dedup_same_frame_same_other_actor: True
+  collision_first_event_only: True
+  collision_history_enabled: False
+  collision_history_sec: 10.0
+  collision_history_max_actor_slots: 8
+  collision_history_candidate_refresh_frames: 10
+  collision_history_max_distance_m: 80.0
+  collision_history_priority_role_prefixes: ["scenario"]
+  collision_history_csv: "carla_collision_actor_history_{wall_time_iso}.csv"
+  # Speed-conditioned implicit-deadline experiment. Reaching activation speed
+  # arms the injector; the first later effective brake triggers it. Disabled
+  # means the original direct control path. For baseline evidence use
+  # enabled=true and delay_ms=0.
+  control_delay_injection:
+    enabled: True
+    delay_ms: 0.0
+    activation_speed_mps: 5.0
+    brake_threshold_percentage: 1.0
+    queue_max_messages: 64
+    # /apollo/control is about 100 Hz in the captured Apollo 10 trace. Keep
+    # false for experiments; true flushes roughly 100 CSV rows per second.
+    log_all_delayed_commands: False
+    log_dir: "/apollo/data/log"
+    log_csv: "scb_control_delay_{wall_time_iso}.csv"

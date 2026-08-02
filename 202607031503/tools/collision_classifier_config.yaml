@@ -1,0 +1,25 @@
+analysis:
+  pre_collision_window_sec: 5.0
+  post_collision_window_sec: 2.0
+  planning_target_window_sec: 3.0
+  max_time_match_diff_sec: 0.10
+
+target_resolution:
+  min_score: 0.60
+  min_score_margin: 0.08
+  require_planning_or_cli_target: true
+
+classification:
+  min_prediction_response_time_sec: 0.20
+  min_planning_response_time_sec: 0.30
+  min_effective_constraint_time_sec: 0.50
+  max_perception_gap_sec: 0.50
+  min_type_stable_ratio: 0.70
+
+same_target:
+  base_position_error_m: 1.0
+  velocity_uncertainty_mps: 1.0
+  max_accel_mps2: 4.0
+  max_velocity_error_mps: 3.0
+  max_heading_error_rad: 0.8
+  min_same_target_score: 0.70

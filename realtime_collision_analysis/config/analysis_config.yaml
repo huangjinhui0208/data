@@ -1,0 +1,76 @@
+analysis:
+  title: "Apollo + CARLA端到端实时性碰撞实验"
+  timezone: "Asia/Shanghai"
+  random_seed: 20260720
+  fixed_delta_seconds: 0.1
+  pointcloud_count: 1300000
+  map_name: "Town04"
+  sensor_nominal_range_m: 50.0
+
+groups:
+  baseline:
+    root: "D:/data/baseline"
+    nominal_injected_delay_ms: 0.0
+    expected_runs: 6
+  delay_100ms:
+    root: "D:/data/100ms"
+    nominal_injected_delay_ms: 100.0
+    expected_runs: 6
+  delay_300ms:
+    root: "D:/data/300ms"
+    nominal_injected_delay_ms: 300.0
+    expected_runs: 6
+  delay_400ms:
+    root: "D:/data/400ms"
+    nominal_injected_delay_ms: 400.0
+    expected_runs: 5
+
+inputs:
+  bridge_root: "D:/data/carla_apollo10.0_bridge"
+  existing_analysis_root: "D:/data/analysis_case"
+  handoff_file: "D:/data/CODEX_HANDOFF_20260715.md"
+
+stable_perception:
+  primary_frames: 3
+  sensitivity_frames: [2, 3, 5]
+  absolute_max_gap_s: 0.25
+  p95_gap_multiplier: 1.5
+  max_position_jump_m: 3.0
+
+effective_brake:
+  primary_decel_threshold_mps2: 0.5
+  sensitivity_thresholds_mps2: [0.3, 0.5, 1.0]
+  consecutive_intervals: 2
+  confirmation_window_s: 0.3
+  confirmation_speed_drop_mps: 0.3
+  smoothing_method: "none_primary_median3_sensitivity"
+  precontrol_episode_invalid_duration_s: 0.5
+  precontrol_episode_invalid_speed_drop_mps: 0.5
+
+stop:
+  speed_threshold_mps: 0.1
+  hold_duration_s: 0.5
+
+geometry:
+  distance_reference: "ego_front_to_obstacle_near_surface_longitudinal_clearance"
+  combined_center_to_surface_offset_m: 5.3074
+  offset_source: "CODEX_HANDOFF_20260715.md chapter 15 collision-scenario calibration"
+  observed_contact_offset_uncertainty_m: 0.52
+  individual_extent_split: "equal_split_for_endpoint_coordinates_only"
+
+safety:
+  primary_margin_m: 6.0
+  margin_source: "analysis fallback required by the current experiment plan; runtime planning stop distance was not archived"
+  sensitivity_margins_m: [0.0, 5.0, 6.0, 8.0, 10.0]
+
+quality:
+  accepted_t1_speed_center_mps: 15.6
+  accepted_t1_speed_tolerance_mps: 0.3
+  max_clock_alignment_p95_residual_ms: 25.0
+  target_fusion_degraded_threshold_ms: 500.0
+  target_lateral_limit_m: 4.0
+
+statistics:
+  bootstrap_iterations: 5000
+  latency_bins_ms: [0, 450, 600, 750, 900, 1100, 1500, 3000]
+  alpha: 0.05

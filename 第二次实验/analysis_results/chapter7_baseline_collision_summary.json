@@ -1,0 +1,113 @@
+{
+  "scope": {
+    "baseline_run_count": 7,
+    "collision_run_ids": [
+      "202607271131",
+      "202607271643"
+    ],
+    "excluded_run_ids": [
+      "202607271206"
+    ],
+    "distance_definition": "D_delay is the trapezoidal integral of Localization speed over wall-clock time from t1 to t2."
+  },
+  "baseline_summary": {
+    "actual_e2e_latency_ms": {
+      "mean": 328.5461493900844,
+      "median": 300.3580570220947,
+      "min": 299.6549606323242,
+      "max": 399.7499942779541
+    },
+    "v1_mps": {
+      "mean": 17.087039196737503,
+      "median": 17.215204788564396,
+      "min": 15.623173104457399,
+      "max": 17.774502340040492
+    },
+    "v2_mps": {
+      "mean": 17.25051079280964,
+      "median": 17.53282904191547,
+      "min": 15.448675799688356,
+      "max": 17.889392506895543
+    },
+    "D1_clear_m": {
+      "mean": 39.25459689202747,
+      "median": 38.81749065847193,
+      "min": 38.74398321009477,
+      "max": 40.15487249928844
+    },
+    "D_delay_wall_integral_m": {
+      "mean": 5.678862069490243,
+      "median": 5.284453642764105,
+      "min": 4.673487170470926,
+      "max": 7.005683189973678
+    },
+    "response_mean_speed_mps": {
+      "mean": 17.269727826317773,
+      "median": 17.493839163263893,
+      "min": 15.5962282773796,
+      "max": 17.891813691851404
+    },
+    "D2_clear_wall_budget_m": {
+      "mean": 33.575734822537235,
+      "median": 33.4895676691598,
+      "min": 31.848016058466666,
+      "max": 35.21770251560124
+    }
+  },
+  "collision_rows": {
+    "202607271131": {
+      "run_id": "202607271131",
+      "display_name": "碰撞_1131",
+      "group_name": "delay_300ms",
+      "collision": true,
+      "actual_e2e_latency_ms": 799.6358871459961,
+      "v1_mps": 16.080189309222355,
+      "v2_mps": 17.50269243214682,
+      "D1_clear_m": 38.258205668761775,
+      "D_delay_wall_integral_m": 13.432027958524642,
+      "response_mean_speed_mps": 16.797680262281983,
+      "D2_clear_wall_budget_m": 24.826177710237133,
+      "impact_speed_mps": 7.988017222183252,
+      "t1_s": 1785123121.945625,
+      "t2_s": 1785123122.745261,
+      "endpoint_s": 1785123124.852247
+    },
+    "202607271643": {
+      "run_id": "202607271643",
+      "display_name": "碰撞_1643",
+      "group_name": "delay_300ms",
+      "collision": true,
+      "actual_e2e_latency_ms": 893.8701152801514,
+      "v1_mps": 16.06976442378477,
+      "v2_mps": 17.964115264485592,
+      "D1_clear_m": 36.6510692137721,
+      "D_delay_wall_integral_m": 15.450549919780315,
+      "response_mean_speed_mps": 17.28500556810527,
+      "D2_clear_wall_budget_m": 21.200519293991782,
+      "impact_speed_mps": 11.727517297502267,
+      "t1_s": 1785141848.854508,
+      "t2_s": 1785141849.748378,
+      "endpoint_s": 1785141851.3477566
+    }
+  },
+  "collision_minus_baseline_median": {
+    "202607271131": {
+      "actual_e2e_latency_ms": 499.27783012390137,
+      "v1_mps": -1.1350154793420408,
+      "v2_mps": -0.030136609768650402,
+      "D1_clear_m": -0.5592849897101573,
+      "D_delay_wall_integral_m": 8.147574315760536,
+      "response_mean_speed_mps": -0.69615890098191,
+      "D2_clear_wall_budget_m": -8.663389958922664
+    },
+    "202607271643": {
+      "actual_e2e_latency_ms": 593.5120582580566,
+      "v1_mps": -1.1454403647796276,
+      "v2_mps": 0.4312862225701224,
+      "D1_clear_m": -2.1664214446998358,
+      "D_delay_wall_integral_m": 10.166096277016209,
+      "response_mean_speed_mps": -0.2088335951586231,
+      "D2_clear_wall_budget_m": -12.289048375168015
+    }
+  }
+}

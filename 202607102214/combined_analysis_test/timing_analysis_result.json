@@ -1,0 +1,16 @@
+{
+  "case_id": "202607102214",
+  "status": "SKIPPED_FUNCTION_NOT_NORMAL",
+  "implicit_deadline_miss": null,
+  "reason": "Timing analysis is only invoked after all three functional checks pass.",
+  "functional_context": {
+    "verdict": "PERCEPTION_ABNORMAL",
+    "reason_code": "TARGET_MISSING_WHEN_RELEVANT",
+    "target_id": "1016"
+  },
+  "output_files": {
+    "all_frames": null,
+    "anomaly_frames": null,
+    "summary": "timing_analysis_result.json"
+  }
+}
