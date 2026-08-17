@@ -1,0 +1,13 @@
+﻿run_id,target_id_fusion_planning,collision_event_observed,actor_history_available,target_association_method,association_confidence,carla_other_actor_id,carla_other_actor_type,matched_frame_count,position_error_median_m,position_error_p90_m,speed_error_median_mps,audit_conclusion
+202607271031,14,False,False,Planning STOP ID + stable Fusion trajectory,MEDIUM_HIGH,,,0,,,,NO_CARLA_ACTOR_TRUTH; stable static Fusion target only
+202607271048,12,False,False,Planning STOP ID + stable Fusion trajectory,MEDIUM_HIGH,,,0,,,,NO_CARLA_ACTOR_TRUTH; stable static Fusion target only
+202607271054,10,False,False,Planning STOP ID + stable Fusion trajectory,MEDIUM_HIGH,,,0,,,,NO_CARLA_ACTOR_TRUTH; stable static Fusion target only
+202607271059,9,False,False,Planning STOP ID + stable Fusion trajectory,MEDIUM_HIGH,,,0,,,,NO_CARLA_ACTOR_TRUTH; stable static Fusion target only
+202607271104,11,False,False,Planning STOP ID + stable Fusion trajectory,MEDIUM_HIGH,,,0,,,,NO_CARLA_ACTOR_TRUTH; stable static Fusion target only
+202607271108,11,False,False,Planning STOP ID + stable Fusion trajectory,MEDIUM_HIGH,,,0,,,,NO_CARLA_ACTOR_TRUTH; stable static Fusion target only
+202607271113,12,False,False,Planning STOP ID + stable Fusion trajectory,MEDIUM_HIGH,,,0,,,,NO_CARLA_ACTOR_TRUTH; stable static Fusion target only
+202607271131,11,True,True,Planning STOP ID + stable Fusion trajectory,HIGH,155,vehicle.lincoln.mkz_2020,20,1.6892663472651033,1.846589279201317,0.0,Fusion/Planning target matches CARLA collision counterpart across frames
+202607271202,15,False,False,Planning STOP ID + stable Fusion trajectory,MEDIUM_HIGH,,,0,,,,NO_CARLA_ACTOR_TRUTH; stable static Fusion target only
+202607271206,10,False,False,Planning STOP ID + stable Fusion trajectory,MEDIUM_HIGH,,,0,,,,NO_CARLA_ACTOR_TRUTH; stable static Fusion target only
+202607271211,12,False,False,Planning STOP ID + stable Fusion trajectory,MEDIUM_HIGH,,,0,,,,NO_CARLA_ACTOR_TRUTH; stable static Fusion target only
+202607271643,6,True,True,Planning STOP ID + stable Fusion trajectory,HIGH,155,vehicle.lincoln.mkz_2020,20,1.602179775335021,1.9207555695258889,0.0,Fusion/Planning target matches CARLA collision counterpart across frames

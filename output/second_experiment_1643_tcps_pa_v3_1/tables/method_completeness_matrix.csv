@@ -1,0 +1,20 @@
+﻿requirement,status,evidence_or_gap
+single-run observed scope; baseline model separated,PASS,1643 alone supplies data/observed; seven baseline runs supply only UNVALIDATED_MODEL parameters
+raw input inventory and hashes,PASS,35 files; sha256 saved
+wall-clock t1/t2 endpoint definitions,PASS,event_timeline.csv E01/E07
+P_CLOCK alignment audit,PASS,p95 residual 0.720 ms
+P_PHASE active scan,MISSING,no matched phase intervention
+target identity continuity,PASS,20 matched frames
+functional correctness qualification,PARTIAL,STOP exists; fallback and payload gaps remain
+same-instance source-to-Control trace,PASS,trace 17293989273963333032
+Control-to-physical strict lineage,PARTIAL,Grade C temporal/semantic association
+R/A/G explicit outputs,PASS,realtime_rag_summary.csv and stage table
+prospective dynamic deadline,MODEL_SUPPORTED_ONLY,"disjoint baseline calibration produces a numerical model deadline; independent validation, ODD bounds and pre-t1 lock are missing"
+timing guarantee bound,MISSING,no WCRT/suffix bound
+canonical D_response wall integral,PASS,15.450550 m
+requirement-constrained D_debt,NOT_TESTABLE,no qualified tau_req
+full-stop observed space budget,NOT_TESTABLE,collision right-censoring
+direct physical outcome,PASS,collision at 11.728 m/s
+causal attribution,UNCERTAIN,"open functional, phase, braking, geometry and deadline defeaters"
+record-derived message audit,MISSING,record was not enabled for run 1643
+observed/model separation,PASS,1643 data/observed is isolated from the separate seven-baseline UNVALIDATED_MODEL deadline and outcome diagnostics

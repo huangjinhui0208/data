@@ -1,0 +1,2 @@
+﻿run_id_or_group,producer_period_ms,consumer_period_ms,bridge_tick_period_ms,phase_definition,phase_bins_or_offsets,scan_performed,matched_repeats_per_phase,phase_effect_metric,phase_effect_estimate,uncertainty_interval,phase_effect_verdict,source_evidence_ids,p_phase_verdict,notes
+202607271211,approximately 100,approximately 10 for Control,100.0,"relative offsets among CARLA tick, Perception, Planning, Control and injector release",NOT_SCANNED,FALSE,0,T_R_sample_ms,,,NOT_TESTABLE,EV.PHASE.1211,NOT_TESTABLE,One run cannot isolate periodic phase effects.

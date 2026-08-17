@@ -1,4 +1,0 @@
-scene,target_id,attributable,t1_speed_mps,d1_clear_m,t1_to_fusion_ms,t1_to_control_ms,control_to_sustained_decel_ms,t1_to_sustained_decel_ms,response_travel_m,preimpact_equiv_decel_mps2,collision,impact_speed_mps,scb_requested_ms,scb_wall_actual_ms,scb_sim_actual_ms,scb_frame_delay,scb_trigger_relative_t1_s,exclusion_reason
-202607191727,55,yes,15.665,39.439,283.272,309.824,499.444,809.268,11.696,4.591,yes,4.026,400.000,420.415,300.000,3,-173.660,
-202607191734,39,no,15.164,40.209,263.722,289.160,,,,,no,,400.000,401.336,400.000,4,-128.694,"t1 前约 114.6 ms 已进入持续减速，无法将后续减速归因于目标障碍物"
-202607191739,3,yes,17.336,38.856,814.085,836.209,496.592,1332.801,21.255,4.064,yes,12.837,400.000,413.314,400.000,4,0.839,

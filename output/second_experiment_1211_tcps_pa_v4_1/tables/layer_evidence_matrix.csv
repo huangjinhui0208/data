@@ -1,0 +1,7 @@
+﻿layer,metric,run_id_or_group,value,unit,evidence_type,time_basis,source_file,availability
+L1,Bridge fixed delay,202607271211,300.147747,ms,DIRECT_OBSERVED,wall_epoch_s,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/log/scb_control_delay_20260727120915_480783.csv,AVAILABLE
+L2,local wait/freshness/gap diagnostics,202607271211,wait=38.871;A=300.471;G=188.254,mixed,OBSERVED_DERIVED,wall_epoch_s,/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1211_tcps_pa_v4_1/tables/local_timing_anomaly_screen.csv,PARTIAL
+L3,source-to-Control lineage,202607271211,292.600184,ms,TRACE_LINEAGE,trace anchored to wall,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/control.719153.csv,PARTIAL
+L4,primary deadline / sample model,202607271211,primary missing; sample model only,status,UNVALIDATED_MODEL,wall_epoch_s,/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1211_tcps_pa_v4_1/tables/dynamic_contract_construction.csv,MODEL_SUPPORTED_ONLY
+L5,D_response wall integral,202607271211,11.999340611264754,m,OBSERVED_DERIVED,wall_epoch_s,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/log/localization.log.INFO.20260727-120934.719143,AVAILABLE
+L6,minimum-speed projected clearance,202607271211,1.0174726252517186,m,OBSERVED_DERIVED,wall_epoch_s,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/log/localization.log.INFO.20260727-120934.719143,PARTIAL

@@ -1,0 +1,23 @@
+﻿requirement,status,evidence_or_gap
+single-run observed scope,PASS,observed branch parses only 202607271131; seven baselines enter model diagnostics only
+raw input inventory and hashes,PASS,35 files; sha256 saved
+four event-time semantics,PARTIAL,t_sample observed; t_world left-censored; t_demand/t_observable unavailable
+P_OBSERVABILITY,NOT_TESTABLE,missing FOV/occlusion/range/resolution observer model
+P_CLOCK alignment audit,PASS,p95 residual 0.661 ms
+P_PHASE active scan,MISSING,no matched phase intervention
+target identity continuity,PASS,20 matched frames
+functional correctness qualification,PARTIAL,STOP exists; fallback and payload gaps remain
+same-instance source-to-Control trace,PASS,trace 17293896665878496482
+Control-to-physical strict lineage,PARTIAL,Grade C temporal/semantic association
+component-wise R/A/G/C/L contract set,PASS,component_contract_registry/evaluation.csv
+Physical Coherence induced state error,NOT_TESTABLE,raw skew retained; induced state-error model missing
+primary demand-origin dynamic deadline,MISSING,no independent t_demand; calibration lock time/domain invalid
+sample-origin dynamic residual model,MODEL_SUPPORTED_ONLY,four baseline sensitivity rows all missed
+timing guarantee bound,MISSING,no WCRT/suffix bound
+canonical D_response wall integral,PASS,13.432028 m
+requirement-constrained D_debt,NOT_TESTABLE,no qualified tau_req
+full-stop observed space budget,NOT_TESTABLE,collision right-censoring
+direct physical outcome,PASS,collision at 7.988 m/s
+causal attribution,UNCERTAIN,"open functional, phase, braking, geometry and deadline defeaters"
+record-derived message audit,MISSING,record was not enabled for run 1131
+observed/model separation,PASS,observed and four model/predicted rows are separate

@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-08-11T00:47:44.628047+08:00",
+  "experiment_root": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验",
+  "analysis_root": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_six_layer_analysis",
+  "raw_experiment_modified": false,
+  "expected_runs": [
+    "202607271031",
+    "202607271048",
+    "202607271054",
+    "202607271059",
+    "202607271104",
+    "202607271108",
+    "202607271113",
+    "202607271131",
+    "202607271202",
+    "202607271206",
+    "202607271211",
+    "202607271643"
+  ],
+  "found_runs": [
+    "202607271031",
+    "202607271048",
+    "202607271054",
+    "202607271059",
+    "202607271104",
+    "202607271108",
+    "202607271113",
+    "202607271131",
+    "202607271202",
+    "202607271206",
+    "202607271211",
+    "202607271643"
+  ],
+  "group_counts": {
+    "baseline": 7,
+    "delay_300ms": 5
+  },
+  "main_analysis_run_count": 11,
+  "excluded_runs": [
+    "202607271206"
+  ],
+  "raw_tree_file_count_including_existing_experiment_artifacts": 454,
+  "same_run_record_dirs": [],
+  "record_profile_available_count": 0,
+  "architecture": {
+    "carla": "0.9.15 server",
+    "apollo": "10.0.0 Orin",
+    "bridge": "server; reads Control directly",
+    "guardian_in_executed_chain": false
+  },
+  "fresh_recompute_sources": {
+    "observed_upstream_table": "/Users/huangjinhui/Desktop/萨卡班/data/report_workspace/tables/run_level_metrics.csv",
+    "raw_parser": "/Users/huangjinhui/Desktop/萨卡班/data/report_workspace/scripts/analyze_second_experiment.py",
+    "raw_experiment_root": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验"
+  }
+}

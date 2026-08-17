@@ -1,0 +1,611 @@
+{
+  "profile_schema_version": "1.0",
+  "run_id_inferred": "202607091959",
+  "record_dir": "/Users/huangjinhui/Desktop/萨卡班/data/202607091959/record",
+  "evidence_class": "record_derived_timing_diagnostic",
+  "scope_warning": "This timing profile does not itself run target-association or physical-endpoint detection, and therefore does not establish a dynamic deadline, endpoint-compatible wall-integrated response distance, braking margin, or collision. The underlying record may support some physical metrics when combined with audited t1/t2, target geometry, complete vehicle-state coverage, and direct outcome evidence.",
+  "coverage": {
+    "record_file_count": 1,
+    "record_total_size_bytes": 87146242,
+    "channel_count": 27,
+    "message_count": 15089,
+    "parse_errors": {},
+    "last_seconds_requested": null,
+    "effective_start_time_sec": null,
+    "effective_end_time_sec": null,
+    "row_counts": {
+      "00_meta/record_channels.csv": 27,
+      "00_meta/record_message_index.csv": 15089,
+      "00_meta/record_topic_rate.csv": 27,
+      "01_localization_chassis/chassis.csv": 321,
+      "01_localization_chassis/chassis_signal.csv": 321,
+      "01_localization_chassis/gnss_best_pose.csv": 321,
+      "01_localization_chassis/gnss_odometry.csv": 321,
+      "01_localization_chassis/ins_status.csv": 321,
+      "01_localization_chassis/localization_pose.csv": 318,
+      "01_localization_chassis/localization_status.csv": 318,
+      "01_localization_chassis/localization_velocity_acc.csv": 318,
+      "01_localization_chassis/tf.csv": 318,
+      "01_localization_chassis/tf_static.csv": 6,
+      "02_planning/planning_debug_raw.jsonl": 310,
+      "02_planning/planning_debug_stage_points.csv": 446058,
+      "02_planning/planning_decision.csv": 310,
+      "02_planning/planning_header.csv": 310,
+      "02_planning/planning_latency_stats.csv": 3717,
+      "02_planning/planning_obstacle_decision.csv": 193,
+      "02_planning/planning_path_boundary.csv": 6878,
+      "02_planning/planning_routing_header.csv": 310,
+      "02_planning/planning_status.csv": 310,
+      "02_planning/planning_trajectory_first_points.csv": 24601,
+      "02_planning/planning_trajectory_points.csv": 39146,
+      "02_planning/planning_trajectory_summary.csv": 310,
+      "03_control/control_chassis_feedback.csv": 3192,
+      "03_control/control_command.csv": 3192,
+      "03_control/control_current_target_point.csv": 12768,
+      "03_control/control_debug_raw.jsonl": 3192,
+      "03_control/control_header.csv": 3192,
+      "03_control/control_lat_debug.csv": 3192,
+      "03_control/control_latency.csv": 3192,
+      "03_control/control_lon_debug.csv": 3192,
+      "03_control/control_planning_reuse.csv": 3192,
+      "03_control/control_steering_breakdown.csv": 3192,
+      "03_control/control_target_point_compare.csv": 12768,
+      "03_control/control_vehicle_state.csv": 3192,
+      "04_prediction_perception/perception_obstacle_points.csv": 383,
+      "04_prediction_perception/perception_obstacles.csv": 95,
+      "04_prediction_perception/perception_raw.jsonl": 309,
+      "04_prediction_perception/prediction_obstacles.csv": 95,
+      "04_prediction_perception/prediction_raw.jsonl": 309,
+      "04_prediction_perception/prediction_trajectories.csv": 120,
+      "04_prediction_perception/traffic_light.csv": 11556,
+      "05_routing_map/planning_trajectory_lane_projection.csv": 39146,
+      "05_routing_map/vehicle_lane_relation.csv": 318,
+      "06_sensor_raw/lidar_pointcloud_summary.csv": 320,
+      "06_sensor_raw/lidar_timestamps.csv": 320,
+      "06_sensor_raw/radar_objects.csv": 31661,
+      "06_sensor_raw/radar_timestamps.csv": 320,
+      "06_sensor_raw/sensor_timeline.csv": 2245,
+      "07_diagnostics/abnormal_frames_summary.csv": 387,
+      "07_diagnostics/control_reuse_summary.csv": 310,
+      "07_diagnostics/module_timeline.csv": 15089,
+      "07_diagnostics/planning_control_alignment.csv": 3192,
+      "07_diagnostics/sensor_to_control_reaction_age.csv": 2245,
+      "07_diagnostics/system_events.csv": 3142
+    },
+    "manifest_sections": [
+      "00_meta",
+      "01_localization_chassis",
+      "02_planning",
+      "03_control",
+      "04_prediction_perception",
+      "05_routing_map",
+      "06_sensor_raw",
+      "07_diagnostics"
+    ],
+    "found_file_count": 60,
+    "missing_expected_tables": [],
+    "quality_flags": [],
+    "notes": [
+      "record 只能解析已写入的 channel message",
+      "planning_reference_line/path_boundary/optimizer_costs 依赖 ADCTrajectory.debug 是否序列化对应字段",
+      "vehicle_lane_relation/planning_trajectory_lane_projection 依赖 --map",
+      "--last-seconds 使用 record 时间戳窗口，所有输出表仅覆盖该窗口"
+    ]
+  },
+  "layer_2_temporal_degradation": {
+    "key_topic_rates": {
+      "/apollo/canbus/chassis": {
+        "message_count": 321,
+        "duration_sec": 31.999776601791382,
+        "rate_hz": 10.000069812427567,
+        "period_median_ms": 100.00491142272949,
+        "period_published_max_ms": 102.64468193054199,
+        "gap_gt_1_5x_median_count": 0
+      },
+      "/apollo/control": {
+        "message_count": 3192,
+        "duration_sec": 31.911559581756592,
+        "rate_hz": 99.99511279994763,
+        "period_median_ms": 10.014057159423828,
+        "period_published_max_ms": 30.522823333740234,
+        "gap_gt_1_5x_median_count": 21
+      },
+      "/apollo/guardian": {
+        "message_count": 3142,
+        "duration_sec": 31.41002106666565,
+        "rate_hz": 99.99993293011296,
+        "period_median_ms": 9.998559951782227,
+        "period_published_max_ms": 21.540403366088867,
+        "gap_gt_1_5x_median_count": 17
+      },
+      "/apollo/localization/pose": {
+        "message_count": 318,
+        "duration_sec": 31.693973064422607,
+        "rate_hz": 10.001901603047727,
+        "period_median_ms": 99.97701644897461,
+        "period_published_max_ms": 107.67960548400879,
+        "gap_gt_1_5x_median_count": 0
+      },
+      "/apollo/perception/obstacles": {
+        "message_count": 309,
+        "duration_sec": 31.861698389053345,
+        "rate_hz": 9.666779097558054,
+        "period_median_ms": 81.7556381225586,
+        "period_published_max_ms": 406.327486038208,
+        "gap_gt_1_5x_median_count": 28
+      },
+      "/apollo/planning": {
+        "message_count": 310,
+        "duration_sec": 31.945414781570435,
+        "rate_hz": 9.672749661033187,
+        "period_median_ms": 88.3793830871582,
+        "period_published_max_ms": 412.83464431762695,
+        "gap_gt_1_5x_median_count": 26
+      },
+      "/apollo/prediction": {
+        "message_count": 309,
+        "duration_sec": 31.8622145652771,
+        "rate_hz": 9.66662249320401,
+        "period_median_ms": 83.0078125,
+        "period_published_max_ms": 406.80432319641113,
+        "gap_gt_1_5x_median_count": 27
+      }
+    },
+    "key_channel_update_gaps": {
+      "/apollo/canbus/chassis": {
+        "timestamp_count": 321,
+        "gap_count": 320,
+        "non_positive_gap_count": 0,
+        "gap_ms": {
+          "count": 320,
+          "min": 97.33414649963379,
+          "mean": 99.99930188059807,
+          "median": 100.00491142272949,
+          "p90": 100.69475173950195,
+          "p95": 100.95800161361694,
+          "p99": 101.6071367263794,
+          "max": 102.64468193054199
+        },
+        "estimated_period_ms": 100.00491142272949,
+        "gap_gt_1_5x_median_count": 0,
+        "gap_gt_2x_median_count": 0,
+        "gap_gt_3x_median_count": 0
+      },
+      "/apollo/control": {
+        "timestamp_count": 3192,
+        "gap_count": 3191,
+        "non_positive_gap_count": 0,
+        "gap_ms": {
+          "count": 3191,
+          "min": 0.042438507080078125,
+          "mean": 10.000488743891129,
+          "median": 10.014057159423828,
+          "p90": 10.918378829956055,
+          "p95": 12.00568675994873,
+          "p99": 13.943696022033672,
+          "max": 30.522823333740234
+        },
+        "estimated_period_ms": 10.014057159423828,
+        "gap_gt_1_5x_median_count": 21,
+        "gap_gt_2x_median_count": 3,
+        "gap_gt_3x_median_count": 1
+      },
+      "/apollo/guardian": {
+        "timestamp_count": 3142,
+        "gap_count": 3141,
+        "non_positive_gap_count": 0,
+        "gap_ms": {
+          "count": 3141,
+          "min": 0.015020370483398438,
+          "mean": 10.000006706993203,
+          "median": 9.998559951782227,
+          "p90": 10.187149047851562,
+          "p95": 11.034727096557617,
+          "p99": 13.711595535278317,
+          "max": 21.540403366088867
+        },
+        "estimated_period_ms": 9.998559951782227,
+        "gap_gt_1_5x_median_count": 17,
+        "gap_gt_2x_median_count": 2,
+        "gap_gt_3x_median_count": 0
+      },
+      "/apollo/localization/pose": {
+        "timestamp_count": 318,
+        "gap_count": 317,
+        "non_positive_gap_count": 0,
+        "gap_ms": {
+          "count": 317,
+          "min": 92.76151657104492,
+          "mean": 99.98098758492937,
+          "median": 99.97701644897461,
+          "p90": 100.61249732971191,
+          "p95": 101.06468200683594,
+          "p99": 103.1258201599121,
+          "max": 107.67960548400879
+        },
+        "estimated_period_ms": 99.97701644897461,
+        "gap_gt_1_5x_median_count": 0,
+        "gap_gt_2x_median_count": 0,
+        "gap_gt_3x_median_count": 0
+      },
+      "/apollo/perception/obstacles": {
+        "timestamp_count": 309,
+        "gap_count": 308,
+        "non_positive_gap_count": 0,
+        "gap_ms": {
+          "count": 308,
+          "min": 62.87693977355957,
+          "mean": 103.44707269173163,
+          "median": 81.7556381225586,
+          "p90": 119.27385330200195,
+          "p95": 198.592710494995,
+          "p99": 381.95952892303467,
+          "max": 406.327486038208
+        },
+        "estimated_period_ms": 81.7556381225586,
+        "gap_gt_1_5x_median_count": 28,
+        "gap_gt_2x_median_count": 24,
+        "gap_gt_3x_median_count": 14
+      },
+      "/apollo/planning": {
+        "timestamp_count": 310,
+        "gap_count": 309,
+        "non_positive_gap_count": 0,
+        "gap_ms": {
+          "count": 309,
+          "min": 53.910255432128906,
+          "mean": 103.38321935783313,
+          "median": 88.3793830871582,
+          "p90": 118.19305419921871,
+          "p95": 199.20721054077114,
+          "p99": 388.3683776855469,
+          "max": 412.83464431762695
+        },
+        "estimated_period_ms": 88.3793830871582,
+        "gap_gt_1_5x_median_count": 26,
+        "gap_gt_2x_median_count": 19,
+        "gap_gt_3x_median_count": 14
+      },
+      "/apollo/prediction": {
+        "timestamp_count": 309,
+        "gap_count": 308,
+        "non_positive_gap_count": 0,
+        "gap_ms": {
+          "count": 308,
+          "min": 62.772274017333984,
+          "mean": 103.44874858856201,
+          "median": 83.0078125,
+          "p90": 119.16725635528564,
+          "p95": 195.43966054916376,
+          "p99": 383.08032274246216,
+          "max": 406.80432319641113
+        },
+        "estimated_period_ms": 83.0078125,
+        "gap_gt_1_5x_median_count": 27,
+        "gap_gt_2x_median_count": 24,
+        "gap_gt_3x_median_count": 14
+      }
+    },
+    "planning_total_time_ms": {
+      "count": 310,
+      "min": 8.734703063964844,
+      "mean": 22.86900781816052,
+      "median": 20.996451377868652,
+      "p90": 32.9662561416626,
+      "p95": 36.891686916351325,
+      "p99": 41.86602592468263,
+      "max": 45.78089714050293,
+      "deduplicated_by": "planning_seq",
+      "value_column": "total_time_ms"
+    },
+    "control_total_time_ms": {
+      "count": 3192,
+      "min": 0.56084,
+      "mean": 0.9867285485588972,
+      "median": 0.92414,
+      "p90": 1.3484116,
+      "p95": 1.4797783999999998,
+      "p99": 1.67048568,
+      "max": 3.380045,
+      "deduplicated_by": "control_seq",
+      "value_column": "total_time_ms"
+    },
+    "planning_age_ms": {
+      "count": 3192,
+      "min": 1.2094974517822266,
+      "mean": 74.28182291805297,
+      "median": 53.66170406341553,
+      "p90": 169.55456733703616,
+      "p95": 270.646834373474,
+      "p99": 363.29153299331665,
+      "max": 414.28399085998535
+    },
+    "planning_reuse_count": {
+      "count": 310,
+      "min": 2.0,
+      "mean": 10.296774193548387,
+      "median": 9.0,
+      "p90": 12.0,
+      "p95": 20.0,
+      "p99": 39.0,
+      "max": 42.0
+    },
+    "planning_max_age_by_reuse_run_ms": {
+      "count": 310,
+      "min": 18.876314163208008,
+      "mean": 100.02702589957944,
+      "median": 84.84292030334473,
+      "p90": 116.51232242584231,
+      "p95": 197.56256341934215,
+      "p99": 386.76245927810675,
+      "max": 414.28399085998535
+    },
+    "abnormal_frames": {
+      "row_count": 387,
+      "reason_counts": {
+        "brake_gt_10": 387
+      },
+      "module_counts": {
+        "control": 387
+      }
+    }
+  },
+  "layer_3_cause_effect_timing": {
+    "sensor_to_control_message_diagnostics": {
+      "semantics_note": "Message-level sensor-to-Control diagnostics from parsed record; do not substitute for physical Reaction Time t2-t1.",
+      "by_sensor_channel": {
+        "/apollo/sensor/gnss/best_pose": {
+          "reaction_time_ms": {
+            "count": 320,
+            "min": 3.204822540283203,
+            "mean": 5.692022293806076,
+            "median": 5.6372880935668945,
+            "p90": 7.055425643920898,
+            "p95": 7.316446304321289,
+            "p99": 9.632785320281984,
+            "max": 15.067815780639648
+          },
+          "data_age_ms": {
+            "count": 320,
+            "min": 25.42901039123535,
+            "mean": 95.28697803616524,
+            "median": 95.53098678588867,
+            "p90": 96.78065776824951,
+            "p95": 97.08272218704224,
+            "p99": 98.37364196777344,
+            "max": 105.64279556274414
+          }
+        },
+        "/apollo/sensor/gnss/corrected_imu": {
+          "reaction_time_ms": {
+            "count": 320,
+            "min": 3.2525062561035156,
+            "mean": 5.750897526741028,
+            "median": 5.707025527954102,
+            "p90": 7.083559036254884,
+            "p95": 7.300865650177003,
+            "p99": 9.68796491622925,
+            "max": 15.03300666809082
+          },
+          "data_age_ms": {
+            "count": 320,
+            "min": 25.482177734375,
+            "mean": 95.34585326910019,
+            "median": 95.59261798858643,
+            "p90": 96.83880805969238,
+            "p95": 97.1427321434021,
+            "p99": 98.3924651145935,
+            "max": 105.65662384033203
+          }
+        },
+        "/apollo/sensor/gnss/heading": {
+          "reaction_time_ms": {
+            "count": 320,
+            "min": 3.126859664916992,
+            "mean": 5.599664151668549,
+            "median": 5.588054656982422,
+            "p90": 6.974458694458008,
+            "p95": 7.184481620788574,
+            "p99": 9.552695751190187,
+            "max": 15.048503875732422
+          },
+          "data_age_ms": {
+            "count": 320,
+            "min": 25.359630584716797,
+            "mean": 95.19461989402771,
+            "median": 95.45457363128662,
+            "p90": 96.70295715332031,
+            "p95": 96.99525833129883,
+            "p99": 98.32168340682983,
+            "max": 105.57389259338379
+          }
+        },
+        "/apollo/sensor/gnss/ins_stat": {
+          "reaction_time_ms": {
+            "count": 320,
+            "min": 1.7848014831542969,
+            "mean": 5.5261410772800446,
+            "median": 5.47635555267334,
+            "p90": 6.888961791992188,
+            "p95": 7.191348075866699,
+            "p99": 9.535372257232668,
+            "max": 15.050649642944336
+          },
+          "data_age_ms": {
+            "count": 320,
+            "min": 25.345802307128906,
+            "mean": 95.1210968196392,
+            "median": 95.40820121765137,
+            "p90": 96.62210941314697,
+            "p95": 96.88640832901001,
+            "p99": 98.28665256500244,
+            "max": 105.50284385681152
+          }
+        },
+        "/apollo/sensor/gnss/odometry": {
+          "reaction_time_ms": {
+            "count": 320,
+            "min": 3.1681060791015625,
+            "mean": 5.64766600728035,
+            "median": 5.6008100509643555,
+            "p90": 7.014822959899902,
+            "p95": 7.276225090026856,
+            "p99": 9.575836658477785,
+            "max": 15.055179595947266
+          },
+          "data_age_ms": {
+            "count": 320,
+            "min": 25.41637420654297,
+            "mean": 95.24262174963951,
+            "median": 95.50356864929199,
+            "p90": 96.72787189483643,
+            "p95": 97.03079462051392,
+            "p99": 98.34242343902588,
+            "max": 105.60059547424316
+          }
+        },
+        "/apollo/sensor/radar/front": {
+          "reaction_time_ms": {
+            "count": 320,
+            "min": 0.0133514404296875,
+            "mean": 4.756978899240494,
+            "median": 2.2835731506347656,
+            "p90": 9.760022163391113,
+            "p95": 10.121548175811768,
+            "p99": 11.804201602935791,
+            "max": 89.03050422668457
+          },
+          "data_age_ms": {
+            "count": 320,
+            "min": 56.4882755279541,
+            "mean": 94.07663866877556,
+            "median": 91.67742729187012,
+            "p90": 101.46229267120361,
+            "p95": 109.19542312622072,
+            "p99": 122.42448806762695,
+            "max": 129.96649742126465
+          }
+        },
+        "/apollo/sensor/velodyne64/compensator/PointCloud2": {
+          "reaction_time_ms": {
+            "count": 320,
+            "min": 0.0030994415283203125,
+            "mean": 4.433470219373703,
+            "median": 1.9949674606323242,
+            "p90": 9.671974182128906,
+            "p95": 10.063397884368898,
+            "p99": 11.729209423065186,
+            "max": 89.14375305175781
+          },
+          "data_age_ms": {
+            "count": 320,
+            "min": 56.52642250061035,
+            "mean": 93.75803619623184,
+            "median": 91.5759801864624,
+            "p90": 101.3918399810791,
+            "p95": 109.52062606811523,
+            "p99": 122.4775767326355,
+            "max": 130.01513481140137
+          }
+        }
+      },
+      "all_channels": {
+        "reaction_time_ms": {
+          "count": 2240,
+          "min": 0.0030994415283203125,
+          "mean": 5.343834310770035,
+          "median": 5.433440208435059,
+          "p90": 8.143424987792969,
+          "p95": 9.495735168457028,
+          "p99": 11.197013854980476,
+          "max": 89.14375305175781
+        },
+        "data_age_ms": {
+          "count": 2240,
+          "min": 25.345802307128906,
+          "mean": 94.86083494765418,
+          "median": 95.35777568817139,
+          "p90": 98.73368740081787,
+          "p95": 100.23863315582275,
+          "p99": 111.51300191879275,
+          "max": 130.01513481140137
+        }
+      }
+    },
+    "record_minus_header_clock_offsets_ms": {
+      "01_localization_chassis/localization_pose.csv": {
+        "count": 318,
+        "min": 0.1690387725830078,
+        "mean": 0.4302765588340519,
+        "median": 0.3368854522705078,
+        "p90": 0.5139589309692383,
+        "p95": 0.6046056747436523,
+        "p99": 3.0718040466308545,
+        "max": 7.728815078735352,
+        "negative_count": 0
+      },
+      "02_planning/planning_header.csv": {
+        "count": 310,
+        "min": 0.4813671112060547,
+        "mean": 0.9269322118451518,
+        "median": 0.7727146148681641,
+        "p90": 1.3322830200195312,
+        "p95": 1.7595648765563972,
+        "p99": 3.1015849113464546,
+        "max": 11.162042617797852,
+        "negative_count": 0
+      },
+      "03_control/control_command.csv": {
+        "count": 3192,
+        "min": 0.12946128845214844,
+        "mean": 0.3437957817450502,
+        "median": 0.26345252990722656,
+        "p90": 0.41215419769287115,
+        "p95": 0.5347609519958492,
+        "p99": 2.2637462615966824,
+        "max": 10.725975036621094,
+        "negative_count": 0
+      },
+      "04_prediction_perception/perception_obstacles.csv": {
+        "count": 95,
+        "min": 0.1780986785888672,
+        "mean": 0.4020214080810547,
+        "median": 0.2734661102294922,
+        "p90": 0.41675567626953136,
+        "p95": 0.48985481262207015,
+        "p99": 3.4270286560058594,
+        "max": 3.4270286560058594,
+        "negative_count": 0
+      },
+      "04_prediction_perception/prediction_obstacles.csv": {
+        "count": 95,
+        "min": 0.1595020294189453,
+        "mean": 0.29861801549008016,
+        "median": 0.24771690368652344,
+        "p90": 0.43773651123046875,
+        "p95": 0.5894422531127919,
+        "p99": 1.2419700622558594,
+        "max": 1.2912750244140625,
+        "negative_count": 0
+      }
+    }
+  },
+  "not_established_by_this_profile_alone": {
+    "layer_1_temporal_disturbance": [
+      "verified bridge/SCB requested and actual wall delay unless explicitly recorded"
+    ],
+    "layer_4_temporal_correctness": [
+      "independently derived dynamic physical deadline",
+      "physical timing slack and deadline miss"
+    ],
+    "layer_5_temporal_to_physical": [
+      "endpoint-compatible wall-integrated response distance without audited t1/t2",
+      "distance debt without an independently derived deadline"
+    ],
+    "layer_6_physical_safety": [
+      "direct collision truth without collision-event evidence",
+      "full observed braking distance without an audited physical endpoint",
+      "final clearance and observed safety margin without target geometry"
+    ]
+  }
+}

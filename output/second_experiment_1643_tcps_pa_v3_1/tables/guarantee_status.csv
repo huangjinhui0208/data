@@ -1,0 +1,2 @@
+﻿claim_id,run_id,guarantee_status,qualified_path_bound_available,qualified_suffix_bounds_available,conditional_guarantee_loss_time_wall_s,observed_contract_miss_time_wall_s,reason,allowed_statement
+G1_GUARANTEE.1643,202607271643,NOT_ESTABLISHED,False,False,,,"No formal/WCRT path bound, qualified dynamic deadline, or qualified suffix bounds. A fault onset and an observed reaction endpoint are not guarantee-loss points.",The run does not support a timing-guarantee-loss timestamp.

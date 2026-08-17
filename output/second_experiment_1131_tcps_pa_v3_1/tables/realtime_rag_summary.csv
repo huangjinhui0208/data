@@ -1,0 +1,4 @@
+﻿dimension,metric,source_column,unit,semantics,group_name,n_total_runs,n_available_runs,p50,p90,p95,p99,max,iqr
+R,physical reaction,T_e2e_data_observed_ms,ms,t1 to t2,single_run_1131_descriptive,1,1,799.6358871459961,799.6358871459961,799.6358871459961,799.6358871459961,799.6358871459961,0.0
+A,target data age at t2,data_age_target_at_t2_data_observed_ms,ms,latest source represented before t2,single_run_1131_descriptive,1,1,400.4209041595459,400.4209041595459,400.4209041595459,400.4209041595459,400.4209041595459,0.0
+G,target output gap in response window,update_gap_target_response_window_max_data_observed_ms,ms,maximum of four within-window gaps,single_run_1131_descriptive,1,1,108.21318626403809,108.21318626403809,108.21318626403809,108.21318626403809,108.21318626403809,0.0

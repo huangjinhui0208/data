@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eval Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js" integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --surface: #ffffff;
+      --border: #e8e6dc;
+      --text: #141413;
+      --text-muted: #b0aea5;
+      --accent: #d97757;
+      --accent-hover: #c4613f;
+      --green: #788c5d;
+      --green-bg: #eef2e8;
+      --red: #c44;
+      --red-bg: #fceaea;
+      --header-bg: #141413;
+      --header-text: #faf9f5;
+      --radius: 6px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---- Header ---- */
+    .header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    .header .instructions {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-top: 0.25rem;
+    }
+    .header .progress {
+      font-size: 0.875rem;
+      opacity: 0.8;
+      text-align: right;
+    }
+
+    /* ---- Main content ---- */
+    .main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    /* ---- Sections ---- */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      flex-shrink: 0;
+    }
+    .section-header {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.75rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+    .section-body {
+      padding: 1rem;
+    }
+
+    /* ---- Config badge ---- */
+    .config-badge {
+      display: inline-block;
+      padding: 0.2rem 0.625rem;
+      border-radius: 9999px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-left: 0.75rem;
+      vertical-align: middle;
+    }
+    .config-badge.config-primary {
+      background: rgba(33, 150, 243, 0.12);
+      color: #1976d2;
+    }
+    .config-badge.config-baseline {
+      background: rgba(255, 193, 7, 0.15);
+      color: #f57f17;
+    }
+
+    /* ---- Prompt ---- */
+    .prompt-text {
+      white-space: pre-wrap;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+
+    /* ---- Outputs ---- */
+    .output-file {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .output-file + .output-file {
+      margin-top: 1rem;
+    }
+    .output-file-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .output-file-header .dl-btn {
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-decoration: none;
+      cursor: pointer;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+    .output-file-header .dl-btn:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+    .output-file-content {
+      padding: 0.75rem;
+      overflow-x: auto;
+    }
+    .output-file-content pre {
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    }
+    .output-file-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .output-file-content iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .output-file-content table {
+      border-collapse: collapse;
+      font-size: 0.8125rem;
+      width: 100%;
+    }
+    .output-file-content table td,
+    .output-file-content table th {
+      border: 1px solid var(--border);
+      padding: 0.375rem 0.5rem;
+      text-align: left;
+    }
+    .output-file-content table th {
+      background: var(--bg);
+      font-weight: 600;
+    }
+    .output-file-content .download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+    .output-file-content .download-link:hover {
+      background: var(--border);
+    }
+    .empty-state {
+      color: var(--text-muted);
+      font-style: italic;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    /* ---- Feedback ---- */
+    .prev-feedback {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.625rem 0.75rem;
+      margin-top: 0.75rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .prev-feedback-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.25rem;
+      color: var(--text-muted);
+    }
+    .feedback-textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      resize: vertical;
+      color: var(--text);
+    }
+    .feedback-textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    .feedback-status {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+      min-height: 1.1em;
+    }
+
+    /* ---- Grades (collapsible) ---- */
+    .grades-toggle {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+    .grades-toggle:hover {
+      color: var(--accent);
+    }
+    .grades-toggle .arrow {
+      margin-right: 0.5rem;
+      transition: transform 0.15s;
+      font-size: 0.75rem;
+    }
+    .grades-toggle .arrow.open {
+      transform: rotate(90deg);
+    }
+    .grades-content {
+      display: none;
+      margin-top: 0.75rem;
+    }
+    .grades-content.open {
+      display: block;
+    }
+    .grades-summary {
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .grade-badge {
+      display: inline-block;
+      padding: 0.125rem 0.5rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .grade-pass { background: var(--green-bg); color: var(--green); }
+    .grade-fail { background: var(--red-bg); color: var(--red); }
+    .assertion-list {
+      list-style: none;
+    }
+    .assertion-item {
+      padding: 0.625rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.8125rem;
+    }
+    .assertion-item:last-child { border-bottom: none; }
+    .assertion-status {
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    .assertion-status.pass { color: var(--green); }
+    .assertion-status.fail { color: var(--red); }
+    .assertion-evidence {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      padding-left: 1.5rem;
+    }
+
+    /* ---- View tabs ---- */
+    .view-tabs {
+      display: flex;
+      gap: 0;
+      padding: 0 2rem;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .view-tab {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.625rem 1.25rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: var(--text-muted);
+      border-bottom: 2px solid transparent;
+      transition: all 0.15s;
+    }
+    .view-tab:hover { color: var(--text); }
+    .view-tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .view-panel { display: none; }
+    .view-panel.active { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+
+    /* ---- Benchmark view ---- */
+    .benchmark-view {
+      padding: 1.5rem 2rem;
+      overflow-y: auto;
+      flex: 1;
+    }
+    .benchmark-table {
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.8125rem;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    .benchmark-table th, .benchmark-table td {
+      padding: 0.625rem 0.75rem;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+    .benchmark-table th {
+      font-family: 'Poppins', sans-serif;
+      background: var(--header-bg);
+      color: var(--header-text);
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .benchmark-table tr:hover { background: var(--bg); }
+    .benchmark-table tr.benchmark-row-with { background: rgba(33, 150, 243, 0.06); }
+    .benchmark-table tr.benchmark-row-without { background: rgba(255, 193, 7, 0.06); }
+    .benchmark-table tr.benchmark-row-with:hover { background: rgba(33, 150, 243, 0.12); }
+    .benchmark-table tr.benchmark-row-without:hover { background: rgba(255, 193, 7, 0.12); }
+    .benchmark-table tr.benchmark-row-avg { font-weight: 600; border-top: 2px solid var(--border); }
+    .benchmark-table tr.benchmark-row-avg.benchmark-row-with { background: rgba(33, 150, 243, 0.12); }
+    .benchmark-table tr.benchmark-row-avg.benchmark-row-without { background: rgba(255, 193, 7, 0.12); }
+    .benchmark-delta-positive { color: var(--green); font-weight: 600; }
+    .benchmark-delta-negative { color: var(--red); font-weight: 600; }
+    .benchmark-notes {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+    }
+    .benchmark-notes h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+    .benchmark-notes ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+    }
+    .benchmark-notes li {
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      margin-bottom: 0.375rem;
+    }
+    .benchmark-empty {
+      color: var(--text-muted);
+      font-style: italic;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    /* ---- Navigation ---- */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      flex-shrink: 0;
+    }
+    .nav-btn {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: all 0.15s;
+    }
+    .nav-btn:hover:not(:disabled) {
+      background: var(--bg);
+      border-color: var(--text-muted);
+    }
+    .nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .done-btn {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.5rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.15s;
+    }
+    .done-btn:hover {
+      background: var(--bg);
+      border-color: var(--text-muted);
+    }
+    .done-btn.ready {
+      border: none;
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+    }
+    .done-btn.ready:hover {
+      background: var(--accent-hover);
+    }
+    /* ---- Done overlay ---- */
+    .done-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      justify-content: center;
+      align-items: center;
+    }
+    .done-overlay.visible {
+      display: flex;
+    }
+    .done-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 2rem 3rem;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+    }
+    .done-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .done-card p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    .done-card .btn-row {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .done-card button {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+    .done-card button:hover {
+      background: var(--bg);
+    }
+    /* ---- Toast ---- */
+    .toast {
+      position: fixed;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 0.625rem 1.25rem;
+      border-radius: var(--radius);
+      font-size: 0.875rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      z-index: 200;
+    }
+    .toast.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" style="height:100vh; display:flex; flex-direction:column;">
+    <div class="header">
+      <div>
+        <h1>Eval Review: <span id="skill-name"></span></h1>
+        <div class="instructions">Review each output and leave feedback below. Navigate with arrow keys or buttons. When done, copy feedback and paste into Claude Code.</div>
+      </div>
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <!-- View tabs (only shown when benchmark data exists) -->
+    <div class="view-tabs" id="view-tabs" style="display:none;">
+      <button class="view-tab active" onclick="switchView('outputs')">Outputs</button>
+      <button class="view-tab" onclick="switchView('benchmark')">Benchmark</button>
+    </div>
+
+    <!-- Outputs panel (qualitative review) -->
+    <div class="view-panel active" id="panel-outputs">
+    <div class="main">
+      <!-- Prompt -->
+      <div class="section">
+        <div class="section-header">Prompt <span class="config-badge" id="config-badge" style="display:none;"></span></div>
+        <div class="section-body">
+          <div class="prompt-text" id="prompt-text"></div>
+        </div>
+      </div>
+
+      <!-- Outputs -->
+      <div class="section">
+        <div class="section-header">Output</div>
+        <div class="section-body" id="outputs-body">
+          <div class="empty-state">No output files found</div>
+        </div>
+      </div>
+
+      <!-- Previous Output (collapsible) -->
+      <div class="section" id="prev-outputs-section" style="display:none;">
+        <div class="section-header">
+          <div class="grades-toggle" onclick="togglePrevOutputs()">
+            <span class="arrow" id="prev-outputs-arrow">&#9654;</span>
+            Previous Output
+          </div>
+        </div>
+        <div class="grades-content" id="prev-outputs-content"></div>
+      </div>
+
+      <!-- Grades (collapsible) -->
+      <div class="section" id="grades-section" style="display:none;">
+        <div class="section-header">
+          <div class="grades-toggle" onclick="toggleGrades()">
+            <span class="arrow" id="grades-arrow">&#9654;</span>
+            Formal Grades
+          </div>
+        </div>
+        <div class="grades-content" id="grades-content"></div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="section">
+        <div class="section-header">Your Feedback</div>
+        <div class="section-body">
+          <textarea
+            class="feedback-textarea"
+            id="feedback"
+            placeholder="What do you think of this output? Any issues, suggestions, or things that look great?"
+          ></textarea>
+          <div class="feedback-status" id="feedback-status"></div>
+          <div class="prev-feedback" id="prev-feedback" style="display:none;">
+            <div class="prev-feedback-label">Previous feedback</div>
+            <div id="prev-feedback-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav" id="outputs-nav">
+      <button class="nav-btn" id="prev-btn" onclick="navigate(-1)">&#8592; Previous</button>
+      <button class="done-btn" id="done-btn" onclick="showDoneDialog()">Submit All Reviews</button>
+      <button class="nav-btn" id="next-btn" onclick="navigate(1)">Next &#8594;</button>
+    </div>
+    </div><!-- end panel-outputs -->
+
+    <!-- Benchmark panel (quantitative stats) -->
+    <div class="view-panel" id="panel-benchmark">
+      <div class="benchmark-view" id="benchmark-content">
+        <div class="benchmark-empty">No benchmark data available. Run a benchmark to see quantitative results here.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Done overlay -->
+  <div class="done-overlay" id="done-overlay">
+    <div class="done-card">
+      <h2>Review Complete</h2>
+      <p>Your feedback has been saved. Go back to your Claude Code session and tell Claude you're done reviewing.</p>
+      <div class="btn-row">
+        <button onclick="closeDoneDialog()">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ---- Embedded data (injected by generate_review.py) ----
+    const EMBEDDED_DATA = {"skill_name": "autonomous-driving-temporal-safety-analysis", "runs": [{"id": "eval-1-current-workspace-with_skill", "prompt": "\u5728 /Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data \u4e2d\uff0c\u4ee5\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u4e3a\u4e3b\u5b9e\u9a8c\u6570\u636e\uff0c\u5e76\u628a 202607091933/record \u4f5c\u4e3a\u65b0\u589e\u7684 record \u89e3\u6790\u6570\u636e\u793a\u4f8b\u3002\u8bf7\u8f93\u51fa\u4e00\u4e2a\u53ef\u6267\u884c\u7684\u516d\u5c42\u5206\u6790\u8f93\u5165\u5ba1\u8ba1\u548c\u6307\u6807\u6620\u5c04\uff0c\u8bf4\u660e\u73b0\u6709\u4e3b\u5206\u6790\u5e94\u5982\u4f55\u63a5\u5165 record \u6570\u636e\uff1b\u4e0d\u8981\u4fee\u6539\u539f\u59cb\u5b9e\u9a8c\u76ee\u5f55\u3002", "eval_id": 1, "outputs": [{"name": "six_layer_input_audit_and_record_mapping.md", "type": "text", "content": "# \u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u516d\u5c42\u5206\u6790\u8f93\u5165\u5ba1\u8ba1\u4e0e record \u63a5\u5165\u6620\u5c04\n\n## \u5ba1\u8ba1\u7ed3\u8bba\n\n\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u4ecd\u5e94\u4f5c\u4e3a\u4e3b\u5b9e\u9a8c\u6570\u636e\uff1a\u9884\u671f\u5e76\u53d1\u73b0 12 \u4e2a run\uff08baseline 7 \u4e2a\u3001300 ms \u7ec4 5 \u4e2a\uff09\uff0c\u6bcf\u4e2a run \u90fd\u6709 `collect_time.txt`\u3001Localization/Perception/Prediction/Planning \u65e5\u5fd7\u3001SCB \u5ef6\u8fdf\u8bc1\u636e\u300112 \u4efd Trace event\u300112 \u4efd message context \u548c 1 \u4efd trace anchor\u3002\u73b0\u6709\u4e3b\u5206\u6790\u7684 `t1`\u3001`t2`\u3001\u7269\u7406\u54cd\u5e94\u65f6\u95f4\u3001\u5899\u949f\u901f\u5ea6\u79ef\u5206\u8ddd\u79bb\u3001\u52a8\u6001\u622a\u6b62\u65f6\u95f4\u53ca\u5b89\u5168\u7ed3\u5c40\u5747\u6709\u7ee7\u7eed\u4f7f\u7528\u7684\u8f93\u5165\u57fa\u7840\u3002\n\n\u9700\u8981\u4fdd\u7559\u4e24\u9879\u5df2\u77e5\u9650\u5236\uff1a12 \u4e2a run \u90fd\u6ca1\u6709 `control.log`\uff0c\u4e5f\u90fd\u6ca1\u6709\u5d4c\u5957 `record/`\uff1b`202607271206` \u867d\u53ef\u8ba1\u7b97 `T_e2e` \u548c `D_delay`\uff0c\u4f46\u56e0\u201c\u65e0\u78b0\u649e\u4e8b\u4ef6\u201d\u548c\u201c\u56fa\u5b9a\u76ee\u6807\u51e0\u4f55\u7a7f\u900f\u201d\u51b2\u7a81\u4e14\u65e0 actor history\uff0c\u4ecd\u53ea\u8fdb\u5165\u8d28\u91cf\u8bca\u65ad\uff0c\u4e0d\u8fdb\u5165\u7ed3\u5c40\u6c47\u603b\u3002\u4e24\u4e2a\u76f4\u63a5\u89c2\u6d4b\u78b0\u649e run \u4e3a `202607271131` \u548c `202607271643`\uff0c\u5b83\u4eec\u5177\u5907 collision CSV/JSONL \u548c actor history\uff1b\u5176\u5b8c\u6574\u89c2\u6d4b\u505c\u8f66\u8ddd\u79bb\u3001\u5b8c\u6574\u505c\u8f66\u4f59\u91cf\u548c\u7531\u5b8c\u6574\u505c\u8f66\u80fd\u529b\u5bfc\u51fa\u7684\u89c2\u6d4b deadline \u5fc5\u987b\u4fdd\u6301\u4e0d\u53ef\u7528\u3002\n\n`202607091933/record` \u7684\u89e3\u6790\u672c\u8eab\u8d28\u91cf\u826f\u597d\uff1a1 \u4e2a record \u6587\u4ef6\u300128 \u4e2a channel\u300115061 \u6761\u6d88\u606f\u300159 \u4e2a\u5bfc\u51fa\u6587\u4ef6\u3001\u65e0\u89e3\u6790\u9519\u8bef\uff0c\u6280\u80fd profiler \u8981\u6c42\u7684 18 \u4e2a\u5173\u952e\u8868\u5168\u90e8\u5b58\u5728\u3002manifest \u4e2d\u53e6\u6709 9 \u4e2a\u53ef\u9009\u8f93\u51fa\u672a\u751f\u6210\uff1a`imu.csv`\u30013 \u4e2a Planning debug \u6d3e\u751f\u8868\u3001`prediction_trajectories.csv`\u30013 \u4e2a Routing \u8868\u548c `camera_image_index.csv`\uff1b\u8fd9\u4e9b\u7f3a\u5931\u4e0d\u5f71\u54cd\u672c\u6b21\u793a\u4f8b\u7684\u6838\u5fc3 L2/L3 \u6620\u5c04\uff0c\u4f46\u4e0d\u80fd\u88ab\u89e3\u91ca\u4e3a\u5bf9\u5e94\u7cfb\u7edf\u884c\u4e3a\u4e0d\u5b58\u5728\u3002\n\n\u6700\u91cd\u8981\u7684\u5173\u8054\u5ba1\u8ba1\u7ed3\u8bba\u662f\uff1a\u8be5 record \u91c7\u96c6\u4e8e 2026-07-09 19:33:02\u201319:33:34\uff0c\u800c\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u91c7\u96c6\u4e8e 2026-07-27\uff0c\u4e14\u6ca1\u6709\u76f8\u540c run ID\uff0c\u6700\u65e9\u4e3b\u5b9e\u9a8c `t1` \u4e5f\u7ea6\u665a 17.62 \u5929\u3002\u56e0\u6b64\u5b83\u7684\u72b6\u6001\u662f `EXAMPLE_ONLY_NOT_JOINABLE`\uff1a\u53ea\u80fd\u5c55\u793a record \u7684\u89e3\u6790\u7ed3\u6784\u3001\u5b57\u6bb5\u8bed\u4e49\u548c\u63a5\u5165\u7b97\u6cd5\uff0c\u4efb\u4f55\u6570\u503c\u90fd\u4e0d\u80fd\u5199\u5165\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u9010 run \u7684 observed \u6216 model \u8868\u3002\n\n\u8be6\u7ec6\u9010 run \u5ba1\u8ba1\u89c1 `tables/input_audit.csv`\uff0c\u5173\u8054\u5224\u5b9a\u89c1 `tables/record_run_association.csv`\uff0c\u9010\u6307\u6807\u5b57\u6bb5/\u65f6\u949f/\u805a\u5408\u89c4\u5219\u89c1 `tables/record_source_mapping.csv`\u3002\n\n## \u4e8b\u4ef6\u3001\u65f6\u949f\u4e0e\u4e3b\u6307\u6807\u51bb\u7ed3\n\n\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u7ee7\u7eed\u91c7\u7528\u65e2\u6709\u7edf\u4e00\u7aef\u70b9\uff1a\n\n- `t1`\uff1a\u76ee\u6807\u9996\u6b21\u8fde\u7eed 3 \u5e27\u7a33\u5b9a Fusion \u5e8f\u5217\u7b2c\u4e00\u5e27\u7684\u6e90\u65f6\u523b\uff1b\u4e3b\u65f6\u949f\u4e3a Apollo/Localization \u5899\u949f epoch\u3002\n- `t2`\uff1a\u9996\u4e2a\u6ee1\u8db3\u8fde\u7eed 2 \u4e2a Localization \u95f4\u9694\u51cf\u901f\u5ea6\u4e0d\u5c0f\u4e8e 0.5 m/s\u00b2\uff0c\u4e14\u540e\u7eed 0.3 s \u901f\u5ea6\u4e0b\u964d\u4e0d\u5c0f\u4e8e 0.3 m/s \u7684\u533a\u95f4\u7ec8\u70b9\u3002\n- `T_e2e_data_observed_ms=(t2-t1)*1000`\uff0c\u8fd9\u662f\u73af\u5883\u539f\u56e0\u5230\u6301\u7eed\u7269\u7406\u54cd\u5e94\u7684 Reaction Time\u3002\n- `D_delay_wall_integral_data_observed_m=integral(t1,t2,v(t)dt_wall)`\uff0c\u7aef\u70b9\u63d2\u503c\u540e\u7528\u5899\u949f\u901f\u5ea6\u68af\u5f62\u79ef\u5206\u3002\n- Trace monotonic \u65f6\u95f4\u53ea\u7528\u4e8e\u9636\u6bb5\u5206\u89e3\uff0c\u5e76\u901a\u8fc7 trace anchor \u4e0e\u6e90\u4e8b\u4ef6\u5bf9\u9f50\uff1bCARLA sim time\u3001frame\u3001Localization \u7a7a\u95f4\u4f4d\u79fb\u53ea\u4fdd\u7559\u4e3a\u8bca\u65ad\u3002\n\nrecord \u4e2d `record_time_sec`\u3001`header_timestamp_sec`\u3001`measurement_time` \u548c\u4f20\u64ad\u7684\u4f20\u611f\u5668\u65f6\u95f4\u6233\u5fc5\u987b\u5206\u522b\u4fdd\u5b58\u3002\u793a\u4f8b record \u7684 `record_time_sec-header_timestamp_sec` p99 \u5206\u522b\u4e3a Localization 3.796 ms\u3001Planning 2.285 ms\u3001Control 1.566 ms\u3001Perception 0.770 ms\u3001Prediction 4.013 ms\uff0c\u4e14\u8fd9\u4e9b\u8868\u6ca1\u6709\u8d1f\u504f\u79fb\uff1b\u8fd9\u652f\u6301\u8be5 record \u5185\u90e8\u7684\u5c40\u90e8\u65f6\u949f\u8bca\u65ad\uff0c\u4f46\u4e0d\u80fd\u5efa\u7acb\u5b83\u4e0e\u7b2c\u4e8c\u6b21\u5b9e\u9a8c run \u7684\u5173\u8054\u3002\n\n## \u516d\u5c42\u8f93\u5165\u4e0e record \u63a5\u5165\n\n### L1 \u65f6\u95f4\u6270\u52a8\n\n\u4e3b\u8bc1\u636e\u4e0d\u53d8\uff1a\u6bcf\u4e2a\u7b2c\u4e8c\u6b21\u5b9e\u9a8c run \u7684 `log/scb_control_delay_*.csv` \u63d0\u4f9b requested delay\u3001actual wall delay\u3001frame delay\u3001\u6fc0\u6d3b\u65f6\u95f4\u548c lifecycle\u3002record \u7684 `record_channels.csv` \u4e0e `system_events.csv` \u53ea\u80fd\u8bf4\u660e channel \u8986\u76d6\u548c\u7cfb\u7edf\u4e8b\u4ef6\u80cc\u666f\uff0c\u4e0d\u80fd\u53cd\u63a8 bridge \u5b9e\u9645\u65bd\u52a0\u7684\u5ef6\u8fdf\u3002\u5f53\u524d\u67b6\u6784\u4ecd\u6309 Control \u76f4\u63a5\u8fdb\u5165 bridge\uff1b\u5373\u4f7f record \u542b Guardian\uff0c\u4e5f\u4e0d\u80fd\u628a Guardian \u5f53\u4f5c\u63a7\u5236\u547d\u4ee4\u6e90\u3002\n\n### L2 \u65f6\u95f4\u884c\u4e3a\u9000\u5316\n\n\u540c run record \u53ef\u65b0\u589e\u4e09\u7c7b\u5e76\u5217\u8bca\u65ad\uff1a\n\n1. \u54cd\u5e94\u65f6\u95f4\u5206\u5e03\uff1a`planning_latency_stats.csv` \u6309 `planning_seq` \u53bb\u91cd\u540e\u7edf\u8ba1 median/p90/p99/max\uff1b`control_latency.csv` \u6309 `control_seq` \u53bb\u91cd\u3002\n2. \u6570\u636e\u65b0\u9c9c\u5ea6\uff1a`planning_control_alignment.csv` \u7684 `planning_age_ms`\u3001`sensor_to_control_reaction_age.csv` \u7684 `data_age_ms`\uff0c\u5fc5\u987b\u6309 sensor channel \u5206\u5c42\u3002\n3. \u66f4\u65b0\u8fde\u7eed\u6027\uff1a`record_topic_rate.csv` \u548c `module_timeline.csv` \u6309 channel \u7edf\u8ba1 period\u3001p90/p99/max gap\u3001\u8d85\u8fc7 1.5 \u500d\u548c 2 \u500d\u4e2d\u4f4d\u5468\u671f\u7684\u6b21\u6570\uff1b\u4e0d\u80fd\u7528 obstacle \u884c\u8868\u4ee3\u66ff\u5b8c\u6574 module timeline\u3002\n\n\u793a\u4f8b profile \u663e\u793a Planning \u6267\u884c\u65f6\u95f4 median/p90/p99/max \u4e3a 23.554/34.714/40.596/44.059 ms\uff0cControl \u4e3a 0.964/1.357/1.723/2.471 ms\uff1bPlanning age \u4e3a 52.831/144.807/263.769/289.312 ms\uff0creuse count median/p90/max \u4e3a 8/17.2/29\u3002Perception\u3001Prediction\u3001Planning \u7684\u6700\u5927 record-receipt gap \u5206\u522b\u4e3a 295.975\u3001296.517\u3001291.115 ms\uff0c\u800c Control \u6700\u5927 gap \u4e3a 19.805 ms\u3002\u4ee5\u4e0a\u5747\u662f\u793a\u4f8b record \u7684\u6d88\u606f\u7ea7\u8bca\u65ad\uff0c\u4e0d\u80fd\u4f5c\u4e3a\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u7ec4\u95f4\u7ed3\u679c\u3002\n\n### L3 \u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81\n\n\u7269\u7406 `T_e2e=t2-t1` \u4fdd\u6301\u4e3b\u6307\u6807\uff0c\u4e0d\u7531 record \u8986\u76d6\u3002`sensor_to_control_reaction_age.csv` \u7684\u5168 channel message reaction median/p90/p99 \u4e3a 1.866/7.034/10.856 ms\uff0cdata age \u4e3a 91.662/96.942/115.894 ms\uff1b\u5176 effect endpoint \u662f Control \u6d88\u606f\u800c\u975e\u6301\u7eed\u8f66\u8f86\u51cf\u901f\uff0c\u56e0\u6b64\u5b57\u6bb5\u53ea\u80fd\u547d\u540d\u4e3a `reaction_time_message_diagnostic_*`\u3002\n\n\u5f53\u672a\u6765\u540c\u4e00\u7b2c\u4e8c\u6b21\u5b9e\u9a8c run \u5e26 record \u65f6\uff0c\u5e94\u4f7f\u7528 obstacle ID\u3001\u4f20\u64ad\u7684 sensor timestamp\u3001Planning sequence/header \u548c `planning_control_alignment.csv` \u5efa\u7acb `Perception -> Prediction -> Planning -> Control` \u7684\u56e0\u679c\u5339\u914d\uff1b\u968f\u540e\u7528\u5df2\u9a8c\u8bc1\u7684 header-to-wall \u5bf9\u9f50\uff0c\u628a\u9996\u4e2a\u6301\u7eed\u5236\u52a8 Control \u547d\u4ee4\u4e0e\u4e3b\u5206\u6790 `t2` \u76f8\u51cf\u5f97\u5230 `control_to_t2_data_observed_ms`\u3002\u4ec5\u6309\u6700\u8fd1\u65f6\u95f4\u5339\u914d\u5fc5\u987b\u6807\u4e3a\u4f4e\u7f6e\u4fe1\u5ea6\uff0c\u4e0d\u80fd\u76f4\u63a5\u8fdb\u5165\u5f3a\u56e0\u679c\u7ed3\u8bba\u3002\n\n### L4 \u65f6\u95f4\u6b63\u786e\u6027\n\n\u52a8\u6001\u622a\u6b62\u65f6\u95f4\u7ee7\u7eed\u7531 `t1` \u65f6\u523b\u8f66\u8f86\u901f\u5ea6\u3001\u76ee\u6807\u51c0\u8ddd\u3001\u5b9e\u6d4b/\u6821\u51c6\u5236\u52a8\u80fd\u529b\u548c\u5b89\u5168\u8ddd\u79bb\u72ec\u7acb\u8ba1\u7b97\uff0c\u518d\u4e0e\u7269\u7406 `T_e2e` \u6bd4\u8f83\uff1a`timing_slack=tau_dynamic-T_e2e`\u3002record Localization/Chassis \u53ea\u80fd\u4e3a\u540c\u4e00 run \u63d0\u4f9b\u72b6\u6001\u4ea4\u53c9\u9a8c\u8bc1\uff0c\u4e0d\u80fd\u7528 message reaction time \u63a8\u5bfc deadline\uff0c\u4e5f\u4e0d\u80fd\u7528\u54cd\u5e94\u65f6\u95f4\u8c03\u53c2\u4f7f\u5b89\u5168/\u78b0\u649e run \u88ab\u4eba\u4e3a\u5206\u5f00\u3002\u78b0\u649e\u622a\u65ad\u5bfc\u81f4\u89c2\u6d4b\u5b8c\u6574\u5236\u52a8\u80fd\u529b\u7f3a\u5931\u65f6\uff0cdata-derived deadline \u4fdd\u6301 NA\uff0c\u6a21\u578b deadline \u5355\u5217\u3002\n\n### L5 \u65f6\u95f4\u5230\u7269\u7406\u7a7a\u95f4\u4f20\u64ad\n\n\u4e3b `D_delay` \u7ee7\u7eed\u4f7f\u7528\u73b0\u6709 Localization \u65e5\u5fd7\u7684\u5899\u949f\u901f\u5ea6\u68af\u5f62\u79ef\u5206\u3002\u82e5\u540c run record \u8986\u76d6 `[t1,t2]`\uff0c\u53ef\u4ece `localization_velocity_acc.csv` \u4ee5 `measurement_time` \u6216\u7ecf\u9a8c\u8bc1 header time \u8ba1\u7b97 `D_delay_record_wall_integral_crosscheck_m`\uff0c\u53ea\u62a5\u544a\u4e0e\u4e3b\u503c\u7684\u6709\u7b26\u53f7\u5dee\u53ca\u5bf9\u9f50\u6b8b\u5dee\uff0c\u4e0d\u8986\u76d6\u4e3b\u503c\u3002\n\n`D_distance_debt=max(0,integral(t_deadline,t2,v(t)dt_wall))` \u53ea\u5728\u72ec\u7acb deadline \u53ef\u7528\u4e14\u65f6\u949f\u4e00\u81f4\u65f6\u8ba1\u7b97\u3002\u5b83\u662f deadline \u8017\u5c3d\u540e\u989d\u5916\u524d\u8fdb\u7684\u589e\u91cf\u8ddd\u79bb\uff0c\u4e0d\u80fd\u4e0e\u6574\u4e2a `D_delay` \u6df7\u4e3a\u540c\u4e00\u5b57\u6bb5\uff0c\u4e5f\u4e0d\u80fd\u91cd\u590d\u4ece\u540c\u4e00\u4e2a\u7a7a\u95f4\u57fa\u7ebf\u6263\u9664\u3002\n\n### L6 \u7269\u7406\u5b89\u5168\u7ed3\u679c\n\n\u76f4\u63a5\u7269\u7406\u7ed3\u5c40\u4ecd\u7531 CARLA collision event\u3001actor history\u3001Localization \u5236\u52a8\u8f68\u8ff9\u548c\u6700\u7ec8\u51e0\u4f55\u8bc1\u660e\u3002record \u7684 `control_command.csv`\u3001`control_chassis_feedback.csv` \u548c `chassis.csv` \u53ef\u652f\u6301\u201c\u547d\u4ee4\u662f\u5426\u6267\u884c\u3001\u5236\u52a8\u53cd\u9988\u4f55\u65f6\u51fa\u73b0\u201d\uff0c\u4f46\u4e0d\u80fd\u66ff\u4ee3\u78b0\u649e\u4e8b\u5b9e\u6216\u6700\u7ec8\u51c0\u8ddd\u3002\u793a\u4f8b\u4e2d\u7684 202 \u6761 `brake_gt_10` abnormal-frame \u884c\u53ea\u8868\u793a\u89e3\u6790\u5668\u9608\u503c\u547d\u4e2d\uff0c\u4e0d\u7b49\u4e8e 202 \u4e2a\u6545\u969c\u6216\u5b89\u5168\u4e8b\u4ef6\u3002\n\nobserved/data \u4e0e model/predicted \u5fc5\u987b\u7ee7\u7eed\u5206\u8868\uff1b\u65e0\u5b9e\u6d4b\u8f93\u5165\u65f6\u5199 NA \u548c\u539f\u56e0\uff0c\u7981\u6b62\u7528 record \u4e2d\u4e0d\u76f8\u5173 run \u7684\u503c\u6216\u6a21\u578b\u503c\u56de\u586b\u3002\n\n## \u73b0\u6709\u4e3b\u5206\u6790\u7684\u6700\u5c0f\u63a5\u5165\u65b9\u6848\n\n\u63a5\u5165\u70b9\u5e94\u653e\u5728 `report_workspace/scripts/analyze_second_experiment.py` \u5b8c\u6210 12 \u4e2a run \u7684\u539f\u59cb\u89e3\u6790\u3001`rows.sort(...)` \u4e4b\u540e\u4ee5\u53ca\u5199 `run_level_metrics.csv` \u4e4b\u524d\u3002\u6700\u5c0f\u53d8\u5316\u5982\u4e0b\uff1a\n\n1. \u5bf9\u6bcf\u4e2a `spec.run_dir / \"record\"` \u505a\u53ea\u8bfb\u53d1\u73b0\uff1b\u4e0d\u5b58\u5728\u65f6\u4fdd\u7559\u8be5 run\uff0c\u5e76\u5199 `record_profile_available=false`\u3001`record_missing_reason=\"NO_ASSOCIATED_RECORD\"`\u3002\n2. \u5bf9\u5b58\u5728\u7684 record \u5148\u8fd0\u884c profiler\uff0c\u5e76\u5efa\u7acb `run_id`\u3001record \u539f\u6587\u4ef6\u540d\u3001collection start/end\u3001record first/last time\u3001\u5173\u8054\u65b9\u6cd5\u548c\u72b6\u6001\u3002\u53ea\u6709 `VERIFIED_SAME_RUN` \u624d\u5141\u8bb8 join\u3002\n3. \u805a\u5408 profile \u4e3a `record_timing_diagnostics.csv`\uff0c\u5bf9\u4e3b run \u8868\u6309\u5ba1\u6838\u540e\u7684 `run_id` \u505a\u5de6\u8fde\u63a5\uff1b\u7981\u6b62 inner join\uff0c\u4ee5\u514d 12 \u4e2a\u4e3b run \u56e0 record \u7f3a\u5931\u800c\u6d88\u5931\u3002\n4. \u6240\u6709\u65b0\u589e\u5b57\u6bb5\u4f7f\u7528 `record_*` \u6216 `*_message_diagnostic_*` \u524d\u7f00\uff1b\u4e3b `T_e2e_data_observed_ms`\u3001`D_delay_wall_integral_data_observed_m`\u3001collision/outcome \u548c observed margin \u5217\u4fdd\u6301\u539f\u89e3\u6790\u7ed3\u679c\u3002\n5. \u4e8b\u4ef6\u7a97\u53e3\u578b record \u6307\u6807\u5728 `[t1,t_o]` \u6216\u660e\u786e\u7684 `[t1,t2]` \u5185\u91cd\u7b97\uff0c\u5e76\u5728\u8868\u5934/\u8bc1\u636e\u77e9\u9635\u5199\u660e\u7a97\u53e3\uff1b\u5168 record profile \u53ea\u4f5c\u4e3a run \u7ea7\u80cc\u666f\uff0c\u4e0d\u4e0e\u4e8b\u4ef6\u7a97\u53e3\u503c\u6df7\u5217\u3002\n6. \u751f\u6210 `clock_alignment_status_record`\u3001\u8d1f age \u6570\u3001record window coverage \u548c target identity flags\u3002\u8986\u76d6\u4e0d\u5b8c\u6574\u6216\u65f6\u949f\u672a\u9a8c\u8bc1\u65f6\uff0c\u5bf9\u53d7\u5f71\u54cd\u5b57\u6bb5\u5199 NA\uff0c\u800c\u4e0d\u662f\u9000\u56de\u6700\u8fd1\u90bb\u731c\u6d4b\u3002\n7. group summary \u5bf9\u6bcf\u4e2a record-only \u6307\u6807\u5206\u522b\u62a5\u544a `n_total`\u3001`n_record_available` \u548c `n_excluded`\uff1b\u4e3b\u7269\u7406\u6307\u6807\u4ecd\u4ee5\u539f 11 \u4e2a\u7eb3\u5165 run \u7684\u89c4\u5219\u6c47\u603b\u3002\n\n\u672c\u6b21\u793a\u4f8b\u5fc5\u987b\u505c\u5728\u7b2c 2 \u6b65\u7684 `EXAMPLE_ONLY_NOT_JOINABLE`\uff0c\u6240\u4ee5\u9884\u671f\u5de6\u8fde\u63a5\u7ed3\u679c\u662f\u7b2c\u4e8c\u6b21\u5b9e\u9a8c 12 \u884c\u5168\u90e8\u4fdd\u7559\uff0crecord \u6307\u6807\u5747\u4e3a\u7a7a\u5e76\u9644\u7f3a\u5931\u539f\u56e0\uff1b\u793a\u4f8b profile \u53e6\u8868\u5c55\u793a\uff0c\u4e0d\u80fd\u8fdb\u5165 group summary\u3002\n\n## \u53ef\u590d\u73b0\u547d\u4ee4\n\n\u4ee5\u4e0b\u547d\u4ee4\u5747\u53ea\u8bfb\u539f\u59cb\u76ee\u5f55\uff0c\u8f93\u51fa\u5230\u672c\u5ba1\u8ba1\u5de5\u4f5c\u533a\uff1a\n\n```bash\npython3 /Users/huangjinhui/.codex/skills/autonomous-driving-temporal-safety-analysis/scripts/profile_record_export.py \\\n  --record-dir /Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data/202607091933/record \\\n  --output /Users/huangjinhui/.codex/skills/autonomous-driving-temporal-safety-analysis-workspace/iteration-1/eval-1-current-workspace/with_skill/outputs/record_profiles/202607091933.json\n\npython3 /Users/huangjinhui/.codex/skills/autonomous-driving-temporal-safety-analysis/scripts/aggregate_record_profiles.py \\\n  --profiles-dir /Users/huangjinhui/.codex/skills/autonomous-driving-temporal-safety-analysis-workspace/iteration-1/eval-1-current-workspace/with_skill/outputs/record_profiles \\\n  --output-csv /Users/huangjinhui/.codex/skills/autonomous-driving-temporal-safety-analysis-workspace/iteration-1/eval-1-current-workspace/with_skill/outputs/tables/record_timing_diagnostics.csv\n```\n\n\u672a\u6765\u6bcf\u6b21\u5b9e\u9a8c\u5e94\u628a\u7b2c\u4e00\u6761\u547d\u4ee4\u5e94\u7528\u4e8e\u6bcf\u4e2a run \u7684\u5d4c\u5957 `record/`\uff0c\u518d\u7edf\u4e00\u6267\u884c\u7b2c\u4e8c\u6761\u3002\u539f\u59cb\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u76ee\u5f55\u548c `202607091933/record` \u5728\u672c\u6b21\u5ba1\u8ba1\u4e2d\u5747\u672a\u4fee\u6539\u3002\n\n## \u4ea7\u7269\u7d22\u5f15\u4e0e\u5269\u4f59\u9650\u5236\n\n- `record_profiles/202607091933.json`\uff1a\u5b8c\u6574 record profile\uff0c\u542b\u8986\u76d6\u3001L2/L3 \u6307\u6807\u548c clock-offset \u8bca\u65ad\u3002\n- `tables/record_timing_diagnostics.csv`\uff1aprofile \u7684\u4e00\u884c\u805a\u5408\u7ed3\u679c\u3002\n- `tables/input_audit.csv`\uff1a\u7b2c\u4e8c\u6b21\u5b9e\u9a8c 12 \u4e2a run \u4e0e\u793a\u4f8b record \u7684\u8f93\u5165\u53ef\u7528\u6027\u3002\n- `tables/record_run_association.csv`\uff1a\u660e\u786e\u963b\u6b62\u4e0d\u5408\u6cd5 join \u7684\u5173\u8054\u5ba1\u8ba1\u3002\n- `tables/record_source_mapping.csv`\uff1a\u516d\u5c42\u9010\u6307\u6807\u6765\u6e90\u3001\u5b57\u6bb5\u3001\u65f6\u949f\u3001\u805a\u5408\u4e0e\u9632\u8bef\u7528\u89c4\u5219\u3002\n\n\u5f53\u524d\u4e0d\u80fd\u56de\u7b54\u201c\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u7684 record freshness/reuse \u662f\u5426\u968f 300 ms \u5e72\u9884\u53d8\u5316\u201d\uff0c\u56e0\u4e3a 12 \u4e2a\u4e3b run \u6ca1\u6709 record\uff1b\u4e5f\u4e0d\u80fd\u5c06 7 \u6708 9 \u65e5\u793a\u4f8b\u7684\u6d88\u606f\u7ea7\u5c3e\u90e8\u5ef6\u8fdf\u89e3\u91ca\u4e3a 7 \u6708 27 \u65e5\u78b0\u649e\u7684\u539f\u56e0\u3002\u5b83\u73b0\u5728\u8bc1\u660e\u7684\u662f\u63a5\u5165\u8def\u5f84\u53ef\u7528\uff0c\u800c\u4e0d\u662f\u5b8c\u6210\u4e86\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u7684 record \u589e\u5f3a\u56e0\u679c\u5206\u6790\u3002\n"}], "grading": {"expectations": [{"text": "The output explicitly covers L1 through L6.", "passed": true, "evidence": "The Markdown report contains substantive L1-L6 sections and the source mapping contains rows for all six layers."}, {"text": "The output keeps wall-clock speed integration as the main D_delay definition.", "passed": true, "evidence": "The report freezes D_delay_wall_integral_data_observed_m as endpoint-interpolated trapezoidal integration over t1-t2 wall time and keeps sim/frame/displacement diagnostic only."}, {"text": "The output separates observed/data results from model/predicted results.", "passed": true, "evidence": "The report requires observed/data and model/predicted tables to remain separate, keeps collision-run full-stop quantities NA, and forbids using the unrelated record or model values to backfill observed results."}, {"text": "The output uses parsed record data for timing/freshness/gap evidence without treating it as collision truth.", "passed": true, "evidence": "The record is mapped to Planning/Control latency, Planning age/reuse, reaction/data age, clock offsets, and update gaps; L6 explicitly retains CARLA collision event/actor history as direct outcome evidence."}, {"text": "The output states that the bridge reads Control directly in the current architecture.", "passed": true, "evidence": "L1 states that Guardian cannot be used as the command source because the bridge receives Control directly."}, {"text": "The output creates or describes a reproducible record profile and source-provenance mapping.", "passed": true, "evidence": "The output includes a JSON record profile, aggregate timing CSV, input audit, run-record association audit, detailed source mapping, and exact reproduction commands."}], "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0}, "claims": [{"claim": "The July 9 record cannot be joined to July 27 second-experiment runs.", "type": "factual", "verified": true, "evidence": "record_run_association.csv records non-overlapping collection dates, no matching run ID, and EXAMPLE_ONLY_NOT_JOINABLE status."}, {"claim": "The second experiment contains 12 expected/found runs and no nested record directories.", "type": "factual", "verified": true, "evidence": "Matches the workspace inventory and input_audit.csv."}], "user_notes_summary": {"uncertainties": ["Record-enhanced group comparison cannot be performed until same-run record exports exist."], "needs_review": [], "workarounds": ["The unrelated July 9 record is retained only as a parser-schema and integration example."]}, "eval_feedback": {"suggestions": [], "overall": "The assertions capture the intended six-layer, clock, evidence, architecture, and reproducibility behavior and all passed with substantive artifacts."}}}, {"id": "eval-1-current-workspace-without_skill", "prompt": "\u5728 /Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data \u4e2d\uff0c\u4ee5\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u4e3a\u4e3b\u5b9e\u9a8c\u6570\u636e\uff0c\u5e76\u628a 202607091933/record \u4f5c\u4e3a\u65b0\u589e\u7684 record \u89e3\u6790\u6570\u636e\u793a\u4f8b\u3002\u8bf7\u8f93\u51fa\u4e00\u4e2a\u53ef\u6267\u884c\u7684\u516d\u5c42\u5206\u6790\u8f93\u5165\u5ba1\u8ba1\u548c\u6307\u6807\u6620\u5c04\uff0c\u8bf4\u660e\u73b0\u6709\u4e3b\u5206\u6790\u5e94\u5982\u4f55\u63a5\u5165 record \u6570\u636e\uff1b\u4e0d\u8981\u4fee\u6539\u539f\u59cb\u5b9e\u9a8c\u76ee\u5f55\u3002", "eval_id": 1, "outputs": [{"name": "record_profile.json", "type": "text", "content": "{\n  \"profile_scope\": {\n    \"record_export\": \"/Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data/202607091933/record\",\n    \"role\": \"record parser/schema and adapter example only; not a second-experiment statistical sample\",\n    \"profile_generated_for\": \"six-layer input audit and source mapping\",\n    \"raw_directories_modified\": false\n  },\n  \"structural_profile\": {\n    \"record_file_count\": 1,\n    \"record_total_size_bytes\": 89254501,\n    \"channel_count\": 28,\n    \"message_count\": 15061,\n    \"parse_errors\": {},\n    \"record_start_time_sec\": 1783596784.7710555,\n    \"record_end_time_sec\": 1783596816.7628047,\n    \"record_duration_sec\": 31.99174928665161,\n    \"derived_row_count_file_entries\": 56,\n    \"derived_total_rows\": 745379,\n    \"manifest_expected_outputs\": 66,\n    \"manifest_present_outputs\": 57,\n    \"manifest_missing_outputs\": [\n      \"01_localization_chassis/imu.csv\",\n      \"02_planning/planning_stitching_trajectory.csv\",\n      \"02_planning/planning_reference_line.csv\",\n      \"02_planning/planning_optimizer_costs.csv\",\n      \"04_prediction_perception/prediction_trajectories.csv\",\n      \"05_routing_map/routing_request.csv\",\n      \"05_routing_map/routing_response.csv\",\n      \"05_routing_map/routing_lane_segments.csv\",\n      \"06_sensor_raw/camera_image_index.csv\"\n    ]\n  },\n  \"clock_profile\": {\n    \"canonical_wall_clock_for_vehicle_state\": \"localization measurement_time, after verifying epoch, monotonicity and alignment\",\n    \"localization_rows\": 319,\n    \"localization_time_range_sec\": [\n      1783596784.8624475,\n      1783596816.6622543\n    ],\n    \"localization_record_minus_measurement_ms\": {\n      \"median\": 2.962350845336914,\n      \"p90\": 3.4638404846191406,\n      \"max\": 6.985664367675781\n    },\n    \"lidar_record_minus_measurement_ms\": {\n      \"median\": 28.05638313293457,\n      \"p90\": 41.5928840637207,\n      \"max\": 61.662912368774414\n    },\n    \"prohibited_for_primary_D_delay\": [\n      \"CARLA frame\",\n      \"CARLA simulation time\",\n      \"Localization position displacement\",\n      \"record_time_sec when mixed with measurement_time endpoints\"\n    ]\n  },\n  \"record_diagnostic_examples\": {\n    \"topic_continuity\": {\n      \"perception_obstacles\": {\n        \"messages\": 312,\n        \"median_period_ms\": 79.53739166259766,\n        \"max_period_ms\": 295.9752082824707,\n        \"gap_gt_1_5x_median_count\": 45\n      },\n      \"planning\": {\n        \"messages\": 311,\n        \"median_period_ms\": 84.41877365112305,\n        \"max_period_ms\": 291.11456871032715,\n        \"gap_gt_1_5x_median_count\": 44\n      },\n      \"prediction\": {\n        \"messages\": 311,\n        \"median_period_ms\": 80.28221130371094,\n        \"max_period_ms\": 296.51713371276855,\n        \"gap_gt_1_5x_median_count\": 42\n      },\n      \"control\": {\n        \"messages\": 3151,\n        \"median_period_ms\": 10.006546974182129,\n        \"max_period_ms\": 19.805192947387695,\n        \"gap_gt_1_5x_median_count\": 10\n      }\n    },\n    \"planning_control_reuse\": {\n      \"rows\": 3151,\n      \"planning_age_ms\": {\n        \"median\": 52.831411361694336,\n        \"p90\": 144.8068618774414,\n        \"max\": 289.31188583374023\n      },\n      \"reuse_count\": {\n        \"median\": 9.0,\n        \"p90\": 27.0,\n        \"max\": 29.0\n      }\n    },\n    \"sensor_to_next_control_tick\": {\n      \"warning\": \"reaction_time_ms is the time to the next control tick, not a proven target-causal end-to-end reaction time\",\n      \"lidar_reaction_time_ms\": {\n        \"median\": 6.350874900817871,\n        \"p90\": 7.667779922485352,\n        \"max\": 65.65213203430176\n      },\n      \"lidar_data_age_ms\": {\n        \"median\": 96.30799293518066,\n        \"p90\": 106.1253547668457,\n        \"max\": 128.065824508667\n      }\n    },\n    \"candidate_target_id_82\": {\n      \"status\": \"diagnostic example only; actor identity is not proven\",\n      \"row_count\": 34,\n      \"first_three_perception_sequences\": [443, 444, 445],\n      \"first_stable_source_time_s_if_three_frame_rule_is_used\": 1783596804.9627852,\n      \"first_stable_publish_record_time_s\": 1783596807.4323728,\n      \"first_publish_age_ms\": 2469.587564468384,\n      \"source_age_ms\": {\n        \"median\": 2934.9794387817383,\n        \"p90\": 3305.2212953567505,\n        \"max\": 3370.5177307128906\n      },\n      \"target_output_gap_ms\": {\n        \"median\": 78.11379432678223,\n        \"p90\": 254.42190170288094,\n        \"max\": 836.1008167266846\n      },\n      \"missing_sequence_transitions\": 8,\n      \"planning_stop_decision_rows_for_id_82\": 34\n    }\n  },\n  \"coverage_and_causal_gates\": {\n    \"first_control_brake_positive_time_sec\": 1783596791.4665663,\n    \"candidate_target_82_stable_source_time_sec\": 1783596804.9627852,\n    \"braking_precedes_candidate_target_stable_source_by_sec\": 13.496218919754028,\n    \"first_carla_collision_time_sec\": 1783596818.2631545,\n    \"record_ends_before_first_collision_by_sec\": 1.500349760055542,\n    \"record_only_collision_outcome_available\": false,\n    \"record_only_complete_braking_endpoint_available\": false,\n    \"record_only_target_causal_t1_to_t2_available\": false,\n    \"reason\": \"The example is a different, traffic-light/obstacle-confounded Town01 run; sustained braking is already present before the candidate collision target becomes stably observable, and record coverage stops before collision.\"\n  },\n  \"second_experiment_context\": {\n    \"main_observed_run_count\": 11,\n    \"baseline_run_count\": 7,\n    \"delay_300ms_included_run_count\": 4,\n    \"excluded_run_ids\": [\"202607271206\"],\n    \"observed_collision_run_count\": 2,\n    \"complete_braking_run_count\": 9,\n    \"current_observed_outputs\": [\n      \"\u7b2c\u4e8c\u6b21\u5b9e\u9a8c/analysis_results/chapter3_run_observed_metrics.csv\",\n      \"\u7b2c\u4e8c\u6b21\u5b9e\u9a8c/analysis_results/chapter4_run_observed_safety_margins.csv\",\n      \"\u7b2c\u4e8c\u6b21\u5b9e\u9a8c/analysis_results/chapter7_verified_observed_metrics.csv\"\n    ],\n    \"current_model_output\": \"\u7b2c\u4e8c\u6b21\u5b9e\u9a8c/analysis_results/chapter7_verified_counterfactual_model.csv\",\n    \"reproducibility_findings\": {\n      \"analysis_runtime_dependency_present_at_expected_path\": false,\n      \"expected_missing_path\": \"/Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data/realtime_collision_analysis\",\n      \"chapter3_nonnull_source_paths_using_stale_windows_D_drive_style\": 24,\n      \"chapter3_stale_source_paths_existing_on_current_host\": 0,\n      \"exclusion_reason_for_202607271206_machine_readable\": false\n    }\n  }\n}\n"}, {"name": "record_source_mapping.csv", "type": "text", "content": "layer,metric_or_input,result_class,current_main_source,record_source,record_fields,canonical_time_or_join,record_role,status,guardrail\nL1_\u65f6\u95f4\u6270\u52a8,channel_period_gap_jitter,data_observed_diagnostic,\"trace/events + module logs\",00_meta/record_topic_rate.csv,\"period_median_ms; period_std_ms; period_max_ms; gap_gt_1_5x_median_count\",record_time_sec per channel,augment,READY,\"Topic gaps diagnose update disturbance but do not prove target-causal delay.\"\nL1_\u65f6\u95f4\u6270\u52a8,source_to_publish_or_record_lag,data_observed_diagnostic,\"module log header/source/publish timestamps\",00_meta/record_message_index.csv,\"record_time_sec; header_timestamp_sec; header_lidar_timestamp\",same-row timestamp subtraction,augment,READY,\"Name each clock and unit; never mix nanoseconds and seconds.\"\nL1_\u65f6\u95f4\u6270\u52a8,planning_internal_latency,data_observed_diagnostic,\"planning log + trace/events\",02_planning/planning_latency_stats.csv,\"planning_seq; total_time_ms; task_name; task_time_ms\",planning_seq,augment,READY,\"Internal reported latency is not end-to-end reaction time.\"\nL1_\u65f6\u95f4\u6270\u52a8,control_internal_latency,data_observed_diagnostic,\"control trace/events\",03_control/control_latency.csv,\"control_seq; total_time_ms; task_name; task_time_ms\",control_seq,augment,READY,\"Internal reported latency is not actuation time.\"\nL1_\u65f6\u95f4\u6270\u52a8,planning_backlog_and_reuse,data_observed_diagnostic,\"planning/control message context\",07_diagnostics/planning_control_alignment.csv,\"control_seq; matched_planning_seq_from_record; planning_age_ms; reuse_count; reuse_index_in_run\",matched_planning_seq_from_record plus control_seq,augment,READY,\"Treat planning_age_ms as consumed-trajectory age, not sensor data age.\"\nL1_\u65f6\u95f4\u6270\u52a8,lidar_detection_queue_and_compute,data_observed_diagnostic,\"trace/events/perception.lidar_detection + trace_anchor\",none,\"none\",trace monotonic timestamps,retain_current,NOT_AVAILABLE_IN_RECORD,\"Apollo record contains published channel messages, not DAG queue/compute phases.\"\nL1_\u65f6\u95f4\u6270\u52a8,bridge_injected_and_actual_delay,data_observed,\"scb_control_delay_*.csv + bridge log\",none,\"none\",SCB wall clock,retain_current,NOT_AVAILABLE_IN_RECORD,\"Apollo record stops at /apollo/control and cannot observe bridge receive/apply_control.\"\nL2_\u65f6\u95f4\u884c\u4e3a\u9000\u5316,target_output_continuity,data_observed_diagnostic,\"perception log target sequence\",04_prediction_perception/perception_obstacles.csv,\"obstacle_id; header_sequence_num; record_time_sec\",target identity then consecutive record_time_sec gaps,augment,CONDITIONAL,\"Resolve target ID switches geometrically before declaring a gap.\"\nL2_\u65f6\u95f4\u884c\u4e3a\u9000\u5316,target_data_age,data_observed_diagnostic,\"perception log source and output timestamps\",04_prediction_perception/perception_obstacles.csv,\"record_time_sec; header_lidar_timestamp; timestamp; obstacle_id\",record_time_sec - header_lidar_timestamp/1e9,augment,CONDITIONAL,\"Use main lidar source time after equality/consistency checks; keep object timestamp as a separate diagnostic.\"\nL2_\u65f6\u95f4\u884c\u4e3a\u9000\u5316,sensor_to_control_tick_age,data_observed_diagnostic,\"trace/message_context\",07_diagnostics/sensor_to_control_reaction_age.csv,\"sensor_channel; sensor_record_time_sec; sensor_header_timestamp_sec; reaction_time_ms; data_age_ms\",sensor row to next control tick,augment,READY,\"This is not a causal perception-to-control reaction time and must not populate T_R.\"\nL2_\u65f6\u95f4\u884c\u4e3a\u9000\u5316,planning_staleness_at_control,data_observed_diagnostic,\"trace/message_context/control\",03_control/control_planning_reuse.csv,\"planning_header_sequence_num; planning_age_ms; reuse_count\",planning_header_sequence_num to control_seq,augment,READY,\"Keep distinct from target Data Age.\"\nL2_\u65f6\u95f4\u884c\u4e3a\u9000\u5316,control_update_continuity,data_observed_diagnostic,\"trace/events/control\",03_control/control_command.csv,\"control_seq; record_time_sec; brake; throttle; acceleration_target\",ordered control_seq and record_time_sec,augment,READY,\"Control publication continuity does not prove bridge application continuity.\"\nL3_\u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81,t1_target_stable_source_time,data_observed,\"perception log + target resolver\",04_prediction_perception/perception_obstacles.csv,\"obstacle_id; header_sequence_num; header_lidar_timestamp; record_time_sec; x; y; tracking_time\",first of N stable target frames; t1=header_lidar_timestamp/1e9,possible_primary,CONDITIONAL,\"Require planning-stop/collision-target identity, position-jump and max-gap checks; example run fails causal eligibility.\"\nL3_\u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81,t_fusion_publish,data_observed_diagnostic,\"perception log wall publish time\",04_prediction_perception/perception_obstacles.csv,\"obstacle_id; header_sequence_num; record_time_sec\",same stable output row,augment,READY,\"Publish time is not t1; t1 remains source time.\"\nL3_\u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81,t_prediction_and_t_planning,data_observed_diagnostic,\"trace/events + logs\",04_prediction_perception/prediction_obstacles.csv;02_planning/planning_obstacle_decision.csv,\"obstacle_id; record_time_sec; planning_seq; decision_json\",exact causal trace preferred; target ID and ordered time only as fallback,augment,CONDITIONAL,\"A nearest-time join is diagnostic only unless trace/parent identity proves causality.\"\nL3_\u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81,t_control_command,data_observed_diagnostic,\"control log + trace/message_context\",03_control/control_command.csv,\"control_seq; record_time_sec; brake; acceleration_target\",causal planning_seq to control_seq via alignment table,possible_primary,CONDITIONAL,\"Use first persistent relevant brake command; do not use Guardian because bridge reads Control in this setup.\"\nL3_\u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81,t2_effective_deceleration,data_observed,\"localization log measurement time and speed\",01_localization_chassis/localization_velocity_acc.csv,\"measurement_time; vx; vy; vz; speed\",effective-brake detector on measurement_time,possible_primary,READY_WITH_COVERAGE,\"Use the same threshold, consecutive-interval and confirmation-window rules as all runs.\"\nL3_\u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81,T_R_t1_to_t2,data_observed,\"existing t1/t2 detector\",derived from record adapter,\"t1_target_stable_source_time; t2_effective_deceleration\",T_R=t2-t1 on one validated wall-clock basis,derived,CONDITIONAL,\"Unavailable if braking starts before target t1, target identity is unresolved, or coverage is incomplete.\"\nL3_\u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81,Data_Age_end_to_end,data_observed_diagnostic,\"trace/log source-to-use timestamps\",derived from record adapter,\"target source time; consumer/use time\",explicit source-to-consumer age,derived,CONDITIONAL,\"Store separately from T_R; never substitute sensor_to_control_reaction_age directly.\"\nL4_\u65f6\u95f4\u6b63\u786e\u6027\u5224\u5b9a,dynamic_deadline_tau_star_data,data_observed,\"v1 + D1 + complete observed braking distance\",record localization and target geometry plus complete endpoint,\"measurement_time; speed; pose; target geometry\",physics-state calculation independent of causal-chain delay,possible_primary,CONDITIONAL,\"Collision/right-censored runs have no observed complete-braking deadline; do not fill from a model.\"\nL4_\u65f6\u95f4\u6b63\u786e\u6027\u5224\u5b9a,timing_slack_S_T_data,data_observed,\"observed tau_star and observed T_R\",derived from validated record inputs,\"tau_star_data_observed; T_R_data_observed\",S_T=tau_star-T_R,derived,CONDITIONAL,\"Endpoint, time basis and safety-margin definition must match across runs.\"\nL5_\u65f6\u95f4\u5230\u7269\u7406\u4f20\u64ad,D_delay_wall_integral,data_observed,\"Localization speed trapezoidal wall-clock integral\",01_localization_chassis/localization_velocity_acc.csv,\"measurement_time; speed\",trapezoidal integral from t1 to t2,possible_primary,READY_WITH_COVERAGE,\"Primary D_delay must use measurement_time wall-clock speed integration; position displacement remains diagnostic only.\"\nL5_\u65f6\u95f4\u5230\u7269\u7406\u4f20\u64ad,D_debt_data,data_observed,\"observed speed and observed dynamic deadline\",derived from record adapter,\"measurement_time; speed; t_deadline; t2\",\"max(0, integral speed from t_deadline to t2)\",derived,CONDITIONAL,\"D_debt equals D_delay only when endpoints actually match; otherwise keep separate fields.\"\nL5_\u65f6\u95f4\u5230\u7269\u7406\u4f20\u64ad,D1_and_D2_clearance_data,data_observed,\"perception target geometry + Localization pose\",04_prediction_perception/perception_obstacles.csv;01_localization_chassis/localization_pose.csv,\"target x/y/size; ego x/y/heading; measurement_time\",validated common coordinate frame and geometry offset,possible_primary,CONDITIONAL,\"Apollo and CARLA coordinates require an explicit transform; do not join by visually similar coordinates.\"\nL6_\u7269\u7406\u5b89\u5168\u7ed3\u679c,D_brake_and_stop_endpoint_data,data_observed,\"Localization from t2 to minimum-speed/stop endpoint\",01_localization_chassis/localization_velocity_acc.csv,\"measurement_time; speed\",same wall-clock integral and endpoint rule,possible_primary,READY_WITH_COVERAGE,\"Example record ends before collision and cannot provide its complete endpoint.\"\nL6_\u7269\u7406\u5b89\u5168\u7ed3\u679c,safety_and_collision_margin_data,data_observed,\"D1-D_delay-D_brake and configured safety clearance\",derived from record adapter,\"D1; D_delay; D_brake; safety margin\",observed-only identity,derived,CONDITIONAL,\"For collision runs keep complete-stop margins unavailable unless the metric is explicitly contact-censored.\"\nL6_\u7269\u7406\u5b89\u5168\u7ed3\u679c,collision_outcome_and_impact_speed,data_observed,\"CARLA collision event CSV/JSONL\",none inside Apollo record,\"external wall_time_unix_ns; ego_speed_mps; actor IDs\",external CARLA wall clock joined by run_id and validated clock,retain_current,NOT_AVAILABLE_IN_RECORD,\"The example record ends 1.500 s before first collision; record-only outcome is unavailable.\"\nL6_\u7269\u7406\u5b89\u5168\u7ed3\u679c,counterfactual_collision_and_margin,model_predicted,\"chapter7_verified_counterfactual_model.csv\",record may supply model inputs only,\"explicit *_model_input and *_model_predicted fields\",separate model pipeline,augment,SEPARATE_MODEL_ONLY,\"Never write model predictions into data/observed columns or use them to fill missing actual endpoints.\"\n"}, {"name": "six_layer_record_input_audit.md", "type": "text", "content": "# \u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u516d\u5c42\u5206\u6790\u8f93\u5165\u5ba1\u8ba1\u4e0e Apollo record \u63a5\u5165\u6620\u5c04\n\n## \u6280\u672f\u7ed3\u8bba\n\n\u5f53\u524d\u63a5\u5165\u72b6\u6001\u4e3a **CONDITIONAL\uff08\u53ef\u63a5\u5165\uff0c\u4f46\u4e0d\u80fd\u76f4\u63a5\u66ff\u6362\u73b0\u6709\u4e3b\u5206\u6790\uff09**\u3002\n\n\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u7684 11 \u4e2a\u7eb3\u5165 run \u4ecd\u5e94\u4f5c\u4e3a\u4e3b\u5b9e\u9a8c\u6570\u636e\uff1a7 \u4e2a baseline\u30014 \u4e2a 300 ms\uff1b\u5176\u4e2d 2 \u4e2a\u78b0\u649e run\uff0c9 \u4e2a run \u6709\u5b8c\u6574\u5236\u52a8\u7aef\u70b9\u3002`202607091933/record` \u5e94\u4ec5\u4f5c\u4e3a Apollo cyber record \u89e3\u6790\u683c\u5f0f\u548c\u9002\u914d\u5668\u7684\u6837\u4f8b\uff0c\u4e0d\u80fd\u5e76\u5165\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u7684\u7ec4\u7edf\u8ba1\u3001\u78b0\u649e\u7387\u6216\u6a21\u578b\u8bc4\u4ef7\u3002\n\nrecord \u53ef\u4ee5\u76f4\u63a5\u589e\u5f3a\u524d\u4e09\u5c42\u7684\u65f6\u95f4\u6270\u52a8\u3001\u66f4\u65b0\u8fde\u7eed\u6027\u3001\u6570\u636e\u5e74\u9f84\u3001Planning \u590d\u7528\u548c Control \u547d\u4ee4\u8bc1\u636e\uff1b\u5728\u901a\u8fc7\u65f6\u95f4\u57fa\u51c6\u3001\u76ee\u6807\u8eab\u4efd\u548c\u8986\u76d6\u8303\u56f4\u68c0\u67e5\u540e\uff0c\u4e5f\u53ef\u4ee5\u4e3a (t_1)\u3001(t_2)\u3001(T_R) \u4e0e\u5899\u949f\u901f\u5ea6\u79ef\u5206\u63d0\u4f9b\u4e3b\u8f93\u5165\u3002\u4f46\u5b83\u4e0d\u80fd\u66ff\u4ee3\u4ee5\u4e0b\u73b0\u6709\u6765\u6e90\uff1a\n\n- DAG/\u6a21\u5757\u6392\u961f\u548c\u8ba1\u7b97\u9636\u6bb5\uff1a\u7ee7\u7eed\u4f7f\u7528 trace events\u3001message context\u3001fusion inputs \u548c trace anchor\uff1b\n- Bridge \u63a5\u6536\u3001\u65f6\u5ef6\u961f\u5217\u548c `apply_control()`\uff1a\u7ee7\u7eed\u4f7f\u7528 SCB/Bridge \u65e5\u5fd7\uff1b\n- CARLA \u78b0\u649e\u4e8b\u4ef6\u3001\u5bf9\u8c61\u548c\u78b0\u649e\u901f\u5ea6\uff1a\u7ee7\u7eed\u4f7f\u7528 CARLA collision CSV/JSONL\uff1b\n- \u672a\u5b8c\u6574\u89c2\u6d4b\u7684\u5236\u52a8\u7aef\u70b9\uff1a\u5fc5\u987b\u6807\u8bb0\u5b9e\u9645\u6570\u636e\u4e0d\u53ef\u7528\uff0c\u4e0d\u80fd\u7528\u6a21\u578b\u8865\u6210 observed\u3002\n\n`202607091933` \u6837\u4f8b\u672c\u8eab\u4e0d\u80fd\u5f62\u6210\u6709\u6548\u7684\u76ee\u6807\u89e6\u53d1 (t_1\\rightarrow t_2) \u95ed\u73af\u6837\u672c\uff1aApollo record \u5728\u9996\u6b21 CARLA \u78b0\u649e\u524d\u7ea6 1.500 s \u5df2\u7ed3\u675f\uff1b\u6837\u4f8b\u4e2d Control \u6301\u7eed\u5236\u52a8\u5f00\u59cb\u4e8e `1783596791.4665663 s`\uff0c\u6bd4\u5019\u9009\u76ee\u6807 82 \u7684\u4e09\u5e27\u7a33\u5b9a\u6e90\u65f6\u523b `1783596804.9627852 s` \u65e9\u7ea6 13.496 s\u3002\u8be5\u6837\u4f8b\u8fd8\u5b58\u5728\u4ea4\u901a\u706f/\u969c\u788d\u7269\u6df7\u5408\u51b3\u7b56\u3002\u56e0\u6b64\uff0c\u5b83\u53ef\u4ee5\u9a8c\u8bc1 schema\u3001\u65f6\u95f4\u5b57\u6bb5\u3001\u76ee\u6807\u65b0\u9c9c\u5ea6\u548c\u8f93\u51fa\u95f4\u9694\u8ba1\u7b97\uff0c\u4f46\u4e0d\u80fd\u9a8c\u8bc1\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u7684 Deadline Miss\u3001\u8ddd\u79bb\u503a\u52a1\u6216\u78b0\u649e\u4f20\u64ad\u7ed3\u8bba\u3002\n\n## \u5ba1\u8ba1\u8303\u56f4\u548c\u8bc1\u636e\n\n\u4e3b\u5b9e\u9a8c\u8303\u56f4\uff1a\n\n- `\u7b2c\u4e8c\u6b21\u5b9e\u9a8c/baseline`\uff1a7 \u4e2a\u5df2\u7eb3\u5165 run\uff1b\n- `\u7b2c\u4e8c\u6b21\u5b9e\u9a8c/300ms`\uff1a5 \u4e2a\u76ee\u5f55\uff0c\u5176\u4e2d `202607271206` \u88ab\u73b0\u6709\u811a\u672c\u6392\u9664\uff0c\u5f53\u524d\u4e3b\u7edf\u8ba1\u7eb3\u5165 4 \u4e2a\uff1b\n- \u6bcf\u4e2a run \u5747\u5177\u6709 Localization\u3001Perception\u3001Prediction\u3001Planning\u3001SCB delay CSV \u548c\u5b8c\u6574 trace \u6587\u4ef6\u7ec4\uff1b\u4e24\u4e2a\u78b0\u649e run \u53e6\u6709 CARLA collision event \u4e0e actor history\uff1b\n- \u4e3b observed \u8f93\u51fa\u4e3a `chapter3_run_observed_metrics.csv`\u3001`chapter4_run_observed_safety_margins.csv` \u548c `chapter7_verified_observed_metrics.csv`\uff1b\u6a21\u578b\u8f93\u51fa\u72ec\u7acb\u4fdd\u5b58\u5728 `chapter7_verified_counterfactual_model.csv`\u3002\n\nrecord \u6837\u4f8b\u8303\u56f4\uff1a\n\n- 1 \u4e2a record \u6587\u4ef6\uff0c89,254,501 bytes\uff1b\n- 28 \u4e2a channel\uff0c15,061 \u6761 record message\uff0c\u7ea6 31.992 s\uff1b\n- 56 \u4e2a\u5e26\u884c\u6570\u7edf\u8ba1\u7684\u89e3\u6790\u8f93\u51fa\uff0c\u603b\u8ba1 745,379 \u884c\uff1b\n- `parse_errors={}`\uff1b\n- manifest \u9884\u671f 66 \u4e2a\u8f93\u51fa\uff0c\u5b58\u5728 57 \u4e2a\uff0c\u7f3a\u5c11 9 \u4e2a\u53ef\u9009/\u6761\u4ef6\u6027\u8f93\u51fa\uff1b\u5b8c\u6574\u6e05\u5355\u89c1 `record_profile.json`\u3002\n\n\u672c\u5ba1\u8ba1\u6ca1\u6709\u4fee\u6539\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u76ee\u5f55\u3001`202607091933` \u76ee\u5f55\u6216\u5206\u6790\u811a\u672c\u3002\n\n## \u516d\u5c42\u8f93\u5165\u5ba1\u8ba1\n\n### \u7b2c\u4e00\u5c42\uff1a\u65f6\u95f4\u6270\u52a8\n\n**record \u53ef\u76f4\u63a5\u63d0\u4f9b\u7684 observed/diagnostic \u8f93\u5165**\n\n| \u6270\u52a8 | record \u6765\u6e90 | \u53ef\u8ba1\u7b97\u91cf | \u6837\u4f8b\u8bc1\u636e | \u5224\u5b9a |\n|---|---|---|---|---|\n| Channel gap/jitter | `00_meta/record_topic_rate.csv` | period median/std/max\u3001\u8d85\u9608\u503c gap \u6570 | Perception max gap 295.975 ms\u300145 \u6b21\uff1bPlanning max 291.115 ms\u300144 \u6b21\uff1bPrediction max 296.517 ms\u300142 \u6b21 | READY\uff0c\u4f5c\u4e3a\u66f4\u65b0\u6270\u52a8\u8bca\u65ad |\n| \u53d1\u5e03/\u5199\u5165\u6ede\u540e | `record_message_index.csv` \u53ca\u5404\u660e\u7ec6\u8868 | `record_time_sec-header_timestamp_sec` | Localization record-header \u4e2d\u4f4d\u6570\u7ea6 0.351 ms | READY\uff0c\u4f46\u5fc5\u987b\u6807\u660e\u65f6\u949f\u8bed\u4e49 |\n| Planning \u5185\u90e8\u8017\u65f6 | `planning_latency_stats.csv` | total/task latency | total time \u4e2d\u4f4d\u6570 23.554 ms\u3001\u6700\u5927 44.059 ms | READY\uff0c\u4ec5\u4e3a\u6a21\u5757\u5185\u90e8\u91cf |\n| Planning \u79ef\u538b/\u590d\u7528 | `planning_control_alignment.csv` | planning age\u3001reuse count | age \u4e2d\u4f4d\u6570 52.831 ms\u3001P90 144.807 ms\u3001\u6700\u5927 289.312 ms\uff1breuse \u6700\u5927 29 | READY |\n\n**record \u4e0d\u80fd\u66ff\u4ee3\u7684\u8f93\u5165**\n\n- Lidar Detection \u6392\u961f\u65f6\u95f4\u3001\u7eaf\u8ba1\u7b97\u65f6\u95f4\u53ca Trace \u5b8c\u6210\u7387\uff1arecord \u53ea\u4fdd\u5b58\u5df2\u5199\u5165 channel \u7684\u6d88\u606f\uff0c\u4e0d\u4fdd\u5b58\u5b8c\u6574 DAG phase\uff1b\n- Bridge/SCB \u5b9e\u9645\u6267\u884c\u65f6\u5ef6\uff1aApollo record \u7684 `/apollo/control` \u4e0d\u662f Bridge \u6536\u5230\u6216 CARLA \u5e94\u7528\u65f6\u523b\uff1b\n- Guardian \u4e0d\u662f\u672c\u5b9e\u9a8c\u7684\u63a7\u5236\u6743\u5a01\u6e90\u3002\u5de5\u4f5c\u533a\u8bf4\u660e\u660e\u786e Bridge \u76f4\u63a5\u8bfb\u53d6 Control\uff0c\u56e0\u6b64 `/apollo/guardian` \u53ea\u80fd\u4f5c\u4e3a\u8bca\u65ad\uff0c\u4e0d\u80fd\u4f5c\u4e3a applied command\u3002\n\n### \u7b2c\u4e8c\u5c42\uff1a\u65f6\u95f4\u884c\u4e3a\u9000\u5316\n\n**record \u9002\u5408\u8865\u5145 Data Age\u3001Gap\u3001Staleness \u548c Reuse\uff0c\u4f46\u8fd9\u4e9b\u91cf\u5fc5\u987b\u5206\u5f00\u547d\u540d\u3002**\n\n\u63a8\u8350\u5b9a\u4e49\uff1a\n\n\\[\nA_{\\mathrm{target}}=t_{\\mathrm{fusion\\_publish}}-t_{\\mathrm{lidar\\_source}}\n=\\texttt{record\\_time\\_sec}-\\frac{\\texttt{header\\_lidar\\_timestamp}}{10^9}.\n\\]\n\n\u5019\u9009\u76ee\u6807 82 \u7684\u793a\u4f8b\u753b\u50cf\u4e3a\uff1a34 \u6761\u76ee\u6807\u89c2\u6d4b\uff1b\u524d\u4e09\u4e2a Perception sequence \u4e3a 443/444/445\uff1b\u9996\u6b21\u53d1\u5e03\u5e74\u9f84\u7ea6 2,469.588 ms\uff1b\u76ee\u6807\u6e90\u6570\u636e\u5e74\u9f84\u4e2d\u4f4d\u6570\u7ea6 2,934.979 ms\uff0cP90 \u7ea6 3,305.221 ms\uff1b\u76ee\u6807\u8f93\u51fa\u6700\u5927\u95f4\u9694\u7ea6 836.101 ms\u3002\u8be5\u7ed3\u679c\u53ef\u8bc1\u660e\u89e3\u6790\u5b57\u6bb5\u8db3\u4ee5\u8ba1\u7b97\u76ee\u6807\u7ea7 freshness/continuity\uff0c\u4f46\u4e0d\u80fd\u5728\u672a\u8bc1\u660e actor \u8eab\u4efd\u7684\u60c5\u51b5\u4e0b\u89e3\u91ca\u4e3a\u78b0\u649e\u539f\u56e0\u3002\n\n`sensor_to_control_reaction_age.csv` \u7684 `reaction_time_ms` \u8868\u793a\u4f20\u611f\u5668\u6d88\u606f\u5230\u4e0b\u4e00\u6b21 Control tick \u7684\u65f6\u95f4\u3002\u6837\u4f8b Lidar \u4e2d\u4f4d\u6570\u7ea6 6.351 ms\uff1b`data_age_ms` \u4e2d\u4f4d\u6570\u7ea6 96.308 ms\u3002\u5b83\u4eec\u53ef\u4f5c\u4e3a sensor-to-control tick \u8bca\u65ad\uff0c**\u4e0d\u80fd\u76f4\u63a5\u5199\u5165 (T_R)**\uff0c\u56e0\u4e3a\u5c1a\u672a\u8bc1\u660e\u8be5 Control tick \u4f7f\u7528\u4e86\u8be5\u76ee\u6807\u5e76\u4ea7\u751f\u76f8\u5173\u5236\u52a8\u3002\n\n\u76ee\u6807\u8fde\u7eed\u6027\u5fc5\u987b\u5148\u5904\u7406 ID \u5207\u6362\u3002\u6837\u4f8b\u4e2d\u89c4\u5212\u5bf9\u76ee\u6807 82 \u6709 34 \u6761 STOP decision\uff0c\u4f46\u540e\u7eed\u8fd8\u51fa\u73b0 96\u300199\u3001105 \u7b49\u7a7a\u95f4\u90bb\u8fd1 ID\uff1b\u5982\u679c\u53ea\u6309\u5355\u4e00 `obstacle_id` \u8ba1\u7b97 gap\uff0c\u53ef\u80fd\u628a tracker ID \u5207\u6362\u8bef\u5224\u4e3a\u65ad\u6d41\u3002\n\n### \u7b2c\u4e09\u5c42\uff1a\u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81\n\n\u5efa\u8bae\u8ba9 record adapter \u8f93\u51fa\u4e0e\u73b0\u6709\u4e3b\u5206\u6790\u4e00\u81f4\u7684 canonical event\uff1a\n\n| canonical event/metric | record \u5b57\u6bb5 | \u63a5\u5165\u6761\u4ef6 |\n|---|---|---|\n| (t_1)\uff1a\u7a33\u5b9a\u76ee\u6807\u7b2c\u4e00\u5e27\u6e90\u65f6\u523b | `perception_obstacles.header_lidar_timestamp/1e9` | \u5148\u7531 Planning STOP/\u7a7a\u95f4\u5173\u8054\u786e\u8ba4\u76ee\u6807\uff0c\u518d\u5e94\u7528\u76f8\u540c\u7684 3 \u5e27\u3001\u6700\u5927 gap \u548c\u4f4d\u7f6e\u8df3\u53d8\u89c4\u5219 |\n| Fusion publish | \u7a33\u5b9a\u76ee\u6807\u884c\u7684 `record_time_sec` | \u4e0e (t_1) \u5206\u5f00\u4fdd\u5b58\uff0c\u4e0d\u5f97\u66ff\u4ee3 (t_1) |\n| Prediction/Planning | `prediction_obstacles`\u3001`planning_obstacle_decision` \u7684 `record_time_sec`\u3001`planning_seq` | \u76ee\u6807 ID \u548c\u4e25\u683c causal trace \u4f18\u5148\uff1b\u4ec5\u6309\u6700\u8fd1\u65f6\u95f4\u5173\u8054\u65f6\u53ea\u80fd\u6807 diagnostic |\n| Control command | `control_command.record_time_sec`\u3001`control_seq`\u3001`brake`\u3001`acceleration_target` | \u7ecf `matched_planning_seq_from_record` \u5173\u8054\u76f8\u5173 Planning\uff0c\u5e76\u8981\u6c42\u6301\u7eed\u76f8\u5173\u5236\u52a8 |\n| (t_2)\uff1a\u6301\u7eed\u6709\u6548\u51cf\u901f | `localization_velocity_acc.measurement_time` \u4e0e `speed` | \u5b8c\u5168\u590d\u7528\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u76f8\u540c\u9608\u503c\u3001\u8fde\u7eed\u533a\u95f4\u548c\u786e\u8ba4\u7a97\u53e3 |\n| (T_R) | (t_2-t_1) | \u4e24\u7aef\u70b9\u5747\u53ef\u7528\u3001\u540c\u4e00\u5899\u949f\u57fa\u51c6\u3001\u56e0\u679c\u4e8b\u4ef6\u672a\u88ab\u65e2\u6709\u5236\u52a8\u6c61\u67d3 |\n\n`202607091933` \u4e0d\u901a\u8fc7\u6700\u540e\u4e00\u4e2a\u6761\u4ef6\uff1a\u5019\u9009\u76ee\u6807\u7a33\u5b9a\u4ee5\u524d\u5df2\u7ecf\u6301\u7eed\u5236\u52a8\u3002\u56e0\u6b64\u8be5\u6837\u4f8b\u7684 (T_R) \u5e94\u8f93\u51fa `NA`\uff0c\u7f3a\u5931\u539f\u56e0\u4e3a `PREEXISTING_BRAKING_BEFORE_TARGET_T1`\uff0c\u800c\u4e0d\u662f\u4ea7\u751f\u8d1f\u54cd\u5e94\u65f6\u95f4\u6216\u6362\u7528\u522b\u7684\u76ee\u6807\u3002\n\n### \u7b2c\u56db\u5c42\uff1a\u65f6\u95f4\u6b63\u786e\u6027\u5224\u5b9a\n\nDynamic Deadline \u5fc5\u987b\u7531\u7269\u7406\u72b6\u6001\u72ec\u7acb\u8ba1\u7b97\uff0c\u4e0d\u80fd\u7531 record \u4e2d\u7684 `reaction_time_ms`\u3001Planning age \u6216\u6a21\u5757\u8017\u65f6\u63a8\u5bfc\uff1a\n\n\\[\nS_T=\\tau^*(x)-T_R.\n\\]\n\n\u5bf9\u5b8c\u6574\u672a\u78b0\u649e run\uff0crecord \u53ef\u4ee5\u63d0\u4f9b (v_1)\u3001\u76ee\u6807/\u81ea\u8f66\u51e0\u4f55\u3001\u5b8c\u6574\u5b9e\u9645\u5236\u52a8\u8fc7\u7a0b\u548c\u505c\u6b62\u7aef\u70b9\uff0c\u4ece\u800c\u8ba1\u7b97 `T_deadline_*_data_observed`\u3002\u5bf9\u78b0\u649e\u6216 record \u622a\u6b62\u7684 run\uff0c\u5b8c\u6574\u5b9e\u9645\u5236\u52a8\u8ddd\u79bb\u53f3\u5220\u5931\uff0c\u9010 run observed deadline \u5e94\u4e3a\u4e0d\u53ef\u7528\u3002\u9700\u8981\u9884\u6d4b\u65f6\u53e6\u5199 `*_model_input`\u3001`*_model_predicted`\uff0c\u4e0d\u80fd\u8986\u76d6 observed\u3002\n\n`202607091933` \u56e0\u56e0\u679c (t_1/t_2) \u65e0\u6548\u4e14 record \u672a\u8986\u76d6\u78b0\u649e\uff0c\u4e0d\u80fd\u4ea7\u751f observed deadline \u6216 (S_T)\u3002\n\n### \u7b2c\u4e94\u5c42\uff1a\u65f6\u95f4\u2014\u7269\u7406\u4f20\u64ad\n\n\u4e3b `D_delay` \u5fc5\u987b\u4fdd\u6301\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u7684\u7edf\u4e00\u53e3\u5f84\uff1a\n\n\\[\nD_{\\mathrm{delay,wall}}=\\int_{t_1}^{t_2}v(t)\\,dt_{\\mathrm{wall}}.\n\\]\n\nrecord adapter \u7684\u552f\u4e00\u4e3b\u79ef\u5206\u8f93\u5165\u5e94\u4e3a\uff1a\n\n- \u65f6\u95f4\u8f74\uff1a`localization_velocity_acc.measurement_time`\uff1b\n- \u901f\u5ea6\uff1a`speed`\uff0c\u6216\u7528 `sqrt(vx\u00b2+vy\u00b2+vz\u00b2)` \u91cd\u7b97\u5e76\u8fdb\u884c\u4e00\u81f4\u6027\u68c0\u67e5\uff1b\n- \u7aef\u70b9\uff1a\u7ebf\u6027\u63d2\u503c\u5230\u5df2\u9a8c\u8bc1\u7684 (t_1,t_2)\uff1b\n- \u65b9\u6cd5\uff1a\u68af\u5f62\u79ef\u5206\u3002\n\n\u6837\u4f8b Localization \u6709 319 \u884c\uff0c`record_time_sec-measurement_time` \u4e2d\u4f4d\u6570\u7ea6 2.962 ms\u3001P90 \u7ea6 3.464 ms\u3001\u6700\u5927\u7ea6 6.986 ms\u3002\u63a5\u5165\u524d\u5e94\u9a8c\u8bc1 `measurement_time` \u4e3a\u5355\u8c03\u3001Unix epoch \u4e14\u4e0e record/log \u5899\u949f\u5bf9\u9f50\uff1b\u4e00\u65e6\u9009\u5b9a\uff0c\u4e0d\u80fd\u5728\u67d0\u4e9b run \u7528 `record_time_sec`\u3001\u53e6\u4e00\u4e9b run \u7528 `measurement_time`\u3002\n\nCARLA frame\u3001CARLA simulation time \u548c Localization \u4f4d\u7f6e\u4f4d\u79fb\u4e0d\u5f97\u8fdb\u5165\u4e3b `D_delay`\u3002\u5b83\u4eec\u82e5\u4fdd\u7559\uff0c\u53ea\u80fd\u5199\u4e3a `D_delay_sim_observed_m`\u3001`e2e_sim_frames` \u6216\u72ec\u7acb\u8bca\u65ad\u5b57\u6bb5\u3002\n\n\u8ddd\u79bb\u503a\u52a1\u5fc5\u987b\u6309\u81ea\u8eab\u7aef\u70b9\u8ba1\u7b97\uff1a\n\n\\[\nD_{\\mathrm{debt,data}}=\\max\\left(0,\\int_{t_d}^{t_2}v(t)\\,dt_{\\mathrm{wall}}\\right),\n\\quad t_d=t_1+\\tau^*.\n\\]\n\n\u53ea\u6709\u5f53\u79ef\u5206\u7aef\u70b9\u5b9e\u9645\u76f8\u540c\u65f6\uff0c`D_debt` \u624d\u80fd\u4e0e\u5176\u4ed6\u8ddd\u79bb\u5b57\u6bb5\u76f8\u7b49\u3002\n\n### \u7b2c\u516d\u5c42\uff1a\u7269\u7406\u5b89\u5168\u7ed3\u679c\n\nrecord \u53ef\u4ee5\u5728\u8986\u76d6\u5b8c\u6574\u65f6\u8ba1\u7b97\u4ece (t_2) \u5230\u5b9e\u9645\u505c\u6b62\u7aef\u70b9\u7684 `D_brake_data_observed`\u3001\u6700\u7ec8\u51c0\u8ddd\u53ca observed margin\uff1b\u4f46\u78b0\u649e\u7ed3\u5c40\u4ecd\u4ee5 CARLA collision event \u4e3a\u6743\u5a01\u8bc1\u636e\u3002\n\n`202607091933` \u7684 record \u6700\u540e\u65f6\u523b\u4e3a `1783596816.7628047 s`\uff0c\u9996\u6b21 CARLA \u78b0\u649e\u4e3a `1783596818.2631545 s`\uff0c\u7f3a\u53e3\u7ea6 1.500 s\u3002\u56e0\u6b64\uff1a\n\n- record-only collision outcome\uff1a\u4e0d\u53ef\u7528\uff1b\n- record-only impact speed\uff1a\u4e0d\u53ef\u7528\uff1b\n- record-only complete braking endpoint\uff1a\u4e0d\u53ef\u7528\uff1b\n- \u53ef\u4f7f\u7528\u5916\u90e8 CARLA collision CSV \u8865\u5145\u5b9e\u9645\u78b0\u649e\u548c\u78b0\u649e\u901f\u5ea6\uff0c\u4f46\u5fc5\u987b\u6309 run_id \u4e0e\u5df2\u9a8c\u8bc1\u7684\u5899\u949f\u5bf9\u9f50\uff1b\n- \u5373\u4f7f\u8865\u5145\u78b0\u649e\u4e8b\u4ef6\uff0c\u6837\u4f8b\u4ecd\u56e0 (t_1/t_2) \u56e0\u679c\u5931\u8d25\u800c\u4e0d\u80fd\u4f5c\u4e3a\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u5b8c\u6574\u516d\u5c42\u7ed3\u679c\u3002\n\n## \u73b0\u6709\u4e3b\u5206\u6790\u7684\u63a5\u5165\u4f4d\u7f6e\n\n### \u6700\u5c0f\u4fee\u6539\u8fb9\u754c\n\n\u4e0d\u5e94\u91cd\u5199\u73b0\u6709\u6307\u6807\u8ba1\u7b97\u3002\u65b0\u589e\u4e00\u4e2a **record-to-canonical adapter**\uff0c\u5c06 record CSV \u53d8\u6362\u4e3a\u73b0\u6709\u5206\u6790\u6240\u9700\u7684\u4e2d\u95f4\u5bf9\u8c61\uff1b\u4e3b\u6307\u6807\u51fd\u6570\u7ee7\u7eed\u63a5\u6536\u76f8\u540c\u8bed\u4e49\u7684 Localization sample\u3001Fusion observation\u3001Planning/Control event\u3001SCB\u3001trace \u548c collision \u7ed3\u6784\u3002\n\n\u5efa\u8bae\u5165\u53e3\uff1a\n\n```text\nrun directory\n  \u251c\u2500 log/ + trace/ + SCB + collision      -> existing log/trace parser\n  \u2514\u2500 record/                               -> new record adapter\n                         both paths -> canonical ParsedRun/RunInput\n                                    -> unchanged observed metric functions\n                                    -> separate model/predicted functions\n```\n\nrecord adapter \u81f3\u5c11\u8f93\u51fa\u4ee5\u4e0b canonical \u8868/\u5bf9\u8c61\uff1a\n\n1. `localization_samples`\n   - `time_s = measurement_time`\n   - `header_time_s = header_timestamp_sec`\n   - `x_m,y_m,z_m,heading_rad,vx_mps,vy_mps,vz_mps,speed_mps`\n2. `perception_observations`\n   - `seq = header_sequence_num`\n   - `source_time_s = header_lidar_timestamp/1e9`\n   - `publish_time_s = record_time_sec`\n   - `obstacle_id,type,x,y,z,theta,vx,vy,vz,length,width,height,confidence,tracking_time`\n3. `planning_events`\n   - `planning_seq, publish_time_s, obstacle_id, decision_json, total_time_ms`\n4. `control_events`\n   - `control_seq, publish_time_s, brake, throttle, acceleration_target`\n   - `matched_planning_seq, planning_age_ms, reuse_count`\n5. `coverage_and_quality`\n   - record start/end\u3001channel coverage\u3001parse errors\u3001missing optional outputs\u3001\u65f6\u949f\u6b8b\u5dee\u3001\u76ee\u6807\u8eab\u4efd\u72b6\u6001\n\ntrace\u3001SCB \u548c collision \u4ecd\u7531\u73b0\u6709\u89e3\u6790\u5668\u6ce8\u5165\u540c\u4e00 canonical run\uff1brecord adapter \u4e0d\u5e94\u4f2a\u9020\u7f3a\u5931\u9636\u6bb5\u3002\n\n### \u6bcf\u4e2a run \u7684\u53ef\u6267\u884c\u63a5\u5165\u6d41\u7a0b\n\n1. **\u53d1\u73b0\u8f93\u5165**\uff1a\u6309 run_id \u679a\u4e3e `log/`\u3001`trace/`\u3001SCB\u3001collision \u548c\u53ef\u9009 `record/`\uff1b\u4e0d\u81ea\u52a8\u628a\u72ec\u7acb\u76ee\u5f55 `202607091933` \u5f52\u5165\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u7ec4\u3002\n2. **\u7ed3\u6784\u95e8\u7981**\uff1a\u68c0\u67e5 `record_summary.json`\u3001`parse_errors`\u3001\u5173\u952e CSV\u3001\u975e\u7a7a\u884c\u6570\u548c record \u8986\u76d6\u7a97\uff1b\u7f3a\u5931\u7684\u53ef\u9009\u8868\u53ea\u964d\u4f4e\u5bf9\u5e94\u6307\u6807\u53ef\u7528\u6027\u3002\n3. **\u7edf\u4e00\u65f6\u95f4**\uff1a\u9a8c\u8bc1 `measurement_time`\u3001`record_time_sec`\u3001header/source timestamp \u7684\u5355\u4f4d\u3001epoch\u3001\u5355\u8c03\u6027\u548c\u6b8b\u5dee\uff1b\u4fdd\u5b58 clock basis \u5143\u6570\u636e\u3002\n4. **\u76ee\u6807\u89e3\u6790**\uff1a\u7531 Planning STOP\u3001Perception \u51e0\u4f55\u548c\u5916\u90e8\u78b0\u649e actor \u8bc1\u636e\u786e\u5b9a\u76ee\u6807\uff1b\u663e\u5f0f\u8bb0\u5f55 ID switch/association\uff0c\u4e0d\u505a\u6700\u8fd1\u8ddd\u79bb\u7684\u65e0\u8bc1\u636e\u731c\u6d4b\u3002\n5. **\u7aef\u70b9\u68c0\u6d4b**\uff1a\u4ee5\u76f8\u540c\u7a33\u5b9a\u611f\u77e5\u548c\u6709\u6548\u51cf\u901f\u7b97\u6cd5\u751f\u6210 (t_1,t_2)\uff1b\u68c0\u67e5 `PREEXISTING_BRAKING_BEFORE_TARGET_T1`\u3002\n6. **\u56e0\u679c\u5173\u8054**\uff1a\u4f18\u5148\u4f7f\u7528 trace/parent trace\uff1bPlanning \u5230 Control \u4f7f\u7528 matched planning sequence\uff1b\u4ec5\u65f6\u95f4\u6700\u8fd1\u7684\u5173\u8054\u6807\u8bb0 `DIAGNOSTIC_ONLY`\u3002\n7. **\u516d\u5c42\u6d3e\u751f**\uff1a\u4f9d\u6b21\u8ba1\u7b97\u6270\u52a8\u3001\u884c\u4e3a\u9000\u5316\u3001(T_R)/Data Age\u3001deadline/slack\u3001\u5899\u949f\u8ddd\u79bb\u548c\u5b9e\u9645\u7269\u7406\u7ed3\u5c40\u3002\n8. **\u7ed3\u679c\u5206\u533a**\uff1a\n   - observed\uff1a`*_data_observed_*`\uff1b\n   - model\uff1a`*_model_input_*`\u3001`*_model_predicted_*`\uff1b\n   - diagnostic\uff1a`*_diagnostic_*`\uff1b\n   - \u4e0d\u53ef\u7528\u503c\uff1a`NA` \u52a0 `unavailable_reason`\u3002\n9. **\u53cc\u6e90\u56de\u5f52**\uff1a\u5f53\u540c\u4e00 run \u540c\u65f6\u6709 log \u4e0e record \u65f6\uff0c\u5148\u6bd4\u8f83 (t_1,t_2,T_R,D_delay)\u3001\u76ee\u6807 ID \u548c phase time\uff1b\u53ea\u6709\u5728\u914d\u7f6e\u5bb9\u5dee\u5185\u4e00\u81f4\u540e\uff0crecord \u624d\u53ef\u5347\u7ea7\u4e3a\u4e3b\u8f93\u5165\u3002\n10. **\u5206\u7ec4\u7edf\u8ba1**\uff1a\u53ea\u7eb3\u5165\u5b9e\u9a8c\u8bbe\u8ba1\u3001\u914d\u7f6e\u3001\u76ee\u6807\u3001\u7aef\u70b9\u548c\u7ed3\u679c\u72b6\u6001\u90fd\u5408\u683c\u7684 run\uff1bschema \u6837\u4f8b\u6c38\u4e0d\u81ea\u52a8\u5165\u7ec4\u3002\n\n## \u63a5\u5165\u9a8c\u6536\u95e8\u7981\n\nrecord \u63a5\u5165\u67d0\u4e2a\u7b2c\u4e8c\u6b21\u5b9e\u9a8c run \u524d\uff0c\u5fc5\u987b\u5168\u90e8\u6ee1\u8db3\uff1a\n\n- `parse_errors` \u4e3a\u7a7a\uff0cLocalization\u3001Perception\u3001Planning\u3001Control \u5173\u952e\u8868\u975e\u7a7a\uff1b\n- record \u8986\u76d6\u81f3\u5c11\u4ece (t_1) \u524d 0.5 s \u5230\u5b9e\u9645\u505c\u6b62/\u78b0\u649e\u7aef\u70b9\u540e\u4e00\u4e2a\u91c7\u6837\u5468\u671f\uff1b\n- Localization `measurement_time` \u5355\u8c03\uff0c\u901f\u5ea6\u6709\u6548\uff0c\u65f6\u949f\u5bf9\u9f50\u6b8b\u5dee\u6ee1\u8db3\u7edf\u4e00\u9608\u503c\uff1b\n- \u76ee\u6807\u8eab\u4efd\u6709 Planning/Perception/\u78b0\u649e\u5bf9\u8c61\u8bc1\u636e\uff0cID switch \u5df2\u89e3\u6790\uff1b\n- (t_2>t_1)\uff0c\u4e14 (t_1) \u524d\u4e0d\u5b58\u5728\u5df2\u6301\u7eed\u751f\u6548\u3001\u53ef\u89e3\u91ca\u540c\u4e00\u5236\u52a8\u8fc7\u7a0b\u7684\u5236\u52a8\u4e8b\u4ef6\uff1b\n- record \u4e0e log \u53cc\u6e90\u6bd4\u8f83\u901a\u8fc7\uff1b\n- Bridge \u65f6\u5ef6\u4ecd\u6765\u81ea SCB/Bridge\uff0c\u78b0\u649e\u4ecd\u6765\u81ea CARLA\uff1b\n- observed/model \u5b57\u6bb5\u4e25\u683c\u5206\u79bb\u3002\n\n\u4efb\u4e00\u95e8\u7981\u5931\u8d25\u65f6\uff0c\u4e0d\u5e94\u4e22\u5f03\u6574\u4e2a run \u7684\u6240\u6709\u4fe1\u606f\uff1a\u53ef\u7528\u7684 layer 1\u20132 \u8bca\u65ad\u4ecd\u53ef\u4fdd\u7559\uff0c\u4f46 (T_R)\u3001deadline\u3001\u8ddd\u79bb\u503a\u52a1\u6216\u7269\u7406\u7ed3\u5c40\u5fc5\u987b\u5206\u522b\u6807\u8bb0\u4e0d\u53ef\u7528\u3002\n\n## \u5f53\u524d\u4e3b\u5206\u6790\u7684\u53ef\u590d\u73b0\u6027\u95ee\u9898\n\n\u8fd9\u4e9b\u95ee\u9898\u4e0d\u8981\u6c42\u5728\u672c\u6b21\u5ba1\u8ba1\u4e2d\u4fee\u6539\uff0c\u4f46\u5728\u6b63\u5f0f\u63a5\u5165\u524d\u5e94\u5904\u7406\uff1a\n\n1. `analysis_actual_chapter3.py` \u548c `analysis_actual_chapter4_safety.py` \u671f\u671b `data/realtime_collision_analysis`\uff0c\u5f53\u524d\u8def\u5f84\u4e0d\u5b58\u5728\uff1b\u5de5\u4f5c\u533a\u53e6\u6709 vendor \u526f\u672c\uff0c\u4f46\u73b0\u6709\u811a\u672c\u4e0d\u4f1a\u81ea\u52a8\u4f7f\u7528\u3002\u5f53\u524d\u811a\u672c\u56e0\u6b64\u4e0d\u662f\u5373\u5f00\u5373\u8dd1\u72b6\u6001\u3002\n2. \u5df2\u4fdd\u5b58 observed CSV \u7684 source provenance \u4f7f\u7528\u65e7 Windows `D:\\data\\...` \u8def\u5f84\uff1b\u4f8b\u5982 Chapter 3 \u7684 24 \u4e2a\u975e\u7a7a source path \u5728\u5f53\u524d Mac \u5747\u4e0d\u53ef\u89e3\u6790\u3002\u5e94\u5728\u91cd\u65b0\u8fd0\u884c\u65f6\u4fdd\u5b58 workspace-relative path\u3001\u6587\u4ef6\u54c8\u5e0c\u548c run_id\uff0c\u800c\u4e0d\u662f\u624b\u5de5\u66ff\u6362\u7ed3\u679c\u503c\u3002\n3. `202607271206` \u7684\u6392\u9664\u53ea\u5728\u4ee3\u7801\u5e38\u91cf\u548c\u62a5\u544a\u6587\u5b57\u4e2d\u4f53\u73b0\uff0c\u6ca1\u6709\u673a\u5668\u53ef\u8bfb\u7684\u6392\u9664\u539f\u56e0\u3002\u5e94\u589e\u52a0 `run_exclusions.yaml/csv`\uff0c\u81f3\u5c11\u5305\u542b `run_id`\u3001reason code\u3001evidence source\u3001decision date \u548c\u5bf9\u5206\u6bcd\u7684\u5f71\u54cd\u3002\n4. \u53cc\u6e90\u4f18\u5148\u7ea7\u5c1a\u672a\u663e\u5f0f\u5316\u3002\u5efa\u8bae\u9ed8\u8ba4\u4fdd\u7559 log/trace \u4e3b\u5206\u6790\uff0crecord \u5148\u4f5c\u4e3a\u65c1\u8def\u9a8c\u8bc1\uff1b\u5b8c\u6210\u540c-run \u56de\u5f52\u540e\u518d\u6309\u5b57\u6bb5\u5347\u7ea7\uff0c\u4e0d\u8981\u6574 run \u7c97\u66b4\u5207\u6362\u6765\u6e90\u3002\n\n## \u63a8\u8350\u7684\u6700\u5c0f\u5b9e\u65bd\u987a\u5e8f\n\n1. \u4fee\u590d\u5206\u6790 runtime \u8def\u5f84\u6216\u5efa\u7acb\u552f\u4e00 vendor \u5165\u53e3\uff0c\u4f46\u4e0d\u6539\u6307\u6807\u516c\u5f0f\uff1b\n2. \u65b0\u589e record adapter\uff0c\u53ea\u5b9e\u73b0 Localization\u3001Perception\u3001Planning\u3001Control \u548c coverage/quality\uff1b\n3. \u7528 `202607091933/record` \u505a schema/\u5f02\u5e38\u95e8\u7981\u6d4b\u8bd5\uff0c\u671f\u671b\u7ed3\u679c\u662f layer 1\u20132 \u53ef\u7528\u3001target-causal (T_R) \u4e0d\u53ef\u7528\u3001collision endpoint \u4e0d\u53ef\u7528\uff1b\n4. \u5728\u672a\u6765\u540c\u4e00\u4e2a\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u5f0f run \u540c\u65f6\u91c7\u96c6 log\u3001trace\u3001SCB\u3001collision \u4e0e record\uff1b\n5. \u5bf9 (t_1,t_2,T_R,D_delay) \u505a\u53cc\u6e90\u56de\u5f52\uff0c\u9a8c\u8bc1\u901a\u8fc7\u540e\u624d\u8ba9 record \u6210\u4e3a\u53ef\u9009\u4e3b\u8f93\u5165\uff1b\n6. \u6700\u540e\u518d\u63a5\u5165 deadline\u3001`D_debt`\u3001observed margin \u548c\u6a21\u578b\u8bef\u5dee\u5bf9\u7167\u3002\n\n## \u9650\u5236\u4e0e\u5f85\u8865\u8bc1\u636e\n\n- \u672c\u6b21\u6309\u8981\u6c42\u672a\u5b8c\u6574\u91cd\u7b97\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\uff0c\u4e3b\u7edf\u8ba1\u6570\u5b57\u6765\u81ea\u5df2\u4fdd\u5b58 observed/model \u4ea7\u7269\u548c\u8f93\u5165\u6e05\u5355\u5ba1\u8ba1\u3002\n- `202607091933` \u4e0e\u7b2c\u4e8c\u6b21\u5b9e\u9a8c\u4e0d\u662f\u540c\u4e00\u573a\u666f\u548c\u540c\u4e00\u901f\u5ea6\u6761\u4ef6\uff1b\u672c\u62a5\u544a\u6ca1\u6709\u628a\u5b83\u4eec\u505a\u6a2a\u5411\u6570\u503c\u6bd4\u8f83\u3002\n- \u5019\u9009\u76ee\u6807 82 \u4ec5\u7528\u4e8e\u6f14\u793a\u53ef\u89e3\u6790\u5b57\u6bb5\uff1b\u5c1a\u672a\u901a\u8fc7 CARLA actor-to-Apollo obstacle \u7684\u6b63\u5f0f\u5750\u6807\u53d8\u6362\u548c\u8eab\u4efd\u6620\u5c04\u3002\n- record manifest \u7f3a\u5931\u7684 9 \u4e2a\u6761\u4ef6\u6027\u8f93\u51fa\u4e0d\u4f1a\u963b\u65ad\u5f53\u524d\u6700\u5c0f adapter\uff0c\u4f46\u4f1a\u9650\u5236 reference-line\u3001optimizer\u3001routing\u3001camera \u548c prediction trajectory \u5c42\u9762\u7684\u6269\u5c55\u8bca\u65ad\u3002\n\n## \u914d\u5957\u673a\u5668\u53ef\u8bfb\u8f93\u51fa\n\n- `record_profile.json`\uff1arecord \u7ed3\u6784\u3001\u65f6\u949f\u3001\u8fde\u7eed\u6027\u3001\u8986\u76d6\u548c\u4e3b\u5b9e\u9a8c\u4e0a\u4e0b\u6587\u753b\u50cf\uff1b\n- `record_source_mapping.csv`\uff1a28 \u9879\u516d\u5c42 metric/input \u5230 record \u5b57\u6bb5\u3001\u5f53\u524d\u6765\u6e90\u3001\u63a5\u5165\u89d2\u8272\u3001\u72b6\u6001\u548c guardrail \u7684\u6620\u5c04\u3002\n\n"}], "grading": {"expectations": [{"text": "The output explicitly covers L1 through L6.", "passed": true, "evidence": "The report contains complete first-through-sixth-layer sections and the CSV maps inputs/metrics across every layer."}, {"text": "The output keeps wall-clock speed integration as the main D_delay definition.", "passed": true, "evidence": "L5 defines the main D_delay as a t1-t2 wall-clock trapezoidal speed integral and excludes frame, simulation time, and spatial displacement from the main metric."}, {"text": "The output separates observed/data results from model/predicted results.", "passed": true, "evidence": "The report identifies separate current observed and counterfactual-model sources, requires separate observed/model fields, and forbids model filling of missing observed endpoints."}, {"text": "The output uses parsed record data for timing/freshness/gap evidence without treating it as collision truth.", "passed": true, "evidence": "The output profiles record gaps, age, reuse, timing, and Control evidence while retaining CARLA collision events as authoritative outcome evidence."}, {"text": "The output states that the bridge reads Control directly in the current architecture.", "passed": true, "evidence": "The L1 section explicitly states that Guardian is diagnostic only because the bridge reads Control directly."}, {"text": "The output creates or describes a reproducible record profile and source-provenance mapping.", "passed": true, "evidence": "outputs/record_profile.json and outputs/record_source_mapping.csv are populated, and the report describes the canonical adapter and acceptance gates."}], "summary": {"passed": 6, "failed": 0, "total": 6, "pass_rate": 1.0}, "claims": [{"claim": "The July 9 record is only an adapter/schema sample and cannot be merged into the July 27 experiment statistics.", "type": "factual", "verified": true, "evidence": "The report identifies different collection dates and treats the sample as non-joinable."}], "user_notes_summary": {"uncertainties": ["Candidate target 82 is an adapter example without a completed CARLA actor-to-Apollo identity audit."], "needs_review": [], "workarounds": []}, "eval_feedback": {"suggestions": [{"assertion": "The output explicitly covers L1 through L6.", "reason": "This broad assertion passes both configurations; a future eval should check exact required artifacts, join policy, and unavailable-field behavior to better distinguish the skill."}], "overall": "The broad integration eval is valuable qualitatively but does not discriminate skill value because the baseline also received rich workspace context and completed all assertions."}}}, {"id": "eval-2-record-only-with_skill", "prompt": "\u53ea\u7ed9\u4f60 /Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data/202607091933/record \u8fd9\u4e00\u4e2a Apollo record \u89e3\u6790\u76ee\u5f55\u3002\u8bf7\u5224\u65ad\u516d\u5c42\u6846\u67b6\u4e2d\u54ea\u4e9b\u6307\u6807\u53ef\u4ee5\u76f4\u63a5\u8ba1\u7b97\u3001\u54ea\u4e9b\u4e0d\u80fd\uff0c\u5e76\u751f\u6210 record timing profile\u3002\u4e0d\u8981\u4ece\u7f3a\u5931\u7684\u7269\u7406\u6570\u636e\u4e2d\u731c\u6d4b Dynamic Deadline\u3001Distance Debt\u3001\u5236\u52a8\u4f59\u91cf\u6216\u78b0\u649e\u7ed3\u5c40\u3002", "eval_id": 2, "outputs": [{"name": "record_availability_audit.md", "type": "text", "content": "# 202607091933 Apollo record \u516d\u5c42\u6307\u6807\u53ef\u7528\u6027\u5ba1\u8ba1\n\n## \u7ed3\u8bba\n\n\u672c\u8f93\u5165\u53ef\u4ee5\u76f4\u63a5\u5f62\u6210 **record \u5185\u90e8\u6d88\u606f\u7ea7 timing profile**\uff0c\u4e3b\u8981\u8986\u76d6 L2 \u65f6\u95f4\u884c\u4e3a\u9000\u5316\uff0c\u4ee5\u53ca L3 \u7684\u6d88\u606f\u7ea7 Sensor\u2192Control \u53cd\u5e94/\u6570\u636e\u5e74\u9f84\u8bca\u65ad\u3002\u5b83\u4e0d\u80fd\u5355\u72ec\u8bc1\u660e\u5b9e\u9a8c\u6ce8\u5165\u4e86\u4f55\u79cd\u65f6\u95f4\u6270\u52a8\uff0c\u4e5f\u4e0d\u80fd\u786e\u5b9a\u73af\u5883\u539f\u56e0\u7aef\u70b9 `t_c`\u3001\u6301\u7eed\u7269\u7406\u54cd\u5e94\u7aef\u70b9 `t_e`\u3001\u72ec\u7acb Dynamic Deadline\u3001Distance Debt\u3001\u5236\u52a8\u4f59\u91cf\u6216\u78b0\u649e\u7ed3\u5c40\u3002\n\n\u56e0\u6b64\uff0c\u672c\u6b21\u4e0d\u8ba1\u7b97\u4e5f\u4e0d\u586b\u8865\u4ee5\u4e0b\u91cf\uff1a`T_R = t_e - t_c`\u3001`tau_dynamic`\u3001`timing_slack`\u3001`deadline_miss`\u3001`D_delay_wall_integral_m`\u3001`D_distance_debt_m`\u3001\u5b8c\u6574\u5236\u52a8\u8ddd\u79bb\u3001\u6700\u7ec8\u51c0\u8ddd\u3001\u5b89\u5168\u4f59\u91cf\u3001\u78b0\u649e/near-miss \u7ed3\u5c40\u3002record \u4e2d\u7684\u6d88\u606f\u7ea7 `reaction_time_ms` \u4e0d\u88ab\u91cd\u547d\u540d\u4e3a\u7269\u7406 `T_R`\u3002\n\n## \u8f93\u5165\u4e0e\u89e3\u6790\u8986\u76d6\n\n- \u552f\u4e00\u8f93\u5165\uff1a`/Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data/202607091933/record`\n- \u6e90 record\uff1a1 \u4e2a\uff0c89,254,501 bytes\u3002\n- \u901a\u9053\u6570\uff1a28\uff1b\u6d88\u606f\u6570\uff1a15,061\u3002\n- record \u65f6\u95f4\u8303\u56f4\uff1a`1783596784.7710555`\u2013`1783596816.7628047` s\uff0c\u8de8\u5ea6\u7ea6 31.991749 s\u3002\u8be5\u8303\u56f4\u6765\u81ea\u901a\u9053/\u6d88\u606f\u7d22\u5f15\uff1b`extraction_summary.json` \u7684 `effective_start_time_sec` \u548c `effective_end_time_sec` \u5747\u4e3a\u7a7a\uff0c\u4e14\u672a\u8bf7\u6c42 `--last-seconds` \u7a97\u53e3\u3002\n- \u89e3\u6790\u5668\u6c47\u603b `parse_errors={}`\uff1b\u5171\u627e\u5230 59 \u4e2a\u5bfc\u51fa\u6587\u4ef6\uff0cskill profiler \u8981\u6c42\u7684 18 \u5f20\u5173\u952e\u8868\u5168\u90e8\u5b58\u5728\u3002\n- `record_message_index.csv` \u4e2d\u53e6\u6709 1,082 \u884c\u6807\u8bb0\u4e3a `unparsed_or_import_missing`\uff0c\u5206\u5e03\u5728 `/clock`\u3001GNSS heading\u3001CommandStatus\u3001Monitor/HMI\u3001latency reports/records \u7b49\u8f85\u52a9\u901a\u9053\u3002\u5b83\u4eec\u4e0d\u662f\u5f02\u5e38\u629b\u51fa\u7684 `parse_exception`\uff0c\u4e14\u672c\u6b21\u5173\u952e timing \u8868\u5747\u5df2\u751f\u6210\uff1b\u4f46\u76f8\u5173\u8f85\u52a9\u6d88\u606f\u7684 payload \u5b57\u6bb5\u4e0d\u53ef\u7528\u3002\n- record \u53ea\u80fd\u8bc1\u660e\u88ab\u5199\u5165\u5176\u901a\u9053\u7684\u6d88\u606f\u3002\u76ee\u5f55\u4e2d\u6ca1\u6709 bridge/SCB \u6ce8\u5165\u65e5\u5fd7\u3001CARLA collision event\u3001actor history \u6216\u7ecf\u8ba4\u8bc1\u7684\u7269\u7406\u7aef\u70b9\u6587\u4ef6\u3002\n\n\u4e3b\u8981\u8bc1\u636e\uff1a`extraction_summary.json`\u3001`output_manifest.json`\u3001`00_meta/record_channels.csv`\u3001`00_meta/record_message_index.csv`\u3002\n\n## \u516d\u5c42\u53ef\u7528\u6027\u77e9\u9635\n\n| \u5c42 | \u53ef\u76f4\u63a5\u8ba1\u7b97\u6216\u89c2\u5bdf | \u672c\u8f93\u5165\u4e0d\u80fd\u8ba1\u7b97 | \u5224\u5b9a |\n|---|---|---|---|\n| L1 \u65f6\u95f4\u6270\u52a8 | \u901a\u9053\u8986\u76d6\u3001\u7cfb\u7edf\u6d88\u606f\u5b58\u5728\u6027\u3001\u5404\u901a\u9053 record \u63a5\u6536\u8282\u62cd\uff1b\u53ef\u89c2\u5bdf `/apollo/guardian` \u6d88\u606f\uff0c\u4f46\u672c\u67b6\u6784\u7684 bridge \u76f4\u63a5\u8bfb\u53d6 Control\uff0cGuardian \u4e0d\u80fd\u66ff\u4ee3\u547d\u4ee4\u6e90 | nominal/requested/actual bridge \u6216 SCB delay\u3001\u6ce8\u5165\u6fc0\u6d3b\u65f6\u523b\u3001\u5b9e\u9645\u5899\u949f\u5ef6\u8fdf\u3001\u961f\u5217\u6df1\u5ea6\u3001\u5e72\u6270\u8d1f\u8f7d | **\u4ec5\u652f\u6301\u6027\u4e0a\u4e0b\u6587** |\n| L2 \u65f6\u95f4\u884c\u4e3a\u9000\u5316 | topic rate\u3001\u66f4\u65b0 gap \u5206\u5e03\u4e0e\u9608\u503c\u8ba1\u6570\u3001Planning/Control \u6267\u884c\u65f6\u95f4\u3001Planning age\u3001trajectory reuse\u3001record-header offset\u3001\u5f02\u5e38\u5e27\u8ba1\u6570 | \u76f8\u5bf9\u57fa\u51c6 run \u7684\u201c\u9000\u5316\u91cf\u201d\u3001\u672a\u5199\u5165 record \u7684 bridge/\u7f51\u7edc backlog\u3001\u7531\u5355 run \u8bc1\u660e\u7684\u5e72\u9884\u6548\u5e94 | **\u53ef\u8ba1\u7b97 record \u8bca\u65ad** |\n| L3 \u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81 | \u5df2\u89e3\u6790\u5339\u914d\u89c4\u5219\u4e0b\u7684 Sensor\u2192Control \u6d88\u606f\u7ea7 reaction/data age\u3001Planning\u2192Control \u5bf9\u9f50\u4e0e reuse\uff1b\u5404\u6a21\u5757\u53d1\u5e03\u8fde\u7eed\u6027 | \u73af\u5883\u76ee\u6807 `t_c`\u3001\u7a33\u5b9a\u4e09\u5e27 Fusion \u56e0\u679c\u7aef\u70b9\u3001\u6301\u7eed\u51cf\u901f\u5ea6\u7269\u7406 `t_e`\u3001\u7269\u7406 `T_R=t_e-t_c`\u3001\u5b8c\u6574\u4e14\u76ee\u6807\u8eab\u4efd\u5df2\u9a8c\u8bc1\u7684\u9010\u9636\u6bb5\u56e0\u679c\u5206\u89e3 | **\u90e8\u5206\u53ef\u8ba1\u7b97\uff1b\u4e0d\u5f97\u79f0\u7269\u7406 Reaction Time** |\n| L4 \u65f6\u95f4\u6b63\u786e\u6027 | record \u53ef\u63d0\u4f9b\u90e8\u5206\u8f66\u901f/\u5b9a\u4f4d/\u547d\u4ee4\u72b6\u6001\u4f5c\u4e3a\u672a\u6765\u878d\u5408\u8f93\u5165 | \u72ec\u7acb `tau_dynamic`\u3001`t_deadline`\u3001timing slack\u3001deadline miss\uff1b\u7f3a\u5c11\u5df2\u9a8c\u8bc1\u76ee\u6807\u51c0\u8ddd\u3001\u7269\u7406\u7aef\u70b9\u3001\u5236\u52a8\u80fd\u529b/\u5b89\u5168\u5047\u8bbe\u53ca\u5176\u6765\u6e90 | **\u4e0d\u53ef\u8ba1\u7b97** |\n| L5 \u65f6\u95f4\u2014\u7269\u7406\u4f20\u64ad | Localization/Chassis \u901f\u5ea6\u65f6\u95f4\u5e8f\u5217\u5b58\u5728\uff0c\u53ef\u4f9b\u5df2\u77e5\u4e14\u540c\u4e00\u5899\u949f\u57fa\u51c6\u7684\u7aef\u70b9\u5230\u6765\u540e\u79ef\u5206 | `D_response`/\u4e3b `D_delay_wall_integral_m`\uff1a\u7f3a `t_c,t_e`\uff1b`D_debt`\uff1a\u8fd8\u7f3a `t_deadline`\uff1b\u5269\u4f59\u8ddd\u79bb\uff1a\u7f3a\u76ee\u6807\u51e0\u4f55\u7aef\u70b9 | **\u4e0d\u53ef\u8ba1\u7b97\u6240\u9700\u6307\u6807** |\n| L6 \u7269\u7406\u5b89\u5168 | Control \u5236\u52a8\u547d\u4ee4\u3001Chassis/Localization \u53cd\u9988\u53ef\u4f5c\u4e3a\u6267\u884c\u8fc7\u7a0b\u7684\u652f\u6301\u8bc1\u636e\uff1b\u89e3\u6790\u5668\u6807\u51fa 202 \u4e2a `brake_gt_10` Control \u5e27 | \u76f4\u63a5\u78b0\u649e\u771f\u503c\u3001\u76ee\u6807\u5173\u8054\u3001impact speed/impulse\u3001\u5b8c\u6574\u5b9e\u9645\u5236\u52a8\u8ddd\u79bb\u3001\u6700\u7ec8\u51c0\u8ddd\u3001\u89c2\u5bdf\u5b89\u5168\u4f59\u91cf\u3001near miss/\u78b0\u649e\u7ed3\u5c40 | **\u5b89\u5168\u7ed3\u5c40\u4e0d\u53ef\u5224\u5b9a** |\n\n`brake_gt_10` \u53ea\u8868\u793a\u547d\u4ee4\u5e27\u6ee1\u8db3\u89e3\u6790\u5668\u5f02\u5e38\u89c4\u5219\uff0c\u4e0d\u8bc1\u660e\u78b0\u649e\u3001\u6210\u529f\u505c\u8f66\u6216\u5b89\u5168\u4f59\u91cf\u5145\u8db3\u3002\n\n## Record timing profile \u6458\u8981\n\n\u6240\u6709 update gap \u5747\u7531 `record_time_sec` \u7684\u76f8\u90bb\u6b63\u5dee\u5f97\u5230\u3002`>1.5\u00d7/2\u00d7/3\u00d7` \u8ba1\u6570\u4f7f\u7528\u8be5\u901a\u9053 gap \u4e2d\u4f4d\u6570\u4f5c\u4e3a\u4f30\u8ba1\u5468\u671f\u57fa\u51c6\u3002\n\n| \u901a\u9053 | \u6d88\u606f\u6570 | \u901f\u7387 Hz | gap \u4e2d\u4f4d\u6570 ms | p99 ms | \u6700\u5927 ms | >1.5\u00d7 / >2\u00d7 / >3\u00d7 |\n|---|---:|---:|---:|---:|---:|---:|\n| Chassis | 320 | 10.002 | 100.005 | 101.676 | 101.881 | 0 / 0 / 0 |\n| Localization | 319 | 10.001 | 100.023 | 103.151 | 104.129 | 0 / 0 / 0 |\n| Perception obstacles | 312 | 9.744 | 79.537 | 281.570 | 295.975 | 45 / 41 / 18 |\n| Prediction | 311 | 9.772 | 80.282 | 282.806 | 296.517 | 42 / 39 / 18 |\n| Planning | 311 | 9.736 | 84.419 | 286.758 | 291.115 | 44 / 37 / 18 |\n| Control | 3,151 | 99.996 | 10.007 | 12.948 | 19.805 | 10 / 0 / 0 |\n| Guardian\uff08\u652f\u6301\u6027\uff0c\u4e0d\u4f5c bridge \u547d\u4ee4\u6e90\uff09 | 3,196 | 99.994 | 10.000 | 14.008 | 19.904 | 26 / 0 / 0 |\n\n### \u6a21\u5757\u6267\u884c\u65f6\u95f4\u4e0e Planning \u65b0\u9c9c\u5ea6\n\n| \u6307\u6807 | n | \u4e2d\u4f4d\u6570 ms | p90 ms | p99 ms | \u6700\u5927 ms |\n|---|---:|---:|---:|---:|---:|\n| Planning total time\uff08\u6309 `planning_seq` \u53bb\u91cd\uff09 | 311 | 23.554 | 34.714 | 40.596 | 44.059 |\n| Control total time\uff08\u6309 `control_seq` \u53bb\u91cd\uff09 | 3,151 | 0.964 | 1.357 | 1.723 | 2.471 |\n| Control \u4f7f\u7528\u7684 Planning age | 3,151 | 52.831 | 144.807 | 263.769 | 289.312 |\n| \u6bcf\u4e2a reuse run \u7684\u6700\u5927 Planning age | 309 | 80.829 | 170.827 | 286.077 | 289.312 |\n\n309 \u4e2a reuse run \u7684 `reuse_count` \u4e2d\u4f4d\u6570\u4e3a 8\uff0cp90 \u4e3a 17.2\uff0c\u6700\u5927\u4e3a 29\u3002\u8be5\u7edf\u8ba1\u63cf\u8ff0 Control \u5bf9 Planning trajectory \u7684\u91cd\u590d\u4f7f\u7528\uff0c\u4e0d\u7b49\u540c\u4e8e\u4e22\u5e27\u6b21\u6570\u3002\n\n### Sensor\u2192Control \u6d88\u606f\u7ea7\u8bca\u65ad\n\n\u4e03\u4e2a\u4f20\u611f\u5668\u901a\u9053\u5408\u5e76\u540e\uff0c\u6709 2,212 \u4e2a\u53ef\u7528\u5339\u914d\uff1a\n\n| \u6307\u6807 | \u4e2d\u4f4d\u6570 ms | p90 ms | p99 ms | \u6700\u5927 ms |\n|---|---:|---:|---:|---:|\n| `reaction_time_ms`\uff08\u6d88\u606f\u7ea7\uff09 | 1.866 | 7.034 | 10.856 | 91.617 |\n| `data_age_ms` | 91.662 | 96.942 | 115.894 | 128.066 |\n\n\u8fd9\u4e9b\u6570\u503c\u6765\u81ea `07_diagnostics/sensor_to_control_reaction_age.csv` \u7684\u89e3\u6790\u5668\u5339\u914d\u8bed\u4e49\u3002\u5b83\u4eec\u53ea\u5230 Control \u6d88\u606f\uff0c\u4e0d\u5305\u542b\u547d\u4ee4\u5230\u8f66\u8f86\u6301\u7eed\u51cf\u901f\u5ea6\u7684\u7269\u7406\u54cd\u5e94\u6bb5\uff0c\u56e0\u6b64\u4e0d\u80fd\u4e0e Dynamic Deadline \u6bd4\u8f83\u4e3a\u7269\u7406 deadline miss\u3002\n\n### Record receipt \u4e0e header \u65f6\u95f4\u5dee\n\n`record_time_sec - header_timestamp_sec` \u5747\u672a\u51fa\u73b0\u8d1f\u503c\uff1b\u5b83\u662f\u63a5\u6536/\u5199\u5165\u76f8\u5bf9 header \u7684\u504f\u79fb\u8bca\u65ad\uff0c\u4e0d\u8db3\u4ee5\u72ec\u7acb\u8bc1\u660e\u6240\u6709\u6765\u6e90\u65f6\u949f\u5df2\u7ecf\u4e25\u683c\u540c\u6b65\u3002\n\n| \u8868 | n | \u4e2d\u4f4d\u6570 ms | p99 ms | \u6700\u5927 ms | \u8d1f\u503c\u6570 |\n|---|---:|---:|---:|---:|---:|\n| Localization pose | 319 | 0.351 | 3.796 | 4.369 | 0 |\n| Planning header | 311 | 0.752 | 2.285 | 5.432 | 0 |\n| Control command | 3,151 | 0.283 | 1.566 | 10.487 | 0 |\n| Perception obstacle rows | 89 | 0.266 | 0.770 | 1.102 | 0 |\n| Prediction obstacle rows | 89 | 0.273 | 4.013 | 4.020 | 0 |\n\nPerception/Prediction obstacle CSV \u662f obstacle-row \u8868\uff0c\u4e0d\u662f\u5b8c\u6574\u7a7a\u5e27\u65f6\u95f4\u7ebf\uff1b\u6a21\u5757\u66f4\u65b0\u95f4\u9699\u4f7f\u7528 `module_timeline.csv`\uff0c\u6ca1\u6709\u7528 obstacle \u884c\u6570\u63a8\u65ad\u53d1\u5e03\u7f3a\u53e3\u3002\n\n## \u6570\u636e\u8d28\u91cf\u6807\u8bb0\u4e0e\u53d7\u5f71\u54cd\u8f93\u51fa\n\n| \u6807\u8bb0 | \u53d7\u5f71\u54cd\u5185\u5bb9 | \u8bf4\u660e |\n|---|---|---|\n| `MISSING_REQUIRED_SOURCE` | L1 \u6ce8\u5165\u9a8c\u8bc1\uff1bL4\u2013L6 | \u7f3a bridge/SCB\u3001\u76f4\u63a5 collision/actor history \u548c\u7aef\u70b9\u8ba4\u8bc1\u8bc1\u636e |\n| `CLOCK_ALIGNMENT_UNVERIFIED` | \u4efb\u4f55\u8de8\u6765\u6e90\u7269\u7406 `T_R` \u6216\u8ddd\u79bb\u79ef\u5206 | record/header \u504f\u79fb\u53ef\u63cf\u8ff0\uff0c\u4f46\u4e0d\u80fd\u66ff\u4ee3\u8de8\u7cfb\u7edf\u5899\u949f\u5bf9\u9f50\u8bc1\u660e |\n| `TARGET_IDENTITY_UNCERTAIN` | \u76ee\u6807\u7279\u5b9a\u7684 L3\u2013L6 \u7ed3\u8bba | record \u6709 obstacle id/\u51b3\u7b56\u884c\uff0c\u4f46\u672a\u63d0\u4f9b\u73af\u5883\u771f\u503c\u76ee\u6807\u5173\u8054\u94fe |\n| `OBSERVED_VALUE_UNAVAILABLE` | Dynamic Deadline\u3001Distance Debt\u3001\u5236\u52a8\u4f59\u91cf\u3001\u78b0\u649e\u7ed3\u5c40\u7b49 | \u8f93\u5165\u7f3a\u5931\uff0c\u4fdd\u6301\u4e0d\u53ef\u7528\uff1b\u672a\u4ee5\u6a21\u578b\u503c\u8865\u9f50 |\n\n\u4e0d\u8bbe\u7f6e `RECORD_PARSE_ERROR`\uff1a`extraction_summary.json` \u6ca1\u6709\u89e3\u6790\u5f02\u5e38\uff1b1,082 \u4e2a `unparsed_or_import_missing` \u662f\u8f85\u52a9\u901a\u9053 payload \u672a\u89e3\u6790\uff0c\u5e94\u4f5c\u4e3a\u8986\u76d6\u9650\u5236\u4fdd\u7559\uff0c\u800c\u4e0d\u662f\u4f2a\u88c5\u6210\u96f6\u9519\u8bef\u7684\u5168 payload \u8986\u76d6\u3002\n\n## \u8fd8\u9700\u8981\u54ea\u4e9b\u8bc1\u636e\u624d\u80fd\u7ee7\u7eed L4\u2013L6\n\n\u81f3\u5c11\u9700\u8981\uff1abridge/SCB requested \u4e0e actual delay \u65e5\u5fd7\uff1b\u53ef\u8ffd\u8e2a\u76ee\u6807\u8eab\u4efd\u7684\u73af\u5883\u539f\u56e0/\u7a33\u5b9a Fusion `t_c`\uff1b\u4f7f\u7528\u540c\u4e00\u5899\u949f\u57fa\u51c6\u68c0\u6d4b\u7684\u6301\u7eed\u7269\u7406\u54cd\u5e94 `t_e`\uff1b\u8f66\u8f86\u901f\u5ea6\u7684\u7aef\u70b9\u8986\u76d6\uff1b\u76ee\u6807\u521d\u59cb\u51c0\u8ddd\u3001\u51e0\u4f55\u4e0e\u5b89\u5168\u51c0\u8ddd\u7ea6\u5b9a\uff1b\u72ec\u7acb\u7684\u5b9e\u9645/\u6821\u51c6\u5236\u52a8\u80fd\u529b\u6216\u660e\u786e\u6a21\u578b\u5047\u8bbe\uff1bCARLA collision event\u3001actor history \u4e0e\u6700\u7ec8\u505c\u6b62/\u51c0\u8ddd\u8bc1\u636e\u3002\u5230\u9f50\u540e\u624d\u53ef\u5206\u522b\u8ba1\u7b97 observed/data \u4e0e model/predicted \u7ed3\u679c\u3002\n\n## \u590d\u73b0\n\n```bash\npython3 /Users/huangjinhui/.codex/skills/autonomous-driving-temporal-safety-analysis/scripts/profile_record_export.py \\\n  --record-dir /Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data/202607091933/record \\\n  --output /Users/huangjinhui/.codex/skills/autonomous-driving-temporal-safety-analysis-workspace/iteration-1/eval-2-record-only/with_skill/outputs/record_timing_profile.json\n```\n\n\u539f\u59cb record \u89e3\u6790\u76ee\u5f55\u672a\u88ab\u4fee\u6539\u3002JSON profile \u662f record-derived timing diagnostic\uff0c\u4e0d\u662f\u7269\u7406\u5b89\u5168\u7ed3\u679c\u8868\u3002\n"}, {"name": "record_timing_profile.json", "type": "text", "content": "{\n  \"profile_schema_version\": \"1.0\",\n  \"run_id_inferred\": \"202607091933\",\n  \"record_dir\": \"/Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data/202607091933/record\",\n  \"evidence_class\": \"record_derived_timing_diagnostic\",\n  \"scope_warning\": \"This profile does not establish the physical response endpoint, dynamic deadline, wall-integrated response distance, braking margin, or collision.\",\n  \"coverage\": {\n    \"record_file_count\": 1,\n    \"record_total_size_bytes\": 89254501,\n    \"channel_count\": 28,\n    \"message_count\": 15061,\n    \"parse_errors\": {},\n    \"last_seconds_requested\": null,\n    \"effective_start_time_sec\": null,\n    \"effective_end_time_sec\": null,\n    \"row_counts\": {\n      \"00_meta/record_channels.csv\": 28,\n      \"00_meta/record_message_index.csv\": 15061,\n      \"00_meta/record_topic_rate.csv\": 28,\n      \"01_localization_chassis/chassis.csv\": 320,\n      \"01_localization_chassis/chassis_signal.csv\": 320,\n      \"01_localization_chassis/gnss_best_pose.csv\": 320,\n      \"01_localization_chassis/gnss_odometry.csv\": 320,\n      \"01_localization_chassis/ins_status.csv\": 319,\n      \"01_localization_chassis/localization_pose.csv\": 319,\n      \"01_localization_chassis/localization_status.csv\": 319,\n      \"01_localization_chassis/localization_velocity_acc.csv\": 319,\n      \"01_localization_chassis/tf.csv\": 319,\n      \"01_localization_chassis/tf_static.csv\": 6,\n      \"02_planning/planning_debug_raw.jsonl\": 311,\n      \"02_planning/planning_debug_stage_points.csv\": 470835,\n      \"02_planning/planning_decision.csv\": 311,\n      \"02_planning/planning_header.csv\": 311,\n      \"02_planning/planning_latency_stats.csv\": 3732,\n      \"02_planning/planning_obstacle_decision.csv\": 221,\n      \"02_planning/planning_path_boundary.csv\": 7602,\n      \"02_planning/planning_routing_header.csv\": 311,\n      \"02_planning/planning_status.csv\": 311,\n      \"02_planning/planning_trajectory_first_points.csv\": 24880,\n      \"02_planning/planning_trajectory_points.csv\": 44989,\n      \"02_planning/planning_trajectory_summary.csv\": 311,\n      \"03_control/control_chassis_feedback.csv\": 3151,\n      \"03_control/control_command.csv\": 3151,\n      \"03_control/control_current_target_point.csv\": 12604,\n      \"03_control/control_debug_raw.jsonl\": 3151,\n      \"03_control/control_header.csv\": 3151,\n      \"03_control/control_lat_debug.csv\": 3151,\n      \"03_control/control_latency.csv\": 3151,\n      \"03_control/control_lon_debug.csv\": 3151,\n      \"03_control/control_planning_reuse.csv\": 3151,\n      \"03_control/control_steering_breakdown.csv\": 3151,\n      \"03_control/control_target_point_compare.csv\": 12604,\n      \"03_control/control_vehicle_state.csv\": 3151,\n      \"04_prediction_perception/perception_obstacle_points.csv\": 367,\n      \"04_prediction_perception/perception_obstacles.csv\": 89,\n      \"04_prediction_perception/perception_raw.jsonl\": 312,\n      \"04_prediction_perception/prediction_obstacles.csv\": 89,\n      \"04_prediction_perception/prediction_raw.jsonl\": 311,\n      \"04_prediction_perception/traffic_light.csv\": 11520,\n      \"05_routing_map/planning_trajectory_lane_projection.csv\": 44989,\n      \"05_routing_map/vehicle_lane_relation.csv\": 319,\n      \"06_sensor_raw/lidar_pointcloud_summary.csv\": 319,\n      \"06_sensor_raw/lidar_timestamps.csv\": 319,\n      \"06_sensor_raw/radar_objects.csv\": 31194,\n      \"06_sensor_raw/radar_timestamps.csv\": 319,\n      \"06_sensor_raw/sensor_timeline.csv\": 2236,\n      \"07_diagnostics/abnormal_frames_summary.csv\": 202,\n      \"07_diagnostics/control_reuse_summary.csv\": 309,\n      \"07_diagnostics/module_timeline.csv\": 15061,\n      \"07_diagnostics/planning_control_alignment.csv\": 3151,\n      \"07_diagnostics/sensor_to_control_reaction_age.csv\": 2236,\n      \"07_diagnostics/system_events.csv\": 3196\n    },\n    \"manifest_sections\": [\n      \"00_meta\",\n      \"01_localization_chassis\",\n      \"02_planning\",\n      \"03_control\",\n      \"04_prediction_perception\",\n      \"05_routing_map\",\n      \"06_sensor_raw\",\n      \"07_diagnostics\"\n    ],\n    \"found_file_count\": 59,\n    \"missing_expected_tables\": [],\n    \"quality_flags\": [],\n    \"notes\": [\n      \"record \u53ea\u80fd\u89e3\u6790\u5df2\u5199\u5165\u7684 channel message\",\n      \"planning_reference_line/path_boundary/optimizer_costs \u4f9d\u8d56 ADCTrajectory.debug \u662f\u5426\u5e8f\u5217\u5316\u5bf9\u5e94\u5b57\u6bb5\",\n      \"vehicle_lane_relation/planning_trajectory_lane_projection \u4f9d\u8d56 --map\",\n      \"--last-seconds \u4f7f\u7528 record \u65f6\u95f4\u6233\u7a97\u53e3\uff0c\u6240\u6709\u8f93\u51fa\u8868\u4ec5\u8986\u76d6\u8be5\u7a97\u53e3\"\n    ]\n  },\n  \"layer_2_temporal_degradation\": {\n    \"key_topic_rates\": {\n      \"/apollo/canbus/chassis\": {\n        \"message_count\": 320,\n        \"duration_sec\": 31.892613410949707,\n        \"rate_hz\": 10.002316081455952,\n        \"period_median_ms\": 100.00467300415039,\n        \"period_published_max_ms\": 101.88126564025879,\n        \"gap_gt_1_5x_median_count\": 0\n      },\n      \"/apollo/control\": {\n        \"message_count\": 3151,\n        \"duration_sec\": 31.501160383224487,\n        \"rate_hz\": 99.99631637942738,\n        \"period_median_ms\": 10.006546974182129,\n        \"period_published_max_ms\": 19.805192947387695,\n        \"gap_gt_1_5x_median_count\": 10\n      },\n      \"/apollo/guardian\": {\n        \"message_count\": 3196,\n        \"duration_sec\": 31.95194721221924,\n        \"rate_hz\": 99.99390581047751,\n        \"period_median_ms\": 9.999990463256836,\n        \"period_published_max_ms\": 19.904375076293945,\n        \"gap_gt_1_5x_median_count\": 26\n      },\n      \"/apollo/localization/pose\": {\n        \"message_count\": 319,\n        \"duration_sec\": 31.796000480651855,\n        \"rate_hz\": 10.001257868690303,\n        \"period_median_ms\": 100.02326965332031,\n        \"period_published_max_ms\": 104.12859916687012,\n        \"gap_gt_1_5x_median_count\": 0\n      },\n      \"/apollo/perception/obstacles\": {\n        \"message_count\": 312,\n        \"duration_sec\": 31.917236804962158,\n        \"rate_hz\": 9.743951266848043,\n        \"period_median_ms\": 79.53739166259766,\n        \"period_published_max_ms\": 295.9752082824707,\n        \"gap_gt_1_5x_median_count\": 45\n      },\n      \"/apollo/planning\": {\n        \"message_count\": 311,\n        \"duration_sec\": 31.84015202522278,\n        \"rate_hz\": 9.736134417776261,\n        \"period_median_ms\": 84.41877365112305,\n        \"period_published_max_ms\": 291.11456871032715,\n        \"gap_gt_1_5x_median_count\": 44\n      },\n      \"/apollo/prediction\": {\n        \"message_count\": 311,\n        \"duration_sec\": 31.72429609298706,\n        \"rate_hz\": 9.77169041328322,\n        \"period_median_ms\": 80.28221130371094,\n        \"period_published_max_ms\": 296.51713371276855,\n        \"gap_gt_1_5x_median_count\": 42\n      }\n    },\n    \"key_channel_update_gaps\": {\n      \"/apollo/canbus/chassis\": {\n        \"timestamp_count\": 320,\n        \"gap_count\": 319,\n        \"non_positive_gap_count\": 0,\n        \"gap_ms\": {\n          \"count\": 319,\n          \"min\": 94.48885917663574,\n          \"mean\": 99.97684454843169,\n          \"median\": 100.00467300415039,\n          \"p90\": 100.76613426208496,\n          \"p95\": 101.04365348815918,\n          \"p99\": 101.67632102966309,\n          \"max\": 101.88126564025879\n        },\n        \"estimated_period_ms\": 100.00467300415039,\n        \"gap_gt_1_5x_median_count\": 0,\n        \"gap_gt_2x_median_count\": 0,\n        \"gap_gt_3x_median_count\": 0\n      },\n      \"/apollo/control\": {\n        \"timestamp_count\": 3151,\n        \"gap_count\": 3150,\n        \"non_positive_gap_count\": 0,\n        \"gap_ms\": {\n          \"count\": 3150,\n          \"min\": 0.0820159912109375,\n          \"mean\": 10.000368375626822,\n          \"median\": 10.006546974182129,\n          \"p90\": 10.572528839111328,\n          \"p95\": 11.1906886100769,\n          \"p99\": 12.947602272033691,\n          \"max\": 19.805192947387695\n        },\n        \"estimated_period_ms\": 10.006546974182129,\n        \"gap_gt_1_5x_median_count\": 10,\n        \"gap_gt_2x_median_count\": 0,\n        \"gap_gt_3x_median_count\": 0\n      },\n      \"/apollo/guardian\": {\n        \"timestamp_count\": 3196,\n        \"gap_count\": 3195,\n        \"non_positive_gap_count\": 0,\n        \"gap_ms\": {\n          \"count\": 3195,\n          \"min\": 0.02956390380859375,\n          \"mean\": 10.000609456093658,\n          \"median\": 9.999990463256836,\n          \"p90\": 10.176658630371094,\n          \"p95\": 11.05997562408447,\n          \"p99\": 14.007687568664549,\n          \"max\": 19.904375076293945\n        },\n        \"estimated_period_ms\": 9.999990463256836,\n        \"gap_gt_1_5x_median_count\": 26,\n        \"gap_gt_2x_median_count\": 0,\n        \"gap_gt_3x_median_count\": 0\n      },\n      \"/apollo/localization/pose\": {\n        \"timestamp_count\": 319,\n        \"gap_count\": 318,\n        \"non_positive_gap_count\": 0,\n        \"gap_ms\": {\n          \"count\": 318,\n          \"min\": 95.75796127319336,\n          \"mean\": 99.98742289513162,\n          \"median\": 100.02326965332031,\n          \"p90\": 100.87108612060547,\n          \"p95\": 101.26405954360962,\n          \"p99\": 103.15074682235715,\n          \"max\": 104.12859916687012\n        },\n        \"estimated_period_ms\": 100.02326965332031,\n        \"gap_gt_1_5x_median_count\": 0,\n        \"gap_gt_2x_median_count\": 0,\n        \"gap_gt_3x_median_count\": 0\n      },\n      \"/apollo/perception/obstacles\": {\n        \"timestamp_count\": 312,\n        \"gap_count\": 311,\n        \"non_positive_gap_count\": 0,\n        \"gap_ms\": {\n          \"count\": 311,\n          \"min\": 73.35925102233887,\n          \"mean\": 102.62777107704873,\n          \"median\": 79.53739166259766,\n          \"p90\": 173.19273948669434,\n          \"p95\": 276.552677154541,\n          \"p99\": 281.56957626342773,\n          \"max\": 295.9752082824707\n        },\n        \"estimated_period_ms\": 79.53739166259766,\n        \"gap_gt_1_5x_median_count\": 45,\n        \"gap_gt_2x_median_count\": 41,\n        \"gap_gt_3x_median_count\": 18\n      },\n      \"/apollo/planning\": {\n        \"timestamp_count\": 311,\n        \"gap_count\": 310,\n        \"non_positive_gap_count\": 0,\n        \"gap_ms\": {\n          \"count\": 310,\n          \"min\": 57.32131004333496,\n          \"mean\": 102.71016782329929,\n          \"median\": 84.41877365112305,\n          \"p90\": 174.30982589721683,\n          \"p95\": 270.217251777649,\n          \"p99\": 286.75827741622925,\n          \"max\": 291.11456871032715\n        },\n        \"estimated_period_ms\": 84.41877365112305,\n        \"gap_gt_1_5x_median_count\": 44,\n        \"gap_gt_2x_median_count\": 37,\n        \"gap_gt_3x_median_count\": 18\n      },\n      \"/apollo/prediction\": {\n        \"timestamp_count\": 311,\n        \"gap_count\": 310,\n        \"non_positive_gap_count\": 0,\n        \"gap_ms\": {\n          \"count\": 310,\n          \"min\": 71.78592681884766,\n          \"mean\": 102.33643900963568,\n          \"median\": 80.28221130371094,\n          \"p90\": 171.39461040496826,\n          \"p95\": 277.09619998931885,\n          \"p99\": 282.80583143234253,\n          \"max\": 296.51713371276855\n        },\n        \"estimated_period_ms\": 80.28221130371094,\n        \"gap_gt_1_5x_median_count\": 42,\n        \"gap_gt_2x_median_count\": 39,\n        \"gap_gt_3x_median_count\": 18\n      }\n    },\n    \"planning_total_time_ms\": {\n      \"count\": 311,\n      \"min\": 10.854959487915039,\n      \"mean\": 24.971913678086455,\n      \"median\": 23.553848266601562,\n      \"p90\": 34.7135066986084,\n      \"p95\": 36.98241710662842,\n      \"p99\": 40.596103668212876,\n      \"max\": 44.05927658081055,\n      \"deduplicated_by\": \"planning_seq\",\n      \"value_column\": \"total_time_ms\"\n    },\n    \"control_total_time_ms\": {\n      \"count\": 3151,\n      \"min\": 0.566983,\n      \"mean\": 1.0139025198349731,\n      \"median\": 0.9641409999999999,\n      \"p90\": 1.357138,\n      \"p95\": 1.477044,\n      \"p99\": 1.7226154999999999,\n      \"max\": 2.4714899999999997,\n      \"deduplicated_by\": \"control_seq\",\n      \"value_column\": \"total_time_ms\"\n    },\n    \"planning_age_ms\": {\n      \"count\": 3151,\n      \"min\": 1.7704963684082031,\n      \"mean\": 65.67199432218086,\n      \"median\": 52.831411361694336,\n      \"p90\": 144.8068618774414,\n      \"p95\": 194.13387775421143,\n      \"p99\": 263.76867294311523,\n      \"max\": 289.31188583374023\n    },\n    \"planning_reuse_count\": {\n      \"count\": 309,\n      \"min\": 6.0,\n      \"mean\": 10.197411003236246,\n      \"median\": 8.0,\n      \"p90\": 17.19999999999999,\n      \"p95\": 27.0,\n      \"p99\": 29.0,\n      \"max\": 29.0\n    },\n    \"planning_max_age_by_reuse_run_ms\": {\n      \"count\": 309,\n      \"min\": 52.93989181518555,\n      \"mean\": 98.58301928128239,\n      \"median\": 80.82914352416992,\n      \"p90\": 170.82729339599607,\n      \"p95\": 268.02968978881836,\n      \"p99\": 286.0770797729492,\n      \"max\": 289.31188583374023\n    },\n    \"abnormal_frames\": {\n      \"row_count\": 202,\n      \"reason_counts\": {\n        \"brake_gt_10\": 202\n      },\n      \"module_counts\": {\n        \"control\": 202\n      }\n    }\n  },\n  \"layer_3_cause_effect_timing\": {\n    \"sensor_to_control_message_diagnostics\": {\n      \"semantics_note\": \"Message-level sensor-to-Control diagnostics from parsed record; do not substitute for physical Reaction Time t2-t1.\",\n      \"by_sensor_channel\": {\n        \"/apollo/sensor/gnss/best_pose\": {\n          \"reaction_time_ms\": {\n            \"count\": 316,\n            \"min\": 0.2295970916748047,\n            \"mean\": 2.1594438371779043,\n            \"median\": 1.6716718673706055,\n            \"p90\": 2.583026885986328,\n            \"p95\": 3.0832886695861816,\n            \"p99\": 10.490977764129651,\n            \"max\": 91.61663055419922\n          },\n          \"data_age_ms\": {\n            \"count\": 316,\n            \"min\": 89.1716480255127,\n            \"mean\": 91.74175881132295,\n            \"median\": 91.54295921325684,\n            \"p90\": 92.43810176849365,\n            \"p95\": 92.99761056900024,\n            \"p99\": 100.9405374526978,\n            \"max\": 102.14853286743164\n          }\n        },\n        \"/apollo/sensor/gnss/corrected_imu\": {\n          \"reaction_time_ms\": {\n            \"count\": 316,\n            \"min\": 0.2601146697998047,\n            \"mean\": 2.1920845478395874,\n            \"median\": 1.7104148864746094,\n            \"p90\": 2.5947093963623047,\n            \"p95\": 3.1217336654663086,\n            \"p99\": 10.54794788360597,\n            \"max\": 91.58706665039062\n          },\n          \"data_age_ms\": {\n            \"count\": 316,\n            \"min\": 89.25890922546387,\n            \"mean\": 91.77439952198463,\n            \"median\": 91.56584739685059,\n            \"p90\": 92.48661994934082,\n            \"p95\": 93.02765130996704,\n            \"p99\": 100.99481344223027,\n            \"max\": 102.21147537231445\n          }\n        },\n        \"/apollo/sensor/gnss/heading\": {\n          \"reaction_time_ms\": {\n            \"count\": 316,\n            \"min\": 0.1456737518310547,\n            \"mean\": 2.075308485876156,\n            \"median\": 1.607060432434082,\n            \"p90\": 2.474546432495117,\n            \"p95\": 2.9379725456237793,\n            \"p99\": 10.422217845916764,\n            \"max\": 91.59493446350098\n          },\n          \"data_age_ms\": {\n            \"count\": 316,\n            \"min\": 87.41044998168945,\n            \"mean\": 91.67489748966845,\n            \"median\": 91.43733978271484,\n            \"p90\": 92.315673828125,\n            \"p95\": 93.0318832397461,\n            \"p99\": 101.28437280654907,\n            \"max\": 104.01034355163574\n          }\n        },\n        \"/apollo/sensor/gnss/ins_stat\": {\n          \"reaction_time_ms\": {\n            \"count\": 316,\n            \"min\": 0.1327991485595703,\n            \"mean\": 2.0416733584826505,\n            \"median\": 1.5655755996704102,\n            \"p90\": 2.4247169494628906,\n            \"p95\": 2.7781128883361816,\n            \"p99\": 10.380601882934586,\n            \"max\": 91.48740768432617\n          },\n          \"data_age_ms\": {\n            \"count\": 316,\n            \"min\": 87.35513687133789,\n            \"mean\": 91.66040299813959,\n            \"median\": 91.39704704284668,\n            \"p90\": 92.30053424835205,\n            \"p95\": 93.0929183959961,\n            \"p99\": 101.30985975265503,\n            \"max\": 103.98530960083008\n          }\n        },\n        \"/apollo/sensor/gnss/odometry\": {\n          \"reaction_time_ms\": {\n            \"count\": 316,\n            \"min\": 0.20265579223632812,\n            \"mean\": 2.1195902100092248,\n            \"median\": 1.6453266143798828,\n            \"p90\": 2.53450870513916,\n            \"p95\": 2.9953718185424805,\n            \"p99\": 10.461783409118667,\n            \"max\": 91.60256385803223\n          },\n          \"data_age_ms\": {\n            \"count\": 316,\n            \"min\": 87.43143081665039,\n            \"mean\": 91.71917921380151,\n            \"median\": 91.47727489471436,\n            \"p90\": 92.39816665649414,\n            \"p95\": 93.05286407470703,\n            \"p99\": 101.30672454833984,\n            \"max\": 104.04157638549805\n          }\n        },\n        \"/apollo/sensor/radar/front\": {\n          \"reaction_time_ms\": {\n            \"count\": 316,\n            \"min\": 0.32210350036621094,\n            \"mean\": 6.1803588384314425,\n            \"median\": 6.210207939147949,\n            \"p90\": 7.5522661209106445,\n            \"p95\": 7.992804050445557,\n            \"p99\": 10.793709754943848,\n            \"max\": 65.40608406066895\n          },\n          \"data_age_ms\": {\n            \"count\": 316,\n            \"min\": 63.066959381103516,\n            \"mean\": 95.73652019983605,\n            \"median\": 96.1923599243164,\n            \"p90\": 106.07635974884033,\n            \"p95\": 112.24770545959473,\n            \"p99\": 127.09771394729617,\n            \"max\": 128.01599502563477\n          }\n        },\n        \"/apollo/sensor/velodyne64/compensator/PointCloud2\": {\n          \"reaction_time_ms\": {\n            \"count\": 316,\n            \"min\": 0.37407875061035156,\n            \"mean\": 6.301934206033055,\n            \"median\": 6.350874900817871,\n            \"p90\": 7.667779922485352,\n            \"p95\": 8.1787109375,\n            \"p99\": 10.910284519195558,\n            \"max\": 65.65213203430176\n          },\n          \"data_age_ms\": {\n            \"count\": 316,\n            \"min\": 63.14229965209961,\n            \"mean\": 95.85809556743767,\n            \"median\": 96.30799293518066,\n            \"p90\": 106.1253547668457,\n            \"p95\": 112.40148544311523,\n            \"p99\": 127.15342044830325,\n            \"max\": 128.065824508667\n          }\n        }\n      },\n      \"all_channels\": {\n        \"reaction_time_ms\": {\n          \"count\": 2212,\n          \"min\": 0.1327991485595703,\n          \"mean\": 3.29577049769286,\n          \"median\": 1.8663406372070312,\n          \"p90\": 7.034254074096681,\n          \"p95\": 7.504272460937498,\n          \"p99\": 10.855853557586661,\n          \"max\": 91.61663055419922\n        },\n        \"data_age_ms\": {\n          \"count\": 2212,\n          \"min\": 63.066959381103516,\n          \"mean\": 92.88075054317012,\n          \"median\": 91.66228771209717,\n          \"p90\": 96.94187641143799,\n          \"p95\": 101.25502347946167,\n          \"p99\": 115.89429378509521,\n          \"max\": 128.065824508667\n        }\n      }\n    },\n    \"record_minus_header_clock_offsets_ms\": {\n      \"01_localization_chassis/localization_pose.csv\": {\n        \"count\": 319,\n        \"min\": 0.18262863159179688,\n        \"mean\": 0.4942357353282199,\n        \"median\": 0.3514289855957031,\n        \"p90\": 0.6689548492431638,\n        \"p95\": 1.4027595520019522,\n        \"p99\": 3.7964725494384757,\n        \"max\": 4.369497299194336,\n        \"negative_count\": 0\n      },\n      \"02_planning/planning_header.csv\": {\n        \"count\": 311,\n        \"min\": 0.46896934509277344,\n        \"mean\": 0.8420890550521409,\n        \"median\": 0.7517337799072266,\n        \"p90\": 1.1663436889648438,\n        \"p95\": 1.4257431030273438,\n        \"p99\": 2.285408973693844,\n        \"max\": 5.431652069091797,\n        \"negative_count\": 0\n      },\n      \"03_control/control_command.csv\": {\n        \"count\": 3151,\n        \"min\": 0.12946128845214844,\n        \"mean\": 0.3365759091390878,\n        \"median\": 0.2834796905517578,\n        \"p90\": 0.42510032653808594,\n        \"p95\": 0.5120038986206055,\n        \"p99\": 1.565694808959961,\n        \"max\": 10.487079620361328,\n        \"negative_count\": 0\n      },\n      \"04_prediction_perception/perception_obstacles.csv\": {\n        \"count\": 89,\n        \"min\": 0.16999244689941406,\n        \"mean\": 0.2890731511491068,\n        \"median\": 0.2655982971191406,\n        \"p90\": 0.3911018371582031,\n        \"p95\": 0.4302024841308594,\n        \"p99\": 0.7700252532959001,\n        \"max\": 1.1017322540283203,\n        \"negative_count\": 0\n      },\n      \"04_prediction_perception/prediction_obstacles.csv\": {\n        \"count\": 89,\n        \"min\": 0.17380714416503906,\n        \"mean\": 0.5244994431399228,\n        \"median\": 0.2727508544921875,\n        \"p90\": 1.2454986572265625,\n        \"p95\": 1.7241954803466781,\n        \"p99\": 4.0132904052734375,\n        \"max\": 4.020214080810547,\n        \"negative_count\": 0\n      }\n    }\n  },\n  \"unavailable_from_record_alone\": {\n    \"layer_1_temporal_disturbance\": [\n      \"verified bridge/SCB requested and actual wall delay unless explicitly recorded\"\n    ],\n    \"layer_4_temporal_correctness\": [\n      \"independently derived dynamic physical deadline\",\n      \"physical timing slack and deadline miss\"\n    ],\n    \"layer_5_temporal_to_physical\": [\n      \"endpoint-compatible wall-integrated response distance and distance debt\"\n    ],\n    \"layer_6_physical_safety\": [\n      \"direct collision truth\",\n      \"full observed braking distance\",\n      \"final clearance and observed safety margin\"\n    ]\n  }\n}"}], "grading": {"expectations": [{"text": "A JSON record timing profile is generated from the parsed export.", "passed": true, "evidence": "outputs/record_timing_profile.json is valid JSON and contains coverage, Layer 2 metrics, Layer 3 diagnostics, and explicit evidence-boundary sections."}, {"text": "Message-level sensor-to-Control reaction time is not mislabeled as physical T_R.", "passed": true, "evidence": "The audit states that record reaction_time_ms is message-level, stops at Control, excludes the Control-to-physical-response segment, and must not be renamed physical T_R."}, {"text": "Dynamic Deadline, physical timing slack, Distance Debt, braking margin, and collision are marked unavailable from record alone.", "passed": true, "evidence": "The conclusion and L4-L6 availability rows explicitly leave tau_dynamic, timing_slack, deadline_miss, D_distance_debt, braking margin, and collision outcome unavailable."}, {"text": "Parse coverage, missing tables, update gaps, Planning age/reuse, and module latency are audited.", "passed": true, "evidence": "The audit reports 28 channels, 15,061 messages, parse_errors={}, all 18 key tables present, per-channel gap quantiles, Planning/Control timing, Planning age, and reuse statistics."}, {"text": "No model value is presented as an observed result.", "passed": true, "evidence": "Missing physical quantities remain unavailable, and the report states that no model values were used to fill them."}], "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}, "claims": [{"claim": "The parsed record has 28 channels and 15,061 messages with no extraction_summary parse errors.", "type": "factual", "verified": true, "evidence": "Matches source extraction_summary.json and generated profile coverage."}, {"claim": "Guardian is not the bridge command source in the current architecture.", "type": "factual", "verified": true, "evidence": "Matches workspace AGENTS.md: the bridge reads Control directly because Apollo is not sending Guardian commands to the bridge."}], "user_notes_summary": {"uncertainties": ["Cross-system physical endpoint and clock alignment remain unavailable from this record-only input."], "needs_review": [], "workarounds": []}, "eval_feedback": {"suggestions": [], "overall": "The assertions are discriminating for the record-only evidence-boundary behavior and all passed substantively."}}}, {"id": "eval-2-record-only-without_skill", "prompt": "\u53ea\u7ed9\u4f60 /Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data/202607091933/record \u8fd9\u4e00\u4e2a Apollo record \u89e3\u6790\u76ee\u5f55\u3002\u8bf7\u5224\u65ad\u516d\u5c42\u6846\u67b6\u4e2d\u54ea\u4e9b\u6307\u6807\u53ef\u4ee5\u76f4\u63a5\u8ba1\u7b97\u3001\u54ea\u4e9b\u4e0d\u80fd\uff0c\u5e76\u751f\u6210 record timing profile\u3002\u4e0d\u8981\u4ece\u7f3a\u5931\u7684\u7269\u7406\u6570\u636e\u4e2d\u731c\u6d4b Dynamic Deadline\u3001Distance Debt\u3001\u5236\u52a8\u4f59\u91cf\u6216\u78b0\u649e\u7ed3\u5c40\u3002", "eval_id": 2, "outputs": [{"name": "record_availability_audit.md", "type": "text", "content": "# Apollo record \u516d\u5c42\u6307\u6807\u53ef\u7528\u6027\u5ba1\u8ba1\n\n## \u7ed3\u8bba\n\n\u8fd9\u4e2a\u89e3\u6790\u76ee\u5f55\u8db3\u4ee5\u5efa\u7acb **record \u4fa7\u65f6\u95f4\u753b\u50cf**\uff1a\u53ef\u76f4\u63a5\u7edf\u8ba1\u5404 topic \u7684\u5468\u671f\u3001\u9891\u7387\u3001\u6296\u52a8\u3001\u66f4\u65b0\u95f4\u9699\u3001\u6a21\u5757\u81ea\u8eab\u8ba1\u7b97\u8017\u65f6\u3001planning \u8f93\u51fa\u88ab control \u590d\u7528\u65f6\u7684\u5e74\u9f84\uff0c\u4ee5\u53ca\u4f20\u611f\u5668\u6d88\u606f\u4e0e control \u8f93\u51fa\u4e4b\u95f4\u7684\u65f6\u95f4\u5bf9\u9f50\u91cf\u3002\n\n\u4f46\u5b83\u4e0d\u8db3\u4ee5\u72ec\u7acb\u5b8c\u6210\u201c\u65f6\u95f4\u6b63\u786e\u6027 \u2192 \u7269\u7406\u5b89\u5168\u540e\u679c\u201d\u7684\u5168\u94fe\u6761\u5224\u5b9a\u3002\u76ee\u5f55\u4e2d\u6ca1\u6709\u660e\u786e\u7684\u5371\u9669\u4e8b\u4ef6\u8d77\u70b9/\u54cd\u5e94\u5b8c\u6210\u7aef\u70b9\u3001\u52a8\u6001\u622a\u6b62\u65f6\u95f4\u6240\u9700\u7684\u7269\u7406\u7ea6\u675f\u4e0e\u5b89\u5168\u8fb9\u754c\uff0c\u4e5f\u6ca1\u6709 CARLA \u78b0\u649e/\u63a5\u89e6\u771f\u503c\u6216\u5b9e\u9a8c\u6700\u7ec8\u51c0\u8ddd\u3002\u56e0\u6b64 **Dynamic Deadline\u3001Timing Slack\u3001Deadline Miss\u3001Distance Debt\u3001\u5236\u52a8\u4f59\u91cf\u3001near miss \u548c\u78b0\u649e\u7ed3\u5c40\u5747\u4e0d\u53ef\u8ba1\u7b97\uff0c\u4e14\u672c\u5ba1\u8ba1\u672a\u8fdb\u884c\u731c\u6d4b**\u3002\n\n## \u8f93\u5165\u4e0e\u65f6\u95f4\u8303\u56f4\n\n- \u552f\u4e00\u8f93\u5165\uff1a`/Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data/202607091933/record`\n- record \u6587\u4ef6\u6570\uff1a1\n- channel \u6570\uff1a28\n- \u6d88\u606f\u6570\uff1a15,061\n- record \u65f6\u95f4\u8303\u56f4\uff1a`1783596784.7710555` \u81f3 `1783596816.7628047` \u79d2\n- record \u8986\u76d6\u65f6\u957f\uff1a31.991749 \u79d2\n- \u89e3\u6790\u5668\u62a5\u544a\uff1a`parse_errors = {}`\n- \u672c\u5ba1\u8ba1\u4f7f\u7528 `record_time_sec` \u4f5c\u4e3a record \u5185\u7edf\u4e00\u65f6\u95f4\u8f74\uff1b\u5b83\u6ca1\u6709\u88ab\u5916\u90e8\u65f6\u949f\u8bc1\u636e\u8fdb\u4e00\u6b65\u6821\u51c6\uff0c\u56e0\u6b64\u4e0d\u628a\u5b83\u4e0e CARLA \u4eff\u771f\u65f6\u95f4\u6df7\u7528\u3002\n\n## \u516d\u5c42\u53ef\u7528\u6027\n\n| \u5c42\u7ea7 | \u6307\u6807/\u95ee\u9898 | \u5224\u5b9a | \u4f9d\u636e\u4e0e\u9650\u5236 |\n|---|---|---:|---|\n| 1 \u65f6\u95f4\u6270\u52a8 | topic \u5468\u671f\u3001\u9891\u7387\u3001\u5468\u671f\u6296\u52a8\u3001\u66f4\u65b0 gap | \u53ef\u76f4\u63a5\u8ba1\u7b97 | `record_message_index.csv` \u4e0e `record_topic_rate.csv` \u6709\u9010\u6d88\u606f record \u65f6\u95f4\u548c\u73b0\u6210\u5468\u671f\u7edf\u8ba1\u3002 |\n| 1 \u65f6\u95f4\u6270\u52a8 | planning/control \u6a21\u5757\u81ea\u8eab\u8ba1\u7b97\u8017\u65f6 | \u53ef\u76f4\u63a5\u8ba1\u7b97 | `planning_latency_stats.csv`\u3001`control_latency.csv` \u63d0\u4f9b `total_time_ms`\u3002 |\n| 1 \u65f6\u95f4\u6270\u52a8 | header\u2192record \u65f6\u95f4\u5dee | \u53ef\u76f4\u63a5\u8ba1\u7b97\uff0c\u4f46\u53ea\u80fd\u4f5c\u8bb0\u5f55/\u53d1\u5e03\u6ede\u540e\u91cf | \u53ef\u8ba1\u7b97 `record_time_sec-header_timestamp_sec`\uff1b\u4e0d\u80fd\u4ec5\u51ed\u8be5\u5dee\u503c\u62c6\u6210\u4f20\u8f93\u3001\u6392\u961f\u3001\u8c03\u5ea6\u6216\u65f6\u949f\u8bef\u5dee\u3002 |\n| 1 \u65f6\u95f4\u6270\u52a8 | Backlog \u6839\u56e0\u3001\u8d44\u6e90 Interference\u3001\u8c03\u5ea6 Phase \u5408\u540c\u8fdd\u53cd | \u4e0d\u53ef\u76f4\u63a5\u8ba1\u7b97 | \u6709 planning reuse \u548c gap \u75c7\u72b6\uff0c\u4f46\u6ca1\u6709\u961f\u5217\u957f\u5ea6\u3001CPU/GPU/\u7f51\u7edc\u8d44\u6e90\u3001\u8c03\u5ea6\u5668\u4e8b\u4ef6\u6216\u6b63\u5f0f\u76f8\u4f4d\u7ea6\u675f\u3002 |\n| 2 \u65f6\u95f4\u884c\u4e3a\u9000\u5316 | \u66f4\u65b0\u8fde\u7eed\u6027 | \u53ef\u76f4\u63a5\u8ba1\u7b97 | topic gap \u8ba1\u6570\u3001\u6700\u5927\u5468\u671f\u548c\u5468\u671f\u6807\u51c6\u5dee\u53ef\u76f4\u63a5\u63cf\u8ff0\u8fde\u7eed\u6027\u9000\u5316\u3002 |\n| 2 \u65f6\u95f4\u884c\u4e3a\u9000\u5316 | planning \u6570\u636e\u65b0\u9c9c\u5ea6\u4e0e\u590d\u7528 | \u53ef\u76f4\u63a5\u8ba1\u7b97 | `planning_control_alignment.csv` \u5c06 control \u4e0e\u5176\u4f7f\u7528\u7684 planning \u5e8f\u5217\u5bf9\u9f50\uff0c\u7ed9\u51fa `planning_age_ms`\u3001`reuse_count`\u3001`reuse_index_in_run`\u3002 |\n| 2 \u65f6\u95f4\u884c\u4e3a\u9000\u5316 | sensor\u2192control \u65f6\u95f4\u5bf9\u9f50\u53d8\u5316 | \u53ef\u76f4\u63a5\u8ba1\u7b97\u4e3a\u5bf9\u9f50\u91cf | `sensor_to_control_reaction_age.csv` \u53ef\u7edf\u8ba1\u201c\u4f20\u611f\u5668 record \u540e\u7b2c\u4e00\u4e2a/\u6700\u540e\u4e00\u4e2a\u3001\u4e14\u53d1\u751f\u5728\u4e0b\u4e00\u4f20\u611f\u5668\u6d88\u606f\u524d\u7684 control\u201d\u7684\u65f6\u95f4\u5dee\u3002 |\n| 3 \u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81 | planning\u2192control Data Age | \u53ef\u76f4\u63a5\u8ba1\u7b97 | control \u5185\u6709\u8f93\u5165 trajectory header\uff0c\u4e14\u8bca\u65ad\u8868\u7ed9\u51fa\u5339\u914d planning \u5e8f\u5217\u4e0e\u53d1\u5e03 record \u65f6\u95f4\u3002 |\n| 3 \u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81 | \u5b8c\u6574\u611f\u77e5\u2192\u9884\u6d4b\u2192\u89c4\u5212\u2192\u63a7\u5236\u56e0\u679c Reaction Time | \u4ec5\u6709\u4ee3\u7406\u91cf\uff0c\u4e0d\u80fd\u786e\u8ba4 | \u76f8\u90bb\u65f6\u95f4\u7a97\u914d\u5bf9\u4e0d\u80fd\u8bc1\u660e control \u56e0\u8be5\u4f20\u611f\u5668\u6d88\u606f\u800c\u53d8\u5316\uff1b\u7f3a\u5c11\u5371\u9669\u4e8b\u4ef6\u89e6\u53d1\u8bed\u4e49\u548c\u7ecf\u9a8c\u8bc1\u7684\u8de8\u6a21\u5757 trace/\u56e0\u679c\u5339\u914d\u3002 |\n| 3 \u56e0\u679c\u94fe\u65f6\u95f4\u8868\u5f81 | \u5371\u9669\u4e8b\u4ef6\u5230\u6709\u6548\u5236\u52a8\u7684\u7aef\u5230\u7aef\u54cd\u5e94\u65f6\u95f4 | \u4e0d\u53ef\u8ba1\u7b97 | \u7f3a\u5c11\u4e8b\u4ef6\u5b9a\u4e49\u3001\u89e6\u53d1\u65f6\u523b `t_c`\u3001\u6709\u6548\u54cd\u5e94\u7aef\u70b9 `t_e` \u548c\u63a7\u5236\u751f\u6548/\u8f66\u8f86\u54cd\u5e94\u5224\u636e\u3002 |\n| 4 \u65f6\u95f4\u6b63\u786e\u6027\u5224\u5b9a | Dynamic Deadline `tau*` | \u4e0d\u53ef\u8ba1\u7b97 | record \u6709\u901f\u5ea6\u548c\u90e8\u5206\u611f\u77e5\u5bf9\u8c61\uff0c\u4f46\u7f3a\u5c11\u7ecf\u786e\u8ba4\u7684\u53ef\u7528\u8ddd\u79bb\u3001\u5b89\u5168\u51c0\u8ddd\u3001\u5236\u52a8\u80fd\u529b/\u8def\u9762\u6761\u4ef6\u53ca deadline \u6a21\u578b\u53c2\u6570\uff1b\u4e0d\u80fd\u4ece\u65f6\u5ef6\u53cd\u63a8 deadline\u3002 |\n| 4 \u65f6\u95f4\u6b63\u786e\u6027\u5224\u5b9a | Timing Slack `S_T=tau*-T_R`\u3001Deadline Miss | \u4e0d\u53ef\u8ba1\u7b97 | `tau*` \u4e0e\u5371\u9669\u4e8b\u4ef6\u8bed\u4e49\u4e0b\u7684 `T_R` \u5747\u4e0d\u53ef\u7528\u3002 |\n| 5 \u65f6\u95f4\u2014\u7269\u7406\u4f20\u64ad | \u5168 record \u901f\u5ea6\u79ef\u5206 | \u53ef\u76f4\u63a5\u8ba1\u7b97\uff0c\u4f46\u4ec5\u4e3a\u8f85\u52a9\u91cf | chassis \u901f\u5ea6\u5728\u81ea\u8eab 31.892613 \u79d2\u8986\u76d6\u5185\u6309 record \u65f6\u95f4\u68af\u5f62\u79ef\u5206\u4e3a 196.616827 m\uff1b\u8fd9\u4e0d\u662f\u54cd\u5e94\u9636\u6bb5\u8ddd\u79bb\u3002 |\n| 5 \u65f6\u95f4\u2014\u7269\u7406\u4f20\u64ad | `D_delay`/\u54cd\u5e94\u8ddd\u79bb | \u4e0d\u53ef\u8ba1\u7b97 | \u867d\u6709\u901f\u5ea6\u65f6\u95f4\u5e8f\u5217\uff0c\u4f46\u6ca1\u6709\u7edf\u4e00\u5b9a\u4e49\u7684 `t1/t2` \u6216 `t_c/t_e`\uff0c\u4e0d\u80fd\u9009\u62e9\u7aef\u70b9\u540e\u628a\u4efb\u610f\u79ef\u5206\u5192\u5145\u54cd\u5e94\u9636\u6bb5\u8ddd\u79bb\u3002 |\n| 5 \u65f6\u95f4\u2014\u7269\u7406\u4f20\u64ad | Distance Debt | \u4e0d\u53ef\u8ba1\u7b97 | \u7f3a\u5c11 `t_d=t_c+tau*` \u548c\u6709\u6548\u54cd\u5e94\u7aef\u70b9 `t_e`\u3002 |\n| 6 \u7269\u7406\u5b89\u5168\u7ed3\u679c | \u5236\u52a8\u547d\u4ee4\u63cf\u8ff0 | \u53ef\u76f4\u63a5\u8ba1\u7b97\uff0c\u4f46\u4e0d\u662f\u5b89\u5168\u7ed3\u5c40 | control \u4e2d\u6709 brake\u3001throttle\u3001acceleration target\uff1b202 \u4e2a control \u5e27\u6ee1\u8db3 `brake>10`\uff0c\u53ea\u8bf4\u660e\u547d\u4ee4\u51fa\u73b0\u3002 |\n| 6 \u7269\u7406\u5b89\u5168\u7ed3\u679c | \u5236\u52a8\u8ddd\u79bb\u3001\u6700\u7ec8\u51c0\u8ddd\u3001\u5236\u52a8\u4f59\u91cf | \u4e0d\u53ef\u8ba1\u7b97 | \u7f3a\u5c11\u53ef\u9760\u7684\u969c\u788d\u7269/\u8f66\u8f86\u7269\u7406\u8fb9\u754c\u771f\u503c\u3001\u4e8b\u4ef6\u7aef\u70b9\u3001\u5b9e\u9645\u5236\u52a8\u8fc7\u7a0b\u7ec8\u70b9\u548c\u6700\u7ec8\u51c0\u8ddd\u3002\u611f\u77e5\u5bf9\u8c61\u4e0d\u662f CARLA ground truth\u3002 |\n| 6 \u7269\u7406\u5b89\u5168\u7ed3\u679c | near miss\u3001\u78b0\u649e | \u4e0d\u53ef\u8ba1\u7b97 | \u76ee\u5f55\u4e2d\u6ca1\u6709 CARLA collision/contact \u771f\u503c\u3001\u78b0\u649e\u4f20\u611f\u5668\u4e8b\u4ef6\u6216\u660e\u786e\u5b9e\u9a8c\u7ed3\u5c40\u5b57\u6bb5\uff1b\u4e0d\u80fd\u7531\u9ad8\u5236\u52a8\u6216\u4f4e\u901f\u731c\u6d4b\u3002 |\n\n## Record timing profile \u6458\u8981\n\n### Topic \u8fde\u7eed\u6027\n\n| Channel | \u9891\u7387 Hz | \u5468\u671f\u4e2d\u4f4d\u6570 ms | \u5468\u671f\u6807\u51c6\u5dee ms | \u6700\u5927\u5468\u671f ms | `>1.5\u00d7median` gap \u6570 |\n|---|---:|---:|---:|---:|---:|\n| `/apollo/control` | 99.9963 | 10.0065 | 0.9761 | 19.8052 | 10 |\n| `/apollo/guardian` | 99.9939 | 10.0000 | 1.1223 | 19.9044 | 26 |\n| `/apollo/planning` | 9.7361 | 84.4188 | 51.8798 | 291.1146 | 44 |\n| `/apollo/prediction` | 9.7717 | 80.2822 | 51.0258 | 296.5171 | 42 |\n| `/apollo/perception/obstacles` | 9.7440 | 79.5374 | 51.2674 | 295.9752 | 45 |\n| `/apollo/localization/pose` | 10.0013 | 100.0233 | 0.9543 | 104.1286 | 0 |\n| `/apollo/canbus/chassis` | 10.0023 | 100.0047 | 0.7099 | 101.8813 | 0 |\n| lidar PointCloud2 | 10.0003 | 99.9491 | 9.7835 | 134.3517 | 0 |\n| `/apollo/sensor/radar/front` | 10.0003 | 99.9507 | 9.7847 | 134.3710 | 0 |\n\nplanning\u3001prediction \u4e0e perception/obstacles \u7684\u5468\u671f\u5206\u5e03\u660e\u663e\u5bbd\u4e8e\u7ea6 10 Hz \u7684 localization/chassis\uff1b\u8fd9\u662f record \u4fa7\u53ef\u91cd\u590d\u9a8c\u8bc1\u7684\u65f6\u95f4\u75c7\u72b6\u3002\u5b83\u672c\u8eab\u4e0d\u8bc1\u660e CPU \u5e72\u6270\u3001\u961f\u5217 backlog \u6216\u67d0\u79cd\u8c03\u5ea6\u6839\u56e0\u3002\n\n### \u6a21\u5757\u8017\u65f6\n\n- planning `total_time_ms`\uff08\u6bcf\u4e2a planning_seq \u53bb\u91cd\uff0cn=311\uff09\uff1a\u4e2d\u4f4d\u6570 23.553848 ms\uff0cP95 36.982417 ms\uff0cP99 40.596104 ms\uff0c\u6700\u5927 44.059277 ms\u3002\n- control `total_time_ms`\uff08n=3151\uff09\uff1a\u4e2d\u4f4d\u6570 0.964141 ms\uff0cP95 1.477044 ms\uff0cP99 1.722615 ms\uff0c\u6700\u5927 2.471490 ms\u3002\n\n### Planning\u2192control \u65b0\u9c9c\u5ea6\u4e0e\u590d\u7528\n\n- `planning_age_ms`\uff08n=3151\uff09\uff1a\u4e2d\u4f4d\u6570 52.831411 ms\uff0cP95 194.133878 ms\uff0cP99 263.768673 ms\uff0c\u6700\u5927 289.311886 ms\u3002\n- \u6bcf\u4e2a planning \u8f93\u51fa\u7684 control \u590d\u7528\u6b21\u6570\uff08n=309\uff09\uff1a\u4e2d\u4f4d\u6570 8\uff0cP95 27\uff0c\u6700\u5927 29\u3002\n- \u6bcf\u4e2a planning \u8f93\u51fa\u5728\u590d\u7528\u6bb5\u672b\u7684\u6700\u5927\u5e74\u9f84\uff1a\u4e2d\u4f4d\u6570 80.829144 ms\uff0cP95 268.029690 ms\uff0c\u6700\u5927 289.311886 ms\u3002\n\n### Sensor\u2192control \u5bf9\u9f50\u4ee3\u7406\u91cf\n\n\u8fd9\u4e9b\u6570\u503c\u6765\u81ea\u73b0\u6210\u8bca\u65ad\u8868\u7684\u76f8\u90bb record \u65f6\u95f4\u7a97\u914d\u5bf9\uff0c\u5c5e\u4e8e\u8c03\u5ea6/\u76f8\u4f4d\u5bf9\u9f50\u91cf\uff0c\u4e0d\u81ea\u52a8\u7b49\u4e8e\u5b8c\u6574\u56e0\u679c\u94fe Reaction Time\u3002\n\n| Sensor | \u53ef\u7528\u914d\u5bf9\u6570 | \u7b2c\u4e00\u4e2a control \u65f6\u95f4\u5dee P50/P95/Max ms | \u7a97\u53e3\u5185\u6700\u540e\u4e00\u4e2a control \u7684 age P50/P95/Max ms |\n|---|---:|---:|---:|\n| GNSS best_pose | 316 | 1.672 / 3.083 / 91.617 | 91.543 / 92.998 / 102.149 |\n| radar front | 316 | 6.210 / 7.993 / 65.406 | 96.192 / 112.248 / 128.016 |\n| lidar PointCloud2 | 316 | 6.351 / 8.179 / 65.652 | 96.308 / 112.401 / 128.066 |\n\n\u8fb9\u754c\u5904\u5b58\u5728\u957f\u201c\u7b2c\u4e00\u4e2a control \u65f6\u95f4\u5dee\u201d\uff08\u4f8b\u5982 GNSS \u6700\u5927 91.617 ms\uff09\uff1b\u5728\u6ca1\u6709\u56e0\u679c\u5339\u914d\u4e0e\u7a97\u53e3\u622a\u65ad\u5904\u7406\u524d\uff0c\u4e0d\u5e94\u628a\u6700\u5927\u503c\u76f4\u63a5\u5ba3\u79f0\u4e3a\u7cfb\u7edf\u5371\u9669\u54cd\u5e94\u5ef6\u8fdf\u3002\n\n## \u6570\u636e\u8d28\u91cf\u4e0e\u7981\u6b62\u63a8\u65ad\u9879\n\n- `record_summary.json` \u62a5\u544a\u65e0\u89e3\u6790\u9519\u8bef\uff0c\u4f46 record \u53ea\u80fd\u8bf4\u660e\u5df2\u5199\u5165 channel \u7684\u6d88\u606f\uff1b\u201c\u6ca1\u6709\u4e8b\u4ef6\u201d\u4e0d\u7b49\u4e8e\u7cfb\u7edf\u4e2d\u6ca1\u6709\u53d1\u751f\u8be5\u4e8b\u4ef6\u3002\n- \u611f\u77e5\u8868\u4ec5\u6709 89 \u4e2a\u969c\u788d\u7269\u884c\u300183 \u4e2a\u542b\u969c\u788d\u7269\u7684\u6d88\u606f\u65f6\u523b\u548c 25 \u4e2a obstacle id\uff1b\u5b83\u4e0d\u662f CARLA \u969c\u788d\u7269\u771f\u503c\uff0c\u4e5f\u4e0d\u63d0\u4f9b\u7edf\u4e00\u7684\u8f66\u4f53\u2014\u969c\u788d\u7269\u51c0\u8ddd\u7aef\u70b9\u3002\n- `abnormal_frames_summary.csv` \u7684 202 \u884c\u5747\u4e3a `brake_gt_10`\u3002\u8fd9\u53ea\u662f\u89e3\u6790\u5668\u9608\u503c\u4e8b\u4ef6\uff0c\u4e0d\u80fd\u636e\u6b64\u5224\u4e3a\u53ca\u65f6\u5236\u52a8\u3001near miss \u6216\u78b0\u649e\u3002\n- chassis \u5168\u7a97\u53e3\u901f\u5ea6\u79ef\u5206 196.616827 m \u53ea\u8bc1\u660e\u901f\u5ea6\u65f6\u95f4\u5e8f\u5217\u53ef\u79ef\u5206\u3002\u7531\u4e8e\u54cd\u5e94\u9636\u6bb5\u7aef\u70b9\u7f3a\u5931\uff0c\u5b83\u4e0d\u5f97\u5199\u5165\u4e3b `D_delay`\u3001`D_response` \u6216 `D_debt` \u5b57\u6bb5\u3002\n- \u672c\u6b21\u6ca1\u6709\u751f\u6210\u4efb\u4f55 model/predicted \u7269\u7406\u7ed3\u679c\uff0c\u4e5f\u6ca1\u6709\u7528\u6a21\u578b\u503c\u586b\u8865 observed/data \u7f3a\u53e3\u3002\n\n\u8be6\u7ec6\u673a\u5668\u53ef\u8bfb\u753b\u50cf\u89c1\u540c\u76ee\u5f55 `record_timing_profile.json`\u3002\n"}, {"name": "record_timing_profile.json", "type": "text", "content": "{\n  \"schema_version\": \"1.0\",\n  \"profile_type\": \"record_only_timing_profile\",\n  \"source_directory\": \"/Users/huangjinhui/Desktop/\u8428\u5361\u73ed/data/202607091933/record\",\n  \"scope\": {\n    \"record_files\": 1,\n    \"channels\": 28,\n    \"messages\": 15061,\n    \"parse_errors\": {},\n    \"record_time_start_sec\": 1783596784.7710555,\n    \"record_time_end_sec\": 1783596816.7628047,\n    \"record_duration_sec\": 31.99174928665161,\n    \"time_axis\": \"record_time_sec\",\n    \"time_axis_caveat\": \"Record-internal timestamp axis only; not mixed with CARLA simulation time and not externally clock-calibrated in this record-only audit.\"\n  },\n  \"topic_timing\": {\n    \"source_file\": \"00_meta/record_topic_rate.csv\",\n    \"key_channels\": {\n      \"/apollo/control\": {\"message_count\": 3151, \"rate_hz\": 99.996316, \"period_median_ms\": 10.006547, \"period_std_ms\": 0.976078, \"period_max_ms\": 19.805193, \"gap_gt_1_5x_median_count\": 10},\n      \"/apollo/guardian\": {\"message_count\": 3196, \"rate_hz\": 99.993906, \"period_median_ms\": 9.999990, \"period_std_ms\": 1.122263, \"period_max_ms\": 19.904375, \"gap_gt_1_5x_median_count\": 26},\n      \"/apollo/planning\": {\"message_count\": 311, \"rate_hz\": 9.736134, \"period_median_ms\": 84.418774, \"period_std_ms\": 51.879757, \"period_max_ms\": 291.114569, \"gap_gt_1_5x_median_count\": 44},\n      \"/apollo/prediction\": {\"message_count\": 311, \"rate_hz\": 9.771690, \"period_median_ms\": 80.282211, \"period_std_ms\": 51.025760, \"period_max_ms\": 296.517133, \"gap_gt_1_5x_median_count\": 42},\n      \"/apollo/perception/obstacles\": {\"message_count\": 312, \"rate_hz\": 9.743951, \"period_median_ms\": 79.537392, \"period_std_ms\": 51.267435, \"period_max_ms\": 295.975208, \"gap_gt_1_5x_median_count\": 45},\n      \"/apollo/localization/pose\": {\"message_count\": 319, \"rate_hz\": 10.001258, \"period_median_ms\": 100.023270, \"period_std_ms\": 0.954322, \"period_max_ms\": 104.128599, \"gap_gt_1_5x_median_count\": 0},\n      \"/apollo/canbus/chassis\": {\"message_count\": 320, \"rate_hz\": 10.002316, \"period_median_ms\": 100.004673, \"period_std_ms\": 0.709934, \"period_max_ms\": 101.881266, \"gap_gt_1_5x_median_count\": 0},\n      \"/apollo/sensor/velodyne64/compensator/PointCloud2\": {\"message_count\": 319, \"rate_hz\": 10.000250, \"period_median_ms\": 99.949121, \"period_std_ms\": 9.783486, \"period_max_ms\": 134.351730, \"gap_gt_1_5x_median_count\": 0},\n      \"/apollo/sensor/radar/front\": {\"message_count\": 319, \"rate_hz\": 10.000313, \"period_median_ms\": 99.950671, \"period_std_ms\": 9.784685, \"period_max_ms\": 134.371042, \"gap_gt_1_5x_median_count\": 0}\n    }\n  },\n  \"module_compute_latency_ms\": {\n    \"planning\": {\"n\": 311, \"min\": 10.854959, \"p50\": 23.553848, \"p95\": 36.982417, \"p99\": 40.596104, \"max\": 44.059277, \"mean\": 24.971914, \"std_population\": 6.581412, \"deduplication\": \"one total_time_ms per planning_seq\"},\n    \"control\": {\"n\": 3151, \"min\": 0.566983, \"p50\": 0.964141, \"p95\": 1.477044, \"p99\": 1.722615, \"max\": 2.471490, \"mean\": 1.013903, \"std_population\": 0.235540}\n  },\n  \"header_to_record_lag_ms\": {\n    \"interpretation\": \"Directly computed record_time_sec minus valid nonzero header_timestamp_sec. This is an observed publication/recording lag, not a causal decomposition.\",\n    \"/apollo/control\": {\"n\": 3151, \"p50\": 0.283480, \"p95\": 0.512004, \"p99\": 1.565695, \"max\": 10.487080},\n    \"/apollo/planning\": {\"n\": 311, \"p50\": 0.751734, \"p95\": 1.425743, \"p99\": 2.285409, \"max\": 5.431652},\n    \"/apollo/prediction\": {\"n\": 311, \"p50\": 0.249386, \"p95\": 2.176523, \"p99\": 4.002571, \"max\": 19.844055},\n    \"/apollo/perception/obstacles\": {\"n\": 312, \"p50\": 0.234485, \"p95\": 0.729299, \"p99\": 2.845385, \"max\": 4.551649},\n    \"/apollo/localization/pose\": {\"n\": 319, \"p50\": 0.351429, \"p95\": 1.402760, \"p99\": 3.796473, \"max\": 4.369497},\n    \"/apollo/canbus/chassis\": {\"n\": 320, \"p50\": 2.261281, \"p95\": 2.971816, \"p99\": 3.563285, \"max\": 9.072304},\n    \"/apollo/sensor/velodyne64/compensator/PointCloud2\": {\"n\": 319, \"p50\": 28.056383, \"p95\": 51.030850, \"p99\": 60.388350, \"max\": 61.662912},\n    \"/apollo/sensor/radar/front\": {\"n\": 319, \"p50\": 28.170109, \"p95\": 51.110649, \"p99\": 60.599594, \"max\": 62.110901}\n  },\n  \"planning_to_control_freshness\": {\n    \"source_file\": \"07_diagnostics/planning_control_alignment.csv\",\n    \"planning_age_ms\": {\"n\": 3151, \"min\": 1.770496, \"p50\": 52.831411, \"p95\": 194.133878, \"p99\": 263.768673, \"max\": 289.311886, \"mean\": 65.671994, \"std_population\": 56.259434},\n    \"reuse_by_planning_output\": {\n      \"source_file\": \"07_diagnostics/control_reuse_summary.csv\",\n      \"planning_outputs_n\": 309,\n      \"reuse_count\": {\"min\": 6, \"p50\": 8, \"p95\": 27, \"p99\": 29, \"max\": 29, \"mean\": 10.197411},\n      \"max_planning_age_ms\": {\"min\": 52.939892, \"p50\": 80.829144, \"p95\": 268.029690, \"p99\": 286.077080, \"max\": 289.311886, \"mean\": 98.583019}\n    }\n  },\n  \"sensor_to_control_alignment_proxy\": {\n    \"source_file\": \"07_diagnostics/sensor_to_control_reaction_age.csv\",\n    \"semantic_warning\": \"Neighboring record-time-window pairing. It does not by itself establish that a control output causally reacted to the sensor message.\",\n    \"/apollo/sensor/gnss/best_pose\": {\n      \"sensor_rows\": 320,\n      \"paired_rows\": 316,\n      \"first_following_control_delta_ms\": {\"p50\": 1.671672, \"p95\": 3.083289, \"p99\": 10.490978, \"max\": 91.616631},\n      \"last_control_before_next_sensor_age_ms\": {\"p50\": 91.542959, \"p95\": 92.997611, \"p99\": 100.940537, \"max\": 102.148533}\n    },\n    \"/apollo/sensor/radar/front\": {\n      \"sensor_rows\": 319,\n      \"paired_rows\": 316,\n      \"first_following_control_delta_ms\": {\"p50\": 6.210208, \"p95\": 7.992804, \"p99\": 10.793710, \"max\": 65.406084},\n      \"last_control_before_next_sensor_age_ms\": {\"p50\": 96.192360, \"p95\": 112.247705, \"p99\": 127.097714, \"max\": 128.015995}\n    },\n    \"/apollo/sensor/velodyne64/compensator/PointCloud2\": {\n      \"sensor_rows\": 319,\n      \"paired_rows\": 316,\n      \"first_following_control_delta_ms\": {\"p50\": 6.350875, \"p95\": 8.178711, \"p99\": 10.910285, \"max\": 65.652132},\n      \"last_control_before_next_sensor_age_ms\": {\"p50\": 96.307993, \"p95\": 112.401485, \"p99\": 127.153420, \"max\": 128.065825}\n    }\n  },\n  \"physical_auxiliary_observations\": {\n    \"chassis_speed_mps\": {\"n\": 320, \"min\": 0.007057, \"p50\": 6.843183, \"p95\": 10.727414, \"p99\": 10.851111, \"max\": 10.858335, \"mean\": 6.149945},\n    \"chassis_speed_record_coverage_sec\": 31.892613410949707,\n    \"whole_chassis_trace_speed_trapezoid_integral_m\": 196.61682664719748,\n    \"integral_semantic_warning\": \"Whole available chassis trace only. It is not D_delay, D_response, or Distance Debt because response-stage endpoints are absent.\",\n    \"control_brake\": {\"n\": 3151, \"p50\": 0.0, \"p95\": 14.5, \"p99\": 21.478195, \"max\": 28.760647, \"frames_gt_10\": 202},\n    \"control_acceleration_target_mps2\": {\"n\": 3151, \"min\": -3.944200, \"p50\": 0.380986, \"p95\": 1.599274, \"max\": 2.287200},\n    \"outcome_warning\": \"Brake commands and speed traces do not establish braking effectiveness, minimum clearance, near miss, or collision outcome.\"\n  },\n  \"six_layer_availability\": {\n    \"layer_1_temporal_disturbance\": {\n      \"direct\": [\"topic period/rate/jitter\", \"record-time gap counts\", \"planning compute latency\", \"control compute latency\", \"header-to-record lag\"],\n      \"proxy_only\": [\"planning reuse as a backlog/staleness symptom\"],\n      \"unavailable\": [\"queue backlog root cause\", \"resource interference\", \"scheduler phase-contract violation\", \"delay causal decomposition\"]\n    },\n    \"layer_2_temporal_degradation\": {\n      \"direct\": [\"update continuity\", \"planning age at control\", \"planning reuse\", \"sensor-control record-time alignment variation\"],\n      \"unavailable\": [\"hazard-specific effective-response continuity\"]\n    },\n    \"layer_3_end_to_end_time\": {\n      \"direct\": [\"planning-to-control data age\"],\n      \"proxy_only\": [\"sensor-to-first/last-control neighboring-window deltas\"],\n      \"unavailable\": [\"validated full perception-prediction-planning-control causal reaction time\", \"hazard onset to effective control/vehicle response\"]\n    },\n    \"layer_4_temporal_correctness\": {\n      \"direct\": [],\n      \"unavailable\": [\"Dynamic Deadline\", \"Timing Slack\", \"Deadline Miss\"],\n      \"missing_inputs\": [\"hazard event definition\", \"available physical distance\", \"minimum safe clearance\", \"validated braking capability/road condition\", \"deadline model parameters\", \"effective response endpoint\"]\n    },\n    \"layer_5_temporal_physical_propagation\": {\n      \"direct_auxiliary_only\": [\"whole-trace chassis speed integration\"],\n      \"unavailable\": [\"response-stage D_delay/D_response\", \"Distance Debt\"],\n      \"missing_inputs\": [\"t1/t2 or t_c/t_e\", \"t_d=t_c+Dynamic Deadline\"]\n    },\n    \"layer_6_physical_safety_outcome\": {\n      \"direct_descriptive_only\": [\"control brake/throttle/acceleration commands\", \"chassis speed trace\", \"partial perception obstacle reports\"],\n      \"unavailable\": [\"observed braking distance\", \"final net clearance\", \"braking margin\", \"near miss\", \"collision outcome\"],\n      \"missing_inputs\": [\"CARLA collision/contact ground truth\", \"verified vehicle-obstacle geometry\", \"event endpoints\", \"actual final clearance\"]\n    }\n  },\n  \"forbidden_inferences_applied\": [\n    \"No Dynamic Deadline inferred from observed latency.\",\n    \"No Distance Debt inferred from whole-trace distance or arbitrary endpoints.\",\n    \"No braking margin inferred from control brake commands.\",\n    \"No near-miss or collision conclusion inferred from braking, speed, or perception outputs.\",\n    \"No model/predicted value used to fill an unavailable observed/data result.\"\n  ]\n}\n"}], "grading": {"expectations": [{"text": "A JSON record timing profile is generated from the parsed export.", "passed": true, "evidence": "outputs/record_timing_profile.json is valid JSON with topic timing, module latency, Planning-Control freshness, sensor-Control alignment proxies, and six-layer availability."}, {"text": "Message-level sensor-to-Control reaction time is not mislabeled as physical T_R.", "passed": true, "evidence": "The audit labels the values as adjacent-record-window alignment proxies and explicitly states they are not a validated complete causal Reaction Time."}, {"text": "Dynamic Deadline, physical timing slack, Distance Debt, braking margin, and collision are marked unavailable from record alone.", "passed": true, "evidence": "The conclusion, availability table, and JSON all mark these quantities unavailable and name the missing physical inputs."}, {"text": "Parse coverage, missing tables, update gaps, Planning age/reuse, and module latency are audited.", "passed": true, "evidence": "The report audits channel/message counts and parse_errors, topic continuity, Planning/Control timing, Planning age, reuse, and sensor-Control proxy metrics."}, {"text": "No model value is presented as an observed result.", "passed": true, "evidence": "The audit states that no model/predicted physical result was generated and no observed/data gap was filled."}], "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}, "claims": [{"claim": "The parsed record has 28 channels and 15,061 messages with parse_errors={}", "type": "factual", "verified": true, "evidence": "Matches extraction_summary.json."}], "user_notes_summary": {"uncertainties": ["Record time was not externally aligned to CARLA or an audited hazard endpoint."], "needs_review": [], "workarounds": []}, "eval_feedback": {"suggestions": [{"assertion": "Dynamic Deadline, physical timing slack, Distance Debt, braking margin, and collision are marked unavailable from record alone.", "reason": "The user prompt itself explicitly prohibited these inferences, so this assertion passes both configurations and weakly distinguishes the skill."}], "overall": "The record-only test verifies evidence discipline but is not strongly discriminating because the prompt already states the crucial prohibitions."}}}], "previous_feedback": {}, "previous_outputs": {}, "benchmark": {"metadata": {"skill_name": "autonomous-driving-temporal-safety-analysis", "skill_path": "/Users/huangjinhui/.codex/skills/autonomous-driving-temporal-safety-analysis", "executor_model": "<model-name>", "analyzer_model": "<model-name>", "timestamp": "2026-08-10T16:01:55Z", "evals_run": [1, 2], "runs_per_configuration": 1}, "runs": [{"eval_id": 1, "configuration": "with_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 6, "failed": 0, "total": 6, "time_seconds": 0.0, "tokens": 0, "tool_calls": 0, "errors": 0}, "expectations": [{"text": "The output explicitly covers L1 through L6.", "passed": true, "evidence": "The Markdown report contains substantive L1-L6 sections and the source mapping contains rows for all six layers."}, {"text": "The output keeps wall-clock speed integration as the main D_delay definition.", "passed": true, "evidence": "The report freezes D_delay_wall_integral_data_observed_m as endpoint-interpolated trapezoidal integration over t1-t2 wall time and keeps sim/frame/displacement diagnostic only."}, {"text": "The output separates observed/data results from model/predicted results.", "passed": true, "evidence": "The report requires observed/data and model/predicted tables to remain separate, keeps collision-run full-stop quantities NA, and forbids using the unrelated record or model values to backfill observed results."}, {"text": "The output uses parsed record data for timing/freshness/gap evidence without treating it as collision truth.", "passed": true, "evidence": "The record is mapped to Planning/Control latency, Planning age/reuse, reaction/data age, clock offsets, and update gaps; L6 explicitly retains CARLA collision event/actor history as direct outcome evidence."}, {"text": "The output states that the bridge reads Control directly in the current architecture.", "passed": true, "evidence": "L1 states that Guardian cannot be used as the command source because the bridge receives Control directly."}, {"text": "The output creates or describes a reproducible record profile and source-provenance mapping.", "passed": true, "evidence": "The output includes a JSON record profile, aggregate timing CSV, input audit, run-record association audit, detailed source mapping, and exact reproduction commands."}], "notes": ["Record-enhanced group comparison cannot be performed until same-run record exports exist.", "The unrelated July 9 record is retained only as a parser-schema and integration example."]}, {"eval_id": 2, "configuration": "with_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 5, "failed": 0, "total": 5, "time_seconds": 0.0, "tokens": 0, "tool_calls": 0, "errors": 0}, "expectations": [{"text": "A JSON record timing profile is generated from the parsed export.", "passed": true, "evidence": "outputs/record_timing_profile.json is valid JSON and contains coverage, Layer 2 metrics, Layer 3 diagnostics, and explicit evidence-boundary sections."}, {"text": "Message-level sensor-to-Control reaction time is not mislabeled as physical T_R.", "passed": true, "evidence": "The audit states that record reaction_time_ms is message-level, stops at Control, excludes the Control-to-physical-response segment, and must not be renamed physical T_R."}, {"text": "Dynamic Deadline, physical timing slack, Distance Debt, braking margin, and collision are marked unavailable from record alone.", "passed": true, "evidence": "The conclusion and L4-L6 availability rows explicitly leave tau_dynamic, timing_slack, deadline_miss, D_distance_debt, braking margin, and collision outcome unavailable."}, {"text": "Parse coverage, missing tables, update gaps, Planning age/reuse, and module latency are audited.", "passed": true, "evidence": "The audit reports 28 channels, 15,061 messages, parse_errors={}, all 18 key tables present, per-channel gap quantiles, Planning/Control timing, Planning age, and reuse statistics."}, {"text": "No model value is presented as an observed result.", "passed": true, "evidence": "Missing physical quantities remain unavailable, and the report states that no model values were used to fill them."}], "notes": ["Cross-system physical endpoint and clock alignment remain unavailable from this record-only input."]}, {"eval_id": 1, "configuration": "without_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 6, "failed": 0, "total": 6, "time_seconds": 0.0, "tokens": 0, "tool_calls": 0, "errors": 0}, "expectations": [{"text": "The output explicitly covers L1 through L6.", "passed": true, "evidence": "The report contains complete first-through-sixth-layer sections and the CSV maps inputs/metrics across every layer."}, {"text": "The output keeps wall-clock speed integration as the main D_delay definition.", "passed": true, "evidence": "L5 defines the main D_delay as a t1-t2 wall-clock trapezoidal speed integral and excludes frame, simulation time, and spatial displacement from the main metric."}, {"text": "The output separates observed/data results from model/predicted results.", "passed": true, "evidence": "The report identifies separate current observed and counterfactual-model sources, requires separate observed/model fields, and forbids model filling of missing observed endpoints."}, {"text": "The output uses parsed record data for timing/freshness/gap evidence without treating it as collision truth.", "passed": true, "evidence": "The output profiles record gaps, age, reuse, timing, and Control evidence while retaining CARLA collision events as authoritative outcome evidence."}, {"text": "The output states that the bridge reads Control directly in the current architecture.", "passed": true, "evidence": "The L1 section explicitly states that Guardian is diagnostic only because the bridge reads Control directly."}, {"text": "The output creates or describes a reproducible record profile and source-provenance mapping.", "passed": true, "evidence": "outputs/record_profile.json and outputs/record_source_mapping.csv are populated, and the report describes the canonical adapter and acceptance gates."}], "notes": ["Candidate target 82 is an adapter example without a completed CARLA actor-to-Apollo identity audit."]}, {"eval_id": 2, "configuration": "without_skill", "run_number": 1, "result": {"pass_rate": 1.0, "passed": 5, "failed": 0, "total": 5, "time_seconds": 0.0, "tokens": 0, "tool_calls": 0, "errors": 0}, "expectations": [{"text": "A JSON record timing profile is generated from the parsed export.", "passed": true, "evidence": "outputs/record_timing_profile.json is valid JSON with topic timing, module latency, Planning-Control freshness, sensor-Control alignment proxies, and six-layer availability."}, {"text": "Message-level sensor-to-Control reaction time is not mislabeled as physical T_R.", "passed": true, "evidence": "The audit labels the values as adjacent-record-window alignment proxies and explicitly states they are not a validated complete causal Reaction Time."}, {"text": "Dynamic Deadline, physical timing slack, Distance Debt, braking margin, and collision are marked unavailable from record alone.", "passed": true, "evidence": "The conclusion, availability table, and JSON all mark these quantities unavailable and name the missing physical inputs."}, {"text": "Parse coverage, missing tables, update gaps, Planning age/reuse, and module latency are audited.", "passed": true, "evidence": "The report audits channel/message counts and parse_errors, topic continuity, Planning/Control timing, Planning age, reuse, and sensor-Control proxy metrics."}, {"text": "No model value is presented as an observed result.", "passed": true, "evidence": "The audit states that no model/predicted physical result was generated and no observed/data gap was filled."}], "notes": ["Record time was not externally aligned to CARLA or an audited hazard endpoint."]}], "run_summary": {"with_skill": {"pass_rate": {"mean": 1.0, "stddev": 0.0, "min": 1.0, "max": 1.0}, "time_seconds": {"mean": 0.0, "stddev": 0.0, "min": 0.0, "max": 0.0}, "tokens": {"mean": 0.0, "stddev": 0.0, "min": 0, "max": 0}}, "without_skill": {"pass_rate": {"mean": 1.0, "stddev": 0.0, "min": 1.0, "max": 1.0}, "time_seconds": {"mean": 0.0, "stddev": 0.0, "min": 0.0, "max": 0.0}, "tokens": {"mean": 0.0, "stddev": 0.0, "min": 0, "max": 0}}, "delta": {"pass_rate": "+0.00", "time_seconds": "+0.0", "tokens": "+0"}}, "notes": ["Both configurations passed all assertions, so the current assertions are not discriminating enough to quantify skill lift.", "The prompts themselves contained the most important evidence-boundary requirements and the baseline inherited rich workspace context, which explains the ceiling effect.", "Qualitatively, the with-skill runs used the bundled deterministic profiler/aggregator and produced the standardized record profile, explicit run-record association audit, and reproducible source mapping; baseline profiles were manually implemented with different schemas.", "The with-skill integration run explicitly emitted EXAMPLE_ONLY_NOT_JOINABLE and a left-join/no-backfill policy for the July 9 record versus July 27 experiment runs.", "Time and token values are unavailable from the collaboration runner; zeros are missing telemetry and must not be interpreted as zero cost."]}};
+
+    // ---- State ----
+    let feedbackMap = {};  // run_id -> feedback text
+    let currentIndex = 0;
+    let visitedRuns = new Set();
+
+    // ---- Init ----
+    async function init() {
+      // Load saved feedback from server — but only if this isn't a fresh
+      // iteration (indicated by previous_feedback being present). When
+      // previous feedback exists, the feedback.json on disk is stale from
+      // the prior iteration and should not pre-fill the textareas.
+      const hasPrevious = Object.keys(EMBEDDED_DATA.previous_feedback || {}).length > 0
+        || Object.keys(EMBEDDED_DATA.previous_outputs || {}).length > 0;
+      if (!hasPrevious) {
+        try {
+          const resp = await fetch("/api/feedback");
+          const data = await resp.json();
+          if (data.reviews) {
+            for (const r of data.reviews) feedbackMap[r.run_id] = r.feedback;
+          }
+        } catch { /* first run, no feedback yet */ }
+      }
+
+      document.getElementById("skill-name").textContent = EMBEDDED_DATA.skill_name;
+      showRun(0);
+
+      // Wire up feedback auto-save
+      const textarea = document.getElementById("feedback");
+      let saveTimeout = null;
+      textarea.addEventListener("input", () => {
+        clearTimeout(saveTimeout);
+        document.getElementById("feedback-status").textContent = "";
+        saveTimeout = setTimeout(() => saveCurrentFeedback(), 800);
+      });
+    }
+
+    // ---- Navigation ----
+    function navigate(delta) {
+      const newIndex = currentIndex + delta;
+      if (newIndex >= 0 && newIndex < EMBEDDED_DATA.runs.length) {
+        saveCurrentFeedback();
+        showRun(newIndex);
+      }
+    }
+
+    function updateNavButtons() {
+      document.getElementById("prev-btn").disabled = currentIndex === 0;
+      document.getElementById("next-btn").disabled =
+        currentIndex === EMBEDDED_DATA.runs.length - 1;
+    }
+
+    // ---- Show a run ----
+    function showRun(index) {
+      currentIndex = index;
+      const run = EMBEDDED_DATA.runs[index];
+
+      // Progress
+      document.getElementById("progress").textContent =
+        `${index + 1} of ${EMBEDDED_DATA.runs.length}`;
+
+      // Prompt
+      document.getElementById("prompt-text").textContent = run.prompt;
+
+      // Config badge
+      const badge = document.getElementById("config-badge");
+      const configMatch = run.id.match(/(with_skill|without_skill|new_skill|old_skill)/);
+      if (configMatch) {
+        const config = configMatch[1];
+        const isBaseline = config === "without_skill" || config === "old_skill";
+        badge.textContent = config.replace(/_/g, " ");
+        badge.className = "config-badge " + (isBaseline ? "config-baseline" : "config-primary");
+        badge.style.display = "inline-block";
+      } else {
+        badge.style.display = "none";
+      }
+
+      // Outputs
+      renderOutputs(run);
+
+      // Previous outputs
+      renderPrevOutputs(run);
+
+      // Grades
+      renderGrades(run);
+
+      // Previous feedback
+      const prevFb = (EMBEDDED_DATA.previous_feedback || {})[run.id];
+      const prevEl = document.getElementById("prev-feedback");
+      if (prevFb) {
+        document.getElementById("prev-feedback-text").textContent = prevFb;
+        prevEl.style.display = "block";
+      } else {
+        prevEl.style.display = "none";
+      }
+
+      // Feedback
+      document.getElementById("feedback").value = feedbackMap[run.id] || "";
+      document.getElementById("feedback-status").textContent = "";
+
+      updateNavButtons();
+
+      // Track visited runs and promote done button when all visited
+      visitedRuns.add(index);
+      const doneBtn = document.getElementById("done-btn");
+      if (visitedRuns.size >= EMBEDDED_DATA.runs.length) {
+        doneBtn.classList.add("ready");
+      }
+
+      // Scroll main content to top
+      document.querySelector(".main").scrollTop = 0;
+    }
+
+    // ---- Render outputs ----
+    function renderOutputs(run) {
+      const container = document.getElementById("outputs-body");
+      container.innerHTML = "";
+
+      const outputs = run.outputs || [];
+      if (outputs.length === 0) {
+        container.innerHTML = '<div class="empty-state">No output files</div>';
+        return;
+      }
+
+      for (const file of outputs) {
+        const fileDiv = document.createElement("div");
+        fileDiv.className = "output-file";
+
+        // Always show file header with download link
+        const header = document.createElement("div");
+        header.className = "output-file-header";
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = file.name;
+        header.appendChild(nameSpan);
+        const dlBtn = document.createElement("a");
+        dlBtn.className = "dl-btn";
+        dlBtn.textContent = "Download";
+        dlBtn.download = file.name;
+        dlBtn.href = getDownloadUri(file);
+        header.appendChild(dlBtn);
+        fileDiv.appendChild(header);
+
+        const content = document.createElement("div");
+        content.className = "output-file-content";
+
+        if (file.type === "text") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          content.appendChild(pre);
+        } else if (file.type === "image") {
+          const img = document.createElement("img");
+          img.src = file.data_uri;
+          img.alt = file.name;
+          content.appendChild(img);
+        } else if (file.type === "pdf") {
+          const iframe = document.createElement("iframe");
+          iframe.src = file.data_uri;
+          content.appendChild(iframe);
+        } else if (file.type === "xlsx") {
+          renderXlsx(content, file.data_b64);
+        } else if (file.type === "binary") {
+          const a = document.createElement("a");
+          a.className = "download-link";
+          a.href = file.data_uri;
+          a.download = file.name;
+          a.textContent = "Download " + file.name;
+          content.appendChild(a);
+        } else if (file.type === "error") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          pre.style.color = "var(--red)";
+          content.appendChild(pre);
+        }
+
+        fileDiv.appendChild(content);
+        container.appendChild(fileDiv);
+      }
+    }
+
+    // ---- XLSX rendering via SheetJS ----
+    function renderXlsx(container, b64Data) {
+      try {
+        const raw = Uint8Array.from(atob(b64Data), c => c.charCodeAt(0));
+        const wb = XLSX.read(raw, { type: "array" });
+
+        for (let i = 0; i < wb.SheetNames.length; i++) {
+          const sheetName = wb.SheetNames[i];
+          const ws = wb.Sheets[sheetName];
+
+          if (wb.SheetNames.length > 1) {
+            const sheetLabel = document.createElement("div");
+            sheetLabel.style.cssText =
+              "font-weight:600; font-size:0.8rem; color:#b0aea5; margin-top:0.5rem; margin-bottom:0.25rem;";
+            sheetLabel.textContent = "Sheet: " + sheetName;
+            container.appendChild(sheetLabel);
+          }
+
+          const htmlStr = XLSX.utils.sheet_to_html(ws, { editable: false });
+          const wrapper = document.createElement("div");
+          wrapper.innerHTML = htmlStr;
+          container.appendChild(wrapper);
+        }
+      } catch (err) {
+        container.textContent = "Error rendering spreadsheet: " + err.message;
+      }
+    }
+
+    // ---- Grades ----
+    function renderGrades(run) {
+      const section = document.getElementById("grades-section");
+      const content = document.getElementById("grades-content");
+
+      if (!run.grading) {
+        section.style.display = "none";
+        return;
+      }
+
+      const grading = run.grading;
+      section.style.display = "block";
+      // Reset to collapsed
+      content.classList.remove("open");
+      document.getElementById("grades-arrow").classList.remove("open");
+
+      const summary = grading.summary || {};
+      const expectations = grading.expectations || [];
+
+      let html = '<div style="padding: 1rem;">';
+
+      // Summary line
+      const passRate = summary.pass_rate != null
+        ? Math.round(summary.pass_rate * 100) + "%"
+        : "?";
+      const badgeClass = summary.pass_rate >= 0.8 ? "grade-pass" : summary.pass_rate >= 0.5 ? "" : "grade-fail";
+      html += '<div class="grades-summary">';
+      html += '<span class="grade-badge ' + badgeClass + '">' + passRate + '</span>';
+      html += '<span>' + (summary.passed || 0) + ' passed, ' + (summary.failed || 0) + ' failed of ' + (summary.total || 0) + '</span>';
+      html += '</div>';
+
+      // Assertions list
+      html += '<ul class="assertion-list">';
+      for (const exp of expectations) {
+        const statusClass = exp.passed ? "pass" : "fail";
+        const statusIcon = exp.passed ? "\u2713" : "\u2717";
+        html += '<li class="assertion-item">';
+        html += '<span class="assertion-status ' + statusClass + '">' + statusIcon + '</span>';
+        html += '<span>' + escapeHtml(exp.text) + '</span>';
+        if (exp.evidence) {
+          html += '<div class="assertion-evidence">' + escapeHtml(exp.evidence) + '</div>';
+        }
+        html += '</li>';
+      }
+      html += '</ul>';
+
+      html += '</div>';
+      content.innerHTML = html;
+    }
+
+    function toggleGrades() {
+      const content = document.getElementById("grades-content");
+      const arrow = document.getElementById("grades-arrow");
+      content.classList.toggle("open");
+      arrow.classList.toggle("open");
+    }
+
+    // ---- Previous outputs (collapsible) ----
+    function renderPrevOutputs(run) {
+      const section = document.getElementById("prev-outputs-section");
+      const content = document.getElementById("prev-outputs-content");
+      const prevOutputs = (EMBEDDED_DATA.previous_outputs || {})[run.id];
+
+      if (!prevOutputs || prevOutputs.length === 0) {
+        section.style.display = "none";
+        return;
+      }
+
+      section.style.display = "block";
+      // Reset to collapsed
+      content.classList.remove("open");
+      document.getElementById("prev-outputs-arrow").classList.remove("open");
+
+      // Render the files into the content area
+      content.innerHTML = "";
+      const wrapper = document.createElement("div");
+      wrapper.style.padding = "1rem";
+
+      for (const file of prevOutputs) {
+        const fileDiv = document.createElement("div");
+        fileDiv.className = "output-file";
+
+        const header = document.createElement("div");
+        header.className = "output-file-header";
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = file.name;
+        header.appendChild(nameSpan);
+        const dlBtn = document.createElement("a");
+        dlBtn.className = "dl-btn";
+        dlBtn.textContent = "Download";
+        dlBtn.download = file.name;
+        dlBtn.href = getDownloadUri(file);
+        header.appendChild(dlBtn);
+        fileDiv.appendChild(header);
+
+        const fc = document.createElement("div");
+        fc.className = "output-file-content";
+
+        if (file.type === "text") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          fc.appendChild(pre);
+        } else if (file.type === "image") {
+          const img = document.createElement("img");
+          img.src = file.data_uri;
+          img.alt = file.name;
+          fc.appendChild(img);
+        } else if (file.type === "pdf") {
+          const iframe = document.createElement("iframe");
+          iframe.src = file.data_uri;
+          fc.appendChild(iframe);
+        } else if (file.type === "xlsx") {
+          renderXlsx(fc, file.data_b64);
+        } else if (file.type === "binary") {
+          const a = document.createElement("a");
+          a.className = "download-link";
+          a.href = file.data_uri;
+          a.download = file.name;
+          a.textContent = "Download " + file.name;
+          fc.appendChild(a);
+        }
+
+        fileDiv.appendChild(fc);
+        wrapper.appendChild(fileDiv);
+      }
+
+      content.appendChild(wrapper);
+    }
+
+    function togglePrevOutputs() {
+      const content = document.getElementById("prev-outputs-content");
+      const arrow = document.getElementById("prev-outputs-arrow");
+      content.classList.toggle("open");
+      arrow.classList.toggle("open");
+    }
+
+    // ---- Feedback (saved to server -> feedback.json) ----
+    function saveCurrentFeedback() {
+      const run = EMBEDDED_DATA.runs[currentIndex];
+      const text = document.getElementById("feedback").value;
+
+      if (text.trim() === "") {
+        delete feedbackMap[run.id];
+      } else {
+        feedbackMap[run.id] = text;
+      }
+
+      // Build reviews array from map
+      const reviews = [];
+      for (const [run_id, feedback] of Object.entries(feedbackMap)) {
+        if (feedback.trim()) {
+          reviews.push({ run_id, feedback, timestamp: new Date().toISOString() });
+        }
+      }
+
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ reviews, status: "in_progress" }),
+      }).then(() => {
+        document.getElementById("feedback-status").textContent = "Saved";
+      }).catch(() => {
+        // Static mode or server unavailable — no-op on auto-save,
+        // feedback will be downloaded on final submit
+        document.getElementById("feedback-status").textContent = "Will download on submit";
+      });
+    }
+
+    // ---- Done ----
+    function showDoneDialog() {
+      // Save current textarea to feedbackMap (but don't POST yet)
+      const run = EMBEDDED_DATA.runs[currentIndex];
+      const text = document.getElementById("feedback").value;
+      if (text.trim() === "") {
+        delete feedbackMap[run.id];
+      } else {
+        feedbackMap[run.id] = text;
+      }
+
+      // POST once with status: complete — include ALL runs so the model
+      // can distinguish "no feedback" (looks good) from "not reviewed"
+      const reviews = [];
+      const ts = new Date().toISOString();
+      for (const r of EMBEDDED_DATA.runs) {
+        reviews.push({ run_id: r.id, feedback: feedbackMap[r.id] || "", timestamp: ts });
+      }
+      const payload = JSON.stringify({ reviews, status: "complete" }, null, 2);
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: payload,
+      }).then(() => {
+        document.getElementById("done-overlay").classList.add("visible");
+      }).catch(() => {
+        // Server not available (static mode) — download as file
+        const blob = new Blob([payload], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "feedback.json";
+        a.click();
+        URL.revokeObjectURL(url);
+        document.getElementById("done-overlay").classList.add("visible");
+      });
+    }
+
+    function closeDoneDialog() {
+      // Reset status back to in_progress
+      saveCurrentFeedback();
+      document.getElementById("done-overlay").classList.remove("visible");
+    }
+
+    // ---- Toast ----
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("visible");
+      setTimeout(() => toast.classList.remove("visible"), 2000);
+    }
+
+    // ---- Keyboard nav ----
+    document.addEventListener("keydown", (e) => {
+      // Don't capture when typing in textarea
+      if (e.target.tagName === "TEXTAREA") return;
+
+      if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        e.preventDefault();
+        navigate(-1);
+      } else if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        e.preventDefault();
+        navigate(1);
+      }
+    });
+
+    // ---- Util ----
+    function getDownloadUri(file) {
+      if (file.data_uri) return file.data_uri;
+      if (file.data_b64) return "data:application/octet-stream;base64," + file.data_b64;
+      if (file.type === "text") return "data:text/plain;charset=utf-8," + encodeURIComponent(file.content);
+      return "#";
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement("div");
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // ---- View switching ----
+    function switchView(view) {
+      document.querySelectorAll(".view-tab").forEach(t => t.classList.remove("active"));
+      document.querySelectorAll(".view-panel").forEach(p => p.classList.remove("active"));
+      document.querySelector(`[onclick="switchView('${view}')"]`).classList.add("active");
+      document.getElementById("panel-" + view).classList.add("active");
+    }
+
+    // ---- Benchmark rendering ----
+    function renderBenchmark() {
+      const data = EMBEDDED_DATA.benchmark;
+      if (!data) return;
+
+      // Show the tabs
+      document.getElementById("view-tabs").style.display = "flex";
+
+      const container = document.getElementById("benchmark-content");
+      const summary = data.run_summary || {};
+      const metadata = data.metadata || {};
+      const notes = data.notes || [];
+
+      let html = "";
+
+      // Header
+      html += "<h2 style='font-family: Poppins, sans-serif; margin-bottom: 0.5rem;'>Benchmark Results</h2>";
+      html += "<p style='color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;'>";
+      if (metadata.skill_name) html += "<strong>" + escapeHtml(metadata.skill_name) + "</strong> &mdash; ";
+      if (metadata.timestamp) html += metadata.timestamp + " &mdash; ";
+      if (metadata.evals_run) html += "Evals: " + metadata.evals_run.join(", ") + " &mdash; ";
+      html += (metadata.runs_per_configuration || "?") + " runs per configuration";
+      html += "</p>";
+
+      // Summary table
+      html += '<table class="benchmark-table">';
+
+      function fmtStat(stat, pct) {
+        if (!stat) return "—";
+        const suffix = pct ? "%" : "";
+        const m = pct ? (stat.mean * 100).toFixed(0) : stat.mean.toFixed(1);
+        const s = pct ? (stat.stddev * 100).toFixed(0) : stat.stddev.toFixed(1);
+        return m + suffix + " ± " + s + suffix;
+      }
+
+      function deltaClass(val) {
+        if (!val) return "";
+        const n = parseFloat(val);
+        if (n > 0) return "benchmark-delta-positive";
+        if (n < 0) return "benchmark-delta-negative";
+        return "";
+      }
+
+      // Discover config names dynamically (everything except "delta")
+      const configs = Object.keys(summary).filter(k => k !== "delta");
+      const configA = configs[0] || "config_a";
+      const configB = configs[1] || "config_b";
+      const labelA = configA.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      const labelB = configB.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      const a = summary[configA] || {};
+      const b = summary[configB] || {};
+      const delta = summary.delta || {};
+
+      html += "<thead><tr><th>Metric</th><th>" + escapeHtml(labelA) + "</th><th>" + escapeHtml(labelB) + "</th><th>Delta</th></tr></thead>";
+      html += "<tbody>";
+
+      html += "<tr><td><strong>Pass Rate</strong></td>";
+      html += "<td>" + fmtStat(a.pass_rate, true) + "</td>";
+      html += "<td>" + fmtStat(b.pass_rate, true) + "</td>";
+      html += '<td class="' + deltaClass(delta.pass_rate) + '">' + (delta.pass_rate || "—") + "</td></tr>";
+
+      // Time (only show row if data exists)
+      if (a.time_seconds || b.time_seconds) {
+        html += "<tr><td><strong>Time (s)</strong></td>";
+        html += "<td>" + fmtStat(a.time_seconds, false) + "</td>";
+        html += "<td>" + fmtStat(b.time_seconds, false) + "</td>";
+        html += '<td class="' + deltaClass(delta.time_seconds) + '">' + (delta.time_seconds ? delta.time_seconds + "s" : "—") + "</td></tr>";
+      }
+
+      // Tokens (only show row if data exists)
+      if (a.tokens || b.tokens) {
+        html += "<tr><td><strong>Tokens</strong></td>";
+        html += "<td>" + fmtStat(a.tokens, false) + "</td>";
+        html += "<td>" + fmtStat(b.tokens, false) + "</td>";
+        html += '<td class="' + deltaClass(delta.tokens) + '">' + (delta.tokens || "—") + "</td></tr>";
+      }
+
+      html += "</tbody></table>";
+
+      // Per-eval breakdown (if runs data available)
+      const runs = data.runs || [];
+      if (runs.length > 0) {
+        const evalIds = [...new Set(runs.map(r => r.eval_id))].sort((a, b) => a - b);
+
+        html += "<h3 style='font-family: Poppins, sans-serif; margin-bottom: 0.75rem;'>Per-Eval Breakdown</h3>";
+
+        const hasTime = runs.some(r => r.result && r.result.time_seconds != null);
+        const hasErrors = runs.some(r => r.result && r.result.errors > 0);
+
+        for (const evalId of evalIds) {
+          const evalRuns = runs.filter(r => r.eval_id === evalId);
+          const evalName = evalRuns[0] && evalRuns[0].eval_name ? evalRuns[0].eval_name : "Eval " + evalId;
+
+          html += "<h4 style='font-family: Poppins, sans-serif; margin: 1rem 0 0.5rem; color: var(--text);'>" + escapeHtml(evalName) + "</h4>";
+          html += '<table class="benchmark-table">';
+          html += "<thead><tr><th>Config</th><th>Run</th><th>Pass Rate</th>";
+          if (hasTime) html += "<th>Time (s)</th>";
+          if (hasErrors) html += "<th>Crashes During Execution</th>";
+          html += "</tr></thead>";
+          html += "<tbody>";
+
+          // Group by config and render with average rows
+          const configGroups = [...new Set(evalRuns.map(r => r.configuration))];
+          for (let ci = 0; ci < configGroups.length; ci++) {
+            const config = configGroups[ci];
+            const configRuns = evalRuns.filter(r => r.configuration === config);
+            if (configRuns.length === 0) continue;
+
+            const rowClass = ci === 0 ? "benchmark-row-with" : "benchmark-row-without";
+            const configLabel = config.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+
+            for (const run of configRuns) {
+              const r = run.result || {};
+              const prClass = r.pass_rate >= 0.8 ? "benchmark-delta-positive" : r.pass_rate < 0.5 ? "benchmark-delta-negative" : "";
+              html += '<tr class="' + rowClass + '">';
+              html += "<td>" + configLabel + "</td>";
+              html += "<td>" + run.run_number + "</td>";
+              html += '<td class="' + prClass + '">' + ((r.pass_rate || 0) * 100).toFixed(0) + "% (" + (r.passed || 0) + "/" + (r.total || 0) + ")</td>";
+              if (hasTime) html += "<td>" + (r.time_seconds != null ? r.time_seconds.toFixed(1) : "—") + "</td>";
+              if (hasErrors) html += "<td>" + (r.errors || 0) + "</td>";
+              html += "</tr>";
+            }
+
+            // Average row
+            const rates = configRuns.map(r => (r.result || {}).pass_rate || 0);
+            const avgRate = rates.reduce((a, b) => a + b, 0) / rates.length;
+            const avgPrClass = avgRate >= 0.8 ? "benchmark-delta-positive" : avgRate < 0.5 ? "benchmark-delta-negative" : "";
+            html += '<tr class="benchmark-row-avg ' + rowClass + '">';
+            html += "<td>" + configLabel + "</td>";
+            html += "<td>Avg</td>";
+            html += '<td class="' + avgPrClass + '">' + (avgRate * 100).toFixed(0) + "%</td>";
+            if (hasTime) {
+              const times = configRuns.map(r => (r.result || {}).time_seconds).filter(t => t != null);
+              html += "<td>" + (times.length ? (times.reduce((a, b) => a + b, 0) / times.length).toFixed(1) : "—") + "</td>";
+            }
+            if (hasErrors) html += "<td></td>";
+            html += "</tr>";
+          }
+          html += "</tbody></table>";
+
+          // Per-assertion detail for this eval
+          const runsWithExpectations = {};
+          for (const config of configGroups) {
+            runsWithExpectations[config] = evalRuns.filter(r => r.configuration === config && r.expectations && r.expectations.length > 0);
+          }
+          const hasAnyExpectations = Object.values(runsWithExpectations).some(runs => runs.length > 0);
+          if (hasAnyExpectations) {
+            // Collect all unique assertion texts across all configs
+            const allAssertions = [];
+            const seen = new Set();
+            for (const config of configGroups) {
+              for (const run of runsWithExpectations[config]) {
+                for (const exp of (run.expectations || [])) {
+                  if (!seen.has(exp.text)) {
+                    seen.add(exp.text);
+                    allAssertions.push(exp.text);
+                  }
+                }
+              }
+            }
+
+            html += '<table class="benchmark-table" style="margin-top: 0.5rem;">';
+            html += "<thead><tr><th>Assertion</th>";
+            for (const config of configGroups) {
+              const label = config.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+              html += "<th>" + escapeHtml(label) + "</th>";
+            }
+            html += "</tr></thead><tbody>";
+
+            for (const assertionText of allAssertions) {
+              html += "<tr><td>" + escapeHtml(assertionText) + "</td>";
+
+              for (const config of configGroups) {
+                html += "<td>";
+                for (const run of runsWithExpectations[config]) {
+                  const exp = (run.expectations || []).find(e => e.text === assertionText);
+                  if (exp) {
+                    const cls = exp.passed ? "benchmark-delta-positive" : "benchmark-delta-negative";
+                    const icon = exp.passed ? "\u2713" : "\u2717";
+                    html += '<span class="' + cls + '" title="Run ' + run.run_number + ': ' + escapeHtml(exp.evidence || "") + '">' + icon + "</span> ";
+                  } else {
+                    html += "— ";
+                  }
+                }
+                html += "</td>";
+              }
+              html += "</tr>";
+            }
+            html += "</tbody></table>";
+          }
+        }
+      }
+
+      // Notes
+      if (notes.length > 0) {
+        html += '<div class="benchmark-notes">';
+        html += "<h3>Analysis Notes</h3>";
+        html += "<ul>";
+        for (const note of notes) {
+          html += "<li>" + escapeHtml(note) + "</li>";
+        }
+        html += "</ul></div>";
+      }
+
+      container.innerHTML = html;
+    }
+
+    // ---- Start ----
+    init();
+    renderBenchmark();
+  </script>
+</body>
+</html>

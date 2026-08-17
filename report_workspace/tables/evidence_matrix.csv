@@ -1,0 +1,7 @@
+﻿question,evidence,evidence_type,finding,confidence
+300 ms干预是否真实生效,SCB requested/actual wall delay and lifecycle rows,B_DIRECT_LOG_MEASUREMENT,300 ms组的SCB实测墙钟延迟接近300 ms；baseline接近0 ms,HIGH
+响应变慢是否转化为空间债务,uniform t1/t2 and wall-clock speed trapezoidal integral,B_DIRECT_LOG_MEASUREMENT,组间T_e2e、D_delay、D2分布分离,HIGH
+1131是否为纯实时性致撞,1131 vs 1211; Fusion gap and outcome trajectory,B_DIRECT_LOG_MEASUREMENT,实时性是主要候选因素，但Fusion长空档和初始净距差异阻止“纯时延”归因,MEDIUM_HIGH
+1643是否为纯实时性致撞,"1643 vs 1211; response, D1, target age, braking to impact",B_DIRECT_LOG_MEASUREMENT,响应更慢与起始净距更小共同压缩空间，属多因素撞击,HIGH
+恢复baseline响应后会怎样,observed pre-t2 trace + collision-run equivalent deceleration model,C_MODEL_COUNTERFACTUAL,1131预测避碰；1643仍预测碰撞但冲击速度降低,MEDIUM
+Guardian是否位于Bridge执行链,workspace deployment description,A_CONFIGURATION,Bridge直接读取Control，Guardian trace不视为车辆执行链一环,HIGH_FOR_REPORTED_DEPLOYMENT

@@ -1,0 +1,13 @@
+﻿group_name,run_id,run_directory,file_count,log_file_count,trace_file_count,collect_available,localization_available,perception_available,prediction_available,planning_available,control_trace_available,scb_available,collision_event_available,actor_history_available,included_main_analysis,exclusion_reason
+baseline,202607271031,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/baseline/202607271031,32,5,26,True,True,True,True,True,True,True,False,False,True,
+baseline,202607271048,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/baseline/202607271048,32,5,26,True,True,True,True,True,True,True,False,False,True,
+baseline,202607271054,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/baseline/202607271054,32,5,26,True,True,True,True,True,True,True,False,False,True,
+baseline,202607271059,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/baseline/202607271059,32,5,26,True,True,True,True,True,True,True,False,False,True,
+baseline,202607271104,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/baseline/202607271104,32,5,26,True,True,True,True,True,True,True,False,False,True,
+baseline,202607271108,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/baseline/202607271108,32,5,26,True,True,True,True,True,True,True,False,False,True,
+baseline,202607271113,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/baseline/202607271113,32,5,26,True,True,True,True,True,True,True,False,False,True,
+delay_300ms,202607271131,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271131,35,8,26,True,True,True,True,True,True,True,True,True,True,
+delay_300ms,202607271202,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271202,32,5,26,True,True,True,True,True,True,True,False,False,True,
+delay_300ms,202607271206,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271206,32,5,26,True,True,True,True,True,True,True,False,False,False,OUTCOME_UNCERTAIN_COLLISION_EVENT_ABSENT_BUT_FIXED_GEOMETRY_IMPLIES_OVERLAP
+delay_300ms,202607271211,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211,32,5,26,True,True,True,True,True,True,True,False,False,True,
+delay_300ms,202607271643,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271643,35,8,26,True,True,True,True,True,True,True,True,True,True,

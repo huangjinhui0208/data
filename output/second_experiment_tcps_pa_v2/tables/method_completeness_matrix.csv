@@ -1,0 +1,15 @@
+﻿requirement,status,evidence_or_gap
+证据/模型分离,已完成,observed、retrospective、requirement、model 分列且 taint 传播
+Claim Graph 与六层 Gate,已完成（结构）,P_CLOCK/P_TARGET/P_FUNC/P_DEADLINE、C1-C7 与 canonical edges 已建立
+Gate 可执行判据,本版补齐,输入、指标、证据类别、criterion 与下一层条件已写入 Claim Ledger/报告
+Temporal Fault Signature,部分完成,onset/幅值/pattern/scope 可用；end/duration/message count/drop/reorder 未闭合
+R/A/G 与 tail latency,部分完成,run-level P50/P90/P95/P99/MAX 已汇总；record message-level MRT/MDA 不可用
+严格 cause-effect lineage,未完成,当前 grade C；缺 event/sequence/provenance 绑定
+独立 tau_req,未完成,只有 tau_retro 与未验证 tau_model
+主观测 Distance Debt,未完成,没有 REQUIREMENT_CONSTRAINED_DERIVED debt
+空间预算分解,部分完成,完整安全停车 run 可分解；碰撞 run 被右删失
+连续物理安全尺度,部分完成,D2/M0/M6/impact 可用；near/critical taxonomy 缺 threshold provenance
+Functional Correctness,部分完成,审计表已建但 P_FUNC 全部 PARTIAL，Control/Prediction 等多项 UNKNOWN
+Clock/Phase uncertainty,未完成,多数 run 无 offset/drift/resolution；12/12 未 phase scan
+Pre-hazard state divergence,部分完成,D1/V1 标为 possible mediator，但 fault-onset state/delta 缺失
+论文级方法有效性,未完成,缺多非零等级、独立验证数据、record-enabled lineage、负对照与跨系统验证

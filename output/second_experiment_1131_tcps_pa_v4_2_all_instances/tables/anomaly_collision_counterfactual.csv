@@ -1,0 +1,8 @@
+﻿run_id,scenario,evidence_class,safety_metric,value,verdict,qualification
+202607271131,删除这三个晚期异常：对首次 t_phys 的影响,data/observed event ordering,anomaly_start_minus_t_phys,1189.275 ms,三者均晚于 t_phys，不能解释或提前本次首次物理制动端点。,DIRECT_ORDERING_BOUND
+202607271131,三个异常共同覆盖期间的实际车辆状态,data/observed,speed_and_wall_distance,v 12.544->10.000 m/s; D_wall=5.816 m,车辆持续减速；这段行驶距离是观测状态，不是可归因给异常的 deadline debt。,OBSERVED_NOT_ATTRIBUTABLE_LOSS
+202607271131,删除这三个晚期异常：最终是否无碰撞,data/observed counterfactual,collision_outcome_without_anomalies,UNAVAILABLE,NOT_IDENTIFIABLE：没有无异常 replay，且缺少 Control payload/Bridge apply。,COUNTERFACTUAL_NOT_OBSERVED
+202607271131,在 t_phys 立即按基线制动能力停车（0 m 接触边界）,model/predicted; unvalidated calibration,contact_stopping_margin,central=-5.195 m; conservative=-13.810 m,两套模型均为负：到首次物理制动时已越过接触停止边界。,MODEL_SUPPORTED_ONLY
+202607271131,在最早异常开始时立即持续制动（0 m 接触边界）,observed state + model/predicted braking,required_decel_and_contact_margin,clear=6.729 m; v=12.544 m/s; a_req=11.692 m/s2; margins central/planner4/conservative=-8.691/-12.939/-13.116 m,到三异常开始时更不可能仅靠正常/降级制动避免接触。,MODEL_SUPPORTED_ONLY
+202607271131,不同反事实：删除 t_sample→t_phys 的全部初始响应距离,model/predicted; unvalidated calibration,zero_delay_contact_margin,central=12.919 m; conservative=5.647 m,0 m 接触边界下可能避免碰撞，但这不是删除本次三个晚期异常的效果。,MODEL_SUPPORTED_ONLY_DIFFERENT_COUNTERFACTUAL
+202607271131,不同反事实：删除全部初始响应距离并要求 6 m 安全余量,model/predicted; research d_safe,zero_delay_6m_margin,central=6.919 m; conservative=-0.353 m,结论不稳健：central 为正、conservative 略为负。,MODEL_SUPPORTED_ONLY_BOUNDARY_SENSITIVE

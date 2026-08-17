@@ -1,0 +1,56 @@
+{
+  "run_id": "202607271131",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "lidar_instance_count",
+      "passed": true,
+      "detail": "{'lidar_detection_processing': 352, 'planning_runonce': 353, 'ground_detection_processing': 361}"
+    },
+    {
+      "check": "planning_instance_count",
+      "passed": true,
+      "detail": "{'lidar_detection_processing': 352, 'planning_runonce': 353, 'ground_detection_processing': 361}"
+    },
+    {
+      "check": "ground_instance_count",
+      "passed": true,
+      "detail": "{'lidar_detection_processing': 352, 'planning_runonce': 353, 'ground_detection_processing': 361}"
+    },
+    {
+      "check": "selected_extreme_values",
+      "passed": true,
+      "detail": "{\"lidar_detection_processing\": 507.314848, \"planning_runonce\": 473.55728, \"ground_detection_processing\": 481.353664}"
+    },
+    {
+      "check": "one_multi_component_segment",
+      "passed": true,
+      "detail": "count=1"
+    },
+    {
+      "check": "control_population",
+      "passed": true,
+      "detail": "outputs=3636, traces=354"
+    },
+    {
+      "check": "source_fusion_all_instances",
+      "passed": true,
+      "detail": "expected=353, available=352"
+    },
+    {
+      "check": "no_fabricated_physical_episode_distribution",
+      "passed": true,
+      "detail": "log_all_delayed_commands=false; no record; no event-local payload/apply-to-feedback mapping"
+    },
+    {
+      "check": "required_artifacts_exist",
+      "passed": true,
+      "detail": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/all_instance_lineage_timing.csv|/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/all_instance_lineage_distribution.csv|/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/component_timing_all_instances.csv|/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/component_timing_distribution.csv|/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/research_anomaly_segments.csv|/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/control_trace_reuse.csv|/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/control_physical_episode_audit.csv|/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/figures/component_timing_scatter_all_instances.png|/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/report/all_instance_reanalysis_report.md"
+    }
+  ],
+  "important_limitations": [
+    "Research anomaly thresholds are not component contracts.",
+    "Within-run instances are not independent experimental replicates.",
+    "Strict Control-to-physical episode distribution is unavailable."
+  ]
+}

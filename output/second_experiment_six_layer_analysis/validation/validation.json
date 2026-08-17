@@ -1,0 +1,39 @@
+{
+  "protocol": "TCPS-PA Diagnostic Protocol v2",
+  "analysis_dir": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_six_layer_analysis",
+  "status": "FAIL",
+  "error_count": 3,
+  "warning_count": 1,
+  "errors": [
+    {
+      "check": "semantic_argument:V11",
+      "path": "tables/claim_ledger.csv",
+      "message": "single nonzero delay level forbids closed-loop amplification language"
+    },
+    {
+      "check": "semantic_argument:LANGUAGE",
+      "path": "tables/claim_ledger.csv",
+      "message": "material-contribution language exceeds the C7 ceiling [claim=C7.all_runs]"
+    },
+    {
+      "check": "semantic_argument:REPORT_GATE",
+      "path": "tables/claim_ledger.csv",
+      "message": "report must begin analysis with a Six-Layer Inference Status Matrix"
+    }
+  ],
+  "warnings": [
+    {
+      "check": "legacy_distance_alias",
+      "path": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_six_layer_analysis/tables/run_level_observed.csv",
+      "message": "only deprecated D_delay alias exists; new analyses must emit canonical D_response"
+    }
+  ],
+  "summary": {
+    "observed_run_count": 12,
+    "evidence_row_count": 123,
+    "claim_row_count": 12,
+    "defeater_row_count": 28,
+    "semantic_issue_count": 3,
+    "required_file_count": 19
+  }
+}

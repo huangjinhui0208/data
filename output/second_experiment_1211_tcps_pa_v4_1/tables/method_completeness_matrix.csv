@@ -1,0 +1,23 @@
+﻿requirement,status,evidence_or_gap
+single-run observed scope,PASS,observed branch parses only 202607271211
+raw input inventory and hashes,PASS,32 files with SHA-256
+four event-time semantics,PARTIAL,t_sample observed; t_world left-censored; t_demand/t_observable unavailable
+P_OBSERVABILITY,NOT_TESTABLE,missing observer/FOV/occlusion/range model
+P_CLOCK cross-host audit,NOT_TESTABLE,no dual-clock/event-local apply mapping
+P_PHASE active scan,MISSING,one run and no phase intervention
+target identity continuity,PARTIAL,Apollo target 12 continuous; no CARLA actor truth
+functional correctness qualification,PARTIAL,STOP exists; fallback and payload gaps remain
+same-instance source-to-Control trace,PASS,trace 17294096575131288686
+Control-to-physical strict lineage,PARTIAL,Grade C association; event-local apply missing
+component-wise R/A/G/C/L,PASS,separate component registry/evaluation
+Physical Coherence induced state error,NOT_TESTABLE,no induced-state-error model
+primary demand-origin dynamic deadline,MISSING,no t_demand; lock time/domain invalid
+sample-origin residual model,MODEL_SUPPORTED_ONLY,four baseline sensitivity scenarios
+timing guarantee bound,MISSING,no WCRT/path/suffix bound
+canonical D_response wall integral,PASS,11.999341 m
+requirement-constrained D_debt,NOT_TESTABLE,no qualified tau_req
+minimum-speed physical space budget,PARTIAL,M0=1.018 m; strict stop/direct actor truth absent
+direct physical outcome,MISSING,no CollisionSensor/actor-history files
+causal attribution,UNCERTAIN,functional/phase/clock/geometry/deadline alternatives open
+record-derived message audit,MISSING,recording was not enabled
+observed/model separation,PASS,separate observed and model tables

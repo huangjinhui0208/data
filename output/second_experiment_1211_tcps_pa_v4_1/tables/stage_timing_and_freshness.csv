@@ -1,0 +1,9 @@
+﻿run_id,stage,value_ms,semantic_type,clock_domain,lineage_grade,interpretation
+202607271211,source_to_Fusion,261.78693771362305,reaction,wall/trace anchored to wall,A,same target trace
+202607271211,Fusion_to_Prediction,4.141950286376982,reaction,wall/trace anchored to wall,A,same target trace
+202607271211,Prediction_to_Planning_STOP,11.957025848876924,reaction,wall/trace anchored to wall,A,same target trace
+202607271211,Planning_STOP_to_Control,14.71427015112306,reaction,wall/trace anchored to wall,A,same target trace
+202607271211,Control_to_t_phys,407.5667566890869,reaction,wall/trace anchored to wall,C,Grade C physical association
+202607271211,target_age_at_t_phys,300.47106742858887,age,wall/trace anchored to wall,C,latest target source before t_phys
+202607271211,target_gap_response_max,97.66387939453125,gap,wall/trace anchored to wall,C,within sample-to-physical response
+202607271211,target_gap_full_max,188.25411796569824,gap,wall/trace anchored to wall,C,during braking; research outlier

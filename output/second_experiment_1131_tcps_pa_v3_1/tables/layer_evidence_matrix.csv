@@ -1,0 +1,7 @@
+﻿layer,metric,run_id_or_group,value,unit,evidence_type,time_basis,source_file,availability
+L1,Bridge fixed delay,202607271131,300.046735,ms,DIRECT_OBSERVED,wall_epoch_s,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271131/log/scb_control_delay_20260727112916_095377.csv,AVAILABLE
+L2,R/A/G diagnostics,202607271131,R=799.636;A=400.421;G=108.213,ms,OBSERVED_DERIVED,wall_epoch_s,/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v3_1/tables/realtime_rag_summary.csv,AVAILABLE
+L3,source-to-Control lineage,202607271131,313.599344,ms,TRACE_LINEAGE,trace anchored to wall,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271131/trace/message_context/control.476002.csv,AVAILABLE
+L4,qualified dynamic deadline,202607271131,,ms,MISSING,wall_epoch_s,/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v3_1/tables/dynamic_deadline_construction.csv,NOT_AVAILABLE
+L5,D_response wall integral,202607271131,13.432027958524642,m,OBSERVED_DERIVED,wall_epoch_s,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271131/log/localization.log.INFO.20260727-112935.475992,AVAILABLE
+L6,impact speed,202607271131,7.988017222183252,m/s,DIRECT_OBSERVED,wall_epoch_s,/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271131/log/carla_collision_events_20260727113204.csv,AVAILABLE
