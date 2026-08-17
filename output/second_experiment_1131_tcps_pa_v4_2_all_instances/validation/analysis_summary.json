@@ -1,0 +1,27 @@
+{
+  "run_id": "202607271131",
+  "t_world_status": "LEFT_CENSORED_PRE_EXISTING",
+  "t_demand_status": "NOT_TESTABLE_NO_INDEPENDENT_DEMAND_PREDICATE",
+  "t_observable_status": "NOT_TESTABLE_MISSING_OBSERVER_MODEL",
+  "t_sample_wall_s": 1785123121.945625,
+  "t_phys_wall_s": 1785123122.745261,
+  "collision_wall_s": 1785123124.852247,
+  "T_R_demand_ms": null,
+  "T_R_sample_bracket_ms": [
+    699.4550228118896,
+    799.6358871459961
+  ],
+  "D_response_demand_m": null,
+  "D_response_sample_m": 13.432027958524642,
+  "impact_speed_mps": 7.988017222183252,
+  "primary_deadline_status": "NOT_QUALIFIED_PRIMARY",
+  "observed_contract_status": "PRIMARY_NOT_TESTABLE_SAMPLE_MODEL_MISS_ONLY",
+  "sample_model_tau_center_ms": [
+    0.0,
+    206.35903086800485,
+    335.31858569088564,
+    618.822095814306
+  ],
+  "guarantee_status": "NOT_ESTABLISHED",
+  "attribution_status": "UNCERTAIN"
+}

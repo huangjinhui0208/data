@@ -1,0 +1,23 @@
+﻿parent_claim_id,child_claim_id,relation,required,notes
+P_TARGET.all_runs,P_FUNC.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+P_TARGET.all_runs,P_DEADLINE.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+P_CLOCK.fault_signature,C1.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+C1.all_runs,C2.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+P_CLOCK.cross_host,C2.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+C1.all_runs,C3.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+C2.all_runs,C3.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+P_CLOCK.cross_host,C3.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+P_TARGET.all_runs,C3.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+C3.all_runs,C4.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+P_CLOCK.cross_host,C4.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+P_TARGET.all_runs,C4.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+P_DEADLINE.all_runs,C4.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+C4.all_runs,C5.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+P_CLOCK.cross_host,C5.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+C1.all_runs,C7.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+C2.all_runs,C7.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+C3.all_runs,C7.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+C4.all_runs,C7.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+C5.all_runs,C7.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+C6.all_runs,C7.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.
+P_FUNC.all_runs,C7.all_runs,REQUIRES,TRUE,Canonical TCPS-PA v2 prerequisite edge.

@@ -1,0 +1,2 @@
+﻿run_id_or_group,producer_period_ms,consumer_period_ms,bridge_tick_period_ms,phase_definition,phase_bins_or_offsets,scan_performed,matched_repeats_per_phase,phase_effect_metric,phase_effect_estimate,uncertainty_interval,phase_effect_verdict,source_evidence_ids,p_phase_verdict,notes
+202607271643,100.0,mixed,100.0,relative sensor/Control/CARLA tick offset,,FALSE,0,,,,NOT_TESTABLE,EV.PHASE.1643,NOT_TESTABLE,No active phase scan or matched repeats in this single run; tick quantization remains an alternative.

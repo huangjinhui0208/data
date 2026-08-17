@@ -1,0 +1,11 @@
+﻿run_id,metric,value,unit,evidence_class,interpretation
+202607271131,lidar_inputs_t_sample_to_collision,27,frames,DIRECT_OBSERVED,all LiDAR source anchors from first stable target sample to collision
+202607271131,pre_collision_complete_to_first_control,22,frames,TRACE_LINEAGE,Grade-A software chain compatible with pre-collision outcome
+202607271131,no_fusion_lineage,2,frames,MISSING_EXPLICIT,"sensor inputs retained as missing, not imputed"
+202607271131,outcome_right_censored,3,frames,TRACE_LINEAGE,"full trace exists, but first Control is after collision"
+202607271131,pre_selected_target_reference_p50,324.292898,ms,RETROSPECTIVE_RESEARCH_REFERENCE,17 target-bearing frames before selected late traces; not a deadline
+202607271131,selected_late_frames_mean_e2e_latency,745.529890,ms,OBSERVED_DERIVED,mean of three selected late target-bearing frames
+202607271131,selected_late_frames_mean_distance_exposure,8.757993,m,OBSERVED_DERIVED,"wall-speed integral; occupancy exposure, not causal loss"
+202607271131,target_frame_distance_sum_non_additive,115.511748,m,DIAGNOSTIC_ONLY,overlapping per-frame intervals; forbidden as total loss
+202607271131,target_frame_interval_union_distance,38.640995,m,OBSERVED_DERIVED,distance on de-duplicated union of the 20 target-frame intervals
+202607271131,per_frame_physical_effect_episodes_identified,0,episodes,NOT_IDENTIFIABLE,no Control payload/apply/feedback binding per independent action episode

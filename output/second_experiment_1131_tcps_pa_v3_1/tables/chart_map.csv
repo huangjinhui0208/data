@@ -1,0 +1,5 @@
+﻿figure,question,takeaway,family,data_rows,palette_policy,non_color_encoding,source
+event_chain_timeline.png,Where is time consumed from t1 to collision?,799.636 ms to physical braking; Control-to-t2 is the largest segment.,ordered event timeline,9,hard two-root cap,direct labels and event markers,event_timeline.csv
+response_stage_decomposition.png,Which initial-response segments dominate?,Control-to-t2 and source-to-Fusion account for nearly all observed T_R.,ordered horizontal bar,5,hard two-root cap,exact values and ordered labels,stage_timing_and_freshness.csv
+speed_and_events.png,"How did the physical state evolve around t1, t2 and collision?","Speed rises until the t2 sample, then falls but remains 7.988 m/s at impact.",line with event references,390,single-root preferred,line plus labeled vertical markers,velocity_trajectory_observed.csv
+target_freshness_timeline.png,When did target freshness and continuity degrade?,"The largest gap and ~700 ms lifecycle occur after t2, before collision.",two-panel line/stem,20,hard two-root cap,"markers, line styles and t2/collision references",target_freshness_timeline.csv

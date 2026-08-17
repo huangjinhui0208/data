@@ -1,0 +1,235 @@
+{
+  "analysis_scope": "single_run_only",
+  "run_id": "202607271211",
+  "raw_run_directory": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211",
+  "raw_directory_policy": "read_only",
+  "generated_at": "2026-08-13T17:29:51.159313+08:00",
+  "file_count": 32,
+  "total_bytes": 77444373,
+  "files": [
+    {
+      "relative_path": "collect_time.txt",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/collect_time.txt",
+      "size_bytes": 63,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "0c3cf39670fb4e16c47203501c66787f2453459c8d5af0e85c5d5b1c013c5bac"
+    },
+    {
+      "relative_path": "log/localization.log.INFO.20260727-120934.719143",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/log/localization.log.INFO.20260727-120934.719143",
+      "size_bytes": 94628,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "9bc6d715260aceb3c47c997863b22541b470e030968a1ec7e40a57b59c9de4cc"
+    },
+    {
+      "relative_path": "log/perception.log.INFO.20260727-120942.719157",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/log/perception.log.INFO.20260727-120942.719157",
+      "size_bytes": 1714367,
+      "mtime_ns": 1785144288000000000,
+      "sha256": "ba6e3e6599071ac449f13bbedada25b71653fca3a5910a2b483c654e5675227e"
+    },
+    {
+      "relative_path": "log/planning.log.INFO.20260727-120936.719151",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/log/planning.log.INFO.20260727-120936.719151",
+      "size_bytes": 67368207,
+      "mtime_ns": 1785144300000000000,
+      "sha256": "01208e94e1bd05619e441df36a15b09194c4154b3b29848976bab87b0cfe48d6"
+    },
+    {
+      "relative_path": "log/prediction.log.INFO.20260727-120935.719147",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/log/prediction.log.INFO.20260727-120935.719147",
+      "size_bytes": 67600,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "3fe092d297fa9b2f1abaeb9f6139051be7467099901b03894d89671ceb67c42c"
+    },
+    {
+      "relative_path": "log/scb_control_delay_20260727120915_480783.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/log/scb_control_delay_20260727120915_480783.csv",
+      "size_bytes": 2183,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "2559979593eff9a56e6bb53cf929520e6ec033c542508130a05eae15d87bfce7"
+    },
+    {
+      "relative_path": "trace/events/control.719153.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/control.719153.csv",
+      "size_bytes": 3425101,
+      "mtime_ns": 1785144288000000000,
+      "sha256": "2686f9be123da1a8b1757e8c298cfeee7a2ac370ba8a90daa4a6a9ec29a26e2d"
+    },
+    {
+      "relative_path": "trace/events/guardian.719149.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/guardian.719149.csv",
+      "size_bytes": 566415,
+      "mtime_ns": 1785144288000000000,
+      "sha256": "24c0e10962c016c569b655611545477333a3429f4bdd76bd31d1eaf54ddf9a5f"
+    },
+    {
+      "relative_path": "trace/events/perception.lidar_detection.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/perception.lidar_detection.719157.csv",
+      "size_bytes": 61019,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "ed646fcc91adb804147b9bb23d4b88a695c6989b35fbe0f3fef743269394dbcd"
+    },
+    {
+      "relative_path": "trace/events/perception.lidar_detection_filter.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/perception.lidar_detection_filter.719157.csv",
+      "size_bytes": 64671,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "73ed16bb24dd49ec7d9755a899884eac22d7e21e57e4ec56244709b40ed44a80"
+    },
+    {
+      "relative_path": "trace/events/perception.lidar_tracking.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/perception.lidar_tracking.719157.csv",
+      "size_bytes": 60495,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "8efdb00f01b57dfd40af0f2caf5c0cf20d1d5df00322f42fa1f451282668b033"
+    },
+    {
+      "relative_path": "trace/events/perception.multi_sensor_fusion.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/perception.multi_sensor_fusion.719157.csv",
+      "size_bytes": 94328,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "4c3b9f09dfd74df75b52c1b1e5ae4075611644ee630c33cc44a0271769226680"
+    },
+    {
+      "relative_path": "trace/events/perception.pointcloud_ground_detection.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/perception.pointcloud_ground_detection.719157.csv",
+      "size_bytes": 69219,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "64edba8fe2233af55a4d77395caff6638323b78f00acb8c5fdf23df242dbe6e7"
+    },
+    {
+      "relative_path": "trace/events/perception.pointcloud_map_based_roi.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/perception.pointcloud_map_based_roi.719157.csv",
+      "size_bytes": 67732,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "cae2f9c6fd56aaf5b115b6512c4f3b867483f0eeba3b1e14869ee9fe2060c331"
+    },
+    {
+      "relative_path": "trace/events/perception.pointcloud_preprocess.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/perception.pointcloud_preprocess.719157.csv",
+      "size_bytes": 66116,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "fd68cd331d42264466193e5e9891858640f7d378045c9880e762b86b09d34ece"
+    },
+    {
+      "relative_path": "trace/events/perception.radar_detection.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/perception.radar_detection.719157.csv",
+      "size_bytes": 59549,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "f443cad8f8926fbb3859008019e53c5c98a7bde4710e7b27575471086f2fb6a8"
+    },
+    {
+      "relative_path": "trace/events/planning.719151.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/planning.719151.csv",
+      "size_bytes": 502847,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "b9801402482d39099a21d0faf19e89e14e6536087197028bc3ece9895b1113b3"
+    },
+    {
+      "relative_path": "trace/events/prediction.719147.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/events/prediction.719147.csv",
+      "size_bytes": 334107,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "f780adc6f1b69d83d8e6105926ae2c609278c6fd11afc2ea726a4397f6e466a8"
+    },
+    {
+      "relative_path": "trace/fusion_inputs/perception.multi_sensor_fusion.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/fusion_inputs/perception.multi_sensor_fusion.719157.csv",
+      "size_bytes": 65784,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "3d97bbf645f8ce2cb2e3a8bea957ada547dbecf9f4aea3ea572bf402e1b8e282"
+    },
+    {
+      "relative_path": "trace/message_context/control.719153.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/control.719153.csv",
+      "size_bytes": 851725,
+      "mtime_ns": 1785144288000000000,
+      "sha256": "95521c2dd5392efa1293d9fa9733337155729c740615f997e4772675a11a9d76"
+    },
+    {
+      "relative_path": "trace/message_context/guardian.719149.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/guardian.719149.csv",
+      "size_bytes": 850218,
+      "mtime_ns": 1785144288000000000,
+      "sha256": "8697b18e75cd075b7d3529633b74d8208c42315b9e2af4eff8e075bfc071bc3b"
+    },
+    {
+      "relative_path": "trace/message_context/perception.lidar_detection.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/perception.lidar_detection.719157.csv",
+      "size_bytes": 93229,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "0834474c9e0b2ea8914b99959b6073110102f21ab535badc2ddd77a76afd946b"
+    },
+    {
+      "relative_path": "trace/message_context/perception.lidar_detection_filter.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/perception.lidar_detection_filter.719157.csv",
+      "size_bytes": 94010,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "0914f06ac8aedce7bb34d9f553a395e8e2c4a54fc4e3913247485ec086bf3a03"
+    },
+    {
+      "relative_path": "trace/message_context/perception.lidar_tracking.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/perception.lidar_tracking.719157.csv",
+      "size_bytes": 91400,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "ec4d89e9d1594d8185d19fc4bcd05a37371fbdcdc963650607da01f4c5ab5720"
+    },
+    {
+      "relative_path": "trace/message_context/perception.multi_sensor_fusion.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/perception.multi_sensor_fusion.719157.csv",
+      "size_bytes": 139817,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "c27b20ae8d85be1d24097e8414d4e98a7f410b453089e89850f3b60fa8c34035"
+    },
+    {
+      "relative_path": "trace/message_context/perception.pointcloud_ground_detection.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/perception.pointcloud_ground_detection.719157.csv",
+      "size_bytes": 106377,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "d131101536578d04a3955a1e0ad72af9bd4b5069da3387f87d6f9e557a9b4af8"
+    },
+    {
+      "relative_path": "trace/message_context/perception.pointcloud_map_based_roi.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/perception.pointcloud_map_based_roi.719157.csv",
+      "size_bytes": 103347,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "a3231f04bd61b2217fc5ce918cafeddb167004fccacf00c4a167b8feddfeadb4"
+    },
+    {
+      "relative_path": "trace/message_context/perception.pointcloud_preprocess.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/perception.pointcloud_preprocess.719157.csv",
+      "size_bytes": 103614,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "775ff0bfc51b9c8a19b68819c1cf6b50ba4effb0676b38d2203850af791ba7d9"
+    },
+    {
+      "relative_path": "trace/message_context/perception.radar_detection.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/perception.radar_detection.719157.csv",
+      "size_bytes": 88080,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "1b62a28852d777c71b263036639dc2336e4b858578a0ace7829bc3282ee7657f"
+    },
+    {
+      "relative_path": "trace/message_context/planning.719151.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/planning.719151.csv",
+      "size_bytes": 85054,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "a0832343ca1950853a7f153de2e21c5b808e6666c2a228ae4e1291c0ae8448b1"
+    },
+    {
+      "relative_path": "trace/message_context/prediction.719147.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/message_context/prediction.719147.csv",
+      "size_bytes": 88885,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "d75a8a1fe8cd2811df7db2844757b2ef7ad79f05255fef209c302c3691a8f98f"
+    },
+    {
+      "relative_path": "trace/trace_anchor/perception.719157.csv",
+      "absolute_path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271211/trace/trace_anchor/perception.719157.csv",
+      "size_bytes": 64186,
+      "mtime_ns": 1785144286000000000,
+      "sha256": "2fd836cdc2a369fec8cd6ccf2fc7d78dbe73cc182b554dff72ddb645334a5eb1"
+    }
+  ]
+}

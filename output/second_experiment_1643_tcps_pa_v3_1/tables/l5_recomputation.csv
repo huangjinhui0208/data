@@ -1,0 +1,2 @@
+﻿run_id,requirement_id,t1_wall_s,t_deadline_wall_s,te_wall_s,D_response_recomputed_m,D_debt_recomputed_m,D_response_reported_m,D_debt_reported_m,D1_observed_m,D_brake_observed_m,M0_recomputed_m,M0_reported_m,endpoint_coverage,max_abs_error_m,tolerance_m,recomputation_status,notes
+202607271643,,1785141848.854508,,1785141849.748378,15.450549919780316,,15.450549919780315,,36.6510692137721,,,,COVERED_WITH_LINEAR_INTERPOLATION,1.7763568394002505e-15,0.02,RESPONSE_ONLY,No qualified per-run tau_req; primary D_debt is not recomputed.

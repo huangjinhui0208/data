@@ -1,0 +1,3 @@
+﻿validation_id,run_id,parameter,baseline_candidate_mps2,evaluation_observed_peak_mps2,difference_evaluation_minus_candidate_mps2,validation_result,evidence_class,deadline_input_usage,notes
+VAL.A_RESP.1643,202607271643,a_resp_conservative_candidate,2.668280131788248,4.505839492146846,1.8375593603585978,VIOLATED,OBSERVED_DERIVED_VALIDATION_DIAGNOSTIC,PROHIBITED_CURRENT_RUN_POST_T1,1643 post-t1 observation tests the baseline envelope but is not fed back into its deadline.
+VAL.B_E.1643,202607271643,b_e_conservative_candidate,3.964440359923389,,,NOT_TESTABLE_COLLISION_RIGHT_CENSORING,MISSING,NOT_USED,Collision prevents a complete 1643 stopping endpoint and independent b_e validation.

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_WITH_EVIDENCE_LIMITATIONS",
+  "raw_baseline_directory_read_only": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/baseline",
+  "run_count_expected": 7,
+  "run_count_analyzed": 7,
+  "complete_braking_endpoint_count": 7,
+  "strict_stop_hold_count": 2,
+  "max_abs_d0_difference_vs_existing_raw_recomputation_m": 0.0,
+  "max_abs_D_response_difference_vs_existing_raw_recomputation_m": 0.0,
+  "existing_model_center_b_e_reproduced_mps2": 5.10219903631545,
+  "numeric_tolerance_m": 1e-09,
+  "primary_deadline_qualification": "NOT_QUALIFIED_PRIMARY",
+  "qualification_reason": "post-hoc small-n empirical calibration; no external braking envelope or ODD validation",
+  "observed_model_separation": "PASS",
+  "d_safe_scenarios_separated": [
+    0.0,
+    6.0
+  ]
+}

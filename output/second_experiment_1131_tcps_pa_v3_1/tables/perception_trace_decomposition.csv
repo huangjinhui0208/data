@@ -1,0 +1,15 @@
+﻿segment,duration_ms,semantic,run_id,trace_id,parent_trace_id,clock_domain,evidence_class
+sensor_to_preprocess_ingress,101.614,source data age before Preprocess entry,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+preprocess_processing,4.15168,Preprocess execution,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+preprocess_to_roi_edge,0.106816,edge/readiness delay,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+roi_processing,5.605568,map ROI execution,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+roi_to_ground_edge,0.109216,edge/readiness delay,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+ground_processing,18.175968,ground detection execution,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+ground_to_detection_wait,61.477792,wait/queue before Lidar Detection,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+lidar_detection_processing,98.162944,CenterPoint/Lidar Detection execution,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+detection_to_filter_edge,0.172448,edge/readiness delay,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+filter_processing,0.317952,detection filter execution,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+filter_to_tracking_edge,0.468544,edge/readiness delay,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+tracking_processing,0.686304,Lidar Tracking execution,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+tracking_to_fusion_edge,0.149952,edge/readiness delay,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE
+fusion_processing,1.777824,Multi-Sensor Fusion execution,202607271131,17293896665878496482,72131690813719833,monotonic_ns anchored to sensor wall/source time,TRACE_LINEAGE

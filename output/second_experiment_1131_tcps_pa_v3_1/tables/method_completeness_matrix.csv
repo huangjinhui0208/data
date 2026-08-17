@@ -1,0 +1,20 @@
+﻿requirement,status,evidence_or_gap
+single-run scope; no other-run evidence,PASS,parser discovers only 202607271131 for computation
+raw input inventory and hashes,PASS,35 files; sha256 saved
+wall-clock t1/t2 endpoint definitions,PASS,event_timeline.csv E01/E07
+P_CLOCK alignment audit,PASS,p95 residual 0.661 ms
+P_PHASE active scan,MISSING,no matched phase intervention
+target identity continuity,PASS,20 matched frames
+functional correctness qualification,PARTIAL,STOP exists; fallback and payload gaps remain
+same-instance source-to-Control trace,PASS,trace 17293896665878496482
+Control-to-physical strict lineage,PARTIAL,Grade C temporal/semantic association
+R/A/G explicit outputs,PASS,realtime_rag_summary.csv and stage table
+prospective dynamic deadline,MISSING,no independent braking envelope or locked safety buffer
+timing guarantee bound,MISSING,no WCRT/suffix bound
+canonical D_response wall integral,PASS,13.432028 m
+requirement-constrained D_debt,NOT_TESTABLE,no qualified tau_req
+full-stop observed space budget,NOT_TESTABLE,collision right-censoring
+direct physical outcome,PASS,collision at 7.988 m/s
+causal attribution,UNCERTAIN,"open functional, phase, braking, geometry and deadline defeaters"
+record-derived message audit,MISSING,record was not enabled for run 1131
+observed/model separation,PASS,model table explicitly reports NOT_COMPUTED

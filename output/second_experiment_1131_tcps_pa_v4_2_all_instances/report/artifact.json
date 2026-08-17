@@ -1,0 +1,1725 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "1131 run 全实例实时性重新分析",
+    "description": "TCPS-PA v4.2：全run逐实例、Apollo链路映射、observed/model分离碰撞反事实，以及从首个稳定目标样本到碰撞的逐帧时延—行驶距离暴露。",
+    "generatedAt": "2026-08-15T16:38:49.482727Z",
+    "charts": [
+      {
+        "id": "component_duration_distribution",
+        "title": "三个模块的执行时间分位数与最大值",
+        "subtitle": "约 0.5 s 的最大值远离各模块 P99；筛查阈值为 research provenance，不是契约 deadline。",
+        "type": "bar",
+        "dataset": "component_statistics_tidy",
+        "sourceId": "all_instance_analysis",
+        "intent": "distribution",
+        "question": "Lidar Detection、Planning RunOnce 和 Ground Detection 的典型执行时间与尾部尖峰相差多少？",
+        "rationale": "并列显示 P50、P99 与 MAX，避免平均值掩盖尾部异常。",
+        "encodings": {
+          "x": {
+            "field": "module",
+            "type": "nominal",
+            "label": "模块"
+          },
+          "y": {
+            "field": "duration_ms",
+            "type": "quantitative",
+            "label": "执行时间",
+            "unit": "ms"
+          },
+          "color": {
+            "field": "statistic",
+            "type": "nominal",
+            "label": "统计量"
+          },
+          "tooltip": [
+            {
+              "field": "n",
+              "type": "quantitative",
+              "label": "实例数"
+            },
+            {
+              "field": "research_threshold_ms",
+              "type": "quantitative",
+              "label": "median+6MAD",
+              "unit": "ms"
+            },
+            {
+              "field": "research_outlier_count",
+              "type": "quantitative",
+              "label": "research 异常数"
+            }
+          ]
+        },
+        "yAxisTitle": "执行时间 (ms)",
+        "layout": "full",
+        "maxRows": 9,
+        "surface": {
+          "viewMode": "both",
+          "interactiveLegend": true
+        }
+      },
+      {
+        "id": "framewise_latency_distance_scatter",
+        "title": "逐帧端到端时延与处理期间行驶距离",
+        "subtitle": "碰撞前完成的22帧；虚线参考=324.293 ms。距离是observed pipeline exposure，不是可相加的因果损失。",
+        "type": "scatter",
+        "dataset": "framewise_performance_complete",
+        "sourceId": "framewise_performance_analysis",
+        "intent": "relationship",
+        "question": "当sensor→first Control时延增大时，该软件处理窗口内自车实际行驶了多远？",
+        "rationale": "用散点保留每帧，避免均值掩盖三个尾部帧；颜色区分目标在场、晚期异常和目标缺失状态。",
+        "encodings": {
+          "x": {
+            "field": "e2e_ms",
+            "type": "quantitative",
+            "label": "source→first Control",
+            "unit": "ms"
+          },
+          "y": {
+            "field": "distance_m",
+            "type": "quantitative",
+            "label": "墙钟速度积分距离",
+            "unit": "m"
+          },
+          "color": {
+            "field": "performance_state",
+            "type": "nominal",
+            "label": "帧状态"
+          },
+          "tooltip": [
+            {
+              "field": "frame",
+              "type": "quantitative",
+              "label": "帧"
+            },
+            {
+              "field": "source_rel_s",
+              "type": "quantitative",
+              "label": "source相对t_sample",
+              "unit": "s"
+            },
+            {
+              "field": "fusion_trace",
+              "type": "nominal",
+              "label": "Fusion trace"
+            },
+            {
+              "field": "source_to_fusion_ms",
+              "type": "quantitative",
+              "label": "Source→Fusion",
+              "unit": "ms"
+            },
+            {
+              "field": "prediction_to_planning_ms",
+              "type": "quantitative",
+              "label": "Prediction→Planning",
+              "unit": "ms"
+            }
+          ]
+        },
+        "xAxisTitle": "sensor source→首个关联Control (ms)",
+        "yAxisTitle": "处理期间行驶距离 (m)",
+        "layout": "full",
+        "maxRows": 22,
+        "surface": {
+          "viewMode": "both",
+          "interactiveLegend": true
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "lineage_distribution_table",
+        "title": "明确 trace lineage 边的全部实例统计",
+        "subtitle": "首次因果值与全 run 分布并列；缺失实例显式保留。",
+        "dataset": "lineage_distribution",
+        "sourceId": "all_instance_analysis",
+        "defaultSort": {
+          "field": "first_percentile_pct",
+          "direction": "desc"
+        },
+        "density": "dense",
+        "columns": [
+          {
+            "field": "metric",
+            "label": "软件链指标",
+            "type": "text"
+          },
+          {
+            "field": "available_expected",
+            "label": "可用/期望",
+            "type": "text"
+          },
+          {
+            "field": "p50_ms",
+            "label": "P50 ms",
+            "type": "number"
+          },
+          {
+            "field": "p95_ms",
+            "label": "P95 ms",
+            "type": "number"
+          },
+          {
+            "field": "p99_ms",
+            "label": "P99 ms",
+            "type": "number"
+          },
+          {
+            "field": "max_ms",
+            "label": "MAX ms",
+            "type": "number"
+          },
+          {
+            "field": "first_causal_ms",
+            "label": "首次因果值 ms",
+            "type": "number"
+          },
+          {
+            "field": "first_percentile_pct",
+            "label": "首次值分位 %",
+            "type": "number"
+          }
+        ]
+      },
+      {
+        "id": "component_distribution_table",
+        "title": "三个模块的全实例分布",
+        "subtitle": "帧是 run 内时间样本，不是独立实验重复。",
+        "dataset": "component_distribution",
+        "sourceId": "all_instance_analysis",
+        "defaultSort": {
+          "field": "max_ms",
+          "direction": "desc"
+        },
+        "density": "dense",
+        "columns": [
+          {
+            "field": "module",
+            "label": "模块",
+            "type": "text"
+          },
+          {
+            "field": "n",
+            "label": "n",
+            "type": "number"
+          },
+          {
+            "field": "mean_ms",
+            "label": "Mean ms",
+            "type": "number"
+          },
+          {
+            "field": "p50_ms",
+            "label": "P50 ms",
+            "type": "number"
+          },
+          {
+            "field": "p95_ms",
+            "label": "P95 ms",
+            "type": "number"
+          },
+          {
+            "field": "p99_ms",
+            "label": "P99 ms",
+            "type": "number"
+          },
+          {
+            "field": "max_ms",
+            "label": "MAX ms",
+            "type": "number"
+          },
+          {
+            "field": "research_outlier_count",
+            "label": "research 异常数",
+            "type": "number"
+          }
+        ]
+      },
+      {
+        "id": "anomaly_segment_table",
+        "title": "按时间合并的 research 异常段",
+        "subtitle": "仅列跨组件时间轴去重后的五个段；合并间隔不超过 100 ms。",
+        "dataset": "anomaly_segments",
+        "sourceId": "all_instance_analysis",
+        "defaultSort": {
+          "field": "start_s",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "columns": [
+          {
+            "field": "segment",
+            "label": "段",
+            "type": "text"
+          },
+          {
+            "field": "start_s",
+            "label": "起点相对 t_sample s",
+            "type": "number"
+          },
+          {
+            "field": "end_s",
+            "label": "终点相对 t_sample s",
+            "type": "number"
+          },
+          {
+            "field": "modules",
+            "label": "涉及模块",
+            "type": "text"
+          },
+          {
+            "field": "instances",
+            "label": "实例数",
+            "type": "number"
+          },
+          {
+            "field": "classification",
+            "label": "分类",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "control_episode_table",
+        "title": "Control→physical episode 可识别性审计",
+        "subtitle": "3636 条发布消息不能替代独立物理动作 episode。",
+        "dataset": "control_episode_audit",
+        "sourceId": "all_instance_analysis",
+        "defaultSort": {
+          "field": "item",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "columns": [
+          {
+            "field": "item",
+            "label": "审计项",
+            "type": "text"
+          },
+          {
+            "field": "value",
+            "label": "结果",
+            "type": "text"
+          },
+          {
+            "field": "interpretation",
+            "label": "解释",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "anomaly_apollo_impact_table",
+        "title": "三个异常映射到 Apollo 后的直接影响",
+        "subtitle": "三者均晚于 t_phys；后期刷新退化不等于首次制动延迟的原因。",
+        "dataset": "anomaly_apollo_impact",
+        "sourceId": "impact_analysis",
+        "defaultSort": {
+          "field": "module",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "columns": [
+          {
+            "field": "module",
+            "label": "模块",
+            "type": "text"
+          },
+          {
+            "field": "anomaly_ms",
+            "label": "异常实例 ms",
+            "type": "number"
+          },
+          {
+            "field": "p50_ms",
+            "label": "run P50 ms",
+            "type": "number"
+          },
+          {
+            "field": "apollo_effect",
+            "label": "Apollo 系统影响",
+            "type": "text"
+          },
+          {
+            "field": "collision_status",
+            "label": "碰撞因果状态",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "collision_counterfactual_table",
+        "title": "碰撞反事实：直接观测与模型诊断分开",
+        "subtitle": "模型结果不能覆盖实际数据结果；‘删除晚期三异常’与‘删除初始响应延迟’是不同反事实。",
+        "dataset": "collision_counterfactual",
+        "sourceId": "counterfactual_analysis",
+        "defaultSort": {
+          "field": "scenario",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "columns": [
+          {
+            "field": "scenario",
+            "label": "情景",
+            "type": "text"
+          },
+          {
+            "field": "evidence_class",
+            "label": "证据类别",
+            "type": "text"
+          },
+          {
+            "field": "safety_metric",
+            "label": "安全量",
+            "type": "text"
+          },
+          {
+            "field": "value",
+            "label": "值",
+            "type": "text"
+          },
+          {
+            "field": "verdict",
+            "label": "结论",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "framewise_endpoint_availability_table",
+        "title": "从首个稳定目标样本到碰撞的27个LiDAR输入",
+        "subtitle": "22帧碰撞前完成，3帧右删失，2帧无Fusion lineage；缺失值不填补。",
+        "dataset": "framewise_endpoint_availability",
+        "sourceId": "framewise_performance_analysis",
+        "defaultSort": {
+          "field": "frame",
+          "direction": "asc"
+        },
+        "density": "dense",
+        "columns": [
+          {
+            "field": "frame",
+            "label": "帧",
+            "type": "number"
+          },
+          {
+            "field": "source_rel_s",
+            "label": "source rel. s",
+            "type": "number"
+          },
+          {
+            "field": "target_11",
+            "label": "目标11",
+            "type": "text"
+          },
+          {
+            "field": "e2e_ms",
+            "label": "E2E ms",
+            "type": "number"
+          },
+          {
+            "field": "distance_m",
+            "label": "距离 m",
+            "type": "number"
+          },
+          {
+            "field": "endpoint_status",
+            "label": "端点状态",
+            "type": "text"
+          },
+          {
+            "field": "outcome_status",
+            "label": "碰撞兼容性",
+            "type": "text"
+          },
+          {
+            "field": "right_censored_ms",
+            "label": "到碰撞 ms",
+            "type": "number"
+          },
+          {
+            "field": "last_prefix",
+            "label": "最后前缀端点",
+            "type": "text"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "all_instance_analysis",
+        "label": "1131 全实例分析输出与复现脚本",
+        "path": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/scripts/analyze_1131_all_instances_v4_2.py"
+      },
+      {
+        "id": "raw_trace",
+        "label": "1131 Apollo trace 原始目录",
+        "path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271131/trace"
+      },
+      {
+        "id": "impact_analysis",
+        "label": "1131 三异常 Apollo 映射与碰撞反事实",
+        "path": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/scripts/analyze_1131_anomaly_collision_impact_v4_2.py",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT CASE WHEN module IS NULL THEN metric_name ELSE module END AS module, duration_ms AS anomaly_ms, p50_ms, apollo_system_effect AS apollo_effect, collision_causal_status AS collision_status FROM read_csv_auto('/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/anomaly_apollo_impact_mapping.csv', header=true) ORDER BY module",
+          "description": "读取三个选定异常的逐实例 trace 映射，展示执行时间、Apollo 下游影响与碰撞因果边界。",
+          "tables_used": [
+            "anomaly_apollo_impact_mapping.csv"
+          ],
+          "metric_definitions": [
+            "anomaly_ms：同一 Orin monotonic_ns 的组件起止端点差。",
+            "collision_status：基于事件先后和 trace lineage 的证据状态，不是概率。"
+          ]
+        }
+      },
+      {
+        "id": "counterfactual_analysis",
+        "label": "1131 observed/model 分离的碰撞反事实",
+        "path": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/anomaly_collision_counterfactual.csv",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT scenario, evidence_class, safety_metric, value, verdict FROM read_csv_auto('/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/anomaly_collision_counterfactual.csv', header=true) ORDER BY scenario",
+          "description": "读取直接观测和模型预测分离保存的反事实情景；不使用模型值填补实际结果。",
+          "tables_used": [
+            "anomaly_collision_counterfactual.csv"
+          ],
+          "metric_definitions": [
+            "data/observed：本 run 直接测得或由一致端点推导。",
+            "model/predicted：未完全验证的制动模型敏感性，不覆盖 observed 结果。"
+          ]
+        }
+      },
+      {
+        "id": "framewise_performance_analysis",
+        "label": "1131逐帧时延—行驶距离暴露",
+        "path": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/scripts/analyze_1131_framewise_performance_v4_2.py",
+        "query": {
+          "engine": "duckdb",
+          "language": "sql",
+          "sql": "SELECT CAST(frame_index AS INTEGER) AS frame, CAST(source_relative_t_sample_s AS DOUBLE) AS source_rel_s, fusion_trace_id AS fusion_trace, performance_state, CAST(T_e2e_data_observed_pre_collision_ms AS DOUBLE) AS e2e_ms, CAST(D_e2e_wall_integral_data_observed_m AS DOUBLE) AS distance_m, CAST(T_source_to_fusion_output_data_observed_ms AS DOUBLE) AS source_to_fusion_ms, CAST(T_fusion_to_prediction_output_data_observed_ms AS DOUBLE) AS fusion_to_prediction_ms, CAST(T_prediction_to_planning_output_data_observed_ms AS DOUBLE) AS prediction_to_planning_ms, CAST(T_planning_output_to_first_control_output_data_observed_ms AS DOUBLE) AS planning_to_control_ms FROM read_csv_auto('/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/framewise_sensor_to_control_performance.csv', header=true, nullstr='') WHERE outcome_compatibility='PRE_COLLISION_COMPLETE' ORDER BY frame",
+          "description": "从27个LiDAR source输入中选择碰撞前完成到首个关联Control的22帧，并列展示Grade-A软件时延和同区间墙钟速度积分距离。",
+          "tables_used": [
+            "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/framewise_sensor_to_control_performance.csv",
+            "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/velocity_trajectory_observed.csv",
+            "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/all_instance_lineage_timing.csv"
+          ],
+          "metric_definitions": [
+            "e2e_ms：sensor source到同trace首个Control output的逐实例时延。",
+            "distance_m：同一墙钟区间的Localization速度梯形积分；语义为pipeline occupancy exposure，非因果损失。",
+            "碰撞后完成端点右删失；无Fusion lineage的输入保留缺失，不填补。"
+          ]
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# 1131 run 全实例实时性重新分析"
+      },
+      {
+        "id": "technical_summary",
+        "type": "markdown",
+        "body": "## 技术摘要\n\n三个约 0.5 s 的异常均发生在首次物理制动 `t_phys` 之后。它们确实造成后期闭环刷新退化：感知目标更新出现 507.439 ms 空洞，Planning 新轨迹刷新停顿，Control 对旧 trace 重复发布。但异常前已有针对障碍物 11 的 STOP/最大减速度 4 m/s² 轨迹，异常期间车辆仍持续减速。\n\n因此，**删除这三个晚期异常并不能由本 run 直接推出‘不会碰撞’**。直接观测的反事实为 NOT_IDENTIFIABLE；在已声明但未完全验证的制动模型中，车辆在 `t_phys` 以及最早异常开始时均已越过 0 m 接触停止边界，所以只消除这三处晚期尖峰，碰撞仍很可能发生。\n\n新增逐帧性能映射后，可以更直接地看到时延的车辆侧后果：三个晚期异常帧source→first Control为 **783.440/721.321/731.829 ms**，其软件处理窗口内自车实际行驶**9.519/8.520/8.234 m**。这证明尾部时延增加了新闭环结果可用前的空间暴露；但不能把重叠帧距离求和，也不能将它们直接命名为因果碰撞损失。"
+      },
+      {
+        "id": "collision_impact_summary",
+        "type": "markdown",
+        "body": "## 结论先行\n\n- 三异常的可证影响是**晚期 Closed-Loop Timing Integrity 退化**，不是首次制动开始过晚的解释。\n- 最早异常开始时，车辆约 `12.544 m/s`，一致口径净距约 `6.729 m`；瞬时停车至少需要约 `11.692 m/s²`。\n- 直接观测不能回答无异常 replay 的最终结果；模型诊断则指向‘只删除这三异常仍会碰撞’。"
+      },
+      {
+        "id": "apollo_mapping_heading",
+        "type": "markdown",
+        "body": "## 映射到 Apollo 自动驾驶链路"
+      },
+      {
+        "id": "anomaly_apollo_impact",
+        "type": "table",
+        "tableId": "anomaly_apollo_impact_table"
+      },
+      {
+        "id": "counterfactual_heading",
+        "type": "markdown",
+        "body": "## 无三异常时是否安全：反事实边界"
+      },
+      {
+        "id": "collision_counterfactual",
+        "type": "table",
+        "tableId": "collision_counterfactual_table"
+      },
+      {
+        "id": "scope_and_method",
+        "type": "markdown",
+        "body": "## 范围、定义与方法\n\n- 母体：353 个主 LiDAR Fusion trace；所有具有明确 lineage 的软件边逐实例计算。\n- 组件执行时间：同一 Orin `monotonic_ns` 端点相减。\n- 异常筛查：run 内 `median+6×MAD`，provenance 为 **RESEARCH**，只用于定位，不等同于 architectural/calibrated deadline。\n- 异常段：超过筛查线的实例按时间排序，相邻间隔不超过 100 ms 时合并。\n- Control→physical：以独立动作 episode 为统计单位；禁止把每条 Control 发布与唯一 `t_phys` 相减形成伪重复。"
+      },
+      {
+        "id": "component_visual_heading",
+        "type": "markdown",
+        "body": "## 三个模块的全实例执行时间"
+      },
+      {
+        "id": "component_visual",
+        "type": "chart",
+        "chartId": "component_duration_distribution"
+      },
+      {
+        "id": "component_distribution",
+        "type": "table",
+        "tableId": "component_distribution_table"
+      },
+      {
+        "id": "lineage_heading",
+        "type": "markdown",
+        "body": "## 软件链全部实例与首次因果值"
+      },
+      {
+        "id": "lineage_distribution",
+        "type": "table",
+        "tableId": "lineage_distribution_table"
+      },
+      {
+        "id": "anomaly_heading",
+        "type": "markdown",
+        "body": "## 异常时间段\n\n跨越 `t_sample` 的 Lidar burst 位于 **[-1.467, 0.088] s**。`t_phys` 后的多模块并发段位于 **[1.989, 2.496] s**，三模块共同执行重叠约 **467.161 ms**。全时间戳散点图与区间着色见本地静态图 `figures/component_timing_scatter_all_instances.png`。"
+      },
+      {
+        "id": "anomaly_segments",
+        "type": "table",
+        "tableId": "anomaly_segment_table"
+      },
+      {
+        "id": "control_heading",
+        "type": "markdown",
+        "body": "## Control 独立动作 episode 审计\n\nControl 有 3636 条输出、354 个唯一 trace，单 trace 中位发布 10 次、最多 40 次。现有日志只支持首次目标制动的 Grade C 事件关联，区间约为 **[385.856, 486.037] ms**；全 run episode 分布不可用。"
+      },
+      {
+        "id": "control_episode",
+        "type": "table",
+        "tableId": "control_episode_table"
+      },
+      {
+        "id": "framewise_performance_heading",
+        "type": "markdown",
+        "body": "## 逐帧时延如何转化为车辆侧空间暴露\n\n每帧主端点是sensor source→同trace首个Control output；距离是同一墙钟区间的实测速度积分。它表示新帧处理期间已消耗的行驶空间，不是逐帧可归因物理响应。"
+      },
+      {
+        "id": "framewise_performance_chart",
+        "type": "chart",
+        "chartId": "framewise_latency_distance_scatter"
+      },
+      {
+        "id": "framewise_endpoint_table",
+        "type": "table",
+        "tableId": "framewise_endpoint_availability_table"
+      },
+      {
+        "id": "framewise_performance_limits",
+        "type": "markdown",
+        "body": "### 证据边界\n\n27个输入中，22帧在碰撞前完成到首个Control，3帧右删失，2帧无Fusion lineage。车辆本来就在运动，且Control以约10 ms复用轨迹，当前数据不能为每帧唯一绑定物理位置变化。"
+      },
+      {
+        "id": "limitations",
+        "type": "markdown",
+        "body": "## 限制与结论边界\n\n`source→Fusion` 的 research 筛查线标出 38/352（10.8%）实例，显示非平稳/阶段相关尾部，不能解释为 38 次独立 contract miss。多模块时间重叠支持共同资源或调度干扰候选，但缺少 CPU/GPU 调度、队列和利用率证据，不能证明唯一根因。该重分析强化 L2/L3 定位，不新增独立动态 deadline，也不把物理安全因果结论从模型支持升级为直接观测成立。"
+      },
+      {
+        "id": "next_evidence",
+        "type": "markdown",
+        "body": "## 后续证据要求\n\n开启 Apollo record 并保留 Control payload、Planning reuse、Chassis 反馈；设置 `log_all_delayed_commands=true` 保存 Bridge receive/release/apply；同步记录 CPU/GPU、线程调度、GPU kernel 与队列深度。对匹配初始状态做多 run 复现，run 内帧分布不能替代实验重复。"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-15T16:38:49.482727Z",
+    "status": "ready",
+    "datasets": {
+      "component_statistics_tidy": [
+        {
+          "module": "Lidar Detection",
+          "statistic": "P50",
+          "duration_ms": 92.236,
+          "n": 352,
+          "mean_ms": 96.397,
+          "p95_ms": 103.019,
+          "research_threshold_ms": 111.625,
+          "research_outlier_count": 8
+        },
+        {
+          "module": "Lidar Detection",
+          "statistic": "P99",
+          "duration_ms": 221.203,
+          "n": 352,
+          "mean_ms": 96.397,
+          "p95_ms": 103.019,
+          "research_threshold_ms": 111.625,
+          "research_outlier_count": 8
+        },
+        {
+          "module": "Lidar Detection",
+          "statistic": "MAX",
+          "duration_ms": 507.315,
+          "n": 352,
+          "mean_ms": 96.397,
+          "p95_ms": 103.019,
+          "research_threshold_ms": 111.625,
+          "research_outlier_count": 8
+        },
+        {
+          "module": "Planning RunOnce",
+          "statistic": "P50",
+          "duration_ms": 27.604,
+          "n": 353,
+          "mean_ms": 29.101,
+          "p95_ms": 43.546,
+          "research_threshold_ms": 53.729,
+          "research_outlier_count": 5
+        },
+        {
+          "module": "Planning RunOnce",
+          "statistic": "P99",
+          "duration_ms": 56.665,
+          "n": 353,
+          "mean_ms": 29.101,
+          "p95_ms": 43.546,
+          "research_threshold_ms": 53.729,
+          "research_outlier_count": 5
+        },
+        {
+          "module": "Planning RunOnce",
+          "statistic": "MAX",
+          "duration_ms": 473.557,
+          "n": 353,
+          "mean_ms": 29.101,
+          "p95_ms": 43.546,
+          "research_threshold_ms": 53.729,
+          "research_outlier_count": 5
+        },
+        {
+          "module": "Ground Detection",
+          "statistic": "P50",
+          "duration_ms": 12.158,
+          "n": 361,
+          "mean_ms": 14.581,
+          "p95_ms": 21.638,
+          "research_threshold_ms": 29.241,
+          "research_outlier_count": 1
+        },
+        {
+          "module": "Ground Detection",
+          "statistic": "P99",
+          "duration_ms": 24.931,
+          "n": 361,
+          "mean_ms": 14.581,
+          "p95_ms": 21.638,
+          "research_threshold_ms": 29.241,
+          "research_outlier_count": 1
+        },
+        {
+          "module": "Ground Detection",
+          "statistic": "MAX",
+          "duration_ms": 481.354,
+          "n": 361,
+          "mean_ms": 14.581,
+          "p95_ms": 21.638,
+          "research_threshold_ms": 29.241,
+          "research_outlier_count": 1
+        }
+      ],
+      "component_distribution": [
+        {
+          "module": "Lidar Detection",
+          "n": 352,
+          "mean_ms": 96.397,
+          "p50_ms": 92.236,
+          "p95_ms": 103.019,
+          "p99_ms": 221.203,
+          "max_ms": 507.315,
+          "research_outlier_count": 8
+        },
+        {
+          "module": "Planning RunOnce",
+          "n": 353,
+          "mean_ms": 29.101,
+          "p50_ms": 27.604,
+          "p95_ms": 43.546,
+          "p99_ms": 56.665,
+          "max_ms": 473.557,
+          "research_outlier_count": 5
+        },
+        {
+          "module": "Ground Detection",
+          "n": 361,
+          "mean_ms": 14.581,
+          "p50_ms": 12.158,
+          "p95_ms": 21.638,
+          "p99_ms": 24.931,
+          "max_ms": 481.354,
+          "research_outlier_count": 1
+        }
+      ],
+      "lineage_distribution": [
+        {
+          "metric": "source→Fusion output",
+          "available_expected": "352/353",
+          "p50_ms": 213.15,
+          "p95_ms": 298.524,
+          "p99_ms": 398.122,
+          "max_ms": 705.98,
+          "first_causal_ms": 292.979,
+          "first_percentile_pct": 92.6
+        },
+        {
+          "metric": "Fusion→Prediction output",
+          "available_expected": "353/353",
+          "p50_ms": 3.926,
+          "p95_ms": 10.406,
+          "p99_ms": 12.846,
+          "max_ms": 20.339,
+          "first_causal_ms": 3.955,
+          "first_percentile_pct": 50.7
+        },
+        {
+          "metric": "Prediction→Planning output",
+          "available_expected": "353/353",
+          "p50_ms": 28.671,
+          "p95_ms": 45.678,
+          "p99_ms": 57.313,
+          "max_ms": 480.043,
+          "first_causal_ms": 13.035,
+          "first_percentile_pct": 9.1
+        },
+        {
+          "metric": "Planning output→first Control",
+          "available_expected": "353/353",
+          "p50_ms": 8.124,
+          "p95_ms": 13.079,
+          "p99_ms": 14.524,
+          "max_ms": 20.932,
+          "first_causal_ms": 3.63,
+          "first_percentile_pct": 8.5
+        },
+        {
+          "metric": "source→first Control",
+          "available_expected": "352/353",
+          "p50_ms": 254.597,
+          "p95_ms": 333.477,
+          "p99_ms": 467.64,
+          "max_ms": 783.44,
+          "first_causal_ms": 313.601,
+          "first_percentile_pct": 90.1
+        }
+      ],
+      "anomaly_segments": [
+        {
+          "segment": "SEG02",
+          "start_s": -28.297,
+          "end_s": -28.238,
+          "modules": "Planning RunOnce",
+          "instances": 1,
+          "classification": "SINGLE_INSTANCE"
+        },
+        {
+          "segment": "SEG04",
+          "start_s": -7.471,
+          "end_s": -7.328,
+          "modules": "Planning RunOnce",
+          "instances": 2,
+          "classification": "SINGLE_COMPONENT_BURST"
+        },
+        {
+          "segment": "SEG06",
+          "start_s": -6.881,
+          "end_s": -6.823,
+          "modules": "Planning RunOnce",
+          "instances": 1,
+          "classification": "SINGLE_INSTANCE"
+        },
+        {
+          "segment": "SEG08",
+          "start_s": -1.467,
+          "end_s": 0.088,
+          "modules": "Lidar Detection",
+          "instances": 7,
+          "classification": "SINGLE_COMPONENT_BURST"
+        },
+        {
+          "segment": "SEG10",
+          "start_s": 1.989,
+          "end_s": 2.496,
+          "modules": "Lidar + Planning + Ground",
+          "instances": 3,
+          "classification": "MULTI_COMPONENT_CONCURRENT"
+        }
+      ],
+      "control_episode_audit": [
+        {
+          "order": 1,
+          "item": "Control 发布总体",
+          "value": "3636 条 / 354 unique trace",
+          "interpretation": "单 trace 中位 10 条、最多 40 条；发布消息不是独立物理 episode。"
+        },
+        {
+          "order": 2,
+          "item": "首次目标制动 episode",
+          "value": "[385.856, 486.037] ms",
+          "interpretation": "Grade C 事件级关联；486.037 ms 是上界采样值。"
+        },
+        {
+          "order": 3,
+          "item": "全 run 物理 episode 分布",
+          "value": "UNAVAILABLE",
+          "interpretation": "缺少 Control payload、Bridge apply 与反馈映射，禁止伪造逐消息分布。"
+        }
+      ],
+      "anomaly_apollo_impact": [
+        {
+          "order": 1,
+          "module": "Ground Detection",
+          "anomaly_ms": 481.354,
+          "p50_ms": 12.158,
+          "apollo_effect": "使下一轮障碍物检测、Fusion、Prediction、Planning 和 Control 刷新整体后移。",
+          "collision_status": "LATE_DEGRADATION_SUPPORTED; COLLISION_PREVENTION_NOT_IDENTIFIABLE"
+        },
+        {
+          "order": 2,
+          "module": "Lidar Detection",
+          "anomaly_ms": 507.315,
+          "p50_ms": 92.236,
+          "apollo_effect": "Prediction/Planning/Control 在空洞期间只能依赖此前目标状态和轨迹刷新。",
+          "collision_status": "LATE_DEGRADATION_SUPPORTED; COLLISION_PREVENTION_NOT_IDENTIFIABLE"
+        },
+        {
+          "order": 3,
+          "module": "Planning RunOnce",
+          "anomaly_ms": 473.557,
+          "p50_ms": 27.604,
+          "apollo_effect": "延迟新 STOP 轨迹刷新，但没有观测到制动命令被取消；此前 STOP/最大减速度 4 轨迹仍在先。",
+          "collision_status": "LATE_DEGRADATION_SUPPORTED; COLLISION_PREVENTION_NOT_IDENTIFIABLE"
+        }
+      ],
+      "collision_counterfactual": [
+        {
+          "order": 1,
+          "scenario": "删除这三个晚期异常：对首次 t_phys 的影响",
+          "evidence_class": "data/observed event ordering",
+          "safety_metric": "anomaly_start_minus_t_phys",
+          "value": "1189.275 ms",
+          "verdict": "三者均晚于 t_phys，不能解释或提前本次首次物理制动端点。"
+        },
+        {
+          "order": 2,
+          "scenario": "三个异常共同覆盖期间的实际车辆状态",
+          "evidence_class": "data/observed",
+          "safety_metric": "speed_and_wall_distance",
+          "value": "v 12.544->10.000 m/s; D_wall=5.816 m",
+          "verdict": "车辆持续减速；这段行驶距离是观测状态，不是可归因给异常的 deadline debt。"
+        },
+        {
+          "order": 3,
+          "scenario": "删除这三个晚期异常：最终是否无碰撞",
+          "evidence_class": "data/observed counterfactual",
+          "safety_metric": "collision_outcome_without_anomalies",
+          "value": "UNAVAILABLE",
+          "verdict": "NOT_IDENTIFIABLE：没有无异常 replay，且缺少 Control payload/Bridge apply。"
+        },
+        {
+          "order": 4,
+          "scenario": "在 t_phys 立即按基线制动能力停车（0 m 接触边界）",
+          "evidence_class": "model/predicted; unvalidated calibration",
+          "safety_metric": "contact_stopping_margin",
+          "value": "central=-5.195 m; conservative=-13.810 m",
+          "verdict": "两套模型均为负：到首次物理制动时已越过接触停止边界。"
+        },
+        {
+          "order": 5,
+          "scenario": "在最早异常开始时立即持续制动（0 m 接触边界）",
+          "evidence_class": "observed state + model/predicted braking",
+          "safety_metric": "required_decel_and_contact_margin",
+          "value": "clear=6.729 m; v=12.544 m/s; a_req=11.692 m/s2; margins central/planner4/conservative=-8.691/-12.939/-13.116 m",
+          "verdict": "到三异常开始时更不可能仅靠正常/降级制动避免接触。"
+        },
+        {
+          "order": 6,
+          "scenario": "不同反事实：删除 t_sample→t_phys 的全部初始响应距离",
+          "evidence_class": "model/predicted; unvalidated calibration",
+          "safety_metric": "zero_delay_contact_margin",
+          "value": "central=12.919 m; conservative=5.647 m",
+          "verdict": "0 m 接触边界下可能避免碰撞，但这不是删除本次三个晚期异常的效果。"
+        },
+        {
+          "order": 7,
+          "scenario": "不同反事实：删除全部初始响应距离并要求 6 m 安全余量",
+          "evidence_class": "model/predicted; research d_safe",
+          "safety_metric": "zero_delay_6m_margin",
+          "value": "central=6.919 m; conservative=-0.353 m",
+          "verdict": "结论不稳健：central 为正、conservative 略为负。"
+        }
+      ],
+      "framewise_performance_complete": [
+        {
+          "frame": 0,
+          "source_rel_s": 0.0,
+          "fusion_trace": "17293896665878496482",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 313.601,
+          "distance_m": 5.085,
+          "source_to_fusion_ms": 292.979,
+          "fusion_to_prediction_ms": 3.955,
+          "prediction_to_planning_ms": 13.036,
+          "planning_to_control_ms": 3.63,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 1,
+          "source_rel_s": 0.099721,
+          "fusion_trace": "17293896665878496483",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 313.827,
+          "distance_m": 5.139,
+          "source_to_fusion_ms": 293.721,
+          "fusion_to_prediction_ms": 4.498,
+          "prediction_to_planning_ms": 12.54,
+          "planning_to_control_ms": 3.067,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 2,
+          "source_rel_s": 0.199952,
+          "fusion_trace": "17293896665878496484",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 313.905,
+          "distance_m": 5.214,
+          "source_to_fusion_ms": 292.565,
+          "fusion_to_prediction_ms": 4.096,
+          "prediction_to_planning_ms": 12.786,
+          "planning_to_control_ms": 4.455,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 3,
+          "source_rel_s": 0.29968,
+          "fusion_trace": "17293896665878496485",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 333.853,
+          "distance_m": 5.657,
+          "source_to_fusion_ms": 301.088,
+          "fusion_to_prediction_ms": 4.35,
+          "prediction_to_planning_ms": 23.807,
+          "planning_to_control_ms": 4.606,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 4,
+          "source_rel_s": 0.399215,
+          "fusion_trace": "17293896665878496486",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 324.275,
+          "distance_m": 5.591,
+          "source_to_fusion_ms": 298.529,
+          "fusion_to_prediction_ms": 3.73,
+          "prediction_to_planning_ms": 19.037,
+          "planning_to_control_ms": 2.977,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 5,
+          "source_rel_s": 0.499135,
+          "fusion_trace": "17293896665878496487",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 324.304,
+          "distance_m": 5.658,
+          "source_to_fusion_ms": 303.319,
+          "fusion_to_prediction_ms": 3.08,
+          "prediction_to_planning_ms": 12.224,
+          "planning_to_control_ms": 5.678,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 6,
+          "source_rel_s": 0.599243,
+          "fusion_trace": "17293896665878496488",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 324.293,
+          "distance_m": 5.662,
+          "source_to_fusion_ms": 300.804,
+          "fusion_to_prediction_ms": 3.921,
+          "prediction_to_planning_ms": 13.952,
+          "planning_to_control_ms": 5.613,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 7,
+          "source_rel_s": 0.699455,
+          "fusion_trace": "17293896665878496489",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 324.393,
+          "distance_m": 5.602,
+          "source_to_fusion_ms": 297.702,
+          "fusion_to_prediction_ms": 3.687,
+          "prediction_to_planning_ms": 12.68,
+          "planning_to_control_ms": 10.321,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 8,
+          "source_rel_s": 0.799636,
+          "fusion_trace": "17293896665878496490",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 343.788,
+          "distance_m": 5.813,
+          "source_to_fusion_ms": 295.784,
+          "fusion_to_prediction_ms": 11.582,
+          "prediction_to_planning_ms": 24.326,
+          "planning_to_control_ms": 12.093,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 9,
+          "source_rel_s": 0.899502,
+          "fusion_trace": "17293896665878496491",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 324.115,
+          "distance_m": 5.372,
+          "source_to_fusion_ms": 296.76,
+          "fusion_to_prediction_ms": 4.427,
+          "prediction_to_planning_ms": 20.145,
+          "planning_to_control_ms": 2.78,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 10,
+          "source_rel_s": 1.000168,
+          "fusion_trace": "17293896665878496492",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 323.498,
+          "distance_m": 5.236,
+          "source_to_fusion_ms": 297.642,
+          "fusion_to_prediction_ms": 9.115,
+          "prediction_to_planning_ms": 13.127,
+          "planning_to_control_ms": 3.613,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 11,
+          "source_rel_s": 1.099557,
+          "fusion_trace": "17293896665878496493",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 334.126,
+          "distance_m": 5.271,
+          "source_to_fusion_ms": 300.442,
+          "fusion_to_prediction_ms": 4.042,
+          "prediction_to_planning_ms": 18.45,
+          "planning_to_control_ms": 11.19,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 12,
+          "source_rel_s": 1.200278,
+          "fusion_trace": "17293896665878496494",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 331.514,
+          "distance_m": 5.103,
+          "source_to_fusion_ms": 300.829,
+          "fusion_to_prediction_ms": 8.657,
+          "prediction_to_planning_ms": 16.469,
+          "planning_to_control_ms": 5.555,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 13,
+          "source_rel_s": 1.299759,
+          "fusion_trace": "17293896665878496495",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 333.17,
+          "distance_m": 5.014,
+          "source_to_fusion_ms": 304.649,
+          "fusion_to_prediction_ms": 6.846,
+          "prediction_to_planning_ms": 16.405,
+          "planning_to_control_ms": 5.269,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 14,
+          "source_rel_s": 1.39981,
+          "fusion_trace": "17293896665878496496",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 324.72,
+          "distance_m": 4.769,
+          "source_to_fusion_ms": 301.348,
+          "fusion_to_prediction_ms": 3.873,
+          "prediction_to_planning_ms": 10.456,
+          "planning_to_control_ms": 9.041,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 15,
+          "source_rel_s": 1.499195,
+          "fusion_trace": "17293896665878496497",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 323.453,
+          "distance_m": 4.61,
+          "source_to_fusion_ms": 299.189,
+          "fusion_to_prediction_ms": 3.602,
+          "prediction_to_planning_ms": 11.284,
+          "planning_to_control_ms": 9.376,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 16,
+          "source_rel_s": 1.599368,
+          "fusion_trace": "17293896665878496498",
+          "target_11": "是",
+          "performance_state": "TARGET_PRESENT",
+          "e2e_ms": 323.552,
+          "distance_m": 4.442,
+          "source_to_fusion_ms": 295.862,
+          "fusion_to_prediction_ms": 3.723,
+          "prediction_to_planning_ms": 14.281,
+          "planning_to_control_ms": 9.683,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 17,
+          "source_rel_s": 1.700465,
+          "fusion_trace": "17293896665878496499",
+          "target_11": "是",
+          "performance_state": "SELECTED_LATE_ANOMALY",
+          "e2e_ms": 783.44,
+          "distance_m": 9.519,
+          "source_to_fusion_ms": 291.619,
+          "fusion_to_prediction_ms": 5.297,
+          "prediction_to_planning_ms": 480.049,
+          "planning_to_control_ms": 6.473,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 18,
+          "source_rel_s": 1.800248,
+          "fusion_trace": "17293896665878496500",
+          "target_11": "是",
+          "performance_state": "SELECTED_LATE_ANOMALY",
+          "e2e_ms": 721.321,
+          "distance_m": 8.52,
+          "source_to_fusion_ms": 699.268,
+          "fusion_to_prediction_ms": 4.253,
+          "prediction_to_planning_ms": 14.131,
+          "planning_to_control_ms": 3.662,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 19,
+          "source_rel_s": 1.899729,
+          "fusion_trace": "17293896665878496501",
+          "target_11": "是",
+          "performance_state": "SELECTED_LATE_ANOMALY",
+          "e2e_ms": 731.829,
+          "distance_m": 8.234,
+          "source_to_fusion_ms": 705.98,
+          "fusion_to_prediction_ms": 5.381,
+          "prediction_to_planning_ms": 18.014,
+          "planning_to_control_ms": 2.446,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 22,
+          "source_rel_s": 2.400173,
+          "fusion_trace": "17293896665878496502",
+          "target_11": "否",
+          "performance_state": "TARGET_ABSENT",
+          "e2e_ms": 342.709,
+          "distance_m": 3.253,
+          "source_to_fusion_ms": 306.857,
+          "fusion_to_prediction_ms": 2.784,
+          "prediction_to_planning_ms": 26.909,
+          "planning_to_control_ms": 6.156,
+          "reference_p50_ms": 324.293
+        },
+        {
+          "frame": 23,
+          "source_rel_s": 2.499398,
+          "fusion_trace": "17293896665878496503",
+          "target_11": "否",
+          "performance_state": "TARGET_ABSENT",
+          "e2e_ms": 343.844,
+          "distance_m": 2.997,
+          "source_to_fusion_ms": 298.52,
+          "fusion_to_prediction_ms": 3.001,
+          "prediction_to_planning_ms": 36.428,
+          "planning_to_control_ms": 5.893,
+          "reference_p50_ms": 324.293
+        }
+      ],
+      "framewise_endpoint_availability": [
+        {
+          "frame": 0,
+          "source_rel_s": 0.0,
+          "parent_trace": "72131690813719833",
+          "fusion_trace": "17293896665878496482",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 313.601,
+          "distance_m": 5.085,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 1,
+          "source_rel_s": 0.099721,
+          "parent_trace": "72131690813719834",
+          "fusion_trace": "17293896665878496483",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 313.827,
+          "distance_m": 5.139,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 2,
+          "source_rel_s": 0.199952,
+          "parent_trace": "72131690813719835",
+          "fusion_trace": "17293896665878496484",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 313.905,
+          "distance_m": 5.214,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 3,
+          "source_rel_s": 0.29968,
+          "parent_trace": "72131690813719836",
+          "fusion_trace": "17293896665878496485",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 333.853,
+          "distance_m": 5.657,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 4,
+          "source_rel_s": 0.399215,
+          "parent_trace": "72131690813719837",
+          "fusion_trace": "17293896665878496486",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 324.275,
+          "distance_m": 5.591,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 5,
+          "source_rel_s": 0.499135,
+          "parent_trace": "72131690813719838",
+          "fusion_trace": "17293896665878496487",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 324.304,
+          "distance_m": 5.658,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 6,
+          "source_rel_s": 0.599243,
+          "parent_trace": "72131690813719839",
+          "fusion_trace": "17293896665878496488",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 324.293,
+          "distance_m": 5.662,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 7,
+          "source_rel_s": 0.699455,
+          "parent_trace": "72131690813719840",
+          "fusion_trace": "17293896665878496489",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 324.393,
+          "distance_m": 5.602,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 8,
+          "source_rel_s": 0.799636,
+          "parent_trace": "72131690813719841",
+          "fusion_trace": "17293896665878496490",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 343.788,
+          "distance_m": 5.813,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 9,
+          "source_rel_s": 0.899502,
+          "parent_trace": "72131690813719842",
+          "fusion_trace": "17293896665878496491",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 324.115,
+          "distance_m": 5.372,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 10,
+          "source_rel_s": 1.000168,
+          "parent_trace": "72131690813719843",
+          "fusion_trace": "17293896665878496492",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 323.498,
+          "distance_m": 5.236,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 11,
+          "source_rel_s": 1.099557,
+          "parent_trace": "72131690813719844",
+          "fusion_trace": "17293896665878496493",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 334.126,
+          "distance_m": 5.271,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 12,
+          "source_rel_s": 1.200278,
+          "parent_trace": "72131690813719845",
+          "fusion_trace": "17293896665878496494",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 331.514,
+          "distance_m": 5.103,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 13,
+          "source_rel_s": 1.299759,
+          "parent_trace": "72131690813719846",
+          "fusion_trace": "17293896665878496495",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 333.17,
+          "distance_m": 5.014,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 14,
+          "source_rel_s": 1.39981,
+          "parent_trace": "72131690813719847",
+          "fusion_trace": "17293896665878496496",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 324.72,
+          "distance_m": 4.769,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 15,
+          "source_rel_s": 1.499195,
+          "parent_trace": "72131690813719848",
+          "fusion_trace": "17293896665878496497",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 323.453,
+          "distance_m": 4.61,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 16,
+          "source_rel_s": 1.599368,
+          "parent_trace": "72131690813719849",
+          "fusion_trace": "17293896665878496498",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 323.552,
+          "distance_m": 4.442,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 17,
+          "source_rel_s": 1.700465,
+          "parent_trace": "72131690813719850",
+          "fusion_trace": "17293896665878496499",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 783.44,
+          "distance_m": 9.519,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 18,
+          "source_rel_s": 1.800248,
+          "parent_trace": "72131690813719851",
+          "fusion_trace": "17293896665878496500",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 721.321,
+          "distance_m": 8.52,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 19,
+          "source_rel_s": 1.899729,
+          "parent_trace": "72131690813719852",
+          "fusion_trace": "17293896665878496501",
+          "target_11": "是",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 731.829,
+          "distance_m": 8.234,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 20,
+          "source_rel_s": 2.000095,
+          "parent_trace": "72131690813719853",
+          "fusion_trace": "—",
+          "target_11": "否",
+          "endpoint_status": "NO_FUSION_LINEAGE",
+          "outcome_status": "MISSING_BEFORE_OUTCOME",
+          "e2e_ms": null,
+          "distance_m": null,
+          "right_censored_ms": null,
+          "last_prefix": "perception.pointcloud_ground_detection"
+        },
+        {
+          "frame": 21,
+          "source_rel_s": 2.30025,
+          "parent_trace": "72131690813719854",
+          "fusion_trace": "—",
+          "target_11": "否",
+          "endpoint_status": "NO_FUSION_LINEAGE",
+          "outcome_status": "MISSING_BEFORE_OUTCOME",
+          "e2e_ms": null,
+          "distance_m": null,
+          "right_censored_ms": null,
+          "last_prefix": "perception.pointcloud_map_based_roi"
+        },
+        {
+          "frame": 22,
+          "source_rel_s": 2.400173,
+          "parent_trace": "72131690813719855",
+          "fusion_trace": "17293896665878496502",
+          "target_11": "否",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 342.709,
+          "distance_m": 3.253,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 23,
+          "source_rel_s": 2.499398,
+          "parent_trace": "72131690813719856",
+          "fusion_trace": "17293896665878496503",
+          "target_11": "否",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "PRE_COLLISION_COMPLETE",
+          "e2e_ms": 343.844,
+          "distance_m": 2.997,
+          "right_censored_ms": null,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 24,
+          "source_rel_s": 2.599517,
+          "parent_trace": "72131690813719857",
+          "fusion_trace": "17293896665878496504",
+          "target_11": "否",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "RIGHT_CENSORED_AT_COLLISION",
+          "e2e_ms": null,
+          "distance_m": null,
+          "right_censored_ms": 307.105,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 25,
+          "source_rel_s": 2.699466,
+          "parent_trace": "72131690813719858",
+          "fusion_trace": "17293896665878496505",
+          "target_11": "否",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "RIGHT_CENSORED_AT_COLLISION",
+          "e2e_ms": null,
+          "distance_m": null,
+          "right_censored_ms": 207.156,
+          "last_prefix": "—"
+        },
+        {
+          "frame": 26,
+          "source_rel_s": 2.818416,
+          "parent_trace": "72131690813719859",
+          "fusion_trace": "17293896665878496506",
+          "target_11": "否",
+          "endpoint_status": "COMPLETE_TO_FIRST_CONTROL",
+          "outcome_status": "RIGHT_CENSORED_AT_COLLISION",
+          "e2e_ms": null,
+          "distance_m": null,
+          "right_censored_ms": 88.206,
+          "last_prefix": "—"
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "all_instance_analysis",
+      "label": "1131 全实例分析输出与复现脚本",
+      "path": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/scripts/analyze_1131_all_instances_v4_2.py",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "WITH d AS (SELECT metric_name, n, mean_ms, p50_ms, p95_ms, p99_ms, max_ms, research_threshold_median_plus_6mad_ms, research_outlier_count FROM read_csv_auto('/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/component_timing_distribution.csv', header=true)), named AS (SELECT CASE metric_name WHEN 'lidar_detection_processing' THEN 'Lidar Detection' WHEN 'planning_runonce' THEN 'Planning RunOnce' WHEN 'ground_detection_processing' THEN 'Ground Detection' END AS module, * FROM d) SELECT module, s.statistic, s.duration_ms, n, mean_ms, p95_ms, research_threshold_median_plus_6mad_ms AS research_threshold_ms, research_outlier_count FROM named CROSS JOIN LATERAL (VALUES ('P50', p50_ms), ('P99', p99_ms), ('MAX', max_ms)) AS s(statistic, duration_ms) ORDER BY module, CASE s.statistic WHEN 'P50' THEN 1 WHEN 'P99' THEN 2 ELSE 3 END",
+        "description": "配对 Apollo trace 端点，逐 Fusion lineage 实例计算软件边时延；汇总组件执行时间、异常段和 Control trace 复用。",
+        "executed_at": "2026-08-15T02:12:44Z",
+        "tables_used": [
+          "trace/events/perception.lidar_detection.476004.csv",
+          "trace/events/perception.pointcloud_ground_detection.476004.csv",
+          "trace/events/planning.476000.csv",
+          "trace/events/prediction.475996.csv",
+          "trace/events/control.476002.csv",
+          "trace/fusion_inputs/perception.multi_sensor_fusion.476004.csv"
+        ],
+        "metric_definitions": [
+          "软件边时延：具有明确 trace lineage 的配对端点差，逐实例保存缺失原因。",
+          "组件执行时间：同一 Orin monotonic_ns 的起止事件差。",
+          "research 异常：实例值 > run 内 median + 6×MAD；不是契约 deadline。",
+          "物理响应时间：仅按独立动作 episode 计算，不按 Control 发布消息计算。"
+        ]
+      }
+    },
+    {
+      "id": "raw_trace",
+      "label": "1131 Apollo trace 原始目录",
+      "path": "/Users/huangjinhui/Desktop/萨卡班/data/第二次实验/300ms/202607271131/trace",
+      "query": {
+        "description": "Apollo 10.0 trace events、message context、Fusion input lineage 与 trace anchor 的只读输入。"
+      }
+    },
+    {
+      "id": "impact_analysis",
+      "label": "1131 三异常 Apollo 映射与碰撞反事实",
+      "path": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/scripts/analyze_1131_anomaly_collision_impact_v4_2.py",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT CASE WHEN module IS NULL THEN metric_name ELSE module END AS module, duration_ms AS anomaly_ms, p50_ms, apollo_system_effect AS apollo_effect, collision_causal_status AS collision_status FROM read_csv_auto('/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/anomaly_apollo_impact_mapping.csv', header=true) ORDER BY module",
+        "description": "读取三个选定异常的逐实例 trace 映射，展示执行时间、Apollo 下游影响与碰撞因果边界。",
+        "tables_used": [
+          "anomaly_apollo_impact_mapping.csv"
+        ],
+        "metric_definitions": [
+          "anomaly_ms：同一 Orin monotonic_ns 的组件起止端点差。",
+          "collision_status：基于事件先后和 trace lineage 的证据状态，不是概率。"
+        ]
+      }
+    },
+    {
+      "id": "counterfactual_analysis",
+      "label": "1131 observed/model 分离的碰撞反事实",
+      "path": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/anomaly_collision_counterfactual.csv",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT scenario, evidence_class, safety_metric, value, verdict FROM read_csv_auto('/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/anomaly_collision_counterfactual.csv', header=true) ORDER BY scenario",
+        "description": "读取直接观测和模型预测分离保存的反事实情景；不使用模型值填补实际结果。",
+        "tables_used": [
+          "anomaly_collision_counterfactual.csv"
+        ],
+        "metric_definitions": [
+          "data/observed：本 run 直接测得或由一致端点推导。",
+          "model/predicted：未完全验证的制动模型敏感性，不覆盖 observed 结果。"
+        ]
+      }
+    },
+    {
+      "id": "framewise_performance_analysis",
+      "label": "1131逐帧时延—行驶距离暴露",
+      "path": "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/scripts/analyze_1131_framewise_performance_v4_2.py",
+      "query": {
+        "engine": "duckdb",
+        "language": "sql",
+        "sql": "SELECT CAST(frame_index AS INTEGER) AS frame, CAST(source_relative_t_sample_s AS DOUBLE) AS source_rel_s, fusion_trace_id AS fusion_trace, performance_state, CAST(T_e2e_data_observed_pre_collision_ms AS DOUBLE) AS e2e_ms, CAST(D_e2e_wall_integral_data_observed_m AS DOUBLE) AS distance_m, CAST(T_source_to_fusion_output_data_observed_ms AS DOUBLE) AS source_to_fusion_ms, CAST(T_fusion_to_prediction_output_data_observed_ms AS DOUBLE) AS fusion_to_prediction_ms, CAST(T_prediction_to_planning_output_data_observed_ms AS DOUBLE) AS prediction_to_planning_ms, CAST(T_planning_output_to_first_control_output_data_observed_ms AS DOUBLE) AS planning_to_control_ms FROM read_csv_auto('/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/framewise_sensor_to_control_performance.csv', header=true, nullstr='') WHERE outcome_compatibility='PRE_COLLISION_COMPLETE' ORDER BY frame",
+        "description": "从27个LiDAR source输入中选择碰撞前完成到首个关联Control的22帧，并列展示Grade-A软件时延和同区间墙钟速度积分距离。",
+        "tables_used": [
+          "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/framewise_sensor_to_control_performance.csv",
+          "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/velocity_trajectory_observed.csv",
+          "/Users/huangjinhui/Desktop/萨卡班/data/output/second_experiment_1131_tcps_pa_v4_2_all_instances/tables/all_instance_lineage_timing.csv"
+        ],
+        "metric_definitions": [
+          "e2e_ms：sensor source到同trace首个Control output的逐实例时延。",
+          "distance_m：同一墙钟区间的Localization速度梯形积分；语义为pipeline occupancy exposure，非因果损失。",
+          "碰撞后完成端点右删失；无Fusion lineage的输入保留缺失，不填补。"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+﻿claim_id,run_id,guarantee_status,qualified_path_bound_available,qualified_suffix_bounds_available,conditional_guarantee_loss_time_wall_s,observed_contract_miss_time_wall_s,reason,allowed_statement
+G1_GUARANTEE.1131,202607271131,NOT_ESTABLISHED,False,False,,,"No formal/WCRT path bound, qualified demand-origin dynamic deadline, or qualified suffix bounds. Sample-origin baseline models cannot create a guarantee-loss point.",The run does not support a timing-guarantee-loss timestamp.

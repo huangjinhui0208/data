@@ -1,0 +1,15 @@
+﻿run_id,trace_id,parent_trace_id,segment,duration_ms,semantic,clock_domain,evidence_class
+202607271211,17294096575131288686,72331600066512034,sensor_to_preprocess_ingress,102.635,source age before Preprocess entry,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,preprocess_processing,3.20736,Preprocess execution,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,preprocess_to_roi_edge,0.119008,edge/readiness delay,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,roi_processing,3.644416,map ROI execution,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,roi_to_ground_edge,0.172512,edge/readiness delay,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,ground_processing,10.535584,Ground Detection execution,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,ground_to_detection_wait,38.871424,wait/queue before Lidar Detection,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,lidar_detection_processing,100.328576,Lidar Detection execution,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,detection_to_filter_edge,0.104416,edge/readiness delay,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,filter_processing,0.14208,Detection Filter execution,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,filter_to_tracking_edge,0.186592,edge/readiness delay,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,tracking_processing,0.320992,Lidar Tracking execution,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,tracking_to_fusion_edge,0.109152,edge/readiness delay,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE
+202607271211,17294096575131288686,72331600066512034,fusion_processing,1.479936,Multi-Sensor Fusion execution,monotonic_ns anchored to source wall epoch,TRACE_LINEAGE

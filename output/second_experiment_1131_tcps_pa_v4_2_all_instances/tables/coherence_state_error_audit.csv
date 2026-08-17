@@ -1,0 +1,2 @@
+﻿bundle_id,consumer,lidar_source_epoch_ns,radar_source_epoch_ns,raw_source_skew_ms_diagnostic,compensated_epoch_skew_ms_diagnostic,induced_state_error,induced_state_error_unit,safety_error_envelope,physical_coherence_verdict,architectural_coherence_verdict,source_evidence_ids,notes
+BUNDLE.FUSION.TARGET11.1131,Multi-Sensor Fusion,1785123121945625170,1785123121945625170,0.0,,,,,NOT_TESTABLE_NO_INDUCED_STATE_ERROR_MODEL,NOT_TESTABLE_NO_ARCHITECTURAL_SKEW_LIMIT,EV.COHERENCE.1131,zero raw skew is retained as a diagnostic and is not promoted to physical coherence

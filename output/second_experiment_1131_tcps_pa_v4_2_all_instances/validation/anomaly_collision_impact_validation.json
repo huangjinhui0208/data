@@ -1,0 +1,22 @@
+{
+  "run_id": "202607271131",
+  "status": "PASS",
+  "checks": {
+    "all_three_anomalies_after_t_phys": true,
+    "all_three_anomalies_before_collision": true,
+    "speed_decreased_during_anomaly_envelope": true,
+    "observed_counterfactual_not_fabricated": true,
+    "observed_model_results_separated": true,
+    "consistent_clearance_endpoint_at_tphys": true,
+    "model_contact_margins_negative_before_anomalies": true
+  },
+  "key_values": {
+    "anomaly_start_minus_t_phys_ms": 1189.2752647399902,
+    "speed_start_mps": 12.543728282791962,
+    "speed_end_mps": 9.999727859895003,
+    "distance_during_anomaly_envelope_wall_integral_m": 5.816386543773893,
+    "clearance_at_anomaly_start_m": 6.728703980558436,
+    "required_instantaneous_decel_mps2": 11.692082137001398,
+    "impact_speed_observed_mps": 7.988017222183252
+  }
+}

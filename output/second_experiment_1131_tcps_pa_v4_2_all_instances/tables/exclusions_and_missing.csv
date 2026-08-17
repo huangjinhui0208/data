@@ -1,0 +1,6 @@
+﻿run_id,item,status,reason,effect
+202607271131,parsed Apollo record,MISSING,simulation recording was not enabled,module message payload/receive/send and Control continuity not auditable
+202607271131,qualified dynamic deadline,MISSING,no independent t_demand; baseline parameters have invalid lock time and unvalidated domain,"C4, guarantee-loss time, primary D_debt are NOT_TESTABLE"
+202607271131,full-stop braking endpoint,RIGHT_CENSORED,collision occurs before full stop,full observed D_brake and M0 unavailable
+202607271131,event-local Bridge applied command rows,MISSING_BY_LOGGING_POLICY,log_all_delayed_commands=false,Control-to-physical lineage capped at Grade C
+202607271131,multi-run observed comparison,EXCLUDED_BY_SCOPE,user requested one-run analysis,seven baseline runs are used only for a separated model sensitivity branch

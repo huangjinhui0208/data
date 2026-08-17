@@ -1,0 +1,15 @@
+﻿parent_claim_id,child_claim_id,relation,required,notes
+P_TARGET.1643,P_FUNC.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+P_TARGET.1643,P_DEADLINE.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+C1.1643,C2.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+C1.1643,C3.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+C2.1643,C3.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+P_CLOCK.1643,C3.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+P_TARGET.1643,C3.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+C3.1643,C4.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+P_DEADLINE.1643,C4.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+C4.1643,C5.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+C4.1643,C7.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+C5.1643,C7.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+C6.1643,C7.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency
+P_FUNC.1643,C7.1643,REQUIRES,TRUE,canonical TCPS-PA gate dependency

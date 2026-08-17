@@ -1,0 +1,8 @@
+﻿contract_id,contract_family,component,metric_name,scope_id,criterion,threshold_or_requirement_id,run_id
+K.ARCH.R.BRIDGE.1211,ARCHITECTURAL,R,Bridge requested-to-apply delay,ControlCommand_to_CARLA_apply,300 ms configured request,TH.ARCH.BRIDGE.300MS,202607271211
+K.PHYS.R.DEMAND.1211,PHYSICAL,R,demand-to-physical response,t_demand_to_t_phys,qualified dynamic physical deadline,REQ.DYN.1211,202607271211
+K.MODEL.R.SAMPLE.1211,MODEL,R,sample-to-physical response,t_sample_to_t_phys,baseline residual model scenarios,TH.CAL.BASELINE.DYNAMICS,202607271211
+K.ARCH.A.TARGET.1211,ARCHITECTURAL,A,target source age at t_phys,target12_at_t_phys,no declared age threshold,,202607271211
+K.ARCH.G.TARGET.1211,ARCHITECTURAL,G,target Fusion output gap,target12_stream,no declared gap threshold,,202607271211
+K.PHYS.C.BUNDLE.1211,PHYSICAL,C,induced state error of Fusion input bundle,target12_bundle,no induced-state-error envelope,,202607271211
+K.ARCH.L.CLOSED_LOOP.1211,ARCHITECTURAL,L,Closed-Loop Timing Integrity,target12_source_to_physical,ordered lineage + continuity + valid effect,,202607271211
