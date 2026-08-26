@@ -1,0 +1,148 @@
+================================================================================
+SECTION: perf.data binary base header
+SOURCE: D:\data\output\202608251619_F0041_perf_evidence_pm1p2s\03_perf_header_lost\perf_data_header_base.json
+================================================================================
+{
+  "source": "D:\\data\\202608251619\\perf_run_01\\perf.data",
+  "format": "perf.data file header",
+  "endianness": "little-endian",
+  "magic": "PERFILE2",
+  "header_size": 104,
+  "attr_size": 136,
+  "attrs": {
+    "offset": 1064,
+    "size": 1360
+  },
+  "data": {
+    "offset": 2424,
+    "size": 4364294248
+  },
+  "event_types": {
+    "offset": 0,
+    "size": 0
+  },
+  "feature_bits": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16, 20, 21, 25, 26],
+  "feature_names_perf_5_10": [
+    "TRACING_DATA",
+    "BUILD_ID",
+    "HOSTNAME",
+    "OSRELEASE",
+    "VERSION",
+    "ARCH",
+    "NRCPUS",
+    "CPUDESC",
+    "CPUID",
+    "TOTAL_MEM",
+    "CMDLINE",
+    "EVENT_DESC",
+    "CPU_TOPOLOGY",
+    "PMU_MAPPINGS",
+    "CACHE",
+    "SAMPLE_TIME",
+    "BPF_PROG_INFO",
+    "BPF_BTF"
+  ],
+  "file_size": 4364320490,
+  "sha256": "FE4DF405C8ADFC688E1BD30A1B67A24F7D239D38BF3876A552762EEFE43B5816"
+}
+
+================================================================================
+SECTION: full data-section lost-record scan
+SOURCE: D:\data\output\202608251619_F0041_perf_evidence_pm1p2s\03_perf_header_lost\perf_data_lost_record_scan.json
+================================================================================
+{
+  "source": "D:\\data\\202608251619\\perf_run_01\\perf.data",
+  "scan_scope": "entire perf.data data section",
+  "data_offset": 2424,
+  "data_size": 4364294248,
+  "scanned_bytes": 4364294248,
+  "total_records": 37351001,
+  "perf_record_lost_records": 0,
+  "perf_record_lost_events": 0,
+  "perf_record_lost_samples_records": 0,
+  "perf_record_lost_samples": 0,
+  "invalid_record_headers": 0,
+  "record_type_counts": {
+    "1_MMAP": 87,
+    "3_COMM": 6158,
+    "4_EXIT": 5159,
+    "7_FORK": 6298,
+    "9_SAMPLE": 37274959,
+    "10_MMAP2": 33775,
+    "68_FINISHED_ROUND": 24562,
+    "73_THREAD_MAP": 1,
+    "74_CPU_MAP": 1,
+    "79_TIME_CONV": 1
+  },
+  "method": "Sequentially parsed every perf_event_header in the declared data section; type 2 is PERF_RECORD_LOST and type 13 is PERF_RECORD_LOST_SAMPLES.",
+  "result": "No binary lost-event records and no malformed record headers were found. The copied perf record/script/timehist stderr files also contain no lost-event warning."
+}
+
+================================================================================
+SECTION: capture environment
+SOURCE: D:\data\output\202608251619_F0041_perf_evidence_pm1p2s\03_perf_header_lost\environment.txt
+================================================================================
+$ uname -a
+Linux nivadia-desktop 5.10.120-tegra #1 SMP PREEMPT Tue Aug 1 12:32:50 PDT 2023 aarch64 aarch64 aarch64 GNU/Linux
+
+$ perf --version
+perf version 5.10.120
+
+$ nproc
+12
+
+python=3.8.10 (default, Mar 18 2025, 20:04:55)  [GCC 9.4.0]
+euid=1001
+run_dir=/media/ssd/hjh/perf_tools/perf_results/perf_run_01
+
+================================================================================
+SECTION: perf record command
+SOURCE: D:\data\output\202608251619_F0041_perf_evidence_pm1p2s\03_perf_header_lost\perf_record_command.txt
+================================================================================
+sudo perf sched record -a -- sleep 86400
+
+================================================================================
+SECTION: perf record stderr
+SOURCE: D:\data\output\202608251619_F0041_perf_evidence_pm1p2s\03_perf_header_lost\perf_record.stderr.txt
+================================================================================
+[ perf record: Woken up 2059 times to write data ]
+[ perf record: Captured and wrote 4162.118 MB perf.data (37274959 samples) ]
+
+================================================================================
+SECTION: perf sched script stderr
+SOURCE: D:\data\output\202608251619_F0041_perf_evidence_pm1p2s\03_perf_header_lost\perf_sched_script.stderr.txt
+================================================================================
+
+================================================================================
+SECTION: perf sched timehist stderr
+SOURCE: D:\data\output\202608251619_F0041_perf_evidence_pm1p2s\03_perf_header_lost\perf_sched_timehist.stderr.txt
+================================================================================
+Samples do not have callchains.
+
+================================================================================
+SECTION: report status
+SOURCE: D:\data\output\202608251619_F0041_perf_evidence_pm1p2s\03_perf_header_lost\report_status.txt
+================================================================================
+latency=OK
+timehist=OK
+script=OK
+map=OK
+
+================================================================================
+SECTION: capture start clock
+SOURCE: D:\data\output\202608251619_F0041_perf_evidence_pm1p2s\03_perf_header_lost\capture_start_clock.txt
+================================================================================
+wall_time_iso=2026-08-25T16:19:19.484777+08:00
+realtime_ns=1787645959484757620
+monotonic_ns=2526781248220244
+realtime_minus_monotonic_ns=1785119178236537376
+
+================================================================================
+SECTION: capture end clock
+SOURCE: D:\data\output\202608251619_F0041_perf_evidence_pm1p2s\03_perf_header_lost\capture_end_clock.txt
+================================================================================
+wall_time_iso=2026-08-25T16:21:10.913950+08:00
+realtime_ns=1787646070913938549
+monotonic_ns=2526892677400901
+realtime_minus_monotonic_ns=1785119178236537648
+
