@@ -1,0 +1,63 @@
+========================================================================================
+SECTION: F615/F616/F619 raw CP_INFER_ENTER/EXIT markers
+SOURCE: D:\data\202608261946\log\perception.log.INFO.20260826-194540.57017
+========================================================================================
+# Source-frame assignment uses the adjacent exact lidar message timestamp and the
+# reusable framewise analysis mapping. Raw log lines below are unchanged.
+
+[source frame F615]
+D:\data\202608261946\log\perception.log.INFO.20260826-194540.57017:28446:I0826 19:47:58.056624 57192 center_point_detection.cc:373] [CP_INFER_ENTER] frame_ts=1.78774e+09 mono_ns=4237227503550 pid=57017 tid=57192 cpu=0
+D:\data\202608261946\log\perception.log.INFO.20260826-194540.57017:28455:I0826 19:47:58.139586 57192 center_point_detection.cc:384] [CP_INFER_EXIT] frame_ts=1.78774e+09 mono_ns=4237310456202 pid=57017 tid=57192 cpu=1 duration_ms=82.9527
+
+[source frame F616]
+D:\data\202608261946\log\perception.log.INFO.20260826-194540.57017:28499:I0826 19:47:58.164227 57194 center_point_detection.cc:373] [CP_INFER_ENTER] frame_ts=1.78774e+09 mono_ns=4237335108253 pid=57017 tid=57194 cpu=10
+D:\data\202608261946\log\perception.log.INFO.20260826-194540.57017:28536:I0826 19:47:58.504560 57194 center_point_detection.cc:384] [CP_INFER_EXIT] frame_ts=1.78774e+09 mono_ns=4237675432852 pid=57017 tid=57194 cpu=8 duration_ms=340.325
+
+[source frame F619]
+D:\data\202608261946\log\perception.log.INFO.20260826-194540.57017:28575:I0826 19:47:58.515153 57194 center_point_detection.cc:373] [CP_INFER_ENTER] frame_ts=1.78774e+09 mono_ns=4237686028057 pid=57017 tid=57194 cpu=8
+D:\data\202608261946\log\perception.log.INFO.20260826-194540.57017:28624:I0826 19:47:58.868909 57194 center_point_detection.cc:384] [CP_INFER_EXIT] frame_ts=1.78774e+09 mono_ns=4238039781560 pid=57017 tid=57194 cpu=2 duration_ms=353.754
+
+========================================================================================
+SECTION: F616 P4 outer trace endpoints and extraction window
+========================================================================================
+p4_proc_enter_apollo_mono_ns=4237277469088
+p4_output_pub_apollo_mono_ns=4237629403872
+p4_execution_ns=351934784
+clock_offset_ns=454331222
+clock_equation=perf_time_ns = Apollo_mono_ns + clock_offset_ns
+window_padding_before_ns=1200000000
+window_padding_after_ns=1200000000
+window_start_perf_ns=4236531800310
+window_end_perf_ns=4239283735094
+window_duration_ns=2751934784
+
+========================================================================================
+SECTION: Clock-alignment validation against exact CP TIDs
+========================================================================================
+calibration_markers_total=1305
+calibration_markers_matching_selected_offset=1089
+max_coverage_offset_interval_ns=454331075..454331369
+selected_offset_ns=454331222
+# Each row confirms that the translated marker lies in a reconstructed running
+# slice of the exact TID that emitted that CP log line. perf text precision is 1 us.
+frame,phase,tid,apollo_mono_ns,translated_perf_ns,running_cpu,running_start_perf_ns,running_end_perf_ns,inside
+615,ENTER,57192,4237227503550,4237681834772,0,4237674913000,4237684503000,true
+615,EXIT,57192,4237310456202,4237764787424,1,4237764373000,4237764823000,true
+616,ENTER,57194,4237335108253,4237789439475,10,4237789250000,4237792117000,true
+616,EXIT,57194,4237675432852,4238129764074,8,4238129762000,4238130151000,true
+619,ENTER,57194,4237686028057,4238140359279,8,4238137151000,4238142289000,true
+619,EXIT,57194,4238039781560,4238494112782,2,4238494099000,4238494660000,true
+
+========================================================================================
+SECTION: Independent F616 outer-trace endpoint cross-check
+========================================================================================
+# This is intentionally retained as a data-quality finding. The same CP-calibrated
+# offset makes both exact CP markers land in TID 57194 running slices, but the older
+# P4 proc_enter marker does not. Do not silently treat target_tid_found as endpoint proof.
+marker,tid,translated_perf_ns,running_slice_start_perf_ns,running_slice_end_perf_ns,inside
+p4_proc_enter,57194,4237731800310,,,false
+p4_output_pub,57194,4238083735094,4238057347000,4238103811000,true
+cp_infer_enter,57194,4237789439475,4237789250000,4237792117000,true
+cp_infer_exit,57194,4238129764074,4238129762000,4238130151000,true
+# First observed TID 57194 run after translated p4_proc_enter:
+# 4237759120000..4237759161000 ns on CPU 8 (about 27.320 ms after the marker).

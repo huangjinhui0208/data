@@ -1,0 +1,125 @@
+========================================================================================
+SECTION: perf.data binary base header
+SOURCE: D:\data\202608261946\perf_run_02\perf.data
+========================================================================================
+format=perf.data file header
+endianness=little-endian
+magic=PERFILE2
+header_size=104
+attr_size=136
+attrs_offset=1064
+attrs_size=1360
+data_offset=2424
+data_size=3748488544
+event_types_offset=0
+event_types_size=0
+feature_bits=1,2,3,4,5,6,7,8,9,10,11,12,13,16,20,21,25,26
+feature_names_perf_5_10=TRACING_DATA,BUILD_ID,HOSTNAME,OSRELEASE,VERSION,ARCH,NRCPUS,CPUDESC,CPUID,TOTAL_MEM,CMDLINE,EVENT_DESC,CPU_TOPOLOGY,PMU_MAPPINGS,CACHE,SAMPLE_TIME,BPF_PROG_INFO,BPF_BTF
+file_size=3748514786
+sha256=9EA559CD2B278DC4DBCAADEAC21EF5731FE140D136C9DB6D49B1A7E94B62CA29
+
+========================================================================================
+SECTION: full data-section lost-record scan
+SOURCE: D:\data\202608261946\perf_run_02\perf.data
+========================================================================================
+scan_scope=entire perf.data data section
+scanned_bytes=3748488544
+total_records=32076584
+perf_record_lost_records=0
+perf_record_lost_events=0
+perf_record_lost_samples_records=0
+perf_record_lost_samples=0
+invalid_record_headers=0
+record_type_counts:
+  1_MMAP=89
+  3_COMM=14635
+  4_EXIT=14111
+  7_FORK=15443
+  9_SAMPLE=31942588
+  10_MMAP2=76749
+  68_FINISHED_ROUND=12966
+  73_THREAD_MAP=1
+  74_CPU_MAP=1
+  79_TIME_CONV=1
+method=Sequentially parsed every perf_event_header in the declared data section; type 2 is PERF_RECORD_LOST and type 13 is PERF_RECORD_LOST_SAMPLES.
+
+========================================================================================
+SECTION: environment.txt
+SOURCE: D:\data\202608261946\perf_run_02\environment.txt
+========================================================================================
+$ uname -a
+Linux orin-dev-docker 5.10.120-tegra #1 SMP PREEMPT Tue Aug 1 12:32:50 PDT 2023 aarch64 aarch64 aarch64 GNU/Linux
+
+$ perf --version
+perf version 5.10.120
+
+$ nproc
+12
+
+python=3.8.10 (default, Mar 18 2025, 20:04:55)  [GCC 9.4.0]
+euid=1001
+run_dir=/media/ssd/hjh/perf_tools/perf_results/perf_run_02
+
+
+========================================================================================
+SECTION: perf_record_command.txt
+SOURCE: D:\data\202608261946\perf_run_02\perf_record_command.txt
+========================================================================================
+sudo perf sched record -a -- sleep 86400
+
+
+========================================================================================
+SECTION: perf_record.stdout.txt
+SOURCE: D:\data\202608261946\perf_run_02\perf_record.stdout.txt
+========================================================================================
+
+========================================================================================
+SECTION: perf_record.stderr.txt
+SOURCE: D:\data\202608261946\perf_run_02\perf_record.stderr.txt
+========================================================================================
+[ perf record: Woken up 1771 times to write data ]
+[ perf record: Captured and wrote 3574.840 MB perf.data (31942588 samples) ]
+
+
+========================================================================================
+SECTION: perf_sched_script.stderr.txt
+SOURCE: D:\data\202608261946\perf_run_02\perf_sched_script.stderr.txt
+========================================================================================
+
+========================================================================================
+SECTION: perf_sched_timehist.stderr.txt
+SOURCE: D:\data\202608261946\perf_run_02\perf_sched_timehist.stderr.txt
+========================================================================================
+Samples do not have callchains.
+
+
+========================================================================================
+SECTION: report_status.txt
+SOURCE: D:\data\202608261946\perf_run_02\report_status.txt
+========================================================================================
+latency=OK
+timehist=OK
+script=OK
+map=OK
+
+
+========================================================================================
+SECTION: capture_start_clock.txt
+SOURCE: D:\data\202608261946\perf_run_02\capture_start_clock.txt
+========================================================================================
+wall_time_iso=2026-08-26T19:47:04.443351+08:00
+realtime_ns=1787744824443336776
+monotonic_ns=4183614218691
+realtime_minus_monotonic_ns=1787740640829118085
+
+
+========================================================================================
+SECTION: capture_end_clock.txt
+SOURCE: D:\data\202608261946\perf_run_02\capture_end_clock.txt
+========================================================================================
+wall_time_iso=2026-08-26T19:48:58.689628+08:00
+realtime_ns=1787744938689617285
+monotonic_ns=4297860498576
+realtime_minus_monotonic_ns=1787740640829118709
+
+

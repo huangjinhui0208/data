@@ -1,0 +1,1176 @@
+========================================================================================
+SECTION: F616 exact worker identity
+========================================================================================
+perception_pid=57017
+f616_p4_trace_tid=57194
+f616_cp_infer_tid=57194
+identity_status=exact trace TID and CP_INFER TID agree
+scope_note=Snapshots were captured before perf record; they identify process/thread properties at capture time, not permanent Cyber task-to-TID binding.
+
+========================================================================================
+SECTION: perception_process.txt
+SOURCE: D:\data\202608261946\perf_run_02\perception_process.txt
+========================================================================================
+host_pid=57017
+cmdline=mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+
+========================================================================================
+SECTION: perception_ps_threads_before.txt
+SOURCE: D:\data\202608261946\perf_run_02\perception_ps_threads_before.txt
+========================================================================================
+    PID     LWP PSR CLS RTPRIO PRI  NI STAT %CPU COMMAND         COMMAND
+  57017   57017   0  TS      -  19   0 Sl   11.2 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57176  11  TS      -  19   0 Sl    0.2 bvar_sampler    mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57186   2  TS      -  19   0 Sl    1.7 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57187   9  TS      -  19   0 Sl    4.3 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57188   0  TS      -  19   0 Sl    2.6 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57189   9  TS      -  19   0 Sl    3.4 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57190   9  TS      -  19   0 Sl    2.4 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57191   2  TS      -  19   0 Sl    3.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57192  11  TS      -  19   0 Rl    3.9 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57193  10  TS      -  19   0 Sl    4.4 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57194  10  TS      -  19   0 Sl    4.6 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57195   8  TS      -  19   0 Sl    2.7 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57196   8  TS      -  19   0 Sl    3.7 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57197   8  TS      -  19   0 Sl    3.4 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57198   8  TS      -  19   0 Sl    3.1 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57199   8  TS      -  19   0 Sl    3.3 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57200   9  TS      -  19   0 Sl    3.1 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57201   9  TS      -  19   0 Sl    3.6 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57202   8  TS      -  19   0 Sl    2.9 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57203  10  TS      -  19   0 Sl    0.0 bvar_dumper     mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57494  10  TS      -  19   0 Sl    4.6 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57495   7  TS      -  19   0 Sl    4.9 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57496   2  TS      -  19   0 Sl    5.5 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57497  11  TS      -  19   0 Sl    5.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57498   9  TS      -  19   0 Sl    5.1 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57499   3  TS      -  19   0 Sl    5.4 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57500   5  TS      -  19   0 Sl    6.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57501   0  TS      -  19   0 Sl    5.8 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57502   1  TS      -  19   0 Sl    4.7 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57503   4  TS      -  19   0 Sl    5.7 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57504   6  TS      -  19   0 Sl    6.1 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57527   1  TS      -  19   0 Sl    0.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57528   4  TS      -  19   0 Sl    0.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57529   4  TS      -  19   0 Sl    0.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57530   4  TS      -  19   0 Sl    0.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57531   1  TS      -  19   0 Sl    0.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57532  11  TS      -  19   0 Sl    0.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57533   6  TS      -  19   0 Sl    0.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57534   4  TS      -  19   0 Sl    0.0 dds.ev.0        mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57535   6  TS      -  19   0 Sl    0.0 dds.udp.27444   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57536   2  TS      -  19   0 Sl    0.0 dds.udp.27400   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57537   6  TS      -  19   0 Sl    0.0 dds.udp.27400   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57538   4  TS      -  19   0 Sl    0.0 dds.udp.27445   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57539  11  TS      -  19   0 Sl    0.0 dds.asyn.0.0    mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57540   4  TS      -  19   0 Sl    0.0 dds.asyn.0.1    mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57541  11  TS      -  19   0 Sl    0.0 cuda-EvtHandlr  mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57548   8  TS      -  19   0 Sl    0.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57776   4  TS      -  19   0 Sl    0.3 dds.ev.1        mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57777   0  TS      -  19   0 Sl    0.0 dds.udp.27446   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57778   3  TS      -  19   0 Sl    0.0 dds.udp.27400   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57779   1  TS      -  19   0 Sl    0.0 dds.udp.27400   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57780   2  TS      -  19   0 Sl    9.5 dds.udp.27447   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57781   7  TS      -  19   0 Sl    0.0 dds.asyn.1.0    mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57782  10  TS      -  19   0 Sl    4.1 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57783   4  TS      -  19   0 Sl    0.0 user_thread_0   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57784   9  TS      -  19   0 Sl    0.0 user_thread_1   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57785   4  TS      -  19   0 Sl    0.0 user_thread_2   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57786   4  TS      -  19   0 Sl    0.0 user_thread_3   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57787   1  TS      -  19   0 Sl    0.0 user_thread_4   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57788   5  TS      -  19   0 Sl    0.0 user_thread_5   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57789   4  TS      -  19   0 Sl    0.0 user_thread_6   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57790   7  TS      -  19   0 Sl    0.0 user_thread_7   mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+  57017   57807   8  TS      -  19   0 Sl    0.0 mainboard       mainboard -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_front.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_front.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_front.dag -d modules/perception/camera_tracking/dag/camera_tracking_front.dag -d modules/perception/camera_detection_multi_stage/dag/camera_detection_multi_stage_rear.dag -d modules/perception/camera_location_estimation/dag/camera_location_estimation_rear.dag -d modules/perception/camera_location_refinement/dag/camera_location_refinement_rear.dag -d modules/perception/camera_tracking/dag/camera_tracking_rear.dag -d modules/perception/pointcloud_preprocess/dag/pointcloud_preprocess.dag -d modules/perception/pointcloud_map_based_roi/dag/pointcloud_map_based_roi.dag -d modules/perception/pointcloud_ground_detection/dag/pointcloud_ground_detection.dag -d modules/perception/lidar_detection/dag/lidar_detection.dag -d modules/perception/lidar_detection_filter/dag/lidar_detection_filter.dag -d modules/perception/lidar_tracking/dag/lidar_tracking.dag -d modules/perception/radar_detection/dag/radar_detection_front.dag -d modules/perception/multi_sensor_fusion/dag/multi_sensor_fusion.dag -p perception -s CYBER_DEFAULT
+
+========================================================================================
+SECTION: perception_ps_threads_before.stderr.txt
+SOURCE: D:\data\202608261946\perf_run_02\perception_ps_threads_before.stderr.txt
+========================================================================================
+
+========================================================================================
+SECTION: perception_chrt_before.txt
+SOURCE: D:\data\202608261946\perf_run_02\perception_chrt_before.txt
+========================================================================================
+========================================================================
+TID=57017
+pid 57017 当前的调度策略︰ SCHED_OTHER
+pid 57017 的当前调度优先级：0
+========================================================================
+TID=57176
+pid 57176 当前的调度策略︰ SCHED_OTHER
+pid 57176 的当前调度优先级：0
+========================================================================
+TID=57186
+pid 57186 当前的调度策略︰ SCHED_OTHER
+pid 57186 的当前调度优先级：0
+========================================================================
+TID=57187
+pid 57187 当前的调度策略︰ SCHED_OTHER
+pid 57187 的当前调度优先级：0
+========================================================================
+TID=57188
+pid 57188 当前的调度策略︰ SCHED_OTHER
+pid 57188 的当前调度优先级：0
+========================================================================
+TID=57189
+pid 57189 当前的调度策略︰ SCHED_OTHER
+pid 57189 的当前调度优先级：0
+========================================================================
+TID=57190
+pid 57190 当前的调度策略︰ SCHED_OTHER
+pid 57190 的当前调度优先级：0
+========================================================================
+TID=57191
+pid 57191 当前的调度策略︰ SCHED_OTHER
+pid 57191 的当前调度优先级：0
+========================================================================
+TID=57192
+pid 57192 当前的调度策略︰ SCHED_OTHER
+pid 57192 的当前调度优先级：0
+========================================================================
+TID=57193
+pid 57193 当前的调度策略︰ SCHED_OTHER
+pid 57193 的当前调度优先级：0
+========================================================================
+TID=57194
+pid 57194 当前的调度策略︰ SCHED_OTHER
+pid 57194 的当前调度优先级：0
+========================================================================
+TID=57195
+pid 57195 当前的调度策略︰ SCHED_OTHER
+pid 57195 的当前调度优先级：0
+========================================================================
+TID=57196
+pid 57196 当前的调度策略︰ SCHED_OTHER
+pid 57196 的当前调度优先级：0
+========================================================================
+TID=57197
+pid 57197 当前的调度策略︰ SCHED_OTHER
+pid 57197 的当前调度优先级：0
+========================================================================
+TID=57198
+pid 57198 当前的调度策略︰ SCHED_OTHER
+pid 57198 的当前调度优先级：0
+========================================================================
+TID=57199
+pid 57199 当前的调度策略︰ SCHED_OTHER
+pid 57199 的当前调度优先级：0
+========================================================================
+TID=57200
+pid 57200 当前的调度策略︰ SCHED_OTHER
+pid 57200 的当前调度优先级：0
+========================================================================
+TID=57201
+pid 57201 当前的调度策略︰ SCHED_OTHER
+pid 57201 的当前调度优先级：0
+========================================================================
+TID=57202
+pid 57202 当前的调度策略︰ SCHED_OTHER
+pid 57202 的当前调度优先级：0
+========================================================================
+TID=57203
+pid 57203 当前的调度策略︰ SCHED_OTHER
+pid 57203 的当前调度优先级：0
+========================================================================
+TID=57494
+pid 57494 当前的调度策略︰ SCHED_OTHER
+pid 57494 的当前调度优先级：0
+========================================================================
+TID=57495
+pid 57495 当前的调度策略︰ SCHED_OTHER
+pid 57495 的当前调度优先级：0
+========================================================================
+TID=57496
+pid 57496 当前的调度策略︰ SCHED_OTHER
+pid 57496 的当前调度优先级：0
+========================================================================
+TID=57497
+pid 57497 当前的调度策略︰ SCHED_OTHER
+pid 57497 的当前调度优先级：0
+========================================================================
+TID=57498
+pid 57498 当前的调度策略︰ SCHED_OTHER
+pid 57498 的当前调度优先级：0
+========================================================================
+TID=57499
+pid 57499 当前的调度策略︰ SCHED_OTHER
+pid 57499 的当前调度优先级：0
+========================================================================
+TID=57500
+pid 57500 当前的调度策略︰ SCHED_OTHER
+pid 57500 的当前调度优先级：0
+========================================================================
+TID=57501
+pid 57501 当前的调度策略︰ SCHED_OTHER
+pid 57501 的当前调度优先级：0
+========================================================================
+TID=57502
+pid 57502 当前的调度策略︰ SCHED_OTHER
+pid 57502 的当前调度优先级：0
+========================================================================
+TID=57503
+pid 57503 当前的调度策略︰ SCHED_OTHER
+pid 57503 的当前调度优先级：0
+========================================================================
+TID=57504
+pid 57504 当前的调度策略︰ SCHED_OTHER
+pid 57504 的当前调度优先级：0
+========================================================================
+TID=57527
+pid 57527 当前的调度策略︰ SCHED_OTHER
+pid 57527 的当前调度优先级：0
+========================================================================
+TID=57528
+pid 57528 当前的调度策略︰ SCHED_OTHER
+pid 57528 的当前调度优先级：0
+========================================================================
+TID=57529
+pid 57529 当前的调度策略︰ SCHED_OTHER
+pid 57529 的当前调度优先级：0
+========================================================================
+TID=57530
+pid 57530 当前的调度策略︰ SCHED_OTHER
+pid 57530 的当前调度优先级：0
+========================================================================
+TID=57531
+pid 57531 当前的调度策略︰ SCHED_OTHER
+pid 57531 的当前调度优先级：0
+========================================================================
+TID=57532
+pid 57532 当前的调度策略︰ SCHED_OTHER
+pid 57532 的当前调度优先级：0
+========================================================================
+TID=57533
+pid 57533 当前的调度策略︰ SCHED_OTHER
+pid 57533 的当前调度优先级：0
+========================================================================
+TID=57534
+pid 57534 当前的调度策略︰ SCHED_OTHER
+pid 57534 的当前调度优先级：0
+========================================================================
+TID=57535
+pid 57535 当前的调度策略︰ SCHED_OTHER
+pid 57535 的当前调度优先级：0
+========================================================================
+TID=57536
+pid 57536 当前的调度策略︰ SCHED_OTHER
+pid 57536 的当前调度优先级：0
+========================================================================
+TID=57537
+pid 57537 当前的调度策略︰ SCHED_OTHER
+pid 57537 的当前调度优先级：0
+========================================================================
+TID=57538
+pid 57538 当前的调度策略︰ SCHED_OTHER
+pid 57538 的当前调度优先级：0
+========================================================================
+TID=57539
+pid 57539 当前的调度策略︰ SCHED_OTHER
+pid 57539 的当前调度优先级：0
+========================================================================
+TID=57540
+pid 57540 当前的调度策略︰ SCHED_OTHER
+pid 57540 的当前调度优先级：0
+========================================================================
+TID=57541
+pid 57541 当前的调度策略︰ SCHED_OTHER
+pid 57541 的当前调度优先级：0
+========================================================================
+TID=57548
+pid 57548 当前的调度策略︰ SCHED_OTHER
+pid 57548 的当前调度优先级：0
+========================================================================
+TID=57776
+pid 57776 当前的调度策略︰ SCHED_OTHER
+pid 57776 的当前调度优先级：0
+========================================================================
+TID=57777
+pid 57777 当前的调度策略︰ SCHED_OTHER
+pid 57777 的当前调度优先级：0
+========================================================================
+TID=57778
+pid 57778 当前的调度策略︰ SCHED_OTHER
+pid 57778 的当前调度优先级：0
+========================================================================
+TID=57779
+pid 57779 当前的调度策略︰ SCHED_OTHER
+pid 57779 的当前调度优先级：0
+========================================================================
+TID=57780
+pid 57780 当前的调度策略︰ SCHED_OTHER
+pid 57780 的当前调度优先级：0
+========================================================================
+TID=57781
+pid 57781 当前的调度策略︰ SCHED_OTHER
+pid 57781 的当前调度优先级：0
+========================================================================
+TID=57782
+pid 57782 当前的调度策略︰ SCHED_OTHER
+pid 57782 的当前调度优先级：0
+========================================================================
+TID=57783
+pid 57783 当前的调度策略︰ SCHED_OTHER
+pid 57783 的当前调度优先级：0
+========================================================================
+TID=57784
+pid 57784 当前的调度策略︰ SCHED_OTHER
+pid 57784 的当前调度优先级：0
+========================================================================
+TID=57785
+pid 57785 当前的调度策略︰ SCHED_OTHER
+pid 57785 的当前调度优先级：0
+========================================================================
+TID=57786
+pid 57786 当前的调度策略︰ SCHED_OTHER
+pid 57786 的当前调度优先级：0
+========================================================================
+TID=57787
+pid 57787 当前的调度策略︰ SCHED_OTHER
+pid 57787 的当前调度优先级：0
+========================================================================
+TID=57788
+pid 57788 当前的调度策略︰ SCHED_OTHER
+pid 57788 的当前调度优先级：0
+========================================================================
+TID=57789
+pid 57789 当前的调度策略︰ SCHED_OTHER
+pid 57789 的当前调度优先级：0
+========================================================================
+TID=57790
+pid 57790 当前的调度策略︰ SCHED_OTHER
+pid 57790 的当前调度优先级：0
+========================================================================
+TID=57807
+pid 57807 当前的调度策略︰ SCHED_OTHER
+pid 57807 的当前调度优先级：0
+
+========================================================================================
+SECTION: perception_affinity_before.txt
+SOURCE: D:\data\202608261946\perf_run_02\perception_affinity_before.txt
+========================================================================================
+========================================================================
+TID=57017
+pid 57017 的当前亲和力列表：0-11
+========================================================================
+TID=57176
+pid 57176 的当前亲和力列表：0-11
+========================================================================
+TID=57186
+pid 57186 的当前亲和力列表：0-11
+========================================================================
+TID=57187
+pid 57187 的当前亲和力列表：0-11
+========================================================================
+TID=57188
+pid 57188 的当前亲和力列表：0-11
+========================================================================
+TID=57189
+pid 57189 的当前亲和力列表：0-11
+========================================================================
+TID=57190
+pid 57190 的当前亲和力列表：0-11
+========================================================================
+TID=57191
+pid 57191 的当前亲和力列表：0-11
+========================================================================
+TID=57192
+pid 57192 的当前亲和力列表：0-11
+========================================================================
+TID=57193
+pid 57193 的当前亲和力列表：0-11
+========================================================================
+TID=57194
+pid 57194 的当前亲和力列表：0-11
+========================================================================
+TID=57195
+pid 57195 的当前亲和力列表：0-11
+========================================================================
+TID=57196
+pid 57196 的当前亲和力列表：0-11
+========================================================================
+TID=57197
+pid 57197 的当前亲和力列表：0-11
+========================================================================
+TID=57198
+pid 57198 的当前亲和力列表：0-11
+========================================================================
+TID=57199
+pid 57199 的当前亲和力列表：0-11
+========================================================================
+TID=57200
+pid 57200 的当前亲和力列表：0-11
+========================================================================
+TID=57201
+pid 57201 的当前亲和力列表：0-11
+========================================================================
+TID=57202
+pid 57202 的当前亲和力列表：0-11
+========================================================================
+TID=57203
+pid 57203 的当前亲和力列表：0-11
+========================================================================
+TID=57494
+pid 57494 的当前亲和力列表：0-11
+========================================================================
+TID=57495
+pid 57495 的当前亲和力列表：0-11
+========================================================================
+TID=57496
+pid 57496 的当前亲和力列表：0-11
+========================================================================
+TID=57497
+pid 57497 的当前亲和力列表：0-11
+========================================================================
+TID=57498
+pid 57498 的当前亲和力列表：0-11
+========================================================================
+TID=57499
+pid 57499 的当前亲和力列表：0-11
+========================================================================
+TID=57500
+pid 57500 的当前亲和力列表：0-11
+========================================================================
+TID=57501
+pid 57501 的当前亲和力列表：0-11
+========================================================================
+TID=57502
+pid 57502 的当前亲和力列表：0-11
+========================================================================
+TID=57503
+pid 57503 的当前亲和力列表：0-11
+========================================================================
+TID=57504
+pid 57504 的当前亲和力列表：0-11
+========================================================================
+TID=57527
+pid 57527 的当前亲和力列表：0-11
+========================================================================
+TID=57528
+pid 57528 的当前亲和力列表：0-11
+========================================================================
+TID=57529
+pid 57529 的当前亲和力列表：0-11
+========================================================================
+TID=57530
+pid 57530 的当前亲和力列表：0-11
+========================================================================
+TID=57531
+pid 57531 的当前亲和力列表：0-11
+========================================================================
+TID=57532
+pid 57532 的当前亲和力列表：0-11
+========================================================================
+TID=57533
+pid 57533 的当前亲和力列表：0-11
+========================================================================
+TID=57534
+pid 57534 的当前亲和力列表：0-11
+========================================================================
+TID=57535
+pid 57535 的当前亲和力列表：0-11
+========================================================================
+TID=57536
+pid 57536 的当前亲和力列表：0-11
+========================================================================
+TID=57537
+pid 57537 的当前亲和力列表：0-11
+========================================================================
+TID=57538
+pid 57538 的当前亲和力列表：0-11
+========================================================================
+TID=57539
+pid 57539 的当前亲和力列表：0-11
+========================================================================
+TID=57540
+pid 57540 的当前亲和力列表：0-11
+========================================================================
+TID=57541
+pid 57541 的当前亲和力列表：0-11
+========================================================================
+TID=57548
+pid 57548 的当前亲和力列表：0-11
+========================================================================
+TID=57776
+pid 57776 的当前亲和力列表：0-11
+========================================================================
+TID=57777
+pid 57777 的当前亲和力列表：0-11
+========================================================================
+TID=57778
+pid 57778 的当前亲和力列表：0-11
+========================================================================
+TID=57779
+pid 57779 的当前亲和力列表：0-11
+========================================================================
+TID=57780
+pid 57780 的当前亲和力列表：0-11
+========================================================================
+TID=57781
+pid 57781 的当前亲和力列表：0-11
+========================================================================
+TID=57782
+pid 57782 的当前亲和力列表：0-11
+========================================================================
+TID=57783
+pid 57783 的当前亲和力列表：0-11
+========================================================================
+TID=57784
+pid 57784 的当前亲和力列表：0-11
+========================================================================
+TID=57785
+pid 57785 的当前亲和力列表：0-11
+========================================================================
+TID=57786
+pid 57786 的当前亲和力列表：0-11
+========================================================================
+TID=57787
+pid 57787 的当前亲和力列表：0-11
+========================================================================
+TID=57788
+pid 57788 的当前亲和力列表：0-11
+========================================================================
+TID=57789
+pid 57789 的当前亲和力列表：0-11
+========================================================================
+TID=57790
+pid 57790 的当前亲和力列表：0-11
+========================================================================
+TID=57807
+pid 57807 的当前亲和力列表：0-11
+
+========================================================================================
+SECTION: perception_proc_status_before.txt
+SOURCE: D:\data\202608261946\perf_run_02\perception_proc_status_before.txt
+========================================================================================
+========================================================================
+TID=57017
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57017
+NSpid:	57017
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	4101
+nonvoluntary_ctxt_switches:	45091
+========================================================================
+TID=57176
+Name:	bvar_sampler
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57176
+NSpid:	57176
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	91
+nonvoluntary_ctxt_switches:	31
+========================================================================
+TID=57186
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57186
+NSpid:	57186
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	82676
+nonvoluntary_ctxt_switches:	3296
+========================================================================
+TID=57187
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57187
+NSpid:	57187
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1954
+nonvoluntary_ctxt_switches:	1138
+========================================================================
+TID=57188
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57188
+NSpid:	57188
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1573
+nonvoluntary_ctxt_switches:	889
+========================================================================
+TID=57189
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57189
+NSpid:	57189
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1750
+nonvoluntary_ctxt_switches:	855
+========================================================================
+TID=57190
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57190
+NSpid:	57190
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1608
+nonvoluntary_ctxt_switches:	674
+========================================================================
+TID=57191
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57191
+NSpid:	57191
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1653
+nonvoluntary_ctxt_switches:	787
+========================================================================
+TID=57192
+Name:	mainboard
+State:	R (running)
+Tgid:	57017
+Pid:	57192
+NSpid:	57192
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1881
+nonvoluntary_ctxt_switches:	1028
+========================================================================
+TID=57193
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57193
+NSpid:	57193
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	2675
+nonvoluntary_ctxt_switches:	1028
+========================================================================
+TID=57194
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57194
+NSpid:	57194
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1970
+nonvoluntary_ctxt_switches:	1100
+========================================================================
+TID=57195
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57195
+NSpid:	57195
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1646
+nonvoluntary_ctxt_switches:	772
+========================================================================
+TID=57196
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57196
+NSpid:	57196
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1846
+nonvoluntary_ctxt_switches:	1071
+========================================================================
+TID=57197
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57197
+NSpid:	57197
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1886
+nonvoluntary_ctxt_switches:	923
+========================================================================
+TID=57198
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57198
+NSpid:	57198
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1715
+nonvoluntary_ctxt_switches:	890
+========================================================================
+TID=57199
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57199
+NSpid:	57199
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1738
+nonvoluntary_ctxt_switches:	843
+========================================================================
+TID=57200
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57200
+NSpid:	57200
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1633
+nonvoluntary_ctxt_switches:	993
+========================================================================
+TID=57201
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57201
+NSpid:	57201
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1879
+nonvoluntary_ctxt_switches:	1081
+========================================================================
+TID=57202
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57202
+NSpid:	57202
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1642
+nonvoluntary_ctxt_switches:	758
+========================================================================
+TID=57203
+Name:	bvar_dumper
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57203
+NSpid:	57203
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	22
+nonvoluntary_ctxt_switches:	8
+========================================================================
+TID=57494
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57494
+NSpid:	57494
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	2
+nonvoluntary_ctxt_switches:	2197948
+========================================================================
+TID=57495
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57495
+NSpid:	57495
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	2360883
+========================================================================
+TID=57496
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57496
+NSpid:	57496
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	2
+nonvoluntary_ctxt_switches:	1206505
+========================================================================
+TID=57497
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57497
+NSpid:	57497
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	3
+nonvoluntary_ctxt_switches:	2242951
+========================================================================
+TID=57498
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57498
+NSpid:	57498
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	3
+nonvoluntary_ctxt_switches:	1680664
+========================================================================
+TID=57499
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57499
+NSpid:	57499
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	1440183
+========================================================================
+TID=57500
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57500
+NSpid:	57500
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	3
+nonvoluntary_ctxt_switches:	1180043
+========================================================================
+TID=57501
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57501
+NSpid:	57501
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	977740
+========================================================================
+TID=57502
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57502
+NSpid:	57502
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	3
+nonvoluntary_ctxt_switches:	2216657
+========================================================================
+TID=57503
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57503
+NSpid:	57503
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	2
+nonvoluntary_ctxt_switches:	1211395
+========================================================================
+TID=57504
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57504
+NSpid:	57504
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	2
+nonvoluntary_ctxt_switches:	1275340
+========================================================================
+TID=57527
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57527
+NSpid:	57527
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	1673
+========================================================================
+TID=57528
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57528
+NSpid:	57528
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	12
+========================================================================
+TID=57529
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57529
+NSpid:	57529
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	1229
+========================================================================
+TID=57530
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57530
+NSpid:	57530
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	1179
+========================================================================
+TID=57531
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57531
+NSpid:	57531
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	203
+========================================================================
+TID=57532
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57532
+NSpid:	57532
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	14
+========================================================================
+TID=57533
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57533
+NSpid:	57533
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	10
+========================================================================
+TID=57534
+Name:	dds.ev.0
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57534
+NSpid:	57534
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1777
+nonvoluntary_ctxt_switches:	26
+========================================================================
+TID=57535
+Name:	dds.udp.27444
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57535
+NSpid:	57535
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	922
+nonvoluntary_ctxt_switches:	6
+========================================================================
+TID=57536
+Name:	dds.udp.27400
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57536
+NSpid:	57536
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	0
+========================================================================
+TID=57537
+Name:	dds.udp.27400
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57537
+NSpid:	57537
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	700
+nonvoluntary_ctxt_switches:	8
+========================================================================
+TID=57538
+Name:	dds.udp.27445
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57538
+NSpid:	57538
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1889
+nonvoluntary_ctxt_switches:	109
+========================================================================
+TID=57539
+Name:	dds.asyn.0.0
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57539
+NSpid:	57539
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	23
+nonvoluntary_ctxt_switches:	0
+========================================================================
+TID=57540
+Name:	dds.asyn.0.1
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57540
+NSpid:	57540
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	52
+nonvoluntary_ctxt_switches:	7
+========================================================================
+TID=57541
+Name:	cuda-EvtHandlr
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57541
+NSpid:	57541
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	12
+nonvoluntary_ctxt_switches:	0
+========================================================================
+TID=57548
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57548
+NSpid:	57548
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	167
+nonvoluntary_ctxt_switches:	1
+========================================================================
+TID=57776
+Name:	dds.ev.1
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57776
+NSpid:	57776
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	6086
+nonvoluntary_ctxt_switches:	127
+========================================================================
+TID=57777
+Name:	dds.udp.27446
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57777
+NSpid:	57777
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	606
+nonvoluntary_ctxt_switches:	33
+========================================================================
+TID=57778
+Name:	dds.udp.27400
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57778
+NSpid:	57778
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	1
+nonvoluntary_ctxt_switches:	3
+========================================================================
+TID=57779
+Name:	dds.udp.27400
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57779
+NSpid:	57779
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	604
+nonvoluntary_ctxt_switches:	5
+========================================================================
+TID=57780
+Name:	dds.udp.27447
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57780
+NSpid:	57780
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	111808
+nonvoluntary_ctxt_switches:	5941
+========================================================================
+TID=57781
+Name:	dds.asyn.1.0
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57781
+NSpid:	57781
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	4
+nonvoluntary_ctxt_switches:	1
+========================================================================
+TID=57782
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57782
+NSpid:	57782
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	660043
+nonvoluntary_ctxt_switches:	2895
+========================================================================
+TID=57783
+Name:	user_thread_0
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57783
+NSpid:	57783
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	7
+nonvoluntary_ctxt_switches:	8
+========================================================================
+TID=57784
+Name:	user_thread_1
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57784
+NSpid:	57784
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	5
+nonvoluntary_ctxt_switches:	5
+========================================================================
+TID=57785
+Name:	user_thread_2
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57785
+NSpid:	57785
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	7
+nonvoluntary_ctxt_switches:	4
+========================================================================
+TID=57786
+Name:	user_thread_3
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57786
+NSpid:	57786
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	7
+nonvoluntary_ctxt_switches:	5
+========================================================================
+TID=57787
+Name:	user_thread_4
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57787
+NSpid:	57787
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	6
+nonvoluntary_ctxt_switches:	0
+========================================================================
+TID=57788
+Name:	user_thread_5
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57788
+NSpid:	57788
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	5
+nonvoluntary_ctxt_switches:	9
+========================================================================
+TID=57789
+Name:	user_thread_6
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57789
+NSpid:	57789
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	9
+nonvoluntary_ctxt_switches:	5
+========================================================================
+TID=57790
+Name:	user_thread_7
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57790
+NSpid:	57790
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	7
+nonvoluntary_ctxt_switches:	4
+========================================================================
+TID=57807
+Name:	mainboard
+State:	S (sleeping)
+Tgid:	57017
+Pid:	57807
+NSpid:	57807
+Cpus_allowed_list:	0-11
+voluntary_ctxt_switches:	734
+nonvoluntary_ctxt_switches:	8
+

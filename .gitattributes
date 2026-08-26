@@ -3,3 +3,5 @@ planning_debug_stage_points.csv filter=lfs diff=lfs merge=lfs -text
 planning_debug_raw.jsonl filter=lfs diff=lfs merge=lfs -text
 output/202608251619_F0041_four_files/F41_01_perf_sched_timehist.txt filter=lfs diff=lfs merge=lfs -text
 output/202608251619_F0041_four_files/F41_02_raw_sched_events.txt filter=lfs diff=lfs merge=lfs -text
+output/202608261946_F0616_perf_sched_six_files/F616_01_raw_sched_events.txt filter=lfs diff=lfs merge=lfs -text
+output/202608261946_F0616_perf_sched_six_files/F616_02_timehist_all.txt filter=lfs diff=lfs merge=lfs -text

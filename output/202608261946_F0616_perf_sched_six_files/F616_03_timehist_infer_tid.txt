@@ -1,0 +1,811 @@
+           time    cpu  task name                       wait time  sch delay   run time  state
+                        [tid/pid]                          (msec)     (msec)     (msec)       
+--------------- ------  ------------------------------  ---------  ---------  ---------  -----
+    4236.571515 [0002]  dds.udp.27447[57780/57017]                                       awakened: mainboard[57194/57017]
+    4236.571620 [0003]  mainboard[57191/57017]                                           awakened: mainboard[57194/57017]
+    4236.571623 [0009]  mainboard[57194/57017]             86.285      0.096      0.010      R                                 
+    4236.571888 [0009]  mainboard[57194/57017]              0.254      0.000      0.010      S                                 
+    4236.667446 [0008]  mainboard[57202/57017]                                           awakened: mainboard[57194/57017]
+    4236.667481 [0009]  mainboard[57194/57017]                                           awakened: mainboard[57202/57017]
+    4236.667519 [0009]  mainboard[57194/57017]                                           awakened: mainboard[57040/57005]
+    4236.667520 [0009]  mainboard[57194/57017]                                           migrated: mainboard[57040/57005] cpu 9 => 10
+    4236.667524 [0009]  mainboard[57194/57017]                                           awakened: mainboard[57265/57015]
+    4236.667525 [0009]  mainboard[57194/57017]                                           migrated: mainboard[57265/57015] cpu 9 => 11
+    4236.667787 [0009]  mainboard[57194/57017]                                           awakened: mainboard[57201/57017]
+    4236.667792 [0009]  mainboard[57194/57017]                                           awakened: mainboard[57188/57017]
+    4236.667794 [0009]  mainboard[57194/57017]                                           migrated: mainboard[57188/57017] cpu 10 => 11
+    4236.667860 [0009]  mainboard[57194/57017]             95.562      0.004      0.409      S                                 
+    4236.767346 [0007]  mainboard[57202/57017]                                           awakened: mainboard[57194/57017]
+    4236.767392 [0009]  mainboard[57194/57017]                                           awakened: mainboard[57265/57015]
+    4236.767395 [0009]  mainboard[57194/57017]                                           migrated: mainboard[57265/57015] cpu 9 => 10
+    4236.767402 [0009]  mainboard[57194/57017]                                           awakened: dreamview_plus[56511/56342]
+    4236.767405 [0009]  mainboard[57194/57017]                                           migrated: dreamview_plus[56511/56342] cpu 9 => 11
+    4236.767466 [0009]  mainboard[57194/57017]                                           awakened: mainboard[57202/57017]
+    4236.777058 [0009]  mainboard[57194/57017]             99.498      0.013      9.698      R                                 
+    4236.780726 [0009]  mainboard[57194/57017]                                           awakened: sugov:8[929]
+    4236.780736 [0009]  mainboard[57194/57017]                                           awakened: kworker/u24:3[59919]
+    4236.780739 [0009]  mainboard[57194/57017]                                           migrated: kworker/u24:3[59919] cpu 9 => 10
+    4236.784038 [0009]  mainboard[57194/57017]                                           awakened: mainboard[57191/57017]
+    4236.784051 [0009]  mainboard[57194/57017]                                           awakened: mainboard[57202/57017]
+    4236.784124 [0009]  mainboard[57194/57017]              0.023      0.000      7.042      S                                 
+    4236.784160 [0007]  mainboard[57202/57017]                                           awakened: mainboard[57194/57017]
+    4236.784165 [0007]  mainboard[57202/57017]                                           migrated: mainboard[57194/57017] cpu 9 => 4
+    4236.784307 [0004]  mainboard[57194/57017]              0.064      0.028      0.118      S                                 
+    4236.877521 [0002]  mainboard[57202/57017]                                           awakened: mainboard[57194/57017]
+    4236.877588 [0004]  mainboard[57194/57017]             93.243      0.028      0.038      S                                 
+    4236.966329 [0002]  mainboard[57202/57017]                                           awakened: mainboard[57194/57017]
+    4236.966451 [0004]  mainboard[57194/57017]             88.749      0.008      0.113      S                                 
+    4237.053425 [0003]  dds.udp.27447[57780/57017]                                       awakened: mainboard[57194/57017]
+    4237.053450 [0004]  mainboard[57194/57017]             86.983      0.009      0.015      R                                 
+    4237.053476 [0004]  mainboard[57194/57017]                                           awakened: mainboard[57202/57017]
+    4237.053479 [0004]  mainboard[57194/57017]                                           migrated: mainboard[57202/57017] cpu 2 => 6
+    4237.053588 [0004]  mainboard[57194/57017]              0.019      0.000      0.118      R                                 
+    4237.053760 [0004]  mainboard[57194/57017]              0.022      0.000      0.149      R                                 
+    4237.054964 [0004]  mainboard[57194/57017]              0.013      0.000      1.190      R                                 
+    4237.055102 [0004]  mainboard[57194/57017]              0.024      0.000      0.113      R                                 
+    4237.057151 [0004]  mainboard[57194/57017]              0.006      0.000      2.042      R                                 
+    4237.057290 [0004]  mainboard[57194/57017]                                           awakened: mainboard[57200/57017]
+    4237.057294 [0004]  mainboard[57194/57017]                                           migrated: mainboard[57200/57017] cpu 10 => 5
+    4237.057301 [0004]  mainboard[57194/57017]                                           awakened: mainboard[57191/57017]
+    4237.057373 [0004]  mainboard[57194/57017]              0.016      0.000      0.205      R                                 
+    4237.057397 [0008]  mainboard[57191/57017]                                           awakened: mainboard[57194/57017]
+    4237.057397 [0004]  mainboard[57194/57017]              0.009      0.000      0.014      S                                 
+    4237.057474 [0004]  mainboard[57194/57017]              0.013      0.000      0.062      S                                 
+    4237.078700 [0011]  mainboard[57188/57017]                                           awakened: mainboard[57194/57017]
+    4237.078715 [0006]  mainboard[57200/57017]                                           awakened: mainboard[57194/57017]
+    4237.078715 [0004]  mainboard[57194/57017]             21.231      0.005      0.009      S                                 
+    4237.078731 [0004]  mainboard[57194/57017]                                           awakened: mainboard[56234/56186]
+    4237.078732 [0004]  mainboard[57194/57017]                                           migrated: mainboard[56234/56186] cpu 4 => 7
+    4237.078762 [0011]  mainboard[57188/57017]                                           awakened: mainboard[57194/57017]
+    4237.078765 [0004]  mainboard[57194/57017]              0.005      0.000      0.044      R                                 
+    4237.079091 [0004]  mainboard[57194/57017]                                           awakened: mainboard[57186/57017]
+    4237.079094 [0004]  mainboard[57194/57017]                                           migrated: mainboard[57186/57017] cpu 4 => 6
+    4237.079774 [0004]  mainboard[57194/57017]              0.005      0.000      1.003      R                                 
+    4237.079905 [0004]  mainboard[57194/57017]              0.023      0.000      0.107      R                                 
+    4237.080977 [0004]  mainboard[57194/57017]              0.007      0.000      1.063      R                                 
+    4237.082048 [0004]  mainboard[57194/57017]              0.068      0.000      1.002      R                                 
+    4237.082178 [0004]  mainboard[57194/57017]              0.024      0.000      0.105      R                                 
+    4237.084255 [0004]  mainboard[57194/57017]              0.006      0.000      2.070      R                                 
+    4237.084717 [0004]  mainboard[57194/57017]              0.015      0.000      0.447      R                                 
+    4237.086532 [0004]  mainboard[57194/57017]              0.008      0.000      1.805      R                                 
+    4237.086672 [0004]  mainboard[57194/57017]              0.014      0.000      0.126      R                                 
+    4237.088723 [0004]  mainboard[57194/57017]                                           awakened: sugov:4[930]
+    4237.088730 [0004]  mainboard[57194/57017]              0.006      0.000      2.051      R                                 
+    4237.088867 [0004]  mainboard[57194/57017]              0.025      0.000      0.111      R                                 
+    4237.089126 [0004]  mainboard[57194/57017]              0.007      0.000      0.250      S                                 
+    4237.089372 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.089374 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 4 => 1
+    4237.089398 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57457/57013]
+    4237.089403 [0001]  mainboard[57194/57017]                                           awakened: mainboard[58431/57009]
+    4237.089781 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57126/57013]
+    4237.089784 [0001]  mainboard[57194/57017]                                           migrated: mainboard[57126/57013] cpu 1 => 2
+    4237.089804 [0001]  mainboard[57194/57017]              0.254      0.007      0.423      S                                 
+    4237.090142 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.090243 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57457/57013]
+    4237.090244 [0001]  mainboard[57194/57017]                                           migrated: mainboard[57457/57013] cpu 1 => 2
+    4237.090979 [0001]  mainboard[57194/57017]              0.344      0.005      0.831      R                                 
+    4237.091539 [0001]  mainboard[57194/57017]              0.110      0.000      0.449      S                                 
+    4237.091676 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.091706 [0001]  mainboard[57194/57017]                                           awakened: mainboard[58431/57009]
+    4237.091708 [0001]  mainboard[57194/57017]                                           migrated: mainboard[58431/57009] cpu 1 => 2
+    4237.091771 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57457/57013]
+    4237.091773 [0001]  mainboard[57194/57017]                                           migrated: mainboard[57457/57013] cpu 1 => 2
+    4237.091817 [0001]  mainboard[57194/57017]              0.142      0.005      0.135      S                                 
+    4237.091865 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.092134 [0001]  mainboard[57194/57017]              0.052      0.005      0.263      R                                 
+    4237.092318 [0001]  mainboard[57194/57017]              0.077      0.000      0.106      R                                 
+    4237.092420 [0001]  mainboard[57194/57017]              0.050      0.000      0.051      R                                 
+    4237.093595 [0001]  mainboard[57194/57017]              0.072      0.000      1.103      R                                 
+    4237.093725 [0001]  mainboard[57194/57017]              0.101      0.000      0.028      R                                 
+    4237.094859 [0001]  mainboard[57194/57017]              0.050      0.000      1.084      R                                 
+    4237.096013 [0001]  mainboard[57194/57017]              0.081      0.000      1.072      R                                 
+    4237.114906 [0001]  mainboard[57194/57017]              0.081      0.000     18.811      S                                 
+    4237.163067 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.163069 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 1 => 2
+    4237.163251 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57125/57015]
+    4237.163253 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57125/57015] cpu 2 => 0
+    4237.163258 [0002]  mainboard[57194/57017]                                           awakened: dds.ev.1[56505/56342]
+    4237.163265 [0002]  mainboard[57194/57017]             48.168      0.007      0.190      R                                 
+    4237.163301 [0002]  mainboard[57194/57017]              0.024      0.000      0.011      R                                 
+    4237.163470 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57099/57011]
+    4237.163473 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57099/57011] cpu 2 => 0
+    4237.163624 [0002]  mainboard[57194/57017]              0.074      0.000      0.247      S                                 
+    4237.163691 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.163717 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57126/57013]
+    4237.163719 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57126/57013] cpu 2 => 1
+    4237.163792 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4237.163794 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 2 => 1
+    4237.164202 [0002]  mainboard[57194/57017]              0.076      0.009      0.502      S                                 
+    4237.164373 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.164446 [0002]  mainboard[57194/57017]                                           awakened: mainboard[58431/57009]
+    4237.164449 [0002]  mainboard[57194/57017]                                           migrated: mainboard[58431/57009] cpu 2 => 1
+    4237.165092 [0002]  mainboard[57194/57017]              0.176      0.005      0.713      S                                 
+    4237.165096 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.165253 [0002]  mainboard[57194/57017]              0.008      0.005      0.152      S                                 
+    4237.165292 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.165294 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 2 => 1
+    4237.165340 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57457/57013]
+    4237.165342 [0001]  mainboard[57194/57017]                                           migrated: mainboard[57457/57013] cpu 1 => 3
+    4237.165393 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57125/57015]
+    4237.165395 [0001]  mainboard[57194/57017]                                           migrated: mainboard[57125/57015] cpu 1 => 2
+    4237.165604 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57099/57011]
+    4237.165606 [0001]  mainboard[57194/57017]                                           migrated: mainboard[57099/57011] cpu 1 => 2
+    4237.165681 [0001]  mainboard[57194/57017]              0.044      0.004      0.383      S                                 
+    4237.165692 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.165874 [0001]  mainboard[57194/57017]              0.016      0.006      0.175      R                                 
+    4237.166011 [0001]  mainboard[57194/57017]              0.029      0.000      0.106      R                                 
+    4237.166369 [0001]  mainboard[57194/57017]              0.010      0.000      0.347      S                                 
+    4237.166409 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.166410 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 1 => 2
+    4237.166460 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57125/57015]
+    4237.166462 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57125/57015] cpu 2 => 1
+    4237.166467 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57457/57013]
+    4237.166468 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57457/57013] cpu 2 => 3
+    4237.166672 [0002]  mainboard[57194/57017]              0.044      0.003      0.258      S                                 
+    4237.166683 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.166743 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57099/57011]
+    4237.166744 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57099/57011] cpu 2 => 3
+    4237.166852 [0002]  mainboard[57194/57017]              0.017      0.005      0.163      S                                 
+    4237.167043 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.167624 [0002]  mainboard[57194/57017]              0.196      0.006      0.574      S                                 
+    4237.168015 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.168040 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4237.168042 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 2 => 1
+    4237.168358 [0002]  mainboard[57194/57017]              0.397      0.005      0.336      S                                 
+    4237.168663 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.169003 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57234/57011]
+    4237.169009 [0002]  mainboard[57194/57017]              0.310      0.005      0.340      R                                 
+    4237.169154 [0002]  mainboard[57194/57017]              0.061      0.000      0.084      S                                 
+    4237.169458 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.169848 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57468/57013]
+    4237.169850 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57468/57013] cpu 2 => 0
+    4237.170048 [0002]  mainboard[57194/57017]              0.309      0.005      0.584      R                                 
+    4237.170922 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57190/57017]
+    4237.170925 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57190/57017] cpu 11 => 8
+    4237.170929 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57196/57017]
+    4237.171330 [0002]  mainboard[57194/57017]              0.298      0.000      0.983      R                                 
+    4237.171591 [0001]  mainboard[57192/57017]                                           awakened: mainboard[57194/57017]
+    4237.171591 [0002]  mainboard[57194/57017]              0.202      0.000      0.058      S                                 
+    4237.171614 [0001]  mainboard[57192/57017]                                           awakened: mainboard[57194/57017]
+    4237.171615 [0002]  mainboard[57194/57017]              0.004      0.000      0.019      R                                 
+    4237.171821 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57191/57017]
+    4237.171824 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57191/57017] cpu 10 => 8
+    4237.171829 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57201/57017]
+    4237.171874 [0002]  mainboard[57194/57017]              0.003      0.000      0.255      S                                 
+    4237.171878 [0010]  mainboard[57188/57017]                                           awakened: mainboard[57194/57017]
+    4237.171930 [0002]  mainboard[57194/57017]              0.014      0.010      0.041      S                                 
+    4237.271553 [0002]  dds.udp.27447[57780/57017]                                       awakened: mainboard[57194/57017]
+    4237.271712 [0002]  mainboard[57194/57017]             99.647      0.024      0.135      R                                 
+    4237.271792 [0002]  mainboard[57194/57017]              0.038      0.000      0.041      S                                 
+    4237.274837 [0002]  swapper                                                          awakened: mainboard[57194/57017]
+    4237.274884 [0002]  mainboard[57194/57017]              3.049      0.004      0.041      S                                 
+    4237.277931 [0002]  swapper                                                          awakened: mainboard[57194/57017]
+    4237.277998 [0002]  mainboard[57194/57017]              3.052      0.005      0.061      S                                 
+    4237.281045 [0002]  swapper                                                          awakened: mainboard[57194/57017]
+    4237.281103 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57435/57003]
+    4237.281105 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57435/57003] cpu 2 => 0
+    4237.281116 [0002]  mainboard[57194/57017]              3.059      0.011      0.059      S                                 
+    4237.284164 [0002]  swapper                                                          awakened: mainboard[57194/57017]
+    4237.284236 [0002]  mainboard[57194/57017]                                           awakened: node[5130/4840]
+    4237.284242 [0002]  mainboard[57194/57017]                                           awakened: MainThread[13752/13727]
+    4237.284355 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57201/57017]
+    4237.284358 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57201/57017] cpu 4 => 5
+    4237.284361 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57200/57017]
+    4237.284420 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57020/57001]
+    4237.284421 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57020/57001] cpu 2 => 0
+    4237.284448 [0002]  mainboard[57194/57017]              3.052      0.005      0.279      S                                 
+    4237.371551 [0002]  dds.udp.27447[57780/57017]                                       awakened: mainboard[57194/57017]
+    4237.371553 [0002]  dds.udp.27447[57780/57017]                                       migrated: mainboard[57194/57017] cpu 2 => 3
+    4237.371713 [0003]  mainboard[57194/57017]             87.110      0.007      0.154      S                                 
+    4237.374760 [0003]  mainboard[57145/57013]                                           awakened: mainboard[57194/57017]
+    4237.374763 [0003]  mainboard[57145/57013]                                           migrated: mainboard[57194/57017] cpu 3 => 2
+    4237.374828 [0002]  mainboard[57194/57017]              3.057      0.009      0.058      S                                 
+    4237.377873 [0002]  swapper                                                          awakened: mainboard[57194/57017]
+    4237.377926 [0002]  mainboard[57194/57017]              3.047      0.003      0.050      S                                 
+    4237.380972 [0002]  dreamview_plus[56443/56342]                                      awakened: mainboard[57194/57017]
+    4237.381044 [0002]  mainboard[57194/57017]              3.070      0.024      0.047      S                                 
+    4237.384090 [0002]  swapper                                                          awakened: mainboard[57194/57017]
+    4237.384191 [0002]  mainboard[57194/57017]                                           awakened: node[5130/4840]
+    4237.384193 [0002]  mainboard[57194/57017]                                           migrated: node[5130/4840] cpu 9 => 11
+    4237.384199 [0002]  mainboard[57194/57017]                                           awakened: MainThread[13752/13727]
+    4237.384206 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57195/57017]
+    4237.384230 [0008]  mainboard[57195/57017]                                           awakened: mainboard[57194/57017]
+    4237.384231 [0002]  mainboard[57194/57017]              3.053      0.008      0.133      R                                 
+    4237.384340 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57197/57017]
+    4237.384346 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57199/57017]
+    4237.384348 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57199/57017] cpu 10 => 2
+    4237.384442 [0002]  mainboard[57194/57017]              0.005      0.000      0.205      S                                 
+    4237.471807 [0002]  dds.udp.27447[57780/57017]                                       awakened: mainboard[57194/57017]
+    4237.471809 [0002]  dds.udp.27447[57780/57017]                                       migrated: mainboard[57194/57017] cpu 2 => 3
+    4237.471847 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57457/57013]
+    4237.471859 [0003]  mainboard[57194/57017]             87.374      0.009      0.043      S                                 
+    4237.571472 [0002]  mainboard[57192/57017]                                           awakened: mainboard[57194/57017]
+    4237.571474 [0002]  mainboard[57192/57017]                                           migrated: mainboard[57194/57017] cpu 3 => 1
+    4237.571514 [0002]  mainboard[57192/57017]                                           awakened: mainboard[57194/57017]
+    4237.571515 [0001]  mainboard[57194/57017]             99.623      0.010      0.032      R                                 
+    4237.571553 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57457/57013]
+    4237.571754 [0001]  mainboard[57194/57017]              0.030      0.000      0.208      R                                 
+    4237.571939 [0001]  mainboard[57194/57017]              0.035      0.000      0.149      R                                 
+    4237.572042 [0001]  mainboard[57194/57017]              0.017      0.000      0.085      R                                 
+    4237.572100 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57191/57017]
+    4237.572106 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57199/57017]
+    4237.572108 [0001]  mainboard[57194/57017]                                           migrated: mainboard[57199/57017] cpu 8 => 3
+    4237.572143 [0001]  mainboard[57194/57017]              0.008      0.000      0.092      S                                 
+    4237.572163 [0009]  mainboard[57202/57017]                                           awakened: mainboard[57194/57017]
+    4237.572235 [0001]  mainboard[57194/57017]              0.028      0.008      0.063      S                                 
+    4237.667677 [0009]  mainboard[57190/57017]                                           awakened: mainboard[57194/57017]
+    4237.667681 [0009]  mainboard[57190/57017]                                           migrated: mainboard[57194/57017] cpu 1 => 10
+    4237.667776 [0010]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4237.667787 [0010]  mainboard[57194/57017]                                           awakened: mainboard[57190/57017]
+    4237.668462 [0010]  mainboard[57194/57017]                                           awakened: mainboard[57199/57017]
+    4237.668469 [0010]  mainboard[57194/57017]                                           awakened: mainboard[57195/57017]
+    4237.668571 [0010]  mainboard[57194/57017]             95.457      0.015      0.878      S                                 
+    4237.759107 [0010]  mainboard[57190/57017]                                           awakened: mainboard[57194/57017]
+    4237.759111 [0010]  mainboard[57190/57017]                                           migrated: mainboard[57194/57017] cpu 10 => 8
+    4237.759161 [0008]  mainboard[57194/57017]             90.549      0.012      0.041      S                                 
+    4237.781221 [0008]  mainboard[57188/57017]                                           awakened: mainboard[57194/57017]
+    4237.781224 [0008]  mainboard[57188/57017]                                           migrated: mainboard[57194/57017] cpu 8 => 10
+    4237.781244 [0010]  mainboard[57194/57017]                                           awakened: mainboard[58431/57009]
+    4237.781320 [0010]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4237.788712 [0010]  mainboard[57194/57017]                                           awakened: rcu_preempt[13]
+    4237.788714 [0010]  mainboard[57194/57017]                                           migrated: rcu_preempt[13] cpu 10 => 8
+    4237.789146 [0010]  mainboard[57194/57017]             22.069      0.010      7.915      R                                 
+    4237.792117 [0010]  mainboard[57194/57017]              0.103      0.000      2.867      S                                 
+    4237.792414 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.792416 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 10 => 11
+    4237.792511 [0011]  mainboard[57194/57017]              0.316      0.019      0.076      R                                 
+    4237.792800 [0011]  mainboard[57194/57017]                                           awakened: mainboard[56237/56186]
+    4237.792803 [0011]  mainboard[57194/57017]                                           migrated: mainboard[56237/56186] cpu 11 => 8
+    4237.792963 [0011]  mainboard[57194/57017]              0.104      0.000      0.347      S                                 
+    4237.793264 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.794678 [0011]  mainboard[57194/57017]              0.311      0.010      1.403      S                                 
+    4237.794811 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.794959 [0011]  mainboard[57194/57017]              0.143      0.010      0.137      S                                 
+    4237.795008 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4237.795069 [0011]  mainboard[57194/57017]                                           awakened: mainboard[57234/57011]
+    4237.795072 [0011]  mainboard[57194/57017]                                           migrated: mainboard[57234/57011] cpu 11 => 8
+    4237.795207 [0011]  mainboard[57194/57017]              0.056      0.008      0.191      R                                 
+    4237.796378 [0011]  mainboard[57194/57017]              0.105      0.000      1.065      R                                 
+    4237.797574 [0011]  mainboard[57194/57017]              0.091      0.000      1.105      R                                 
+    4237.797859 [0011]  mainboard[57194/57017]              0.109      0.000      0.175      R                                 
+    4237.802819 [0011]  mainboard[57194/57017]              0.054      0.000      4.905      W                                 
+    4237.802859 [0011]  mainboard[57194/57017]              0.022      0.000      0.016      W                                 
+    4237.808705 [0011]  mainboard[57194/57017]                                           awakened: sugov:8[929]
+    4237.808956 [0011]  mainboard[57194/57017]              0.007      0.000      6.089      W                                 
+    4237.809060 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.809067 [0011]  mainboard[57194/57017]              0.059      0.000      0.050      W                                 
+    4237.812714 [0011]  mainboard[57194/57017]                                           awakened: sugov:8[929]
+    4237.817294 [0011]  mainboard[57194/57017]                                           awakened: mainboard[58461/57013]
+    4237.817297 [0011]  mainboard[57194/57017]                                           migrated: mainboard[58461/57013] cpu 11 => 8
+    4237.821607 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.821615 [0011]  mainboard[57194/57017]              0.007      0.000     12.540      W                                 
+    4237.824160 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.824170 [0011]  mainboard[57194/57017]              0.007      0.000      2.547      W                                 
+    4237.825538 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.825546 [0011]  mainboard[57194/57017]              0.006      0.000      1.369      W                                 
+    4237.838770 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.838781 [0011]  mainboard[57194/57017]              0.004      0.000     13.231      W                                 
+    4237.843259 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.843268 [0011]  mainboard[57194/57017]              0.007      0.000      4.479      W                                 
+    4237.844689 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.844707 [0011]  mainboard[57194/57017]              0.005      0.000      1.432      W                                 
+    4237.845725 [0011]  mainboard[57194/57017]                                           awakened: bvar_sampler[56439/56342]
+    4237.845728 [0011]  mainboard[57194/57017]                                           migrated: bvar_sampler[56439/56342] cpu 11 => 8
+    4237.845939 [0011]  mainboard[57194/57017]                                           awakened: mainboard[57807/57017]
+    4237.845940 [0011]  mainboard[57194/57017]                                           migrated: mainboard[57807/57017] cpu 11 => 9
+    4237.846461 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.846467 [0011]  mainboard[57194/57017]              0.004      0.000      1.756      W                                 
+    4237.850787 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.850795 [0011]  mainboard[57194/57017]              0.006      0.000      4.320      W                                 
+    4237.852960 [0011]  mainboard[57194/57017]                                           awakened: ksoftirqd/11[69]
+    4237.852965 [0011]  mainboard[57194/57017]              0.007      0.000      2.162      W                                 
+    4237.854854 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.854859 [0011]  mainboard[57194/57017]              1.559      0.000      0.333      W                                 
+    4237.856431 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.856438 [0011]  mainboard[57194/57017]              0.006      0.000      1.573      W                                 
+    4237.857551 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.857556 [0011]  mainboard[57194/57017]              0.006      0.000      1.111      W                                 
+    4237.858998 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.859004 [0011]  mainboard[57194/57017]              0.004      0.000      1.442      W                                 
+    4237.860062 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.860068 [0011]  mainboard[57194/57017]              0.004      0.000      1.060      W                                 
+    4237.863205 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.863214 [0011]  mainboard[57194/57017]              0.003      0.000      3.141      W                                 
+    4237.864343 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.864350 [0011]  mainboard[57194/57017]              0.006      0.000      1.129      W                                 
+    4237.865147 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.865152 [0011]  mainboard[57194/57017]              0.004      0.000      0.797      W                                 
+    4237.865928 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.865933 [0011]  mainboard[57194/57017]              0.007      0.000      0.774      W                                 
+    4237.868528 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.868534 [0011]  mainboard[57194/57017]              0.002      0.000      2.597      W                                 
+    4237.870558 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.870566 [0011]  mainboard[57194/57017]              0.005      0.000      2.027      W                                 
+    4237.872051 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.872058 [0011]  mainboard[57194/57017]              0.005      0.000      1.486      W                                 
+    4237.886711 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.886720 [0011]  mainboard[57194/57017]              0.005      0.000     14.656      W                                 
+    4237.888974 [0011]  mainboard[57194/57017]                                           awakened: ksoftirqd/11[69]
+    4237.888979 [0011]  mainboard[57194/57017]              0.007      0.000      2.251      W                                 
+    4237.889634 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.889638 [0011]  mainboard[57194/57017]              0.598      0.000      0.061      W                                 
+    4237.891097 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.891103 [0011]  mainboard[57194/57017]              0.005      0.000      1.458      W                                 
+    4237.892920 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.892924 [0011]  mainboard[57194/57017]              0.005      0.000      1.815      W                                 
+    4237.894286 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.894292 [0011]  mainboard[57194/57017]              0.004      0.000      1.363      W                                 
+    4237.895119 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.895123 [0011]  mainboard[57194/57017]              0.004      0.000      0.826      W                                 
+    4237.895985 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.895990 [0011]  mainboard[57194/57017]              0.003      0.000      0.863      W                                 
+    4237.896007 [0011]  mainboard[57194/57017]                                           awakened: kworker/0:2-mm_[38087]
+    4237.896010 [0011]  mainboard[57194/57017]                                           awakened: kworker/1:0-mm_[14663]
+    4237.896012 [0011]  mainboard[57194/57017]                                           awakened: kworker/2:5-mm_[219]
+    4237.896015 [0011]  mainboard[57194/57017]                                           awakened: kworker/3:0-mm_[4019]
+    4237.896017 [0011]  mainboard[57194/57017]                                           awakened: kworker/4:2-mm_[46105]
+    4237.896019 [0011]  mainboard[57194/57017]                                           awakened: kworker/5:1-eve[99]
+    4237.896021 [0011]  mainboard[57194/57017]                                           awakened: kworker/6:3-mm_[5650]
+    4237.896023 [0011]  mainboard[57194/57017]                                           awakened: kworker/7:0-pm[50]
+    4237.896025 [0011]  mainboard[57194/57017]                                           awakened: kworker/8:0-eve[55461]
+    4237.896027 [0011]  mainboard[57194/57017]                                           awakened: kworker/9:0-mm_[4356]
+    4237.896029 [0011]  mainboard[57194/57017]                                           awakened: kworker/10:2-mm[164]
+    4237.896031 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.896034 [0011]  mainboard[57194/57017]              0.003      0.000      0.041      W                                 
+    4237.896596 [0011]  mainboard[57194/57017]              0.555      0.000      0.005      D                                 
+    4237.896805 [0005]  kworker/5:1-eve[99]                                              awakened: mainboard[57194/57017]
+    4237.901364 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.901371 [0011]  mainboard[57194/57017]              0.217      0.007      4.557      W                                 
+    4237.902439 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.902444 [0011]  mainboard[57194/57017]              0.007      0.000      1.066      W                                 
+    4237.904870 [0011]  mainboard[57194/57017]                                           awakened: ksoftirqd/11[69]
+    4237.904876 [0011]  mainboard[57194/57017]              0.004      0.000      2.426      W                                 
+    4237.906350 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.906354 [0011]  mainboard[57194/57017]              1.256      0.000      0.221      W                                 
+    4237.907591 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.907597 [0011]  mainboard[57194/57017]              0.005      0.000      1.237      W                                 
+    4237.908742 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.908745 [0011]  mainboard[57194/57017]              0.005      0.000      1.142      W                                 
+    4237.910023 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.910028 [0011]  mainboard[57194/57017]              0.004      0.000      1.278      W                                 
+    4237.911418 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.911424 [0011]  mainboard[57194/57017]              0.004      0.000      1.390      W                                 
+    4237.920641 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.920653 [0011]  mainboard[57194/57017]              0.004      0.000      9.224      W                                 
+    4237.921698 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.921703 [0011]  mainboard[57194/57017]              0.009      0.000      1.040      W                                 
+    4237.922681 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.922687 [0011]  mainboard[57194/57017]              0.005      0.000      0.978      W                                 
+    4237.923484 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.923489 [0011]  mainboard[57194/57017]              0.004      0.000      0.797      W                                 
+    4237.924320 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.924324 [0011]  mainboard[57194/57017]              0.003      0.000      0.831      W                                 
+    4237.925139 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.925143 [0011]  mainboard[57194/57017]              0.003      0.000      0.815      W                                 
+    4237.926714 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.926720 [0011]  mainboard[57194/57017]              0.003      0.000      1.573      W                                 
+    4237.931998 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.932007 [0011]  mainboard[57194/57017]              0.003      0.000      5.284      W                                 
+    4237.932903 [0011]  mainboard[57194/57017]                                           awakened: ksoftirqd/11[69]
+    4237.932908 [0011]  mainboard[57194/57017]              0.006      0.000      0.894      W                                 
+    4237.942894 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.942902 [0011]  mainboard[57194/57017]              0.122      0.000      9.870      W                                 
+    4237.944925 [0011]  mainboard[57194/57017]                                           awakened: ksoftirqd/11[69]
+    4237.944930 [0011]  mainboard[57194/57017]              0.007      0.000      2.020      W                                 
+    4237.947016 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.947022 [0011]  mainboard[57194/57017]              0.814      0.000      1.277      W                                 
+    4237.964850 [0011]  mainboard[57194/57017]                                           awakened: ksoftirqd/11[69]
+    4237.964856 [0011]  mainboard[57194/57017]              0.006      0.000     17.827      W                                 
+    4237.966376 [0011]  mainboard[57194/57017]              0.804      0.000      0.715      W                                 
+    4237.973814 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.973822 [0011]  mainboard[57194/57017]              0.040      0.000      7.405      W                                 
+    4237.976824 [0011]  mainboard[57194/57017]                                           awakened: ksoftirqd/11[69]
+    4237.976829 [0011]  mainboard[57194/57017]              0.011      0.000      2.994      W                                 
+    4237.979278 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4237.979288 [0011]  mainboard[57194/57017]              0.373      0.000      2.086      W                                 
+    4237.996783 [0011]  mainboard[57194/57017]                                           awakened: ksoftirqd/11[69]
+    4237.996789 [0011]  mainboard[57194/57017]              0.009      0.000     17.491      W                                 
+    4238.008824 [0011]  mainboard[57194/57017]                                           awakened: ksoftirqd/11[69]
+    4238.008829 [0011]  mainboard[57194/57017]              0.219      0.000     11.821      W                                 
+    4238.023647 [0011]  mainboard[57194/57017]                                           awakened: kworker/11:1-ev[12074]
+    4238.023655 [0011]  mainboard[57194/57017]              0.486      0.000     14.339      W                                 
+    4238.056778 [0011]  mainboard[57194/57017]                                           awakened: ksoftirqd/11[69]
+    4238.056785 [0011]  mainboard[57194/57017]              0.008      0.000     33.121      W                                 
+    4238.072355 [0011]  mainboard[57194/57017]                                           awakened: mainboard[57041/57003]
+    4238.072357 [0011]  mainboard[57194/57017]                                           migrated: mainboard[57041/57003] cpu 11 => 8
+    4238.089089 [0011]  mainboard[57194/57017]                                           awakened: mainboard[57031/57001]
+    4238.089093 [0011]  mainboard[57194/57017]                                           migrated: mainboard[57031/57001] cpu 11 => 8
+    4238.103811 [0011]  mainboard[57194/57017]              0.560      0.000     46.464      S                                 
+    4238.124554 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.124572 [0011]  mainboard[57194/57017]                                           awakened: mainboard[56234/56186]
+    4238.124574 [0011]  mainboard[57194/57017]                                           migrated: mainboard[56234/56186] cpu 11 => 8
+    4238.124969 [0011]  mainboard[57194/57017]             20.748      0.005      0.409      S                                 
+    4238.125157 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.125159 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 11 => 8
+    4238.125246 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.125248 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 8 => 9
+    4238.125456 [0008]  mainboard[57194/57017]              0.194      0.006      0.291      S                                 
+    4238.125461 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.125494 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57186/57017]
+    4238.125496 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57186/57017] cpu 8 => 11
+    4238.125714 [0008]  mainboard[57194/57017]              0.013      0.007      0.244      S                                 
+    4238.125915 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.126009 [0008]  mainboard[57194/57017]                                           awakened: dreamview_plus[56511/56342]
+    4238.126011 [0008]  mainboard[57194/57017]                                           migrated: dreamview_plus[56511/56342] cpu 8 => 9
+    4238.126016 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.126017 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 8 => 10
+    4238.126611 [0008]  mainboard[57194/57017]              0.206      0.004      0.690      S                                 
+    4238.126619 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.126780 [0008]  mainboard[57194/57017]              0.014      0.006      0.154      S                                 
+    4238.126808 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.127124 [0008]  mainboard[57194/57017]              0.035      0.007      0.308      S                                 
+    4238.127181 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.127183 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 8 => 10
+    4238.127254 [0010]  mainboard[57194/57017]                                           awakened: mainboard[57177/57001]
+    4238.127257 [0010]  mainboard[57194/57017]                                           migrated: mainboard[57177/57001] cpu 10 => 8
+    4238.127438 [0010]  mainboard[57194/57017]              0.066      0.009      0.246      S                                 
+    4238.127452 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.127456 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 10 => 8
+    4238.127473 [0008]  mainboard[57194/57017]              0.024      0.009      0.010      W                                 
+    4238.127635 [0008]  mainboard[57194/57017]              0.035      0.000      0.126      R                                 
+    4238.127726 [0008]  mainboard[57194/57017]              0.011      0.000      0.079      S                                 
+    4238.127773 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.128572 [0008]  mainboard[57194/57017]              0.055      0.008      0.790      S                                 
+    4238.128684 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.128768 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57457/57013]
+    4238.128771 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57457/57013] cpu 8 => 11
+    4238.129419 [0008]  mainboard[57194/57017]              0.131      0.019      0.715      S                                 
+    4238.129754 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.129818 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.129820 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 8 => 10
+    4238.129824 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57177/57001]
+    4238.129826 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57177/57001] cpu 8 => 9
+    4238.130151 [0008]  mainboard[57194/57017]              0.343      0.008      0.388      S                                 
+    4238.130467 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.130491 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.130492 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 8 => 9
+    4238.130878 [0008]  mainboard[57194/57017]              0.323      0.007      0.403      S                                 
+    4238.131300 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.131337 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57177/57001]
+    4238.131340 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57177/57001] cpu 8 => 9
+    4238.131383 [0008]  mainboard[57194/57017]              0.427      0.005      0.077      S                                 
+    4238.131868 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.131893 [0008]  mainboard[57194/57017]                                           awakened: mainboard[56234/56186]
+    4238.131894 [0008]  mainboard[57194/57017]                                           migrated: mainboard[56234/56186] cpu 8 => 9
+    4238.131957 [0008]  mainboard[57194/57017]              0.490      0.005      0.083      S                                 
+    4238.132096 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.132901 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57186/57017]
+    4238.132903 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57186/57017] cpu 8 => 10
+    4238.133329 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57188/57017]
+    4238.133340 [0008]  mainboard[57194/57017]              0.145      0.005      1.237      S                                 
+    4238.133352 [0010]  mainboard[57188/57017]                                           awakened: mainboard[57194/57017]
+    4238.133362 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57192/57017]
+    4238.133400 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57188/57017]
+    4238.133413 [0008]  mainboard[57194/57017]              0.018      0.006      0.054      S                                 
+    4238.133424 [0010]  mainboard[57188/57017]                                           awakened: mainboard[57194/57017]
+    4238.137120 [0008]  mainboard[57194/57017]              0.015      0.004      3.691      R                                 
+    4238.142289 [0008]  mainboard[57194/57017]              0.031      0.000      5.137      R                                 
+    4238.143042 [0008]  mainboard[57194/57017]              0.068      0.000      0.684      S                                 
+    4238.143372 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.143459 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57177/57001]
+    4238.143467 [0008]  mainboard[57194/57017]                                           awakened: mainboard[56234/56186]
+    4238.143726 [0008]  mainboard[57194/57017]              0.336      0.006      0.347      S                                 
+    4238.144055 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.144152 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.144154 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 8 => 10
+    4238.144158 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57457/57013]
+    4238.145327 [0008]  mainboard[57194/57017]              0.336      0.006      1.265      S                                 
+    4238.145593 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.145632 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57177/57001]
+    4238.145637 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57457/57013]
+    4238.145740 [0008]  mainboard[57194/57017]              0.271      0.005      0.140      S                                 
+    4238.146225 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.146268 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57177/57001]
+    4238.146271 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57177/57001] cpu 8 => 10
+    4238.146275 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.147214 [0008]  mainboard[57194/57017]              0.491      0.005      0.982      R                                 
+    4238.147345 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.157181 [0008]  mainboard[57194/57017]              0.032      0.000      9.934      W                                 
+    4238.158401 [0008]  mainboard[57194/57017]                                           awakened: bvar_sampler[57076/57011]
+    4238.158415 [0008]  mainboard[57194/57017]              0.029      0.000      1.204      W                                 
+    4238.167250 [0008]  mainboard[57194/57017]              1.508      0.000      7.326      W                                 
+    4238.168714 [0008]  mainboard[57194/57017]                                           awakened: kworker/8:0-eve[55461]
+    4238.168722 [0008]  mainboard[57194/57017]              0.017      0.000      1.454      W                                 
+    4238.172471 [0008]  mainboard[57194/57017]              0.012      0.000      3.736      W                                 
+    4238.175682 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57190/57017]
+    4238.175685 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57190/57017] cpu 8 => 10
+    4238.184695 [0008]  mainboard[57194/57017]                                           awakened: kworker/8:0-eve[55461]
+    4238.184700 [0008]  mainboard[57194/57017]              0.165      0.000     12.063      W                                 
+    4238.192802 [0008]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.208228 [0008]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.208768 [0008]  mainboard[57194/57017]                                           awakened: rcu_preempt[13]
+    4238.217992 [0008]  mainboard[57194/57017]                                           awakened: mainboard[58461/57013]
+    4238.217995 [0008]  mainboard[57194/57017]                                           migrated: mainboard[58461/57013] cpu 8 => 10
+    4238.227831 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57003]
+    4238.227833 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57003] cpu 8 => 9
+    4238.228693 [0008]  mainboard[57194/57017]                                           awakened: kworker/8:0-eve[55461]
+    4238.228698 [0008]  mainboard[57194/57017]              0.007      0.000     43.990      W                                 
+    4238.271940 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57054/57003]
+    4238.271945 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57054/57003] cpu 8 => 9
+    4238.284704 [0008]  mainboard[57194/57017]                                           awakened: kworker/8:0-eve[55461]
+    4238.284709 [0008]  mainboard[57194/57017]              0.010      0.000     56.000      W                                 
+    4238.310832 [0008]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.344709 [0008]  mainboard[57194/57017]                                           awakened: kworker/8:0-eve[55461]
+    4238.344714 [0008]  mainboard[57194/57017]              0.009      0.000     59.995      W                                 
+    4238.387403 [0008]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.396710 [0008]  mainboard[57194/57017]                                           awakened: rcu_preempt[13]
+    4238.400694 [0008]  mainboard[57194/57017]                                           awakened: kworker/8:0-eve[55461]
+    4238.400699 [0008]  mainboard[57194/57017]              0.011      0.000     55.974      W                                 
+    4238.429062 [0008]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.433425 [0008]  mainboard[57194/57017]                                           awakened: containerd[1432/1237]
+    4238.433427 [0008]  mainboard[57194/57017]                                           migrated: containerd[1432/1237] cpu 8 => 11
+    4238.433432 [0008]  mainboard[57194/57017]                                           awakened: containerd[56659/1237]
+    4238.433433 [0008]  mainboard[57194/57017]                                           migrated: containerd[56659/1237] cpu 8 => 10
+    4238.433560 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57033/57001]
+    4238.433561 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57033/57001] cpu 8 => 10
+    4238.456710 [0008]  mainboard[57194/57017]                                           awakened: kworker/8:0-eve[55461]
+    4238.456716 [0008]  mainboard[57194/57017]              0.010      0.000     56.006      R                                 
+    4238.466761 [0008]  mainboard[57194/57017]              0.014      0.000     10.030      R                                 
+    4238.470608 [0008]  mainboard[57194/57017]              0.057      0.000      3.788      S                                 
+    4238.490226 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.490328 [0008]  mainboard[57194/57017]                                           awakened: mainboard[57177/57001]
+    4238.490330 [0008]  mainboard[57194/57017]                                           migrated: mainboard[57177/57001] cpu 8 => 9
+    4238.490614 [0008]  mainboard[57194/57017]             19.625      0.008      0.379      S                                 
+    4238.490845 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.490847 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 8 => 2
+    4238.490969 [0002]  mainboard[57194/57017]              0.239      0.008      0.115      R                                 
+    4238.491220 [0002]  mainboard[57194/57017]              0.017      0.000      0.234      S                                 
+    4238.491229 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.491472 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57186/57017]
+    4238.491474 [0002]  mainboard[57194/57017]                                           migrated: mainboard[57186/57017] cpu 2 => 1
+    4238.491495 [0002]  mainboard[57194/57017]              0.015      0.006      0.258      S                                 
+    4238.491576 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.492255 [0002]  mainboard[57194/57017]              0.085      0.003      0.674      S                                 
+    4238.492261 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.492725 [0002]  mainboard[57194/57017]              0.011      0.004      0.458      S                                 
+    4238.492749 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.492942 [0002]  mainboard[57194/57017]              0.028      0.004      0.188      S                                 
+    4238.492948 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.493097 [0002]  mainboard[57194/57017]              0.010      0.004      0.144      S                                 
+    4238.493106 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.493404 [0002]  mainboard[57194/57017]              0.013      0.004      0.293      S                                 
+    4238.493452 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.493661 [0002]  mainboard[57194/57017]              0.052      0.004      0.203      S                                 
+    4238.493669 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.493820 [0002]  mainboard[57194/57017]              0.012      0.004      0.146      S                                 
+    4238.494094 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.494660 [0002]  mainboard[57194/57017]              0.279      0.004      0.560      S                                 
+    4238.495031 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.495042 [0002]  mainboard[57194/57017]                                           awakened: mainboard[58431/57009]
+    4238.495043 [0002]  mainboard[57194/57017]                                           migrated: mainboard[58431/57009] cpu 2 => 1
+    4238.495383 [0002]  mainboard[57194/57017]              0.376      0.004      0.346      S                                 
+    4238.495682 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.496071 [0002]  mainboard[57194/57017]              0.303      0.004      0.384      S                                 
+    4238.496373 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.497017 [0002]  mainboard[57194/57017]              0.306      0.004      0.639      R                                 
+    4238.497450 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57192/57017]
+    4238.497455 [0002]  mainboard[57194/57017]                                           awakened: mainboard[57200/57017]
+    4238.506471 [0002]  mainboard[57194/57017]              0.018      0.000      9.435      S                                 
+    4238.506772 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.506774 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 2 => 3
+    4238.506796 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57186/57017]
+    4238.506798 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57186/57017] cpu 3 => 0
+    4238.506803 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.506927 [0003]  mainboard[57194/57017]              0.305      0.005      0.149      R                                 
+    4238.508458 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.508461 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 3 => 0
+    4238.508722 [0003]  mainboard[57194/57017]              1.432      0.000      0.362      S                                 
+    4238.508978 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.509045 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.509109 [0003]  mainboard[57194/57017]              0.261      0.004      0.125      S                                 
+    4238.509261 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.509327 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.509372 [0003]  mainboard[57194/57017]              0.156      0.004      0.106      R                                 
+    4238.509494 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.510628 [0003]  mainboard[57194/57017]              0.023      0.000      1.233      S                                 
+    4238.510750 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.510869 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.510871 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 3 => 0
+    4238.510913 [0003]  mainboard[57194/57017]              0.140      0.018      0.143      S                                 
+    4238.510987 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.511100 [0003]  mainboard[57194/57017]              0.086      0.012      0.100      R                                 
+    4238.521403 [0003]  mainboard[57194/57017]              0.022      0.000     10.280      W                                 
+    4238.521775 [0003]  mainboard[57194/57017]                                           awakened: cpptools-srv2[14969/14963]
+    4238.521778 [0003]  mainboard[57194/57017]                                           migrated: cpptools-srv2[14969/14963] cpu 3 => 0
+    4238.523563 [0003]  mainboard[57194/57017]                                           awakened: python3[56341]
+    4238.523581 [0003]  mainboard[57194/57017]              0.036      0.000      2.141      W                                 
+    4238.528377 [0003]  mainboard[57194/57017]              0.116      0.000      4.679      W                                 
+    4238.532288 [0003]  mainboard[57194/57017]              0.259      0.000      3.651      W                                 
+    4238.532482 [0003]  mainboard[57194/57017]              0.185      0.000      0.008      W                                 
+    4238.532862 [0003]  mainboard[57194/57017]              0.009      0.000      0.370      W                                 
+    4238.533331 [0003]  mainboard[57194/57017]              0.066      0.000      0.402      W                                 
+    4238.533409 [0003]  mainboard[57194/57017]              0.062      0.000      0.015      W                                 
+    4238.533524 [0003]  mainboard[57194/57017]              0.008      0.000      0.106      W                                 
+    4238.533559 [0003]  mainboard[57194/57017]              0.023      0.000      0.011      W                                 
+    4238.533598 [0003]  mainboard[57194/57017]              0.010      0.000      0.028      W                                 
+    4238.538662 [0003]  mainboard[57194/57017]                                           awakened: dds.ev.1[56505/56342]
+    4238.538664 [0003]  mainboard[57194/57017]                                           migrated: dds.ev.1[56505/56342] cpu 3 => 2
+    4238.557918 [0003]  mainboard[57194/57017]              0.022      0.000     24.297      W                                 
+    4238.567175 [0003]  mainboard[57194/57017]              0.046      0.000      9.210      W                                 
+    4238.571644 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57063/57003]
+    4238.571647 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57063/57003] cpu 3 => 0
+    4238.586570 [0003]  mainboard[57194/57017]                                           awakened: python3[56175]
+    4238.586573 [0003]  mainboard[57194/57017]                                           migrated: python3[56175] cpu 3 => 0
+    4238.588733 [0003]  mainboard[57194/57017]                                           awakened: rcu_preempt[13]
+    4238.618131 [0003]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.618134 [0003]  mainboard[57194/57017]                                           migrated: kswapd0[136] cpu 6 => 7
+    4238.643550 [0003]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.648014 [0003]  mainboard[57194/57017]              0.170      0.000     80.668      W                                 
+    4238.661774 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57013]
+    4238.661777 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57013] cpu 3 => 0
+    4238.666414 [0003]  mainboard[57194/57017]              0.154      0.000     18.245      W                                 
+    4238.680588 [0003]  mainboard[57194/57017]                                           awakened: jtop[2747]
+    4238.680591 [0003]  mainboard[57194/57017]                                           migrated: jtop[2747] cpu 3 => 1
+    4238.686729 [0003]  mainboard[57194/57017]                                           awakened: cpptools-srv2[14984/14978]
+    4238.704078 [0003]  mainboard[57194/57017]              0.186      0.000     37.477      W                                 
+    4238.712713 [0003]  mainboard[57194/57017]                                           awakened: dds.ev.1[57170/57001]
+    4238.712715 [0003]  mainboard[57194/57017]                                           migrated: dds.ev.1[57170/57001] cpu 3 => 1
+    4238.713131 [0003]  mainboard[57194/57017]              0.029      0.000      9.024      W                                 
+    4238.723887 [0003]  mainboard[57194/57017]                                           awakened: python3[56341]
+    4238.723890 [0003]  mainboard[57194/57017]                                           migrated: python3[56341] cpu 3 => 1
+    4238.744697 [0003]  mainboard[57194/57017]                                           awakened: rcu_preempt[13]
+    4238.751944 [0003]  mainboard[57194/57017]                                           awakened: node[5062]
+    4238.751947 [0003]  mainboard[57194/57017]                                           migrated: node[5062] cpu 3 => 0
+    4238.766410 [0003]  mainboard[57194/57017]              0.020      0.000     53.258      W                                 
+    4238.772785 [0003]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.821696 [0003]  mainboard[57194/57017]              0.257      0.000     55.028      S                                 
+    4238.842289 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.842290 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 3 => 1
+    4238.842341 [0001]  mainboard[57194/57017]                                           awakened: mainboard[58431/57009]
+    4238.842343 [0001]  mainboard[57194/57017]                                           migrated: mainboard[58431/57009] cpu 1 => 2
+    4238.842659 [0001]  mainboard[57194/57017]             20.598      0.005      0.364      S                                 
+    4238.842910 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.843167 [0001]  mainboard[57194/57017]              0.256      0.005      0.250      S                                 
+    4238.843172 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.843407 [0001]  mainboard[57194/57017]              0.011      0.005      0.229      S                                 
+    4238.843445 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.844080 [0001]  mainboard[57194/57017]              0.044      0.005      0.628      S                                 
+    4238.844083 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.844253 [0001]  mainboard[57194/57017]              0.008      0.005      0.164      S                                 
+    4238.844289 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.844613 [0001]  mainboard[57194/57017]              0.042      0.006      0.317      S                                 
+    4238.844690 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.844797 [0001]  mainboard[57194/57017]                                           awakened: mainboard[58431/57009]
+    4238.844800 [0001]  mainboard[57194/57017]                                           migrated: mainboard[58431/57009] cpu 1 => 2
+    4238.844929 [0001]  mainboard[57194/57017]              0.086      0.008      0.230      S                                 
+    4238.844968 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.844969 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 1 => 3
+    4238.845034 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.845035 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 3 => 0
+    4238.845160 [0003]  mainboard[57194/57017]              0.044      0.005      0.187      S                                 
+    4238.845232 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.845325 [0003]  mainboard[57194/57017]                                           awakened: mainboard[58431/57009]
+    4238.845327 [0003]  mainboard[57194/57017]                                           migrated: mainboard[58431/57009] cpu 3 => 0
+    4238.845594 [0003]  mainboard[57194/57017]              0.075      0.004      0.357      S                                 
+    4238.845651 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.845653 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 3 => 1
+    4238.845664 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.845666 [0001]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 1 => 2
+    4238.845721 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57020/57001]
+    4238.845723 [0001]  mainboard[57194/57017]                                           migrated: mainboard[57020/57001] cpu 1 => 0
+    4238.845916 [0001]  mainboard[57194/57017]              0.063      0.006      0.258      S                                 
+    4238.845927 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.846082 [0001]  mainboard[57194/57017]              0.017      0.006      0.148      S                                 
+    4238.846339 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.846446 [0001]  mainboard[57194/57017]              0.262      0.005      0.101      R                                 
+    4238.847007 [0001]  mainboard[57194/57017]              0.019      0.000      0.541      S                                 
+    4238.847396 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.847398 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 1 => 3
+    4238.847420 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4238.847422 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 3 => 1
+    4238.847801 [0003]  mainboard[57194/57017]              0.394      0.005      0.398      S                                 
+    4238.848133 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.848174 [0003]  mainboard[57194/57017]                                           awakened: mainboard[58431/57009]
+    4238.848176 [0003]  mainboard[57194/57017]                                           migrated: mainboard[58431/57009] cpu 3 => 2
+    4238.848649 [0003]  mainboard[57194/57017]              0.351      0.019      0.496      S                                 
+    4238.848949 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.849858 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57189/57017]
+    4238.849871 [0003]  mainboard[57194/57017]              0.304      0.004      0.918      S                                 
+    4238.849872 [0005]  mainboard[57189/57017]                                           awakened: mainboard[57194/57017]
+    4238.849883 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57199/57017]
+    4238.849887 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57199/57017] cpu 2 => 0
+    4238.850024 [0003]  mainboard[57194/57017]                                           awakened: node[5130/4840]
+    4238.850031 [0003]  mainboard[57194/57017]                                           awakened: MainThread[13752/13727]
+    4238.850036 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57199/57017]
+    4238.850437 [0003]  mainboard[57194/57017]              0.007      0.007      0.558      S                                 
+    4238.850460 [0002]  dds.udp.27447[57780/57017]                                       awakened: mainboard[57194/57017]
+    4238.856451 [0003]  mainboard[57194/57017]              0.028      0.005      5.985      R                                 
+    4238.859376 [0003]  mainboard[57194/57017]              0.016      0.000      2.908      S                                 
+    4238.859678 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.860002 [0003]  mainboard[57194/57017]              0.309      0.007      0.315      S                                 
+    4238.860335 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.860707 [0003]  mainboard[57194/57017]                                           awakened: rcu_preempt[13]
+    4238.861612 [0003]  mainboard[57194/57017]              0.338      0.005      1.271      S                                 
+    4238.861760 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.861835 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57177/57001]
+    4238.861903 [0003]  mainboard[57194/57017]              0.153      0.005      0.137      S                                 
+    4238.861971 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4238.862014 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57177/57001]
+    4238.862016 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57177/57001] cpu 3 => 2
+    4238.865605 [0003]  mainboard[57194/57017]              0.073      0.005      3.628      W                                 
+    4238.866299 [0003]  mainboard[57194/57017]              0.243      0.000      0.450      W                                 
+    4238.870895 [0003]  mainboard[57194/57017]                                           awakened: dds.ev.1[56228/56186]
+    4238.870899 [0003]  mainboard[57194/57017]                                           migrated: dds.ev.1[56228/56186] cpu 3 => 0
+    4238.872726 [0003]  mainboard[57194/57017]              0.054      0.000      6.372      W                                 
+    4238.874500 [0003]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.944249 [0003]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.947845 [0003]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.948477 [0003]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.975698 [0003]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4238.994278 [0003]  mainboard[57194/57017]              0.054      0.000    121.496      W                                 
+    4239.068620 [0003]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4239.072751 [0003]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4239.078125 [0003]  mainboard[57194/57017]              0.280      0.000     83.566      W                                 
+    4239.089289 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57022/57001]
+    4239.089294 [0003]  mainboard[57194/57017]              0.189      0.000     10.979      W                                 
+    4239.149041 [0003]  mainboard[57194/57017]              0.019      0.000     59.727      S                                 
+    4239.170159 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.170803 [0003]  mainboard[57194/57017]             21.123      0.004      0.638      S                                 
+    4239.170804 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.171676 [0003]  mainboard[57194/57017]              0.008      0.006      0.865      S                                 
+    4239.171682 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.171845 [0003]  mainboard[57194/57017]              0.010      0.004      0.158      S                                 
+    4239.171866 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.172199 [0003]  mainboard[57194/57017]              0.026      0.005      0.327      S                                 
+    4239.172235 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.172435 [0003]  mainboard[57194/57017]              0.041      0.005      0.194      S                                 
+    4239.172442 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.172590 [0003]  mainboard[57194/57017]              0.011      0.004      0.143      S                                 
+    4239.172618 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.172967 [0003]  mainboard[57194/57017]              0.033      0.004      0.344      S                                 
+    4239.173007 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.173108 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57177/57001]
+    4239.173110 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57177/57001] cpu 3 => 0
+    4239.173251 [0003]  mainboard[57194/57017]              0.047      0.007      0.236      S                                 
+    4239.173260 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.173409 [0003]  mainboard[57194/57017]              0.014      0.004      0.144      S                                 
+    4239.173704 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.173706 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 3 => 1
+    4239.173773 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4239.173776 [0001]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 1 => 2
+    4239.174061 [0001]  mainboard[57194/57017]                                           awakened: mainboard[57020/57001]
+    4239.174063 [0001]  mainboard[57194/57017]                                           migrated: mainboard[57020/57001] cpu 1 => 0
+    4239.174376 [0001]  mainboard[57194/57017]              0.303      0.008      0.664      S                                 
+    4239.174744 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.174745 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 1 => 2
+    4239.174804 [0002]  mainboard[57194/57017]                                           awakened: dreamview_plus[56511/56342]
+    4239.174806 [0002]  mainboard[57194/57017]                                           migrated: dreamview_plus[56511/56342] cpu 2 => 1
+    4239.175110 [0002]  mainboard[57194/57017]              0.371      0.004      0.362      S                                 
+    4239.175415 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.175468 [0002]  mainboard[57194/57017]                                           awakened: dreamview_plus[56511/56342]
+    4239.175470 [0002]  mainboard[57194/57017]                                           migrated: dreamview_plus[56511/56342] cpu 2 => 3
+    4239.175887 [0002]  mainboard[57194/57017]              0.310      0.006      0.466      S                                 
+    4239.176201 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.176202 [0000]  irq/134-host_sy[177]                                             migrated: mainboard[57194/57017] cpu 2 => 3
+    4239.176213 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57241/57005]
+    4239.176215 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57241/57005] cpu 3 => 0
+    4239.176390 [0003]  mainboard[57194/57017]              0.318      0.004      0.184      W                                 
+    4239.176419 [0003]  mainboard[57194/57017]              0.013      0.000      0.014      S                                 
+    4239.176787 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.177635 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57196/57017]
+    4239.177642 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57202/57017]
+    4239.177645 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57202/57017] cpu 11 => 9
+    4239.178938 [0003]  mainboard[57194/57017]                                           awakened: dds.ev.1[57776/57017]
+    4239.178942 [0003]  mainboard[57194/57017]                                           migrated: dds.ev.1[57776/57017] cpu 3 => 1
+    4239.186302 [0003]  mainboard[57194/57017]              0.372      0.004      9.510      R                                 
+    4239.186869 [0003]  mainboard[57194/57017]              0.035      0.000      0.531      S                                 
+    4239.187131 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.187490 [0003]  mainboard[57194/57017]              0.266      0.004      0.354      S                                 
+    4239.187841 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.189071 [0003]  mainboard[57194/57017]              0.356      0.005      1.224      S                                 
+    4239.189233 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.189254 [0003]  mainboard[57194/57017]                                           awakened: mainboard[57435/57003]
+    4239.189256 [0003]  mainboard[57194/57017]                                           migrated: mainboard[57435/57003] cpu 3 => 0
+    4239.189365 [0003]  mainboard[57194/57017]              0.166      0.004      0.127      S                                 
+    4239.189436 [0000]  irq/134-host_sy[177]                                             awakened: mainboard[57194/57017]
+    4239.192595 [0003]  mainboard[57194/57017]              0.076      0.004      3.153      W                                 
+    4239.207340 [0003]  mainboard[57194/57017]                                           awakened: kswapd0[136]
+    4239.217573 [0003]  mainboard[57194/57017]                                           awakened: MainThread[13243]
+    4239.217580 [0003]  mainboard[57194/57017]              0.132      0.000     24.853      R                                 
+    4239.236688 [0003]  mainboard[57194/57017]                                           awakened: kworker/3:0-mm_[4019]
+    4239.236693 [0003]  mainboard[57194/57017]              0.076      0.000     19.035      W                                 
