@@ -1,0 +1,693 @@
+{
+  "analysis_scope": {
+    "frames": [
+      601,
+      659
+    ],
+    "anomaly_frames": [
+      611,
+      649
+    ],
+    "candidate_control_frames": [
+      [
+        601,
+        610
+      ],
+      [
+        650,
+        659
+      ]
+    ],
+    "candidate_control_note": "candidate control only; not asserted normal"
+  },
+  "source_files": {
+    "perception_log": "D:\\data\\202608271537\\log\\perception.log.INFO.20260827-153547.1016337",
+    "centerpoint_csv": "D:\\data\\output\\202608271537_perception_deadline_1_1_1_2\\data\\centerpoint_internal_timing_per_source_frame.csv",
+    "perf_sched_script": "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_sched_script.txt",
+    "perf_cpu_stack_script": "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_cpu_stack_script.txt"
+  },
+  "frame_identity": {
+    "requested_frame_count": 59,
+    "mapped_frame_count": 48,
+    "mapped_frames": [
+      601,
+      602,
+      603,
+      604,
+      605,
+      606,
+      607,
+      608,
+      609,
+      610,
+      611,
+      613,
+      616,
+      619,
+      623,
+      626,
+      627,
+      628,
+      629,
+      630,
+      631,
+      632,
+      633,
+      634,
+      635,
+      636,
+      637,
+      638,
+      639,
+      641,
+      642,
+      643,
+      644,
+      645,
+      646,
+      647,
+      648,
+      649,
+      650,
+      651,
+      652,
+      653,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659
+    ],
+    "unmapped_frames": [
+      612,
+      614,
+      615,
+      617,
+      618,
+      620,
+      621,
+      622,
+      624,
+      625,
+      640
+    ],
+    "all_observed_tid_mappings_valid": true,
+    "tid_mapping_details": {
+      "1016500": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016500,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016500 and Host ps LWP=1016500",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016500",
+          "NSpid": "1016500"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016500",
+          "NSpid": "1016500"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      },
+      "1016501": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016501,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016501 and Host ps LWP=1016501",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016501",
+          "NSpid": "1016501"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016501",
+          "NSpid": "1016501"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      },
+      "1016502": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016502,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016502 and Host ps LWP=1016502",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016502",
+          "NSpid": "1016502"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016502",
+          "NSpid": "1016502"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      },
+      "1016503": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016503,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016503 and Host ps LWP=1016503",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016503",
+          "NSpid": "1016503"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016503",
+          "NSpid": "1016503"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      },
+      "1016504": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016504,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016504 and Host ps LWP=1016504",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016504",
+          "NSpid": "1016504"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016504",
+          "NSpid": "1016504"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      },
+      "1016505": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016505,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016505 and Host ps LWP=1016505",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016505",
+          "NSpid": "1016505"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016505",
+          "NSpid": "1016505"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      },
+      "1016506": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016506,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016506 and Host ps LWP=1016506",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016506",
+          "NSpid": "1016506"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016506",
+          "NSpid": "1016506"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      },
+      "1016507": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016507,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016507 and Host ps LWP=1016507",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016507",
+          "NSpid": "1016507"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016507",
+          "NSpid": "1016507"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      },
+      "1016508": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016508,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016508 and Host ps LWP=1016508",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016508",
+          "NSpid": "1016508"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016508",
+          "NSpid": "1016508"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      },
+      "1016510": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016510,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016510 and Host ps LWP=1016510",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016510",
+          "NSpid": "1016510"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016510",
+          "NSpid": "1016510"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      },
+      "1016511": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016511,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016511 and Host ps LWP=1016511",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016511",
+          "NSpid": "1016511"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016511",
+          "NSpid": "1016511"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      },
+      "1016512": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (single-level NSpid identity)",
+        "host_tid": 1016512,
+        "evidence": "validated: before/after /proc task status Pid=NSpid=1016512 and Host ps LWP=1016512",
+        "before_status": {
+          "Tgid": "1016337",
+          "Pid": "1016512",
+          "NSpid": "1016512"
+        },
+        "after_status": {
+          "Tgid": "1016337",
+          "Pid": "1016512",
+          "NSpid": "1016512"
+        },
+        "host_ps_before": true,
+        "host_ps_after": true
+      }
+    },
+    "window_warnings": [
+      "F612无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F614无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F615无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F617无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F618无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F620无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F621无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F622无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F624无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F625无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F640无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window"
+    ]
+  },
+  "clock_validation": {
+    "cpu_stack_and_infer_monotonic_alignment_status": "validated",
+    "cpu_stack_command_uses_clock_monotonic": true,
+    "capture_monotonic_ns": [
+      75583663286187,
+      75712702204737
+    ],
+    "requested_mapped_infer_ns": [
+      75652799078449,
+      75658685861811
+    ],
+    "cpu_stack_script_sample_ns": [
+      75584981987564,
+      75673105661908
+    ],
+    "sched_minus_infer_monotonic_offset_ns": -297346430,
+    "sched_offset_calibration": {
+      "method": "same-TID + same-CPU CPU-clock samples aligned to sched_switch reconstructed run intervals",
+      "sample_window_s": [
+        75650.0,
+        75660.0
+      ],
+      "sample_count": 676,
+      "candidate_pair_count": 38864,
+      "best_sched_minus_stack_offset_s": -0.2973464300011983,
+      "best_sched_minus_stack_offset_ns": -297346430,
+      "supported_samples": 667,
+      "support_pct": 98.66863905325444,
+      "support_by_tid": {
+        "1016511": {
+          "samples": 59,
+          "hits": 59
+        },
+        "1016510": {
+          "samples": 47,
+          "hits": 46
+        },
+        "1016502": {
+          "samples": 28,
+          "hits": 27
+        },
+        "1016503": {
+          "samples": 25,
+          "hits": 25
+        },
+        "1016513": {
+          "samples": 31,
+          "hits": 28
+        },
+        "1016507": {
+          "samples": 45,
+          "hits": 44
+        },
+        "1016505": {
+          "samples": 36,
+          "hits": 36
+        },
+        "1016512": {
+          "samples": 25,
+          "hits": 25
+        },
+        "1016504": {
+          "samples": 35,
+          "hits": 35
+        },
+        "1016500": {
+          "samples": 37,
+          "hits": 37
+        },
+        "1016501": {
+          "samples": 28,
+          "hits": 28
+        },
+        "1016508": {
+          "samples": 35,
+          "hits": 34
+        },
+        "1016509": {
+          "samples": 24,
+          "hits": 23
+        },
+        "1016506": {
+          "samples": 221,
+          "hits": 220
+        }
+      },
+      "event_coverage_s": [
+        75583.698865,
+        75674.291881
+      ]
+    }
+  },
+  "stack_quality": {
+    "parsed_total_samples": 7145,
+    "zero_stack_sample_frames": [],
+    "unknown_ratio_high_threshold": 0.5,
+    "high_unknown_ratio_frames": [
+      604,
+      610,
+      632,
+      633,
+      634,
+      638,
+      639,
+      642,
+      646,
+      647,
+      649,
+      653,
+      656,
+      658
+    ],
+    "unknown_definition": "leaf instruction symbol is [unknown] or no_callchain",
+    "symbol_statistic_definition": "one normalized leaf instruction symbol+DSO per CPU-clock sample",
+    "sample_ratio_caveat": "sampling composition only; not an exact wall-time ratio"
+  },
+  "scheduler_quality": {
+    "parsed_internal_range_s": [
+      75650.501732019,
+      75659.388515381
+    ],
+    "parsed_event_coverage_s": [
+      75650.501733,
+      75659.388502
+    ],
+    "context_output_range_s": [
+      75652.497169807,
+      75658.389051144
+    ],
+    "context_event_count": 8557,
+    "anomaly_actual_host_tids": [
+      1016504,
+      1016506,
+      1016507,
+      1016510
+    ],
+    "anomaly_target_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "kswapd0_tids_seen": [
+      136
+    ],
+    "direct_competitor_tids": [
+      12,
+      13,
+      19,
+      29,
+      177,
+      928,
+      930,
+      1443,
+      1905,
+      381726,
+      571684,
+      989751,
+      994786,
+      994788,
+      994894,
+      995007,
+      995008,
+      995504,
+      1012140,
+      1014643,
+      1015604,
+      1015609,
+      1015612,
+      1015614,
+      1015620,
+      1015640,
+      1015642,
+      1015643,
+      1015646,
+      1015652,
+      1015654,
+      1015830,
+      1015831,
+      1015832,
+      1015834,
+      1015894,
+      1015896,
+      1015897,
+      1015899,
+      1015900,
+      1015901,
+      1015902,
+      1015904,
+      1015905,
+      1015906,
+      1015908,
+      1016302,
+      1016314,
+      1016339,
+      1016372,
+      1016378,
+      1016382,
+      1016388,
+      1016395,
+      1016398,
+      1016403,
+      1016417,
+      1016419,
+      1016420,
+      1016421,
+      1016422,
+      1016423,
+      1016424,
+      1016425,
+      1016427,
+      1016428,
+      1016429,
+      1016430,
+      1016431,
+      1016432,
+      1016433,
+      1016436,
+      1016438,
+      1016439,
+      1016442,
+      1016443,
+      1016445,
+      1016446,
+      1016449,
+      1016450,
+      1016451,
+      1016457,
+      1016458,
+      1016459,
+      1016462,
+      1016464,
+      1016465,
+      1016466,
+      1016467,
+      1016468,
+      1016469,
+      1016470,
+      1016472,
+      1016473,
+      1016480,
+      1016499,
+      1016501,
+      1016508,
+      1016525,
+      1016526,
+      1016528,
+      1016532,
+      1016535,
+      1016536,
+      1016538,
+      1016550,
+      1016551,
+      1016553,
+      1016554,
+      1016563,
+      1016565,
+      1016576,
+      1016593,
+      1016644,
+      1016645,
+      1016647,
+      1016650,
+      1016703,
+      1016706,
+      1016710,
+      1016712,
+      1016715,
+      1016735,
+      1016738,
+      1016739,
+      1016741,
+      1017012,
+      1017016,
+      1017018,
+      1017500,
+      1018398,
+      1019614,
+      1019632,
+      1019634,
+      1019638,
+      1019639,
+      1019640,
+      1019641,
+      1019642,
+      1019643,
+      1019644,
+      1019659,
+      1019660,
+      1019661,
+      1019662,
+      1019663,
+      1019667,
+      1019672,
+      1019678,
+      1019686,
+      1019694,
+      1019695,
+      1019698,
+      1019700,
+      1019705,
+      1019707
+    ],
+    "direct_competition_window_count": 996,
+    "context_switch_definition": "target TID sched_switch records where it is prev_tid",
+    "top_competitor_definition": "actual CPU-resident time of the immediate same-CPU predecessor/successor task, clipped to target runnable-wait intervals",
+    "running_caveat": "CPU-resident only; not asserted to be effective computation",
+    "arithmetic_tolerance_ms": 0.02,
+    "arithmetic_errors": []
+  },
+  "immutability_check": {
+    "raw_files_unchanged_during_generation": true,
+    "before": {
+      "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf.data": {
+        "path": "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf.data",
+        "size_bytes": 5195351410,
+        "mtime_ns": 1787820488137406400
+      },
+      "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_cpu_stack.data": {
+        "path": "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_cpu_stack.data",
+        "size_bytes": 32488060,
+        "mtime_ns": 1787820502770642000
+      },
+      "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_sched_script.txt": {
+        "path": "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_sched_script.txt",
+        "size_bytes": 6912164234,
+        "mtime_ns": 1787824287145357500
+      },
+      "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_cpu_stack_script.txt": {
+        "path": "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_cpu_stack_script.txt",
+        "size_bytes": 18026229,
+        "mtime_ns": 1787820515791512400
+      }
+    },
+    "after": {
+      "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf.data": {
+        "path": "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf.data",
+        "size_bytes": 5195351410,
+        "mtime_ns": 1787820488137406400
+      },
+      "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_cpu_stack.data": {
+        "path": "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_cpu_stack.data",
+        "size_bytes": 32488060,
+        "mtime_ns": 1787820502770642000
+      },
+      "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_sched_script.txt": {
+        "path": "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_sched_script.txt",
+        "size_bytes": 6912164234,
+        "mtime_ns": 1787824287145357500
+      },
+      "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_cpu_stack_script.txt": {
+        "path": "D:\\data\\202608271537\\perf_run_cpu_stack_001\\perf_cpu_stack_script.txt",
+        "size_bytes": 18026229,
+        "mtime_ns": 1787820515791512400
+      }
+    }
+  }
+}
