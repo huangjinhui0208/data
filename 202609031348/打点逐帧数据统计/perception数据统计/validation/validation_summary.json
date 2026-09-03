@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "check_count": 6,
+  "passed_count": 6,
+  "checks": {
+    "input_file_count": {
+      "passed": true,
+      "evidence": {
+        "observed": 141,
+        "minimum_required_by_perception_scope": 10
+      }
+    },
+    "source_trace_ids_unique": {
+      "passed": true,
+      "evidence": {
+        "duplicates": 0
+      }
+    },
+    "node_row_grain": {
+      "passed": true,
+      "evidence": {
+        "rows": 4739,
+        "expected": 4739,
+        "duplicates": 0
+      }
+    },
+    "node_response_arithmetic": {
+      "passed": true,
+      "evidence": {
+        "max_abs_error_ms": 5.684341886080802e-14
+      }
+    },
+    "node_summary_matches_detail": {
+      "passed": true,
+      "evidence": {
+        "summary": 195,
+        "detail": 195
+      }
+    },
+    "module_deadline_flags_recomputed": {
+      "passed": true,
+      "evidence": {
+        "mismatches": 0
+      }
+    }
+  }
+}

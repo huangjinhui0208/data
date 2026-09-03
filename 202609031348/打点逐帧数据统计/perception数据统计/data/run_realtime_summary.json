@@ -1,0 +1,94 @@
+{
+  "run_id": "202609031348",
+  "analysis_scope": "perception_only",
+  "run_directory": "D:\\data\\202609031348",
+  "output_directory": "D:\\data\\202609031348\\打点逐帧数据统计\\perception数据统计",
+  "window": {
+    "selection_status": "all_fusion_frames",
+    "onset_s": 1788414526.831387,
+    "end_s": 1788414595.0317068,
+    "positive_frame_count": 51,
+    "positive_episode_count": 2,
+    "fusion_frame_count": 656,
+    "anchor_file": "D:\\data\\202609031348\\trace\\trace_anchor\\perception.28864.csv",
+    "fusion_inputs_file": "D:\\data\\202609031348\\trace\\fusion_inputs\\perception.multi_sensor_fusion.28864.csv",
+    "selected_source_frames": 677,
+    "selected_onset_local": "2026-09-03T13:48:47.431665+08:00",
+    "selected_end_local": "2026-09-03T13:49:55.031707+08:00"
+  },
+  "classification": {
+    "verdict": "P4_OVERLOAD_CHAIN_REPRODUCED_RECOVERY_NOT_ESTABLISHED",
+    "pdf_full_failure_chain_reproduced": false,
+    "p4_overload_cascade_reproduced": true,
+    "stable_perception_freshness_violation_reproduced": false,
+    "p4_miss_count": 195,
+    "p4_evaluated": 676,
+    "p4_miss_rate": 0.28846153846153844,
+    "p4_execution_driven": 117,
+    "p4_waiting_driven": 51,
+    "p4_no_service": 27,
+    "pipeline_miss_count": 615,
+    "pipeline_evaluated": 676,
+    "pipeline_miss_rate": 0.9097633136094675,
+    "recovery_tail_frame_count": 0,
+    "recovery_tail_pipeline_miss_rate": null,
+    "last15_p4_pass_rate": 0.0,
+    "last15_pipeline_miss_rate": 1.0
+  },
+  "p4": {
+    "execution_p50_ms": 89.42065600000001,
+    "execution_p95_ms": 112.08217439999997,
+    "execution_max_ms": 285.598528,
+    "waiting_p50_ms": 0.145568,
+    "waiting_max_ms": 99.012256,
+    "slack_min_ms": -269.29504,
+    "sudden_increase": {
+      "observed": true,
+      "rule": "adjacent source frames both have P4 execution; execution delta >= max(30 ms, median adjacent delta + 6*1.4826*MAD) and ratio >= 1.5",
+      "robust_delta_threshold_ms": 30.0,
+      "flagged_frame_count": 7,
+      "flagged_source_frames": [
+        30,
+        36,
+        69,
+        77,
+        316,
+        413,
+        623
+      ],
+      "max_positive_adjacent_delta_ms": 154.982688,
+      "max_adjacent_ratio": 2.3528751056582546
+    }
+  },
+  "perception_pipeline": {
+    "response_p50_ms": 110.79744,
+    "response_p95_ms": 210.5392576,
+    "response_max_ms": 376.258336,
+    "slack_min_ms": -290.315424
+  },
+  "centerpoint": {
+    "complete_frames": 646,
+    "inference_p50_ms": 79.4205,
+    "inference_p95_ms": 97.984275,
+    "inference_max_ms": 276.118,
+    "mapping_residual_max_ms": 0.0007152557373046875
+  },
+  "buffer_overflow": {
+    "all_channel_warning_count": 28,
+    "all_channel_drop_message_sum": 31,
+    "ground_detection_warning_count": 24,
+    "ground_detection_drop_message_sum": 27
+  },
+  "out_of_scope": [
+    "prediction",
+    "planning",
+    "control",
+    "bridge",
+    "vehicle_dynamics"
+  ],
+  "validation": {
+    "status": "pass",
+    "passed": 6,
+    "total": 6
+  }
+}
