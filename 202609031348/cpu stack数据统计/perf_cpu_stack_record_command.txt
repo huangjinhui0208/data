@@ -1,0 +1,1 @@
+sudo perf record -p 28864 --inherit -e cpu-clock -F 99 --call-graph dwarf,4096 --clockid CLOCK_MONOTONIC -T --sample-cpu -o /media/ssd/hjh/perf_tools/perf_results/perf_run_cpu_stack_004/perf_cpu_stack.data

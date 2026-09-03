@@ -1,0 +1,270 @@
+{
+  "analysis_scope": {
+    "frames": [
+      622,
+      639
+    ],
+    "anomaly_frames": [
+      622,
+      639
+    ],
+    "candidate_control_frames": [],
+    "candidate_control_note": "candidate control only; not asserted normal"
+  },
+  "source_files": {
+    "perception_log": "D:\\data\\202609031348\\log\\perception.log.INFO.20260903-134731.28864",
+    "centerpoint_csv": "D:\\data\\202609031348\\打点逐帧数据统计\\perception数据统计\\data\\centerpoint_internal_timing_per_source_frame.csv",
+    "perf_sched_script": "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_sched_script.txt",
+    "perf_cpu_stack_script": "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_cpu_stack_script.txt"
+  },
+  "frame_identity": {
+    "requested_frame_count": 18,
+    "mapped_frame_count": 10,
+    "mapped_frames": [
+      622,
+      623,
+      625,
+      628,
+      631,
+      633,
+      636,
+      637,
+      638,
+      639
+    ],
+    "unmapped_frames": [
+      624,
+      626,
+      627,
+      629,
+      630,
+      632,
+      634,
+      635
+    ],
+    "tid_mapping_policy": "allow_before_only_when_after_snapshots_absent",
+    "all_observed_tid_mappings_valid": true,
+    "tid_mapping_details": {
+      "29037": {
+        "valid": true,
+        "logged_tid_namespace": "container_tid=host_tid (before snapshot only)",
+        "host_tid": 29037,
+        "evidence": "limited validation: before /proc task status Pid=NSpid=29037 and Host ps LWP=29037; after snapshots unavailable",
+        "validation_scope": "before_only_explicit",
+        "after_snapshot_available": false,
+        "before_status": {
+          "Tgid": "28864",
+          "Pid": "29037",
+          "NSpid": "29037"
+        },
+        "after_status": {},
+        "host_ps_before": true,
+        "host_ps_after": false
+      }
+    },
+    "window_warnings": [
+      "F624无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F626无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F627无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F629无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F630无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F632无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F634无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+      "F635无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window"
+    ]
+  },
+  "clock_validation": {
+    "cpu_stack_and_infer_monotonic_alignment_status": "validated",
+    "cpu_stack_command_uses_clock_monotonic": true,
+    "capture_monotonic_ns": [
+      517939535830268,
+      518047474640431
+    ],
+    "requested_mapped_infer_ns": [
+      518007652089385,
+      518009489351041
+    ],
+    "cpu_stack_script_sample_ns": [
+      517940846495834,
+      518015945946761
+    ],
+    "sched_minus_infer_monotonic_offset_ns": -4859114521,
+    "sched_offset_calibration": {
+      "method": "same-TID + same-CPU CPU-clock samples aligned to sched_switch reconstructed run intervals",
+      "sample_window_s": [
+        518006.5,
+        518010.5
+      ],
+      "sample_count": 151,
+      "candidate_pair_count": 19935,
+      "best_sched_minus_stack_offset_s": -4.859114520997981,
+      "best_sched_minus_stack_offset_ns": -4859114521,
+      "supported_samples": 151,
+      "support_pct": 100.0,
+      "support_by_tid": {
+        "29037": {
+          "samples": 151,
+          "hits": 151
+        }
+      },
+      "event_coverage_s": [
+        517997.0,
+        518011.899992
+      ],
+      "scan_event_count": 6257139,
+      "run_count": 685,
+      "evidence_note": "F622-F639 mapped P4 worker TID; calibrated independently for run 202609031348"
+    }
+  },
+  "stack_quality": {
+    "parsed_total_samples": 6493,
+    "zero_stack_sample_frames": [],
+    "unknown_ratio_high_threshold": 0.5,
+    "high_unknown_ratio_frames": [],
+    "unknown_definition": "leaf instruction symbol is [unknown] or no_callchain",
+    "symbol_statistic_definition": "one normalized leaf instruction symbol+DSO per CPU-clock sample",
+    "sample_ratio_caveat": "sampling composition only; not an exact wall-time ratio"
+  },
+  "scheduler_quality": {
+    "parsed_internal_range_s": [
+      518000.792974864,
+      518005.63023652
+    ],
+    "parsed_event_coverage_s": [
+      518000.792976,
+      518005.630198
+    ],
+    "context_output_range_s": [
+      518001.792974864,
+      518005.63023652
+    ],
+    "context_event_count": 1457,
+    "anomaly_actual_host_tids": [
+      29037
+    ],
+    "anomaly_target_cpus": [
+      0,
+      1,
+      2,
+      3,
+      8,
+      9,
+      11
+    ],
+    "kswapd0_tids_seen": [
+      135
+    ],
+    "direct_competitor_tids": [
+      19,
+      24,
+      58,
+      135,
+      174,
+      937,
+      27993,
+      27996,
+      27999,
+      28004,
+      28191,
+      28241,
+      28243,
+      28251,
+      28868,
+      28945,
+      28947,
+      28949,
+      28960,
+      28968,
+      28972,
+      28973,
+      28987,
+      28992,
+      28994,
+      28996,
+      29003,
+      29013,
+      29029,
+      29033,
+      29040,
+      29065,
+      29068,
+      29069,
+      29071,
+      29098,
+      29110,
+      29188,
+      29274,
+      29284,
+      29317,
+      29345,
+      29448,
+      29772,
+      29789,
+      32087,
+      32885,
+      32901,
+      32907,
+      32910,
+      32935,
+      32943,
+      32945,
+      32968,
+      32971,
+      2339741,
+      4087172
+    ],
+    "direct_competition_window_count": 193,
+    "context_switch_definition": "target TID sched_switch records where it is prev_tid",
+    "top_competitor_definition": "actual CPU-resident time of the immediate same-CPU predecessor/successor task, clipped to target runnable-wait intervals",
+    "running_caveat": "CPU-resident only; not asserted to be effective computation",
+    "arithmetic_tolerance_ms": 0.02,
+    "arithmetic_errors": []
+  },
+  "immutability_check": {
+    "raw_files_unchanged_during_generation": true,
+    "before": {
+      "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf.data": {
+        "path": "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf.data",
+        "size_bytes": 4964456858,
+        "mtime_ns": 1788417874563340500
+      },
+      "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_cpu_stack.data": {
+        "path": "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_cpu_stack.data",
+        "size_bytes": 29530688,
+        "mtime_ns": 1788416119235867900
+      },
+      "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_sched_script.txt": {
+        "path": "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_sched_script.txt",
+        "size_bytes": 6555239059,
+        "mtime_ns": 1788418174226629400
+      },
+      "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_cpu_stack_script.txt": {
+        "path": "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_cpu_stack_script.txt",
+        "size_bytes": 15174631,
+        "mtime_ns": 1788416117317726200
+      }
+    },
+    "after": {
+      "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf.data": {
+        "path": "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf.data",
+        "size_bytes": 4964456858,
+        "mtime_ns": 1788417874563340500
+      },
+      "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_cpu_stack.data": {
+        "path": "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_cpu_stack.data",
+        "size_bytes": 29530688,
+        "mtime_ns": 1788416119235867900
+      },
+      "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_sched_script.txt": {
+        "path": "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_sched_script.txt",
+        "size_bytes": 6555239059,
+        "mtime_ns": 1788418174226629400
+      },
+      "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_cpu_stack_script.txt": {
+        "path": "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_cpu_stack_script.txt",
+        "size_bytes": 15174631,
+        "mtime_ns": 1788416117317726200
+      }
+    }
+  }
+}

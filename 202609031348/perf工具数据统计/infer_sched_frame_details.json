@@ -1,0 +1,1452 @@
+{
+  "clock_offset_ns": -4859114521,
+  "raw_sched": "D:\\data\\202609031348\\perf_run_cpu_stack_004\\perf_sched_script.txt",
+  "event_count": 9137,
+  "event_coverage_s": [
+    517934.976549,
+    518011.492862
+  ],
+  "capture_coverage_s": [
+    517934.9579,
+    518011.988251
+  ],
+  "warnings": [
+    "F624无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+    "F626无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+    "F627无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+    "F629无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+    "F630无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+    "F632无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+    "F634无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window",
+    "F635无可唯一映射的CenterPoint Infer，状态=unavailable，原因=no uniquely mapped CenterPoint breakdown in selected window"
+  ],
+  "frames": {
+    "622": {
+      "window": {
+        "source_frame_index": 622,
+        "target_tid": 29037,
+        "cp_enter_line": 28897,
+        "cp_exit_line": 28910,
+        "enter_apollo_mono_ns": 518007652089385,
+        "exit_apollo_mono_ns": 518007757412222,
+        "enter_perf_s": 518002.792974864,
+        "exit_perf_s": 518002.898297701,
+        "cp_duration_ms": 105.322837,
+        "internal_inference_ms": 105.42,
+        "duration_difference_ms": -0.09700000000000841
+      },
+      "perf_coverage_status": "complete",
+      "metrics": {
+        "duration_ms": 105.32283695647493,
+        "running_ms": 82.3468369198963,
+        "running_pct": 78.18516790800693,
+        "blocked_ms": 22.38100004615262,
+        "runnable_ms": 0.5949999904260039,
+        "unknown_ms": 0.0,
+        "max_schedule_delay_us": 69.00000153109431,
+        "p95_schedule_delay_us": 59.50001359451559,
+        "run_slice_count": 31,
+        "migration_count": 1,
+        "switch_out_prev_state_counts": {
+          "R": 8,
+          "S": 16,
+          "R+": 6
+        },
+        "cpu_running_ms": {
+          "8": 78.23413598816842,
+          "9": 4.112700931727886
+        },
+        "runnable_preemptor_ms": {
+          "cyber_recorder": 0.06400002166628838,
+          "swapper/8": 0.06800005212426186,
+          "mainboard": 0.2169999643228948,
+          "kworker/8:2": 0.02900004619732499,
+          "dds.udp.27414": 0.04299997817724943,
+          "dds.udp.27400": 0.06799999391660094,
+          "dds.udp.27444": 0.033999967854470015,
+          "swapper/9": 0.07199996616691351
+        },
+        "largest_offcpu_gaps": [
+          {
+            "start": 518002.87155,
+            "end": 518002.891369,
+            "duration_ms": 19.819000037387013,
+            "prev_state": "S",
+            "next_comm": "swapper/8",
+            "blocked_ms": 19.808000011835247,
+            "runnable_ms": 0.011000025551766157
+          },
+          {
+            "start": 518002.896343,
+            "end": 518002.896749,
+            "duration_ms": 0.40600000647827983,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.4000000189989805,
+            "runnable_ms": 0.005999987479299307
+          },
+          {
+            "start": 518002.794115,
+            "end": 518002.794458,
+            "duration_ms": 0.3429999924264848,
+            "prev_state": "S",
+            "next_comm": "swapper/8",
+            "blocked_ms": 0.3349999897181988,
+            "runnable_ms": 0.008000002708286047
+          },
+          {
+            "start": 518002.897129,
+            "end": 518002.897459,
+            "duration_ms": 0.33000000985339284,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.3209999995306134,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518002.793448,
+            "end": 518002.79376,
+            "duration_ms": 0.311999989207834,
+            "prev_state": "S",
+            "next_comm": "swapper/8",
+            "blocked_ms": 0.3000000142492354,
+            "runnable_ms": 0.011999974958598614
+          },
+          {
+            "start": 518002.897925,
+            "end": 518002.898235,
+            "duration_ms": 0.30999997397884727,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.30200002947822213,
+            "runnable_ms": 0.007999944500625134
+          },
+          {
+            "start": 518002.892516,
+            "end": 518002.89282,
+            "duration_ms": 0.30399998649954796,
+            "prev_state": "S",
+            "next_comm": "swapper/8",
+            "blocked_ms": 0.2929999609477818,
+            "runnable_ms": 0.011000025551766157
+          },
+          {
+            "start": 518002.891761,
+            "end": 518002.891989,
+            "duration_ms": 0.22800004808232188,
+            "prev_state": "S",
+            "next_comm": "swapper/8",
+            "blocked_ms": 0.2180000301450491,
+            "runnable_ms": 0.010000017937272787
+          },
+          {
+            "start": 518002.795769,
+            "end": 518002.79592,
+            "duration_ms": 0.1509999856352806,
+            "prev_state": "S",
+            "next_comm": "swapper/8",
+            "blocked_ms": 0.1419999753125012,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518002.895611,
+            "end": 518002.895724,
+            "duration_ms": 0.11299998732283711,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.10599999222904444,
+            "runnable_ms": 0.006999995093792677
+          }
+        ],
+        "enter_inside_running": true,
+        "exit_inside_running": true
+      },
+      "kswapd0_cpu_ms": 43.98570099147037,
+      "kcompactd0_cpu_ms": 0.0
+    },
+    "623": {
+      "window": {
+        "source_frame_index": 623,
+        "target_tid": 29037,
+        "cp_enter_line": 28948,
+        "cp_exit_line": 28975,
+        "enter_apollo_mono_ns": 518007766575466,
+        "exit_apollo_mono_ns": 518008027201505,
+        "enter_perf_s": 518002.907460945,
+        "exit_perf_s": 518003.168086984,
+        "cp_duration_ms": 260.626039,
+        "internal_inference_ms": 260.731,
+        "duration_difference_ms": -0.10500000000001819
+      },
+      "perf_coverage_status": "complete",
+      "metrics": {
+        "duration_ms": 260.6260390020907,
+        "running_ms": 235.7350390520878,
+        "running_pct": 90.44953449574422,
+        "blocked_ms": 23.22000003186986,
+        "runnable_ms": 1.6709999181330204,
+        "unknown_ms": 0.0,
+        "max_schedule_delay_us": 116.00001016631722,
+        "p95_schedule_delay_us": 40.000013541430235,
+        "run_slice_count": 101,
+        "migration_count": 0,
+        "switch_out_prev_state_counts": {
+          "S": 16,
+          "R": 12,
+          "R+": 72
+        },
+        "cpu_running_ms": {
+          "9": 235.7350390520878
+        },
+        "runnable_preemptor_ms": {
+          "swapper/9": 0.14900002861395478,
+          "mainboard": 0.3059999435208738,
+          "kworker/9:2": 1.1499999673105776,
+          "dds.udp.27400": 0.0659999786876142
+        },
+        "largest_offcpu_gaps": [
+          {
+            "start": 518003.140638,
+            "end": 518003.161236,
+            "duration_ms": 20.598000031895936,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 20.584999991115183,
+            "runnable_ms": 0.013000040780752897
+          },
+          {
+            "start": 518002.90779,
+            "end": 518002.908202,
+            "duration_ms": 0.41199999395757914,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.400999968405813,
+            "runnable_ms": 0.011000025551766157
+          },
+          {
+            "start": 518003.166224,
+            "end": 518003.166616,
+            "duration_ms": 0.3920000162906945,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.38400001358240843,
+            "runnable_ms": 0.008000002708286047
+          },
+          {
+            "start": 518003.166958,
+            "end": 518003.167279,
+            "duration_ms": 0.3209999995306134,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.3129999968223274,
+            "runnable_ms": 0.008000002708286047
+          },
+          {
+            "start": 518003.167734,
+            "end": 518003.168041,
+            "duration_ms": 0.30700000934302807,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.29799999902024865,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518003.161599,
+            "end": 518003.161882,
+            "duration_ms": 0.2830000012181699,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.2720000338740647,
+            "runnable_ms": 0.010999967344105244
+          },
+          {
+            "start": 518003.165391,
+            "end": 518003.165623,
+            "duration_ms": 0.23200002033263445,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.22300001000985503,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518002.910209,
+            "end": 518002.910375,
+            "duration_ms": 0.16599998343735933,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.15600002370774746,
+            "runnable_ms": 0.009999959729611874
+          },
+          {
+            "start": 518002.90828,
+            "end": 518002.908426,
+            "duration_ms": 0.14600000577047467,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.13700005365535617,
+            "runnable_ms": 0.008999952115118504
+          },
+          {
+            "start": 518002.908725,
+            "end": 518002.908854,
+            "duration_ms": 0.1289999927394092,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.12099999003112316,
+            "runnable_ms": 0.008000002708286047
+          }
+        ],
+        "enter_inside_running": true,
+        "exit_inside_running": true
+      },
+      "kswapd0_cpu_ms": 16.165054985322058,
+      "kcompactd0_cpu_ms": 0.009000010322779417
+    },
+    "625": {
+      "window": {
+        "source_frame_index": 625,
+        "target_tid": 29037,
+        "cp_enter_line": 29016,
+        "cp_exit_line": 29047,
+        "enter_apollo_mono_ns": 518008037026965,
+        "exit_apollo_mono_ns": 518008313035232,
+        "enter_perf_s": 518003.177912444,
+        "exit_perf_s": 518003.453920711,
+        "cp_duration_ms": 276.008267,
+        "internal_inference_ms": 276.118,
+        "duration_difference_ms": -0.11000000000001364
+      },
+      "perf_coverage_status": "complete",
+      "metrics": {
+        "duration_ms": 276.00826701382175,
+        "running_ms": 251.66426709620282,
+        "running_pct": 91.17997436055064,
+        "blocked_ms": 23.419999808538705,
+        "runnable_ms": 0.9240001090802252,
+        "unknown_ms": 0.0,
+        "max_schedule_delay_us": 427.99999937415123,
+        "p95_schedule_delay_us": 108.49997634068126,
+        "run_slice_count": 28,
+        "migration_count": 2,
+        "switch_out_prev_state_counts": {
+          "S": 20,
+          "R+": 5,
+          "R": 2
+        },
+        "cpu_running_ms": {
+          "9": 250.2682670019567,
+          "11": 1.3960000942461193
+        },
+        "runnable_preemptor_ms": {
+          "swapper/9": 0.5590001819655299,
+          "dds.udp.27400": 0.3029999206773937,
+          "migration/9": 0.008999952115118504,
+          "swapper/11": 0.03000005381181836,
+          "mainboard": 0.02300000051036477
+        },
+        "largest_offcpu_gaps": [
+          {
+            "start": 518003.426748,
+            "end": 518003.447111,
+            "duration_ms": 20.36299998871982,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 20.35099995555356,
+            "runnable_ms": 0.012000033166259527
+          },
+          {
+            "start": 518003.180895,
+            "end": 518003.181386,
+            "duration_ms": 0.49100001342594624,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.063000014051795,
+            "runnable_ms": 0.42799999937415123
+          },
+          {
+            "start": 518003.451932,
+            "end": 518003.452312,
+            "duration_ms": 0.37999998312443495,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.3719999804161489,
+            "runnable_ms": 0.008000002708286047
+          },
+          {
+            "start": 518003.178962,
+            "end": 518003.179309,
+            "duration_ms": 0.3470000228844583,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.3380000125616789,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518003.453518,
+            "end": 518003.453855,
+            "duration_ms": 0.3370000049471855,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.32900000223889947,
+            "runnable_ms": 0.008000002708286047
+          },
+          {
+            "start": 518003.452705,
+            "end": 518003.453037,
+            "duration_ms": 0.3320000250823796,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.32300001475960016,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518003.181528,
+            "end": 518003.181837,
+            "duration_ms": 0.3090000245720148,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.3000000142492354,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518003.17829,
+            "end": 518003.178597,
+            "duration_ms": 0.30700000934302807,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.2929999609477818,
+            "runnable_ms": 0.014000048395246267
+          },
+          {
+            "start": 518003.451049,
+            "end": 518003.451338,
+            "duration_ms": 0.28899998869746923,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.28199999360367656,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518003.447481,
+            "end": 518003.447719,
+            "duration_ms": 0.23800000781193376,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.22799998987466097,
+            "runnable_ms": 0.010000017937272787
+          }
+        ],
+        "enter_inside_running": true,
+        "exit_inside_running": true
+      },
+      "kswapd0_cpu_ms": 0.0,
+      "kcompactd0_cpu_ms": 0.006999995093792677
+    },
+    "628": {
+      "window": {
+        "source_frame_index": 628,
+        "target_tid": 29037,
+        "cp_enter_line": 29085,
+        "cp_exit_line": 29122,
+        "enter_apollo_mono_ns": 518008322537168,
+        "exit_apollo_mono_ns": 518008570167726,
+        "enter_perf_s": 518003.463422647,
+        "exit_perf_s": 518003.711053205,
+        "cp_duration_ms": 247.630558,
+        "internal_inference_ms": 247.736,
+        "duration_difference_ms": -0.10499999999998977
+      },
+      "perf_coverage_status": "complete",
+      "metrics": {
+        "duration_ms": 247.63055803487077,
+        "running_ms": 224.98355811694637,
+        "running_pct": 90.85452130882194,
+        "blocked_ms": 22.416000021621585,
+        "runnable_ms": 0.23099989630281925,
+        "unknown_ms": 0.0,
+        "max_schedule_delay_us": 46.00000102072954,
+        "p95_schedule_delay_us": 22.399998852051784,
+        "run_slice_count": 23,
+        "migration_count": 3,
+        "switch_out_prev_state_counts": {
+          "S": 19,
+          "R+": 2,
+          "R": 1
+        },
+        "cpu_running_ms": {
+          "9": 222.35435305628926,
+          "0": 0.6220000213943422,
+          "1": 0.493000028654933,
+          "3": 1.5142050106078386
+        },
+        "runnable_preemptor_ms": {
+          "swapper/9": 0.11199986329302192,
+          "mainboard": 0.059999991208314896,
+          "cyber_recorder": 0.02300000051036477,
+          "swapper/0": 0.008000002708286047,
+          "swapper/1": 0.017000013031065464,
+          "swapper/3": 0.011000025551766157
+        },
+        "largest_offcpu_gaps": [
+          {
+            "start": 518003.684755,
+            "end": 518003.704162,
+            "duration_ms": 19.406999985221773,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 19.396000017877668,
+            "runnable_ms": 0.010999967344105244
+          },
+          {
+            "start": 518003.463788,
+            "end": 518003.464193,
+            "duration_ms": 0.40499999886378646,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.3940000315196812,
+            "runnable_ms": 0.010999967344105244
+          },
+          {
+            "start": 518003.464755,
+            "end": 518003.465153,
+            "duration_ms": 0.3980000037699938,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.387999985832721,
+            "runnable_ms": 0.010000017937272787
+          },
+          {
+            "start": 518003.709174,
+            "end": 518003.709537,
+            "duration_ms": 0.3629999700933695,
+            "prev_state": "S",
+            "next_comm": "mainboard",
+            "blocked_ms": 0.35799999022856355,
+            "runnable_ms": 0.004999979864805937
+          },
+          {
+            "start": 518003.709921,
+            "end": 518003.710253,
+            "duration_ms": 0.3320000250823796,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.32599997939541936,
+            "runnable_ms": 0.00600004568696022
+          },
+          {
+            "start": 518003.710681,
+            "end": 518003.710999,
+            "duration_ms": 0.3179999766871333,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.3129999968223274,
+            "runnable_ms": 0.004999979864805937
+          },
+          {
+            "start": 518003.704547,
+            "end": 518003.704761,
+            "duration_ms": 0.21399999968707561,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.20700000459328294,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518003.465277,
+            "end": 518003.465475,
+            "duration_ms": 0.19799999427050352,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.18900004215538502,
+            "runnable_ms": 0.008999952115118504
+          },
+          {
+            "start": 518003.464263,
+            "end": 518003.464445,
+            "duration_ms": 0.18199998885393143,
+            "prev_state": "S",
+            "next_comm": "swapper/9",
+            "blocked_ms": 0.172999978531152,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518003.707675,
+            "end": 518003.707848,
+            "duration_ms": 0.172999978531152,
+            "prev_state": "S",
+            "next_comm": "swapper/0",
+            "blocked_ms": 0.16499997582286596,
+            "runnable_ms": 0.008000002708286047
+          }
+        ],
+        "enter_inside_running": true,
+        "exit_inside_running": true
+      },
+      "kswapd0_cpu_ms": 0.0,
+      "kcompactd0_cpu_ms": 0.0
+    },
+    "631": {
+      "window": {
+        "source_frame_index": 631,
+        "target_tid": 29037,
+        "cp_enter_line": 29160,
+        "cp_exit_line": 29185,
+        "enter_apollo_mono_ns": 518008579362074,
+        "exit_apollo_mono_ns": 518008824149463,
+        "enter_perf_s": 518003.720247553,
+        "exit_perf_s": 518003.965034942,
+        "cp_duration_ms": 244.787389,
+        "internal_inference_ms": 244.924,
+        "duration_difference_ms": -0.13700000000000045
+      },
+      "perf_coverage_status": "complete",
+      "metrics": {
+        "duration_ms": 244.7873890050687,
+        "running_ms": 216.19838930200785,
+        "running_pct": 88.32088539394941,
+        "blocked_ms": 24.951999774202704,
+        "runnable_ms": 3.636999928858131,
+        "unknown_ms": 0.0,
+        "max_schedule_delay_us": 2196.0000158287585,
+        "p95_schedule_delay_us": 395.84998448844954,
+        "run_slice_count": 29,
+        "migration_count": 6,
+        "switch_out_prev_state_counts": {
+          "S": 17,
+          "R": 4,
+          "R+": 7
+        },
+        "cpu_running_ms": {
+          "3": 212.6234471797943,
+          "1": 3.246000094804913,
+          "2": 0.32894202740862966
+        },
+        "runnable_preemptor_ms": {
+          "swapper/3": 0.2590000513009727,
+          "mainboard": 0.05400000372901559,
+          "dds.udp.27417": 0.23499998496845365,
+          "civetweb-wsock": 0.028999987989664078,
+          "dds.udp.27429": 0.14999997802078724,
+          "dds.ev.0": 0.02500001573935151,
+          "dds.udp.27453": 0.06199994822964072,
+          "dds.udp.27447": 2.7020000270567834,
+          "swapper/1": 0.03899994771927595,
+          "swapper/2": 0.009000010322779417,
+          "cyber_recorder": 0.024999957531690598,
+          "dds.udp.27433": 0.04800001624971628
+        },
+        "largest_offcpu_gaps": [
+          {
+            "start": 518003.932666,
+            "end": 518003.954223,
+            "duration_ms": 21.557000000029802,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 21.537000022362918,
+            "runnable_ms": 0.01999997766688466
+          },
+          {
+            "start": 518003.962451,
+            "end": 518003.964983,
+            "duration_ms": 2.5320000131614506,
+            "prev_state": "S",
+            "next_comm": "dds.udp.27447",
+            "blocked_ms": 0.33599999733269215,
+            "runnable_ms": 2.1960000158287585
+          },
+          {
+            "start": 518003.961419,
+            "end": 518003.962316,
+            "duration_ms": 0.8970000199042261,
+            "prev_state": "S",
+            "next_comm": "dds.udp.27447",
+            "blocked_ms": 0.4000000189989805,
+            "runnable_ms": 0.49700000090524554
+          },
+          {
+            "start": 518003.960611,
+            "end": 518003.961247,
+            "duration_ms": 0.6360000115819275,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.4309999640099704,
+            "runnable_ms": 0.2050000475719571
+          },
+          {
+            "start": 518003.958945,
+            "end": 518003.95937,
+            "duration_ms": 0.4249999765306711,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.4189999890513718,
+            "runnable_ms": 0.005999987479299307
+          },
+          {
+            "start": 518003.959794,
+            "end": 518003.96014,
+            "duration_ms": 0.345999957062304,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.33899996196851134,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518003.720632,
+            "end": 518003.720968,
+            "duration_ms": 0.33599999733269215,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.3239999641664326,
+            "runnable_ms": 0.012000033166259527
+          },
+          {
+            "start": 518003.721374,
+            "end": 518003.721682,
+            "duration_ms": 0.3079999587498605,
+            "prev_state": "S",
+            "next_comm": "mainboard",
+            "blocked_ms": 0.3019999712705612,
+            "runnable_ms": 0.005999987479299307
+          },
+          {
+            "start": 518003.954596,
+            "end": 518003.954848,
+            "duration_ms": 0.2519999979995191,
+            "prev_state": "S",
+            "next_comm": "dds.udp.27447",
+            "blocked_ms": 0.2429999876767397,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518003.734706,
+            "end": 518003.734914,
+            "duration_ms": 0.2079999540001154,
+            "prev_state": "R+",
+            "next_comm": "dds.udp.27417",
+            "blocked_ms": 0.0,
+            "runnable_ms": 0.2079999540001154
+          }
+        ],
+        "enter_inside_running": true,
+        "exit_inside_running": true
+      },
+      "kswapd0_cpu_ms": 0.0,
+      "kcompactd0_cpu_ms": 0.010999967344105244
+    },
+    "633": {
+      "window": {
+        "source_frame_index": 633,
+        "target_tid": 29037,
+        "cp_enter_line": 29222,
+        "cp_exit_line": 29257,
+        "enter_apollo_mono_ns": 518008834638258,
+        "exit_apollo_mono_ns": 518009082385426,
+        "enter_perf_s": 518003.975523737,
+        "exit_perf_s": 518004.223270905,
+        "cp_duration_ms": 247.747168,
+        "internal_inference_ms": 247.863,
+        "duration_difference_ms": -0.11599999999998545
+      },
+      "perf_coverage_status": "complete",
+      "metrics": {
+        "duration_ms": 247.74716794490814,
+        "running_ms": 213.32216798327863,
+        "running_pct": 86.10478567840394,
+        "blocked_ms": 22.47300010640174,
+        "runnable_ms": 11.951999855227768,
+        "unknown_ms": 0.0,
+        "max_schedule_delay_us": 10692.999989259988,
+        "p95_schedule_delay_us": 149.99998093117028,
+        "run_slice_count": 41,
+        "migration_count": 3,
+        "switch_out_prev_state_counts": {
+          "S": 17,
+          "R": 6,
+          "R+": 17
+        },
+        "cpu_running_ms": {
+          "2": 0.3762629930861294,
+          "3": 164.89999991608784,
+          "1": 46.04800004744902,
+          "0": 1.9979050266556442
+        },
+        "runnable_preemptor_ms": {
+          "swapper/2": 0.009999959729611874,
+          "swapper/3": 0.0570000265724957,
+          "dds.ev.1": 0.031000003218650818,
+          "mainboard": 0.3780000261031091,
+          "dds.udp.27455": 0.1669999910518527,
+          "dds.udp.27447": 0.27000001864507794,
+          "dds.udp.27400": 0.0350000336766243,
+          "kswapd0": 10.692999989259988,
+          "cyber_recorder": 0.14999997802078724,
+          "ksoftirqd/1": 0.025999965146183968,
+          "swapper/1": 0.05399988731369376,
+          "irq/134-host_sy": 0.05299999611452222,
+          "swapper/0": 0.027999980375170708
+        },
+        "largest_offcpu_gaps": [
+          {
+            "start": 518004.196716,
+            "end": 518004.217028,
+            "duration_ms": 20.312000007834285,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 20.302000048104674,
+            "runnable_ms": 0.009999959729611874
+          },
+          {
+            "start": 518004.14226,
+            "end": 518004.152953,
+            "duration_ms": 10.692999989259988,
+            "prev_state": "R+",
+            "next_comm": "kswapd0",
+            "blocked_ms": 0.0,
+            "runnable_ms": 10.692999989259988
+          },
+          {
+            "start": 518004.221353,
+            "end": 518004.221754,
+            "duration_ms": 0.4010000266134739,
+            "prev_state": "S",
+            "next_comm": "swapper/0",
+            "blocked_ms": 0.39300002390518785,
+            "runnable_ms": 0.008000002708286047
+          },
+          {
+            "start": 518003.9759,
+            "end": 518003.976224,
+            "duration_ms": 0.3239999641664326,
+            "prev_state": "S",
+            "next_comm": "swapper/2",
+            "blocked_ms": 0.31400000443682075,
+            "runnable_ms": 0.009999959729611874
+          },
+          {
+            "start": 518004.222131,
+            "end": 518004.222442,
+            "duration_ms": 0.31099998159334064,
+            "prev_state": "S",
+            "next_comm": "swapper/0",
+            "blocked_ms": 0.30399998649954796,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518004.22288,
+            "end": 518004.223188,
+            "duration_ms": 0.3079999587498605,
+            "prev_state": "S",
+            "next_comm": "swapper/0",
+            "blocked_ms": 0.30099996365606785,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518004.220473,
+            "end": 518004.220729,
+            "duration_ms": 0.2559999702498317,
+            "prev_state": "S",
+            "next_comm": "swapper/0",
+            "blocked_ms": 0.24999998277053237,
+            "runnable_ms": 0.005999987479299307
+          },
+          {
+            "start": 518004.034474,
+            "end": 518004.034624,
+            "duration_ms": 0.15000003622844815,
+            "prev_state": "R+",
+            "next_comm": "dds.udp.27447",
+            "blocked_ms": 0.0,
+            "runnable_ms": 0.15000003622844815
+          },
+          {
+            "start": 518003.97872,
+            "end": 518003.97887,
+            "duration_ms": 0.14999997802078724,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.14399999054148793,
+            "runnable_ms": 0.005999987479299307
+          },
+          {
+            "start": 518004.153468,
+            "end": 518004.153618,
+            "duration_ms": 0.14999997802078724,
+            "prev_state": "R+",
+            "next_comm": "cyber_recorder",
+            "blocked_ms": 0.0,
+            "runnable_ms": 0.14999997802078724
+          }
+        ],
+        "enter_inside_running": true,
+        "exit_inside_running": true
+      },
+      "kswapd0_cpu_ms": 80.63890499761328,
+      "kcompactd0_cpu_ms": 0.0
+    },
+    "636": {
+      "window": {
+        "source_frame_index": 636,
+        "target_tid": 29037,
+        "cp_enter_line": 29294,
+        "cp_exit_line": 29307,
+        "enter_apollo_mono_ns": 518009091989571,
+        "exit_apollo_mono_ns": 518009194744603,
+        "enter_perf_s": 518004.23287505,
+        "exit_perf_s": 518004.335630082,
+        "cp_duration_ms": 102.755032,
+        "internal_inference_ms": 102.854,
+        "duration_difference_ms": -0.09900000000000375
+      },
+      "perf_coverage_status": "complete",
+      "metrics": {
+        "duration_ms": 102.75503201410174,
+        "running_ms": 37.967031938023865,
+        "running_pct": 36.94907314399299,
+        "blocked_ms": 51.137999864295125,
+        "runnable_ms": 13.650000211782753,
+        "unknown_ms": 0.0,
+        "max_schedule_delay_us": 13459.00003798306,
+        "p95_schedule_delay_us": 31.000003218650818,
+        "run_slice_count": 22,
+        "migration_count": 3,
+        "switch_out_prev_state_counts": {
+          "S": 16,
+          "R": 4,
+          "R+": 1
+        },
+        "cpu_running_ms": {
+          "0": 0.6879499997012317,
+          "2": 1.858999952673912,
+          "3": 34.49599997838959,
+          "1": 0.9240820072591305
+        },
+        "runnable_preemptor_ms": {
+          "swapper/0": 0.028999987989664078,
+          "swapper/2": 0.022000051103532314,
+          "dds.ev.1": 0.0219999928958714,
+          "mainboard": 13.475000043399632,
+          "swapper/3": 0.04700012505054474,
+          "cyber_recorder": 0.00500003807246685,
+          "sugov:0": 0.040000013541430235,
+          "swapper/1": 0.009999959729611874
+        },
+        "largest_offcpu_gaps": [
+          {
+            "start": 518004.280903,
+            "end": 518004.329358,
+            "duration_ms": 48.45500004012138,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 48.445000022184104,
+            "runnable_ms": 0.010000017937272787
+          },
+          {
+            "start": 518004.234685,
+            "end": 518004.248144,
+            "duration_ms": 13.45900003798306,
+            "prev_state": "R",
+            "next_comm": "mainboard",
+            "blocked_ms": 0.0,
+            "runnable_ms": 13.45900003798306
+          },
+          {
+            "start": 518004.333685,
+            "end": 518004.334055,
+            "duration_ms": 0.36999996518716216,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.36399997770786285,
+            "runnable_ms": 0.005999987479299307
+          },
+          {
+            "start": 518004.233886,
+            "end": 518004.234251,
+            "duration_ms": 0.3649999853223562,
+            "prev_state": "S",
+            "next_comm": "swapper/0",
+            "blocked_ms": 0.3530000103637576,
+            "runnable_ms": 0.011999974958598614
+          },
+          {
+            "start": 518004.233217,
+            "end": 518004.23354,
+            "duration_ms": 0.32300001475960016,
+            "prev_state": "S",
+            "next_comm": "swapper/0",
+            "blocked_ms": 0.3060000017285347,
+            "runnable_ms": 0.017000013031065464
+          },
+          {
+            "start": 518004.335273,
+            "end": 518004.33558,
+            "duration_ms": 0.30700000934302807,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.30100002186372876,
+            "runnable_ms": 0.005999987479299307
+          },
+          {
+            "start": 518004.334524,
+            "end": 518004.334828,
+            "duration_ms": 0.30399998649954796,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.3000000142492354,
+            "runnable_ms": 0.003999972250312567
+          },
+          {
+            "start": 518004.330175,
+            "end": 518004.330429,
+            "duration_ms": 0.25400001322850585,
+            "prev_state": "S",
+            "next_comm": "cyber_recorder",
+            "blocked_ms": 0.248999975156039,
+            "runnable_ms": 0.00500003807246685
+          },
+          {
+            "start": 518004.332834,
+            "end": 518004.333069,
+            "duration_ms": 0.23499998496845365,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.2300000051036477,
+            "runnable_ms": 0.004999979864805937
+          },
+          {
+            "start": 518004.250117,
+            "end": 518004.250269,
+            "duration_ms": 0.15199999324977398,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.14699995517730713,
+            "runnable_ms": 0.00500003807246685
+          }
+        ],
+        "enter_inside_running": true,
+        "exit_inside_running": true
+      },
+      "kswapd0_cpu_ms": 11.690950021147728,
+      "kcompactd0_cpu_ms": 0.011000025551766157
+    },
+    "637": {
+      "window": {
+        "source_frame_index": 637,
+        "target_tid": 29037,
+        "cp_enter_line": 29344,
+        "cp_exit_line": 29357,
+        "enter_apollo_mono_ns": 518009205156405,
+        "exit_apollo_mono_ns": 518009293861415,
+        "enter_perf_s": 518004.346041884,
+        "exit_perf_s": 518004.434746894,
+        "cp_duration_ms": 88.70501,
+        "internal_inference_ms": 88.8346,
+        "duration_difference_ms": -0.12959999999999638
+      },
+      "perf_coverage_status": "complete",
+      "metrics": {
+        "duration_ms": 88.70501001365483,
+        "running_ms": 33.256009861361235,
+        "running_pct": 37.49056547791603,
+        "blocked_ms": 54.81700017116964,
+        "runnable_ms": 0.6319999811239541,
+        "unknown_ms": 0.0,
+        "max_schedule_delay_us": 183.0000546760857,
+        "p95_schedule_delay_us": 71.79997628554699,
+        "run_slice_count": 26,
+        "migration_count": 3,
+        "switch_out_prev_state_counts": {
+          "S": 14,
+          "R": 10,
+          "R+": 1
+        },
+        "cpu_running_ms": {
+          "1": 2.1311158780008554,
+          "3": 27.793893998023123,
+          "2": 3.3309999853372574
+        },
+        "runnable_preemptor_ms": {
+          "swapper/1": 0.02500001573935151,
+          "mainboard": 0.172999978531152,
+          "cyber_recorder": 0.014999997802078724,
+          "swapper/3": 0.062000006437301636,
+          "dds.udp.27433": 0.2460000105202198,
+          "swapper/2": 0.036999990697950125,
+          "dds.ev.0": 0.07399998139590025
+        },
+        "largest_offcpu_gaps": [
+          {
+            "start": 518004.375631,
+            "end": 518004.428163,
+            "duration_ms": 52.53200000151992,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 52.488000015728176,
+            "runnable_ms": 0.0439999857917428
+          },
+          {
+            "start": 518004.347081,
+            "end": 518004.347438,
+            "duration_ms": 0.3570000408217311,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.34900003811344504,
+            "runnable_ms": 0.008000002708286047
+          },
+          {
+            "start": 518004.432835,
+            "end": 518004.433165,
+            "duration_ms": 0.33000000985339284,
+            "prev_state": "S",
+            "next_comm": "cyber_recorder",
+            "blocked_ms": 0.31999999191612005,
+            "runnable_ms": 0.010000017937272787
+          },
+          {
+            "start": 518004.346394,
+            "end": 518004.34671,
+            "duration_ms": 0.3160000196658075,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.30700000934302807,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518004.433566,
+            "end": 518004.433879,
+            "duration_ms": 0.3129999968223274,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.3060000017285347,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518004.434364,
+            "end": 518004.434672,
+            "duration_ms": 0.30800001695752144,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.30399998649954796,
+            "runnable_ms": 0.00400003045797348
+          },
+          {
+            "start": 518004.431878,
+            "end": 518004.432078,
+            "duration_ms": 0.20000000949949026,
+            "prev_state": "S",
+            "next_comm": "swapper/2",
+            "blocked_ms": 0.19300001440569758,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518004.369485,
+            "end": 518004.369668,
+            "duration_ms": 0.1830000546760857,
+            "prev_state": "R",
+            "next_comm": "dds.udp.27433",
+            "blocked_ms": 0.0,
+            "runnable_ms": 0.1830000546760857
+          },
+          {
+            "start": 518004.428586,
+            "end": 518004.428748,
+            "duration_ms": 0.16200001118704677,
+            "prev_state": "S",
+            "next_comm": "swapper/2",
+            "blocked_ms": 0.1550000160932541,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518004.347561,
+            "end": 518004.347718,
+            "duration_ms": 0.15700003132224083,
+            "prev_state": "S",
+            "next_comm": "cyber_recorder",
+            "blocked_ms": 0.1520000514574349,
+            "runnable_ms": 0.004999979864805937
+          }
+        ],
+        "enter_inside_running": true,
+        "exit_inside_running": true
+      },
+      "kswapd0_cpu_ms": 0.008000002708286047,
+      "kcompactd0_cpu_ms": 0.0
+    },
+    "638": {
+      "window": {
+        "source_frame_index": 638,
+        "target_tid": 29037,
+        "cp_enter_line": 29395,
+        "cp_exit_line": 29408,
+        "enter_apollo_mono_ns": 518009303514713,
+        "exit_apollo_mono_ns": 518009392090986,
+        "enter_perf_s": 518004.444400192,
+        "exit_perf_s": 518004.532976465,
+        "cp_duration_ms": 88.576273,
+        "internal_inference_ms": 88.6866,
+        "duration_difference_ms": -0.11029999999999518
+      },
+      "perf_coverage_status": "complete",
+      "metrics": {
+        "duration_ms": 88.57627300312743,
+        "running_ms": 33.9712729328312,
+        "running_pct": 38.35256528758187,
+        "blocked_ms": 50.47799984458834,
+        "runnable_ms": 4.127000225707889,
+        "unknown_ms": 0.0,
+        "max_schedule_delay_us": 3887.0000280439854,
+        "p95_schedule_delay_us": 69.8000221746042,
+        "run_slice_count": 23,
+        "migration_count": 1,
+        "switch_out_prev_state_counts": {
+          "S": 16,
+          "R": 5,
+          "R+": 1
+        },
+        "cpu_running_ms": {
+          "3": 31.69380791950971,
+          "1": 2.277465013321489
+        },
+        "runnable_preemptor_ms": {
+          "swapper/3": 0.06800016853958368,
+          "dds.udp.27436": 0.07200002437457442,
+          "dds.ev.1": 0.027999980375170708,
+          "perf": 3.8870000280439854,
+          "swapper/1": 0.029999995604157448,
+          "sugov:0": 0.042000028770416975
+        },
+        "largest_offcpu_gaps": [
+          {
+            "start": 518004.4786,
+            "end": 518004.526464,
+            "duration_ms": 47.864000021945685,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 47.855000011622906,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518004.472944,
+            "end": 518004.476831,
+            "duration_ms": 3.8870000280439854,
+            "prev_state": "R",
+            "next_comm": "perf",
+            "blocked_ms": 0.0,
+            "runnable_ms": 3.8870000280439854
+          },
+          {
+            "start": 518004.531057,
+            "end": 518004.531444,
+            "duration_ms": 0.38700003642588854,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.3819999983534217,
+            "runnable_ms": 0.00500003807246685
+          },
+          {
+            "start": 518004.445445,
+            "end": 518004.445801,
+            "duration_ms": 0.3559999749995768,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.34899997990578413,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518004.444785,
+            "end": 518004.445114,
+            "duration_ms": 0.32900000223889947,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.3220000071451068,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518004.532582,
+            "end": 518004.532896,
+            "duration_ms": 0.31400000443682075,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.3089999663643539,
+            "runnable_ms": 0.00500003807246685
+          },
+          {
+            "start": 518004.531832,
+            "end": 518004.532128,
+            "duration_ms": 0.2959999837912619,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.291000003926456,
+            "runnable_ms": 0.004999979864805937
+          },
+          {
+            "start": 518004.447478,
+            "end": 518004.447723,
+            "duration_ms": 0.24500000290572643,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.23999996483325958,
+            "runnable_ms": 0.00500003807246685
+          },
+          {
+            "start": 518004.530255,
+            "end": 518004.53049,
+            "duration_ms": 0.23499998496845365,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.22899999748915434,
+            "runnable_ms": 0.005999987479299307
+          },
+          {
+            "start": 518004.526853,
+            "end": 518004.527077,
+            "duration_ms": 0.2240000176243484,
+            "prev_state": "S",
+            "next_comm": "swapper/3",
+            "blocked_ms": 0.21500000730156898,
+            "runnable_ms": 0.009000010322779417
+          }
+        ],
+        "enter_inside_running": true,
+        "exit_inside_running": true
+      },
+      "kswapd0_cpu_ms": 0.0,
+      "kcompactd0_cpu_ms": 0.0
+    },
+    "639": {
+      "window": {
+        "source_frame_index": 639,
+        "target_tid": 29037,
+        "cp_enter_line": 29446,
+        "cp_exit_line": 29459,
+        "enter_apollo_mono_ns": 518009401574553,
+        "exit_apollo_mono_ns": 518009489351041,
+        "enter_perf_s": 518004.542460032,
+        "exit_perf_s": 518004.63023652,
+        "cp_duration_ms": 87.776488,
+        "internal_inference_ms": 87.8763,
+        "duration_difference_ms": -0.09980000000000189
+      },
+      "perf_coverage_status": "complete",
+      "metrics": {
+        "duration_ms": 87.77648804243654,
+        "running_ms": 30.609487905167043,
+        "running_pct": 34.87208088157792,
+        "blocked_ms": 57.056000106967986,
+        "runnable_ms": 0.11100003030151129,
+        "unknown_ms": 0.0,
+        "max_schedule_delay_us": 10.000017937272787,
+        "p95_schedule_delay_us": 10.000017937272787,
+        "run_slice_count": 17,
+        "migration_count": 1,
+        "switch_out_prev_state_counts": {
+          "S": 16
+        },
+        "cpu_running_ms": {
+          "1": 29.704967862926424,
+          "0": 0.9045200422406197
+        },
+        "runnable_preemptor_ms": {
+          "swapper/1": 0.08800002979114652,
+          "cyber_recorder": 0.008000002708286047,
+          "swapper/0": 0.014999997802078724
+        },
+        "largest_offcpu_gaps": [
+          {
+            "start": 518004.569204,
+            "end": 518004.623879,
+            "duration_ms": 54.675000021234155,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 54.66500000329688,
+            "runnable_ms": 0.010000017937272787
+          },
+          {
+            "start": 518004.628341,
+            "end": 518004.628695,
+            "duration_ms": 0.354000017978251,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.34500000765547156,
+            "runnable_ms": 0.009000010322779417
+          },
+          {
+            "start": 518004.543443,
+            "end": 518004.543794,
+            "duration_ms": 0.35099999513477087,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.3440000000409782,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518004.629844,
+            "end": 518004.630165,
+            "duration_ms": 0.3209999995306134,
+            "prev_state": "S",
+            "next_comm": "swapper/0",
+            "blocked_ms": 0.3129999968223274,
+            "runnable_ms": 0.008000002708286047
+          },
+          {
+            "start": 518004.629076,
+            "end": 518004.629392,
+            "duration_ms": 0.31599996145814657,
+            "prev_state": "S",
+            "next_comm": "swapper/0",
+            "blocked_ms": 0.3089999663643539,
+            "runnable_ms": 0.006999995093792677
+          },
+          {
+            "start": 518004.542775,
+            "end": 518004.543087,
+            "duration_ms": 0.3120000474154949,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.30200002947822213,
+            "runnable_ms": 0.010000017937272787
+          },
+          {
+            "start": 518004.627421,
+            "end": 518004.627685,
+            "duration_ms": 0.26400003116577864,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.25800004368647933,
+            "runnable_ms": 0.005999987479299307
+          },
+          {
+            "start": 518004.624267,
+            "end": 518004.624476,
+            "duration_ms": 0.20900001982226968,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.20399998174980283,
+            "runnable_ms": 0.00500003807246685
+          },
+          {
+            "start": 518004.545148,
+            "end": 518004.545293,
+            "duration_ms": 0.1449999981559813,
+            "prev_state": "S",
+            "next_comm": "cyber_recorder",
+            "blocked_ms": 0.13699999544769526,
+            "runnable_ms": 0.008000002708286047
+          },
+          {
+            "start": 518004.545448,
+            "end": 518004.545512,
+            "duration_ms": 0.06399996345862746,
+            "prev_state": "S",
+            "next_comm": "swapper/1",
+            "blocked_ms": 0.058999983593821526,
+            "runnable_ms": 0.004999979864805937
+          }
+        ],
+        "enter_inside_running": true,
+        "exit_inside_running": true
+      },
+      "kswapd0_cpu_ms": 0.0,
+      "kcompactd0_cpu_ms": 0.0
+    }
+  }
+}

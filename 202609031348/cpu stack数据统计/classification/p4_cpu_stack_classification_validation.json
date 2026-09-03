@@ -1,0 +1,531 @@
+{
+  "status": "PASS",
+  "source": "D:\\data\\202609031348\\cpu stack数据统计\\cpu_stack_samples_anomaly.txt",
+  "frames": [
+    622,
+    623,
+    625,
+    628,
+    631,
+    633,
+    636,
+    637,
+    638,
+    639
+  ],
+  "sample_frequency_hz": 99.0,
+  "cpu_ms_definition": "sampling estimate = class_sample_count * 1000 / sample_frequency_hz; not exact wall time and not forced to equal sched running_ms",
+  "classification_priority": [
+    "CUDA_MALLOC_INCLUSIVE",
+    "NORMAL_INFER",
+    "OTHER"
+  ],
+  "cuda_malloc_inclusive_markers": [
+    "AutoGrowthBestFitAllocator::AllocateImpl",
+    "CUDAAllocator::AllocateImpl",
+    "RecordedGpuMallocHelper::Malloc",
+    "cudaMalloc"
+  ],
+  "normal_infer_positive_markers": [
+    "PaddleNet::Infer",
+    "AnalysisPredictor::ZeroCopyRun",
+    "NaiveExecutor::Run",
+    "OperatorBase::Run",
+    "OperatorWithKernel::RunImpl",
+    "phi namespace",
+    "cuDNN path",
+    "CUDA kernel launch",
+    "CenterPoint custom op"
+  ],
+  "total_samples": 134,
+  "category_totals": {
+    "CUDA_MALLOC_INCLUSIVE": 103,
+    "NORMAL_INFER": 24,
+    "OTHER": 7
+  },
+  "per_frame_sample_counts_match_existing_summary": true,
+  "all_samples_have_exactly_one_category": true,
+  "highlighted_kernel_leaf_overrides": [
+    {
+      "frame": 623,
+      "sample_index": 3,
+      "timestamp": "518007.792604412",
+      "leaf_symbol": "__pi_clear_page+0x14",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 623,
+      "sample_index": 7,
+      "timestamp": "518007.833121048",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 623,
+      "sample_index": 10,
+      "timestamp": "518007.863446045",
+      "leaf_symbol": "get_page_from_freelist+0x250",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 623,
+      "sample_index": 11,
+      "timestamp": "518007.873536723",
+      "leaf_symbol": "get_page_from_freelist+0x250",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 623,
+      "sample_index": 14,
+      "timestamp": "518007.903840695",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 623,
+      "sample_index": 17,
+      "timestamp": "518007.934143643",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 625,
+      "sample_index": 2,
+      "timestamp": "518008.049271364",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 625,
+      "sample_index": 5,
+      "timestamp": "518008.079807979",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 625,
+      "sample_index": 8,
+      "timestamp": "518008.110112015",
+      "leaf_symbol": "get_page_from_freelist+0x250",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 625,
+      "sample_index": 11,
+      "timestamp": "518008.140500309",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 625,
+      "sample_index": 13,
+      "timestamp": "518008.160702850",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 625,
+      "sample_index": 14,
+      "timestamp": "518008.170803769",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 625,
+      "sample_index": 16,
+      "timestamp": "518008.191006214",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 625,
+      "sample_index": 22,
+      "timestamp": "518008.251612142",
+      "leaf_symbol": "__pi_clear_page+0x14",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 628,
+      "sample_index": 2,
+      "timestamp": "518008.337653954",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 628,
+      "sample_index": 4,
+      "timestamp": "518008.357856687",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 628,
+      "sample_index": 7,
+      "timestamp": "518008.388157587",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 628,
+      "sample_index": 9,
+      "timestamp": "518008.408359841",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 628,
+      "sample_index": 11,
+      "timestamp": "518008.428562478",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 628,
+      "sample_index": 14,
+      "timestamp": "518008.458868210",
+      "leaf_symbol": "get_page_from_freelist+0x250",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 628,
+      "sample_index": 16,
+      "timestamp": "518008.479067552",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 628,
+      "sample_index": 18,
+      "timestamp": "518008.499271277",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 628,
+      "sample_index": 19,
+      "timestamp": "518008.509371076",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 631,
+      "sample_index": 2,
+      "timestamp": "518008.591855213",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 631,
+      "sample_index": 5,
+      "timestamp": "518008.622422772",
+      "leaf_symbol": "get_page_from_freelist+0x250",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 631,
+      "sample_index": 7,
+      "timestamp": "518008.642809252",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 631,
+      "sample_index": 10,
+      "timestamp": "518008.673111176",
+      "leaf_symbol": "get_page_from_freelist+0x250",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 631,
+      "sample_index": 12,
+      "timestamp": "518008.693405399",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 631,
+      "sample_index": 14,
+      "timestamp": "518008.713609156",
+      "leaf_symbol": "get_page_from_freelist+0x250",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 631,
+      "sample_index": 16,
+      "timestamp": "518008.733810257",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 631,
+      "sample_index": 18,
+      "timestamp": "518008.754012127",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 633,
+      "sample_index": 2,
+      "timestamp": "518008.847194630",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 633,
+      "sample_index": 4,
+      "timestamp": "518008.867466996",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 633,
+      "sample_index": 6,
+      "timestamp": "518008.887720546",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 633,
+      "sample_index": 7,
+      "timestamp": "518008.897972923",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 633,
+      "sample_index": 9,
+      "timestamp": "518008.918174888",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 633,
+      "sample_index": 11,
+      "timestamp": "518008.938517815",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 633,
+      "sample_index": 13,
+      "timestamp": "518008.958719653",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 633,
+      "sample_index": 15,
+      "timestamp": "518008.978960211",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    },
+    {
+      "frame": 633,
+      "sample_index": 18,
+      "timestamp": "518009.016638541",
+      "leaf_symbol": "__pi_clear_page+0x18",
+      "matched_markers": [
+        "AutoGrowthBestFitAllocator::AllocateImpl",
+        "CUDAAllocator::AllocateImpl",
+        "RecordedGpuMallocHelper::Malloc",
+        "cudaMalloc"
+      ]
+    }
+  ],
+  "highlighted_kernel_leaf_override_count": 40
+}

@@ -1,0 +1,78 @@
+﻿frame,host_tid,symbol,dso,sample_count,sample_ratio
+622,29037,__pi___clean_dcache_area_poc,/lib/modules/5.10.120-tegra/kernel/drivers/video/tegra/nvmap/nvmap.ko,2,0.250000000
+622,29037,[unknown],/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,1,0.125000000
+622,29037,[unknown],/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1,1,0.125000000
+622,29037,cudaMemcpyAsync,/usr/local/cuda-11.4/targets/aarch64-linux/lib/libcudart.so.11.4.298,1,0.125000000
+622,29037,nvgpu_gmmu_aperture_mask,/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,1,0.125000000
+622,29037,nvgpu_log_dbg_impl,/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,1,0.125000000
+622,29037,phi::Copy<phi::GPUContext>,/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.125000000
+623,29037,[unknown],/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,5,0.217391304
+623,29037,__pi_clear_page,[kernel.kallsyms],4,0.173913043
+623,29037,skip_ftrace_call,[kernel.kallsyms],3,0.130434783
+623,29037,__pi___clean_dcache_area_poc,/lib/modules/5.10.120-tegra/kernel/drivers/video/tegra/nvmap/nvmap.ko,2,0.086956522
+623,29037,get_page_from_freelist,[kernel.kallsyms],2,0.086956522
+623,29037,_mcount,[kernel.kallsyms],1,0.043478261
+623,29037,cudnn::cnn::AutoTransformationExecutor::computeExecutionOp,/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0,1,0.043478261
+623,29037,gv11b_gpu_phys_addr,/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,1,0.043478261
+623,29037,nvgpu_aperture_mask_raw,/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,1,0.043478261
+623,29037,phi::DenseTensor::ResetHolder,/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.043478261
+623,29037,"phi::funcs::LaunchElementwiseCudaKernel<float, phi::funcs::CudaReluFunctor<float>, 1, 1, 4>",/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.043478261
+623,29037,std::_Rb_tree_insert_and_rebalance,/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.28,1,0.043478261
+625,29037,__pi_clear_page,[kernel.kallsyms],7,0.280000000
+625,29037,__pi___clean_dcache_area_poc,/lib/modules/5.10.120-tegra/kernel/drivers/video/tegra/nvmap/nvmap.ko,4,0.160000000
+625,29037,[unknown],/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,2,0.080000000
+625,29037,_mcount,[kernel.kallsyms],2,0.080000000
+625,29037,skip_ftrace_call,[kernel.kallsyms],2,0.080000000
+625,29037,[unknown],/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1,1,0.040000000
+625,29037,get_page_from_freelist,[kernel.kallsyms],1,0.040000000
+625,29037,nvgpu_mem_wr32,/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,1,0.040000000
+625,29037,nvgpu_pd_write,/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,1,0.040000000
+625,29037,paddle::platform::RecordedGpuMallocHelper::Malloc,/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.040000000
+625,29037,phi::arity@plt,/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.040000000
+625,29037,prep_new_page,[kernel.kallsyms],1,0.040000000
+625,29037,"std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unique_ptr<paddle::framework::Variable, std::default_delete<paddle::framework::Variable> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unique_ptr<paddle::framework::Variable, std::default_delete<paddle::framework::Variable> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, paddle::framework::Scope::KeyHasher, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::find",/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.040000000
+628,29037,__pi_clear_page,[kernel.kallsyms],8,0.363636364
+628,29037,__pi___clean_dcache_area_poc,/lib/modules/5.10.120-tegra/kernel/drivers/video/tegra/nvmap/nvmap.ko,4,0.181818182
+628,29037,_mcount,[kernel.kallsyms],2,0.090909091
+628,29037,[unknown],/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,1,0.045454545
+628,29037,get_page_from_freelist,[kernel.kallsyms],1,0.045454545
+628,29037,insert_vmap_area.constprop.0,[kernel.kallsyms],1,0.045454545
+628,29037,nvgpu_pte_dbg_print,/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,1,0.045454545
+628,29037,paddle::framework::OperatorWithKernel::BuildPhiKernelContext,/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.045454545
+628,29037,phi::funcs::DimensionsTransform::InputDimensionsExtend,/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.045454545
+628,29037,skip_ftrace_call,[kernel.kallsyms],1,0.045454545
+628,29037,std::_Hash_bytes@plt,/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.045454545
+631,29037,__pi_clear_page,[kernel.kallsyms],5,0.238095238
+631,29037,__pi___clean_dcache_area_poc,/lib/modules/5.10.120-tegra/kernel/drivers/video/tegra/nvmap/nvmap.ko,4,0.190476190
+631,29037,get_page_from_freelist,[kernel.kallsyms],3,0.142857143
+631,29037,nvgpu_strnadd_u32,/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,2,0.095238095
+631,29037,cudnn::backend::OperationSet::~OperationSet,/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0,1,0.047619048
+631,29037,iommu_get_domain_for_dev,[kernel.kallsyms],1,0.047619048
+631,29037,memmove@plt,/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so,1,0.047619048
+631,29037,nvgpu_pte_dbg_print,/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,1,0.047619048
+631,29037,prep_new_page,[kernel.kallsyms],1,0.047619048
+631,29037,split_page,[kernel.kallsyms],1,0.047619048
+631,29037,"std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, paddle::variant<paddle::blank, int, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::vector<float, std::allocator<float> >, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, bool, std::vector<bool, std::allocator<bool> >, paddle::framework::BlockDesc*, long, std::vector<paddle::framework::BlockDesc*, std::allocator<paddle::framework::BlockDesc*> >, std::vector<long, std::allocator<long> >, std::vector<double, std::allocator<double> >, paddle::framework::VarDesc*, std::vector<paddle::framework::VarDesc*, std::allocator<paddle::framework::VarDesc*> >, double> >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, paddle::variant<paddle::blank, int, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::vector<float, std::allocator<float> >, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, bool, std::vector<bool, std::allocator<bool> >, paddle::framework::BlockDesc*, long, std::vector<paddle::framework::BlockDesc*, std::allocator<paddle::framework::BlockDesc*> >, std::vector<long, std::allocator<long> >, std::vector<double, std::allocator<double> >, paddle::framework::VarDesc*, std::vector<paddle::framework::VarDesc*, std::allocator<paddle::framework::VarDesc*> >, double> > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::find",/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.047619048
+633,29037,__pi_clear_page,[kernel.kallsyms],9,0.409090909
+633,29037,__pi___clean_dcache_area_poc,/lib/modules/5.10.120-tegra/kernel/drivers/video/tegra/nvmap/nvmap.ko,5,0.227272727
+633,29037,[unknown],/usr/lib/aarch64-linux-gnu/ld-2.31.so,1,0.045454545
+633,29037,[unknown],/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0,1,0.045454545
+633,29037,[unknown],/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1,1,0.045454545
+633,29037,__alloc_pages_nodemask,[kernel.kallsyms],1,0.045454545
+633,29037,memcg_slab_free_hook,[kernel.kallsyms],1,0.045454545
+633,29037,nvgpu_mem_wr32,/lib/modules/5.10.120-tegra/kernel/drivers/gpu/nvgpu/nvgpu.ko,1,0.045454545
+633,29037,skip_ftrace_call,[kernel.kallsyms],1,0.045454545
+633,29037,std::_Hash_bytes,/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.28,1,0.045454545
+636,29037,__aarch64_swp4_rel,/usr/lib/aarch64-linux-gnu/libpthread-2.31.so,1,0.250000000
+636,29037,"cask_cudnn::ft::subTree<cask_cudnn::xmmakr::ft_xmma_level, cask_cudnn::Convolution, cask_cudnn::ConvShader, cask_cudnn::ShaderList<cask_cudnn::ConvShader, cask_cudnn::Convolution> >::search",/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0,1,0.250000000
+636,29037,memcg_slab_free_hook,[kernel.kallsyms],1,0.250000000
+636,29037,"std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unique_ptr<paddle::framework::Variable, std::default_delete<paddle::framework::Variable> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::unique_ptr<paddle::framework::Variable, std::default_delete<paddle::framework::Variable> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, paddle::framework::Scope::KeyHasher, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::find",/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.250000000
+637,29037,[unknown],/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1,1,0.333333333
+637,29037,cask_cudnn::ft::naryNode<cask_cudnn::sasskr::ft_sass_level>::isEmpty,/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0,1,0.333333333
+637,29037,paddle::framework::Scope::FindVarInternal@plt,/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.333333333
+638,29037,[unknown],/usr/lib/aarch64-linux-gnu/tegra/libnvcucompat.so,1,0.333333333
+638,29037,paddle::framework::OperatorWithKernel::RunImpl,/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.333333333
+638,29037,"paddle::operators::ConvArgsBase<cudnnContext*, cudnnDataType_t>::ConvArgsBase",/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.333333333
+639,29037,operator new@plt,/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.333333333
+639,29037,paddle::platform::is_cpu_place@plt,/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.333333333
+639,29037,"std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, paddle::variant<paddle::blank, int, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::vector<float, std::allocator<float> >, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, bool, std::vector<bool, std::allocator<bool> >, paddle::framework::BlockDesc*, long, std::vector<paddle::framework::BlockDesc*, std::allocator<paddle::framework::BlockDesc*> >, std::vector<long, std::allocator<long> >, std::vector<double, std::allocator<double> >, paddle::framework::VarDesc*, std::vector<paddle::framework::VarDesc*, std::allocator<paddle::framework::VarDesc*> >, double> >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, paddle::variant<paddle::blank, int, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::vector<float, std::allocator<float> >, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, bool, std::vector<bool, std::allocator<bool> >, paddle::framework::BlockDesc*, long, std::vector<paddle::framework::BlockDesc*, std::allocator<paddle::framework::BlockDesc*> >, std::vector<long, std::allocator<long> >, std::vector<double, std::allocator<double> >, paddle::framework::VarDesc*, std::vector<paddle::framework::VarDesc*, std::allocator<paddle::framework::VarDesc*> >, double> > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::count",/opt/apollo/neo/packages/3rd-paddleinference/9.0.0-rc1-r1/lib/libpaddle_inference.so,1,0.333333333

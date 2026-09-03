@@ -1,0 +1,26 @@
+{
+  "method": "same-TID + same-CPU CPU-clock samples aligned to sched_switch reconstructed run intervals",
+  "sample_window_s": [
+    518006.5,
+    518010.5
+  ],
+  "sample_count": 151,
+  "candidate_pair_count": 19935,
+  "best_sched_minus_stack_offset_s": -4.859114520997981,
+  "best_sched_minus_stack_offset_ns": -4859114521,
+  "supported_samples": 151,
+  "support_pct": 100.0,
+  "support_by_tid": {
+    "29037": {
+      "samples": 151,
+      "hits": 151
+    }
+  },
+  "event_coverage_s": [
+    517997.0,
+    518011.899992
+  ],
+  "scan_event_count": 6257139,
+  "run_count": 685,
+  "evidence_note": "F622-F639 mapped P4 worker TID; calibrated independently for run 202609031348"
+}
