@@ -7,8 +7,8 @@
 - 初次扫描日期：2026-08-25；CPU stack归档更新：2026-09-03
 - 扫描根目录：`D:\data`
 - 共发现：54 个 `.py`、2 个 `.sh`、3 个 `.ipynb`，合计 59 个脚本/笔记本
-- 当前归档：15 个脚本；另复制 3 个配置/说明配套文件
-- 本次新增3个CPU stack相关入口：联合采集、逐帧审计数据生成和完整调用链互斥分类
+- 当前归档：16 个脚本；另复制 3 个配置/说明配套文件
+- 当前新增跨模块消息传播与车辆状态整理入口；此前新增的3个CPU stack相关入口继续保留
 
 纳入标准：至少满足下列一项，并且没有被更通用版本替代。
 
@@ -31,6 +31,8 @@ reusable_scripts/
 ├── perception/
 │   ├── analyze_perception_realtime.py
 │   └── plot_perception_critical_path_gantt.py
+├── propagation/
+│   └── extract_message_vehicle_state.py
 ├── scheduler/
 │   ├── extract_perf_sched_frame_windows.py
 │   └── analyze_perf_sched_infer_frames.py
@@ -87,6 +89,24 @@ python perception/plot_perception_critical_path_gantt.py `
 ```
 
 Perception分析的证据边界：P2–P7缺少严格Reader receive/enqueue时间，脚本使用上一节点 `output_pub` 作为input-ready proxy；P4 execution仍是直接的 `proc_enter → output_pub`。
+
+### 跨模块消息时序与车辆状态
+
+| 脚本 | 状态 | 用途 | 主要入口 | 依赖/限制 |
+| --- | --- | --- | --- | --- |
+| [`propagation/extract_message_vehicle_state.py`](propagation/extract_message_vehicle_state.py) | 可直接复用 | 从record结构化导出与e2e trace生成Perception、Prediction、Planning、Control传播表，以及车辆状态和目标障碍物状态表 | `run_id`；可选`--run-dir`、`--record-dir`、`--output-root`、`--source-frames`、`--target-id` | Python 3.8标准库；Prediction/Planning输入时间用同一trace处理段的monotonic时长回推到消息header墙钟；Prediction未序列化的history保持空值；无固定目标ID时逐消息选择离插值车辆状态最近的障碍物 |
+
+默认结果按模块保存到 `<run-dir>/打点逐帧数据统计/<模块>数据统计/data/`，并在
+`消息时序与车辆状态数据统计/` 生成质量摘要和SHA-256清单：
+
+```powershell
+python propagation/extract_message_vehicle_state.py 202609031348 `
+  --run-dir D:\data\202609031348
+```
+
+`planning_propagation.csv` 的 `lidar_timestamp` 直接来自原始
+`planning_header.csv` 中的 `header_lidar_timestamp`；脚本要求该字段全量非零，并要求
+Prediction、Planning、Control 的record-to-trace关联完整，否则中止而不把不完整结果标为通过。
 
 ### Linux scheduler异常帧窗口
 

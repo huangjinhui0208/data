@@ -10,6 +10,7 @@
 - [CenterPoint Infer逐帧调度状态分解](scheduler/analyze_perf_sched_infer_frames.py)
 - [P4逐帧sched与CPU stack审计数据生成](perf/generate_p4_perf_analysis.py)
 - [P4 CPU stack完整调用链互斥分类](perf/classify_p4_cpu_stack_samples.py)
+- [跨模块消息时序与车辆状态整理](propagation/extract_message_vehicle_state.py)：默认按模块保存到 `<run-dir>/打点逐帧数据统计`
 - [碰撞案例分类器](collision/collision_case_classifier.py)
 - [实时碰撞分析核心库](collision/realtime_collision_core.py)
 - [Apollo/Orin采集工具](collection/apollo_perf_sched_collector.py)

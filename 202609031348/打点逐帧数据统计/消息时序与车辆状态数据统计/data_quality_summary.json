@@ -1,0 +1,74 @@
+{
+  "run_id": "202609031348",
+  "run_directory": "D:\\data\\202609031348",
+  "record_directory": "D:\\data\\202609031348\\record",
+  "output_root": "D:\\data\\202609031348\\打点逐帧数据统计",
+  "status": "pass_with_documented_limitations",
+  "time_and_unit_definitions": {
+    "module_publish_times": "Apollo message header.timestamp_sec, Unix seconds",
+    "prediction_input_time": "output header time minus trace monotonic out-in duration",
+    "planning_start": "output header time minus trace monotonic out-in duration",
+    "lidar_timestamp": "original Apollo header.lidar_timestamp, nanoseconds",
+    "data_age_ms": "module header timestamp minus lidar_timestamp/1e9",
+    "vehicle_timestamp": "localization measurement_time, Unix seconds",
+    "vehicle_acceleration": "localization world acceleration projected onto ego heading, m/s^2",
+    "vehicle_actuation": "nearest chassis feedback percentages",
+    "relative_distance": "ego-to-target center distance in XY, meters",
+    "relative_speed": "positive line-of-sight closing speed, m/s",
+    "TTC": "center distance / positive closing speed; blank when not closing",
+    "planning_reuse_count": "total control uses of the referenced planning sequence within the record window"
+  },
+  "row_counts": {
+    "perception_propagation.csv": 503,
+    "prediction_propagation.csv": 504,
+    "planning_propagation.csv": 505,
+    "control_propagation.csv": 5174,
+    "vehicle_state.csv": 517,
+    "target_obstacle_state.csv": 50
+  },
+  "linkage": {
+    "perception_source_frame_matches": 503,
+    "perception_message_count": 503,
+    "prediction_trace_matches": 504,
+    "prediction_message_count": 504,
+    "planning_trace_matches": 505,
+    "planning_message_count": 505,
+    "planning_prediction_timestamp_matches": 504,
+    "control_trace_matches": 5174,
+    "control_message_count": 5174
+  },
+  "critical_field_checks": {
+    "planning_header_lidar_timestamp_nonzero_count": 505,
+    "planning_header_lidar_timestamp_total_count": 505,
+    "planning_header_lidar_timestamp_full_coverage": true,
+    "prediction_history_serialized_count": 0,
+    "prediction_history_note": "PredictionObstacles output does not serialize internal history in this run; history_length is blank",
+    "prediction_target_trajectory_points_nonzero_count": 0,
+    "target_selection": "nearest obstacle to interpolated ego state per message",
+    "selected_target_id_counts": {
+      "7": 1,
+      "9": 1,
+      "10": 1,
+      "12": 6,
+      "14": 4,
+      "15": 3,
+      "16": 34
+    },
+    "target_rows_with_ego_state": 50
+  },
+  "vehicle_state_quality": {
+    "localization_input_rows": 517,
+    "vehicle_output_rows": 517,
+    "chassis_input_rows": 516,
+    "vehicle_rows_with_chassis": 517,
+    "max_nearest_chassis_gap_ms": 99.99394416809082
+  },
+  "source_files": {
+    "source_frames": "D:\\data\\202609031348\\打点逐帧数据统计\\perception数据统计\\data\\selected_source_frames.csv",
+    "perception_raw": "D:\\data\\202609031348\\record\\04_prediction_perception\\perception_raw.jsonl",
+    "prediction_raw": "D:\\data\\202609031348\\record\\04_prediction_perception\\prediction_raw.jsonl",
+    "planning_header": "D:\\data\\202609031348\\record\\02_planning\\planning_header.csv",
+    "control_header": "D:\\data\\202609031348\\record\\03_control\\control_header.csv",
+    "localization_pose": "D:\\data\\202609031348\\record\\01_localization_chassis\\localization_pose.csv"
+  }
+}
