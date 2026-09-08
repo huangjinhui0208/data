@@ -1,0 +1,1268 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "202609031348 Prediction 节点逐帧时延与异常帧诊断",
+    "description": "650 帧、25 个 Prediction 节点的 wall-span 统计、异常分层与原始 trace 证据。",
+    "generatedAt": "2026-09-08T00:25:00+08:00",
+    "sources": [
+      {
+        "id": "summary_sql",
+        "label": "逐帧摘要 SQL",
+        "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\prediction_analysis.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT\n  COUNT(*) AS trace_frames,\n  25 AS node_count,\n  SUM(fixed_deadline_miss OR COALESCE(dynamic_deadline_miss, 0)) AS deadline_misses,\n  MIN(dynamic_deadline_slack_ms) AS min_dynamic_slack_ms,\n  MAX(proc_ms) AS max_proc_ms,\n  12.072170 AS p99_proc_ms,\n  MAX(frame_complete_ms) AS max_complete_ms,\n  30.295566 AS p99_complete_ms,\n  SUM(proc_top_1pct OR frame_complete_top_1pct) AS high_anomaly_frames,\n  (SELECT COUNT(*) FROM anomalous_frames WHERE severity = 'medium') AS localized_spike_frames\nFROM frame_timings;",
+          "description": "在本地 SQLite 报告快照上执行的已验证查询；快照由 Prediction 原始 trace/context 逐帧解析结果确定性生成。",
+          "executed_at": "2026-09-08T00:25:00+08:00",
+          "filters": [
+            "run_id=202609031348",
+            "全部 650 个 Prediction trace"
+          ],
+          "metric_definitions": [
+            "proc_ms = (proc_exit_mono_ns - proc_enter_mono_ns) / 1e6",
+            "frame_complete_ms = (latest trace event mono_ns - proc_enter_mono_ns) / 1e6",
+            "dynamic_deadline_slack_ms = (next proc_enter_mono_ns - current proc_exit_mono_ns) / 1e6"
+          ],
+          "tables_used": [
+            "frame_timings",
+            "anomalous_frames"
+          ]
+        }
+      },
+      {
+        "id": "main_tail_sql",
+        "label": "主回调 P99 异常 SQL",
+        "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\prediction_analysis.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT\n  printf('F%04d', frame_index) AS frame_label,\n  frame_index,\n  input_seq,\n  output_seq,\n  proc_ms,\n  12.072170 AS p99_ms,\n  notify_tasks_ms AS notify_ms,\n  notify_tasks_ms / proc_ms AS notify_share,\n  obstacle_count\nFROM frame_timings\nWHERE proc_top_1pct = 1\nORDER BY frame_index;",
+          "description": "在本地 SQLite 报告快照上执行的已验证查询；快照由 Prediction 原始 trace/context 逐帧解析结果确定性生成。",
+          "executed_at": "2026-09-08T00:25:00+08:00",
+          "filters": [
+            "run_id=202609031348",
+            "全部 650 个 Prediction trace"
+          ],
+          "metric_definitions": [
+            "主回调高等级异常 = proc_top_1pct = 1；本 run 的 P99=12.072170 ms",
+            "notify_share = notify_tasks_ms / proc_ms"
+          ],
+          "tables_used": [
+            "frame_timings"
+          ]
+        }
+      },
+      {
+        "id": "async_tail_sql",
+        "label": "异步完成 P99 异常 SQL",
+        "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\prediction_analysis.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT\n  printf('F%04d', frame_index) AS frame_label,\n  frame_index,\n  input_seq,\n  output_seq,\n  frame_complete_ms,\n  30.295566 AS p99_ms,\n  async_draw_ms,\n  draw_lanes_ms AS lanes_ms,\n  draw_lanes_ms / async_draw_ms AS lanes_share,\n  obstacle_count\nFROM frame_timings\nWHERE frame_complete_top_1pct = 1\nORDER BY frame_index;",
+          "description": "在本地 SQLite 报告快照上执行的已验证查询；快照由 Prediction 原始 trace/context 逐帧解析结果确定性生成。",
+          "executed_at": "2026-09-08T00:25:00+08:00",
+          "filters": [
+            "run_id=202609031348",
+            "全部 650 个 Prediction trace"
+          ],
+          "metric_definitions": [
+            "异步完成高等级异常 = frame_complete_top_1pct = 1；本 run 的 P99=30.295566 ms",
+            "lanes_share = draw_lanes_ms / async_draw_ms"
+          ],
+          "tables_used": [
+            "frame_timings"
+          ]
+        }
+      },
+      {
+        "id": "high_anomaly_sql",
+        "label": "高等级异常清单 SQL",
+        "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\prediction_analysis.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT\n  '主回调' AS domain,\n  printf('F%04d', frame_index) AS frame_label,\n  frame_index,\n  input_seq,\n  output_seq,\n  proc_ms AS total_ms,\n  12.072170 AS p99_ms,\n  'cyber_taskmanager_notify_tasks' AS driver_node,\n  notify_tasks_ms AS driver_ms,\n  notify_tasks_ms / proc_ms AS driver_share,\n  obstacle_count\nFROM frame_timings\nWHERE proc_top_1pct = 1\nUNION ALL\nSELECT\n  '异步完成' AS domain,\n  printf('F%04d', frame_index) AS frame_label,\n  frame_index,\n  input_seq,\n  output_seq,\n  frame_complete_ms AS total_ms,\n  30.295566 AS p99_ms,\n  'semantic_draw_lanes' AS driver_node,\n  draw_lanes_ms AS driver_ms,\n  draw_lanes_ms / async_draw_ms AS driver_share,\n  obstacle_count\nFROM frame_timings\nWHERE frame_complete_top_1pct = 1\nORDER BY total_ms DESC;",
+          "description": "在本地 SQLite 报告快照上执行的已验证查询；快照由 Prediction 原始 trace/context 逐帧解析结果确定性生成。",
+          "executed_at": "2026-09-08T00:25:00+08:00",
+          "filters": [
+            "run_id=202609031348",
+            "全部 650 个 Prediction trace"
+          ],
+          "metric_definitions": [
+            "高等级异常 = proc 或 frame_complete 超过各自 P99；本 run 无 deadline miss"
+          ],
+          "tables_used": [
+            "frame_timings"
+          ]
+        }
+      },
+      {
+        "id": "node_summary_sql",
+        "label": "25 节点分布 SQL",
+        "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\prediction_analysis.sqlite",
+        "query": {
+          "engine": "sqlite",
+          "language": "sql",
+          "sql": "SELECT\n  node,\n  median_ms,\n  p95_ms,\n  p99_ms,\n  max_ms,\n  max_frame,\n  max_output_seq\nFROM node_summary\nORDER BY max_ms DESC;",
+          "description": "在本地 SQLite 报告快照上执行的已验证查询；快照由 Prediction 原始 trace/context 逐帧解析结果确定性生成。",
+          "executed_at": "2026-09-08T00:25:00+08:00",
+          "filters": [
+            "run_id=202609031348",
+            "全部 650 个 Prediction trace"
+          ],
+          "metric_definitions": [
+            "每个节点时延为同一 trace 内匹配 enter→exit 的 monotonic wall-span",
+            "Median/P95/P99 使用 650 帧线性插值分位数"
+          ],
+          "tables_used": [
+            "node_summary"
+          ]
+        }
+      },
+      {
+        "id": "validation_json",
+        "label": "逐帧质量校验结果",
+        "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\validation_summary.json"
+      },
+      {
+        "id": "prediction_log",
+        "label": "Prediction INFO log",
+        "path": "D:\\data\\202609031348\\log\\prediction.log.INFO.20260903-134725.28855"
+      }
+    ],
+    "cards": [
+      {
+        "id": "deadline_card",
+        "dataset": "summary_kpis",
+        "sourceId": "summary_sql",
+        "description": "固定 100 ms 与相邻回调动态 deadline 均未违约。",
+        "metrics": [
+          {
+            "label": "Deadline misses",
+            "field": "deadline_misses",
+            "format": "number"
+          },
+          {
+            "label": "Min slack (ms)",
+            "field": "min_dynamic_slack_ms",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "proc_card",
+        "dataset": "summary_kpis",
+        "sourceId": "summary_sql",
+        "description": "主回调 proc wall-span。",
+        "metrics": [
+          {
+            "label": "Max proc (ms)",
+            "field": "max_proc_ms",
+            "format": "number"
+          },
+          {
+            "label": "P99 (ms)",
+            "field": "p99_proc_ms",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "complete_card",
+        "dataset": "summary_kpis",
+        "sourceId": "summary_sql",
+        "description": "含异步 worker 尾部的完整帧跨度。",
+        "metrics": [
+          {
+            "label": "Max complete (ms)",
+            "field": "max_complete_ms",
+            "format": "number"
+          },
+          {
+            "label": "P99 (ms)",
+            "field": "p99_complete_ms",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "anomaly_card",
+        "dataset": "summary_kpis",
+        "sourceId": "summary_sql",
+        "description": "高等级为总跨度 P99 尾部；中等级为局部叶节点尖峰。",
+        "metrics": [
+          {
+            "label": "High frames",
+            "field": "high_anomaly_frames",
+            "format": "number"
+          },
+          {
+            "label": "Localized frames",
+            "field": "localized_spike_frames",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "main_tail_chart",
+        "title": "主回调 P99 异常帧",
+        "subtitle": "7 帧高于 12.072 ms；notify_tasks span 占各帧 proc 的 78.7%–85.0%。",
+        "type": "bar",
+        "dataset": "main_tails",
+        "sourceId": "main_tail_sql",
+        "valueFormat": "number",
+        "unit": "ms",
+        "layout": "full",
+        "question": "哪些 Prediction 主回调进入 P99 尾部，主导区间是什么？",
+        "rationale": "7 个离散异常帧的同单位绝对时长比较，使用单系列柱状图。",
+        "encodings": {
+          "x": {
+            "field": "frame_label",
+            "type": "nominal",
+            "label": "Trace frame"
+          },
+          "y": {
+            "field": "proc_ms",
+            "type": "quantitative",
+            "label": "proc wall-span",
+            "unit": "ms"
+          },
+          "tooltip": [
+            {
+              "field": "input_seq",
+              "type": "quantitative",
+              "label": "Perception input seq"
+            },
+            {
+              "field": "output_seq",
+              "type": "quantitative",
+              "label": "Prediction output seq"
+            },
+            {
+              "field": "notify_ms",
+              "type": "quantitative",
+              "label": "notify_tasks span",
+              "unit": "ms"
+            },
+            {
+              "field": "notify_share",
+              "type": "quantitative",
+              "label": "Share of proc",
+              "format": "percent"
+            },
+            {
+              "field": "p99_ms",
+              "type": "quantitative",
+              "label": "P99 threshold",
+              "unit": "ms"
+            }
+          ]
+        }
+      },
+      {
+        "id": "async_tail_chart",
+        "title": "异步完成 P99 异常帧",
+        "subtitle": "7 帧高于 30.296 ms；draw_lanes 占 async_draw 的 83.5%–90.8%。",
+        "type": "bar",
+        "dataset": "async_tails",
+        "sourceId": "async_tail_sql",
+        "valueFormat": "number",
+        "unit": "ms",
+        "layout": "full",
+        "question": "哪些异步 worker 完成跨度进入 P99 尾部，主导区间是什么？",
+        "rationale": "7 个离散异常帧的同单位绝对时长比较，使用单系列柱状图。",
+        "encodings": {
+          "x": {
+            "field": "frame_label",
+            "type": "nominal",
+            "label": "Trace frame"
+          },
+          "y": {
+            "field": "frame_complete_ms",
+            "type": "quantitative",
+            "label": "frame completion wall-span",
+            "unit": "ms"
+          },
+          "tooltip": [
+            {
+              "field": "input_seq",
+              "type": "quantitative",
+              "label": "Perception input seq"
+            },
+            {
+              "field": "output_seq",
+              "type": "quantitative",
+              "label": "Prediction output seq"
+            },
+            {
+              "field": "async_draw_ms",
+              "type": "quantitative",
+              "label": "async_draw span",
+              "unit": "ms"
+            },
+            {
+              "field": "lanes_ms",
+              "type": "quantitative",
+              "label": "draw_lanes span",
+              "unit": "ms"
+            },
+            {
+              "field": "lanes_share",
+              "type": "quantitative",
+              "label": "Share of async_draw",
+              "format": "percent"
+            },
+            {
+              "field": "p99_ms",
+              "type": "quantitative",
+              "label": "P99 threshold",
+              "unit": "ms"
+            }
+          ]
+        }
+      }
+    ],
+    "tables": [
+      {
+        "id": "high_anomaly_table",
+        "title": "14 个高等级异常帧",
+        "subtitle": "按总跨度降序；障碍物数仅在 record 覆盖窗口内可用。",
+        "dataset": "high_anomalies",
+        "sourceId": "high_anomaly_sql",
+        "density": "spacious",
+        "layout": "full",
+        "defaultSort": {
+          "field": "total_ms",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "domain",
+            "label": "范围",
+            "type": "text"
+          },
+          {
+            "field": "frame_label",
+            "label": "帧",
+            "type": "text"
+          },
+          {
+            "field": "input_seq",
+            "label": "输入 seq",
+            "format": "number"
+          },
+          {
+            "field": "output_seq",
+            "label": "输出 seq",
+            "format": "number"
+          },
+          {
+            "field": "total_ms",
+            "label": "总跨度 ms",
+            "format": "number"
+          },
+          {
+            "field": "p99_ms",
+            "label": "P99 ms",
+            "format": "number"
+          },
+          {
+            "field": "driver_node",
+            "label": "主导节点",
+            "type": "text"
+          },
+          {
+            "field": "driver_ms",
+            "label": "节点 ms",
+            "format": "number"
+          },
+          {
+            "field": "driver_share",
+            "label": "占比",
+            "format": "percent"
+          },
+          {
+            "field": "obstacle_count",
+            "label": "障碍物数",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "node_summary_table",
+        "title": "Prediction 25 个节点的逐帧分布",
+        "subtitle": "650 帧 enter→exit wall-span；节点嵌套且异步重叠，不可相加为 proc。",
+        "dataset": "node_summary",
+        "sourceId": "node_summary_sql",
+        "density": "dense",
+        "layout": "full",
+        "defaultSort": {
+          "field": "max_ms",
+          "direction": "desc"
+        },
+        "columns": [
+          {
+            "field": "node",
+            "label": "节点",
+            "type": "text"
+          },
+          {
+            "field": "median_ms",
+            "label": "Median ms",
+            "format": "number"
+          },
+          {
+            "field": "p95_ms",
+            "label": "P95 ms",
+            "format": "number"
+          },
+          {
+            "field": "p99_ms",
+            "label": "P99 ms",
+            "format": "number"
+          },
+          {
+            "field": "max_ms",
+            "label": "Max ms",
+            "format": "number"
+          },
+          {
+            "field": "max_frame",
+            "label": "Max 帧",
+            "format": "number"
+          },
+          {
+            "field": "max_output_seq",
+            "label": "Max 输出 seq",
+            "format": "number"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# 202609031348 Prediction 节点逐帧时延与异常帧诊断"
+      },
+      {
+        "id": "technical_summary",
+        "type": "markdown",
+        "body": "## 技术摘要\n\n- **Prediction 内部实时性满足当前 100 ms 节拍。** 650 帧的 `proc` 中位数为 3.385 ms、P99 为 12.072 ms、最大 17.024 ms；固定 deadline miss 和相邻回调动态 deadline miss 都是 0，最小动态余量仍有 72.876 ms。\n- **14 帧属于高等级尾部异常，但分成两条互不等价的路径。** 7 帧是主回调 `proc` 超过 P99；另 7 帧是异步 worker 完成跨度超过 P99。它们都没有跨入下一帧。\n- **主回调长帧锁定在 `cyber_taskmanager_notify_tasks` span，异步长尾锁定在 `semantic_draw_lanes` span。** 这能定位代码区间，但 trace wall-span 本身不能区分有效计算、锁等待与 Linux 调度等待。\n- **障碍物负载不是高等级异常的现成解释。** 14 个高等级帧中有 11 帧落在 record 覆盖窗口，11 帧的 Prediction 输出障碍物数全为 0；其余 3 帧不做填补。"
+      },
+      {
+        "id": "metrics",
+        "type": "metric-strip",
+        "cardIds": [
+          "deadline_card",
+          "proc_card",
+          "complete_card",
+          "anomaly_card"
+        ]
+      },
+      {
+        "id": "main_finding",
+        "type": "markdown",
+        "sourceId": "main_tail_sql",
+        "body": "## 主回调长帧由 notify_tasks 区间主导\n\n7 个 `proc>P99` 帧分别是 F0142、F0249、F0357、F0389、F0527、F0575、F0650。最慢 F0389（输入 seq 1076、输出 seq 800）为 17.024 ms，其中 `cyber_taskmanager_notify_tasks` 为 14.471 ms。七帧中该 span 占 `proc` 的 78.7%–85.0%，因此优化或继续取证应先围绕异步任务提交后的等待路径，而不是 container、predictor 或 writer。"
+      },
+      {
+        "id": "main_chart_block",
+        "type": "chart",
+        "chartId": "main_tail_chart"
+      },
+      {
+        "id": "async_finding",
+        "type": "markdown",
+        "sourceId": "async_tail_sql",
+        "body": "## 异步完成长帧由 lane 绘制主导\n\n7 个 `frame_complete>P99` 帧分别是 F0015、F0253、F0317、F0319、F0484、F0493、F0574。最慢 F0317（输入 seq 1004、输出 seq 728）完整跨度 33.942 ms；其中 `semantic_base_async_draw` 为 31.022 ms、`semantic_draw_lanes` 为 28.158 ms。lane 绘制占这些异步 span 的 83.5%–90.8%，但因为它在 worker 线程上运行，不能把它与主线程节点求和。"
+      },
+      {
+        "id": "async_chart_block",
+        "type": "chart",
+        "chartId": "async_tail_chart"
+      },
+      {
+        "id": "high_table_intro",
+        "type": "markdown",
+        "sourceId": "high_anomaly_sql",
+        "body": "## 14 个高等级异常帧清单\n\n这张表只列 deadline 或总跨度 P99 级别的帧。另有 27 帧仅出现局部叶节点尖峰，完整名单保存在 CSV；它们未把主回调或异步完成推入 P99，因此降为中等级，避免把地图位置相关的多峰分布误报成全帧故障。"
+      },
+      {
+        "id": "high_table_block",
+        "type": "table",
+        "tableId": "high_anomaly_table"
+      },
+      {
+        "id": "node_table_intro",
+        "type": "markdown",
+        "sourceId": "node_summary_sql",
+        "body": "## 25 个节点的完整分布\n\n下面给出每个成对 trace 节点的 Median、P95、P99、Max 和最大值帧。`proc`、`perception`、`evaluator`、`semantic_map_run` 等是嵌套 rollup；`semantic_base_async_draw` 与主线程部分并行。表中每个值都是单独 wall-span，不是互斥 CPU 时间。"
+      },
+      {
+        "id": "node_table_block",
+        "type": "table",
+        "tableId": "node_summary_table"
+      },
+      {
+        "id": "scope",
+        "type": "markdown",
+        "sourceId": "summary_sql",
+        "body": "## 范围、数据与指标定义\n\n分析覆盖采集窗口内全部 650 个 Prediction trace，共 33,150 条 event、1,300 条 Prediction context，25 对节点，生成 16,250 条逐节点记录。帧键以 `trace_id` 为主，并同时保留 Perception 输入 seq 与 Prediction 输出 seq。`proc_ms` 是 `proc_enter→proc_exit`；`publish_latency_ms` 是 `proc_enter→output_pub`；`frame_complete_ms` 延伸到该 trace 最晚事件，专门容纳异步 worker 尾部。Prediction 输出 seq 412–1061 连续。"
+      },
+      {
+        "id": "method",
+        "type": "markdown",
+        "sourceId": "validation_json",
+        "body": "## 方法与异常判据\n\n每个 trace 内的相同节点 `*_enter→*_exit` 直接相减，`writer` 使用 `writer_enter→writer_done`。高等级异常采用固定 100 ms deadline、相邻 `proc_enter` 的动态 deadline，以及 `proc_ms` / `frame_complete_ms` 的 P99。局部叶节点需同时超过自身 P99，且相对中位数增加至少 `max(0.2 ms, 50% median)`。MAD 分数保留作诊断，但不直接判异常，因为 `notify_tasks` 与 `draw_junctions` 等节点呈多峰分布。"
+      },
+      {
+        "id": "robustness",
+        "type": "markdown",
+        "sourceId": "validation_json",
+        "body": "## 限制、稳健性与反证\n\n- **数据完整性通过。** 每帧恰好 51 个 phase；无重复 event_id、无重复 context edge、无缺失 phase、无负跨度，输入/输出关联覆盖 650/650。\n- **未发现 Prediction 丢 Fusion 输出。** Prediction 的 650 个输入与其覆盖范围内 Fusion 的 650 个实际输出集合完全一致；24 个输入 seq 跳号区间（共 27 个编号）来自 Fusion 输出序列本身，不能归咎于 Prediction。\n- **输入节拍存在独立长空窗。** 7 个输入间隔高于 P99，最大 285.064 ms；它们作为上游 cadence 证据单列，不混入 Prediction 节点时延。\n- **因果仍有限。** 现有 perf sched/CPU stack 采集针对 Perception 进程，不是 Prediction 进程；因此 `notify_tasks` 与 `draw_lanes` 的 wall-span 只能定位区间，不能证明是 OS 调度、锁等待、内存，还是有效绘制计算。"
+      },
+      {
+        "id": "next_steps",
+        "type": "markdown",
+        "body": "## 建议的下一步\n\n1. 在 Orin Host 对 Prediction PID/TID 追加 `perf sched` 与 CPU stack 同步采集，优先覆盖 F0389 型 `notify_tasks` 长帧和 F0317 型 `draw_lanes` 长帧对应的代码路径。\n2. 保留 `trace_id + input_seq + output_seq + mono_ns` 同步点，分别分解主线程的 runnable/blocked/running 与异步 worker 的 CPU-resident 时间。\n3. 若目标是 100 ms deadline，本 run 不需要立刻优化；若目标是降低尾延迟或 CPU 干扰，应优先检查 `notify_tasks` 等待链和 lane rasterization，而不是按障碍物数量扩容。"
+      },
+      {
+        "id": "questions",
+        "type": "markdown",
+        "body": "## 仍待回答的问题\n\n- `notify_tasks` 的 9.76–14.47 ms 是等待 worker 完成、主线程被抢占，还是锁/条件变量路径？\n- `draw_lanes` 的 23.88–28.16 ms 是地图几何复杂度增加，还是 worker 调度/缓存效应？\n- 上游 200–285 ms 输入空窗来自 Fusion 发布节拍、传感器到达，还是 trace 覆盖策略？这些问题需要 Prediction/Fusion 进程级调度与代码栈证据。"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-09-08T00:25:00+08:00",
+    "status": "ready",
+    "datasets": {
+      "summary_kpis": [
+        {
+          "trace_frames": 650,
+          "node_count": 25,
+          "deadline_misses": 0,
+          "min_dynamic_slack_ms": 72.875904,
+          "max_proc_ms": 17.023808,
+          "p99_proc_ms": 12.07217,
+          "max_complete_ms": 33.941696,
+          "p99_complete_ms": 30.295566,
+          "high_anomaly_frames": 14,
+          "localized_spike_frames": 27
+        }
+      ],
+      "main_tails": [
+        {
+          "frame_label": "F0142",
+          "frame_index": 142,
+          "input_seq": 824,
+          "output_seq": 553,
+          "proc_ms": 12.102464,
+          "p99_ms": 12.07217,
+          "notify_ms": 9.758912,
+          "notify_share": 0.8063574491938171,
+          "obstacle_count": null
+        },
+        {
+          "frame_label": "F0249",
+          "frame_index": 249,
+          "input_seq": 931,
+          "output_seq": 660,
+          "proc_ms": 14.082016,
+          "p99_ms": 12.07217,
+          "notify_ms": 11.654944,
+          "notify_share": 0.8276474050306434,
+          "obstacle_count": 0
+        },
+        {
+          "frame_label": "F0357",
+          "frame_index": 357,
+          "input_seq": 1044,
+          "output_seq": 768,
+          "proc_ms": 14.390816,
+          "p99_ms": 12.07217,
+          "notify_ms": 11.578624,
+          "notify_share": 0.8045842570706206,
+          "obstacle_count": 0
+        },
+        {
+          "frame_label": "F0389",
+          "frame_index": 389,
+          "input_seq": 1076,
+          "output_seq": 800,
+          "proc_ms": 17.023808,
+          "p99_ms": 12.07217,
+          "notify_ms": 14.471392,
+          "notify_share": 0.850067857908172,
+          "obstacle_count": 0
+        },
+        {
+          "frame_label": "F0527",
+          "frame_index": 527,
+          "input_seq": 1214,
+          "output_seq": 938,
+          "proc_ms": 14.584448,
+          "p99_ms": 12.07217,
+          "notify_ms": 12.19984,
+          "notify_share": 0.8364965201288386,
+          "obstacle_count": 0
+        },
+        {
+          "frame_label": "F0575",
+          "frame_index": 575,
+          "input_seq": 1262,
+          "output_seq": 986,
+          "proc_ms": 14.916576,
+          "p99_ms": 12.07217,
+          "notify_ms": 12.120416,
+          "notify_share": 0.8125467935805107,
+          "obstacle_count": 0
+        },
+        {
+          "frame_label": "F0650",
+          "frame_index": 650,
+          "input_seq": 1345,
+          "output_seq": 1061,
+          "proc_ms": 14.396448,
+          "p99_ms": 12.07217,
+          "notify_ms": 11.325664,
+          "notify_share": 0.7866984967403071,
+          "obstacle_count": null
+        }
+      ],
+      "async_tails": [
+        {
+          "frame_label": "F0015",
+          "frame_index": 15,
+          "input_seq": 683,
+          "output_seq": 426,
+          "frame_complete_ms": 33.226656,
+          "p99_ms": 30.295566,
+          "async_draw_ms": 30.794656,
+          "lanes_ms": 27.577376,
+          "lanes_share": 0.8955247300051022,
+          "obstacle_count": null
+        },
+        {
+          "frame_label": "F0253",
+          "frame_index": 253,
+          "input_seq": 935,
+          "output_seq": 664,
+          "frame_complete_ms": 33.64992,
+          "p99_ms": 30.295566,
+          "async_draw_ms": 30.5808,
+          "lanes_ms": 27.569664,
+          "lanes_share": 0.9015350808350338,
+          "obstacle_count": 0
+        },
+        {
+          "frame_label": "F0317",
+          "frame_index": 317,
+          "input_seq": 1004,
+          "output_seq": 728,
+          "frame_complete_ms": 33.941696,
+          "p99_ms": 30.295566,
+          "async_draw_ms": 31.021504,
+          "lanes_ms": 28.157792,
+          "lanes_share": 0.9076862295264602,
+          "obstacle_count": 0
+        },
+        {
+          "frame_label": "F0319",
+          "frame_index": 319,
+          "input_seq": 1006,
+          "output_seq": 730,
+          "frame_complete_ms": 31.075168,
+          "p99_ms": 30.295566,
+          "async_draw_ms": 28.06592,
+          "lanes_ms": 24.514976,
+          "lanes_share": 0.8734784393314027,
+          "obstacle_count": 0
+        },
+        {
+          "frame_label": "F0484",
+          "frame_index": 484,
+          "input_seq": 1171,
+          "output_seq": 895,
+          "frame_complete_ms": 33.237952,
+          "p99_ms": 30.295566,
+          "async_draw_ms": 30.378272,
+          "lanes_ms": 25.351712,
+          "lanes_share": 0.8345343671950795,
+          "obstacle_count": 0
+        },
+        {
+          "frame_label": "F0493",
+          "frame_index": 493,
+          "input_seq": 1180,
+          "output_seq": 904,
+          "frame_complete_ms": 30.47424,
+          "p99_ms": 30.295566,
+          "async_draw_ms": 27.883392,
+          "lanes_ms": 23.878432,
+          "lanes_share": 0.8563675466743788,
+          "obstacle_count": 0
+        },
+        {
+          "frame_label": "F0574",
+          "frame_index": 574,
+          "input_seq": 1261,
+          "output_seq": 985,
+          "frame_complete_ms": 31.40544,
+          "p99_ms": 30.295566,
+          "async_draw_ms": 28.867488,
+          "lanes_ms": 25.603072,
+          "lanes_share": 0.886917212886691,
+          "obstacle_count": 0
+        }
+      ],
+      "high_anomalies": [
+        {
+          "domain": "异步完成",
+          "frame_label": "F0317",
+          "frame_index": 317,
+          "input_seq": 1004,
+          "output_seq": 728,
+          "total_ms": 33.941696,
+          "p99_ms": 30.295566,
+          "driver_node": "semantic_draw_lanes",
+          "driver_ms": 28.157792,
+          "driver_share": 0.9076862295264602,
+          "obstacle_count": 0
+        },
+        {
+          "domain": "异步完成",
+          "frame_label": "F0253",
+          "frame_index": 253,
+          "input_seq": 935,
+          "output_seq": 664,
+          "total_ms": 33.64992,
+          "p99_ms": 30.295566,
+          "driver_node": "semantic_draw_lanes",
+          "driver_ms": 27.569664,
+          "driver_share": 0.9015350808350338,
+          "obstacle_count": 0
+        },
+        {
+          "domain": "异步完成",
+          "frame_label": "F0484",
+          "frame_index": 484,
+          "input_seq": 1171,
+          "output_seq": 895,
+          "total_ms": 33.237952,
+          "p99_ms": 30.295566,
+          "driver_node": "semantic_draw_lanes",
+          "driver_ms": 25.351712,
+          "driver_share": 0.8345343671950795,
+          "obstacle_count": 0
+        },
+        {
+          "domain": "异步完成",
+          "frame_label": "F0015",
+          "frame_index": 15,
+          "input_seq": 683,
+          "output_seq": 426,
+          "total_ms": 33.226656,
+          "p99_ms": 30.295566,
+          "driver_node": "semantic_draw_lanes",
+          "driver_ms": 27.577376,
+          "driver_share": 0.8955247300051022,
+          "obstacle_count": null
+        },
+        {
+          "domain": "异步完成",
+          "frame_label": "F0574",
+          "frame_index": 574,
+          "input_seq": 1261,
+          "output_seq": 985,
+          "total_ms": 31.40544,
+          "p99_ms": 30.295566,
+          "driver_node": "semantic_draw_lanes",
+          "driver_ms": 25.603072,
+          "driver_share": 0.886917212886691,
+          "obstacle_count": 0
+        },
+        {
+          "domain": "异步完成",
+          "frame_label": "F0319",
+          "frame_index": 319,
+          "input_seq": 1006,
+          "output_seq": 730,
+          "total_ms": 31.075168,
+          "p99_ms": 30.295566,
+          "driver_node": "semantic_draw_lanes",
+          "driver_ms": 24.514976,
+          "driver_share": 0.8734784393314027,
+          "obstacle_count": 0
+        },
+        {
+          "domain": "异步完成",
+          "frame_label": "F0493",
+          "frame_index": 493,
+          "input_seq": 1180,
+          "output_seq": 904,
+          "total_ms": 30.47424,
+          "p99_ms": 30.295566,
+          "driver_node": "semantic_draw_lanes",
+          "driver_ms": 23.878432,
+          "driver_share": 0.8563675466743788,
+          "obstacle_count": 0
+        },
+        {
+          "domain": "主回调",
+          "frame_label": "F0389",
+          "frame_index": 389,
+          "input_seq": 1076,
+          "output_seq": 800,
+          "total_ms": 17.023808,
+          "p99_ms": 12.07217,
+          "driver_node": "cyber_taskmanager_notify_tasks",
+          "driver_ms": 14.471392,
+          "driver_share": 0.850067857908172,
+          "obstacle_count": 0
+        },
+        {
+          "domain": "主回调",
+          "frame_label": "F0575",
+          "frame_index": 575,
+          "input_seq": 1262,
+          "output_seq": 986,
+          "total_ms": 14.916576,
+          "p99_ms": 12.07217,
+          "driver_node": "cyber_taskmanager_notify_tasks",
+          "driver_ms": 12.120416,
+          "driver_share": 0.8125467935805107,
+          "obstacle_count": 0
+        },
+        {
+          "domain": "主回调",
+          "frame_label": "F0527",
+          "frame_index": 527,
+          "input_seq": 1214,
+          "output_seq": 938,
+          "total_ms": 14.584448,
+          "p99_ms": 12.07217,
+          "driver_node": "cyber_taskmanager_notify_tasks",
+          "driver_ms": 12.19984,
+          "driver_share": 0.8364965201288386,
+          "obstacle_count": 0
+        },
+        {
+          "domain": "主回调",
+          "frame_label": "F0650",
+          "frame_index": 650,
+          "input_seq": 1345,
+          "output_seq": 1061,
+          "total_ms": 14.396448,
+          "p99_ms": 12.07217,
+          "driver_node": "cyber_taskmanager_notify_tasks",
+          "driver_ms": 11.325664,
+          "driver_share": 0.7866984967403071,
+          "obstacle_count": null
+        },
+        {
+          "domain": "主回调",
+          "frame_label": "F0357",
+          "frame_index": 357,
+          "input_seq": 1044,
+          "output_seq": 768,
+          "total_ms": 14.390816,
+          "p99_ms": 12.07217,
+          "driver_node": "cyber_taskmanager_notify_tasks",
+          "driver_ms": 11.578624,
+          "driver_share": 0.8045842570706206,
+          "obstacle_count": 0
+        },
+        {
+          "domain": "主回调",
+          "frame_label": "F0249",
+          "frame_index": 249,
+          "input_seq": 931,
+          "output_seq": 660,
+          "total_ms": 14.082016,
+          "p99_ms": 12.07217,
+          "driver_node": "cyber_taskmanager_notify_tasks",
+          "driver_ms": 11.654944,
+          "driver_share": 0.8276474050306434,
+          "obstacle_count": 0
+        },
+        {
+          "domain": "主回调",
+          "frame_label": "F0142",
+          "frame_index": 142,
+          "input_seq": 824,
+          "output_seq": 553,
+          "total_ms": 12.102464,
+          "p99_ms": 12.07217,
+          "driver_node": "cyber_taskmanager_notify_tasks",
+          "driver_ms": 9.758912,
+          "driver_share": 0.8063574491938171,
+          "obstacle_count": null
+        }
+      ],
+      "node_summary": [
+        {
+          "node": "semantic_base_async_draw",
+          "median_ms": 14.044816,
+          "p95_ms": 22.654526399999995,
+          "p99_ms": 27.667227519999997,
+          "max_ms": 31.021504,
+          "max_frame": 317,
+          "max_output_seq": 728
+        },
+        {
+          "node": "semantic_draw_lanes",
+          "median_ms": 11.739472,
+          "p95_ms": 19.504835199999995,
+          "p99_ms": 24.203069439999993,
+          "max_ms": 28.157792,
+          "max_frame": 317,
+          "max_output_seq": 728
+        },
+        {
+          "node": "proc",
+          "median_ms": 3.385472,
+          "p95_ms": 10.182078399999995,
+          "p99_ms": 12.072170239999998,
+          "max_ms": 17.023808,
+          "max_frame": 389,
+          "max_output_seq": 800
+        },
+        {
+          "node": "perception",
+          "median_ms": 2.741536,
+          "p95_ms": 9.618932799999998,
+          "p99_ms": 11.600207039999999,
+          "max_ms": 16.426752,
+          "max_frame": 389,
+          "max_output_seq": 800
+        },
+        {
+          "node": "evaluator",
+          "median_ms": 2.152288,
+          "p95_ms": 9.007284799999994,
+          "p99_ms": 11.210288639999998,
+          "max_ms": 15.969536,
+          "max_frame": 389,
+          "max_output_seq": 800
+        },
+        {
+          "node": "semantic_map_run",
+          "median_ms": 2.0653439999999996,
+          "p95_ms": 8.853350399999997,
+          "p99_ms": 11.15401344,
+          "max_ms": 15.906464,
+          "max_frame": 389,
+          "max_output_seq": 800
+        },
+        {
+          "node": "semantic_base_image",
+          "median_ms": 1.9246400000000001,
+          "p95_ms": 8.646516799999999,
+          "p99_ms": 11.0475216,
+          "max_ms": 15.789632,
+          "max_frame": 389,
+          "max_output_seq": 800
+        },
+        {
+          "node": "semantic_base_async_schedule",
+          "median_ms": 0.392608,
+          "p95_ms": 7.2759216,
+          "p99_ms": 9.76982592,
+          "max_ms": 14.491232,
+          "max_frame": 389,
+          "max_output_seq": 800
+        },
+        {
+          "node": "semantic_base_async_submit",
+          "median_ms": 0.386672,
+          "p95_ms": 7.2701504,
+          "p99_ms": 9.76614592,
+          "max_ms": 14.486144,
+          "max_frame": 389,
+          "max_output_seq": 800
+        },
+        {
+          "node": "cyber_taskmanager_notify_tasks",
+          "median_ms": 0.37204800000000005,
+          "p95_ms": 7.2532976,
+          "p99_ms": 9.74835936,
+          "max_ms": 14.471392,
+          "max_frame": 389,
+          "max_output_seq": 800
+        },
+        {
+          "node": "semantic_draw_roads",
+          "median_ms": 1.6609120000000002,
+          "p95_ms": 2.496836799999999,
+          "p99_ms": 3.2509724799999997,
+          "max_ms": 8.12192,
+          "max_frame": 187,
+          "max_output_seq": 598
+        },
+        {
+          "node": "semantic_base_copy",
+          "median_ms": 1.3151359999999999,
+          "p95_ms": 1.5985759999999998,
+          "p99_ms": 1.8040739199999996,
+          "max_ms": 3.179552,
+          "max_frame": 601,
+          "max_output_seq": 1012
+        },
+        {
+          "node": "semantic_obstacle_history_draw",
+          "median_ms": 0.09912,
+          "p95_ms": 0.16933759999999964,
+          "p99_ms": 0.23064352,
+          "max_ms": 2.062592,
+          "max_frame": 124,
+          "max_output_seq": 535
+        },
+        {
+          "node": "container",
+          "median_ms": 0.43553600000000003,
+          "p95_ms": 0.5582976,
+          "p99_ms": 0.6962572799999999,
+          "max_ms": 0.958112,
+          "max_frame": 332,
+          "max_output_seq": 743
+        },
+        {
+          "node": "predictor",
+          "median_ms": 0.004608,
+          "p95_ms": 0.11976479999999992,
+          "p99_ms": 0.15671296,
+          "max_ms": 0.717344,
+          "max_frame": 332,
+          "max_output_seq": 743
+        },
+        {
+          "node": "semantic_draw_junctions",
+          "median_ms": 0.014928,
+          "p95_ms": 0.21592,
+          "p99_ms": 0.25780159999999985,
+          "max_ms": 0.591808,
+          "max_frame": 600,
+          "max_output_seq": 1011
+        },
+        {
+          "node": "writer",
+          "median_ms": 0.101296,
+          "p95_ms": 0.15283199999999997,
+          "p99_ms": 0.18743903999999995,
+          "max_ms": 0.365632,
+          "max_frame": 406,
+          "max_output_seq": 817
+        },
+        {
+          "node": "semantic_map_prepare",
+          "median_ms": 0.051808,
+          "p95_ms": 0.1169759999999998,
+          "p99_ms": 0.20467807999999993,
+          "max_ms": 0.303904,
+          "max_frame": 638,
+          "max_output_seq": 1049
+        },
+        {
+          "node": "thread_pool_run",
+          "median_ms": 0.004544,
+          "p95_ms": 0.026153599999999992,
+          "p99_ms": 0.05195296,
+          "max_ms": 0.130016,
+          "max_frame": 599,
+          "max_output_seq": 1010
+        },
+        {
+          "node": "semantic_history_cache_copy",
+          "median_ms": 0.013408,
+          "p95_ms": 0.034369599999999986,
+          "p99_ms": 0.05585023999999997,
+          "max_ms": 0.066688,
+          "max_frame": 636,
+          "max_output_seq": 1047
+        },
+        {
+          "node": "semantic_base_async_lock_wait",
+          "median_ms": 0.001472,
+          "p95_ms": 0.002496,
+          "p99_ms": 0.005695039999999958,
+          "max_ms": 0.049792,
+          "max_frame": 201,
+          "max_output_seq": 612
+        },
+        {
+          "node": "cyber_taskmanager_queue_enqueue",
+          "median_ms": 0.003968,
+          "p95_ms": 0.007782399999999994,
+          "p99_ms": 0.01041632,
+          "max_ms": 0.02832,
+          "max_frame": 296,
+          "max_output_seq": 707
+        },
+        {
+          "node": "semantic_draw_crosswalks",
+          "median_ms": 0.00464,
+          "p95_ms": 0.006784,
+          "p99_ms": 0.008672639999999999,
+          "max_ms": 0.026528,
+          "max_frame": 187,
+          "max_output_seq": 598
+        },
+        {
+          "node": "semantic_adc_draw",
+          "median_ms": 0.0016,
+          "p95_ms": 0.002272,
+          "p99_ms": 0.00600032,
+          "max_ms": 0.019296,
+          "max_frame": 95,
+          "max_output_seq": 506
+        },
+        {
+          "node": "semantic_base_async_future_replace",
+          "median_ms": 0.001472,
+          "p95_ms": 0.002176,
+          "p99_ms": 0.004427839999999975,
+          "max_ms": 0.011616,
+          "max_frame": 32,
+          "max_output_seq": 443
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "summary_sql",
+      "label": "逐帧摘要 SQL",
+      "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\prediction_analysis.sqlite",
+      "query": {
+        "engine": "sqlite",
+        "language": "sql",
+        "sql": "SELECT\n  COUNT(*) AS trace_frames,\n  25 AS node_count,\n  SUM(fixed_deadline_miss OR COALESCE(dynamic_deadline_miss, 0)) AS deadline_misses,\n  MIN(dynamic_deadline_slack_ms) AS min_dynamic_slack_ms,\n  MAX(proc_ms) AS max_proc_ms,\n  12.072170 AS p99_proc_ms,\n  MAX(frame_complete_ms) AS max_complete_ms,\n  30.295566 AS p99_complete_ms,\n  SUM(proc_top_1pct OR frame_complete_top_1pct) AS high_anomaly_frames,\n  (SELECT COUNT(*) FROM anomalous_frames WHERE severity = 'medium') AS localized_spike_frames\nFROM frame_timings;",
+        "description": "在本地 SQLite 报告快照上执行的已验证查询；快照由 Prediction 原始 trace/context 逐帧解析结果确定性生成。",
+        "executed_at": "2026-09-08T00:25:00+08:00",
+        "filters": [
+          "run_id=202609031348",
+          "全部 650 个 Prediction trace"
+        ],
+        "metric_definitions": [
+          "proc_ms = (proc_exit_mono_ns - proc_enter_mono_ns) / 1e6",
+          "frame_complete_ms = (latest trace event mono_ns - proc_enter_mono_ns) / 1e6",
+          "dynamic_deadline_slack_ms = (next proc_enter_mono_ns - current proc_exit_mono_ns) / 1e6"
+        ],
+        "tables_used": [
+          "frame_timings",
+          "anomalous_frames"
+        ]
+      }
+    },
+    {
+      "id": "main_tail_sql",
+      "label": "主回调 P99 异常 SQL",
+      "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\prediction_analysis.sqlite",
+      "query": {
+        "engine": "sqlite",
+        "language": "sql",
+        "sql": "SELECT\n  printf('F%04d', frame_index) AS frame_label,\n  frame_index,\n  input_seq,\n  output_seq,\n  proc_ms,\n  12.072170 AS p99_ms,\n  notify_tasks_ms AS notify_ms,\n  notify_tasks_ms / proc_ms AS notify_share,\n  obstacle_count\nFROM frame_timings\nWHERE proc_top_1pct = 1\nORDER BY frame_index;",
+        "description": "在本地 SQLite 报告快照上执行的已验证查询；快照由 Prediction 原始 trace/context 逐帧解析结果确定性生成。",
+        "executed_at": "2026-09-08T00:25:00+08:00",
+        "filters": [
+          "run_id=202609031348",
+          "全部 650 个 Prediction trace"
+        ],
+        "metric_definitions": [
+          "主回调高等级异常 = proc_top_1pct = 1；本 run 的 P99=12.072170 ms",
+          "notify_share = notify_tasks_ms / proc_ms"
+        ],
+        "tables_used": [
+          "frame_timings"
+        ]
+      }
+    },
+    {
+      "id": "async_tail_sql",
+      "label": "异步完成 P99 异常 SQL",
+      "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\prediction_analysis.sqlite",
+      "query": {
+        "engine": "sqlite",
+        "language": "sql",
+        "sql": "SELECT\n  printf('F%04d', frame_index) AS frame_label,\n  frame_index,\n  input_seq,\n  output_seq,\n  frame_complete_ms,\n  30.295566 AS p99_ms,\n  async_draw_ms,\n  draw_lanes_ms AS lanes_ms,\n  draw_lanes_ms / async_draw_ms AS lanes_share,\n  obstacle_count\nFROM frame_timings\nWHERE frame_complete_top_1pct = 1\nORDER BY frame_index;",
+        "description": "在本地 SQLite 报告快照上执行的已验证查询；快照由 Prediction 原始 trace/context 逐帧解析结果确定性生成。",
+        "executed_at": "2026-09-08T00:25:00+08:00",
+        "filters": [
+          "run_id=202609031348",
+          "全部 650 个 Prediction trace"
+        ],
+        "metric_definitions": [
+          "异步完成高等级异常 = frame_complete_top_1pct = 1；本 run 的 P99=30.295566 ms",
+          "lanes_share = draw_lanes_ms / async_draw_ms"
+        ],
+        "tables_used": [
+          "frame_timings"
+        ]
+      }
+    },
+    {
+      "id": "high_anomaly_sql",
+      "label": "高等级异常清单 SQL",
+      "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\prediction_analysis.sqlite",
+      "query": {
+        "engine": "sqlite",
+        "language": "sql",
+        "sql": "SELECT\n  '主回调' AS domain,\n  printf('F%04d', frame_index) AS frame_label,\n  frame_index,\n  input_seq,\n  output_seq,\n  proc_ms AS total_ms,\n  12.072170 AS p99_ms,\n  'cyber_taskmanager_notify_tasks' AS driver_node,\n  notify_tasks_ms AS driver_ms,\n  notify_tasks_ms / proc_ms AS driver_share,\n  obstacle_count\nFROM frame_timings\nWHERE proc_top_1pct = 1\nUNION ALL\nSELECT\n  '异步完成' AS domain,\n  printf('F%04d', frame_index) AS frame_label,\n  frame_index,\n  input_seq,\n  output_seq,\n  frame_complete_ms AS total_ms,\n  30.295566 AS p99_ms,\n  'semantic_draw_lanes' AS driver_node,\n  draw_lanes_ms AS driver_ms,\n  draw_lanes_ms / async_draw_ms AS driver_share,\n  obstacle_count\nFROM frame_timings\nWHERE frame_complete_top_1pct = 1\nORDER BY total_ms DESC;",
+        "description": "在本地 SQLite 报告快照上执行的已验证查询；快照由 Prediction 原始 trace/context 逐帧解析结果确定性生成。",
+        "executed_at": "2026-09-08T00:25:00+08:00",
+        "filters": [
+          "run_id=202609031348",
+          "全部 650 个 Prediction trace"
+        ],
+        "metric_definitions": [
+          "高等级异常 = proc 或 frame_complete 超过各自 P99；本 run 无 deadline miss"
+        ],
+        "tables_used": [
+          "frame_timings"
+        ]
+      }
+    },
+    {
+      "id": "node_summary_sql",
+      "label": "25 节点分布 SQL",
+      "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\prediction_analysis.sqlite",
+      "query": {
+        "engine": "sqlite",
+        "language": "sql",
+        "sql": "SELECT\n  node,\n  median_ms,\n  p95_ms,\n  p99_ms,\n  max_ms,\n  max_frame,\n  max_output_seq\nFROM node_summary\nORDER BY max_ms DESC;",
+        "description": "在本地 SQLite 报告快照上执行的已验证查询；快照由 Prediction 原始 trace/context 逐帧解析结果确定性生成。",
+        "executed_at": "2026-09-08T00:25:00+08:00",
+        "filters": [
+          "run_id=202609031348",
+          "全部 650 个 Prediction trace"
+        ],
+        "metric_definitions": [
+          "每个节点时延为同一 trace 内匹配 enter→exit 的 monotonic wall-span",
+          "Median/P95/P99 使用 650 帧线性插值分位数"
+        ],
+        "tables_used": [
+          "node_summary"
+        ]
+      }
+    },
+    {
+      "id": "validation_json",
+      "label": "逐帧质量校验结果",
+      "path": "D:\\data\\202609031348\\打点逐帧数据统计\\prediction数据统计\\节点时间分析\\data\\validation_summary.json"
+    },
+    {
+      "id": "prediction_log",
+      "label": "Prediction INFO log",
+      "path": "D:\\data\\202609031348\\log\\prediction.log.INFO.20260903-134725.28855"
+    }
+  ]
+}

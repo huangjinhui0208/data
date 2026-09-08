@@ -1,0 +1,56 @@
+{
+  "run_id": "202609031348",
+  "status": "pass",
+  "sources": {
+    "events": "D:\\data\\202609031348\\trace\\events\\prediction.28855.csv",
+    "context": "D:\\data\\202609031348\\trace\\message_context\\prediction.28855.csv",
+    "prediction_raw": "D:\\data\\202609031348\\record\\04_prediction_perception\\prediction_raw.jsonl",
+    "fusion_context": "D:\\data\\202609031348\\trace\\message_context\\perception.multi_sensor_fusion.28864.csv"
+  },
+  "grain": "one Prediction callback trace per frame; one enter/exit wall span per node",
+  "counts": {
+    "trace_frames": 650,
+    "event_rows": 33150,
+    "context_rows": 1300,
+    "node_pairs": 25,
+    "node_timing_rows": 16250,
+    "anomalous_frames": 41,
+    "fixed_deadline_misses": 0,
+    "dynamic_deadline_misses": 0,
+    "async_overlaps_next_frame": 0,
+    "record_load_linked_frames": 504,
+    "input_sequence_gap_intervals": 24,
+    "input_sequence_gap_count": 27,
+    "input_interarrival_above_p99": 7
+  },
+  "quality_checks": {
+    "duplicate_event_ids": 0,
+    "duplicate_context_edges": 0,
+    "missing_or_extra_phase_frames": [],
+    "negative_spans": [],
+    "missing_context_in": 0,
+    "missing_context_out": 0,
+    "phases_per_trace_min": 51,
+    "phases_per_trace_max": 51,
+    "input_sequence_strictly_increasing": true,
+    "output_sequence_strictly_increasing": true,
+    "output_sequence_contiguous": true,
+    "fusion_outputs_in_prediction_range_not_consumed": [],
+    "prediction_inputs_without_fusion_output": []
+  },
+  "anomaly_definition": {
+    "node_rule": "duration > median + 6 * 1.4826 * MAD and duration - median >= max(0.05 ms, 25% of median)",
+    "fixed_deadline_ms": 100.0,
+    "dynamic_deadline": "proc_exit must precede the next frame proc_enter",
+    "frame_rule": "deadline miss; proc or frame_complete above its P99; or a leaf node above P99 with excess >= max(0.2 ms, 50% of node median)",
+    "robust_mad_role": "diagnostic only because several node distributions are multimodal; MAD alone does not mark a frame"
+  },
+  "evidence_boundaries": [
+    "Node durations are monotonic wall-clock spans between matching trace markers.",
+    "Nested and parallel spans overlap, so node durations must not be summed into proc time.",
+    "frame_complete_ms includes asynchronous worker events that can end after proc_exit.",
+    "The final frame has no dynamic next-frame deadline observation.",
+    "Prediction record linkage covers only the record window; missing load fields are not imputed.",
+    "Input cadence gaps are reported separately and are not classified as Prediction internal node anomalies."
+  ]
+}
