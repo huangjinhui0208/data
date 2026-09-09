@@ -1,0 +1,16 @@
+{
+  "trace_to_sched_offset_s": 0.5091642640763894,
+  "trace_marker_support": 1.0,
+  "constant_offset_candidate_s_not_used": -9.303924583015032,
+  "stack_calibration_samples": 1412,
+  "same_tid_cpu_heldout_support": 1.0,
+  "training_support": 1.0,
+  "stack_offset_intercept_s": -9.303963544778526,
+  "stack_offset_slope": -1.3983967876033768e-05,
+  "stack_reference_s": 968516.9985041479,
+  "method": "time-varying affine stack offset: fit using alternate samples, validate remaining samples on same TID and CPU; trace markers independently checked on CPU",
+  "scan_start_s": 968495.639764864,
+  "scan_end_s": 968527.325039616,
+  "time_reversals": 0,
+  "limitation": "Empirical alignment; 2us tolerance for trace-vs-sched text rounding. Before-only TID identity."
+}

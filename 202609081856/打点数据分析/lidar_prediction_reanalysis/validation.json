@@ -1,0 +1,20 @@
+{
+  "raw_frames": 1042,
+  "complete_frames": 1041,
+  "malformed_rows": [
+    {
+      "line": 107177,
+      "row": "{'run_id': '202609081856', 'schema_version': 'e2e_trace_v3', 'event_id': '107175', 'trace_id': None, 'proc_id': None, 'module': None, 'phase': None, 'mono_ns': None, 'pid': None, 'tid': None}"
+    }
+  ],
+  "main_lidar_parent_linked": 1042,
+  "lidar_ingress_linked": 1040,
+  "fusion_linked": 1042,
+  "tid_mismatches": 0,
+  "pairing_issues": 6,
+  "execution_tail_frames": 11,
+  "deadline": "not defined: no independent response budget supplied",
+  "complete_frame_pairing_issues": 0,
+  "negative_dispatch_proxy": 0,
+  "max_chain_arithmetic_error_ms": 5.684341886080802e-14
+}
