@@ -1,0 +1,12 @@
+   dds.udp.27447 1017016 [001] 75652.665987:       sched:sched_waking: comm=mainboard pid=1016504 prio=120 target_cpu=008
+   dds.udp.27447 1017016 [001] 75652.665995: sched:sched_migrate_task: comm=mainboard pid=1016504 prio=120 orig_cpu=8 dest_cpu=10
+         swapper     0 [010] 75652.666004:       sched:sched_switch: prev_comm=swapper/10 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016504 next_prio=120
+       mainboard 1016504 [010] 75652.666297:       sched:sched_switch: prev_comm=mainboard prev_pid=1016504 prev_prio=120 prev_state=S ==> next_comm=swapper/10 next_pid=0 next_prio=120
+   dds.udp.27447 1017016 [001] 75652.673767:       sched:sched_waking: comm=mainboard pid=1016510 prio=120 target_cpu=009
+   dds.udp.27447 1017016 [001] 75652.673775: sched:sched_migrate_task: comm=mainboard pid=1016510 prio=120 orig_cpu=9 dest_cpu=10
+         swapper     0 [010] 75652.673786:       sched:sched_switch: prev_comm=swapper/10 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016510 next_prio=120
+       mainboard 1016510 [010] 75652.673849:       sched:sched_switch: prev_comm=mainboard prev_pid=1016510 prev_prio=120 prev_state=S ==> next_comm=dreamview_plus next_pid=1015899 next_prio=120
+       mainboard 1016500 [008] 75652.676006:       sched:sched_waking: comm=mainboard pid=1016507 prio=120 target_cpu=009
+       mainboard 1016500 [008] 75652.676015: sched:sched_migrate_task: comm=mainboard pid=1016507 prio=120 orig_cpu=9 dest_cpu=8
+       mainboard 1016500 [008] 75652.676025:       sched:sched_switch: prev_comm=mainboard prev_pid=1016500 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016507 next_prio=120
+       mainboard 1016507 [008] 75652.676170:       sched:sched_switch: prev_comm=mainboard prev_pid=1016507 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016500 next_prio=120

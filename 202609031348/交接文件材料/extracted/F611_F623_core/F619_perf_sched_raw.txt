@@ -1,0 +1,943 @@
+       mainboard 1016506 [010] 75654.386037:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/10 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.386355:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=010
+         swapper     0 [010] 75654.386367:       sched:sched_switch: prev_comm=swapper/10 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.386459:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.386461:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.386517:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.386527:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.386564:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=R+ ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.386637:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.386651:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016644 [006] 75654.386734:       sched:sched_waking: comm=mainboard pid=1016473 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.386744:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016473 next_prio=120
+         kswapd0   136 [008] 75654.387437:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+       mainboard 1016471 [008] 75654.387475:       sched:sched_switch: prev_comm=mainboard prev_pid=1016471 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016473 [010] 75654.387616:       sched:sched_switch: prev_comm=mainboard prev_pid=1016473 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+       mainboard 1016503 [009] 75654.387726:       sched:sched_waking: comm=mainboard pid=1016504 prio=120 target_cpu=005
+       mainboard 1016503 [009] 75654.387735: sched:sched_migrate_task: comm=mainboard pid=1016504 prio=120 orig_cpu=5 dest_cpu=7
+       mainboard 1016377 [007] 75654.387763:       sched:sched_switch: prev_comm=mainboard prev_pid=1016377 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016504 next_prio=120
+       mainboard 1016504 [007] 75654.387868:       sched:sched_switch: prev_comm=mainboard prev_pid=1016504 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995007 next_prio=120
+       mainboard 1016460 [007] 75654.387902:       sched:sched_switch: prev_comm=mainboard prev_pid=1016460 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016504 next_prio=120
+       mainboard 1016504 [007] 75654.387943:       sched:sched_switch: prev_comm=mainboard prev_pid=1016504 prev_prio=120 prev_state=R+ ==> next_comm=node next_pid=995007 next_prio=120
+            node 995007 [007] 75654.387956:       sched:sched_switch: prev_comm=node prev_pid=995007 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016504 next_prio=120
+       mainboard 1016504 [007] 75654.388037:       sched:sched_switch: prev_comm=mainboard prev_pid=1016504 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995007 next_prio=120
+            node 995007 [007] 75654.388051:       sched:sched_switch: prev_comm=node prev_pid=995007 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016504 next_prio=120
+       mainboard 1016504 [007] 75654.388080:       sched:sched_switch: prev_comm=mainboard prev_pid=1016504 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995007 next_prio=120
+            node 995007 [007] 75654.388092:       sched:sched_switch: prev_comm=node prev_pid=995007 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016504 next_prio=120
+       mainboard 1016504 [007] 75654.388126:       sched:sched_switch: prev_comm=mainboard prev_pid=1016504 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1017018 next_prio=120
+       mainboard 1016511 [004] 75654.388211:       sched:sched_waking: comm=mainboard pid=1016510 prio=120 target_cpu=010
+         kswapd0   136 [008] 75654.388398:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.388402:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.388857:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=containerd-shim next_pid=16032 next_prio=120
+  dreamview_plus 1015908 [010] 75654.388903:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016510 next_prio=120
+       mainboard 1016510 [010] 75654.388924:       sched:sched_switch: prev_comm=mainboard prev_pid=1016510 prev_prio=120 prev_state=S ==> next_comm=dds.asyn.1.1 next_pid=1016593 next_prio=120
+ containerd-shim 16031 [008] 75654.388930:       sched:sched_switch: prev_comm=containerd-shim prev_pid=16031 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+    dds.asyn.1.1 1016593 [010] 75654.389012:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+         kswapd0   136 [008] 75654.389017:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=containerd-shim next_pid=16031 next_prio=120
+ containerd-shim 16031 [008] 75654.389022:       sched:sched_switch: prev_comm=containerd-shim prev_pid=16031 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+    dds.asyn.1.1 1016593 [010] 75654.389047:       sched:sched_switch: prev_comm=dds.asyn.1.1 prev_pid=1016593 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.389057:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=R ==> next_comm=dockerd next_pid=1905 next_prio=120
+         dockerd  1905 [010] 75654.389079:       sched:sched_switch: prev_comm=dockerd prev_pid=1905 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.389091:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.389107:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=containerd-shim next_pid=16031 next_prio=120
+ containerd-shim 16031 [008] 75654.389110:       sched:sched_switch: prev_comm=containerd-shim prev_pid=16031 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.389182:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=containerd-shim next_pid=16031 next_prio=120
+ containerd-shim 16031 [008] 75654.389187:       sched:sched_switch: prev_comm=containerd-shim prev_pid=16031 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+          docker 49865 [009] 75654.389199:       sched:sched_waking: comm=dockerd pid=1905 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.389210:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=dockerd next_pid=1905 next_prio=120
+         dockerd  1905 [010] 75654.389237:       sched:sched_switch: prev_comm=dockerd prev_pid=1905 prev_prio=120 prev_state=S ==> next_comm=node next_pid=995008 next_prio=120
+         kswapd0   136 [008] 75654.389407:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.389410:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+            node 995008 [010] 75654.389519:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.389542:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=R+ ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.389578:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.389590:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.389764:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/10 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.390018:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=010
+         swapper     0 [010] 75654.390028:       sched:sched_switch: prev_comm=swapper/10 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.390154:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/10 next_pid=0 next_prio=120
+       mainboard 1016438 [003] 75654.390289:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+         swapper     0 [010] 75654.390296:       sched:sched_switch: prev_comm=swapper/10 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+ irq/134-host_sy   177 [000] 75654.390313:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=010
+         kswapd0   136 [008] 75654.390347:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.390349:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+            node 995008 [010] 75654.390361:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.390640:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.390649:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.390662:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.390716:       sched:sched_waking: comm=kworker/u24:4 pid=994786 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.390725:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=kworker/u24:4 next_pid=994786 next_prio=120
+ kworker/u24:4-e 994786 [010] 75654.390756:       sched:sched_switch: prev_comm=kworker/u24:4 prev_pid=994786 prev_prio=120 prev_state=I ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016457 [005] 75654.390756:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.390764:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.390813:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.391014:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.391022:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.391040:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.391322:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.391325:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016438 [003] 75654.391413:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.391427:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.391505:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.391713:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.391723:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.391737:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.392107:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/10 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.392219:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=010
+         swapper     0 [010] 75654.392228:       sched:sched_switch: prev_comm=swapper/10 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.392375:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/10 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.392434:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=010
+         swapper     0 [010] 75654.392441:       sched:sched_switch: prev_comm=swapper/10 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016438 [003] 75654.392551:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.392564:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.392646:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016438 [003] 75654.392654:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.392663:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.392699:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.392788:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.392797:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.392810:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.392964:       sched:sched_waking: comm=cyber_recorder pid=1019686 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.392976:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=cyber_recorder next_pid=1019686 next_prio=120
+  cyber_recorder 1019686 [010] 75654.393025:       sched:sched_switch: prev_comm=cyber_recorder prev_pid=1019686 prev_prio=120 prev_state=R+ ==> next_comm=node next_pid=995008 next_prio=120
+       mainboard 1015654 [010] 75654.393090:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=cyber_recorder next_pid=1019686 next_prio=120
+  cyber_recorder 1019686 [010] 75654.393100:       sched:sched_switch: prev_comm=cyber_recorder prev_pid=1019686 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.393369:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.393372:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016438 [003] 75654.393781:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.393796:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.393856:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.393863:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.393869:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016438 [003] 75654.393871:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016499 [010] 75654.393876:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.393907:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016438 [003] 75654.393913:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016499 [010] 75654.393921:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+       mainboard 1016438 [003] 75654.393953:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+            node 995008 [010] 75654.393955:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.393964:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+       mainboard 1016438 [003] 75654.393992:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+            node 995008 [010] 75654.393992:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.393999:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.394022:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.394030:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016438 [003] 75654.394031:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.394036:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.394071:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016438 [003] 75654.394073:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.394080:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.394128:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016467 next_prio=120
+       mainboard 1016438 [003] 75654.394148:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016464 [010] 75654.394156:       sched:sched_switch: prev_comm=mainboard prev_pid=1016464 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.394227:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016472 next_prio=120
+         kswapd0   136 [008] 75654.394237:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+  dreamview_plus 1015908 [010] 75654.394256:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016464 next_prio=120
+       mainboard 1016464 [010] 75654.394266:       sched:sched_switch: prev_comm=mainboard prev_pid=1016464 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016471 [008] 75654.394267:       sched:sched_switch: prev_comm=mainboard prev_pid=1016471 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.394704:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.394711:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.395014:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.395023:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.395042:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.395081:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.395090:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.395104:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016417 [001] 75654.395139:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.395151:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.395210:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.395324:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.395327:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016438 [001] 75654.395339:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.395352:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.395418:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016438 [001] 75654.395433:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.395442:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.395496:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016644 [007] 75654.395563:       sched:sched_waking: comm=mainboard pid=1016466 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.395575:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016466 next_prio=120
+       mainboard 1016554 [003] 75654.395599:       sched:sched_waking: comm=mainboard pid=1016421 prio=120 target_cpu=010
+       mainboard 1016466 [010] 75654.395616:       sched:sched_switch: prev_comm=mainboard prev_pid=1016466 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016473 next_prio=120
+       mainboard 1016422 [010] 75654.395643:       sched:sched_switch: prev_comm=mainboard prev_pid=1016422 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016421 next_prio=120
+       mainboard 1016421 [010] 75654.395652:       sched:sched_switch: prev_comm=mainboard prev_pid=1016421 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+  cyber_recorder 1019700 [006] 75654.395702:       sched:sched_waking: comm=cyber_recorder pid=1019632 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.395713:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=cyber_recorder next_pid=1019632 next_prio=120
+  cyber_recorder 1019632 [010] 75654.395809:       sched:sched_switch: prev_comm=cyber_recorder prev_pid=1019632 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.396155:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.396163:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.396169:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.396185:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+         kswapd0   136 [008] 75654.396210:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.396214:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+  dreamview_plus 1015908 [010] 75654.396224:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+  dreamview_plus 1015831 [009] 75654.396282:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.396291:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.396320:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016438 [003] 75654.396529:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.396542:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.396646:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.397014:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.397024:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.397042:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.397091:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.397095:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.397234:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.397242:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.397253:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.398090:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.398094:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.398190:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.398198:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.398218:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.398304:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.398314:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.398331:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.399013:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.399023:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.399051:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.399117:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.399120:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.399382:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.399391:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.399413:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.400163:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.400167:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.400192:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.400201:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.400222:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.400461:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.400471:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.400484:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016438 [003] 75654.400837:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.400848:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.401016:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+            node 995008 [010] 75654.401043:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.401063:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.401295:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.401300:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.401541:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.401551:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.401568:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016438 [001] 75654.401965:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.401974:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=node next_pid=995008 next_prio=120
+       mainboard 1016644 [007] 75654.402047:       sched:sched_waking: comm=mainboard pid=1016464 prio=120 target_cpu=010
+            node 995008 [010] 75654.402087:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016467 next_prio=120
+       mainboard 1016472 [010] 75654.402116:       sched:sched_switch: prev_comm=mainboard prev_pid=1016472 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016464 next_prio=120
+       mainboard 1016464 [010] 75654.402122:       sched:sched_switch: prev_comm=mainboard prev_pid=1016464 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.402196:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.402204:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.402223:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.402290:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+       mainboard 1016471 [008] 75654.402309:       sched:sched_switch: prev_comm=mainboard prev_pid=1016471 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.402618:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.402628:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.402647:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016644 [007] 75654.402735:       sched:sched_waking: comm=mainboard pid=1016466 prio=120 target_cpu=010
+       mainboard 1016644 [007] 75654.402739:       sched:sched_waking: comm=mainboard pid=1016473 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.402742:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016466 next_prio=120
+       mainboard 1016466 [010] 75654.402772:       sched:sched_switch: prev_comm=mainboard prev_pid=1016466 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016473 next_prio=120
+       mainboard 1016473 [010] 75654.402779:       sched:sched_switch: prev_comm=mainboard prev_pid=1016473 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.403013:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.403019:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.403043:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016438 [002] 75654.403154:       sched:sched_waking: comm=node pid=995008 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.403166:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=node next_pid=995008 next_prio=120
+            node 995008 [010] 75654.403277:       sched:sched_switch: prev_comm=node prev_pid=995008 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.403502:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+  cyber_recorder 1019636 [008] 75654.403595:       sched:sched_switch: prev_comm=cyber_recorder prev_pid=1019636 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.403697:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.403709:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.403727:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.404196:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.404201:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.404224:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.404777:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.404789:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.404808:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016554 [002] 75654.404947:       sched:sched_waking: comm=mainboard pid=1016422 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.404953:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016422 next_prio=120
+       mainboard 1016422 [010] 75654.405004:       sched:sched_switch: prev_comm=mainboard prev_pid=1016422 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016421 next_prio=120
+       mainboard 1016421 [010] 75654.405012:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016421 [010] 75654.405017:       sched:sched_switch: prev_comm=mainboard prev_pid=1016421 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.405035:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.405859:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.405873:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.405894:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.406195:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.406201:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.406223:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.406726:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=nvgpu_channel_p next_pid=1173 next_prio=120
+ nvgpu_channel_p  1173 [008] 75654.406869:       sched:sched_switch: prev_comm=nvgpu_channel_p prev_pid=1173 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.406942:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+       mainboard 1016506 [010] 75654.406943:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+ kworker/8:2-eve 1014643 [008] 75654.406949:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.406951:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.406972:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.407011:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.407015:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.407036:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.408025:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.408040:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.408061:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.408078:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.408083:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.408182:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.408188:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.408257:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.409019:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.409030:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.409052:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.409109:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+         kswapd0   136 [008] 75654.409110:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.409115:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.409117:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.409135:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.410187:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.410195:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.410199:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+         kswapd0   136 [008] 75654.410199:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.410204:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016499 [010] 75654.410213:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.410230:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.411012:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.411021:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.411043:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.411185:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.411189:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.411263:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.411272:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.411292:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016644 [007] 75654.412013:       sched:sched_waking: comm=mainboard pid=1016467 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.412023:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016467 next_prio=120
+       mainboard 1016467 [010] 75654.412124:       sched:sched_switch: prev_comm=mainboard prev_pid=1016467 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016472 next_prio=120
+       mainboard 1016472 [010] 75654.412132:       sched:sched_switch: prev_comm=mainboard prev_pid=1016472 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016464 next_prio=120
+       mainboard 1016464 [010] 75654.412137:       sched:sched_switch: prev_comm=mainboard prev_pid=1016464 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.412164:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+       mainboard 1016506 [010] 75654.412189:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016471 [008] 75654.412190:       sched:sched_switch: prev_comm=mainboard prev_pid=1016471 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.412195:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.412253:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.412342:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.412353:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.412373:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.413029:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.413039:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.413060:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.413340:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.413347:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.413423:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.413436:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.413458:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016578 [002] 75654.413559:       sched:sched_waking: comm=mainboard pid=1016466 prio=120 target_cpu=010
+       mainboard 1016644 [004] 75654.413578:       sched:sched_waking: comm=mainboard pid=1016467 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.413580:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016466 next_prio=120
+       mainboard 1016466 [010] 75654.413610:       sched:sched_switch: prev_comm=mainboard prev_pid=1016466 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016473 next_prio=120
+       mainboard 1016473 [010] 75654.413617:       sched:sched_switch: prev_comm=mainboard prev_pid=1016473 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016467 next_prio=120
+       mainboard 1016467 [010] 75654.413622:       sched:sched_switch: prev_comm=mainboard prev_pid=1016467 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.414191:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.414201:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.414221:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.414363:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.414367:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.414508:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.414519:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.414538:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016554 [001] 75654.414899:       sched:sched_waking: comm=mainboard pid=1016422 prio=120 target_cpu=010
+       mainboard 1016554 [001] 75654.414903:       sched:sched_waking: comm=mainboard pid=1016421 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.414907:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016422 next_prio=120
+       mainboard 1016422 [010] 75654.414934:       sched:sched_switch: prev_comm=mainboard prev_pid=1016422 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016421 next_prio=120
+       mainboard 1016421 [010] 75654.414972:       sched:sched_switch: prev_comm=mainboard prev_pid=1016421 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.415017:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.415024:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.415044:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.415379:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.415384:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.415590:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.415603:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.415624:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.416190:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.416197:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.416223:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.416369:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.416373:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.416676:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.416688:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.416705:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.417012:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.417016:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.417034:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.417285:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.417288:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.417753:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.417764:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.417776:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.418188:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.418191:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.418244:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.418824:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.418831:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.418841:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.418888:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=ksoftirqd/8 next_pid=54 next_prio=120
+       mainboard 1016506 [010] 75654.419011:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.419014:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.419027:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.419890:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.419897:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.419906:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+     ksoftirqd/8    54 [008] 75654.420027:       sched:sched_switch: prev_comm=ksoftirqd/8 prev_pid=54 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.420188:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.420193:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.420205:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.420957:       sched:sched_waking: comm=mainboard pid=1016499 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.420965:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016499 next_prio=120
+       mainboard 1016499 [010] 75654.420977:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.421010:       sched:sched_waking: comm=mainboard pid=1015654 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.421014:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015654 next_prio=120
+       mainboard 1015654 [010] 75654.421026:       sched:sched_switch: prev_comm=mainboard prev_pid=1015654 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.421596:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.421599:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016644 [004] 75654.421963:       sched:sched_waking: comm=mainboard pid=1016472 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.421972:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016472 next_prio=120
+       mainboard 1016461 [009] 75654.422023:       sched:sched_waking: comm=mainboard pid=1016472 prio=120 target_cpu=010
+       mainboard 1016472 [010] 75654.422023:       sched:sched_switch: prev_comm=mainboard prev_pid=1016472 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016464 next_prio=120
+       mainboard 1016499 [010] 75654.422049:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016472 next_prio=120
+       mainboard 1016472 [010] 75654.422058:       sched:sched_switch: prev_comm=mainboard prev_pid=1016472 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [010] 75654.422188:       sched:sched_waking: comm=dreamview_plus pid=1015908 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.422192:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dreamview_plus next_pid=1015908 next_prio=120
+  dreamview_plus 1015908 [010] 75654.422204:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1015908 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.422343:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.422346:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [010] 75654.422688:       sched:sched_waking: comm=kworker/10:2 pid=571684 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.422692:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=kworker/10:2 next_pid=571684 next_prio=120
+ kworker/10:2-mm 571684 [010] 75654.422701:       sched:sched_switch: prev_comm=kworker/10:2 prev_pid=571684 prev_prio=120 prev_state=I ==> next_comm=mainboard next_pid=1016506 next_prio=120
+ kworker/u24:0-e 879972 [011] 75654.422703:       sched:sched_waking: comm=kworker/u24:4 pid=994786 prio=120 target_cpu=010
+       mainboard 1016506 [010] 75654.422709:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=kworker/u24:4 next_pid=994786 next_prio=120
+         kswapd0   136 [008] 75654.423267:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.423270:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+ kworker/u24:4-e 994786 [010] 75654.423943:       sched:sched_switch: prev_comm=kworker/u24:4 prev_pid=994786 prev_prio=120 prev_state=I ==> next_comm=mainboard next_pid=1015654 next_prio=120
+         kswapd0   136 [008] 75654.424076:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.424078:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.424842:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.424845:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.425640:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.425642:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.426418:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.426421:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         swapper     0 [001] 75654.426689: sched:sched_migrate_task: comm=mainboard pid=1016506 prio=120 orig_cpu=10 dest_cpu=1
+  dreamview_plus 1015908 [001] 75654.426771:       sched:sched_waking: comm=mainboard pid=1015652 prio=120 target_cpu=001
+       mainboard 1016499 [001] 75654.426825:       sched:sched_switch: prev_comm=mainboard prev_pid=1016499 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1015652 next_prio=120
+       mainboard 1015652 [001] 75654.426833:       sched:sched_switch: prev_comm=mainboard prev_pid=1015652 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [001] 75654.426905:       sched:sched_waking: comm=mainboard pid=1015652 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.426908:       sched:sched_waking: comm=mainboard pid=1016438 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.426911:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015652 next_prio=120
+       mainboard 1015652 [001] 75654.426917:       sched:sched_switch: prev_comm=mainboard prev_pid=1015652 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016438 next_prio=120
+       mainboard 1016438 [001] 75654.426926:       sched:sched_switch: prev_comm=mainboard prev_pid=1016438 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [001] 75654.427014:       sched:sched_waking: comm=mainboard pid=1015652 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.427015: sched:sched_migrate_task: comm=mainboard pid=1015652 prio=120 orig_cpu=1 dest_cpu=2
+         kswapd0   136 [008] 75654.427738:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.427740:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.428959:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.428961:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.429880:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.429882:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.430812:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.430815:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         swapper     0 [000] 75654.433965:       sched:sched_waking: comm=dds.udp.27447 pid=1017016 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.433978:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dds.udp.27447 next_pid=1017016 next_prio=120
+   dds.udp.27447 1017016 [001] 75654.434137:       sched:sched_switch: prev_comm=dds.udp.27447 prev_pid=1017016 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+     ksoftirqd/0    12 [000] 75654.434148:       sched:sched_waking: comm=dds.udp.27447 pid=1017016 prio=120 target_cpu=001
+     ksoftirqd/0    12 [000] 75654.434150: sched:sched_migrate_task: comm=dds.udp.27447 pid=1017016 prio=120 orig_cpu=1 dest_cpu=0
+         kswapd0   136 [008] 75654.434394:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.434398:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.434842:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=ksoftirqd/8 next_pid=54 next_prio=120
+       mainboard 1016554 [002] 75654.434935:       sched:sched_waking: comm=mainboard pid=1016422 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.434940:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016422 next_prio=120
+       mainboard 1016422 [001] 75654.434969:       sched:sched_switch: prev_comm=mainboard prev_pid=1016422 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+     ksoftirqd/8    54 [008] 75654.435745:       sched:sched_switch: prev_comm=ksoftirqd/8 prev_pid=54 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.436554:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.436557:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.436587:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016339 next_prio=120
+       mainboard 1016506 [001] 75654.440492:       sched:sched_waking: comm=kswapd0 pid=136 prio=120 target_cpu=008
+         swapper     0 [008] 75654.440499:       sched:sched_switch: prev_comm=swapper/8 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.442758:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.442765:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.443504:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.443506:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.444546:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.444549:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.445473:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+       mainboard 1016419 [008] 75654.445501:       sched:sched_switch: prev_comm=mainboard prev_pid=1016419 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.446370:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.446373:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.447095:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.447097:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.447912:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.447915:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.449035:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.449037:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.450037:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.450039:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.450695:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.450705:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.452279:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.452282:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.453389:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.453392:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.454471:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.454473:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.455439:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.455442:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.456196:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.456199:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.457009:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.457012:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.457944:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.457947:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.459003:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.459007:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.459789:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.459792:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.460565:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.460567:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.461575:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.461577:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.463712:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.463716:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.464562:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.464565:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.465584:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.465587:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.467022:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.467025:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.468213:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.468217:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+   dds.udp.27457 1019705 [000] 75654.468992:       sched:sched_waking: comm=dds.udp.27443 pid=1016739 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.469004:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=dds.udp.27443 next_pid=1016739 next_prio=120
+         kswapd0   136 [008] 75654.469217:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.469222:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+   dds.udp.27443 1016739 [001] 75654.469261:       sched:sched_waking: comm=dds.ev.1 pid=1016735 prio=120 target_cpu=002
+   dds.udp.27443 1016739 [001] 75654.469263: sched:sched_migrate_task: comm=dds.ev.1 pid=1016735 prio=120 orig_cpu=2 dest_cpu=1
+   dds.udp.27443 1016739 [001] 75654.469278:       sched:sched_switch: prev_comm=dds.udp.27443 prev_pid=1016739 prev_prio=120 prev_state=S ==> next_comm=dds.ev.1 next_pid=1016735 next_prio=120
+        dds.ev.1 1016735 [001] 75654.469290:       sched:sched_switch: prev_comm=dds.ev.1 prev_pid=1016735 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.470284:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.470287:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.471196:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.471198:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.472034:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.472036:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.472902:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.472905:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.473629:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.473632:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [001] 75654.474302:       sched:sched_waking: comm=dds.ev.1 pid=1016735 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.474313:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=dds.ev.1 next_pid=1016735 next_prio=120
+        dds.ev.1 1016735 [001] 75654.474387:       sched:sched_switch: prev_comm=dds.ev.1 prev_pid=1016735 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.474475:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.474477:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.474833:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=ksoftirqd/8 next_pid=54 next_prio=120
+     ksoftirqd/8    54 [008] 75654.475438:       sched:sched_switch: prev_comm=ksoftirqd/8 prev_pid=54 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+   dds.udp.27447 1017016 [003] 75654.476282:       sched:sched_waking: comm=mainboard pid=1016507 prio=120 target_cpu=006
+         swapper     0 [006] 75654.476294:       sched:sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016507 next_prio=120
+       mainboard 1016507 [006] 75654.476502:       sched:sched_switch: prev_comm=mainboard prev_pid=1016507 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016505 next_prio=120
+         kswapd0   136 [008] 75654.477733:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.477738:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.478565:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.478568:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.479399:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.479402:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016505 [006] 75654.479549:       sched:sched_waking: comm=mainboard pid=1016507 prio=120 target_cpu=006
+       mainboard 1016505 [006] 75654.479555: sched:sched_migrate_task: comm=mainboard pid=1016507 prio=120 orig_cpu=6 dest_cpu=7
+         swapper     0 [007] 75654.479560:       sched:sched_switch: prev_comm=swapper/7 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016507 next_prio=120
+       mainboard 1016507 [007] 75654.479645:       sched:sched_switch: prev_comm=mainboard prev_pid=1016507 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1017018 next_prio=120
+         kswapd0   136 [008] 75654.480226:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.480229:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.481322:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.481324:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.482174:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.482176:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016468 [007] 75654.482686:       sched:sched_waking: comm=mainboard pid=1016507 prio=120 target_cpu=007
+         kswapd0   136 [008] 75654.483035:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.483038:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016469 [007] 75654.483389:       sched:sched_switch: prev_comm=mainboard prev_pid=1016469 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016507 next_prio=120
+       mainboard 1016507 [007] 75654.483470:       sched:sched_switch: prev_comm=mainboard prev_pid=1016507 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016538 next_prio=120
+         kswapd0   136 [008] 75654.483816:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.483818:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.484836:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.484838:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.485825:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+   dds.udp.27453 1019684 [008] 75654.486213:       sched:sched_switch: prev_comm=dds.udp.27453 prev_pid=1019684 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         swapper     0 [007] 75654.486487:       sched:sched_waking: comm=mainboard pid=1016507 prio=120 target_cpu=007
+         swapper     0 [007] 75654.486495:       sched:sched_switch: prev_comm=swapper/7 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016507 next_prio=120
+       mainboard 1016507 [007] 75654.486724:       sched:sched_waking: comm=mainboard pid=1016504 prio=120 target_cpu=007
+       mainboard 1016507 [007] 75654.486816:       sched:sched_switch: prev_comm=mainboard prev_pid=1016507 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016504 next_prio=120
+       mainboard 1016504 [007] 75654.486833:       sched:sched_switch: prev_comm=mainboard prev_pid=1016504 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016538 next_prio=120
+         kswapd0   136 [008] 75654.487073:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.487077:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.487847:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.487850:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.489932:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.489936:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.490869:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=ksoftirqd/8 next_pid=54 next_prio=120
+        dds.ev.0 1015639 [008] 75654.491367:       sched:sched_switch: prev_comm=dds.ev.0 prev_pid=1015639 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.491405:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.491407:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.492458:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+        dds.ev.0 1015886 [008] 75654.492485:       sched:sched_switch: prev_comm=dds.ev.0 prev_pid=1015886 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.493367:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.493371:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.494165:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.494168:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.494957:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.494960:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.495948:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.495950:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.496644:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.496646:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.497444:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+   dds.udp.27400 1016528 [008] 75654.497534:       sched:sched_switch: prev_comm=dds.udp.27400 prev_pid=1016528 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.498373:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+   dds.udp.27453 1019684 [008] 75654.498474:       sched:sched_switch: prev_comm=dds.udp.27453 prev_pid=1019684 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.499323:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.499326:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.500521:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.500523:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.502810:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=ksoftirqd/8 next_pid=54 next_prio=120
+     ksoftirqd/8    54 [008] 75654.503318:       sched:sched_switch: prev_comm=ksoftirqd/8 prev_pid=54 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.503634:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.503638:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.504746:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.504749:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.505536:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.505538:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.506360:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.506362:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.506693:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.506698:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.508258:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.508260:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.509928:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.509930:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.512243:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.512247:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.513957:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.513960:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.517201:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.517206:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016506 [001] 75654.518683:       sched:sched_waking: comm=kworker/1:0 pid=995504 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.518689:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=kworker/1:0 next_pid=995504 next_prio=120
+ kworker/1:0-mm_ 995504 [001] 75654.518701:       sched:sched_switch: prev_comm=kworker/1:0 prev_pid=995504 prev_prio=120 prev_state=I ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [008] 75654.518884:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=ksoftirqd/8 next_pid=54 next_prio=120
+     ksoftirqd/8    54 [008] 75654.519613:       sched:sched_switch: prev_comm=ksoftirqd/8 prev_pid=54 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.520223:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.520227:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.522317:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.522319:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.523934:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.523936:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.526166:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.526168:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.528102:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.528105:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.531382:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.531385:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.533746:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.533749:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.534880:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=ksoftirqd/8 next_pid=54 next_prio=120
+     ksoftirqd/8    54 [008] 75654.535121:       sched:sched_switch: prev_comm=ksoftirqd/8 prev_pid=54 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.536697:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.536701:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.537693:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=S ==> next_comm=swapper/8 next_pid=0 next_prio=120
+       mainboard 1016506 [001] 75654.537729:       sched:sched_waking: comm=kswapd0 pid=136 prio=120 target_cpu=008
+         swapper     0 [008] 75654.537737:       sched:sched_switch: prev_comm=swapper/8 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.538179:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.538182:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.539498:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.539501:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.541796:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.541799:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.543920:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.543925:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.547180:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.547183:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.548688:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.548692:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.550100:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.550102:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.551504:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.551507:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.552884:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.552888:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.554347:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.554350:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.554882:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=ksoftirqd/8 next_pid=54 next_prio=120
+     ksoftirqd/8    54 [008] 75654.555092:       sched:sched_switch: prev_comm=ksoftirqd/8 prev_pid=54 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.557760:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.557763:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.559369:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.559374:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.560870:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.560873:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.562312:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.562315:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.562698:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.562703:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.563684:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.563687:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.565107:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/8:2 next_pid=1014643 next_prio=120
+ kworker/8:2-eve 1014643 [008] 75654.565109:       sched:sched_switch: prev_comm=kworker/8:2 prev_pid=1014643 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [008] 75654.565838:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=S ==> next_comm=swapper/8 next_pid=0 next_prio=120
+   dds.udp.27447 1017016 [002] 75654.565849:       sched:sched_waking: comm=mainboard pid=1016510 prio=120 target_cpu=010
+   dds.udp.27447 1017016 [002] 75654.565857: sched:sched_migrate_task: comm=mainboard pid=1016510 prio=120 orig_cpu=10 dest_cpu=8
+         swapper     0 [008] 75654.565868:       sched:sched_switch: prev_comm=swapper/8 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016510 next_prio=120
+       mainboard 1016506 [001] 75654.568481:       sched:sched_waking: comm=kswapd0 pid=136 prio=120 target_cpu=008
+       mainboard 1016506 [001] 75654.568486: sched:sched_migrate_task: comm=kswapd0 pid=136 prio=120 orig_cpu=8 dest_cpu=9
+         swapper     0 [009] 75654.568494:       sched:sched_switch: prev_comm=swapper/9 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.569141:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.569149:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016513 [005] 75654.569580:       sched:sched_waking: comm=mainboard pid=1016510 prio=120 target_cpu=008
+       mainboard 1016510 [008] 75654.569585:       sched:sched_switch: prev_comm=mainboard prev_pid=1016510 prev_prio=120 prev_state=S ==> next_comm=swapper/8 next_pid=0 next_prio=120
+         swapper     0 [008] 75654.569595:       sched:sched_switch: prev_comm=swapper/8 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016510 next_prio=120
+       mainboard 1016510 [008] 75654.569659:       sched:sched_switch: prev_comm=mainboard prev_pid=1016510 prev_prio=120 prev_state=S ==> next_comm=swapper/8 next_pid=0 next_prio=120
+         kswapd0   136 [009] 75654.571971:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.571977:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.573590:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.573593:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+   dds.udp.27429 1016551 [000] 75654.575046:       sched:sched_waking: comm=mainboard pid=1016395 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.575059:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016395 next_prio=120
+       mainboard 1016395 [001] 75654.575110:       sched:sched_switch: prev_comm=mainboard prev_pid=1016395 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [009] 75654.575112:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.575115:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1017018 [007] 75654.575828:       sched:sched_waking: comm=mainboard pid=1016507 prio=120 target_cpu=007
+       mainboard 1017018 [007] 75654.575840:       sched:sched_switch: prev_comm=mainboard prev_pid=1017018 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016507 next_prio=120
+       mainboard 1016507 [007] 75654.575892:       sched:sched_switch: prev_comm=mainboard prev_pid=1016507 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016457 next_prio=120
+         kswapd0   136 [009] 75654.576644:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+       mainboard 1015614 [009] 75654.576667:       sched:sched_switch: prev_comm=mainboard prev_pid=1015614 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.578152:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.578157:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.579642:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.579645:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.581093:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.581096:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1015654 [003] 75654.582717:       sched:sched_waking: comm=mainboard pid=1015612 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.582726:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015612 next_prio=120
+       mainboard 1015606 [008] 75654.582759:       sched:sched_waking: comm=mainboard pid=1015612 prio=120 target_cpu=001
+       mainboard 1015612 [001] 75654.582761:       sched:sched_switch: prev_comm=mainboard prev_pid=1015612 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [001] 75654.582775:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015612 next_prio=120
+       mainboard 1015612 [001] 75654.582785:       sched:sched_switch: prev_comm=mainboard prev_pid=1015612 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+         kswapd0   136 [009] 75654.584269:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+  cyber_recorder 1019634 [009] 75654.584292:       sched:sched_switch: prev_comm=cyber_recorder prev_pid=1019634 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.585728:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.585733:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.586993:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.586996:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.588253:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.588256:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1016512 [007] 75654.588495:       sched:sched_waking: comm=mainboard pid=1016504 prio=120 target_cpu=007
+       mainboard 1016512 [007] 75654.588502: sched:sched_migrate_task: comm=mainboard pid=1016504 prio=120 orig_cpu=7 dest_cpu=6
+         swapper     0 [006] 75654.588507:       sched:sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016504 next_prio=120
+       mainboard 1016512 [007] 75654.588558:       sched:sched_waking: comm=mainboard pid=1016504 prio=120 target_cpu=006
+       mainboard 1016504 [006] 75654.588561:       sched:sched_switch: prev_comm=mainboard prev_pid=1016504 prev_prio=120 prev_state=R ==> next_comm=swapper/6 next_pid=0 next_prio=120
+         swapper     0 [006] 75654.588568:       sched:sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016504 next_prio=120
+       mainboard 1016504 [006] 75654.588704:       sched:sched_switch: prev_comm=mainboard prev_pid=1016504 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016489 next_prio=120
+         kswapd0   136 [009] 75654.589493:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.589495:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.590795:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.590798:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.592772:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.592777:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.594106:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.594109:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.595494:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.595497:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.596876:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.596878:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.598417:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.598419:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.599724:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.599726:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.601415:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.601417:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.604305:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.604310:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.605770:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.605773:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.607363:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.607365:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.608803:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.608805:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.610497:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.610499:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.612180:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.612183:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.613851:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.613853:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.616804:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.616807:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.618488:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.618491:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.620041:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.620044:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.621668:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.621670:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.623343:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.623346:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.624609:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.624611:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.626509:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.626511:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.629660:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.629663:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.631324:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.631327:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.633189:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.633194:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.635299:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.635304:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.637466:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.637469:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.639301:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.639304:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.641073:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=dds.udp.27434 next_pid=1016630 next_prio=120
+   dds.udp.27400 1016550 [009] 75654.641213:       sched:sched_switch: prev_comm=dds.udp.27400 prev_pid=1016550 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.641738:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.641744:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.649055:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.649060:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.650441:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.650444:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.652415:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.652418:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.653780:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.653784:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.655411:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.655414:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.656950:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.656953:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.658290:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.658294:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.661251:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.661256:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.663407:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.663414:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.665303:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.665307:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.667366:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.667369:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.668865:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.668868:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.670047:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=S ==> next_comm=swapper/9 next_pid=0 next_prio=120
+            node 995008 [000] 75654.671829:       sched:sched_waking: comm=kswapd0 pid=136 prio=120 target_cpu=009
+         swapper     0 [009] 75654.671836:       sched:sched_switch: prev_comm=swapper/9 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.672444:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.672458:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.673542:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.673548:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+       mainboard 1017018 [006] 75654.675351:       sched:sched_waking: comm=mainboard pid=1016510 prio=120 target_cpu=008
+       mainboard 1017018 [006] 75654.675362: sched:sched_migrate_task: comm=mainboard pid=1016510 prio=120 orig_cpu=8 dest_cpu=10
+         swapper     0 [010] 75654.675371:       sched:sched_switch: prev_comm=swapper/10 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016510 next_prio=120
+       mainboard 1016510 [010] 75654.675491:       sched:sched_switch: prev_comm=mainboard prev_pid=1016510 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016459 next_prio=120
+         kswapd0   136 [009] 75654.675643:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+       mainboard 1016382 [009] 75654.675670:       sched:sched_switch: prev_comm=mainboard prev_pid=1016382 prev_prio=120 prev_state=S ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.678931:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.678938:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.680834:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.680837:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.682224:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.682227:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.684431:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=R+ ==> next_comm=kworker/9:0 next_pid=1014972 next_prio=120
+ kworker/9:0-mm_ 1014972 [009] 75654.684435:       sched:sched_switch: prev_comm=kworker/9:0 prev_pid=1014972 prev_prio=120 prev_state=I ==> next_comm=kswapd0 next_pid=136 next_prio=120
+         kswapd0   136 [009] 75654.685450:       sched:sched_switch: prev_comm=kswapd0 prev_pid=136 prev_prio=120 prev_state=S ==> next_comm=swapper/9 next_pid=0 next_prio=120
+       mainboard 1016506 [001] 75654.685529:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+       mainboard 1016508 [007] 75654.687409:       sched:sched_waking: comm=mainboard pid=1016507 prio=120 target_cpu=007
+       mainboard 1016508 [007] 75654.687416: sched:sched_migrate_task: comm=mainboard pid=1016507 prio=120 orig_cpu=7 dest_cpu=4
+         swapper     0 [004] 75654.687506:       sched:sched_switch: prev_comm=swapper/4 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016507 next_prio=120
+       mainboard 1016507 [004] 75654.687524:       sched:sched_switch: prev_comm=mainboard prev_pid=1016507 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1017018 next_prio=120
+       mainboard 1016513 [004] 75654.689128:       sched:sched_waking: comm=mainboard pid=1016504 prio=120 target_cpu=006
+         swapper     0 [006] 75654.689140:       sched:sched_switch: prev_comm=swapper/6 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016504 next_prio=120
+       mainboard 1016504 [006] 75654.689338:       sched:sched_switch: prev_comm=mainboard prev_pid=1016504 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1017018 next_prio=120
+         swapper     0 [001] 75654.705327:       sched:sched_waking: comm=cyber_recorder pid=1019707 prio=120 target_cpu=001
+         swapper     0 [001] 75654.705327: sched:sched_migrate_task: comm=cyber_recorder pid=1019707 prio=120 orig_cpu=1 dest_cpu=3
+ irq/134-host_sy   177 [000] 75654.705404:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=001
+         swapper     0 [003] 75654.705405: sched:sched_migrate_task: comm=cyber_recorder pid=1019707 prio=120 orig_cpu=3 dest_cpu=1
+         swapper     0 [001] 75654.705409:       sched:sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=cyber_recorder next_pid=1019707 next_prio=120
+  cyber_recorder 1019707 [001] 75654.705415:       sched:sched_switch: prev_comm=cyber_recorder prev_pid=1019707 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [001] 75654.705437:       sched:sched_waking: comm=mainboard pid=1016715 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.705442:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016715 next_prio=120
+       mainboard 1016715 [001] 75654.705449:       sched:sched_switch: prev_comm=mainboard prev_pid=1016715 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [001] 75654.705515:       sched:sched_waking: comm=cyber_recorder pid=1019707 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.705521:       sched:sched_waking: comm=mainboard pid=1016715 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.705529:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016715 next_prio=120
+       mainboard 1016715 [001] 75654.705538:       sched:sched_switch: prev_comm=mainboard prev_pid=1016715 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [001] 75654.705638:       sched:sched_waking: comm=mainboard pid=1016715 prio=120 target_cpu=001
+       mainboard 1016506 [001] 75654.705801:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.706023:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=001
+         swapper     0 [001] 75654.706029:       sched:sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [001] 75654.706297:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+       mainboard 1016553 [002] 75654.706305:       sched:sched_switch: prev_comm=mainboard prev_pid=1016553 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1015652 next_prio=120
+       mainboard 1015652 [002] 75654.706309:       sched:sched_switch: prev_comm=mainboard prev_pid=1015652 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.706311:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=001
+ irq/134-host_sy   177 [000] 75654.706312: sched:sched_migrate_task: comm=mainboard pid=1016506 prio=120 orig_cpu=1 dest_cpu=2
+         swapper     0 [002] 75654.706317:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.706393:       sched:sched_waking: comm=mainboard pid=1015652 prio=120 target_cpu=002
+       mainboard 1016506 [002] 75654.706398:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1015652 next_prio=120
+       mainboard 1015652 [002] 75654.706407:       sched:sched_switch: prev_comm=mainboard prev_pid=1015652 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.706495:       sched:sched_waking: comm=mainboard pid=1015652 prio=120 target_cpu=002
+       mainboard 1016506 [002] 75654.706500:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1015652 next_prio=120
+       mainboard 1015652 [002] 75654.706511:       sched:sched_switch: prev_comm=mainboard prev_pid=1015652 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.706609:       sched:sched_waking: comm=mainboard pid=1015652 prio=120 target_cpu=002
+       mainboard 1016506 [002] 75654.706611: sched:sched_migrate_task: comm=mainboard pid=1015652 prio=120 orig_cpu=2 dest_cpu=0
+       mainboard 1016506 [002] 75654.707352:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.707374:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=002
+         swapper     0 [002] 75654.707380:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.707557:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.707607:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=002
+         swapper     0 [002] 75654.707612:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.707918:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.707990:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=002
+         swapper     0 [002] 75654.707995:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.708242:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.708246:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=002
+         swapper     0 [002] 75654.708252:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.708420:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.708447:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=002
+         swapper     0 [002] 75654.708452:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.708742:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.708783:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=002
+         swapper     0 [002] 75654.708788:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.709017:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.709032:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=002
+         swapper     0 [001] 75654.709033: sched:sched_migrate_task: comm=mainboard pid=1016715 prio=120 orig_cpu=1 dest_cpu=2
+         swapper     0 [002] 75654.709038:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016715 next_prio=120
+       mainboard 1016715 [002] 75654.709048:       sched:sched_switch: prev_comm=mainboard prev_pid=1016715 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.709147:       sched:sched_waking: comm=mainboard pid=1016715 prio=120 target_cpu=002
+       mainboard 1016506 [002] 75654.709148: sched:sched_migrate_task: comm=mainboard pid=1016715 prio=120 orig_cpu=2 dest_cpu=1
+       mainboard 1016506 [002] 75654.709259:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.709500:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=002
+         swapper     0 [002] 75654.709505:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.709565:       sched:sched_waking: comm=mainboard pid=1016553 prio=120 target_cpu=002
+       mainboard 1016506 [002] 75654.709579:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016553 next_prio=120
+       mainboard 1016553 [002] 75654.709590:       sched:sched_switch: prev_comm=mainboard prev_pid=1016553 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.709688:       sched:sched_waking: comm=mainboard pid=1016553 prio=120 target_cpu=002
+       mainboard 1016506 [002] 75654.709690: sched:sched_migrate_task: comm=mainboard pid=1016553 prio=120 orig_cpu=2 dest_cpu=0
+       mainboard 1016506 [002] 75654.710153:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.710519:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=002
+         swapper     0 [002] 75654.710525:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.710598:       sched:sched_waking: comm=mainboard pid=1016741 prio=120 target_cpu=002
+       mainboard 1016506 [002] 75654.710605:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016741 next_prio=120
+       mainboard 1016741 [002] 75654.710613:       sched:sched_switch: prev_comm=mainboard prev_pid=1016741 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.710677:       sched:sched_waking: comm=mainboard pid=1016741 prio=120 target_cpu=002
+       mainboard 1016506 [002] 75654.710690:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016741 next_prio=120
+       mainboard 1016741 [002] 75654.710698:       sched:sched_switch: prev_comm=mainboard prev_pid=1016741 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.710798:       sched:sched_waking: comm=mainboard pid=1016741 prio=120 target_cpu=002
+       mainboard 1016506 [002] 75654.710806:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016741 next_prio=120
+       mainboard 1016741 [002] 75654.710815:       sched:sched_switch: prev_comm=mainboard prev_pid=1016741 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.710915:       sched:sched_waking: comm=mainboard pid=1016741 prio=120 target_cpu=002
+       mainboard 1016506 [002] 75654.710992:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.711319:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=002
+         swapper     0 [002] 75654.711324:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.711749:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+ irq/134-host_sy   177 [000] 75654.712072:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=002
+         swapper     0 [002] 75654.712077:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [002] 75654.712094:       sched:sched_waking: comm=mainboard pid=1015652 prio=120 target_cpu=002
+       mainboard 1016506 [002] 75654.712101:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1015652 next_prio=120
+       mainboard 1015652 [002] 75654.712108:       sched:sched_switch: prev_comm=mainboard prev_pid=1015652 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016506 next_prio=120

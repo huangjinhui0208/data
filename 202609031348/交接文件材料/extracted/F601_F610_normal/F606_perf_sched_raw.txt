@@ -1,0 +1,11 @@
+   dds.udp.27447 1017016 [001] 75653.066813:       sched:sched_waking: comm=mainboard pid=1016510 prio=120 target_cpu=003
+   dds.udp.27447 1017016 [001] 75653.066824:       sched:sched_waking: comm=mainboard pid=1016507 prio=120 target_cpu=009
+         swapper     0 [003] 75653.066833:       sched:sched_switch: prev_comm=swapper/3 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016510 next_prio=120
+         swapper     0 [009] 75653.066838:       sched:sched_switch: prev_comm=swapper/9 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016507 next_prio=120
+       mainboard 1016507 [009] 75653.066853:       sched:sched_waking: comm=mainboard pid=1016510 prio=120 target_cpu=003
+       mainboard 1016510 [003] 75653.066855:       sched:sched_switch: prev_comm=mainboard prev_pid=1016510 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1017491 next_prio=120
+       mainboard 1017491 [003] 75653.066865:       sched:sched_switch: prev_comm=mainboard prev_pid=1017491 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1016510 next_prio=120
+       mainboard 1016507 [009] 75653.066913:       sched:sched_switch: prev_comm=mainboard prev_pid=1016507 prev_prio=120 prev_state=S ==> next_comm=swapper/9 next_pid=0 next_prio=120
+       mainboard 1016510 [003] 75653.070706:       sched:sched_switch: prev_comm=mainboard prev_pid=1016510 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016398 next_prio=120
+   dds.udp.27455 1019698 [003] 75653.070971:       sched:sched_switch: prev_comm=dds.udp.27455 prev_pid=1019698 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1016510 next_prio=120
+       mainboard 1016510 [003] 75653.071066:       sched:sched_switch: prev_comm=mainboard prev_pid=1016510 prev_prio=120 prev_state=S ==> next_comm=swapper/3 next_pid=0 next_prio=120

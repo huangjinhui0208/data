@@ -1,0 +1,4 @@
+   dds.udp.27447 1017016 [000] 75652.973682:       sched:sched_waking: comm=mainboard pid=1016506 prio=120 target_cpu=000
+   dds.udp.27447 1017016 [000] 75652.973690: sched:sched_migrate_task: comm=mainboard pid=1016506 prio=120 orig_cpu=0 dest_cpu=1
+         swapper     0 [001] 75652.973696:       sched:sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1016506 next_prio=120
+       mainboard 1016506 [001] 75652.973905:       sched:sched_switch: prev_comm=mainboard prev_pid=1016506 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
