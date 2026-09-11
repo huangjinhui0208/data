@@ -117,7 +117,10 @@ def main():
 
     evaluated = [r for r in jobs if r['evaluation_status'] == 'evaluated']
     misses = [r for r in evaluated if r['deadline_miss']]
+    signed_slacks = [r['deadline_budget_ms_expected'] - r['actual_response_ms'] for r in evaluated]
     output_intervals = [r['prediction_output_interval_ms'] for r in jobs if r['prediction_output_interval_ms'] is not None]
+    max_output_interval_job = max((r for r in jobs if r['prediction_output_interval_ms'] is not None),
+                                  key=lambda r: r['prediction_output_interval_ms'])
     assert all(r['deadline_budget_ms_expected'] > 0 for r in evaluated)
     assert all(v > 0 for v in output_intervals)
     write(OUT / 'prediction_jobs_next_fusion_deadline.csv', jobs)
@@ -166,6 +169,10 @@ def main():
               'prediction_output_intervals': len(output_intervals),
               'prediction_output_interval_median_ms': stats.median(output_intervals),
               'prediction_output_interval_p95_ms': quantile(output_intervals, .95),
+              'global_signed_slack_median_ms': stats.median(signed_slacks),
+              'global_signed_slack_p05_ms': quantile(signed_slacks, .05),
+              'prediction_output_interval_max_ms': max_output_interval_job['prediction_output_interval_ms'],
+              'prediction_output_interval_max_frame': int(max_output_interval_job['frame_index']),
               'prediction_jobs_with_skipped_intermediate_fusion': sum((r['fusion_outputs_skipped_before_next_prediction'] or 0) > 0 for r in jobs),
               'f888_deadline_source': {'current_fusion_seq': f888['input_perception_seq'],
                                        'next_real_fusion_seq': f888['deadline_next_fusion_seq'],
