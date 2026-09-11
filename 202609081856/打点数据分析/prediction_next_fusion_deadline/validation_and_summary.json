@@ -1,0 +1,25 @@
+{
+  "prediction_jobs": 1042,
+  "fusion_output_messages": 1142,
+  "evaluated_jobs": 1041,
+  "deadline_misses": 97,
+  "miss_rate": 0.09317963496637849,
+  "continuous_miss_bursts": 24,
+  "longest_miss_burst_jobs": 13,
+  "workload_signatures": 39,
+  "jobs_with_workload_baseline": 1015,
+  "recovered_input_perception_sequences": 4,
+  "prediction_output_intervals": 1040,
+  "prediction_output_interval_median_ms": 138.407456,
+  "prediction_output_interval_p95_ms": 178.44747039999993,
+  "prediction_jobs_with_skipped_intermediate_fusion": 1,
+  "f888_deadline_source": {
+    "current_fusion_seq": "1523",
+    "next_real_fusion_seq": "1524",
+    "next_prediction_input_seq": "1525",
+    "budget_ms": 119.90416,
+    "actual_response_ms": 296.196128,
+    "excess_ms": 176.291968
+  },
+  "validation": "sequence uniqueness, strict Fusion time order, trace_id and release timestamp equality passed"
+}
