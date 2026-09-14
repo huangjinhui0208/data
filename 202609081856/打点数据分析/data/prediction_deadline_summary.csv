@@ -1,0 +1,5 @@
+﻿deadline_name,primary_result,completion_event,deadline_definition,eligible_frames,miss_count,miss_rate,miss_rate_pct,deadline_ms_median,deadline_ms_p99,slack_ms_min,slack_ms_median,max_overrun_ms
+fixed_callback_100ms,True,proc_exit,proc_enter + 100 ms,1041,155,0.148895,14.889529,100.000000,100.000000,-169.131040,74.913760,169.131040
+fixed_full_trace_100ms,False,last traced event (includes async tail),proc_enter + 100 ms,1041,155,0.148895,14.889529,100.000000,100.000000,-169.131040,72.909952,169.131040
+observed_next_input_callback,False,proc_exit,"next observed proc_enter (diagnostic, not an independent requirement)",1040,0,0.000000,0.000000,138.003152,315.059156,0.047296,114.353552,0.000000
+observed_next_input_full_trace,False,last traced event (includes async tail),"next observed proc_enter (diagnostic, not an independent requirement)",1040,0,0.000000,0.000000,138.003152,315.059156,0.047296,109.286192,0.000000

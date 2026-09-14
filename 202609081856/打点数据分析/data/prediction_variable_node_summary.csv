@@ -1,0 +1,4 @@
+﻿node,frames_present,total_calls,median_calls_per_present_frame,max_calls_per_frame,median_total_duration_ms,p95_total_duration_ms,p99_total_duration_ms,max_total_duration_ms,max_frame_index,max_input_perception_seq
+cruise_mlp_inference,620,7233,10.000000,29,73.920304,407.915909,482.085890,738.017856,888,1523
+cyber_taskmanager_notify_task,1041,16656,16,16,0.467680,8.059712,11.995904,15.630784,155,769
+model_cruise_mlp,620,2916,4.000000,11,85.160416,462.861731,554.934404,813.850528,888,1523
