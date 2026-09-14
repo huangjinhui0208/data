@@ -1,0 +1,22 @@
+{
+  "prediction_jobs": 1192,
+  "fusion_output_messages": 1193,
+  "prediction_frames_without_fusion_match": 1,
+  "evaluated_jobs": 1192,
+  "deadline_misses": 0,
+  "miss_rate": 0.0,
+  "continuous_miss_bursts": 0,
+  "longest_miss_burst_jobs": 0,
+  "workload_signatures": 1,
+  "jobs_with_workload_baseline": 1192,
+  "recovered_input_perception_sequences": 0,
+  "prediction_output_intervals": 1192,
+  "prediction_output_interval_median_ms": 99.442512,
+  "prediction_output_interval_p95_ms": 116.89851680000001,
+  "global_signed_slack_median_ms": 93.99276799999998,
+  "global_signed_slack_p05_ms": 82.8087296,
+  "prediction_output_interval_max_ms": 621.16128,
+  "prediction_output_interval_max_frame": 938,
+  "prediction_jobs_with_skipped_intermediate_fusion": 0,
+  "validation": "sequence uniqueness, strict Fusion time order, trace_id and release timestamp equality passed"
+}

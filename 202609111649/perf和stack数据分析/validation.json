@@ -1,0 +1,13 @@
+{
+  "requested_frames": 12,
+  "frames_with_stack_samples": 11,
+  "total_selected_stack_samples": 16,
+  "same_tid_heldout_support": 0.9603841536614646,
+  "alignment_status": "verified",
+  "raw_stack_unchanged": true,
+  "perf_sched_extraction_available": false,
+  "perf_data_bytes": 8577502162,
+  "perf_sched_script_bytes": 11656128084,
+  "perf_sched_map_bytes": 2298477850,
+  "reason": "perf.data and perf_sched_script.txt are empty; sched map task aliases are reused and cannot recover stable TID identity or blocked/runnable states"
+}

@@ -1,0 +1,16 @@
+{
+  "trace_to_sched_offset_s": 0.5091641838662326,
+  "trace_marker_support": 1.0,
+  "stack_offset_intercept_s": -6.837122834520414,
+  "stack_offset_slope": -1.6681115183333657e-05,
+  "stack_reference_s": 1220063.3352909388,
+  "stack_to_trace_training_support": 0.9603841536614646,
+  "stack_to_trace_heldout_support": 0.9603841536614646,
+  "scan_start_s": 1219999.73940016,
+  "scan_end_s": 1220112.641618304,
+  "method": "trace-to-sched same-TID marker fit (100% support); robust affine stack-to-trace fit using dense per-second bins, alternate-sample training and heldout validation; composed into stack-to-sched and revalidated by extraction",
+  "limitation": "Before-only TID identity; composed calibration must pass extract_prediction_perf.py same-TID/same-CPU recheck >=95%.",
+  "recheck_trace_support": 1.0,
+  "recheck_stack_support": 0.9644628099173553,
+  "calibration_source": "D:\\data\\202609111649\\perf\u6821\u51c6\u4e34\u65f6\\verified_calibration.json"
+}

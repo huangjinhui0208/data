@@ -1,0 +1,13 @@
+       mainboard 3772848 [010] 1220002.153739:       sched:sched_waking: comm=mainboard pid=3772853 prio=120 target_cpu=002
+       mainboard 3772845 [002] 1220002.153769:       sched:sched_switch: prev_comm=mainboard prev_pid=3772845 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772853 next_prio=120
+       mainboard 3772853 [002] 1220002.153780:       sched:sched_switch: prev_comm=mainboard prev_pid=3772853 prev_prio=120 prev_state=S ==> next_comm=swapper/2 next_pid=0 next_prio=120
+       mainboard 3776776 [004] 1220002.248490:       sched:sched_waking: comm=mainboard pid=3772853 prio=120 target_cpu=002
+       mainboard 3772886 [002] 1220002.248512:       sched:sched_switch: prev_comm=mainboard prev_pid=3772886 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772853 next_prio=120
+       mainboard 3772853 [002] 1220002.250743:       sched:sched_switch: prev_comm=mainboard prev_pid=3772853 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772858 next_prio=120
+       mainboard 3772846 [002] 1220002.251779:       sched:sched_waking: comm=mainboard pid=3772853 prio=120 target_cpu=002
+   dds.udp.27420 3772927 [002] 1220002.267043:       sched:sched_switch: prev_comm=dds.udp.27420 prev_pid=3772927 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772853 next_prio=120
+       mainboard 3772852 [001] 1220002.267150:       sched:sched_waking: comm=mainboard pid=3772853 prio=120 target_cpu=002
+       mainboard 3772853 [002] 1220002.267152:       sched:sched_switch: prev_comm=mainboard prev_pid=3772853 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772856 next_prio=120
+       mainboard 3772852 [001] 1220002.267159: sched:sched_migrate_task: comm=mainboard pid=3772853 prio=120 orig_cpu=2 dest_cpu=0
+       mainboard 3772881 [000] 1220002.267179:       sched:sched_switch: prev_comm=mainboard prev_pid=3772881 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772853 next_prio=120
+       mainboard 3772853 [000] 1220002.267603:       sched:sched_switch: prev_comm=mainboard prev_pid=3772853 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772854 next_prio=120
