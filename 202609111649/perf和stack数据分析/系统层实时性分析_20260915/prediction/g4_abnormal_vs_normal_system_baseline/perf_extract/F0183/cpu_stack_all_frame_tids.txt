@@ -1,0 +1,14 @@
+mainboard 3772842 [005] 1220020.460057031:   10101010 cpu-clock: 
+	    ffffa593e044 [unknown] (/usr/lib/aarch64-linux-gnu/libc-2.31.so)
+	    ffff7b8b88b7 cv::Mat::operator=+0x157 (/opt/apollo/neo/packages/3rd-opencv/9.0.0-beta-r1/lib/libopencv_core.so.4.4.0)
+	    ffff9b30bb37 apollo::prediction::SemanticMap::DrawBaseMap+0x97 (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+	    ffff9b30cd5b apollo::prediction::SemanticMap::DrawBaseMapThread+0xc3 (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+	    ffff9b30601f std::_Function_handler<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> (), std::__future_base::_Task_setter<std::unique_ptr<std::__future_base::_Result<void>, std::__future_base::_Result_base::_Deleter>, std::__future_base::_Task_state<std::_Bind<void (apollo::prediction::SemanticMap::*(apollo::prediction::SemanticMap*, unsigned long))(unsigned long)>, std::allocator<int>, void ()>::_M_run()::{lambda()#1}, void> >::_M_invoke+0x3f (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+	    ffffa961f713 std::__future_base::_State_baseV2::_M_do_set+0x2b (/opt/apollo/neo/lib/cyber/libcyber.so)
+	    ffffa5d7b3b7 __pthread_once_slow+0x10f (/usr/lib/aarch64-linux-gnu/libpthread-2.31.so)
+	    ffffa96225eb std::call_once<void (std::__future_base::_State_baseV2::*)(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*), std::__future_base::_State_baseV2*, std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*>+0x6b (/opt/apollo/neo/lib/cyber/libcyber.so)
+	    ffff9b307b7f std::_Function_handler<void (), apollo::cyber::TaskManager::Enqueue<void (apollo::prediction::SemanticMap::*)(unsigned long), apollo::prediction::SemanticMap*, unsigned long&>(void (apollo::prediction::SemanticMap::*&&)(unsigned long), apollo::prediction::SemanticMap*&&, unsigned long&)::{lambda()#1}>::_M_invoke+0xa7 (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+	    ffffa837dc9f std::_Function_handler<void (), apollo::cyber::TaskManager::TaskManager()::{lambda()#1}>::_M_invoke+0x10f (/opt/apollo/neo/lib/cyber/task/libcyber_task.so)
+	    ffffa821fe73 apollo::cyber::croutine::(anonymous namespace)::CRoutineEntry+0x1b (/opt/apollo/neo/lib/cyber/croutine/libcyber_croutine.so)
+	    ffffa821fe57 std::_Sp_counted_ptr<apollo::cyber::base::CCObjectPool<apollo::cyber::croutine::RoutineContext>*, (__gnu_cxx::_Lock_policy)2>::_M_get_deleter+0x7 (/opt/apollo/neo/lib/cyber/croutine/libcyber_croutine.so)
+

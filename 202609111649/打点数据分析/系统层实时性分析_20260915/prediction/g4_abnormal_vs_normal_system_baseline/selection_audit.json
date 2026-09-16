@@ -1,0 +1,40 @@
+{
+  "run_id": "202609111649",
+  "definition": "local-jump-only means the previous-20-median x2 and +10 ms rule is the sole candidate reason; every strict-P99 rule is absent",
+  "abnormal_frames": [
+    184,
+    204,
+    311,
+    755
+  ],
+  "normal_frames": [
+    182,
+    183,
+    186,
+    202,
+    203,
+    205,
+    309,
+    310,
+    312,
+    731,
+    732,
+    734
+  ],
+  "abnormal_count": 4,
+  "normal_count": 12,
+  "controls_per_abnormal": 3,
+  "all_sched_eligible": true,
+  "run_execution_p75_ms": 6.577184,
+  "workload_match_fields": [
+    "perception_count",
+    "prediction_count",
+    "trajectory_count",
+    "trajectory_points",
+    "caution_count",
+    "normal_count",
+    "ignore_count",
+    "interactive_count"
+  ],
+  "normal_selection_limit": "Controls are selected low-latency comparators (<= run P75), so this is a matched operational baseline, not an unbiased estimate of every normal frame."
+}

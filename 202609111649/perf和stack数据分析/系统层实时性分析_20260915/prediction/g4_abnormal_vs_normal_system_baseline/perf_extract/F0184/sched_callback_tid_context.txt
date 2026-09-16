@@ -1,0 +1,13 @@
+       mainboard 3772844 [004] 1220013.623249:       sched:sched_waking: comm=mainboard pid=3772849 prio=120 target_cpu=004
+       mainboard 3772845 [004] 1220013.623853:       sched:sched_switch: prev_comm=mainboard prev_pid=3772845 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772849 next_prio=120
+       mainboard 3772849 [004] 1220013.623870:       sched:sched_switch: prev_comm=mainboard prev_pid=3772849 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772853 next_prio=120
+       mainboard 3776776 [007] 1220013.715494:       sched:sched_waking: comm=mainboard pid=3772849 prio=120 target_cpu=004
+       mainboard 3776776 [007] 1220013.715502: sched:sched_migrate_task: comm=mainboard pid=3772849 prio=120 orig_cpu=4 dest_cpu=5
+         swapper     0 [005] 1220013.715507:       sched:sched_switch: prev_comm=swapper/5 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=3772849 next_prio=120
+       mainboard 3772849 [005] 1220013.718186:       sched:sched_switch: prev_comm=mainboard prev_pid=3772849 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772891 next_prio=120
+       mainboard 3772854 [007] 1220013.728496:       sched:sched_waking: comm=mainboard pid=3772849 prio=120 target_cpu=005
+   perf_trace_io 3773350 [005] 1220013.728509:       sched:sched_switch: prev_comm=perf_trace_io prev_pid=3773350 prev_prio=130 prev_state=R+ ==> next_comm=mainboard next_pid=3772849 next_prio=120
+       mainboard 3772849 [005] 1220013.728833:       sched:sched_switch: prev_comm=mainboard prev_pid=3772849 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772881 next_prio=120
+       mainboard 3772851 [004] 1220013.819883:       sched:sched_waking: comm=mainboard pid=3772849 prio=120 target_cpu=005
+  cyber_recorder 3778354 [005] 1220013.823577:       sched:sched_switch: prev_comm=cyber_recorder prev_pid=3778354 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772849 next_prio=120
+       mainboard 3772849 [005] 1220013.823605:       sched:sched_switch: prev_comm=mainboard prev_pid=3772849 prev_prio=120 prev_state=S ==> next_comm=cyber_recorder next_pid=3778376 next_prio=120

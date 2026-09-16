@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "abnormal_frames": 4,
+  "normal_frames": 12,
+  "perf_frame_directories": 16,
+  "perf_frames_with_required_files": 16,
+  "callback_state_rows": 16,
+  "matched_pair_rows": 12,
+  "stage_state_rows": 432,
+  "maximum_callback_closure_error_ms": 1.5847623391351817e-07,
+  "maximum_stage_closure_error_ms": 2.2741472721111988e-07,
+  "unknown_callback_total_ms": 0.0,
+  "repeat_extraction_max_difference_ms": 0.0,
+  "stage_state_source": "D:\\data\\202609111649\\perf和stack数据分析\\系统层实时性分析_20260915\\prediction\\stage_thread_states.csv; filtered to the same 16 frames; generated earlier from the same normalized sched cache and calibration",
+  "calibration": {
+    "trace_to_sched_offset_s": 0.5091641838662326,
+    "trace_marker_support": 1.0,
+    "stack_offset_intercept_s": -6.837122834520414,
+    "stack_offset_slope": -1.6681115183333657e-05,
+    "stack_reference_s": 1220063.3352909388,
+    "stack_to_trace_training_support": 0.9603841536614646,
+    "stack_to_trace_heldout_support": 0.9603841536614646,
+    "scan_start_s": 1219999.73940016,
+    "scan_end_s": 1220112.641618304,
+    "method": "trace-to-sched same-TID marker fit (100% support); robust affine stack-to-trace fit using dense per-second bins, alternate-sample training and heldout validation; composed into stack-to-sched and revalidated by extraction",
+    "limitation": "Before-only TID identity; composed calibration must pass extract_prediction_perf.py same-TID/same-CPU recheck >=95%.",
+    "recheck_trace_support": 1.0,
+    "recheck_stack_support": 0.9632152588555858,
+    "calibration_source": "D:\\data\\202609111649\\perf和stack数据分析\\clock_calibration.json"
+  },
+  "interpretation_limits": [
+    "Four abnormal frames are an exhaustive local-jump-only set for this run, but a small cohort.",
+    "Twelve controls are deliberately low-latency matched controls, not a random sample of every noncandidate frame.",
+    "Stage cohort uses the longest instance per frame and node; parent/child inclusive stages are not additive.",
+    "Blocked state does not identify the wait object; CPU stack sampling cannot measure off-CPU time."
+  ]
+}

@@ -1,0 +1,13 @@
+       mainboard 3772853 [006] 1220072.338345:       sched:sched_waking: comm=mainboard pid=3772852 prio=120 target_cpu=001
+         swapper     0 [001] 1220072.338357:       sched:sched_switch: prev_comm=swapper/1 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=3772852 next_prio=120
+       mainboard 3772852 [001] 1220072.338373:       sched:sched_switch: prev_comm=mainboard prev_pid=3772852 prev_prio=120 prev_state=S ==> next_comm=swapper/1 next_pid=0 next_prio=120
+       mainboard 3776776 [010] 1220072.435055:       sched:sched_waking: comm=mainboard pid=3772852 prio=120 target_cpu=001
+       mainboard 3776776 [010] 1220072.435062: sched:sched_migrate_task: comm=mainboard pid=3772852 prio=120 orig_cpu=1 dest_cpu=2
+         swapper     0 [002] 1220072.435069:       sched:sched_switch: prev_comm=swapper/2 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=3772852 next_prio=120
+       mainboard 3772852 [002] 1220072.437840:       sched:sched_switch: prev_comm=mainboard prev_pid=3772852 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772850 next_prio=120
+       mainboard 3772844 [006] 1220072.437857:       sched:sched_waking: comm=mainboard pid=3772852 prio=120 target_cpu=002
+   perf_trace_io 3773350 [002] 1220072.437877:       sched:sched_switch: prev_comm=perf_trace_io prev_pid=3773350 prev_prio=130 prev_state=R ==> next_comm=mainboard next_pid=3772852 next_prio=120
+       mainboard 3772852 [002] 1220072.438247:       sched:sched_switch: prev_comm=mainboard prev_pid=3772852 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772851 next_prio=120
+       mainboard 3776793 [000] 1220072.438278:       sched:sched_waking: comm=mainboard pid=3772852 prio=120 target_cpu=002
+       mainboard 3772857 [002] 1220072.438293:       sched:sched_switch: prev_comm=mainboard prev_pid=3772857 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772852 next_prio=120
+       mainboard 3772852 [002] 1220072.438467:       sched:sched_switch: prev_comm=mainboard prev_pid=3772852 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772856 next_prio=120

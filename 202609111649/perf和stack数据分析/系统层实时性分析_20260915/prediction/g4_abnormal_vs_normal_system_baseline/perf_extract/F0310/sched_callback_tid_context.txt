@@ -1,0 +1,10 @@
+       mainboard 3776776 [008] 1220026.322290:       sched:sched_waking: comm=mainboard pid=3772846 prio=120 target_cpu=010
+  dreamview_plus 3772250 [010] 1220026.322323:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=3772250 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772846 next_prio=120
+       mainboard 3772846 [010] 1220026.324812:       sched:sched_switch: prev_comm=mainboard prev_pid=3772846 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772842 next_prio=120
+       mainboard 3772852 [005] 1220026.324842:       sched:sched_waking: comm=mainboard pid=3772846 prio=120 target_cpu=010
+       mainboard 3772852 [005] 1220026.324850: sched:sched_migrate_task: comm=mainboard pid=3772846 prio=120 orig_cpu=10 dest_cpu=8
+         swapper     0 [008] 1220026.324856:       sched:sched_switch: prev_comm=swapper/8 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=3772846 next_prio=120
+       mainboard 3772846 [008] 1220026.325304:       sched:sched_switch: prev_comm=mainboard prev_pid=3772846 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772855 next_prio=120
+       mainboard 3772842 [007] 1220026.420789:       sched:sched_waking: comm=mainboard pid=3772846 prio=120 target_cpu=008
+         sugov:8   938 [008] 1220026.420811:       sched:sched_switch: prev_comm=sugov:8 prev_pid=938 prev_prio=-1 prev_state=S ==> next_comm=mainboard next_pid=3772846 next_prio=120
+       mainboard 3772846 [008] 1220026.420854:       sched:sched_switch: prev_comm=mainboard prev_pid=3772846 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=3772855 next_prio=120

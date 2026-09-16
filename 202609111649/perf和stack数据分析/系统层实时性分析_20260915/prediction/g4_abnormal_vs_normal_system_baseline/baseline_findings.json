@@ -1,0 +1,56 @@
+{
+  "cohort_medians_ms": {
+    "abnormal_local_jump_only": {
+      "execution_ms": 13.48344,
+      "running_ms": 3.0357239302247763,
+      "runnable_ms": 0.036000157706439495,
+      "blocked_ms": 10.411499883048236,
+      "unknown_ms": 0.0,
+      "max_sched_delay_ms": 0.017000013031065464
+    },
+    "matched_normal": {
+      "execution_ms": 3.279552,
+      "running_ms": 2.8465919895097613,
+      "runnable_ms": 0.014500110410153866,
+      "blocked_ms": 0.12250000145286322,
+      "unknown_ms": 0.0,
+      "max_sched_delay_ms": 0.01200009137392044
+    }
+  },
+  "matched_pairs": {
+    "pair_count": 12,
+    "execution_delta_positive_pairs": 12,
+    "blocked_delta_positive_pairs": 12,
+    "runnable_delta_positive_pairs": 10,
+    "median_pair_execution_delta_ms": 10.297632,
+    "median_pair_blocked_delta_ms": 9.990499820560217
+  },
+  "per_case": [
+    {
+      "frame_index": 184,
+      "wall_excess_ms": 10.364032,
+      "blocked_excess_ms": 10.253666744877895,
+      "blocked_share_of_wall_excess_pct": 98.93511275223673
+    },
+    {
+      "frame_index": 204,
+      "wall_excess_ms": 9.332415999999998,
+      "blocked_excess_ms": 9.01033317980667,
+      "blocked_share_of_wall_excess_pct": 96.54877343451761
+    },
+    {
+      "frame_index": 311,
+      "wall_excess_ms": 10.396768,
+      "blocked_excess_ms": 10.240666413058838,
+      "blocked_share_of_wall_excess_pct": 98.4985566000784
+    },
+    {
+      "frame_index": 755,
+      "wall_excess_ms": 10.1688,
+      "blocked_excess_ms": 9.203333252420029,
+      "blocked_share_of_wall_excess_pct": 90.50559802946296
+    }
+  ],
+  "interpretation": "The four local-jump-only callbacks are predominantly blocked/sleep extensions inside the NotifyTask path. Runnable waiting and maximum continuous scheduler delay are too small to explain the wall-time excess.",
+  "causal_limit": "The wait object is not identified; this baseline does not by itself distinguish a lock, condition/future, worker dependency, or device completion."
+}
