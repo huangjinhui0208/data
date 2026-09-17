@@ -1,0 +1,24 @@
+{
+  "run_id": "202609111649",
+  "metric": "Prediction.total callback wall time: proc_enter to proc_exit",
+  "source": "D:\\data\\202609111649\\打点数据分析\\系统层实时性分析_20260915\\prediction\\timings\\prediction_frames.csv",
+  "complete_frames": 1193,
+  "percentile_method": "linear interpolation at (N-1)*0.99",
+  "p99_ms": 14.333794559999896,
+  "strict_p99_count": 12,
+  "strict_p99_frames": [
+    91,
+    411,
+    513,
+    514,
+    560,
+    586,
+    715,
+    718,
+    772,
+    906,
+    988,
+    989
+  ],
+  "source_flag_agreement": true
+}

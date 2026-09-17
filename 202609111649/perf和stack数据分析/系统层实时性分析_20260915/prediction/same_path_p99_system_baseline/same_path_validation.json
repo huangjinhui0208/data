@@ -1,0 +1,121 @@
+{
+  "run_id": "202609111649",
+  "selection": {
+    "normal_count": 30,
+    "p99_abnormal_count": 12,
+    "normal_frames": [
+      89,
+      90,
+      92,
+      409,
+      410,
+      412,
+      508,
+      512,
+      517,
+      518,
+      559,
+      561,
+      562,
+      583,
+      585,
+      587,
+      710,
+      711,
+      712,
+      721,
+      723,
+      770,
+      771,
+      775,
+      903,
+      908,
+      909,
+      987,
+      990,
+      991
+    ],
+    "p99_abnormal_frames": [
+      91,
+      411,
+      513,
+      514,
+      560,
+      586,
+      715,
+      718,
+      772,
+      906,
+      988,
+      989
+    ],
+    "normal_source": "unique normal_controls.csv controls attached to strict execution P99 frames"
+  },
+  "same_observed_path": {
+    "verified": true,
+    "fields": [
+      "semantic_base_async_schedule_calls",
+      "semantic_base_async_submit_calls",
+      "cyber_taskmanager_notify_tasks_calls",
+      "semantic_base_async_draw_calls",
+      "async_completion_status"
+    ],
+    "signature": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "ok"
+    ],
+    "async_draw_instance_count_per_frame": 1,
+    "notify_task_child_count_per_frame": 16
+  },
+  "state_accounting": {
+    "closure_tolerance_ms": 0.001,
+    "verified": true,
+    "errors": [],
+    "waiting_definition": "runnable_ms + blocked_ms",
+    "waiting_share_definition": "waiting_ms / execution_ms"
+  },
+  "cohort_medians": {
+    "same_path_normal": {
+      "execution_ms": 3.21736,
+      "running_ms": 2.860403969,
+      "runnable_ms": 0.03450003,
+      "blocked_ms": 0.083999825,
+      "waiting_ms": 0.18750003,
+      "waiting_share": 0.058484037
+    },
+    "p99_abnormal": {
+      "execution_ms": 16.316096,
+      "running_ms": 2.894312143,
+      "runnable_ms": 1.415499369,
+      "blocked_ms": 12.13999989,
+      "waiting_ms": 13.376499876,
+      "waiting_share": 0.819141618
+    }
+  },
+  "longest_notifytask_waiting_over_callback_waiting": {
+    "normal": {
+      "n": 30,
+      "mean": "0.763071012",
+      "median": "0.867317257",
+      "p25": "0.61647734",
+      "p75": "1",
+      "p95": "1",
+      "min": "0",
+      "max": "1"
+    },
+    "p99_abnormal": {
+      "n": 12,
+      "mean": "0.890896218",
+      "median": "0.993133672",
+      "p25": "0.784418478",
+      "p75": "0.99808796",
+      "p95": "1",
+      "min": "0.602477743",
+      "max": "1"
+    }
+  },
+  "interpretation_limit": "The tables locate scheduler-observed waiting in the longest NotifyTask interval. They do not identify a lock, GPU operation, device, or other concrete wait object."
+}
