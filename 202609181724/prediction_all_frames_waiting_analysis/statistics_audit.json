@@ -1,0 +1,355 @@
+{
+  "frame_state_stats": {
+    "execution_ms": {
+      "mean": 6.0570752146118725,
+      "median": 4.195008,
+      "p95": 12.844192,
+      "p99": 17.520136,
+      "max": 23.713056
+    },
+    "running_ms": {
+      "mean": 3.097064324259146,
+      "median": 3.037910326384008,
+      "p95": 3.5659215645864606,
+      "p99": 4.618457402102649,
+      "max": 7.215583696961403
+    },
+    "runnable_ms": {
+      "mean": 0.7455482527179873,
+      "median": 0.06949994713068008,
+      "p95": 5.017500021494925,
+      "p99": 8.195250120479614,
+      "max": 19.51099978759885
+    },
+    "blocked_ms": {
+      "mean": 2.214540806907276,
+      "median": 0.455344095826149,
+      "p95": 7.600166602060199,
+      "p99": 11.834302975330502,
+      "max": 14.807000057771802
+    },
+    "waiting_ms": {
+      "mean": 2.9600890596252634,
+      "median": 1.0055000893771648,
+      "p95": 9.493250050581992,
+      "p99": 13.859368220437318,
+      "max": 19.655999960377812
+    },
+    "waiting_share": {
+      "mean": 0.34769179607692735,
+      "median": 0.24151359169046377,
+      "p95": 0.7613936217692356,
+      "p99": 0.8196229744475363,
+      "max": 0.8516366057040035
+    }
+  },
+  "callback_episode_state_sum": {
+    "runnable": 653.1002693809569,
+    "blocked": 1939.9377468507737,
+    "unknown": 0
+  },
+  "notify_episode_state_sum": {
+    "runnable": 554.0519254282117,
+    "blocked": 1892.160302726552,
+    "unknown": 0
+  },
+  "callback_aggregate_state_sum": {
+    "runnable": 653.1002693809569,
+    "blocked": 1939.9377468507737,
+    "unknown": 0.0
+  },
+  "notify_aggregate_state_sum": {
+    "runnable": 554.0519254282117,
+    "blocked": 1892.160302726552,
+    "unknown": 0.0
+  },
+  "max_episode_aggregate_delta_ms": 0.0,
+  "rca_coverage": {
+    "frames": 856,
+    "notify": 13696,
+    "episodes": 5555
+  },
+  "yield_episodes": 0,
+  "migration_episodes": 435,
+  "switchout_stack_coverage": 0.21692169216921692,
+  "competitor_overcoverage": 0,
+  "cause_summary": [
+    {
+      "level": "callback",
+      "cause": "cpu_competition_runnable",
+      "frames_affected": "157",
+      "eligible_frames": "856",
+      "eligible_instances": "856",
+      "cause_frame_rate": "0.18341121495327103",
+      "episodes": "301",
+      "total_delay_ms": "156.29119728691876",
+      "median_ms": "0.09200000204145908",
+      "p95_ms": "3.1429999507963657",
+      "max_ms": "14.927000040188432",
+      "waiting_time_share": "0.06184043553112073"
+    },
+    {
+      "level": "callback",
+      "cause": "futex_associated_blocked",
+      "frames_affected": "745",
+      "eligible_frames": "856",
+      "eligible_instances": "856",
+      "cause_frame_rate": "0.8703271028037384",
+      "episodes": "979",
+      "total_delay_ms": "1562.5017774291337",
+      "median_ms": "0.22200006060302258",
+      "p95_ms": "6.804000120609998",
+      "max_ms": "14.807000057771802",
+      "waiting_time_share": "0.6182420514508098"
+    },
+    {
+      "level": "callback",
+      "cause": "post_wakeup_runnable",
+      "frames_affected": "841",
+      "eligible_frames": "856",
+      "eligible_instances": "856",
+      "cause_frame_rate": "0.9824766355140186",
+      "episodes": "1098",
+      "total_delay_ms": "476.39609477482736",
+      "median_ms": "0.027999980375170708",
+      "p95_ms": "3.7415998871438196",
+      "max_ms": "19.482000032439828",
+      "waiting_time_share": "0.18849776889300326"
+    },
+    {
+      "level": "callback",
+      "cause": "unknown_blocked",
+      "frames_affected": "170",
+      "eligible_frames": "856",
+      "eligible_instances": "856",
+      "cause_frame_rate": "0.1985981308411215",
+      "episodes": "205",
+      "total_delay_ms": "329.8521041870117",
+      "median_ms": "0.18699979409575462",
+      "p95_ms": "6.91600008867681",
+      "max_ms": "11.921999976038933",
+      "waiting_time_share": "0.13051405413661582"
+    },
+    {
+      "level": "callback",
+      "cause": "unknown_runnable",
+      "frames_affected": "14",
+      "eligible_frames": "856",
+      "eligible_instances": "856",
+      "cause_frame_rate": "0.016355140186915886",
+      "episodes": "21",
+      "total_delay_ms": "2.2889776155352592",
+      "median_ms": "0.022999942302703857",
+      "p95_ms": "0.1930000726133585",
+      "max_ms": "1.2989998795092106",
+      "waiting_time_share": "0.0009056899884503873"
+    },
+    {
+      "level": "notify_task",
+      "cause": "cpu_competition_runnable",
+      "frames_affected": "42",
+      "eligible_frames": "856",
+      "eligible_instances": "13696",
+      "cause_frame_rate": "0.04906542056074766",
+      "episodes": "144",
+      "total_delay_ms": "69.91058262065053",
+      "median_ms": "0.02317572943866253",
+      "p95_ms": "3.2575998688116625",
+      "max_ms": "14.927000040188432",
+      "waiting_time_share": "0.029269520784466974"
+    },
+    {
+      "level": "notify_task",
+      "cause": "futex_associated_blocked",
+      "frames_affected": "735",
+      "eligible_frames": "856",
+      "eligible_instances": "13696",
+      "cause_frame_rate": "0.8586448598130841",
+      "episodes": "1317",
+      "total_delay_ms": "1539.0454502776265",
+      "median_ms": "0.045999884605407715",
+      "p95_ms": "6.196072185412049",
+      "max_ms": "14.807000057771802",
+      "waiting_time_share": "0.644353416986602"
+    },
+    {
+      "level": "notify_task",
+      "cause": "post_wakeup_runnable",
+      "frames_affected": "818",
+      "eligible_frames": "856",
+      "eligible_instances": "13696",
+      "cause_frame_rate": "0.955607476635514",
+      "episodes": "1210",
+      "total_delay_ms": "465.59768030419946",
+      "median_ms": "0.020999927073717117",
+      "p95_ms": "3.3076999126933497",
+      "max_ms": "19.457056652754545",
+      "waiting_time_share": "0.19493216148420317"
+    },
+    {
+      "level": "notify_task",
+      "cause": "unknown_blocked",
+      "frames_affected": "131",
+      "eligible_frames": "856",
+      "eligible_instances": "13696",
+      "cause_frame_rate": "0.1530373831775701",
+      "episodes": "269",
+      "total_delay_ms": "312.4417788349092",
+      "median_ms": "0.02134428359568119",
+      "p95_ms": "6.458213832229376",
+      "max_ms": "11.921999976038933",
+      "waiting_time_share": "0.13081025499625729"
+    },
+    {
+      "level": "notify_task",
+      "cause": "unknown_runnable",
+      "frames_affected": "5",
+      "eligible_frames": "856",
+      "eligible_instances": "13696",
+      "cause_frame_rate": "0.005841121495327103",
+      "episodes": "11",
+      "total_delay_ms": "1.5158585738390684",
+      "median_ms": "0.0142690259963274",
+      "p95_ms": "0.7101548835635185",
+      "max_ms": "1.2989998795092106",
+      "waiting_time_share": "0.0006346457484705515"
+    }
+  ],
+  "top_waiting_frames": [
+    {
+      "frame_index": 617,
+      "execution_ms": 23.713056,
+      "waiting_ms": 19.655999960377812,
+      "running_ms": 4.057362210005522,
+      "runnable_ms": 19.51099978759885,
+      "blocked_ms": 0.14500017277896404,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 251,
+      "execution_ms": 22.07984,
+      "waiting_ms": 18.803999992087483,
+      "running_ms": 3.276124596595764,
+      "runnable_ms": 4.8519999254494905,
+      "blocked_ms": 13.952000066637993,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 253,
+      "execution_ms": 20.602624,
+      "waiting_ms": 17.165978206321597,
+      "running_ms": 3.436911618337035,
+      "runnable_ms": 6.632978329434991,
+      "blocked_ms": 10.532999876886606,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 424,
+      "execution_ms": 19.274688,
+      "waiting_ms": 16.165000153705478,
+      "running_ms": 3.1099366024136543,
+      "runnable_ms": 16.032000072300434,
+      "blocked_ms": 0.1330000814050436,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 250,
+      "execution_ms": 19.162048,
+      "waiting_ms": 16.111000208184123,
+      "running_ms": 3.051294945180416,
+      "runnable_ms": 8.077000034973025,
+      "blocked_ms": 8.034000173211098,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 277,
+      "execution_ms": 18.024096,
+      "waiting_ms": 14.973000157624483,
+      "running_ms": 3.0513284727931023,
+      "runnable_ms": 0.16600009985268116,
+      "blocked_ms": 14.807000057771802,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 825,
+      "execution_ms": 18.092576,
+      "waiting_ms": 14.941166387870908,
+      "running_ms": 3.151642857119441,
+      "runnable_ms": 6.846000207588077,
+      "blocked_ms": 8.095166180282831,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 482,
+      "execution_ms": 17.9368,
+      "waiting_ms": 14.675999991595745,
+      "running_ms": 3.2610315829515457,
+      "runnable_ms": 5.189999938011169,
+      "blocked_ms": 9.486000053584576,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 836,
+      "execution_ms": 17.381248,
+      "waiting_ms": 14.19047242961824,
+      "running_ms": 3.19099985063076,
+      "runnable_ms": 0.054991571232676506,
+      "blocked_ms": 14.135480858385563,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 297,
+      "execution_ms": 18.6376,
+      "waiting_ms": 13.749000150710344,
+      "running_ms": 4.888840252533555,
+      "runnable_ms": 0.18600025214254856,
+      "blocked_ms": 13.562999898567796,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 642,
+      "execution_ms": 17.245152,
+      "waiting_ms": 13.606754364445806,
+      "running_ms": 3.6386202555149794,
+      "runnable_ms": 8.523000171408057,
+      "blocked_ms": 5.083754193037748,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 303,
+      "execution_ms": 16.469024,
+      "waiting_ms": 13.56399990618229,
+      "running_ms": 2.905236789956689,
+      "runnable_ms": 0.013999873772263527,
+      "blocked_ms": 13.550000032410026,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 457,
+      "execution_ms": 16.445792,
+      "waiting_ms": 13.397000031545758,
+      "running_ms": 3.0490043573081493,
+      "runnable_ms": 5.154000129550695,
+      "blocked_ms": 8.242999901995063,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 421,
+      "execution_ms": 16.290784,
+      "waiting_ms": 13.334000017493963,
+      "running_ms": 2.9569941107183695,
+      "runnable_ms": 1.5640000347048044,
+      "blocked_ms": 11.769999982789159,
+      "coverage": "True"
+    },
+    {
+      "frame_index": 842,
+      "execution_ms": 15.794976,
+      "waiting_ms": 12.999156722798944,
+      "running_ms": 2.7960229199379683,
+      "runnable_ms": 0.6510000675916672,
+      "blocked_ms": 12.348156655207276,
+      "coverage": "True"
+    }
+  ]
+}

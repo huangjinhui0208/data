@@ -1,0 +1,5 @@
+﻿stack_signature,episodes,frames_affected,blocked_ms
+__schedule -> schedule -> futex_wait_queue_me -> futex_wait -> do_futex -> __arm64_sys_futex -> el0_svc_common.constprop.0 -> do_el0_svc -> el0_svc -> el0_sync_handler -> el0_sync -> __pthread_cond_signal -> std::condition_variable::notify_one,187,178,321.5779985766858
+__schedule -> schedule -> futex_wait_queue_me -> futex_wait -> do_futex -> __arm64_sys_futex -> el0_svc_common.constprop.0 -> do_el0_svc -> el0_svc -> el0_sync_handler -> el0_sync -> syscall -> std::__atomic_futex_unsigned_base::_M_futex_wait_until,13,13,8.896999526768923
+__schedule -> schedule -> futex_wait_queue_me -> futex_wait -> do_futex -> __arm64_sys_futex -> el0_svc_common.constprop.0 -> do_el0_svc -> el0_svc -> el0_sync_handler -> el0_sync -> __pthread_cond_timedwait,21,21,2.149647567421198
+__schedule -> schedule -> futex_wait_queue_me -> futex_wait -> do_futex -> __arm64_sys_futex -> el0_svc_common.constprop.0 -> do_el0_svc -> el0_svc -> el0_sync_handler -> el0_sync -> __lll_lock_wait -> __GI___pthread_mutex_lock,18,18,0.3469996154308319
