@@ -1,0 +1,106 @@
+{
+  "schema_version": 2,
+  "scope": "event reconstruction, descriptive statistics, and quality audit only",
+  "output_directory": "D:\\data\\202609181724\\prediction_runnable_fullrun_20260921_v2",
+  "selection_rule": "NotifyTask runnable_ms >= 3.000 ms",
+  "sensitivity_rule": "single runnable episode >= 1.000 ms",
+  "counts": {
+    "total_notifytasks": 14016,
+    "abnormal_notifytasks": 76,
+    "abnormal_frames": 73,
+    "abnormal_runnable_episodes": 80,
+    "wakeup_episodes": 68,
+    "preempted_episodes": 12,
+    "migration_related_episodes": 33,
+    "sched_chain_complete": 80,
+    "sched_chain_incomplete": 0
+  },
+  "actual_perf_events": [
+    "sched:sched_switch",
+    "sched:sched_stat_runtime",
+    "sched:sched_process_fork",
+    "sched:sched_wakeup_new",
+    "sched:sched_migrate_task",
+    "sched:sched_waking",
+    "sched:sched_stat_wait",
+    "sched:sched_stat_sleep",
+    "sched:sched_stat_iowait",
+    "dummy:HG"
+  ],
+  "irq_softirq_trace_available": false,
+  "irq_softirq_trace_reason": "events absent from perf_event_inventory_orin.txt",
+  "cpu_idle_trace_available": false,
+  "cpu_idle_trace_reason": "power:cpu_idle absent from perf_event_inventory_orin.txt",
+  "static_environment": {
+    "Prediction scheduling class": "TS",
+    "Prediction RTPRIO": "-",
+    "Prediction NI": "0",
+    "Prediction Cpus_allowed_list": "0-11",
+    "Docker CpuQuota": "0",
+    "Docker CpuPeriod": "0",
+    "Docker NanoCpus": "0",
+    "Docker CpusetCpus": "empty",
+    "cgroup cpu.cfs_quota_us": "-1",
+    "cgroup cpu.cfs_period_us": "100000",
+    "cgroup nr_throttled": "0",
+    "cgroup throttled_time": "0",
+    "cpuset.cpus": "0-11"
+  },
+  "global_trace_loss_present": true,
+  "episode_specific_trace_loss": "unknown",
+  "raw_data_modified": false,
+  "inputs": {
+    "notify": {
+      "path": "D:\\data\\202609181724\\prediction_all_frames_waiting_analysis\\all_notifytask_system_states.csv",
+      "size_bytes": 2766625,
+      "sha256": "2c6d209604c6ac565d56447452e1f546d2ba917515edc8b3c968868e367ab279"
+    },
+    "waiting": {
+      "path": "D:\\data\\202609181724\\prediction_all_frames_waiting_analysis\\all_waiting_episodes.csv",
+      "size_bytes": 6899077,
+      "sha256": "afb2c4244aaf510326197cb1eabc12658e8f1b48cd32300152fef1b1f4b5c7f2"
+    },
+    "nodes": {
+      "path": "D:\\data\\202609181724\\打点逐帧数据统计\\prediction数据统计\\lidar_prediction_reanalysis\\prediction_node_instances.csv",
+      "size_bytes": 4795245,
+      "sha256": "add3c29c0a15bf07770cdb8416a9b73bc5197e20751e291bbbccdbe4ef3c1840"
+    },
+    "calibration": {
+      "path": "D:\\data\\202609181724\\prediction_system_rca_20260918\\verified_clock_calibration\\clock_calibration.json",
+      "size_bytes": 2279,
+      "sha256": "31fe4a09574691806fec29c6c9f2a8e50f3322c3535bccc4b4ae4f78126f3434"
+    },
+    "sched": {
+      "path": "D:\\data\\202609181724\\prediction_rca_01\\perf_sched_script.txt",
+      "size_bytes": 11182475933,
+      "mtime_ns": 1789727997178428800,
+      "hash_omitted": "large immutable input"
+    },
+    "perf": {
+      "path": "D:\\data\\202609181724\\prediction_rca_01\\perf.data",
+      "size_bytes": 8268756250,
+      "mtime_ns": 1789727507337786600,
+      "hash_omitted": "large immutable input"
+    },
+    "record_command": {
+      "path": "D:\\data\\202609181724\\prediction_rca_01\\perf_record_command.txt",
+      "size_bytes": 70,
+      "sha256": "ff5f0b2e18fa6d6e956cff4c414fdd38a77a112ce91b8d845dc832ea800b64f8"
+    },
+    "proc_status": {
+      "path": "D:\\data\\202609181724\\prediction_rca_01\\prediction_proc_status_before.txt",
+      "size_bytes": 18806,
+      "sha256": "ff34fe2c7b21bf9c547ae3c64f163f7872bc1adf01e5ebea0e5c04e6fba9fb69"
+    },
+    "ps_threads": {
+      "path": "D:\\data\\202609181724\\prediction_rca_01\\prediction_ps_threads_before.txt",
+      "size_bytes": 8889,
+      "sha256": "e2e46ecbd434ad81e185efa487b0a09d3cd27e353c1ac5a87ddc72970cb82fa7"
+    },
+    "inventory": {
+      "path": "D:\\data\\202609181724\\prediction_rca_01\\perf_event_inventory_orin.txt",
+      "size_bytes": 291,
+      "sha256": "e69f17b5ba5fd9c154303ca4b189b387b416dbfeb28b905d6d25021eb3184d9e"
+    }
+  }
+}

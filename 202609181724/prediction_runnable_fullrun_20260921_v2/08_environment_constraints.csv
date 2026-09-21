@@ -1,0 +1,14 @@
+﻿item,value,evidence_source,interpretation_scope
+Prediction scheduling class,TS,prediction_ps_threads_before.txt,static observed scheduler class
+Prediction RTPRIO,-,prediction_ps_threads_before.txt,static observed real-time priority field
+Prediction NI,0,prediction_ps_threads_before.txt,static observed nice value
+Prediction Cpus_allowed_list,0-11,prediction_proc_status_before.txt,static allowed CPU set
+Docker CpuQuota,0,docker_cpu_config.txt,static Docker CPU configuration
+Docker CpuPeriod,0,docker_cpu_config.txt,static Docker CPU configuration
+Docker NanoCpus,0,docker_cpu_config.txt,static Docker CPU configuration
+Docker CpusetCpus,empty,docker_cpu_config.txt,static Docker CPU configuration
+cgroup cpu.cfs_quota_us,-1,cpu.cfs_quota_us,static cgroup CPU bandwidth value
+cgroup cpu.cfs_period_us,100000,cpu.cfs_period_us,static cgroup CPU bandwidth period
+cgroup nr_throttled,0,cpu.stat,static cgroup throttle counter
+cgroup throttled_time,0,cpu.stat,static cgroup throttle time
+cpuset.cpus,0-11,cpuset.cpus,static cgroup cpuset

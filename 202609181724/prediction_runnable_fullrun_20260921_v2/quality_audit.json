@@ -1,0 +1,125 @@
+{
+  "status": "usable_with_explicit_limitations",
+  "global_trace_loss_present": true,
+  "notify_rca_lost_chunks": 277767,
+  "episode_specific_trace_loss": "unknown",
+  "perf_sched_out_of_order_events": 1,
+  "scheduler_replay": {
+    "mode": "single_pass_streaming_from_first_to_last_decoded_event",
+    "parsed_events": 51568045,
+    "event_counts": {
+      "sched_waking": 17283225,
+      "sched_switch": 30511409,
+      "sched_migrate_task": 3721712,
+      "sched_wakeup_new": 51699
+    },
+    "first_event_s": 1826863.243234,
+    "last_event_s": 1827082.756942,
+    "state_anomaly_count": 17,
+    "state_anomaly_examples": [
+      {
+        "timestamp": 1826871.652017,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826916.496048,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826917.020032,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826922.596033,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826922.844782,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826928.472034,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826928.884026,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826931.680031,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826934.440033,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826935.452025,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826936.850685,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826936.968023,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826967.648045,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826975.360027,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1826985.324016,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1827042.956045,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      },
+      {
+        "timestamp": 1827048.464691,
+        "tid": 2109009,
+        "event": "sched_migrate_task",
+        "detail": "migration observed while reconstructed state=BLOCKED"
+      }
+    ]
+  },
+  "root_cause_classification_performed": false
+}

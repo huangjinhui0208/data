@@ -1,0 +1,11 @@
+sched:sched_switch
+sched:sched_stat_runtime
+sched:sched_process_fork
+sched:sched_wakeup_new
+sched:sched_migrate_task
+sched:sched_waking
+sched:sched_stat_wait
+sched:sched_stat_sleep
+sched:sched_stat_iowait
+dummy:HG
+# Tip: use 'perf evlist --trace-fields' to show fields for tracepoint events

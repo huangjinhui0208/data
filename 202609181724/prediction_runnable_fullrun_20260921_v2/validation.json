@@ -1,0 +1,460 @@
+{
+  "status": "PASS",
+  "failures": [],
+  "sample_consistency": {
+    "notify_threshold_ms": 3.0,
+    "abnormal_notifytask_count": 76,
+    "all_notifytasks_meet_threshold": true,
+    "all_abnormal_notifytasks_have_episode": true,
+    "max_absolute_error_ms": 0.0,
+    "median_absolute_error_ms": 0.0,
+    "p95_absolute_error_ms": 0.0,
+    "mismatch_count_above_0.1ms": 0
+  },
+  "episode_consistency": {
+    "01_episode_count": 80,
+    "missing_in_02_count": 0,
+    "missing_in_02": [],
+    "missing_in_03_count": 0,
+    "missing_in_03": [],
+    "missing_in_04_count": 0,
+    "missing_in_04": [],
+    "missing_in_05_count": 0,
+    "missing_in_05": []
+  },
+  "time_consistency": {
+    "invalid_order": [],
+    "duration_mismatch": []
+  },
+  "cpu_consistency": {
+    "invalid_cpu_values": []
+  },
+  "occupancy_consistency": {
+    "episodes_exceeding_duration": [],
+    "per_episode": {
+      "F0014_N13_E01": {
+        "occupancy_covered_ms": 3.8976443465799093,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0015_N04_E01": {
+        "occupancy_covered_ms": 5.348133854568005,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0027_N07_E01": {
+        "occupancy_covered_ms": 6.597663974389434,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0045_N16_E01": {
+        "occupancy_covered_ms": 4.004261456429958,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0064_N09_E01": {
+        "occupancy_covered_ms": 4.145797807723284,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0065_N02_E01": {
+        "occupancy_covered_ms": 4.751237109303474,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0088_N02_E01": {
+        "occupancy_covered_ms": 7.022010162472725,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0098_N02_E01": {
+        "occupancy_covered_ms": 9.716851636767387,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0105_N03_E01": {
+        "occupancy_covered_ms": 8.99565452709794,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0115_N02_E01": {
+        "occupancy_covered_ms": 6.930999923497438,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0135_N02_E01": {
+        "occupancy_covered_ms": 4.450612934306264,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0150_N15_E01": {
+        "occupancy_covered_ms": 4.918701713904738,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0182_N02_E01": {
+        "occupancy_covered_ms": 4.496000008657575,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0182_N16_E01": {
+        "occupancy_covered_ms": 5.642723524942994,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0213_N02_E01": {
+        "occupancy_covered_ms": 6.837000139057636,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0226_N03_E01": {
+        "occupancy_covered_ms": 5.667000077664852,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0240_N04_E01": {
+        "occupancy_covered_ms": 5.093999905511737,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0252_N02_E01": {
+        "occupancy_covered_ms": 7.151332683861256,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0253_N16_E01": {
+        "occupancy_covered_ms": 0.02657831646502018,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0253_N16_E02": {
+        "occupancy_covered_ms": 5.46600017696619,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0258_N06_E01": {
+        "occupancy_covered_ms": 7.812999887391925,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0262_N13_E01": {
+        "occupancy_covered_ms": 3.2889998983591795,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0269_N02_E01": {
+        "occupancy_covered_ms": 3.085999982431531,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0307_N03_E01": {
+        "occupancy_covered_ms": 5.041999975219369,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0358_N10_E01": {
+        "occupancy_covered_ms": 4.017000086605549,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0362_N02_E01": {
+        "occupancy_covered_ms": 5.296000046655536,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0367_N02_E01": {
+        "occupancy_covered_ms": 4.034999990835786,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0397_N02_E01": {
+        "occupancy_covered_ms": 5.564999999478459,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0407_N02_E01": {
+        "occupancy_covered_ms": 3.745000110939145,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0407_N03_E01": {
+        "occupancy_covered_ms": 3.373999847099185,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0414_N02_E01": {
+        "occupancy_covered_ms": 5.3980001248419285,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0418_N06_E01": {
+        "occupancy_covered_ms": 4.174999892711639,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0424_N01_E01": {
+        "occupancy_covered_ms": 14.927000040188432,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0427_N03_E01": {
+        "occupancy_covered_ms": 3.527000080794096,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0429_N15_E01": {
+        "occupancy_covered_ms": 7.832000032067299,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0442_N13_E01": {
+        "occupancy_covered_ms": 5.194999976083636,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0442_N13_E02": {
+        "occupancy_covered_ms": 0.042999861761927605,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0442_N13_E03": {
+        "occupancy_covered_ms": 0.03600004129111767,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0446_N06_E01": {
+        "occupancy_covered_ms": 4.345999797806144,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0452_N01_E01": {
+        "occupancy_covered_ms": 4.8050000332295895,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0457_N01_E01": {
+        "occupancy_covered_ms": 5.126000149175525,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0482_N02_E01": {
+        "occupancy_covered_ms": 5.039999959990382,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0508_N02_E01": {
+        "occupancy_covered_ms": 4.173000110313296,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0511_N01_E01": {
+        "occupancy_covered_ms": 4.3929999228566885,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0523_N13_E01": {
+        "occupancy_covered_ms": 3.658000146970153,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0538_N03_E01": {
+        "occupancy_covered_ms": 5.601409124210477,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0540_N02_E01": {
+        "occupancy_covered_ms": 3.8530000019818544,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0540_N16_E01": {
+        "occupancy_covered_ms": 3.4000000450760126,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0572_N03_E01": {
+        "occupancy_covered_ms": 9.307764004915953,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0575_N01_E01": {
+        "occupancy_covered_ms": 5.480999825522304,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0604_N03_E01": {
+        "occupancy_covered_ms": 4.255000036209822,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0606_N07_E01": {
+        "occupancy_covered_ms": 5.889400141313672,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0617_N02_E01": {
+        "occupancy_covered_ms": 19.457056652754545,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0622_N02_E01": {
+        "occupancy_covered_ms": 4.232999868690968,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0629_N02_E01": {
+        "occupancy_covered_ms": 3.1599998474121094,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0630_N04_E01": {
+        "occupancy_covered_ms": 12.342538684606552,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0642_N16_E01": {
+        "occupancy_covered_ms": 8.374554803594947,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0644_N02_E01": {
+        "occupancy_covered_ms": 7.482839049771428,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0664_N07_E01": {
+        "occupancy_covered_ms": 5.4339999333024025,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0670_N02_E01": {
+        "occupancy_covered_ms": 4.472041269764304,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0696_N08_E01": {
+        "occupancy_covered_ms": 7.296999916434288,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0701_N07_E01": {
+        "occupancy_covered_ms": 3.740999847650528,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0703_N04_E01": {
+        "occupancy_covered_ms": 5.939999828115106,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0736_N02_E01": {
+        "occupancy_covered_ms": 4.546999931335449,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0739_N12_E01": {
+        "occupancy_covered_ms": 3.467999864369631,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0741_N02_E01": {
+        "occupancy_covered_ms": 6.805999903008342,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0743_N03_E01": {
+        "occupancy_covered_ms": 3.3229999244213104,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0762_N13_E01": {
+        "occupancy_covered_ms": 3.2399999909102917,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0764_N01_E01": {
+        "occupancy_covered_ms": 3.740999847650528,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0765_N09_E01": {
+        "occupancy_covered_ms": 4.499000031501055,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0769_N16_E01": {
+        "occupancy_covered_ms": 8.993000024929643,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0790_N02_E01": {
+        "occupancy_covered_ms": 6.931999931111932,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0797_N03_E01": {
+        "occupancy_covered_ms": 3.9450000040233135,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0825_N09_E01": {
+        "occupancy_covered_ms": 6.646253168582916,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0828_N01_E01": {
+        "occupancy_covered_ms": 0.02726190723478794,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0828_N01_E02": {
+        "occupancy_covered_ms": 6.4529613591730595,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0835_N01_E01": {
+        "occupancy_covered_ms": 3.915895475074649,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0871_N04_E01": {
+        "occupancy_covered_ms": 7.693021092563868,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0874_N02_E01": {
+        "occupancy_covered_ms": 4.266347270458937,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      },
+      "F0875_N03_E01": {
+        "occupancy_covered_ms": 4.214329645037651,
+        "occupancy_uncovered_ms": 0.0,
+        "occupancy_coverage_ratio": 1.0
+      }
+    }
+  },
+  "availability_consistency": {
+    "coverage_ok_true": 80,
+    "coverage_ok_false": 0,
+    "all_12_cpus_initialized": 80
+  },
+  "runqueue_quality": {
+    "row_counts": {
+      "fully_observed_since_state_init": 8502
+    },
+    "episode_counts": {
+      "fully_observed_since_state_init": 80,
+      "partially_initialized": 0,
+      "unknown_initial_state": 0,
+      "trace_gap_affected": 0
+    }
+  },
+  "F0317_N02_E01_sched_chain_repaired": true,
+  "F0317_detail": {
+    "raw_start_s": 1826919.703187,
+    "effective_runnable_start_s": 1826919.703188,
+    "end_s": 1826919.708404,
+    "reason": "complete chain observed; sched_waking precedes switch-out by 0.001000 ms across CPUs"
+  }
+}
