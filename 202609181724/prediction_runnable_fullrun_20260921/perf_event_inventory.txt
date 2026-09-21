@@ -1,0 +1,9 @@
+requested_command=perf evlist -i perf.data
+execution_status=not_executed_no_compatible_linux_perf_on_analysis_host
+perf_data=D:\data\202609181724\prediction_rca_01\perf.data
+fallback_basis=record_command_and_decoded_perf_script
+record_command=sudo perf sched record -a --clockid CLOCK_MONOTONIC -- sleep infinity
+decoded_sched_events=sched_switch,sched_waking,sched_migrate_task
+irq_softirq_trace_available=false
+cpu_idle_trace_available=false
+note=The capture command used perf sched record; the decoded scheduler text contains no irq or power tracepoints.

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "scope": "event reconstruction and statistics only; no root-cause classification",
+  "threshold": {
+    "min_runnable_ms": 1.0
+  },
+  "counts": {
+    "01_runnable_abnormal_episodes.csv": 104,
+    "02_runnable_sched_timeline.csv": 9388,
+    "03_runnable_cpu_occupancy.csv": 860,
+    "04_runnable_runqueue.csv": 9672,
+    "05_runnable_cpu_availability.csv": 104
+  },
+  "notify_instances": 14016,
+  "selected_runnable_episodes": 104,
+  "allowed_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "clock_calibration_status": "verified",
+  "rca_cause_coverage_ok": false,
+  "rca_cause_coverage_reason": "notify RCA capture reports globally lost chunks that cannot be localized safely",
+  "runqueue_semantics": "estimated_runqueue; lower-bound reconstruction from observed events",
+  "runqueue_coverage_ok": false,
+  "runqueue_coverage_reason": "finite warm-up cannot prove absence of tasks runnable before the warm-up",
+  "irq_softirq_trace_available": false,
+  "cpu_idle_trace_available": false,
+  "inventory_limitation": "perf evlist could not run on this Windows host; fallback uses capture command and decoded text",
+  "large_sources_not_hashed": {
+    "system_sched": {
+      "path": "D:\\data\\202609181724\\prediction_rca_01\\perf_sched_script.txt",
+      "size_bytes": 11182475933,
+      "mtime_ns": 1789727997178428800
+    },
+    "perf_data": {
+      "path": "D:\\data\\202609181724\\prediction_rca_01\\perf.data",
+      "size_bytes": 8268756250,
+      "mtime_ns": 1789727507337786600
+    }
+  },
+  "sources": {
+    "D:\\data\\202609181724\\打点逐帧数据统计\\prediction数据统计\\lidar_prediction_reanalysis\\prediction_node_instances.csv": {
+      "size_bytes": 4795245,
+      "sha256": "add3c29c0a15bf07770cdb8416a9b73bc5197e20751e291bbbccdbe4ef3c1840"
+    },
+    "D:\\data\\202609181724\\prediction_system_rca_20260918\\verified_clock_calibration\\clock_calibration.json": {
+      "size_bytes": 2279,
+      "sha256": "31fe4a09574691806fec29c6c9f2a8e50f3322c3535bccc4b4ae4f78126f3434"
+    },
+    "D:\\data\\202609181724\\prediction_system_rca_20260918\\sched_relevant_verified_context.txt": {
+      "size_bytes": 12632158,
+      "sha256": "fa26b783267a2d37987b1aca435bbe969c4aa1269b4f657761d9540d765174a5"
+    },
+    "D:\\data\\202609181724\\prediction_rca_01\\perf_record_command.txt": {
+      "size_bytes": 70,
+      "sha256": "ff5f0b2e18fa6d6e956cff4c414fdd38a77a112ce91b8d845dc832ea800b64f8"
+    }
+  }
+}
