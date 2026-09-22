@@ -1,0 +1,55 @@
+{
+  "raw_sched": "D:\\data\\202609081856\\prediction_run_010\\perf_sched_script.txt",
+  "raw_sched_size_bytes": 14756679365,
+  "scan_start_s": 968509.100327208,
+  "scan_end_s": 968509.7902929041,
+  "parsed_sched_event_count": 269422,
+  "cpu_count_with_switches": 12,
+  "timeline_rows": 8642,
+  "window_cpu_coverage": {
+    "runnable_1646959": {
+      "cpu_count": 12,
+      "min_coverage_ms": 30.499999999999996,
+      "max_coverage_ms": 30.500000000000043,
+      "expected_per_cpu_ms": 30.499999993480742
+    },
+    "runnable_1646949": {
+      "cpu_count": 12,
+      "min_coverage_ms": 11.299999999999962,
+      "max_coverage_ms": 11.30000000000001,
+      "expected_per_cpu_ms": 11.300000012852252
+    }
+  },
+  "runnable_over_2ms_count": 7,
+  "blocked_over_2ms_count": 84,
+  "trace_to_sched_calibration": {
+    "trace_to_sched_offset_s": 0.5091642640763894,
+    "trace_marker_support": 1.0,
+    "constant_offset_candidate_s_not_used": -9.303924583015032,
+    "stack_calibration_samples": 1412,
+    "same_tid_cpu_heldout_support": 1.0,
+    "training_support": 1.0,
+    "stack_offset_intercept_s": -9.303963544778526,
+    "stack_offset_slope": -1.3983967876033768e-05,
+    "stack_reference_s": 968516.9985041479,
+    "method": "time-varying affine stack offset: fit using alternate samples, validate remaining samples on same TID and CPU; trace markers independently checked on CPU",
+    "scan_start_s": 968495.639764864,
+    "scan_end_s": 968527.325039616,
+    "time_reversals": 0,
+    "limitation": "Empirical alignment; 2us tolerance for trace-vs-sched text rounding. Before-only TID identity.",
+    "recheck_trace_support": 1.0,
+    "recheck_stack_support": 0.9964260185847034,
+    "recheck_trace_tolerance_s": 2e-06,
+    "calibration_source": "D:\\data\\202609081856\\perf和stack数据分析\\clock_calibration.json"
+  },
+  "worker_state_source": "D:\\data\\202609081856\\perf和stack数据分析\\same_workload_10N_10M_26I\\worker_gantt\\worker_sched_timeline.csv",
+  "irq_identity": {
+    "tid": 174,
+    "comm": "irq/134-host_sy"
+  },
+  "limitations": [
+    "CPU stack samples are not used to extend blocked durations.",
+    "sched_waking identifies the direct waker, not the waited-on object.",
+    "irq/134-host_sy cannot be mapped to a device without procfs and IRQ action evidence."
+  ]
+}
