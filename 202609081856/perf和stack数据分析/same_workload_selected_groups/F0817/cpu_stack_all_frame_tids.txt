@@ -1,0 +1,71 @@
+mainboard 1645387 [009] 968508.576022791:   10101010 cpu-clock: 
+	    ffff97ad1c00 [unknown] (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+
+mainboard 1645395 [011] 968508.586950629:   10101010 cpu-clock: 
+	    ffff784715b0 [unknown] (/opt/apollo/neo/packages/3rd-opencv/9.0.0-beta-r1/lib/libopencv_imgproc.so.4.4.0)
+
+mainboard 1646958 [010] 968508.587037958:   10101010 cpu-clock: 
+	    ffff8eec70a8 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646954 [009] 968508.597548734:   10101010 cpu-clock: 
+	    ffff9160d240 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646954 [011] 968508.636339310:   10101010 cpu-clock: 
+	ffffaeaedf00cefc futex_wait+0x7c ([kernel.kallsyms])
+	ffffaeaedf00f338 do_futex+0x188 ([kernel.kallsyms])
+	ffffaeaedf00fb94 __arm64_sys_futex+0x124 ([kernel.kallsyms])
+	ffffaeaedeedd6c0 el0_svc_common.constprop.0+0x80 ([kernel.kallsyms])
+	ffffaeaedeedd848 do_el0_svc+0x38 ([kernel.kallsyms])
+	ffffaeaee00bfe3c el0_svc+0x1c ([kernel.kallsyms])
+	ffffaeaee00c0398 el0_sync_handler+0xa8 ([kernel.kallsyms])
+	ffffaeaedeec1eac el0_sync+0x16c ([kernel.kallsyms])
+	    ffffa25592c0 __lll_lock_wait+0x50 (/usr/lib/aarch64-linux-gnu/libpthread-2.31.so)
+	    ffffa2550ceb __GI___pthread_mutex_lock+0xfb (inlined)
+	    ffff93ca64a7 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libc10_cuda.so)
+
+mainboard 1646958 [001] 968508.651770893:   10101010 cpu-clock: 
+	    ffff8eef3e10 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646944 [009] 968508.656445681:   10101010 cpu-clock: 
+	ffffaeaedf5eccf0 host1x_sync_readl+0x40 ([kernel.kallsyms])
+	ffffaeaedf604110 t20_syncpt_update_min+0x50 ([kernel.kallsyms])
+	ffffaeaedf5da7b0 syncpt_update_min_is_expired+0x40 ([kernel.kallsyms])
+	ffffaeaedf5dbf18 nvhost_syncpt_wait_timeout+0x378 ([kernel.kallsyms])
+	ffffaeaedf5f530c nvhost_ctrlctl+0x89c ([kernel.kallsyms])
+	ffffaeaedf1c745c __arm64_sys_ioctl+0xac ([kernel.kallsyms])
+	ffffaeaedeedd6c0 el0_svc_common.constprop.0+0x80 ([kernel.kallsyms])
+	ffffaeaedeedd848 do_el0_svc+0x38 ([kernel.kallsyms])
+	ffffaeaee00bfe3c el0_svc+0x1c ([kernel.kallsyms])
+	ffffaeaee00c0398 el0_sync_handler+0xa8 ([kernel.kallsyms])
+	ffffaeaedeec1eac el0_sync+0x16c ([kernel.kallsyms])
+	    ffffa215d93c nice+0x4 (/usr/lib/aarch64-linux-gnu/libc-2.31.so)
+	    aaaacaee1767 [unknown] ([heap])
+
+mainboard 1646959 [011] 968508.684739370:   10101010 cpu-clock: 
+	    ffff96a0b850 [unknown] (/opt/apollo/neo/lib/modules/common/math/libmath.so)
+
+mainboard 1646958 [008] 968508.696350289:   10101010 cpu-clock: 
+	    ffff93fc1bc0 [unknown] (/usr/local/cuda-11.4/targets/aarch64-linux/lib/libcudart.so.11.4.298)
+	    ffff93f9500b [unknown] (/usr/local/cuda-11.4/targets/aarch64-linux/lib/libcudart.so.11.4.298)
+	    ffff93feebf3 cudaLaunchKernel+0x263 (/usr/local/cuda-11.4/targets/aarch64-linux/lib/libcudart.so.11.4.298)
+	    ffff87ac8b2f [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+
+mainboard 1646958 [011] 968508.698411279:   10101010 cpu-clock: 
+	    ffff8f16cebc [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646954 [008] 968508.702592075:   10101010 cpu-clock: 
+	    ffffa5ed23e0 __kernel_clock_gettime+0x0 ([vdso])
+
+mainboard 1646958 [011] 968508.709548208:   10101010 cpu-clock: 
+	    ffffa2550684 __pthread_mutex_lock_full+0x13c (/usr/lib/aarch64-linux-gnu/libpthread-2.31.so)
+	    ffff1679a593 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff1679a793 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff1665c7df [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff167f7e13 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff165befb7 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff165c0d67 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff166976d3 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff93f950eb [unknown] (/usr/local/cuda-11.4/targets/aarch64-linux/lib/libcudart.so.11.4.298)
+	    ffff93feebf3 cudaLaunchKernel+0x263 (/usr/local/cuda-11.4/targets/aarch64-linux/lib/libcudart.so.11.4.298)
+	    ffff87eebe7b [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+

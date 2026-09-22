@@ -1,0 +1,40 @@
+mainboard 1646961 [002] 968509.014500485:   10101010 cpu-clock: 
+	    ffffa2cde2fc [unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+
+mainboard 1645389 [010] 968509.018034360:   10101010 cpu-clock: 
+	    ffff78469c18 [unknown] (/opt/apollo/neo/packages/3rd-opencv/9.0.0-beta-r1/lib/libopencv_imgproc.so.4.4.0)
+
+mainboard 1646961 [008] 968509.031344600:   10101010 cpu-clock: 
+	ffffaeaedefa4690 prepare_to_wait_event+0x0 ([kernel.kallsyms])
+	ffffaeaedf5f530c nvhost_ctrlctl+0x89c ([kernel.kallsyms])
+	ffffaeaedf1c745c __arm64_sys_ioctl+0xac ([kernel.kallsyms])
+	ffffaeaedeedd6c0 el0_svc_common.constprop.0+0x80 ([kernel.kallsyms])
+	ffffaeaedeedd848 do_el0_svc+0x38 ([kernel.kallsyms])
+	ffffaeaee00bfe3c el0_svc+0x1c ([kernel.kallsyms])
+	ffffaeaee00c0398 el0_sync_handler+0xa8 ([kernel.kallsyms])
+	ffffaeaedeec1eac el0_sync+0x16c ([kernel.kallsyms])
+	    ffffa215d93c nice+0x4 (/usr/lib/aarch64-linux-gnu/libc-2.31.so)
+	    aaaacaee1767 [unknown] ([heap])
+
+mainboard 1646956 [009] 968509.031633564:   10101010 cpu-clock: 
+	    ffff893498b4 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+
+mainboard 1646951 [000] 968509.073742461:   10101010 cpu-clock: 
+	    fffeda86d074 [unknown] (/usr/lib/aarch64-linux-gnu/libcudnn_ops_infer.so.8.6.0)
+	    fffeda8caa13 [unknown] (/usr/lib/aarch64-linux-gnu/libcudnn_ops_infer.so.8.6.0)
+	    fffeda5b28ef cudnn::ops::SetStream+0x6f (/usr/lib/aarch64-linux-gnu/libcudnn_ops_infer.so.8.6.0)
+	    fffeda5b3473 cudnnSetStream+0x93 (/usr/lib/aarch64-linux-gnu/libcudnn_ops_infer.so.8.6.0)
+	    ffff87117c7b [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+
+mainboard 1646956 [003] 968509.101089128:   10101010 cpu-clock: 
+	    ffff890549c0 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+
+mainboard 1646957 [001] 968509.102462108:   10101010 cpu-clock: 
+	    aaaaab4565d0 [unknown] (/opt/apollo/neo/bin/mainboard)
+
+mainboard 1646956 [001] 968509.113235255:   10101010 cpu-clock: 
+	    ffffa2cf2380 [unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+
+mainboard 1646956 [002] 968509.118468131:   10101010 cpu-clock: 
+	    ffff91916b74 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+

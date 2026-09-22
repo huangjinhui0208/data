@@ -1,0 +1,371 @@
+{
+  "frames": [
+    900,
+    901,
+    903,
+    904,
+    905,
+    906,
+    907,
+    908,
+    917,
+    918,
+    919,
+    920,
+    921,
+    922,
+    923,
+    924,
+    925
+  ],
+  "frame_checks": {
+    "900": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646946,
+        1646950,
+        1646951,
+        1646960
+      ],
+      "worker_model_count_histogram": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 1801,
+      "scheduler_coverage_s": [
+        968511.131844,
+        968511.269609
+      ]
+    },
+    "901": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646942,
+        1646943,
+        1646949,
+        1646958
+      ],
+      "worker_model_count_histogram": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2382,
+      "scheduler_coverage_s": [
+        968511.260252,
+        968511.427181
+      ]
+    },
+    "903": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646942,
+        1646943,
+        1646949,
+        1646958
+      ],
+      "worker_model_count_histogram": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2142,
+      "scheduler_coverage_s": [
+        968511.557581,
+        968511.721193
+      ]
+    },
+    "904": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646946,
+        1646950,
+        1646951,
+        1646960
+      ],
+      "worker_model_count_histogram": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2031,
+      "scheduler_coverage_s": [
+        968511.711881,
+        968511.873032
+      ]
+    },
+    "905": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646942,
+        1646943,
+        1646949,
+        1646958
+      ],
+      "worker_model_count_histogram": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 1447,
+      "scheduler_coverage_s": [
+        968511.841046,
+        968511.998951
+      ]
+    },
+    "906": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646946,
+        1646950,
+        1646951,
+        1646960
+      ],
+      "worker_model_count_histogram": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 1225,
+      "scheduler_coverage_s": [
+        968511.970919,
+        968512.133851
+      ]
+    },
+    "907": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646942,
+        1646943,
+        1646949,
+        1646958
+      ],
+      "worker_model_count_histogram": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 1979,
+      "scheduler_coverage_s": [
+        968512.101545,
+        968512.286326
+      ]
+    },
+    "908": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646946,
+        1646950,
+        1646951,
+        1646960
+      ],
+      "worker_model_count_histogram": {
+        "1": 1,
+        "2": 2,
+        "3": 1
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2184,
+      "scheduler_coverage_s": [
+        968512.25142,
+        968512.433099
+      ]
+    },
+    "917": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646946,
+        1646951,
+        1646952,
+        1646960
+      ],
+      "worker_model_count_histogram": {
+        "2": 4
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2342,
+      "scheduler_coverage_s": [
+        968513.557175,
+        968513.698656
+      ]
+    },
+    "918": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646949,
+        1646953,
+        1646958,
+        1646961
+      ],
+      "worker_model_count_histogram": {
+        "2": 4
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2004,
+      "scheduler_coverage_s": [
+        968513.686703,
+        968513.836018
+      ]
+    },
+    "919": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646950,
+        1646951,
+        1646952,
+        1646956
+      ],
+      "worker_model_count_histogram": {
+        "2": 4
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2433,
+      "scheduler_coverage_s": [
+        968513.816928,
+        968513.97078
+      ]
+    },
+    "920": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646942,
+        1646944,
+        1646949,
+        1646958
+      ],
+      "worker_model_count_histogram": {
+        "2": 4
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2369,
+      "scheduler_coverage_s": [
+        968513.961695,
+        968514.117173
+      ]
+    },
+    "921": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646943,
+        1646952,
+        1646956,
+        1646959
+      ],
+      "worker_model_count_histogram": {
+        "2": 4
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2385,
+      "scheduler_coverage_s": [
+        968514.093325,
+        968514.255656
+      ]
+    },
+    "922": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646942,
+        1646944,
+        1646947,
+        1646948
+      ],
+      "worker_model_count_histogram": {
+        "2": 4
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2098,
+      "scheduler_coverage_s": [
+        968514.236867,
+        968514.397366
+      ]
+    },
+    "923": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646943,
+        1646955,
+        1646959,
+        1646961
+      ],
+      "worker_model_count_histogram": {
+        "2": 4
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2506,
+      "scheduler_coverage_s": [
+        968514.3877,
+        968514.537649
+      ]
+    },
+    "924": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646942,
+        1646946,
+        1646948,
+        1646950
+      ],
+      "worker_model_count_histogram": {
+        "2": 4
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2322,
+      "scheduler_coverage_s": [
+        968514.524666,
+        968514.689008
+      ]
+    },
+    "925": {
+      "model_calls": 8,
+      "inference_calls": 21,
+      "worker_tids": [
+        1646949,
+        1646955,
+        1646957,
+        1646959
+      ],
+      "worker_model_count_histogram": {
+        "2": 4
+      },
+      "marker_on_cpu_checks": 58,
+      "scheduler_event_count": 2768,
+      "scheduler_coverage_s": [
+        968514.658095,
+        968514.886512
+      ]
+    }
+  },
+  "trace_to_sched_method": "time-varying affine stack offset: fit using alternate samples, validate remaining samples on same TID and CPU; trace markers independently checked on CPU",
+  "trace_marker_support": 1.0,
+  "stack_same_tid_cpu_heldout_support": 1.0,
+  "limitations": [
+    "Worker lanes are software threads, not fixed CPU cores.",
+    "Blocked intervals use sched_waking or sched_wakeup as the wake boundary.",
+    "CPU stack rows are samples and do not measure full blocked duration.",
+    "Logical ThreadPool group identifiers are unavailable in the input workload table."
+  ]
+}

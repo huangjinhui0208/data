@@ -1,0 +1,79 @@
+mainboard 1645392 [006] 968522.722783109:   10101010 cpu-clock: 
+	    aaaaab45afcc [unknown] (/opt/apollo/neo/bin/mainboard)
+
+mainboard 1646959 [005] 968522.733217781:   10101010 cpu-clock: 
+	    ffff9009e0d8 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1645387 [009] 968522.734723594:   10101010 cpu-clock: 
+	    ffff78469bfc [unknown] (/opt/apollo/neo/packages/3rd-opencv/9.0.0-beta-r1/lib/libopencv_imgproc.so.4.4.0)
+
+mainboard 1646953 [005] 968522.736661829:   10101010 cpu-clock: 
+	    ffff16255488 NvRmHost1xSyncpointWait+0x0 (/usr/lib/aarch64-linux-gnu/tegra/libnvrm_host1x.so)
+	    ffff16735ee3 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff165ecd37 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff16604d8b [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff1680e85f [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff1680effb [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff167f6f9f [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff165bd3b7 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+
+mainboard 1646961 [007] 968522.738581087:   10101010 cpu-clock: 
+	    ffff167fee48 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff1666bc97 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff16697b33 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff93f93567 [unknown] (/usr/local/cuda-11.4/targets/aarch64-linux/lib/libcudart.so.11.4.298)
+	    ffff93fee973 cudaStreamSynchronize+0x1ab (/usr/local/cuda-11.4/targets/aarch64-linux/lib/libcudart.so.11.4.298)
+	    ffff87ed9137 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+
+mainboard 1646953 [007] 968522.742174449:   10101010 cpu-clock: 
+	    ffff8f238440 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646961 [001] 968522.767486126:   10101010 cpu-clock: 
+	    ffff91963ea4 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646955 [004] 968522.795636755:   10101010 cpu-clock: 
+	    ffff86f395c0 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+
+mainboard 1646961 [000] 968522.795719060:   10101010 cpu-clock: 
+	    ffff8f0a7240 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646955 [000] 968522.805635261:   10101010 cpu-clock: 
+	ffffaeaedff087c8 udp4_gro_receive+0x2e8 ([kernel.kallsyms])
+	ffffaeaedff12f28 inet_gro_receive+0x2b8 ([kernel.kallsyms])
+	ffffaeaedfe20058 dev_gro_receive+0x338 ([kernel.kallsyms])
+	ffffaeaedfe20424 napi_gro_receive+0x64 ([kernel.kallsyms])
+	ffffaeaedfa2a594 osd_receive_packet+0x164 ([kernel.kallsyms])
+	ffffaeaedfa3d5ec osi_process_rx_completions+0x2ac ([kernel.kallsyms])
+	ffffaeaedfa2268c ether_napi_poll_rx+0x5c ([kernel.kallsyms])
+	ffffaeaedfe21134 net_rx_action+0x124 ([kernel.kallsyms])
+	ffffaeaedeec0370 __do_softirq+0x140 ([kernel.kallsyms])
+	ffffaeaedef4d680 irq_exit+0xc0 ([kernel.kallsyms])
+	ffffaeaedefc2e24 __handle_domain_irq+0x74 ([kernel.kallsyms])
+	ffffaeaedeec0158 gic_handle_irq+0x68 ([kernel.kallsyms])
+	ffffaeaedeec24f0 el0_irq_naked+0x4c ([kernel.kallsyms])
+	    ffff165e8c00 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff165eca57 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff16604d8b [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff1680e85f [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff1680effb [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff167f6f9f [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff165bd3b7 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+
+mainboard 1646961 [003] 968522.837136176:   10101010 cpu-clock: 
+	    ffff86f152b0 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+
+mainboard 1646953 [000] 968522.842264694:   10101010 cpu-clock: 
+	    fffeb73e2d00 cudnn::backend::Tensor::Tensor+0x0 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb7529063 cudnn::cnn::AutoTransformTensor::AutoTransformTensor+0xdb (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb761a0ab std::vector<cudnn::cnn::AutoTransformationExecutor, std::allocator<cudnn::cnn::AutoTransformationExecutor> >::_M_realloc_insert<cudnn::cnn::GenericConvolution&, cudnn::backend::OperationSet const&, cudnn::cnn::ConvolutionEngineRequirementSpecs const&>+0x12b (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb761cc5b cudnn::cnn::BatchPartitionExecutor::BatchPartitionExecutor+0x39b (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb763a0d3 std::__shared_ptr<cudnn::cnn::GeneralizedConvolutionEngine<cudnn::cnn::EngineContainer<(cudnnBackendEngineName_t)28> >, (__gnu_cxx::_Lock_policy)2>::__shared_ptr<std::allocator<cudnn::cnn::GeneralizedConvolutionEngine<cudnn::cnn::EngineContainer<(cudnnBackendEngineName_t)28> > >, cudnnContext*&, cudnnBackendEngineName_t&, cudnn::backend::OperationSet const&, cudnn::cnn::GenericConvolution const&, decltype(nullptr)>+0xd3 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb744a22f [unknown] (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb7435fab cudnn::backend::Engine::instantiateEngine+0xe3 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb743c40b cudnn::backend::Engine::finalize_internal+0x9b (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb74334ef [unknown] (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb74347fb cudnn::backend::EngineConfig::finalize_internal+0x483 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb74334ef [unknown] (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb7442e2b cudnn::backend::ExecutionPlan::finalize_internal+0x2d3 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76da977 [unknown] (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+

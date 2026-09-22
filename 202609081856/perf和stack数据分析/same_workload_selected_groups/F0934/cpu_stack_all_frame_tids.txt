@@ -1,0 +1,51 @@
+mainboard 1645398 [004] 968525.229147370:   10101010 cpu-clock: 
+	    ffffa2cf0720 [unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+
+mainboard 1645390 [007] 968525.243320334:   10101010 cpu-clock: 
+	    ffff78471338 [unknown] (/opt/apollo/neo/packages/3rd-opencv/9.0.0-beta-r1/lib/libopencv_imgproc.so.4.4.0)
+
+mainboard 1646959 [001] 968525.244499230:   10101010 cpu-clock: 
+	    ffff8eef3e18 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646955 [003] 968525.274432956:   10101010 cpu-clock: 
+	    ffff93d01b14 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libc10.so)
+
+mainboard 1646958 [011] 968525.290439065:   10101010 cpu-clock: 
+	ffffaeaee00c9a38 _raw_spin_unlock_irqrestore+0x38 ([kernel.kallsyms])
+	ffffaeaedef8785c try_to_wake_up+0x26c ([kernel.kallsyms])
+	ffffaeaedef87dc0 wake_up_q+0x70 ([kernel.kallsyms])
+	ffffaeaedefb5e44 rt_mutex_postunlock+0x24 ([kernel.kallsyms])
+	ffffaeaedf00f7f4 do_futex+0x644 ([kernel.kallsyms])
+	ffffaeaedf00fb94 __arm64_sys_futex+0x124 ([kernel.kallsyms])
+	ffffaeaedeedd6c0 el0_svc_common.constprop.0+0x80 ([kernel.kallsyms])
+	ffffaeaedeedd848 do_el0_svc+0x38 ([kernel.kallsyms])
+	ffffaeaee00bfe3c el0_svc+0x1c ([kernel.kallsyms])
+	ffffaeaee00c0398 el0_sync_handler+0xa8 ([kernel.kallsyms])
+	ffffaeaedeec1eac el0_sync+0x16c ([kernel.kallsyms])
+	    ffffa25523e8 futex_unlock_pi+0x498 (inlined)
+	    ffffa25523e8 __pthread_mutex_unlock_full+0x498 (/usr/lib/aarch64-linux-gnu/libpthread-2.31.so)
+	    ffff165c0d87 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff166976d3 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff89349d6f [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+
+mainboard 1646959 [000] 968525.300568740:   10101010 cpu-clock: 
+	    ffff166e88f4 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff1665e623 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff16676bdf [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff93f9216f [unknown] (/usr/local/cuda-11.4/targets/aarch64-linux/lib/libcudart.so.11.4.298)
+	    ffff93fcd2db cudaGetDevice+0x1a3 (/usr/local/cuda-11.4/targets/aarch64-linux/lib/libcudart.so.11.4.298)
+	    ffff870b2123 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+
+mainboard 1646955 [005] 968525.341071379:   10101010 cpu-clock: 
+	    fffeb74315d4 [unknown] (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb743160b [unknown] (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb7431beb cudnn::cnn::PerfKnobs::setChoicesFrom+0xdb (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb74a875f cudnn::cnn::GeneralizedConvolutionEngine<cudnn::cnn::EngineContainer<(cudnnBackendEngineName_t)28> >::setPerfKnobs_internal+0x327 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb7442ebf cudnn::backend::ExecutionPlan::finalize_internal+0x367 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76da977 [unknown] (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76dd1df cudnn::backend::get_plan_for_legacy_algo+0xc17 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76e3897 cudnn::backend::make_convolution_plan<cudnn::backend::ConvolutionForwardOperation, cudnnConvolutionFwdAlgo_t, cudnn::backend::EnginesAlgoMap<cudnnConvolutionFwdAlgo_t, 8> >+0x2a7 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+
+mainboard 1646958 [002] 968525.344147422:   10101010 cpu-clock: 
+	    ffff86f24418 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+

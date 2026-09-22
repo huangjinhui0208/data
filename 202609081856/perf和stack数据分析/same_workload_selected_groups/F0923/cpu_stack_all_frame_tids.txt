@@ -1,0 +1,47 @@
+mainboard 1645396 [007] 968523.697673590:   10101010 cpu-clock: 
+	    ffff96ec48dc [unknown] (/opt/apollo/neo/lib/modules/map/libapollo_map.so)
+
+mainboard 1645398 [010] 968523.702557498:   10101010 cpu-clock: 
+	    ffff96ecb550 [unknown] (/opt/apollo/neo/lib/modules/map/libapollo_map.so)
+
+mainboard 1646943 [002] 968523.705062620:   10101010 cpu-clock: 
+	    ffff93ca17bc [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libc10_cuda.so)
+
+mainboard 1646959 [003] 968523.705743590:   10101010 cpu-clock: 
+	    ffffa255c5cc __aarch64_cas4_acq+0xc (/usr/lib/aarch64-linux-gnu/libpthread-2.31.so)
+	    ffffa2550c33 __GI___pthread_mutex_lock+0x43 (inlined)
+	    ffff919785d3 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1645398 [010] 968523.713122636:   10101010 cpu-clock: 
+	    ffff97ae322c [unknown] (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+
+mainboard 1646961 [001] 968523.750114762:   10101010 cpu-clock: 
+	    ffff1682e158 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff165c0bd7 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff166976d3 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff89349d6f [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+
+mainboard 1646961 [002] 968523.751290362:   10101010 cpu-clock: 
+	    ffff93cf7d30 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libc10.so)
+
+mainboard 1646955 [001] 968523.786446048:   10101010 cpu-clock: 
+	    fffeb785685c [unknown] (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76e4943 autoHeur<(GPUHeurGroup)8, (cudnn::backend::OperationSetFinalizedMode_t)0>+0xe3 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76b41bf cudnn::backend::getHeurDtreeLeaf+0x1d7 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76c50b3 cudnn::backend::EngineHeuristics::finalize_internal+0x143 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76da977 [unknown] (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76dcb7f cudnn::backend::get_plan_for_legacy_algo+0x5b7 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76e3897 cudnn::backend::make_convolution_plan<cudnn::backend::ConvolutionForwardOperation, cudnnConvolutionFwdAlgo_t, cudnn::backend::EnginesAlgoMap<cudnnConvolutionFwdAlgo_t, 8> >+0x2a7 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+
+mainboard 1646943 [003] 968523.788878657:   10101010 cpu-clock: 
+	    ffff911a3fbc [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646961 [003] 968523.804857758:   10101010 cpu-clock: 
+	    ffffa2cf0590 [unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+
+mainboard 1646955 [002] 968523.816861284:   10101010 cpu-clock: 
+	    ffffa2cf23f4 [unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+
+mainboard 1646955 [003] 968523.824105096:   10101010 cpu-clock: 
+	    ffff87967e98 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+

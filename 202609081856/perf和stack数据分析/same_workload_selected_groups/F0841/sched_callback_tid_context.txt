@@ -1,0 +1,62 @@
+       mainboard 1646932 [008] 968502.659184:       sched:sched_waking: comm=mainboard pid=1645392 prio=120 target_cpu=009
+       mainboard 1646932 [008] 968502.659192: sched:sched_migrate_task: comm=mainboard pid=1645392 prio=120 orig_cpu=9 dest_cpu=11
+         swapper     0 [011] 968502.659197:       sched:sched_switch: prev_comm=swapper/11 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.667145:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645461 next_prio=120
+       mainboard 1645461 [011] 968502.667192:       sched:sched_switch: prev_comm=mainboard prev_pid=1645461 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.668860:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=cyber_recorder next_pid=1648042 next_prio=120
+  cyber_recorder 1648042 [011] 968502.668907:       sched:sched_switch: prev_comm=cyber_recorder prev_pid=1648042 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645398 [010] 968502.670365:       sched:sched_waking: comm=mainboard pid=1645392 prio=120 target_cpu=011
+       mainboard 1645392 [011] 968502.670368:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=S ==> next_comm=swapper/11 next_pid=0 next_prio=120
+         swapper     0 [011] 968502.670378:       sched:sched_switch: prev_comm=swapper/11 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.670561:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1645397 next_prio=120
+       mainboard 1645397 [011] 968502.670591:       sched:sched_switch: prev_comm=mainboard prev_pid=1645397 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.670616:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=S ==> next_comm=swapper/11 next_pid=0 next_prio=120
+       mainboard 1645391 [008] 968502.676194:       sched:sched_waking: comm=mainboard pid=1645392 prio=120 target_cpu=011
+         swapper     0 [011] 968502.676208:       sched:sched_switch: prev_comm=swapper/11 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.676221:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1645421 next_prio=120
+       mainboard 1645421 [011] 968502.676235:       sched:sched_switch: prev_comm=mainboard prev_pid=1645421 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.676246:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1645421 next_prio=120
+       mainboard 1645421 [011] 968502.676280:       sched:sched_switch: prev_comm=mainboard prev_pid=1645421 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.676434:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=MainThread next_pid=1560837 next_prio=120
+  dreamview_plus 1644689 [011] 968502.676538:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1644689 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.676914:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=MainThread next_pid=1560836 next_prio=120
+  dreamview_plus 1644780 [011] 968502.677045:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1644780 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.677093:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=cyber_recorder next_pid=1648031 next_prio=120
+  dreamview_plus 1644780 [011] 968502.677189:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1644780 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.677847:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=S ==> next_comm=swapper/11 next_pid=0 next_prio=120
+       mainboard 1646945 [001] 968502.789394:       sched:sched_waking: comm=mainboard pid=1645392 prio=120 target_cpu=011
+         swapper     0 [011] 968502.789407:       sched:sched_switch: prev_comm=swapper/11 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.789426:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=S ==> next_comm=swapper/11 next_pid=0 next_prio=120
+       mainboard 1646947 [002] 968502.793942:       sched:sched_waking: comm=mainboard pid=1645392 prio=120 target_cpu=011
+         swapper     0 [011] 968502.793955:       sched:sched_switch: prev_comm=swapper/11 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.794213:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1646950 next_prio=120
+       mainboard 1645412 [011] 968502.794820:       sched:sched_switch: prev_comm=mainboard prev_pid=1645412 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [011] 968502.794878:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=S ==> next_comm=swapper/11 next_pid=0 next_prio=120
+       mainboard 1646960 [009] 968502.795568:       sched:sched_waking: comm=mainboard pid=1645392 prio=120 target_cpu=011
+       mainboard 1646960 [009] 968502.795576: sched:sched_migrate_task: comm=mainboard pid=1645392 prio=120 orig_cpu=11 dest_cpu=9
+       mainboard 1645447 [009] 968502.795611:       sched:sched_switch: prev_comm=mainboard prev_pid=1645447 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [009] 968502.797004:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=dreamview_plus next_pid=1644692 next_prio=120
+  dreamview_plus 1644692 [009] 968502.797072:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1644692 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [009] 968502.797763:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=dreamview_plus next_pid=1644692 next_prio=120
+  dreamview_plus 1644692 [009] 968502.797804:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1644692 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [009] 968502.804944:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=dreamview_plus next_pid=1644692 next_prio=120
+  dreamview_plus 1644692 [009] 968502.805024:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1644692 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [009] 968502.805143:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645447 next_prio=120
+       mainboard 1645447 [009] 968502.805187:       sched:sched_switch: prev_comm=mainboard prev_pid=1645447 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [009] 968502.805203:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645447 next_prio=120
+       mainboard 1645447 [009] 968502.805219:       sched:sched_switch: prev_comm=mainboard prev_pid=1645447 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [009] 968502.807838:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1645390 next_prio=120
+       mainboard 1645390 [009] 968502.818855:       sched:sched_switch: prev_comm=mainboard prev_pid=1645390 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [009] 968502.818913:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1645388 next_prio=120
+       mainboard 1645388 [009] 968502.818924:       sched:sched_switch: prev_comm=mainboard prev_pid=1645388 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [009] 968502.818973:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=S ==> next_comm=swapper/9 next_pid=0 next_prio=120
+       mainboard 1645386 [008] 968502.818997:       sched:sched_waking: comm=mainboard pid=1645392 prio=120 target_cpu=009
+       mainboard 1645386 [008] 968502.819002: sched:sched_migrate_task: comm=mainboard pid=1645392 prio=120 orig_cpu=9 dest_cpu=10
+         swapper     0 [010] 968502.819007:       sched:sched_switch: prev_comm=swapper/10 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [010] 968502.819064:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R+ ==> next_comm=mainboard next_pid=1645396 next_prio=120
+  dreamview_plus 1644780 [010] 968502.819089:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1644780 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [010] 968502.819188:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=mainboard next_pid=1645477 next_prio=120
+  dreamview_plus 1644780 [010] 968502.819214:       sched:sched_switch: prev_comm=dreamview_plus prev_pid=1644780 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [010] 968502.819663:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=R ==> next_comm=cyber_recorder next_pid=1648062 next_prio=120
+  cyber_recorder 1648062 [010] 968502.819721:       sched:sched_switch: prev_comm=cyber_recorder prev_pid=1648062 prev_prio=120 prev_state=S ==> next_comm=mainboard next_pid=1645392 next_prio=120
+       mainboard 1645392 [010] 968502.820462:       sched:sched_switch: prev_comm=mainboard prev_pid=1645392 prev_prio=120 prev_state=S ==> next_comm=swapper/10 next_pid=0 next_prio=120

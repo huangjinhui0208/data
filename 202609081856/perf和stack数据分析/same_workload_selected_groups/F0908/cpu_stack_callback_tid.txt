@@ -1,0 +1,17 @@
+mainboard 1645396 [005] 968521.588660510:   10101010 cpu-clock: 
+	ffffaeaee00c9a38 _raw_spin_unlock_irqrestore+0x38 ([kernel.kallsyms])
+	ffffaeaedef8785c try_to_wake_up+0x26c ([kernel.kallsyms])
+	ffffaeaedef87dc0 wake_up_q+0x70 ([kernel.kallsyms])
+	ffffaeaedf00d268 futex_wake+0x178 ([kernel.kallsyms])
+	ffffaeaedf00f46c do_futex+0x2bc ([kernel.kallsyms])
+	ffffaeaedf00fb94 __arm64_sys_futex+0x124 ([kernel.kallsyms])
+	ffffaeaedeedd6c0 el0_svc_common.constprop.0+0x80 ([kernel.kallsyms])
+	ffffaeaedeedd848 do_el0_svc+0x38 ([kernel.kallsyms])
+	ffffaeaee00bfe3c el0_svc+0x1c ([kernel.kallsyms])
+	ffffaeaee00c0398 el0_sync_handler+0xa8 ([kernel.kallsyms])
+	ffffaeaedeec1eac el0_sync+0x16c ([kernel.kallsyms])
+	    ffffa2555d84 futex_wake+0xe4 (inlined)
+	    ffffa2555d84 __pthread_cond_signal+0xe4 (inlined)
+	    ffffa22f368b std::condition_variable::notify_one+0x1b (/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.28)
+	    ffffa4ab10d3 [unknown] (/opt/apollo/neo/lib/cyber/scheduler/libcyber_scheduler.so)
+

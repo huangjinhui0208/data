@@ -1,0 +1,34 @@
+mainboard 1645396 [006] 968525.772729418:   10101010 cpu-clock: 
+	    ffff97ad6a08 [unknown] (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+
+mainboard 1646953 [006] 968525.777487876:   10101010 cpu-clock: 
+	    ffffa255542c futex_wait_cancelable+0x224 (inlined)
+	    ffffa255542c __pthread_cond_wait_common+0x224 (inlined)
+	    ffffa255542c __pthread_cond_wait+0x224 (inlined)
+	    ffffa22f366f std::condition_variable::wait+0x1f (/usr/lib/aarch64-linux-gnu/libstdc++.so.6.0.28)
+	    ffffa4b59e43 [unknown] (/opt/apollo/neo/lib/cyber/task/libcyber_task.so)
+
+mainboard 1645397 [004] 968525.779412904:   10101010 cpu-clock: 
+	    ffff96ec7658 [unknown] (/opt/apollo/neo/lib/modules/map/libapollo_map.so)
+
+mainboard 1646953 [010] 968525.784372261:   10101010 cpu-clock: 
+	    ffffa2cf1bf4 [unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+
+mainboard 1646953 [000] 968525.794011738:   10101010 cpu-clock: 
+	ffffaeaee00c9a38 _raw_spin_unlock_irqrestore+0x38 ([kernel.kallsyms])
+	ffffaeaedef87b24 try_to_wake_up+0x534 ([kernel.kallsyms])
+	ffffaeaedef87dc0 wake_up_q+0x70 ([kernel.kallsyms])
+	ffffaeaedf00d268 futex_wake+0x178 ([kernel.kallsyms])
+	ffffaeaedf00f46c do_futex+0x2bc ([kernel.kallsyms])
+	ffffaeaedf00fb94 __arm64_sys_futex+0x124 ([kernel.kallsyms])
+	ffffaeaedeedd6c0 el0_svc_common.constprop.0+0x80 ([kernel.kallsyms])
+	ffffaeaedeedd848 do_el0_svc+0x38 ([kernel.kallsyms])
+	ffffaeaee00bfe3c el0_svc+0x1c ([kernel.kallsyms])
+	ffffaeaee00c0398 el0_sync_handler+0xa8 ([kernel.kallsyms])
+	ffffaeaedeec1eac el0_sync+0x16c ([kernel.kallsyms])
+	    ffffa2552520 __pthread_mutex_unlock_usercnt+0xd8 (/usr/lib/aarch64-linux-gnu/libpthread-2.31.so)
+	    ffff93cc022f [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libc10_cuda.so)
+
+mainboard 1646944 [003] 968525.796517129:   10101010 cpu-clock: 
+	    ffff86f33290 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+

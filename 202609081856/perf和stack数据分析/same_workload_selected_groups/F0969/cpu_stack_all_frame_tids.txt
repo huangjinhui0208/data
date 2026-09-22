@@ -1,0 +1,28 @@
+mainboard 1645387 [004] 968530.096690913:   10101010 cpu-clock: 
+	    ffffa2cf1b90 [unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+
+mainboard 1645395 [005] 968530.101766145:   10101010 cpu-clock: 
+	    ffff97ae5318 [unknown] (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+
+mainboard 1646945 [006] 968530.105145760:   10101010 cpu-clock: 
+	    ffff97b50010 [unknown] (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+
+mainboard 1645395 [005] 968530.112020737:   10101010 cpu-clock: 
+	    ffffa2118dd8 [unknown] (/usr/lib/aarch64-linux-gnu/libc-2.31.so)
+
+mainboard 1646945 [006] 968530.115504162:   10101010 cpu-clock: 
+	    ffff8f021be8 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646945 [005] 968530.134265218:   10101010 cpu-clock: 
+	    ffffa255c884 __aarch64_swp4_rel+0x14 (/usr/lib/aarch64-linux-gnu/libpthread-2.31.so)
+	    ffffa2552493 __pthread_mutex_unlock_usercnt+0x4b (/usr/lib/aarch64-linux-gnu/libpthread-2.31.so)
+	    ffff161d98d7 [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libnvrm_gpu.so)
+	    ffff161f5b6f [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libnvrm_gpu.so)
+	    fffeff7872ff [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libnvcucompat.so)
+	    ffff1674085f [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff166a0d3f [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+	    ffff165ebe4f [unknown] (/usr/lib/aarch64-linux-gnu/tegra/libcuda.so.1.1)
+
+mainboard 1646945 [005] 968530.151138623:   10101010 cpu-clock: 
+	    ffffa2ce1e24 [unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+

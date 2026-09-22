@@ -1,0 +1,5 @@
+﻿tid,cpu,stack_time_ns,aligned_sched_s,active_trace_nodes,leaf,dso,callchain
+1646942,4,968531604624704,968522.3004569077,model_jointly_prediction_planning,[unknown],/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so,[unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+1645404,7,968531612932924,968522.3087650115,semantic_base_async_draw;semantic_draw_lanes,[unknown],/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so,[unknown] (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+1646942,4,968531614761054,968522.310593116,model_jointly_prediction_planning,[unknown],/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so,[unknown] (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+1646942,5,968531629853913,968522.3256857638,jointly_prediction_planning_inference;model_jointly_prediction_planning,[unknown],/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so,[unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)

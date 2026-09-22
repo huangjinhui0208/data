@@ -1,0 +1,44 @@
+mainboard 1645396 [004] 968521.426458367:   10101010 cpu-clock: 
+	    ffff94d7b3ac [unknown] (/opt/apollo/neo/lib/modules/common_msgs/basic_msgs/lib_pnc_point_proto_mcb_bin.so)
+
+mainboard 1645386 [007] 968521.436275815:   10101010 cpu-clock: 
+	    ffffa2118f14 __GI_memcpy+0x104 (inlined)
+	    ffff78470b5b [unknown] (/opt/apollo/neo/packages/3rd-opencv/9.0.0-beta-r1/lib/libopencv_imgproc.so.4.4.0)
+
+mainboard 1646942 [004] 968521.448869012:   10101010 cpu-clock: 
+	    ffff91241e18 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646943 [006] 968521.452399877:   10101010 cpu-clock: 
+	    ffffa2cf1bec [unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+
+mainboard 1646943 [007] 968521.465023731:   10101010 cpu-clock: 
+	    ffff90f9d210 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1646942 [005] 968521.465139221:   10101010 cpu-clock: 
+	ffffaeaedf5f52f4 nvhost_ctrlctl+0x884 ([kernel.kallsyms])
+	ffffaeaedf1c745c __arm64_sys_ioctl+0xac ([kernel.kallsyms])
+	ffffaeaedeedd6c0 el0_svc_common.constprop.0+0x80 ([kernel.kallsyms])
+	ffffaeaedeedd848 do_el0_svc+0x38 ([kernel.kallsyms])
+	ffffaeaee00bfe3c el0_svc+0x1c ([kernel.kallsyms])
+	ffffaeaee00c0398 el0_sync_handler+0xa8 ([kernel.kallsyms])
+	ffffaeaedeec1eac el0_sync+0x16c ([kernel.kallsyms])
+	    ffffa215d93c nice+0x4 (/usr/lib/aarch64-linux-gnu/libc-2.31.so)
+	    aaaacaee1767 [unknown] ([heap])
+
+mainboard 1646958 [007] 968521.482606854:   10101010 cpu-clock: 
+	    fffeb75eb500 cudnn::backend::OperationSet::operator=+0x3450 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76e228b cudnn::backend::setFinalizeMonoOperationSet<cudnn::backend::ConvolutionForwardOperation>+0x663 (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+	    fffeb76e376f cudnn::backend::make_convolution_plan<cudnn::backend::ConvolutionForwardOperation, cudnnConvolutionFwdAlgo_t, cudnn::backend::EnginesAlgoMap<cudnnConvolutionFwdAlgo_t, 8> >+0x17f (/usr/lib/aarch64-linux-gnu/libcudnn_cnn_infer.so.8.6.0)
+
+mainboard 1646942 [003] 968521.484889766:   10101010 cpu-clock: 
+	    ffffa2cf1bf4 [unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+
+mainboard 1646949 [000] 968521.556646244:   10101010 cpu-clock: 
+	    ffff88f1c580 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cuda.so)
+
+mainboard 1646958 [003] 968521.567356472:   10101010 cpu-clock: 
+	    ffff8eec70a8 [unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+
+mainboard 1645396 [005] 968521.574360153:   10101010 cpu-clock: 
+	    ffff94d7b3ac [unknown] (/opt/apollo/neo/lib/modules/common_msgs/basic_msgs/lib_pnc_point_proto_mcb_bin.so)
+

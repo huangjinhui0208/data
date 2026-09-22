@@ -1,0 +1,8 @@
+﻿tid,cpu,stack_time_ns,aligned_sched_s,active_trace_nodes,leaf,dso,callchain
+1645396,7,968530909055880,968521.6048978105,perception;proc,[unknown],/usr/local/lib/libtcmalloc.so.4.5.16,[unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+1646959,10,968530920630625,968521.6164723936,model_jointly_prediction_planning,[unknown],/opt/apollo/neo/lib/modules/map/libapollo_map.so,[unknown] (/opt/apollo/neo/lib/modules/map/libapollo_map.so)
+1645393,7,968530921781879,968521.6176236316,semantic_base_async_draw;semantic_draw_lanes,[unknown],/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so,[unknown] (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+1646959,10,968530931095590,968521.6269372123,model_jointly_prediction_planning,[unknown],/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so,[unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+1645393,7,968530932208954,968521.6280505607,semantic_base_async_draw;semantic_draw_lanes,[unknown],/opt/apollo/neo/packages/3rd-opencv/9.0.0-beta-r1/lib/libopencv_imgproc.so.4.4.0,[unknown] (/opt/apollo/neo/packages/3rd-opencv/9.0.0-beta-r1/lib/libopencv_imgproc.so.4.4.0)
+1646959,10,968530942166741,968521.6380082085,jointly_prediction_planning_inference;model_jointly_prediction_planning,[unknown],/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so,[unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+1646959,10,968530953300486,968521.6491417978,model_jointly_prediction_planning,[unknown],/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so,[unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)

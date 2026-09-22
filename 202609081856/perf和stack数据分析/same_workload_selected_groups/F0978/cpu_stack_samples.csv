@@ -1,0 +1,8 @@
+﻿tid,cpu,stack_time_ns,aligned_sched_s,active_trace_nodes,leaf,dso,callchain
+1645394,7,968531323233698,968522.0190698367,semantic_base_async_draw;semantic_draw_roads,__GI_memcpy,inlined,__GI_memcpy+0xe4 (inlined); [unknown] (/opt/apollo/neo/packages/3rd-opencv/9.0.0-beta-r1/lib/libopencv_imgproc.so.4.4.0)
+1646947,5,968531324867808,968522.0207039239,model_jointly_prediction_planning,[unknown],/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so,[unknown] (/opt/apollo/neo/lib/modules/prediction/libapollo_prediction.so)
+1646948,6,968531325074084,968522.0209101969,cruise_mlp_inference;model_cruise_mlp,[unknown],/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so,[unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libtorch_cpu.so)
+1645394,7,968531333620868,968522.0294568614,semantic_base_async_draw;semantic_draw_lanes,[unknown],/opt/apollo/neo/packages/3rd-opencv/9.0.0-beta-r1/lib/libopencv_imgproc.so.4.4.0,[unknown] (/opt/apollo/neo/packages/3rd-opencv/9.0.0-beta-r1/lib/libopencv_imgproc.so.4.4.0)
+1646947,5,968531335270275,968522.0311062454,model_jointly_prediction_planning,[unknown],/usr/local/lib/libtcmalloc.so.4.5.16,[unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
+1646947,6,968531341471128,968522.0373070117,jointly_prediction_planning_inference;model_jointly_prediction_planning,[unknown],/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libc10_cuda.so,[unknown] (/opt/apollo/neo/packages/3rd-libtorch-gpu/9.0.0-alpha3-r1/lib/libc10_cuda.so)
+1646947,6,968531352263298,968522.0480990307,jointly_prediction_planning_inference;model_jointly_prediction_planning,[unknown],/usr/local/lib/libtcmalloc.so.4.5.16,[unknown] (/usr/local/lib/libtcmalloc.so.4.5.16)
