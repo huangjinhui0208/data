@@ -1,0 +1,167 @@
+{
+  "run_id": "pw_20261020_141904",
+  "apollo_version": {
+    "value": "Apollo 10.0",
+    "evidence": "user-provided experiment context; capture-time commit unknown"
+  },
+  "apollo_capture_commit": null,
+  "apollo_source_snapshot_status": "current deployed files read after capture; capture-time binary/source equivalence not proven",
+  "carla_version": "0.9.15 (user environment)",
+  "carla_scene": {
+    "value": "CarlaTown04",
+    "evidence": [
+      "/apollo_workspace/modules/carla_apollo10.0_bridge/carla_bridge/map/carla_town04/base_map.bin",
+      [
+        "/apollo_workspace/records/202610201421_MkzExample_CarlaTown04.00000.20261020141912.record"
+      ]
+    ],
+    "confidence": "path-derived; scenario actors/weather configuration unknown"
+  },
+  "carla_actors_weather": null,
+  "prediction_pid": "942621",
+  "process_starttime_ticks": "103208480",
+  "process_uid": "pw_20261020_141904:prediction:942621@103208480",
+  "host": "nivadia-desktop",
+  "kernel": {
+    "value": "5.10.120-tegra",
+    "evidence": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904/perfetto/system.perfetto-trace metadata system_release"
+  },
+  "jetson_power_mode": null,
+  "power_mode_missing_reason": "not recorded at capture; current setting would not prove historical setting",
+  "capture_tool_version": {
+    "tracebox": {
+      "path": "/media/ssd/hjh/perf_tools/perfetto/bin/tracebox-hjh",
+      "version": "Perfetto v58.2 (N/A)",
+      "build": {
+        "label": "v58.2-hjh4",
+        "upstream_revision": "add693d8b338ba9599dbcbc3e300b1ab8c000897",
+        "binary_sha256": "855c2fbf5457181be084297c7d6c854793af4e920d78464f8c9f5d802f39832c",
+        "native_patch_sha256": "6e82c0ff034994ad8a46c9e56bbe555656a547c51ba298cd79badc365ca3406e",
+        "native_patch": "/media/ssd/hjh/perf_tools/perfetto/changes/20261012_refresh_fix/perfetto_native.patch",
+        "namespace_regression": "/media/ssd/hjh/perf_tools/perfetto/changes/20261012_refresh_fix/namespace_regression.json",
+        "validation_status": "SOURCE_COMPONENT_BUILD_REVIEW_PASS_REAL_LOAD_PENDING",
+        "queue_capacity": 8192,
+        "compiler": "Ubuntu clang12.0.0; native arm64; libstdc++ host",
+        "build_args": "is_debug = false\nis_clang = true\nis_system_compiler = true\nis_hermetic_clang = false\nuse_custom_libcxx = false\nmonolithic_binaries = true\nenable_perfetto_trace_processor = true\nenable_perfetto_unittests = false\nenable_perfetto_integration_tests = false\nenable_perfetto_benchmarks = false\nenable_perfetto_heapprofd = false\nenable_perfetto_traced_perf = true\ncc = \"/media/ssd/hjh/perf_tools/perfetto/changes/20261010_real_load_fix/toolchain/usr/lib/llvm-12/bin/clang\"\ncxx = \"/media/ssd/hjh/perf_tools/perfetto/changes/20261010_real_load_fix/toolchain/usr/lib/llvm-12/bin/clang++\"\nenable_perfetto_tools = false\nskip_buildtools_check = true\n",
+        "collector_sha256": "3d867024522b8ccf5eb617f996173f992d1701616ad04aa00e9f090beaba7b1b",
+        "queue_commit_batch": 64,
+        "descriptor_reap_period_ms": 30000,
+        "full_cache_clear_period_ms": 300000,
+        "event_ring_pages_per_cpu": 4096,
+        "max_samples_per_cpu_read_batch": 256,
+        "refresh_policy": "reparse actual maps; retain identical file mappings and ELF; release cold/dead maps",
+        "partial_stack_policy": "retain kernel frames with ERROR_MAPS_PARSE when user maps unavailable",
+        "built_utc": "2026-10-14T17:11:26.372851+00:00",
+        "deployed_utc": "2026-10-14T17:18:43.479141+00:00",
+        "candidate_manifest": "/media/ssd/hjh/perf_tools/perfetto/changes/20261014_backpressure_candidate/candidate_final_manifest.json",
+        "candidate_manifest_sha256": "97ddf49b2e0e902c5afa931a03fcd888c352f08fca4126bca6d29dc174edede6",
+        "incremental_patches": [
+          {
+            "path": "/media/ssd/hjh/perf_tools/perfetto/changes/20261014_backpressure_candidate/candidate_cc.patch",
+            "sha256": "1707d5129da13a224d785c323b5365737e37b492d54eaba8bb2eff6ea5f6bf2c"
+          },
+          {
+            "path": "/media/ssd/hjh/perf_tools/perfetto/changes/20261014_backpressure_candidate/candidate_h.patch",
+            "sha256": "ba7906347c87c29a6fb16a9289f649004e12ad2da5f5e843d14d422857cffc45"
+          }
+        ],
+        "astra_final_review": "/media/ssd/hjh/perf_tools/perfetto/changes/20261014_backpressure_candidate/ASTRA_CANDIDATE_REVIEW_FINAL.md",
+        "astra_final_review_sha256": "4aa0d49c1124faa35e87e02d017a6f9c328d08500cf3ffedb96c693d2a723973",
+        "base_hjh3_provenance": {
+          "binary_sha256": "9ac7626ee93bae581b40caa0173c0b68842a7f75f96bbb88ebd1d4637369b0ee",
+          "native_patch": "/media/ssd/hjh/perf_tools/perfetto/changes/20261012_refresh_fix/perfetto_native.patch",
+          "native_patch_sha256": "6e82c0ff034994ad8a46c9e56bbe555656a547c51ba298cd79badc365ca3406e"
+        },
+        "prior_hjh3_metadata": {
+          "label": "v58.2-hjh3",
+          "upstream_revision": "add693d8b338ba9599dbcbc3e300b1ab8c000897",
+          "binary_sha256": "9ac7626ee93bae581b40caa0173c0b68842a7f75f96bbb88ebd1d4637369b0ee",
+          "native_patch_sha256": "6e82c0ff034994ad8a46c9e56bbe555656a547c51ba298cd79badc365ca3406e",
+          "native_patch": "/media/ssd/hjh/perf_tools/perfetto/changes/20261012_refresh_fix/perfetto_native.patch",
+          "namespace_regression": "/media/ssd/hjh/perf_tools/perfetto/changes/20261012_refresh_fix/namespace_regression.json",
+          "validation_status": "REAL_LOAD_TRANSPORT_PASS_STACK_PARTIAL",
+          "queue_capacity": 8192,
+          "compiler": "Ubuntu clang12.0.0; native arm64; libstdc++ host",
+          "build_args": "is_debug = false\nis_clang = true\nis_system_compiler = true\nis_hermetic_clang = false\nuse_custom_libcxx = false\nmonolithic_binaries = true\nenable_perfetto_trace_processor = true\nenable_perfetto_unittests = false\nenable_perfetto_integration_tests = false\nenable_perfetto_benchmarks = false\nenable_perfetto_heapprofd = false\nenable_perfetto_traced_perf = true\ncc = \"/media/ssd/hjh/perf_tools/perfetto/changes/20261010_real_load_fix/toolchain/usr/lib/llvm-12/bin/clang\"\ncxx = \"/media/ssd/hjh/perf_tools/perfetto/changes/20261010_real_load_fix/toolchain/usr/lib/llvm-12/bin/clang++\"\nenable_perfetto_tools = false\nskip_buildtools_check = true\n",
+          "collector_sha256": "3d867024522b8ccf5eb617f996173f992d1701616ad04aa00e9f090beaba7b1b",
+          "queue_commit_batch": 64,
+          "descriptor_reap_period_ms": 30000,
+          "full_cache_clear_period_ms": 300000,
+          "short_validation_option": "--duration 120 --test-cache-clear-ms 45000",
+          "event_ring_pages_per_cpu": 4096,
+          "max_samples_per_cpu_read_batch": 256,
+          "refresh_policy": "reparse actual maps; retain identical file mappings and ELF; release cold/dead maps",
+          "partial_stack_policy": "retain kernel frames with ERROR_MAPS_PARSE when user maps unavailable",
+          "built_utc": "2026-10-13T06:39:54.313874+00:00",
+          "deployed_utc": "2026-10-13T06:40:21.667888+00:00",
+          "real_load_validation_run": "/media/ssd/hjh/perf_tools/perfetto/runs/prediction_fix_validation_03",
+          "real_load_validation_report": "/media/ssd/hjh/perf_tools/perfetto/runs/prediction_fix_validation_03/audit_20261013/VALIDATION_REPORT.md",
+          "validated_utc": "2026-10-13T07:19:40.361370+00:00"
+        },
+        "real_load_acceptance": "PENDING",
+        "runtime_config_preserved": {
+          "queue_capacity": 8192,
+          "footprint_kb": 131072,
+          "event_ring_pages_per_cpu": 4096,
+          "cpu_clock_ring_pages": 256,
+          "full_cache_clear_period_ms": 300000,
+          "daemon_memory_guard_kb": 1048576,
+          "sampling_scope_and_frequency": "unchanged; source wakers retained"
+        },
+        "native_patch_provenance_note": "native_patch fields inherited for base hjh3 only; incremental_patches and candidate_manifest describe hjh4"
+      }
+    },
+    "trace_processor_shell": {
+      "path": "/media/ssd/hjh/perf_tools/perfetto/bin/trace_processor_shell",
+      "version": "Perfetto v58.2-add693d8b (add693d8b338ba9599dbcbc3e300b1ab8c000897)\nTrace Processor RPC API version: 14"
+    }
+  },
+  "collection_status": "FAILED",
+  "perfetto_status": "FAILED_OR_INCOMPLETE",
+  "experiment_start_raw_ns": "1032105204990656",
+  "experiment_stop_requested_raw_ns": "1032255268336320",
+  "analysis_window": {
+    "origin": "Trace Processor trace_bounds.start_ts",
+    "origin_boot_ns": "1032146343301613",
+    "relative_seconds": [
+      5,
+      105
+    ],
+    "start_boot_ns": "1032151343301613",
+    "end_boot_ns": "1032251343301613",
+    "wall_time_beijing_approx": [
+      "2026-10-20T14:19:10.582+08:00",
+      "2026-10-20T14:20:50.582+08:00"
+    ],
+    "interval_convention": "start inclusive, end exclusive; complete entities require begin>=start and end<=end",
+    "raw_to_boot_calibration": "clock_alignment.json"
+  },
+  "original_application_path": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904",
+  "original_perfetto_path": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904",
+  "inventory": "D:\\data\\analysis_inventory\\apollo_prediction_data_inventory.json",
+  "source_manifest": "inputs/source_manifest.json (local evidence cache; excluded from Git)",
+  "retention_policy": "All 1057 callback and 1929 started-task identity rows retained. System attribution/execution graph restricted to complete window entities. Selected-frame P5 evidence is explicitly sampled.",
+  "metric_definitions": {
+    "callback_duration_ms": "proc_exit - proc_enter, native RAW",
+    "response_ms": "proc_exit - matching full Fusion output_pub proxy, native RAW",
+    "deadline_ms": "next actual Fusion output_pub - current Fusion output_pub, analyst-selected update boundary",
+    "slack_ms": "next actual Fusion output_pub - proc_exit; negative means miss; equality meets",
+    "output_pub": "writer entry proxy; not writer return or actual consumer receipt",
+    "output_interval_ms": "next writer_done - current writer_done, RAW; next event must also be window-complete for window statistics",
+    "stability_span_ms": "max(output intervals)-min(output intervals) over 20 consecutive intervals; no formal I or theta; a constant I cancels in the span",
+    "sleeping_ms": "interruptible S or idle I; excludes D",
+    "uninterruptible_ms": "D and D flags; disjoint from sleeping",
+    "unknown_ms": "event gaps, unmapped TID, open states or unsupported states",
+    "running_ms": "CPU residency, not proof of useful computation",
+    "queue_wait_ms": "unavailable exact point; lower/upper bounds retained separately"
+  },
+  "evidence_scale": {
+    "E0": "coverage/alignment insufficient",
+    "E1": "observed fact",
+    "E2": "mechanism supported but chain incomplete",
+    "E3": "closed causal chain or controlled intervention",
+    "E4": "not defined in workspace scale; never emitted"
+  },
+  "no_original_data_modified": true,
+  "no_interventions": true
+}

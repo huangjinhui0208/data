@@ -1,0 +1,11 @@
+Loading trace: 0.00 MBLoading trace: 134.22 MBLoading trace: 268.44 MBLoading trace: 402.65 MBLoading trace: 536.87 MBLoading trace: 671.09 MBLoading trace: 805.31 MBLoading trace: 939.52 MBLoading trace: 1073.74 MBLoading trace: 1207.96 MBLoading trace: 1342.18 MBLoading trace: 1476.40 MBLoading trace: 1610.61 MBLoading trace: 1638.44 MB[723.169]     common_flags.cc:525 Trace loaded: 1638.44 MB in 84.11s (19.5 MB/s)
+
+
+Trace health issues:
+
+  Data losses
+    perf_guardrail_stop_ts[0]: 1032262344268635
+    perf_guardrail_stop_ts[1]: 1032262452230240
+    perf_guardrail_stop_ts[2]: 1032262526407384
+
+[745.269]            query.cc:191 Query execution time: 14011 ms

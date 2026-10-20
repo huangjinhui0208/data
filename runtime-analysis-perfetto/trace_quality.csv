@@ -1,0 +1,8 @@
+run_id,source,lost_events,unclosed_events,begin_end_pairs,stack_unwind_errors,parse_errors,reason,quality_level,stack_unwind_errors_window
+pw_20261020_141904,application_prediction,,0,1057,,0,Application health originally unverified; pairing and current-run clock checks retained independently,E1,
+pw_20261020_141904,worker_events,,,1929,,0,Application health originally unverified; pairing and current-run clock checks retained independently,E1,
+pw_20261020_141904,record_message_index,,,,,0,Record starts later; missing matches not interpreted as loss,E1,
+pw_20261020_141904,Perfetto_sched_systemwide,,12,,,0,Global capture FAILED_OR_INCOMPLETE retained; perf guardrails occur after selected window; unwind errors can occur inside window,E1_window_conditional,
+pw_20261020_141904,perf_stack_source_0,,,,1827,0,Global capture FAILED_OR_INCOMPLETE retained; perf guardrails occur after selected window; unwind errors can occur inside window,E1_window_conditional,1596
+pw_20261020_141904,perf_stack_source_1,,,,57984,0,Global capture FAILED_OR_INCOMPLETE retained; perf guardrails occur after selected window; unwind errors can occur inside window,E1_window_conditional,45807
+pw_20261020_141904,perf_stack_source_2,,,,111581,0,Global capture FAILED_OR_INCOMPLETE retained; perf guardrails occur after selected window; unwind errors can occur inside window,E1_window_conditional,95407

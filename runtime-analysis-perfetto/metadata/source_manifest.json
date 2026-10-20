@@ -1,0 +1,214 @@
+[
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/events/prediction.942621.csv",
+    "exported": "inputs/trace/events/prediction.942621.csv",
+    "bytes": 9507968,
+    "sha256": "c96c7b088bbcb2a9c113b2456b24f3b0334a0f2e37b7316038de6046cbc6538b"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/prediction_worker_events/prediction.942621.csv",
+    "exported": "inputs/trace/prediction_worker_events/prediction.942621.csv",
+    "bytes": 26291402,
+    "sha256": "a17e1f62a5c801d2676e818e092113fb47c3a7d3739c9830f69d0982e1fec9e8"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/record/extraction_summary.json",
+    "exported": "inputs/record/extraction_summary.json",
+    "bytes": 4181,
+    "sha256": "13c601505efa6fc338344024f5590d5c40ebd7b16638f0a94a1be69906acd5c1"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/perception.radar_detection.942650.csv",
+    "exported": "inputs/trace/message_context/perception.radar_detection.942650.csv",
+    "bytes": 404285,
+    "sha256": "544a1dec96d66e44e9fcbdeac95ada22eea7a5691982fed7a5c3aacf468679ed"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/prediction.942621.csv",
+    "exported": "inputs/trace/message_context/prediction.942621.csv",
+    "bytes": 382858,
+    "sha256": "e129854eac2e5dfbb7975c6a4698fbe4e26199204248a82dd59f33178aca7b9a"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/perception.pointcloud_preprocess.942650.csv",
+    "exported": "inputs/trace/message_context/perception.pointcloud_preprocess.942650.csv",
+    "bytes": 441985,
+    "sha256": "2f84bbd0f1db8cacf931efce9cd1aae4e64bb40c08b2bb83e98bb0b4b64536a3"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/perception.pointcloud_map_based_roi.942650.csv",
+    "exported": "inputs/trace/message_context/perception.pointcloud_map_based_roi.942650.csv",
+    "bytes": 440690,
+    "sha256": "50f6a807d009b0068a2e93fdef4635ef04af8dd67fd97b59446d8b8eecb77f84"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/perception.multi_sensor_fusion.942650.csv",
+    "exported": "inputs/trace/message_context/perception.multi_sensor_fusion.942650.csv",
+    "bytes": 623931,
+    "sha256": "4380ba2a7043582f9c31ee651b72a9121cfb21f1ac45ce2768a491e903d9caca"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/perception.pointcloud_ground_detection.942650.csv",
+    "exported": "inputs/trace/message_context/perception.pointcloud_ground_detection.942650.csv",
+    "bytes": 453594,
+    "sha256": "3c1a56743a0120d5c955366e6873f8ac11f9f6afe9ac14720bc66cf41069b526"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/perception.lidar_detection.942650.csv",
+    "exported": "inputs/trace/message_context/perception.lidar_detection.942650.csv",
+    "bytes": 400847,
+    "sha256": "7485922f67784720d6d9b34b3d72ba7fdf779b53cd996824776a2dad9ef7e5c6"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/perception.lidar_detection_filter.942650.csv",
+    "exported": "inputs/trace/message_context/perception.lidar_detection_filter.942650.csv",
+    "bytes": 404040,
+    "sha256": "ae77d744d9721659d84921588a6ce8dd6084b73cd27dad1048904f2755fc6f57"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/guardian.942623.csv",
+    "exported": "inputs/trace/message_context/guardian.942623.csv",
+    "bytes": 5056979,
+    "sha256": "20717512fb6296731256dffcc3b5c417f601330b4a20dadcbddf859d81f4b8d9"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/control.942627.csv",
+    "exported": "inputs/trace/message_context/control.942627.csv",
+    "bytes": 5061742,
+    "sha256": "6ecf77dd080638f8ea61996ae787f72ab296e52757c6c94412550a44adb36dbc"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/perception.lidar_tracking.942650.csv",
+    "exported": "inputs/trace/message_context/perception.lidar_tracking.942650.csv",
+    "bytes": 393390,
+    "sha256": "8909ad38249fd6ee819b9839bef5327f1d4249c9f98ac41ebf833725ebabff03"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/message_context/planning.942625.csv",
+    "exported": "inputs/trace/message_context/planning.942625.csv",
+    "bytes": 365233,
+    "sha256": "8f9236701bbfa398c0561e0429a2cc9a0a57ec6ee85814eb69d8c3e1efa328fa"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/trace/fusion_inputs/perception.multi_sensor_fusion.942650.csv",
+    "exported": "inputs/trace/fusion_inputs/perception.multi_sensor_fusion.942650.csv",
+    "bytes": 283416,
+    "sha256": "67170906976ce7bb0b28970e613a0733569255d24da1a9b01e82add0aa786e9c"
+  },
+  {
+    "source": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904/session.json",
+    "exported": "inputs/session/session.json",
+    "bytes": 1505,
+    "sha256": "828efb882a0455b4f49708de2f868dadba8f268e009cf8943505ca8529dcedc9"
+  },
+  {
+    "source": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904/identity_before.json",
+    "exported": "inputs/session/identity_before.json",
+    "bytes": 1413,
+    "sha256": "5bb4b093cbd663a2ff3fb5b4966165fb06d3507b705a03829ba3f55a76faf483"
+  },
+  {
+    "source": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904/perfetto/results/validation.json",
+    "exported": "inputs/session/perfetto/results/validation.json",
+    "bytes": 2328,
+    "sha256": "1e8900355448e6676d1db2378d0f5f123bab8146e49fb7a7e37c72638fbfd6d5"
+  },
+  {
+    "source": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904/perfetto/capture.pbtx",
+    "exported": "inputs/session/perfetto/capture.pbtx",
+    "bytes": 5077,
+    "sha256": "98c684c06345805c72ba0f713e2e59431a82390270e60bff960eb8174fd4df40"
+  },
+  {
+    "source": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904/perfetto/tracebox.log",
+    "exported": "inputs/session/perfetto/tracebox.log",
+    "bytes": 5386,
+    "sha256": "e0864a8e959adf04356db7af837a9820ef6ef7311d1bb82229743f276cd1f34b"
+  },
+  {
+    "source": "/media/ssd/apollo10/modules/prediction/prediction_component.cc",
+    "exported": "source_snapshots/modules/prediction/prediction_component.cc",
+    "bytes": 18236,
+    "sha256": "3ad8bd89b583694e6b287b3d8f93fb5077de24ed4f1ac3fcef4fc351d6f88e00"
+  },
+  {
+    "source": "/media/ssd/apollo10/modules/prediction/common/message_process.cc",
+    "exported": "source_snapshots/modules/prediction/common/message_process.cc",
+    "bytes": 14938,
+    "sha256": "8f0b7ede4656299012d952f7113d4c5253ae29fe2b8346db2579c5e83c09c627"
+  },
+  {
+    "source": "/media/ssd/apollo10/modules/prediction/common/prediction_thread_pool.h",
+    "exported": "source_snapshots/modules/prediction/common/prediction_thread_pool.h",
+    "bytes": 5909,
+    "sha256": "48ac65036e3ad16c9ffb2e295ed4f3d15ee06c0e62a5a667af0b232b4ed9289e"
+  },
+  {
+    "source": "/media/ssd/apollo10/modules/prediction/common/prediction_trace_context.h",
+    "exported": "source_snapshots/modules/prediction/common/prediction_trace_context.h",
+    "bytes": 6309,
+    "sha256": "032d6d36002b3074d7b29ebd72e6ee142bab1779910961ac840fe8280a5de589"
+  },
+  {
+    "source": "/media/ssd/apollo10/modules/prediction/evaluator/evaluator_manager.cc",
+    "exported": "source_snapshots/modules/prediction/evaluator/evaluator_manager.cc",
+    "bytes": 27938,
+    "sha256": "e52ce193517144478d6c1946f5502659643aeca2eeb152a441ac8be6e5ff4736"
+  },
+  {
+    "source": "/media/ssd/apollo10/modules/common/util/perf_trace_writer.h",
+    "exported": "source_snapshots/modules/common/util/perf_trace_writer.h",
+    "bytes": 23165,
+    "sha256": "4b40c4e5a23dd79dfe9e7e5695c6ac925989b2a5fef4a56997597997915d2e6b"
+  },
+  {
+    "source": "/media/ssd/apollo10/modules/common/util/perf_trace_writer.cc",
+    "exported": "source_snapshots/modules/common/util/perf_trace_writer.cc",
+    "bytes": 45458,
+    "sha256": "10d5eeb9bfa18d53427ee19d28417ccd245797de2044e857dc6efd228f41a06e"
+  },
+  {
+    "source": "/media/ssd/apollo10/cyber/tools/cyber_recorder/recorder.cc",
+    "exported": "source_snapshots/cyber/tools/cyber_recorder/recorder.cc",
+    "bytes": 9603,
+    "sha256": "f6a96bbcf63ca962e2ee6f9b969430e086cf9cfbeb20aff07311b67ac779cf41"
+  },
+  {
+    "source": "/media/ssd/apollo10/cyber/time/time.cc",
+    "exported": "source_snapshots/cyber/time/time.cc",
+    "bytes": 4793,
+    "sha256": "263abd39dd1bbd6eeb2d90d63fbb5f76008a1ca95ea87513df5937f837848358"
+  },
+  {
+    "source": "/media/ssd/apollo10/modules/planning/planning_component/planning_component.cc",
+    "exported": "source_snapshots/modules/planning/planning_component/planning_component.cc",
+    "bytes": 17301,
+    "sha256": "413696514719fc5b7f526d1b00348d97f03146def4212f32b868714ce64bc03b"
+  },
+  {
+    "source": "/media/ssd/apollo10/modules/perception/multi_sensor_fusion/multi_sensor_fusion_component.cc",
+    "exported": "source_snapshots/modules/perception/multi_sensor_fusion/multi_sensor_fusion_component.cc",
+    "bytes": 20409,
+    "sha256": "059cacac2ed8d8bafd60613b5c1848e32e2ce3c2000a3daa2d79887925239a16"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/record/04_prediction_perception/prediction_raw.jsonl",
+    "exported": "inputs/record_prediction_headers.jsonl",
+    "sha256": "715f0e0dba8d660f3f04a8bc2ac8f3c7ef5fc28f7343e01b55a0486c2906fcdc",
+    "bytes": 92171879,
+    "transformation": "CSV raw_json decoded; retain complete header and obstacle count; omit trajectories"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/record/04_prediction_perception/perception_raw.jsonl",
+    "exported": "inputs/record_perception_headers.jsonl",
+    "sha256": "69e0d6ac98280cd45c4b6dad9caa809fc0fa073d949d9a7206f4860e1aded28f",
+    "bytes": 18579726,
+    "transformation": "CSV raw_json decoded; retain complete header and obstacle count; omit trajectories"
+  },
+  {
+    "source": "/media/ssd/apollo10/data/scb_data/pw_20261020_141904/record/00_meta/record_message_index.csv",
+    "exported": "inputs/record_message_index.csv",
+    "bytes": 16597255,
+    "sha256": "025b404cef94226a427b4a14308da01a56c8b65d9672a4c41165f3c345c21584"
+  }
+]

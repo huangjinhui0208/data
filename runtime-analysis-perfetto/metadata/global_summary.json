@@ -1,0 +1,223 @@
+{
+  "run_id": "pw_20261020_141904",
+  "trace_origin_boot_ns": "1032146343301613",
+  "analysis_window_relative_s": [
+    5,
+    105
+  ],
+  "analysis_window_boot_ns": [
+    "1032151343301613",
+    "1032251343301613"
+  ],
+  "callback_total": 1057,
+  "task_total": 1929,
+  "callback_inside": 693,
+  "task_inside": 724,
+  "callback_statistics_window_ms": {
+    "count": 693,
+    "min": 2.63424,
+    "mean": 26.914935134199137,
+    "median": 7.522912,
+    "p90": 102.56353920000004,
+    "p95": 127.41729919999999,
+    "p99": 158.75909504000012,
+    "max": 227.192,
+    "std_population": 40.94431747158221
+  },
+  "callback_statistics_full_capture_ms": {
+    "count": 1057,
+    "min": 2.455072,
+    "mean": 49.74138568779564,
+    "median": 19.530656,
+    "p90": 138.0812928,
+    "p95": 147.46588159999996,
+    "p99": 193.62327936000005,
+    "max": 245.074592,
+    "std_population": 56.234368958624586
+  },
+  "release_response_window_ms": {
+    "count": 693,
+    "min": 3.022048,
+    "mean": 29.807914528138532,
+    "median": 8.965888,
+    "p90": 106.73504000000013,
+    "p95": 139.94423039999998,
+    "p99": 188.80668416000182,
+    "max": 291.587072,
+    "std_population": 46.378862621861366
+  },
+  "writer_return_window_ms": {
+    "count": 693,
+    "min": 2.626592,
+    "mean": 26.896305916305916,
+    "median": 7.516608,
+    "p90": 102.52425600000004,
+    "p95": 127.37826559999999,
+    "p99": 158.7059072000001,
+    "max": 227.136,
+    "std_population": 40.93040729021561
+  },
+  "input_interval_window_ms": {
+    "count": 692,
+    "min": 70.770208,
+    "mean": 144.2566316300578,
+    "median": 137.166896,
+    "p90": 164.69453439999998,
+    "p95": 195.02103999999997,
+    "p99": 403.4596147200002,
+    "max": 548.516416,
+    "std_population": 42.0978257196536
+  },
+  "writer_return_interval_window_ms": {
+    "count": 692,
+    "min": 42.475456,
+    "mean": 144.37183500578035,
+    "median": 137.097936,
+    "p90": 172.66955839999997,
+    "p95": 197.5510224,
+    "p99": 388.24152352000044,
+    "max": 562.83536,
+    "std_population": 44.70286917091385
+  },
+  "output_stability_20_intervals_ms": {
+    "count": 673,
+    "min": 19.41900799999999,
+    "mean": 109.91373608320951,
+    "median": 72.19644800000002,
+    "p90": 202.91920000000002,
+    "p95": 265.954048,
+    "p99": 483.0479206399991,
+    "max": 506.844416,
+    "std_population": 93.50272157526528
+  },
+  "lineage_main_chain_complete_window": 690,
+  "full_physical_lineage_complete_window": 0,
+  "freshness_computable_window": 0,
+  "consistency_computable_window": 0,
+  "stability_computable_window": 673,
+  "deadline_policy": "analyst_next_real_fusion_output_not_safety_contract",
+  "deadline_evaluable_window": 693,
+  "deadline_miss_window": 35,
+  "deadline_miss_rate_window": 0.050505050505050504,
+  "formal_safety_deadline": null,
+  "root_cause_status": "observational candidates only; no causal attribution or intervention performed",
+  "system": {
+    "entities": 1417,
+    "task_rows": 724,
+    "state_spans": 193853,
+    "stack_rows": 9834,
+    "wakeup_rows": 4405,
+    "competition_rows": 15503,
+    "unknown_entities": 0,
+    "maximum_closure_error_ns": 0,
+    "application_validation": {
+      "samples": 2388,
+      "same_tid_running_support": 1.0,
+      "tolerance_ns": 100000,
+      "required_support": 0.95,
+      "pass_": true,
+      "failed_markers": 0,
+      "maximum_distance_ns": 2653
+    },
+    "stack_validation": [
+      {
+        "perf_session_id": 0,
+        "samples": 33,
+        "support_2us": 1.0,
+        "support_100us": 1.0,
+        "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+      },
+      {
+        "perf_session_id": 1,
+        "samples": 10831,
+        "support_2us": 1.0,
+        "support_100us": 1.0,
+        "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+      },
+      {
+        "perf_session_id": 2,
+        "samples": 742,
+        "support_2us": 1.0,
+        "support_100us": 1.0,
+        "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+      }
+    ],
+    "source_extraction": {
+      "returncode": 1,
+      "counts": {
+        "thread": 6453,
+        "thread_state": 3260440,
+        "target_sched": 1100030,
+        "perf_sample": 9882,
+        "stack_callsites": 13556,
+        "stack_validation": 11606,
+        "wakeup": 37444,
+        "cpu_competition": 0,
+        "window_stats": 0
+      },
+      "parse_errors": [],
+      "elapsed_s": 573.2946642009774,
+      "trace": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904/perfetto/system.perfetto-trace",
+      "trace_modified": false,
+      "sql_sha256": "02a7422368e24530886ff1fece865c0fbd533ea64e46e27ba4d159dec16987db",
+      "completed_sections_used": [
+        "thread",
+        "thread_state",
+        "target_sched",
+        "perf_sample",
+        "stack_callsites",
+        "stack_validation",
+        "wakeup"
+      ],
+      "incomplete_job_explanation": "First seven SELECT result sets completed before interrupting expensive CPU join. Original returncode retained. Replacement CPU context and quality/count audit completed independently.",
+      "auxiliary_export": {
+        "returncode": 0,
+        "counts": {
+          "sched_context": 352801,
+          "counts": 4,
+          "stats": 312
+        },
+        "parse_errors": [],
+        "elapsed_s": 107.50841354602017,
+        "merged_windows": [
+          [
+            1032236378513990,
+            1032236552522905
+          ],
+          [
+            1032236553779529,
+            1032236788183330
+          ],
+          [
+            1032237359637581,
+            1032237520839668
+          ],
+          [
+            1032238234466504,
+            1032238421666891
+          ],
+          [
+            1032238907775907,
+            1032239041141239
+          ],
+          [
+            1032239740255529,
+            1032239866340124
+          ],
+          [
+            1032240257337155,
+            1032240438823740
+          ],
+          [
+            1032240438892029,
+            1032240638030466
+          ],
+          [
+            1032240777049124,
+            1032240939976037
+          ]
+        ]
+      }
+    }
+  }
+}

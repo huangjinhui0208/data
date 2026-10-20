@@ -1,0 +1,279 @@
+{
+  "run_id": "pw_20261020_141904",
+  "source_clock": "CLOCK_MONOTONIC_RAW",
+  "target_clock": "CLOCK_BOOTTIME",
+  "method": "piecewise_linear_offset_interpolation",
+  "formula": "boot_ns = raw_ns + interpolate(raw_ns, knots_raw_ns, knots_boot_minus_raw_ns)",
+  "parameters": {
+    "knots_raw_ns": [
+      "1032104554725472",
+      "1032104554732672",
+      "1032108225157184",
+      "1032108262248768",
+      "1032113311546720",
+      "1032118224820416",
+      "1032118248150784",
+      "1032123246277920",
+      "1032128225483264",
+      "1032128266717664",
+      "1032133248815488",
+      "1032138224738592",
+      "1032138247779264",
+      "1032143294395232",
+      "1032148224669216",
+      "1032148317087520",
+      "1032153356822848",
+      "1032158224812416",
+      "1032158453205056",
+      "1032163410423296",
+      "1032168224539520",
+      "1032168499485568",
+      "1032173538209920",
+      "1032178224646528",
+      "1032178938539904",
+      "1032184351555168",
+      "1032188224810720",
+      "1032189017501888",
+      "1032194323980608",
+      "1032198224540128",
+      "1032201063028768",
+      "1032206853153376",
+      "1032208224187840",
+      "1032212057315808",
+      "1032218160319936",
+      "1032222640278112",
+      "1032223241075488",
+      "1032228223641920",
+      "1032228241134048",
+      "1032233244161632",
+      "1032238223376128",
+      "1032238240862784",
+      "1032243240858368",
+      "1032248223610272",
+      "1032248246251712",
+      "1032253241048288",
+      "1032255614412896"
+    ],
+    "knots_boot_minus_raw_ns": [
+      "41775073711",
+      "41775073776",
+      "41775116649",
+      "41775117147",
+      "41775177539",
+      "41775236547",
+      "41775236828",
+      "41775296823",
+      "41775360002",
+      "41775360607",
+      "41775426007",
+      "41775491294",
+      "41775491628",
+      "41775577037",
+      "41775667630",
+      "41775668716",
+      "41775729624",
+      "41775790846",
+      "41775794351",
+      "41775868344",
+      "41775938701",
+      "41775942384",
+      "41776006956",
+      "41776067272",
+      "41776076428",
+      "41776146097",
+      "41776195980",
+      "41776206150",
+      "41776313157",
+      "41776365216",
+      "41776403149",
+      "41776481661",
+      "41776502101",
+      "41776559189",
+      "41776647754",
+      "41776750812",
+      "41776815631",
+      "41777049615",
+      "41777049867",
+      "41777124762",
+      "41777197413",
+      "41777197567",
+      "41777090771",
+      "41777096379",
+      "41777096831",
+      "41777168257",
+      "41777202213"
+    ]
+  },
+  "snapshot_count": 47,
+  "fit_validation_split": "even snapshot indices train; odd indices held out; final interpolation uses all 47 knots",
+  "training_samples": 24,
+  "validation_samples": 23,
+  "validation_residuals": [
+    {
+      "snapshot_id": 1,
+      "raw_ns": "1032104554732672",
+      "residual_ns": 64.915771484375
+    },
+    {
+      "snapshot_id": 3,
+      "raw_ns": "1032108262248768",
+      "residual_ns": 53.97058868408203
+    },
+    {
+      "snapshot_id": 5,
+      "raw_ns": "1032118224820416",
+      "residual_ns": -0.8004608154296875
+    },
+    {
+      "snapshot_id": 7,
+      "raw_ns": "1032123246277920",
+      "residual_ns": -1708.7983932495117
+    },
+    {
+      "snapshot_id": 9,
+      "raw_ns": "1032128266717664",
+      "residual_ns": 63.19300079345703
+    },
+    {
+      "snapshot_id": 11,
+      "raw_ns": "1032138224738592",
+      "residual_ns": -31.54692840576172
+    },
+    {
+      "snapshot_id": 13,
+      "raw_ns": "1032143294395232",
+      "residual_ns": -3618.192626953125
+    },
+    {
+      "snapshot_id": 15,
+      "raw_ns": "1032148317087520",
+      "residual_ns": -30.369606018066406
+    },
+    {
+      "snapshot_id": 17,
+      "raw_ns": "1032158224812416",
+      "residual_ns": -604.2814483642578
+    },
+    {
+      "snapshot_id": 19,
+      "raw_ns": "1032163410423296",
+      "residual_ns": 760.9910507202148
+    },
+    {
+      "snapshot_id": 21,
+      "raw_ns": "1032168499485568",
+      "residual_ns": 151.27125549316406
+    },
+    {
+      "snapshot_id": 23,
+      "raw_ns": "1032178224646528",
+      "residual_ns": 27.809280395507812
+    },
+    {
+      "snapshot_id": 25,
+      "raw_ns": "1032184351555168",
+      "residual_ns": -18.47882080078125
+    },
+    {
+      "snapshot_id": 27,
+      "raw_ns": "1032189017501888",
+      "residual_ns": -5059.149978637695
+    },
+    {
+      "snapshot_id": 29,
+      "raw_ns": "1032198224540128",
+      "residual_ns": -28.348831176757812
+    },
+    {
+      "snapshot_id": 31,
+      "raw_ns": "1032206853153376",
+      "residual_ns": -1495.2173309326172
+    },
+    {
+      "snapshot_id": 33,
+      "raw_ns": "1032212057315808",
+      "residual_ns": 898.470458984375
+    },
+    {
+      "snapshot_id": 35,
+      "raw_ns": "1032222640278112",
+      "residual_ns": -44967.60977935791
+    },
+    {
+      "snapshot_id": 37,
+      "raw_ns": "1032228223641920",
+      "residual_ns": 567.447624206543
+    },
+    {
+      "snapshot_id": 39,
+      "raw_ns": "1032233244161632",
+      "residual_ns": 946.0111846923828
+    },
+    {
+      "snapshot_id": 41,
+      "raw_ns": "1032238240862784",
+      "residual_ns": 525.6628952026367
+    },
+    {
+      "snapshot_id": 43,
+      "raw_ns": "1032248223610272",
+      "residual_ns": -424.58814239501953
+    },
+    {
+      "snapshot_id": 45,
+      "raw_ns": "1032253241048288",
+      "residual_ns": -11.315177917480469
+    }
+  ],
+  "window_validation_samples": 14,
+  "window_max_abs_residual_ns": 5059.149978637695,
+  "global_max_abs_residual_ns": 44967.60977935791,
+  "residual_tolerance_ns": 100000,
+  "calibration_pass": true,
+  "valid_raw_range_ns": [
+    "1032104554725472",
+    "1032255614412896"
+  ],
+  "analysis_window_boot_ns": [
+    "1032151343301613",
+    "1032251343301613"
+  ],
+  "no_extrapolation": true,
+  "uncertainty": "Held-out residual is measured validation error, not a guaranteed bound; independent event checks required before attribution.",
+  "application_event_validation": {
+    "samples": 2388,
+    "same_tid_running_support": 1.0,
+    "tolerance_ns": 100000,
+    "required_support": 0.95,
+    "pass_": true,
+    "failed_markers": 0,
+    "maximum_distance_ns": 2653
+  },
+  "stack_validation": [
+    {
+      "perf_session_id": 0,
+      "samples": 33,
+      "support_2us": 1.0,
+      "support_100us": 1.0,
+      "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+    },
+    {
+      "perf_session_id": 1,
+      "samples": 10831,
+      "support_2us": 1.0,
+      "support_100us": 1.0,
+      "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+    },
+    {
+      "perf_session_id": 2,
+      "samples": 742,
+      "support_2us": 1.0,
+      "support_100us": 1.0,
+      "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+    }
+  ],
+  "source_timestamp_alignment": "Not established: sensor header provenance/cross-host clock unknown",
+  "stack_conversion": "Perfetto perf_sample.ts already normalized BOOTTIME by Trace Processor; no RAW offset applied to samples",
+  "system_attribution_pass": true,
+  "stack_attribution_pass": true
+}

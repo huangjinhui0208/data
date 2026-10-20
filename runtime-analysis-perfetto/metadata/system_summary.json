@@ -1,0 +1,119 @@
+{
+  "entities": 1417,
+  "task_rows": 724,
+  "state_spans": 193853,
+  "stack_rows": 9834,
+  "wakeup_rows": 4405,
+  "competition_rows": 15503,
+  "unknown_entities": 0,
+  "maximum_closure_error_ns": 0,
+  "application_validation": {
+    "samples": 2388,
+    "same_tid_running_support": 1.0,
+    "tolerance_ns": 100000,
+    "required_support": 0.95,
+    "pass_": true,
+    "failed_markers": 0,
+    "maximum_distance_ns": 2653
+  },
+  "stack_validation": [
+    {
+      "perf_session_id": 0,
+      "samples": 33,
+      "support_2us": 1.0,
+      "support_100us": 1.0,
+      "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+    },
+    {
+      "perf_session_id": 1,
+      "samples": 10831,
+      "support_2us": 1.0,
+      "support_100us": 1.0,
+      "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+    },
+    {
+      "perf_session_id": 2,
+      "samples": 742,
+      "support_2us": 1.0,
+      "support_100us": 1.0,
+      "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+    }
+  ],
+  "source_extraction": {
+    "returncode": 1,
+    "counts": {
+      "thread": 6453,
+      "thread_state": 3260440,
+      "target_sched": 1100030,
+      "perf_sample": 9882,
+      "stack_callsites": 13556,
+      "stack_validation": 11606,
+      "wakeup": 37444,
+      "cpu_competition": 0,
+      "window_stats": 0
+    },
+    "parse_errors": [],
+    "elapsed_s": 573.2946642009774,
+    "trace": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904/perfetto/system.perfetto-trace",
+    "trace_modified": false,
+    "sql_sha256": "02a7422368e24530886ff1fece865c0fbd533ea64e46e27ba4d159dec16987db",
+    "completed_sections_used": [
+      "thread",
+      "thread_state",
+      "target_sched",
+      "perf_sample",
+      "stack_callsites",
+      "stack_validation",
+      "wakeup"
+    ],
+    "incomplete_job_explanation": "First seven SELECT result sets completed before interrupting expensive CPU join. Original returncode retained. Replacement CPU context and quality/count audit completed independently.",
+    "auxiliary_export": {
+      "returncode": 0,
+      "counts": {
+        "sched_context": 352801,
+        "counts": 4,
+        "stats": 312
+      },
+      "parse_errors": [],
+      "elapsed_s": 107.50841354602017,
+      "merged_windows": [
+        [
+          1032236378513990,
+          1032236552522905
+        ],
+        [
+          1032236553779529,
+          1032236788183330
+        ],
+        [
+          1032237359637581,
+          1032237520839668
+        ],
+        [
+          1032238234466504,
+          1032238421666891
+        ],
+        [
+          1032238907775907,
+          1032239041141239
+        ],
+        [
+          1032239740255529,
+          1032239866340124
+        ],
+        [
+          1032240257337155,
+          1032240438823740
+        ],
+        [
+          1032240438892029,
+          1032240638030466
+        ],
+        [
+          1032240777049124,
+          1032240939976037
+        ]
+      ]
+    }
+  }
+}

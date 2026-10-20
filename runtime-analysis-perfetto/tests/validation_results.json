@@ -1,0 +1,232 @@
+{
+  "run_id": "pw_20261020_141904",
+  "passed": true,
+  "test_count": 30,
+  "checks": [
+    {
+      "test": "callback_inventory_and_pairing",
+      "passed": true,
+      "details": {
+        "rows": 1057,
+        "inventory_expected": 1057
+      }
+    },
+    {
+      "test": "task_inventory",
+      "passed": true,
+      "details": {
+        "tasks": 1929
+      }
+    },
+    {
+      "test": "composite_identity_uniqueness",
+      "passed": true,
+      "details": "Run/process lifecycle/trace/proc/callback event identity; not bare trace_id"
+    },
+    {
+      "test": "task_frame_identity_integrity",
+      "passed": true,
+      "details": "Explicit frame_instance_id+trace mapping checked"
+    },
+    {
+      "test": "callback_raw_arithmetic",
+      "passed": true,
+      "details": {
+        "failures": []
+      }
+    },
+    {
+      "test": "all_stage_pair_arithmetic",
+      "passed": true,
+      "details": {
+        "stages": 36058,
+        "failures": []
+      }
+    },
+    {
+      "test": "tdfg_referential_integrity",
+      "passed": true,
+      "details": {
+        "nodes": 8410,
+        "edges": 7353
+      }
+    },
+    {
+      "test": "all_outputs_preserved",
+      "passed": true,
+      "details": "Observed output cardinality preserved, with no first-output-only graph collapse"
+    },
+    {
+      "test": "multiple_output_contract",
+      "passed": true,
+      "details": "Output list/cardinality and graph evidence checked; current run has one traced output per callback"
+    },
+    {
+      "test": "multiparent_not_primary_only",
+      "passed": true,
+      "details": "Full fusion_inputs parent set checked; primary_parent alone is never used as complete set"
+    },
+    {
+      "test": "copied_fusion_time_not_sensor_observation",
+      "passed": true,
+      "details": "Active cached header parents are not automatically actual algorithm inputs; copied LiDAR times cannot establish sensor consistency"
+    },
+    {
+      "test": "channel_aware_message_identity",
+      "passed": true,
+      "details": {
+        "distinct_messages": 2114
+      }
+    },
+    {
+      "test": "uncalibrated_sensor_age_is_null",
+      "passed": true,
+      "details": "Clock snapshots do not prove physical sensor time or cross-host synchronization"
+    },
+    {
+      "test": "verified_message_edge_order",
+      "passed": true,
+      "details": {
+        "contradictions": []
+      }
+    },
+    {
+      "test": "record_trace_coverage_reconciles",
+      "passed": true,
+      "details": {
+        "trace_outputs": 1057,
+        "record_outputs": 1034,
+        "matched": 1001,
+        "trace_only": 56,
+        "record_only": 33,
+        "trace_only_reasons": {
+          "before_first_recorded_prediction_sequence": 56
+        }
+      }
+    },
+    {
+      "test": "state_time_closure_task_state_attribution",
+      "passed": true,
+      "details": {
+        "rows": 724,
+        "failures": [],
+        "note": "Closure is independent of clock alignment validation"
+      }
+    },
+    {
+      "test": "state_time_closure_callback_state_attribution",
+      "passed": true,
+      "details": {
+        "rows": 693,
+        "failures": [],
+        "note": "Closure is independent of clock alignment validation"
+      }
+    },
+    {
+      "test": "state_intervals_recompute_task_wall",
+      "passed": true,
+      "details": "Unaggregated state intervals independently reconstruct task wall time"
+    },
+    {
+      "test": "system_window_bounds",
+      "passed": true,
+      "details": "All attributed task/callback intervals are within requested [5,105] seconds"
+    },
+    {
+      "test": "wakeup_wait_nonnegative_or_missing",
+      "passed": true,
+      "details": "Do not attach the next wake to an earlier preemption Runnable interval"
+    },
+    {
+      "test": "waking_exact_state_origin",
+      "passed": true,
+      "details": "Actual sched_waking timestamp must equal the derived state origin, with the same target TID"
+    },
+    {
+      "test": "clock_snapshot_validation",
+      "passed": true,
+      "details": {
+        "snapshot_count": 47,
+        "window_max_holdout_residual_ns": 5059.149978637695,
+        "event_validation": {
+          "samples": 2388,
+          "same_tid_running_support": 1.0,
+          "tolerance_ns": 100000,
+          "required_support": 0.95,
+          "pass_": true,
+          "failed_markers": 0,
+          "maximum_distance_ns": 2653
+        }
+      }
+    },
+    {
+      "test": "stack_same_tid_cpu_validation",
+      "passed": true,
+      "details": [
+        {
+          "perf_session_id": 0,
+          "samples": 33,
+          "support_2us": 1.0,
+          "support_100us": 1.0,
+          "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+        },
+        {
+          "perf_session_id": 1,
+          "samples": 10831,
+          "support_2us": 1.0,
+          "support_100us": 1.0,
+          "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+        },
+        {
+          "perf_session_id": 2,
+          "samples": 742,
+          "support_2us": 1.0,
+          "support_100us": 1.0,
+          "timestamp_transform": "identity: TP normalized BOOTTIME; no application offset"
+        }
+      ]
+    },
+    {
+      "test": "execution_dag_endpoints_and_acyclicity",
+      "passed": true,
+      "details": {
+        "nodes": 45451,
+        "edges": 46260,
+        "violations": 0,
+        "visited": 45451
+      }
+    },
+    {
+      "test": "critical_and_evidence_node_references",
+      "passed": true,
+      "details": "Candidate/envelope segments reference real execution nodes; no claimed causal critical segment for callback-wide summaries"
+    },
+    {
+      "test": "source_export_crc_and_counts",
+      "passed": true,
+      "details": "Seven completed primary result sets and three successful auxiliary result sets checked independently"
+    },
+    {
+      "test": "deadline_signed_arithmetic",
+      "passed": true,
+      "details": "Analyst next-Fusion update boundary; equality meets, not formal safety deadline"
+    },
+    {
+      "test": "all_24_requested_outputs",
+      "passed": true,
+      "details": {
+        "count": 24
+      }
+    },
+    {
+      "test": "no_synthetic_intervention_results",
+      "passed": true,
+      "details": "P6 files contain headers only; no optimization data exists"
+    },
+    {
+      "test": "critical_path_uncertainty_retained",
+      "passed": true,
+      "details": "No complete critical path claimed without Future Ready and complete async dependencies"
+    }
+  ]
+}

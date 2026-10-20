@@ -1,0 +1,2164 @@
+{
+  "inventory_path": "D:\\data\\analysis_inventory\\apollo_prediction_data_inventory.json",
+  "inventory_sha256": "f7f1732f853915c795232f966ffcdc40597e967d4522a11d0f54b0e90b6bbf80",
+  "environment": {
+    "apollo_version": {
+      "value": "Apollo 10.0",
+      "evidence": "user-provided experiment context; capture-time commit unknown"
+    },
+    "platform": {
+      "value": "Jetson AGX Orin",
+      "evidence": "user-provided context"
+    },
+    "carla_map": {
+      "value": "CarlaTown04",
+      "evidence": [
+        "/apollo_workspace/modules/carla_apollo10.0_bridge/carla_bridge/map/carla_town04/base_map.bin",
+        [
+          "/apollo_workspace/records/202610201421_MkzExample_CarlaTown04.00000.20261020141912.record"
+        ]
+      ],
+      "confidence": "path-derived; scenario actors/weather configuration unknown"
+    },
+    "traffic_flow_configuration": "unknown",
+    "kernel_at_capture": {
+      "value": "5.10.120-tegra",
+      "evidence": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904/perfetto/system.perfetto-trace metadata system_release"
+    },
+    "jetson_power_mode_at_capture": "unknown",
+    "cpu_gpu_emc_frequency_records": "unknown",
+    "temperature_records": "unknown",
+    "container": "apollo_neo_dev_apollo10_dev",
+    "capture_tool_metadata": {
+      "tracebox": {
+        "path": "/media/ssd/hjh/perf_tools/perfetto/bin/tracebox-hjh",
+        "version": "Perfetto v58.2 (N/A)",
+        "build": {
+          "label": "v58.2-hjh4",
+          "upstream_revision": "add693d8b338ba9599dbcbc3e300b1ab8c000897",
+          "binary_sha256": "855c2fbf5457181be084297c7d6c854793af4e920d78464f8c9f5d802f39832c",
+          "native_patch_sha256": "6e82c0ff034994ad8a46c9e56bbe555656a547c51ba298cd79badc365ca3406e",
+          "native_patch": "/media/ssd/hjh/perf_tools/perfetto/changes/20261012_refresh_fix/perfetto_native.patch",
+          "namespace_regression": "/media/ssd/hjh/perf_tools/perfetto/changes/20261012_refresh_fix/namespace_regression.json",
+          "validation_status": "SOURCE_COMPONENT_BUILD_REVIEW_PASS_REAL_LOAD_PENDING",
+          "queue_capacity": 8192,
+          "compiler": "Ubuntu clang12.0.0; native arm64; libstdc++ host",
+          "build_args": "is_debug = false\nis_clang = true\nis_system_compiler = true\nis_hermetic_clang = false\nuse_custom_libcxx = false\nmonolithic_binaries = true\nenable_perfetto_trace_processor = true\nenable_perfetto_unittests = false\nenable_perfetto_integration_tests = false\nenable_perfetto_benchmarks = false\nenable_perfetto_heapprofd = false\nenable_perfetto_traced_perf = true\ncc = \"/media/ssd/hjh/perf_tools/perfetto/changes/20261010_real_load_fix/toolchain/usr/lib/llvm-12/bin/clang\"\ncxx = \"/media/ssd/hjh/perf_tools/perfetto/changes/20261010_real_load_fix/toolchain/usr/lib/llvm-12/bin/clang++\"\nenable_perfetto_tools = false\nskip_buildtools_check = true\n",
+          "collector_sha256": "3d867024522b8ccf5eb617f996173f992d1701616ad04aa00e9f090beaba7b1b",
+          "queue_commit_batch": 64,
+          "descriptor_reap_period_ms": 30000,
+          "full_cache_clear_period_ms": 300000,
+          "event_ring_pages_per_cpu": 4096,
+          "max_samples_per_cpu_read_batch": 256,
+          "refresh_policy": "reparse actual maps; retain identical file mappings and ELF; release cold/dead maps",
+          "partial_stack_policy": "retain kernel frames with ERROR_MAPS_PARSE when user maps unavailable",
+          "built_utc": "2026-10-14T17:11:26.372851+00:00",
+          "deployed_utc": "2026-10-14T17:18:43.479141+00:00",
+          "candidate_manifest": "/media/ssd/hjh/perf_tools/perfetto/changes/20261014_backpressure_candidate/candidate_final_manifest.json",
+          "candidate_manifest_sha256": "97ddf49b2e0e902c5afa931a03fcd888c352f08fca4126bca6d29dc174edede6",
+          "incremental_patches": [
+            {
+              "path": "/media/ssd/hjh/perf_tools/perfetto/changes/20261014_backpressure_candidate/candidate_cc.patch",
+              "sha256": "1707d5129da13a224d785c323b5365737e37b492d54eaba8bb2eff6ea5f6bf2c"
+            },
+            {
+              "path": "/media/ssd/hjh/perf_tools/perfetto/changes/20261014_backpressure_candidate/candidate_h.patch",
+              "sha256": "ba7906347c87c29a6fb16a9289f649004e12ad2da5f5e843d14d422857cffc45"
+            }
+          ],
+          "astra_final_review": "/media/ssd/hjh/perf_tools/perfetto/changes/20261014_backpressure_candidate/ASTRA_CANDIDATE_REVIEW_FINAL.md",
+          "astra_final_review_sha256": "4aa0d49c1124faa35e87e02d017a6f9c328d08500cf3ffedb96c693d2a723973",
+          "base_hjh3_provenance": {
+            "binary_sha256": "9ac7626ee93bae581b40caa0173c0b68842a7f75f96bbb88ebd1d4637369b0ee",
+            "native_patch": "/media/ssd/hjh/perf_tools/perfetto/changes/20261012_refresh_fix/perfetto_native.patch",
+            "native_patch_sha256": "6e82c0ff034994ad8a46c9e56bbe555656a547c51ba298cd79badc365ca3406e"
+          },
+          "prior_hjh3_metadata": {
+            "label": "v58.2-hjh3",
+            "upstream_revision": "add693d8b338ba9599dbcbc3e300b1ab8c000897",
+            "binary_sha256": "9ac7626ee93bae581b40caa0173c0b68842a7f75f96bbb88ebd1d4637369b0ee",
+            "native_patch_sha256": "6e82c0ff034994ad8a46c9e56bbe555656a547c51ba298cd79badc365ca3406e",
+            "native_patch": "/media/ssd/hjh/perf_tools/perfetto/changes/20261012_refresh_fix/perfetto_native.patch",
+            "namespace_regression": "/media/ssd/hjh/perf_tools/perfetto/changes/20261012_refresh_fix/namespace_regression.json",
+            "validation_status": "REAL_LOAD_TRANSPORT_PASS_STACK_PARTIAL",
+            "queue_capacity": 8192,
+            "compiler": "Ubuntu clang12.0.0; native arm64; libstdc++ host",
+            "build_args": "is_debug = false\nis_clang = true\nis_system_compiler = true\nis_hermetic_clang = false\nuse_custom_libcxx = false\nmonolithic_binaries = true\nenable_perfetto_trace_processor = true\nenable_perfetto_unittests = false\nenable_perfetto_integration_tests = false\nenable_perfetto_benchmarks = false\nenable_perfetto_heapprofd = false\nenable_perfetto_traced_perf = true\ncc = \"/media/ssd/hjh/perf_tools/perfetto/changes/20261010_real_load_fix/toolchain/usr/lib/llvm-12/bin/clang\"\ncxx = \"/media/ssd/hjh/perf_tools/perfetto/changes/20261010_real_load_fix/toolchain/usr/lib/llvm-12/bin/clang++\"\nenable_perfetto_tools = false\nskip_buildtools_check = true\n",
+            "collector_sha256": "3d867024522b8ccf5eb617f996173f992d1701616ad04aa00e9f090beaba7b1b",
+            "queue_commit_batch": 64,
+            "descriptor_reap_period_ms": 30000,
+            "full_cache_clear_period_ms": 300000,
+            "short_validation_option": "--duration 120 --test-cache-clear-ms 45000",
+            "event_ring_pages_per_cpu": 4096,
+            "max_samples_per_cpu_read_batch": 256,
+            "refresh_policy": "reparse actual maps; retain identical file mappings and ELF; release cold/dead maps",
+            "partial_stack_policy": "retain kernel frames with ERROR_MAPS_PARSE when user maps unavailable",
+            "built_utc": "2026-10-13T06:39:54.313874+00:00",
+            "deployed_utc": "2026-10-13T06:40:21.667888+00:00",
+            "real_load_validation_run": "/media/ssd/hjh/perf_tools/perfetto/runs/prediction_fix_validation_03",
+            "real_load_validation_report": "/media/ssd/hjh/perf_tools/perfetto/runs/prediction_fix_validation_03/audit_20261013/VALIDATION_REPORT.md",
+            "validated_utc": "2026-10-13T07:19:40.361370+00:00"
+          },
+          "real_load_acceptance": "PENDING",
+          "runtime_config_preserved": {
+            "queue_capacity": 8192,
+            "footprint_kb": 131072,
+            "event_ring_pages_per_cpu": 4096,
+            "cpu_clock_ring_pages": 256,
+            "full_cache_clear_period_ms": 300000,
+            "daemon_memory_guard_kb": 1048576,
+            "sampling_scope_and_frequency": "unchanged; source wakers retained"
+          },
+          "native_patch_provenance_note": "native_patch fields inherited for base hjh3 only; incremental_patches and candidate_manifest describe hjh4"
+        }
+      },
+      "trace_processor_shell": {
+        "path": "/media/ssd/hjh/perf_tools/perfetto/bin/trace_processor_shell",
+        "version": "Perfetto v58.2-add693d8b (add693d8b338ba9599dbcbc3e300b1ab8c000897)\nTrace Processor RPC API version: 14"
+      }
+    },
+    "capture_arguments": {
+      "module": [
+        "prediction"
+      ],
+      "output_dir": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904",
+      "name": "perfetto",
+      "session_id": "pw_20261020_141904",
+      "host_pid": [],
+      "stack_hz": 99,
+      "event_stack_tid": [],
+      "no_event_stacks": false,
+      "event_unwind": "dwarf",
+      "buffer_mb": 64,
+      "write_period_ms": 1000,
+      "min_free_gb": 2.0,
+      "finalize_notice_seconds": 120.0,
+      "duration": null,
+      "test_cache_clear_ms": null,
+      "no_analyze": false,
+      "analyze_only": null,
+      "check": false,
+      "self_test": false
+    },
+    "capture_source_sha256": "3d867024522b8ccf5eb617f996173f992d1701616ad04aa00e9f090beaba7b1b",
+    "architecture_at_capture": {
+      "value": "aarch64",
+      "evidence": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904/perfetto/system.perfetto-trace metadata system_machine"
+    }
+  },
+  "original_trace_quality": {
+    "original_session_status": "FAILED",
+    "original_collector_status": "FAILED_OR_INCOMPLETE",
+    "existing_validation": {
+      "trace": "/media/ssd/hjh/prediction_worker_trace/sessions/pw_20261020_141904/perfetto/system.perfetto-trace",
+      "trace_bytes": 1638437476,
+      "processor_returncode": 0,
+      "query_result_sets": 16,
+      "expected_result_sets": 16,
+      "sched_valid_events": 36328466,
+      "running_intervals": 21592286,
+      "waker_intervals": 20307481,
+      "stack_summary": [
+        {
+          "perf_samples": "2481248",
+          "samples_with_stack": "2347569",
+          "stacks_with_unwind_error": "171392"
+        }
+      ],
+      "stack_sources": [
+        {
+          "trigger": "cpu-clock",
+          "perf_session_id": "0",
+          "samples": "137289",
+          "samples_with_stack": "3610",
+          "stacks_with_unwind_error": "1827",
+          "first_ts": "1032146343301613",
+          "last_ts": "1032262292871580",
+          "min_frames": "2",
+          "max_frames": "72"
+        },
+        {
+          "trigger": "sched/sched_switch",
+          "perf_session_id": "1",
+          "samples": "1171767",
+          "samples_with_stack": "1171767",
+          "stacks_with_unwind_error": "57984",
+          "first_ts": "1032146440738210",
+          "last_ts": "1032256920740433",
+          "min_frames": "15",
+          "max_frames": "58"
+        },
+        {
+          "trigger": "sched/sched_waking",
+          "perf_session_id": "2",
+          "samples": "1172192",
+          "samples_with_stack": "1172192",
+          "stacks_with_unwind_error": "111581",
+          "first_ts": "1032146479326214",
+          "last_ts": "1032256919616768",
+          "min_frames": "12",
+          "max_frames": "210"
+        }
+      ],
+      "nonzero_error_or_loss_stats": [
+        {
+          "name": "perf_guardrail_stop_ts",
+          "idx": "0",
+          "severity": "data_loss",
+          "source": "trace",
+          "value": "1032262344268635"
+        },
+        {
+          "name": "perf_guardrail_stop_ts",
+          "idx": "1",
+          "severity": "data_loss",
+          "source": "trace",
+          "value": "1032262452230240"
+        },
+        {
+          "name": "perf_guardrail_stop_ts",
+          "idx": "2",
+          "severity": "data_loss",
+          "source": "trace",
+          "value": "1032262526407384"
+        }
+      ],
+      "unavailable_health_stats": [],
+      "cpu_positive_gaps": [],
+      "basic_pass": true,
+      "health_pass": false,
+      "clock_alignment": "Apollo application timestamps remain uncalibrated; host clock samples are metadata only.",
+      "coverage_note": "Unknown and collection boundaries require per-instance checks. CPU gap absence does not prove boundary completeness."
+    },
+    "parse_success": true,
+    "query_returncode": 0,
+    "stats": [
+      {
+        "name": "guess_trace_type_duration_ns",
+        "idx": null,
+        "severity": "info",
+        "source": "analysis",
+        "value": "17084295"
+      },
+      {
+        "name": "parse_trace_duration_ns",
+        "idx": null,
+        "severity": "info",
+        "source": "analysis",
+        "value": "59896983082"
+      },
+      {
+        "name": "clock_sync_cache_miss",
+        "idx": null,
+        "severity": "info",
+        "source": "analysis",
+        "value": "290"
+      },
+      {
+        "name": "trace_sorter_negative_timestamp_dropped",
+        "idx": null,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "traced_data_sources_registered",
+        "idx": null,
+        "severity": "info",
+        "source": "trace",
+        "value": "21"
+      },
+      {
+        "name": "traced_data_sources_seen",
+        "idx": null,
+        "severity": "info",
+        "source": "trace",
+        "value": "5"
+      },
+      {
+        "name": "traced_flushes_requested",
+        "idx": null,
+        "severity": "info",
+        "source": "trace",
+        "value": "31"
+      },
+      {
+        "name": "traced_flushes_succeeded",
+        "idx": null,
+        "severity": "info",
+        "source": "trace",
+        "value": "31"
+      },
+      {
+        "name": "traced_producers_connected",
+        "idx": null,
+        "severity": "info",
+        "source": "trace",
+        "value": "2"
+      },
+      {
+        "name": "traced_producers_seen",
+        "idx": null,
+        "severity": "info",
+        "source": "trace",
+        "value": "2"
+      },
+      {
+        "name": "traced_total_buffers",
+        "idx": null,
+        "severity": "info",
+        "source": "trace",
+        "value": "1"
+      },
+      {
+        "name": "traced_tracing_sessions",
+        "idx": null,
+        "severity": "info",
+        "source": "trace",
+        "value": "1"
+      },
+      {
+        "name": "track_event_dropped_packets_outside_of_range_of_interest",
+        "idx": null,
+        "severity": "info",
+        "source": "analysis",
+        "value": "0"
+      },
+      {
+        "name": "process_tracker_parent_pid_changed",
+        "idx": null,
+        "severity": "info",
+        "source": "analysis",
+        "value": "3"
+      },
+      {
+        "name": "metatrace_overruns",
+        "idx": null,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "compact_sched_switch_skipped",
+        "idx": null,
+        "severity": "info",
+        "source": "analysis",
+        "value": "12"
+      },
+      {
+        "name": "compact_sched_waking_skipped",
+        "idx": null,
+        "severity": "info",
+        "source": "analysis",
+        "value": "23"
+      },
+      {
+        "name": "perf_aux_lost",
+        "idx": null,
+        "severity": "data_loss",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "previous_packet_dropped_missing_sequence_id",
+        "idx": null,
+        "severity": "error",
+        "source": "analysis",
+        "value": "0"
+      },
+      {
+        "name": "traced_buf_buffer_size",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "67108864"
+      },
+      {
+        "name": "traced_buf_bytes_written",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "1615736832"
+      },
+      {
+        "name": "traced_buf_bytes_read",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "1615736832"
+      },
+      {
+        "name": "traced_buf_padding_bytes_written",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "772018176"
+      },
+      {
+        "name": "traced_buf_padding_bytes_cleared",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "772018176"
+      },
+      {
+        "name": "traced_buf_chunks_written",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "69058"
+      },
+      {
+        "name": "traced_buf_chunks_rewritten",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "66"
+      },
+      {
+        "name": "traced_buf_chunks_read",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "69058"
+      },
+      {
+        "name": "traced_buf_write_wrap_count",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "24"
+      },
+      {
+        "name": "traced_buf_patches_succeeded",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "115523"
+      },
+      {
+        "name": "traced_buf_readaheads_succeeded",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "56527"
+      },
+      {
+        "name": "traced_buf_readaheads_failed",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "783"
+      },
+      {
+        "name": "traced_buf_incremental_sequences_dropped",
+        "idx": 0,
+        "severity": "data_loss",
+        "source": "analysis",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_entries_begin",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "27"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_begin",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "1316"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674198000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146673945000"
+      },
+      {
+        "name": "ftrace_cpu_entries_begin",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "17"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_begin",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "972"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674233000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146673985000"
+      },
+      {
+        "name": "ftrace_cpu_entries_begin",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "20"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_begin",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "1152"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674246000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146673952000"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674259000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "1031865016093000"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674270000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "1031864998378000"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674283000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "1031865016149000"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674295000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "1031865017719000"
+      },
+      {
+        "name": "ftrace_cpu_entries_begin",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "52"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_begin",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "2728"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674305000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146673915000"
+      },
+      {
+        "name": "ftrace_cpu_entries_begin",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "12"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_begin",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "584"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674318000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146673904000"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674328000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "1031865016318000"
+      },
+      {
+        "name": "ftrace_cpu_entries_begin",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "32"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_begin",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "1656"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674340000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146673914000"
+      },
+      {
+        "name": "ftrace_cpu_entries_begin",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "4"
+      },
+      {
+        "name": "ftrace_cpu_overrun_begin",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_begin",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_begin",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "232"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_begin",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_begin",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674351000"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_begin",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032146674244000"
+      },
+      {
+        "name": "ftrace_cpu_entries_end",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "178"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "6278724"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "6773785"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297390977000"
+      },
+      {
+        "name": "ftrace_cpu_entries_delta",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "151"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 0,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "6277408"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 0,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "6773785"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 0,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297386724000"
+      },
+      {
+        "name": "ftrace_cpu_entries_end",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "75"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "5354148"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "5277627"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297391001000"
+      },
+      {
+        "name": "ftrace_cpu_entries_delta",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "58"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 1,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "5353176"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 1,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "5277627"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 1,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297390435000"
+      },
+      {
+        "name": "ftrace_cpu_entries_end",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "176"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "5280416"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "4990697"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297391014000"
+      },
+      {
+        "name": "ftrace_cpu_entries_delta",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "156"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 2,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "5279264"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 2,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "4990697"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 2,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297387473000"
+      },
+      {
+        "name": "ftrace_cpu_entries_end",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "13"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "5463956"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "5388709"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297391026000"
+      },
+      {
+        "name": "ftrace_cpu_entries_delta",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "13"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 3,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "5463956"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 3,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "5388709"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 3,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297377622000"
+      },
+      {
+        "name": "ftrace_cpu_entries_end",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "191"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "5776688"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "7456546"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297391037000"
+      },
+      {
+        "name": "ftrace_cpu_entries_delta",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "191"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 4,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "5776688"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 4,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "7456546"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 4,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297389561000"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "5842692"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "7385785"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297391048000"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 5,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "5842692"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 5,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "7385785"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 5,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297385924000"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "6157956"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "8050994"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297391060000"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 6,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "6157956"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 6,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "8050994"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 6,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297176267000"
+      },
+      {
+        "name": "ftrace_cpu_entries_end",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "12"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "5919536"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "7895612"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297391072000"
+      },
+      {
+        "name": "ftrace_cpu_entries_delta",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "-40"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 7,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "5916808"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 7,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "7895612"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 7,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297386230000"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "6124348"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "7753017"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297391085000"
+      },
+      {
+        "name": "ftrace_cpu_entries_delta",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "-12"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 8,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "6123764"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 8,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "7753017"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 8,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297388818000"
+      },
+      {
+        "name": "ftrace_cpu_entries_end",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "71"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "6143156"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "7866182"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297391097000"
+      },
+      {
+        "name": "ftrace_cpu_entries_delta",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "71"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 9,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "6143156"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 9,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "7866182"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 9,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297390247000"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "6112488"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "7805773"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297391107000"
+      },
+      {
+        "name": "ftrace_cpu_entries_delta",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "-32"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 10,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "6110832"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 10,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "7805773"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 10,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297380017000"
+      },
+      {
+        "name": "ftrace_cpu_entries_end",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "40"
+      },
+      {
+        "name": "ftrace_cpu_overrun_end",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_end",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_end",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "5757528"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_end",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_end",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "7102214"
+      },
+      {
+        "name": "ftrace_cpu_now_ts_end",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297391119000"
+      },
+      {
+        "name": "ftrace_cpu_entries_delta",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "36"
+      },
+      {
+        "name": "ftrace_cpu_overrun_delta",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_commit_overrun_delta",
+        "idx": 11,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_bytes_delta",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "5757296"
+      },
+      {
+        "name": "ftrace_cpu_dropped_events_delta",
+        "idx": 11,
+        "severity": "error",
+        "source": "trace",
+        "value": "0"
+      },
+      {
+        "name": "ftrace_cpu_read_events_delta",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "7102214"
+      },
+      {
+        "name": "ftrace_cpu_oldest_event_ts_end",
+        "idx": 11,
+        "severity": "info",
+        "source": "trace",
+        "value": "1032297390979000"
+      },
+      {
+        "name": "perf_guardrail_stop_ts",
+        "idx": 0,
+        "severity": "data_loss",
+        "source": "trace",
+        "value": "1032262344268635"
+      },
+      {
+        "name": "perf_guardrail_stop_ts",
+        "idx": 1,
+        "severity": "data_loss",
+        "source": "trace",
+        "value": "1032262452230240"
+      },
+      {
+        "name": "perf_guardrail_stop_ts",
+        "idx": 2,
+        "severity": "data_loss",
+        "source": "trace",
+        "value": "1032262526407384"
+      }
+    ],
+    "full_capture_accepted": false,
+    "validation_reconciliation": {
+      "sched_all_rows": 36328478,
+      "sched_closed_rows": 36328466,
+      "saved_sched_valid_events": 36328466,
+      "closed_matches_saved_valid": true,
+      "perf_samples_match_saved": true,
+      "note": "All-row counts include open intervals; saved validation counts valid closed intervals. Preserve each filter."
+    }
+  },
+  "original_trace_range": {
+    "start_ns": "1032146343301613",
+    "end_ns": "1032297390578358",
+    "duration_ns": "151047276745",
+    "unit": "ns",
+    "domain": "Perfetto normalized trace time",
+    "clock_domain": "CLOCK_BOOTTIME",
+    "trace_time_clock_id": 6,
+    "evidence": "Trace Processor metadata trace_time_clock_id; clock_snapshot names"
+  },
+  "original_scheduling_summary": {
+    "records": 36328478,
+    "closed": 36328466,
+    "open": 12,
+    "distinct_cpus": 12,
+    "first_ts_ns": "1032146673925804",
+    "last_start_ts_ns": "1032297390578358",
+    "last_closed_end_ns": "1032297390578358",
+    "priority_nonnull": 36328478
+  }
+}

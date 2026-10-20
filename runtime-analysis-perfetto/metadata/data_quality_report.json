@@ -1,0 +1,189 @@
+{
+  "run_id": "pw_20261020_141904",
+  "source_capture_status": "FAILED_OR_INCOMPLETE",
+  "window_alignment_passed": true,
+  "stack_alignment_passed": true,
+  "unknown_entities": 0,
+  "state_closure_max_error_ns": 0,
+  "physical_source_age_available": false,
+  "certified_critical_path_available": false,
+  "causal_root_confirmed": false,
+  "interventions_available": false,
+  "record_trace_reconciliation": {
+    "trace": 1057,
+    "record": 1034,
+    "matched": 1001,
+    "trace_only_before_record": 56,
+    "record_only": 33
+  },
+  "deliverables": [
+    {
+      "file": "run_manifest.json",
+      "rows": null,
+      "bytes": 11148,
+      "sha256": "f5b0bdb24d0053dffc3c85b2031513d138c93603f590c800277967e58521cfbd",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "trace_coverage.csv",
+      "rows": 7,
+      "bytes": 2630,
+      "sha256": "bcf5fade96d357600210f8b1d2a510a29337a57ce312e5c5fabae427e2c97d3d",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "trace_quality.csv",
+      "rows": 7,
+      "bytes": 1391,
+      "sha256": "0ff0a17ee71f5a064d315c54e3fe34cfec9e6bc0ab0b37eae5b8ff9c7128d374",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "frame_instances.csv",
+      "rows": 1057,
+      "bytes": 1145424,
+      "sha256": "3819ad17c1eb7988066afd6dc53c3c5cc590284164f818861a9a844abbadaf1b",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "worker_tasks.csv",
+      "rows": 1929,
+      "bytes": 1553486,
+      "sha256": "63493173953208d01c12a41cb8b258ba5304f6c916d6bb811f0600455aa34d5e",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "frame_stage_spans.csv",
+      "rows": 36058,
+      "bytes": 15081430,
+      "sha256": "92b1e880f8bf76a7469ad1cff713ead223bbfe3351d77b01bbfc6d03389f4f17",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "identity_edges.csv",
+      "rows": 6844,
+      "bytes": 2930769,
+      "sha256": "f3e30ec46f442082ba0bcfd21191c1de8938f8f24cf079b0de728a8509e8ff86",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "clock_snapshots.csv",
+      "rows": 47,
+      "bytes": 6250,
+      "sha256": "c3337f4bdcd52cf078185e8694c1f82dd2eb7e7bf0f8e49bc250a346edd6260e",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "clock_alignment.json",
+      "rows": null,
+      "bytes": 7386,
+      "sha256": "f5c46f0c4b632d37151969f0cd1d5c42881c49cec64d9b22771e3e9e47a67ac0",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "tdfg_nodes.csv",
+      "rows": 8410,
+      "bytes": 4338580,
+      "sha256": "64c78374ba78ce27f1823a3816ef3d043ba9491d9e5ad934345c8c7b06607c7d",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "tdfg_edges.csv",
+      "rows": 7353,
+      "bytes": 4848531,
+      "sha256": "cbf7c51635b88784589ad94e6c1dfe261dc26461057ab5f03958b6b743fee6d8",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "execution_nodes.csv",
+      "rows": 45451,
+      "bytes": 20772978,
+      "sha256": "be8d5c34f08ceb0579cf2b044528403d18db9a27c95d01af6e66682cb240d0f1",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "execution_edges.csv",
+      "rows": 46260,
+      "bytes": 22589009,
+      "sha256": "645848daf2a9c35878fb18c86018542c8c4d79e11f305f5a5b19ee9f4fd50408",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "dynamic_path_segments.csv",
+      "rows": 193853,
+      "bytes": 63829252,
+      "sha256": "8ac5d043ea4607478d36e44801df819c42651b148efd359c6515aba672abc1c2",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "frame_timing_metrics.csv",
+      "rows": 1057,
+      "bytes": 1373053,
+      "sha256": "4154f0b077d2202fd6ac1b28474f53eb54a9ad16f46f5c224801df2c41cda1fb",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "task_state_attribution.csv",
+      "rows": 724,
+      "bytes": 308872,
+      "sha256": "44eb5cdbd56d92e7feb94fb5be18ffc289cbbb67baead317556c75a1d5525984",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "thread_state_spans.csv",
+      "rows": 193853,
+      "bytes": 63841936,
+      "sha256": "76645eb81f8e4aedf11ee6f4798af0f32add6437a3356a8f3ece70e98b621663",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "critical_path_segments.csv",
+      "rows": 12501,
+      "bytes": 9220008,
+      "sha256": "6fe831f4e4fb953bb0056a770c2717a8b775489e8dd58f09cb43156596b1a63d",
+      "availability": "partial_critical_path_not_certified"
+    },
+    {
+      "file": "callstack_samples.csv",
+      "rows": 9834,
+      "bytes": 24921399,
+      "sha256": "68bf1b868fb0012548608e61199a015ef7189129eeaad7a6cf3e8ea94000b704",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "wakeup_events.csv",
+      "rows": 4405,
+      "bytes": 1363841,
+      "sha256": "25c59bd6aa4423c92c958fcce5a65d1d01b10d9858e06207b9c3183a7f7fb800",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "cpu_competition.csv",
+      "rows": 15503,
+      "bytes": 7166363,
+      "sha256": "758226f089588cd014ffa51923b76496aa14e93819052e3d274272385515c49a",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "root_cause_evidence.csv",
+      "rows": 52,
+      "bytes": 294456,
+      "sha256": "446b2f4a769de69d868b66500fe1d82a86962ade0125e9e78ebacc48615893e6",
+      "availability": "available_with_per_row_limits"
+    },
+    {
+      "file": "intervention_runs.csv",
+      "rows": 0,
+      "bytes": 171,
+      "sha256": "9ad4966f0173451fde9bf3e1a54a9fe0b3b41865aca44c0e75be95175c1e927a",
+      "availability": "headers_only_no_intervention"
+    },
+    {
+      "file": "before_after_metrics.csv",
+      "rows": 0,
+      "bytes": 178,
+      "sha256": "6ce4e9dde5bcc84b442c75c70808bdfe9d1cbaafe4d0fc6509816b761d2bf8f4",
+      "availability": "headers_only_no_intervention"
+    }
+  ]
+}
