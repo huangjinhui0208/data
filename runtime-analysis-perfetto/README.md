@@ -91,6 +91,10 @@ root_cause_evidence 仅为 E1 观测候选。当前未确认锁持有者、GPU k
 
 intervention_runs.csv 和 before_after_metrics.csv 均为有 schema 的空表。当前没有干预组、重复实验或优化后数据，不虚构 before/after 数值，不将相关性写成因果验证。
 
+## F647—F680 甘特图
+
+[34 帧总览 PNG](figures/prediction_F647_F680/prediction_gantt_F647_F680_overview.png)、[矢量 SVG](figures/prediction_F647_F680/prediction_gantt_F647_F680_overview.svg)及[6 页阶段详图和绘图数据](figures/prediction_F647_F680/README.md)。全部图使用 F647 callback 入口为统一零点，保留阶段嵌套与实际 TID；不将阶段累计耗时解释为关键路径。
+
 ## 复核与复现
 
 本机依赖仅 Python 标准库与 numpy。原始大型 Trace、应用 CSV 和 Record 仍位于 Orin，本机 inputs/ 是证据缓存且不加入 Git；仓库提交 24 个要求文件、分析脚本、源码快照、SQL、元数据、测试与本文。
