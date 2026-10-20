@@ -97,6 +97,10 @@ intervention_runs.csv 和 before_after_metrics.csv 均为有 schema 的空表。
 
 ## 复核与复现
 
+### Prediction 实时性分析报告
+
+按本轮方法形成的[完整报告](prediction_realtime_report/prediction_realtime_analysis_report.md)及[交付索引](prediction_realtime_report/README.md)已补充：693 个窗口实例、五层案例证据、4,415 个事件栈关联等待 episode、同签名对照与 6 张科研图。正文使用用户指定的 anti-defensive-writing Skill。交互版构建成功；浏览器安全策略阻止页面验视，此项单独保留为未通过的检查。
+
 本机依赖仅 Python 标准库与 numpy。原始大型 Trace、应用 CSV 和 Record 仍位于 Orin，本机 inputs/ 是证据缓存且不加入 Git；仓库提交 24 个要求文件、分析脚本、源码快照、SQL、元数据、测试与本文。
 
 ```powershell

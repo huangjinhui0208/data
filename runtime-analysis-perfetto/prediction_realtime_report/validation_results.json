@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "full_instance_count",
+      "passed": true
+    },
+    {
+      "name": "window_instance_count",
+      "passed": true
+    },
+    {
+      "name": "window_misses",
+      "passed": true
+    },
+    {
+      "name": "segment_misses",
+      "passed": true
+    },
+    {
+      "name": "episode_sample_unique_match",
+      "passed": true
+    },
+    {
+      "name": "callback_RAW_recompute",
+      "passed": true
+    },
+    {
+      "name": "no_causal_attribution_fabricated",
+      "passed": true
+    },
+    {
+      "name": "source_ids_preserved",
+      "passed": true
+    },
+    {
+      "name": "stage_state_complete",
+      "passed": true
+    }
+  ]
+}

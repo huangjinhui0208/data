@@ -1,0 +1,289 @@
+{
+  "run_id": "pw_20261020_141904",
+  "window": [
+    5,
+    105
+  ],
+  "frames": 693,
+  "full_frames": 1057,
+  "tasks_in_window": 724,
+  "callback": {
+    "count": 693,
+    "mean": 26.914935134199137,
+    "median": 7.522912,
+    "p95": 127.41729919999999,
+    "p99": 158.75909504000012,
+    "max": 227.192,
+    "std_population": 40.94431747158221
+  },
+  "response": {
+    "count": 693,
+    "mean": 29.807914528138532,
+    "median": 8.965888,
+    "p95": 139.94423039999998,
+    "p99": 188.80668416000182,
+    "max": 291.587072,
+    "std_population": 46.378862621861366
+  },
+  "misses": 35,
+  "miss_rate": 0.050505050505050504,
+  "anomaly": {
+    "frames": 34,
+    "misses": 29,
+    "callback": {
+      "count": 34,
+      "mean": 144.63080847058822,
+      "median": 141.7052,
+      "p95": 191.37614879999998,
+      "p99": 217.93344608000004,
+      "max": 227.192,
+      "std_population": 26.657278061946318
+    },
+    "fraction_of_all_misses": 0.8285714285714286
+  },
+  "normal_reference": {
+    "run_id": "pw_20261020_141904",
+    "frame_uid": "pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330678:proc:0:event:27615",
+    "frame": 398,
+    "trace_id": "17293930570350330678",
+    "proc_id": "0",
+    "pid": "942621",
+    "tid": "942720",
+    "event_id_enter": "prediction.942621:27615",
+    "event_id_exit": "prediction.942621:27728",
+    "start_s": 56.182217288,
+    "raw_start_ns": "1032160749690272",
+    "boot_start_ns": "1032202525518901",
+    "callback_ms": 15.250688,
+    "response_ms": 19.751872,
+    "dispatch_proxy_ms": 4.5011839999999985,
+    "slack_ms": 118.926496,
+    "miss": false,
+    "running_ms": 4.169564,
+    "runnable_ms": 0.357384,
+    "sleeping_ms": 10.723968,
+    "uninterruptible_ms": 0.0,
+    "unknown_ms": 0.0,
+    "task_count": 1,
+    "obstacles": 1,
+    "forward_calls": 2,
+    "jointly_calls": 0,
+    "same_signature_peer_count": 5,
+    "baseline_same_signature_median_ms": 15.793984,
+    "baseline_difference_ms": -0.5432959999999998,
+    "signature": "[[\"5\", \"forward_begin\", 2], [\"5\", \"group_member\", 1], [\"5\", \"model_cruise_mlp_enter\", 1]]",
+    "input_message_uid": "pw_20261020_141904:message:/apollo/perception/obstacles:17293930570350330678:857:1792477201550685775",
+    "output_message_uid": "pw_20261020_141904:message:/apollo/prediction:17293930570350330678:572:1792477201550685775"
+  },
+  "comparisons": [
+    {
+      "frame": 648,
+      "frame_uid": "pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330928:proc:0:event:60677",
+      "peer_count": 0,
+      "peer_meet_count": 0,
+      "control_frame": null,
+      "control_frame_uid": null,
+      "callback_ms": 227.192,
+      "control_callback_ms": null,
+      "baseline_ms": null,
+      "baseline_difference_ms": null,
+      "control_scope": "no exact measured-signature meet control",
+      "attributable_latency_ms": null,
+      "run_id": "pw_20261020_141904"
+    },
+    {
+      "frame": 653,
+      "frame_uid": "pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330934:proc:0:event:63276",
+      "peer_count": 14,
+      "peer_meet_count": 0,
+      "control_frame": null,
+      "control_frame_uid": null,
+      "callback_ms": 161.199936,
+      "control_callback_ms": null,
+      "baseline_ms": 144.347312,
+      "baseline_difference_ms": 16.85262400000002,
+      "control_scope": "no exact measured-signature meet control",
+      "attributable_latency_ms": null,
+      "run_id": "pw_20261020_141904"
+    },
+    {
+      "frame": 659,
+      "frame_uid": "pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330940:proc:0:event:65721",
+      "peer_count": 14,
+      "peer_meet_count": 1,
+      "control_frame": 653,
+      "control_frame_uid": "pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330934:proc:0:event:63276",
+      "callback_ms": 187.197888,
+      "control_callback_ms": 161.199936,
+      "baseline_ms": 144.347312,
+      "baseline_difference_ms": 42.85057600000002,
+      "control_scope": "same observed group/model/forward counts; tensor values and scene differ",
+      "attributable_latency_ms": null,
+      "run_id": "pw_20261020_141904"
+    },
+    {
+      "frame": 675,
+      "frame_uid": "pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330956:proc:0:event:72887",
+      "peer_count": 1,
+      "peer_meet_count": 0,
+      "control_frame": null,
+      "control_frame_uid": null,
+      "callback_ms": 199.135776,
+      "control_callback_ms": null,
+      "baseline_ms": null,
+      "baseline_difference_ms": null,
+      "control_scope": "no exact measured-signature meet control",
+      "attributable_latency_ms": null,
+      "run_id": "pw_20261020_141904"
+    },
+    {
+      "frame": 677,
+      "frame_uid": "pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330958:proc:0:event:73830",
+      "peer_count": 14,
+      "peer_meet_count": 1,
+      "control_frame": 653,
+      "control_frame_uid": "pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330934:proc:0:event:63276",
+      "callback_ms": 162.924736,
+      "control_callback_ms": 161.199936,
+      "baseline_ms": 144.347312,
+      "baseline_difference_ms": 18.577424000000008,
+      "control_scope": "same observed group/model/forward counts; tensor values and scene differ",
+      "attributable_latency_ms": null,
+      "run_id": "pw_20261020_141904"
+    }
+  ],
+  "consecutive_miss_bursts": [
+    {
+      "first_frame": 558,
+      "last_frame": 558,
+      "frames": 1,
+      "start_s": 77.730186685,
+      "min_slack_ms": -1.841888,
+      "frame_uids": "[\"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330838:proc:0:event:49324\"]",
+      "run_id": "pw_20261020_141904"
+    },
+    {
+      "first_frame": 647,
+      "last_frame": 650,
+      "frames": 4,
+      "start_s": 90.035212377,
+      "min_slack_ms": -134.693984,
+      "frame_uids": "[\"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330927:proc:0:event:60164\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330928:proc:0:event:60677\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330929:proc:0:event:61262\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330930:proc:0:event:61798\"]",
+      "run_id": "pw_20261020_141904"
+    },
+    {
+      "first_frame": 652,
+      "last_frame": 652,
+      "frames": 1,
+      "start_s": 90.872451679,
+      "min_slack_ms": -11.491424,
+      "frame_uids": "[\"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330933:proc:0:event:62868\"]",
+      "run_id": "pw_20261020_141904"
+    },
+    {
+      "first_frame": 654,
+      "last_frame": 662,
+      "frames": 9,
+      "start_s": 91.182714508,
+      "min_slack_ms": -105.896224,
+      "frame_uids": "[\"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330935:proc:0:event:63684\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330936:proc:0:event:64092\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330937:proc:0:event:64499\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330938:proc:0:event:64907\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330939:proc:0:event:65314\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330940:proc:0:event:65721\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330941:proc:0:event:66128\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330942:proc:0:event:66590\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330943:proc:0:event:67051\"]",
+      "run_id": "pw_20261020_141904"
+    },
+    {
+      "first_frame": 664,
+      "last_frame": 672,
+      "frames": 9,
+      "start_s": 92.564474294,
+      "min_slack_ms": -32.303936,
+      "frame_uids": "[\"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330945:proc:0:event:67920\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330946:proc:0:event:68440\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330947:proc:0:event:68902\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330948:proc:0:event:69310\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330949:proc:0:event:69717\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330950:proc:0:event:70125\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330951:proc:0:event:70533\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330952:proc:0:event:70941\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330953:proc:0:event:71483\"]",
+      "run_id": "pw_20261020_141904"
+    },
+    {
+      "first_frame": 674,
+      "last_frame": 679,
+      "frames": 6,
+      "start_s": 93.914035542,
+      "min_slack_ms": -149.844192,
+      "frame_uids": "[\"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330955:proc:0:event:72407\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330956:proc:0:event:72887\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330957:proc:0:event:73368\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330958:proc:0:event:73830\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330960:proc:0:event:74238\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330961:proc:0:event:74596\"]",
+      "run_id": "pw_20261020_141904"
+    },
+    {
+      "first_frame": 681,
+      "last_frame": 684,
+      "frames": 4,
+      "start_s": 95.004674853,
+      "min_slack_ms": -13.356576,
+      "frame_uids": "[\"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330963:proc:0:event:75309\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330964:proc:0:event:75665\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330965:proc:0:event:76022\", \"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350330966:proc:0:event:76379\"]",
+      "run_id": "pw_20261020_141904"
+    },
+    {
+      "first_frame": 722,
+      "last_frame": 722,
+      "frames": 1,
+      "start_s": 103.242410557,
+      "min_slack_ms": -9.96912,
+      "frame_uids": "[\"pw_20261020_141904:prediction:942621@103208480:trace:17293930570350331004:proc:0:event:89250\"]",
+      "run_id": "pw_20261020_141904"
+    }
+  ],
+  "early_5_70_callback": {
+    "count": 460,
+    "mean": 7.183467199999999,
+    "median": 3.643376,
+    "p95": 25.13494879999999,
+    "p99": 34.58214207999994,
+    "max": 39.357248,
+    "std_population": 7.0036991834214
+  },
+  "waiting_episodes": 4415,
+  "waiting_paths": {
+    "other_futex_path": 41,
+    "Evaluator_future_futex_path": 14,
+    "nvhost_syncpoint_wait_path": 414,
+    "futex_PI_mutex_path": 3878,
+    "CUDA_allocator_mutex_path": 67,
+    "cuDNN_mutex_path": 1
+  },
+  "exact_signature_normal_control_available": false,
+  "downstream_runonce_matched_frames": 690,
+  "downstream_entry_to_runonce_ms": {
+    "count": 690,
+    "mean": 2.5052405333333336,
+    "median": 0.74752,
+    "p95": 4.2353808,
+    "p99": 51.99220736000013,
+    "max": 127.93408,
+    "std_population": 11.229772793984951
+  },
+  "intervals": {
+    "input_interval_ms": {
+      "count": 692,
+      "mean": 144.2566316300578,
+      "median": 137.166896,
+      "p95": 195.02103999999997,
+      "p99": 403.4596147200002,
+      "max": 548.516416,
+      "std_population": 42.0978257196536
+    },
+    "output_interval_ms": {
+      "count": 692,
+      "mean": 144.37183500578035,
+      "median": 137.097936,
+      "p95": 197.5510224,
+      "p99": 388.24152352000044,
+      "max": 562.83536,
+      "std_population": 44.70286917091385
+    },
+    "stability_span_ms": {
+      "count": 673,
+      "mean": 109.91373608320951,
+      "median": 72.19644800000002,
+      "p95": 265.954048,
+      "p99": 483.0479206399991,
+      "max": 506.844416,
+      "std_population": 93.50272157526528
+    }
+  },
+  "scientific_claim": "Instance identity and calibrated thread states localize sustained latency to Evaluator/ThreadPool and observed blocking paths.",
+  "writing_skill": "https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/blob/main/skills/anti-defensive-writing/SKILL.md"
+}

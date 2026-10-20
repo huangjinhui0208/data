@@ -1,0 +1,16 @@
+{
+  "figures": [
+    "fig01_response_slack",
+    "fig02_major_stages",
+    "fig03_callback_states",
+    "fig04_waiting_paths",
+    "fig05_intervals",
+    "fig06_crosslayer_F648"
+  ],
+  "dpi": 300,
+  "formats": [
+    "png",
+    "svg"
+  ],
+  "source": "data/*.csv; scripts/render_realtime_figures.py"
+}

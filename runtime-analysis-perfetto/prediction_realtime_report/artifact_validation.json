@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "unique_frame_grain",
+      "passed": true,
+      "detail": "One unique UID per complete window callback"
+    },
+    {
+      "name": "precise_large_ids",
+      "passed": true,
+      "detail": "CSV IDs preserved as strings"
+    },
+    {
+      "name": "frame_reference_major_stage_states.csv",
+      "passed": true,
+      "detail": "5544 rows"
+    },
+    {
+      "name": "frame_reference_waiting_episodes_with_event_stacks.csv",
+      "passed": true,
+      "detail": "4415 rows"
+    },
+    {
+      "name": "frame_reference_matched_comparisons.csv",
+      "passed": true,
+      "detail": "5 rows"
+    },
+    {
+      "name": "frame_reference_downstream_runonce.csv",
+      "passed": true,
+      "detail": "690 rows"
+    },
+    {
+      "name": "frame_reference_case_task_dependencies.csv",
+      "passed": true,
+      "detail": "25 rows"
+    },
+    {
+      "name": "episode_one_to_one",
+      "passed": true,
+      "detail": "No duplicate episode associations"
+    },
+    {
+      "name": "episode_mechanism_not_causal_increment",
+      "passed": true,
+      "detail": "Object and attributable excess remain missing"
+    },
+    {
+      "name": "six_png_svg_pairs",
+      "passed": true,
+      "detail": "6 paired scientific figures"
+    },
+    {
+      "name": "png_300dpi",
+      "passed": true,
+      "detail": "PNG resolution metadata"
+    },
+    {
+      "name": "svg_valid_xml",
+      "passed": true,
+      "detail": "All SVG parsed"
+    },
+    {
+      "name": "markdown_figures_resolve",
+      "passed": true,
+      "detail": "All figure references exist"
+    },
+    {
+      "name": "narrative_source_queries_exist",
+      "passed": true,
+      "detail": "Exact declared query scopes"
+    },
+    {
+      "name": "reviewed_coverage",
+      "passed": true,
+      "detail": "Report snapshot counts reconcile"
+    },
+    {
+      "name": "writing_skill_link",
+      "passed": true,
+      "detail": "User requested writing skill recorded"
+    },
+    {
+      "name": "no_placeholders_in_delivered_data",
+      "passed": true,
+      "detail": "Actual instance IDs only"
+    }
+  ],
+  "browser_render_check": "blocked_by_browser_security_policy; not passed or substituted",
+  "static_visual_review": "Six scientific PNGs inspected; title/legend overlap repaired"
+}
